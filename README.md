@@ -8,7 +8,7 @@ A standalone offline kitchen companion for the FoloToy AI Passport (ESP32-C3, 8 
 
 The current candidate contains 144 family-style recipe drafts, complete dish illustration drafts, layered dish illustrations, an animated character, a pantry and shopping list, favorites, cooking progress and up to three independent timers. Recipe instructions remain pending actual household cooking review. Some dishes reuse approximate illustrations; newly added dishes without complete art display a placeholder. The new icons, dish art and animation variants remain visual-review candidates.
 
-The model supports up to 192 recipes. For catalogs over 64 recipes, multi-dish draws use a seeded, bounded candidate pool for responsiveness; their weighting and soft-constraint relaxation may differ from an exhaustive search. Ingredient exclusions do not screen seasonings, allergens or cross-contact. An extreme fully populated save fits the serializer but two such copies may exceed the available NVS space; full-load device persistence has not been validated.
+The model supports up to 192 recipes. For catalogs over 64 recipes, multi-dish draws use a seeded, bounded candidate pool for responsiveness; their weighting and soft-constraint relaxation may differ from an exhaustive search. Ingredient exclusions do not screen seasonings, allergens or cross-contact. Full 192-recipe records pass repeated saves and simulated power cuts using ESP-IDF's NVS engine in 24 KiB, alongside 2 KiB of unrelated settings. Actual device persistence and occupied-partition limits still need measurement; storage exhaustion reports an error while preserving the active save and other namespaces.
 
 ## Controls and time
 

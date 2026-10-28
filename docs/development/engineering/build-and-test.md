@@ -166,6 +166,16 @@ CI calls the same script. Fix the shared script or environment if local and CI b
 
 Hardware-affecting changes must also run the applicable on-device checklist in the hardware guide. Report compilation separately from physical-device validation.
 
+The offline-kitchen static gate includes real legacy ingredient-ID migration.
+The firmware gate also renders the actual packaged catalog/fonts and runs
+`tests/test_kitchen_nvs.py` against the activated ESP-IDF 5.5.3 NVS storage,
+page and garbage-collection sources. Its synthetic 24 KiB NOR partition covers
+100 maximum-state saves, all flash-operation cut points in a replacement,
+and a full partition with unrelated settings. It never accesses USB or user
+records. Only partition I/O, the small NVS C API adapter, logging and ROM CRC
+are host shims; physical Flash timing and torn writes within one operation
+remain device checks. A host C++17 compiler is required for this check.
+
 Never upload the app-only `build/FoloToy-AI-Passport.bin` to the community. Only
 the validated `build/FoloToy-AI-Passport-full.bin` contains the complete checked
 firmware layout.

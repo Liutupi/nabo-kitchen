@@ -37,6 +37,19 @@ static int write_slot(void* ctx, unsigned slot, const uint8_t* buf, size_t lengt
     if (err != ESP_OK)
         return 0;
     err = nvs_set_blob(handle, key(slot), buf, length);
+    if (err == ESP_ERR_NVS_NOT_ENOUGH_SPACE) {
+        /* The journal only writes its inactive slot. NVS's atomic replacement
+         * otherwise needs three full blobs (both slots plus the new version).
+         * Reclaim only the stale destination; the active slot remains durable
+         * through an erase, retry failure, or power loss. Never erase a namespace
+         * or partition to make room for kitchen records. */
+        err = nvs_erase_key(handle, key(slot));
+        if (err == ESP_OK || err == ESP_ERR_NVS_NOT_FOUND) {
+            err = nvs_commit(handle);
+            if (err == ESP_OK)
+                err = nvs_set_blob(handle, key(slot), buf, length);
+        }
+    }
     if (err == ESP_OK)
         err = nvs_commit(handle);
     nvs_close(handle);

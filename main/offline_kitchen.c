@@ -25,6 +25,7 @@
 #include "kitchen/kitchen_view.h"
 #include "kitchen/nabo_kitchen_mixer.h"
 #include "kitchen/nabo_kitchen_store.h"
+#include <inttypes.h>
 #include <stdatomic.h>
 #include <stdio.h>
 #include <string.h>
@@ -409,10 +410,13 @@ static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
     printf(
         "\n@kitchen.status "
         "{\"running\":1,\"page\":%u,\"test\":%d,\"heap\":%u,\"largest\":%u,"
-        "\"stack_free_min\":%u}\n",
+        "\"stack_free_min\":%u,\"recipes\":%u,\"ingredients\":%u,\"dirty\":%u,"
+        "\"clock_lost\":%u,\"storage_fault\":%u,\"save_sequence\":%" PRIu32 "}\n",
         s->ui.page, s->test_mode, (unsigned)esp_get_free_heap_size(),
         (unsigned)heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL),
-        (unsigned)uxTaskGetStackHighWaterMark(NULL));
+        (unsigned)uxTaskGetStackHighWaterMark(NULL), (unsigned)s->catalog.count,
+        (unsigned)km_ingredient_count, (unsigned)s->ui.dirty,
+        (unsigned)s->clock_lost, (unsigned)s->storage_fault, s->journal.sequence);
   } else if (!strcmp(line, ">kitchen.test=on")) {
     if (s->calendar_active) {
       printf("\n@kitchen.test date-editor-active\n");

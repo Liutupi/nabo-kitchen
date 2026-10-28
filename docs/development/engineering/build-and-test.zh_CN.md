@@ -142,5 +142,13 @@ cc -std=c11 -Wall -Wextra -Werror -Imain \
 
 涉及物理外设的改动必须在真机运行硬件指南验收清单，并把“编译通过”与“硬件验证通过”分开记录。
 
+离线厨房的静态门禁包含真实旧版食材 ID 迁移测试。固件门禁还使用实际装包
+菜库与字体绘制页面，并运行 `tests/test_kitchen_nvs.py`：直接编译已激活的
+ESP-IDF 5.5.3 NVS 存储、页管理和垃圾回收源码，在合成的 24 KiB NOR 分区中
+覆盖 100 次极限满载保存、一次替换过程的所有 Flash 操作断电切点，以及其他
+设置占满分区的情况。测试不访问 USB 或用户记录；仅分区 I/O、小型 NVS C API
+适配层、日志及 ROM CRC 使用宿主替身。真实 Flash 时序与单次操作内部的撕裂
+写入仍需实机检查。该测试要求宿主 C++17 编译器。
+
 社区只能上传验证通过的 `build/FoloToy-AI-Passport-full.bin`，不得上传应用单镜像
 `build/FoloToy-AI-Passport.bin`，后者不包含完整且经校验的固件布局。

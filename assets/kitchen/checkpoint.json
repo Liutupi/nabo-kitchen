@@ -1,6 +1,6 @@
 {
   "checkpoint_date": "2026-10-29",
-  "status": "source checkpoint; not firmware-built or device-tested as a combined version",
+  "status": "complete firmware gate passed; device acceptance pending",
   "recipes": 144,
   "ingredients": 58,
   "seafood_types": 13,

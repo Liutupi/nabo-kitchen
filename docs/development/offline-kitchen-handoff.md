@@ -2,7 +2,7 @@
 
 # Offline kitchen handoff — 2026-10-29
 
-Work was stopped at the user's request. This is a source checkpoint, not a release. Do not flash or erase the device merely because this branch exists.
+Work resumed at the user's request. The combined 144-recipe candidate now passes the complete gate and is packaged locally; device acceptance is pending. This is not a release. Do not flash or erase the device merely because this branch exists.
 
 ## Where the work lives
 
@@ -26,26 +26,39 @@ The last four-dish device test was refused with `pending-save`; no record or tim
 - Model capacity increased to 192 recipes; stable-ID KST1 migration preserves older recipe and ingredient selections. Multi-dish draws above 64 recipes use bounded candidate pools and are not equivalent to exhaustive weighted search.
 - Unlimited redraws, removal of the obsolete daily-redraw setting, saturation-safe redraw state, active cancellation of the selected timer with long DOWN, and updated NABO opening/home greeting text (exact wording in the Simplified Chinese handoff). Welcome audio remains unchanged.
 - The UI worker stack is 12 KiB, and read-only status includes `stack_free_min` for the next device measurement.
+- Read-only status also reports recipe/ingredient counts, dirty state, clock-loss warning, storage fault and journal sequence, so a refused test can be diagnosed without clearing records.
 - Current resource bundle: 2,480,194 bytes, SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`; the 5 MiB asset partition has 2,762,686 bytes free. Font and dish packs deliberately exceed the old design's individual budgets; that does not mean those older budgets were met.
 
 ## Validation at this checkpoint
 
 ```text
-Build: NOT RUN for the latest combined source
-Host tests: PASS for static checks and actual 144-recipe rendering/migration
+Build: PASS for the complete ESP-IDF 5.5.3 gate
+Host tests: PASS for static, actual 144-recipe rendering/migration and NVS stress
 Device tests: NOT RUN for the latest combined source
-Unverified: full firmware gate, new seafood/icon appearance, unlimited redraw,
-timer cancellation, worker stack, NVS capacity and power-loss behavior
+Unverified: device seafood/icon appearance, unlimited redraw, timer cancellation,
+worker stack, occupied-device NVS capacity and physical power-loss behavior
 ```
 
-Static checks passed. All nine actual-resource rendering tests passed after replacing a stale fixed 50-ingredient test expectation with the KRC dictionary count. The real 128-recipe/50-ingredient KST1 fixture successfully migrated using the actual 144-recipe/58-ingredient metadata; rejection of a missing stable ID was also checked. Component tests cover 300 redraws including the 255 boundary, timer cancellation and save restoration. The newest complete firmware build was intentionally not run after the user requested stopping.
+Static checks, all nine actual-resource rendering tests and real 128-recipe/50-ingredient KST1 migration passed. Component tests cover 300 redraws including the 255 boundary, timer cancellation and save restoration. Actual rendering/migration and the new NVS stress test are now part of the unified gate.
 
-The 192-recipe fully populated host save is 8,231 bytes, exceeding the old 8,192-byte buffer; the serializer buffer is now 9,216 bytes. Two full saves plus NVS overhead and existing settings may not fit the 24 KiB NVS partition. Host encoding success does not prove full-load device persistence. Never erase settings or change partitions as an implicit repair.
+The 192-recipe fully populated save is 8,231 bytes; its buffer is 9,216 bytes. The old NVS replacement failed on the third maximum-state save: atomic replacement needed both journal slots plus a third blob. On an out-of-space result, the adapter now reclaims only the inactive destination and retries, keeping the active slot until read-back verification succeeds. KST1 bytes and stable-ID compatibility are unchanged.
+
+Using unmodified ESP-IDF 5.5.3 NVS storage/page/GC sources with synthetic NOR I/O, 100 maximum-state saves and reboots passed in 24 KiB alongside 2 KiB of unrelated settings. All 484 flash-operation cut boundaries in a replacement recovered either the preceding or new complete save. A fully occupied partition reports failure while preserving the active save and unrelated namespace. These are host results; physical timing, torn writes within an operation and the actual device's occupied capacity remain unverified. Never erase settings or change partitions as an implicit repair.
+
+## Verified local candidate
+
+- Segmented package: `/Users/tupi/Library/Caches/nabo-kitchen-fw/offline-144-nvs-0019ff996826`.
+- Debug archive: `build/firmware/0019ff996826c0fcf8b278a7724886983d9a61e5428838ff9ce4e11865020a5f/`.
+- Full image SHA256: `0019ff996826c0fcf8b278a7724886983d9a61e5428838ff9ce4e11865020a5f`.
+- App: 513,136 bytes; SHA256 `9e21fad27eff0fc63efb6aeb26dcf01f2e29cfb8a722d3108ec7cf62a059579d`.
+- Matching ELF SHA256: `17c0f929a080ff52757b07958144a818317deca0fb3322bfd300244250606713`; embedded version `f67c7ee-dirty` identifies the tested working tree before its source checkpoint commit.
+- Resources retain SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`. Archive and segmented-package verification both passed. Generated firmware/debug files remain local.
+- USB enumeration found the prior `/dev/cu.usbmodem212401`; no port was opened or reset. Approval was requested for this candidate's app/resource-only update; consent and hardware acceptance are still pending.
 
 ## Resume steps
 
 1. Pull both branches, inspect status, and read this handoff and the design branch's `HANDOFF.md`. Check `assets/kitchen/checkpoint.json` against the source packs.
-2. Activate ESP-IDF 5.5.3 and run `./tools/validate.sh`. Also run `CJSON_DIR="$IDF_PATH/components/json/cJSON" python3 tests/test_real_catalog_views.py` and `python3 tests/test_kitchen_ingredient_migration.py`. The latter are additional checks, not silently implied by the main gate.
+2. The complete `./tools/validate.sh` gate passed for the candidate above. Repeat it only after relevant changes; the actual-resource, migration and NVS tests are now included.
 3. Verify the content-addressed debug archive, then build a segmented package with `tools/pack_offline_release.py`. Confirm the exact new artifact and intended device/write scope before flashing.
 4. Preserve NVS at `0x9000..0xefff`, PHY at `0xf000..0xffff` and files at `0x700000..0x7fffff`. The compatible layout uses app `0x10000..0x1fffff` and kitchen assets `0x200000..0x6fffff`. A merged image fills gaps and must not be blindly written when preserving data.
 5. Observe startup and the new behavior using bounded serial tests. Record heap/stack after repeated four-dish draws and check storage without deleting existing records. Restore normal mode and close the port.
