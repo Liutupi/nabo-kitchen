@@ -6,6 +6,7 @@ import subprocess
 import tempfile
 import unittest
 from test_krc import Pack,open_pack
+from package_fixtures import FROZEN,FROZEN_META,selected,recipe_ids
 from test_recommend import Recipe
 ROOT=Path(__file__).resolve().parents[2]
 class Item(C.Structure):
@@ -17,26 +18,32 @@ class Ingredient(C.Structure):_fields_=[('qty100',C.c_uint32),('id',C.c_uint8),(
 class Dish(C.Structure):_fields_=[('vessel',C.c_uint8),('layer_count',C.c_uint8),('garnish_count',C.c_uint8),
     ('sauce',C.c_int16),('layers',C.c_uint16*4),('garnishes',C.c_uint16*3)]
 class CatalogReader(unittest.TestCase):
+    recipe_path=FROZEN
+    metadata_path=FROZEN_META
+    complete=False
     @classmethod
     def setUpClass(cls):
         cjson=os.environ.get('CJSON_DIR')
         if not cjson or not (Path(cjson)/'cJSON.c').is_file():raise unittest.SkipTest('Set CJSON_DIR to the pinned ESP-IDF cJSON source directory')
         cls.tmp=tempfile.TemporaryDirectory();lib=Path(cls.tmp.name)/'catalog.so'
-        subprocess.run(['cc','-std=c11','-Wall','-Wextra','-Werror','-shared','-fPIC','-I',cjson,
-            str(ROOT/'model/kitchen_krc.c'),str(ROOT/'model/kitchen_catalog.c'),str(ROOT/'model/kitchen_metadata.c'),str(Path(cjson)/'cJSON.c'),'-o',str(lib)],check=True)
+        subprocess.run(['cc','-std=c11','-Wall','-Wextra','-Werror','-shared','-fPIC','-I',cjson,'-I',str(ROOT/'model'),
+            str(ROOT/'model/kitchen_krc.c'),str(ROOT/'model/kitchen_catalog.c'),str(cls.metadata_path),str(Path(cjson)/'cJSON.c'),'-o',str(lib)],check=True)
         cls.dll=C.CDLL(str(lib));cls.dll.krc_open.argtypes=[C.POINTER(Pack),C.POINTER(C.c_uint8),C.c_size_t]
         cls.dll.kc_load.argtypes=[C.POINTER(Catalog),C.POINTER(Pack)]
         cls.dll.kc_read_step.argtypes=[C.POINTER(Pack),C.c_uint,C.c_uint,C.POINTER(Step),C.POINTER(C.c_uint)]
         cls.dll.kc_read_ingredients.argtypes=[C.POINTER(Pack),C.c_uint,C.POINTER(Ingredient),C.c_uint,C.POINTER(C.c_uint)]
         cls.dll.kc_read_dish.argtypes=[C.POINTER(Pack),C.c_uint,C.POINTER(Dish)]
-        cls.data=(ROOT/'checkpoints/2026-10-28/packages/kitchen_recipes.krc').read_bytes()
-        cls.expected=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/catalog_trace.mjs')]))
+        cls.data=cls.recipe_path.read_bytes()
+        cls.ids=recipe_ids(cls.recipe_path,cls.complete)
+        if not cls.complete:assert len(cls.ids)==30
+        by_id={x['id']:x for x in json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/catalog_trace.mjs')]))}
+        cls.expected=[by_id[i] for i in cls.ids]
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
     def test_actual_catalog_matches_prototype(self):
         ok,pack,keep=open_pack(self.dll,self.data);self.assertEqual(ok,1)
-        items=(Item*30)();catalog=Catalog(items,len(items),0)
-        self.assertEqual(self.dll.kc_load(C.byref(catalog),C.byref(pack)),1);self.assertEqual(catalog.count,30)
+        items=(Item*pack.count)();catalog=Catalog(items,len(items),0)
+        self.assertEqual(self.dll.kc_load(C.byref(catalog),C.byref(pack)),1);self.assertEqual(catalog.count,len(self.ids))
         dictionary=json.loads(self.data[pack.dictionary_offset:pack.dictionary_offset+pack.dictionary_length])
         for i,expected in enumerate(self.expected):
             item=catalog.items[i];self.assertEqual(item.id.decode(),expected['id']);self.assertEqual(item.name.decode(),expected['name'])
@@ -70,7 +77,11 @@ class CatalogReader(unittest.TestCase):
                 self.assertEqual(dictionary['methods'][step.method],expected_step['method'])
                 self.assertEqual(dictionary['heats'][step.heat],expected_step['heat'])
             self.assertEqual(self.dll.kc_read_step(C.byref(pack),i,len(source['steps']),C.byref(Step()),None),0)
-        catalog.capacity=29
+        catalog.capacity=pack.count-1
         self.assertEqual(self.dll.kc_load(C.byref(catalog),C.byref(pack)),0)
         self.assertEqual(catalog.count,0)
+if selected():
+    class CatalogReaderSelected(CatalogReader):
+        recipe_path,metadata_path=selected()
+        complete=True
 if __name__=='__main__':unittest.main()

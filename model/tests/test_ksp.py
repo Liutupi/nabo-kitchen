@@ -1,5 +1,6 @@
 import binascii
 import ctypes as C
+import os
 from pathlib import Path
 import struct
 import subprocess
@@ -29,33 +30,43 @@ class SpriteReader(unittest.TestCase):
     def setUpClass(cls):cls.tmp=tempfile.TemporaryDirectory();cls.dll=load(cls.tmp.name)
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
-    def test_all_runtime_sprites_match_reference(self):
+    def sources(self):
         for filename in ('kitchen_dish.bin','kitchen_icons.bin','kitchen_ui.bin'):
-            data=(ROOT/'checkpoints/2026-10-28/packages'/filename).read_bytes()
-            reference=unpack_sprites(data);assets,groups=reference.assets,reference.groups
-            ok,p,keep=opened(self.dll,data);self.assertEqual(ok,1)
-            for name,expected in assets.items():
-                sprite=Sprite();self.assertEqual(self.dll.ksp_find(C.byref(p),name.encode(),C.byref(sprite)),1)
-                fw,fh=expected['frame'];frame=bytearray(fw*fh)
-                @CALL
-                def row(_,x,y,indices,width):frame[y*fw+x:y*fw+x+width]=bytes(indices[:width]);return 1
-                line=(C.c_uint8*1024)()
-                self.assertEqual(self.dll.ksp_read_rows(C.byref(p),C.byref(sprite),line,len(line),row,None),1,name)
-                self.assertEqual(bytes(frame),expected['indices'],name)
-                actual=[sprite.palette[i*2]|sprite.palette[i*2+1]<<8 for i in range(sprite.palette_count)]
-                self.assertEqual(actual,groups[expected['group']],name)
-            self.assertEqual(self.dll.ksp_find(C.byref(p),b'not-a-sprite',C.byref(Sprite())),0)
+            yield filename,(ROOT/'checkpoints/2026-10-28/packages'/filename).read_bytes()
+        if os.environ.get('KITCHEN_ICONS'):
+            yield 'candidate_icons',Path(os.environ['KITCHEN_ICONS']).read_bytes()
+    def test_all_runtime_sprites_match_reference(self):
+        for label,data in self.sources():
+            with self.subTest(package=label):
+                reference=unpack_sprites(data);assets,groups=reference.assets,reference.groups
+                ok,p,keep=opened(self.dll,data);self.assertEqual(ok,1)
+                self.assertEqual(p.count,len(assets))
+                for name,expected in assets.items():
+                    sprite=Sprite();self.assertEqual(self.dll.ksp_find(C.byref(p),name.encode(),C.byref(sprite)),1)
+                    fw,fh=expected['frame'];frame=bytearray(fw*fh)
+                    @CALL
+                    def row(_,x,y,indices,width):frame[y*fw+x:y*fw+x+width]=bytes(indices[:width]);return 1
+                    line=(C.c_uint8*1024)()
+                    self.assertEqual(self.dll.ksp_read_rows(C.byref(p),C.byref(sprite),line,len(line),row,None),1,name)
+                    self.assertEqual(bytes(frame),expected['indices'],name)
+                    actual=[sprite.palette[i*2]|sprite.palette[i*2+1]<<8 for i in range(sprite.palette_count)]
+                    self.assertEqual(actual,groups[expected['group']],name)
+                self.assertEqual(self.dll.ksp_find(C.byref(p),b'not-a-sprite',C.byref(Sprite())),0)
     def test_corruption(self):
-        data=(ROOT/'checkpoints/2026-10-28/packages/kitchen_dish.bin').read_bytes()
-        for n in [0,39,len(data)-1]:self.assertEqual(opened(self.dll,data[:n])[0],0)
-        bad=bytearray(data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
-        bad=bytearray(data);io=struct.unpack_from('<I',bad,24)[0];struct.pack_into('<H',bad,io+8,65535)
-        struct.pack_into('<I',bad,36,binascii.crc32(bad[40:]));self.assertEqual(opened(self.dll,bad)[0],0)
-        # A resealed pixel checksum is still verified during row decoding.
-        bad=bytearray(data);bad[io+32]^=1;struct.pack_into('<I',bad,36,binascii.crc32(bad[40:]))
-        ok,p,keep=opened(self.dll,bad);self.assertEqual(ok,1)
-        name=next(iter(unpack_sprites(data).assets));sprite=Sprite();self.assertEqual(self.dll.ksp_find(C.byref(p),name.encode(),C.byref(sprite)),1)
-        @CALL
-        def row(*_):return 1
-        self.assertEqual(self.dll.ksp_read_rows(C.byref(p),C.byref(sprite),(C.c_uint8*1024)(),1024,row,None),0)
+        cases=[('frozen_dish',(ROOT/'checkpoints/2026-10-28/packages/kitchen_dish.bin').read_bytes())]
+        if os.environ.get('KITCHEN_ICONS'):
+            cases.append(('candidate_icons',Path(os.environ['KITCHEN_ICONS']).read_bytes()))
+        for label,data in cases:
+            with self.subTest(package=label):
+                for n in [0,39,len(data)-1]:self.assertEqual(opened(self.dll,data[:n])[0],0)
+                bad=bytearray(data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
+                bad=bytearray(data);io=struct.unpack_from('<I',bad,24)[0];struct.pack_into('<H',bad,io+8,65535)
+                struct.pack_into('<I',bad,36,binascii.crc32(bad[40:]));self.assertEqual(opened(self.dll,bad)[0],0)
+                # A resealed pixel checksum is still verified during row decoding.
+                bad=bytearray(data);bad[io+32]^=1;struct.pack_into('<I',bad,36,binascii.crc32(bad[40:]))
+                ok,p,keep=opened(self.dll,bad);self.assertEqual(ok,1)
+                name=next(iter(unpack_sprites(data).assets));sprite=Sprite();self.assertEqual(self.dll.ksp_find(C.byref(p),name.encode(),C.byref(sprite)),1)
+                @CALL
+                def row(*_):return 1
+                self.assertEqual(self.dll.ksp_read_rows(C.byref(p),C.byref(sprite),(C.c_uint8*1024)(),1024,row,None),0)
 if __name__=='__main__':unittest.main()

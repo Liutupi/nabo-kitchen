@@ -1,0 +1,16 @@
+{
+  "id": "ui_shopping",
+  "status": "review",
+  "generator": "original repository-native geometry, tools/generate_kitchen_menu_icons.py",
+  "size": [
+    160,
+    160
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent"
+  ],
+  "sha256": "45734871735875278a4870fae47f26e79b996f13fa807f268665b3cd73b5c7e0",
+  "notes": "Unaccepted candidate; target-size and light/dark backgrounds require visual review."
+}

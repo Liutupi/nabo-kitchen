@@ -1,0 +1,89 @@
+{
+ "id": "haoyou-shengcai",
+ "name": "蚝油生菜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "快手",
+  "适合新手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "lettuce",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "715毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "生菜分叶洗净沥水，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "700毫升水煮开，加入1小勺油。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "放入生菜，水再开后煮约45秒至熟，捞出沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 45
+  },
+  {
+   "text": "小锅放剩余油，小火炒香蒜末。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "加蚝油、生抽及1大勺水煮开，浇在生菜上。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "lettuce__stirfried"
+  ],
+  "garnish": [
+   "garlic",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

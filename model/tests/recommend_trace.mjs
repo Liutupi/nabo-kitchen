@@ -26,8 +26,8 @@ const repeated={...fixture[0],ingredients:[...fixture[0].ingredients,{id:'x',mai
 add([repeated,fixture[3]],{combo:1,minutes:30},{},2);
 for(let i=0;i<96;i++) {
   const day='2026-10-28', selected=actual[i%actual.length];
-  const context={day,history:[{id:selected.id,day:'2026-10-27'}],favorites:[actual[(i+1)%30].id],
-    wanted:[actual[(i+2)%30].id],difficulty:1+i%3,
+  const context={day,history:[{id:selected.id,day:'2026-10-27'}],favorites:[actual[(i+1)%actual.length].id],
+    wanted:[actual[(i+2)%actual.length].id],difficulty:1+i%3,
     excluded:i%4===0?[selected.ingredients[0].id]:[]};
   const conditions={combo:i%4,minutes:[15,30,60,120][Math.floor(i/4)%4]};
   const seed=(Math.imul(i,0x9e3779b9)+123)>>>0;

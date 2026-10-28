@@ -1,0 +1,16 @@
+{
+  "id": "ui_recipe_book",
+  "status": "review",
+  "generator": "original repository-native geometry, tools/generate_kitchen_menu_icons.py",
+  "size": [
+    160,
+    160
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent"
+  ],
+  "sha256": "62bbf53e28e5051dc30e569b66f070b12a9f55f513f2f6b98a1c674f7644579a",
+  "notes": "Unaccepted candidate; target-size and light/dark backgrounds require visual review."
+}

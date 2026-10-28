@@ -1,5 +1,6 @@
 import binascii
 import ctypes as C
+import os
 from pathlib import Path
 import struct
 import subprocess
@@ -31,29 +32,38 @@ class AnimationReader(unittest.TestCase):
         cls.data=(ROOT/'checkpoints/2026-10-28/packages/kitchen_nabo.bin').read_bytes()
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
+    def sources(self):
+        yield 'frozen',self.data
+        if os.environ.get('KITCHEN_ANIMATION'):
+            yield 'candidate',Path(os.environ['KITCHEN_ANIMATION']).read_bytes()
     def test_all_actual_frames(self):
-        reference=unpack_animations(self.data);ok,pack,keep=opened(self.dll,self.data);self.assertEqual(ok,1)
-        total=0
-        for name,action in reference.actions.items():
-            a=Action();self.assertEqual(self.dll.kan_find(C.byref(pack),name.encode(),C.byref(a)),1)
-            self.assertEqual(a.frames,len(action['frames']))
-            frame=(C.c_uint8*(pack.width*pack.height))();player=Player()
-            self.assertEqual(self.dll.kan_start(C.byref(player),C.byref(pack),C.byref(a),frame,len(frame)),1)
-            for expected in action['frames']:
-                self.assertEqual(self.dll.kan_next(C.byref(player)),1);self.assertEqual(bytes(frame),expected);total+=1
-            self.assertEqual(self.dll.kan_next(C.byref(player)),0)
-        self.assertEqual(total,42)
-        self.assertEqual(self.dll.kan_find(C.byref(pack),b'unknown',C.byref(Action())),0)
+        for label,data in self.sources():
+            with self.subTest(package=label):
+                reference=unpack_animations(data);ok,pack,keep=opened(self.dll,data);self.assertEqual(ok,1)
+                total=0
+                for name,action in reference.actions.items():
+                    a=Action();self.assertEqual(self.dll.kan_find(C.byref(pack),name.encode(),C.byref(a)),1)
+                    self.assertEqual(a.frames,len(action['frames']))
+                    frame=(C.c_uint8*(pack.width*pack.height))();player=Player()
+                    self.assertEqual(self.dll.kan_start(C.byref(player),C.byref(pack),C.byref(a),frame,len(frame)),1)
+                    for expected in action['frames']:
+                        self.assertEqual(self.dll.kan_next(C.byref(player)),1);self.assertEqual(bytes(frame),expected);total+=1
+                    self.assertEqual(self.dll.kan_next(C.byref(player)),0)
+                self.assertEqual(total,sum(len(a['frames']) for a in reference.actions.values()))
+                if label=='frozen':self.assertEqual(total,42)
+                self.assertEqual(self.dll.kan_find(C.byref(pack),b'unknown',C.byref(Action())),0)
     def test_corruption_and_memory_bounds(self):
-        for n in (0,51,len(self.data)-1):self.assertEqual(opened(self.dll,self.data[:n])[0],0)
-        bad=bytearray(self.data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
-        ok,p,keep=opened(self.dll,self.data);a=Action();self.assertEqual(self.dll.kan_find(C.byref(p),b'idle',C.byref(a)),1)
-        self.assertEqual(self.dll.kan_start(C.byref(Player()),C.byref(p),C.byref(a),(C.c_uint8*8)(),8),0)
-        # Modify a frame CRC, then repair both stream and outer CRCs; decoding must reject it.
-        bad=bytearray(self.data);io=struct.unpack_from('<I',bad,40)[0];offset,length=struct.unpack_from('<II',bad,io+20)
-        bad[offset+14]^=1;struct.pack_into('<I',bad,io+28,binascii.crc32(bad[offset:offset+length]))
-        struct.pack_into('<I',bad,48,binascii.crc32(bad[52:]));ok,p,keep=opened(self.dll,bad);self.assertEqual(ok,1)
-        name=bytes(bad[io:io+16]).split(b'\0')[0];a=Action();self.assertEqual(self.dll.kan_find(C.byref(p),name,C.byref(a)),1)
-        frame=(C.c_uint8*(p.width*p.height))();player=Player();self.assertEqual(self.dll.kan_start(C.byref(player),C.byref(p),C.byref(a),frame,len(frame)),1)
-        self.assertEqual(self.dll.kan_next(C.byref(player)),-1);self.assertEqual(self.dll.kan_next(C.byref(player)),-1)
+        for label,data in self.sources():
+            with self.subTest(package=label):
+                for n in (0,51,len(data)-1):self.assertEqual(opened(self.dll,data[:n])[0],0)
+                bad=bytearray(data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
+                ok,p,keep=opened(self.dll,data);a=Action();self.assertEqual(self.dll.kan_find(C.byref(p),b'idle',C.byref(a)),1)
+                self.assertEqual(self.dll.kan_start(C.byref(Player()),C.byref(p),C.byref(a),(C.c_uint8*8)(),8),0)
+                # Modify a frame CRC, then repair both stream and outer CRCs; decoding must reject it.
+                bad=bytearray(data);io=struct.unpack_from('<I',bad,40)[0];offset,length=struct.unpack_from('<II',bad,io+20)
+                bad[offset+14]^=1;struct.pack_into('<I',bad,io+28,binascii.crc32(bad[offset:offset+length]))
+                struct.pack_into('<I',bad,48,binascii.crc32(bad[52:]));ok,p,keep=opened(self.dll,bad);self.assertEqual(ok,1)
+                name=bytes(bad[io:io+16]).split(b'\0')[0];a=Action();self.assertEqual(self.dll.kan_find(C.byref(p),name,C.byref(a)),1)
+                frame=(C.c_uint8*(p.width*p.height))();player=Player();self.assertEqual(self.dll.kan_start(C.byref(player),C.byref(p),C.byref(a),frame,len(frame)),1)
+                self.assertEqual(self.dll.kan_next(C.byref(player)),-1);self.assertEqual(self.dll.kan_next(C.byref(player)),-1)
 if __name__=='__main__':unittest.main()

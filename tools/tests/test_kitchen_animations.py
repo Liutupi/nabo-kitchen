@@ -12,7 +12,7 @@ from PIL import Image
 from animation_codec import (ACTION, FRAME, HEADER, DELTA_RAW, DELTA_RLE, KEY_RAW,
                              KEY_RLE, REPEAT, pack_animations, unpack_animations)
 from asset_codec import OUTLINE, rgb565
-from pack_animations import key_and_prepare, parse_selections, sampling_indices
+from pack_animations import animation_profile, key_and_prepare, parse_selections, sampling_indices
 
 
 class AnimationCodecTests(unittest.TestCase):
@@ -158,6 +158,21 @@ class AnimationCodecTests(unittest.TestCase):
         FRAME.pack_into(corrupt, at, *frame)
         with self.assertRaisesRegex(ValueError, 'reconstructed'):
             unpack_animations(self.repaired(corrupt))
+
+    def test_24fps_profile_preserves_action_durations(self):
+        standard, smooth = animation_profile(12), animation_profile(24)
+        for ident in standard:
+            old_count, old_loop, old_pose = standard[ident]
+            count, loop, pose = smooth[ident]
+            self.assertEqual(count, old_count * 2)
+            self.assertEqual(count / 24, old_count / 12)
+            self.assertEqual((loop, pose), (old_loop, old_pose))
+        for invalid in (0, 1, 25):
+            with self.assertRaises(ValueError):
+                animation_profile(invalid)
+        decoded = unpack_animations(pack_animations(self.actions, self.palette, self.size, (16, 23), 24))
+        self.assertEqual(decoded.fps, 24)
+        self.assertEqual(decoded.actions['idle']['frames'], self.frames)
 
     def test_source_selection_is_integer_deterministic_and_preserves_ends(self):
         self.assertEqual(sampling_indices(49, 8), [0, 7, 14, 21, 27, 34, 41, 48])

@@ -1,0 +1,93 @@
+{
+ "id": "xiaochao-rou",
+ "name": "小炒肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "湘",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_belly",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "五花肉切薄片；青椒去籽切片，蒜切片，生熟分开。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放油，中火炒肉片约5分钟，翻面至熟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "加蒜和青椒，继续翻炒约2分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "加入生抽和少许盐翻匀。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "测厚肉片中心至少63℃，关火静置3分钟。",
+   "method": "stir_fry",
+   "heat": "off",
+   "timer": 180,
+   "tip": "使用食物温度计"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "pork_belly__slices_stirfried",
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

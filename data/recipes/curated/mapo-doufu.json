@@ -1,0 +1,110 @@
+{
+ "id": "mapo-doufu",
+ "name": "麻婆豆腐",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "川",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "pork_mince",
+   "qty": 100,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "chili_bean",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "200毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切块，蒜葱切末；处理肉末的器具单独清洗。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放油，中火炒散肉末至变色。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "将肉末聚拢，测中心至少71℃，不足继续炒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "tip": "使用食物温度计"
+  },
+  {
+   "text": "加入蒜末、豆瓣酱和生抽，小火炒香。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "加入豆腐和180毫升水，煮开后小火煮4分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 240
+  },
+  {
+   "text": "淀粉与20毫升水调匀，倒入锅中煮开，撒葱后关火。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "chili",
+  "layers": [
+   "tofu__cubes_braised",
+   "pork_mince__crumbs"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

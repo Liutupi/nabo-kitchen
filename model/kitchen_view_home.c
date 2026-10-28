@@ -87,7 +87,7 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
         kv_label(c, s, &s->assets->han18, 60, 116, 164, 27, INK, "今天吃什么");
         kv_label(c, s, &s->assets->han12, 60, 144, 164, 20, INK, "颠一下锅，马上决定");
         const char* names[] = {"冰箱", "买菜单", "我的菜谱", "设置"};
-        const char* icons[] = {"ui_lantern_dot", "prop_bowl", "badge_1", "ui_timer_icon"};
+        const char* icons[] = {"ui_fridge", "ui_shopping", "ui_recipe_book", "ui_settings"};
         uint16_t colors[] = {BLUE, GREEN, YELLOW, RGB(197, 195, 211)};
         for (unsigned i = 0; i < 4; ++i) {
             int x = 8 + (i % 2) * 116, y = 180 + (i / 2) * 50;
@@ -165,13 +165,24 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
             keyrow(c, s, 280, "OK", "开始做这道", 1);
         } else if (u->result_count) {
             card(c, 8, 44, 224, 116, PANEL, 0);
-            kg_circle(c, 120, 101, 52, RGB(58, 48, 75));
-            kg_circle(c, 120, 101, 40, RGB(71, 53, 75));
+            /* A warm little stage keeps every layered dish visually distinct. */
+            kg_circle(c, 120, 101, 53, RGB(58, 48, 75));
+            kg_circle(c, 120, 101, 42, RGB(71, 53, 75));
+            kg_rect(c, 22, 147, 196, 2, RGB(84, 62, 77));
+            kg_rect(c, 30, 76, 2, 8, GOLD);
+            kg_rect(c, 27, 79, 8, 2, GOLD);
+            kg_rect(c, 205, 100, 2, 7, RGB(124, 100, 125));
+            kg_rect(c, 203, 102, 6, 2, RGB(124, 100, 125));
             kv_food(c, s, u->recipe, 45, 46, 150, 112);
             kv_label(c, s, &s->assets->han20, 12, 164, 220, 30, PAPER,
                      u->catalog->items[u->recipe].name);
+            kg_round_rect(c, 12, 192, 75, 20, 6, PANEL);
+            kv_icon(c, s, "ui_timer_icon", 17, 194, 14, 14);
             snprintf(text, sizeof(text), "%u 分钟", u->catalog->items[u->recipe].recipe.minutes);
-            kv_label(c, s, &s->assets->han12, 12, 193, 110, 20, DIM, text);
+            kv_label(c, s, &s->assets->han12, 34, 193, 53, 18, PAPER, text);
+            kg_round_rect(c, 91, 192, 53, 20, 6, PANEL);
+            snprintf(text, sizeof(text), "难度 %u", u->catalog->items[u->recipe].difficulty);
+            kv_label(c, s, &s->assets->han12, 95, 193, 48, 18, PAPER, text);
             keyrow(c, s, 216, "↑", "回吧台", 0);
             keyrow(c, s, 250, "↓", "换一道", 0);
             keyrow(c, s, 284, "OK", "开做！", 1);

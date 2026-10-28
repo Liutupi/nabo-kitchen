@@ -183,3 +183,7 @@ fish_whole__soup,dish-L2,dish-layers/fish_whole__soup.png,160x120,640x480,0.1,Co
 pork_mince__patty_egg_steamed,dish-L2,dish-layers/pork_mince__patty_egg_steamed.png,160x120,640x480,0.1,Codex,review,肉饼上蒸熟鸡蛋；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
 beef__chunks_stewed,dish-L2,dish-layers/beef__chunks_stewed.png,160x120,640x480,0.1,Codex,review,汤里炖熟牛肉块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
 potato__chunks_soup,dish-L2,dish-layers/potato__chunks_soup.png,160x120,640x480,0.1,Codex,review,汤里原色土豆块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+ui_fridge,icon,icons/ui_fridge.png,40x40,160x160,0.1,Codex,review,冰箱入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_shopping,icon,icons/ui_shopping.png,40x40,160x160,0.1,Codex,review,买菜单入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_recipe_book,icon,icons/ui_recipe_book.png,40x40,160x160,0.1,Codex,review,我的菜谱入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_settings,icon,icons/ui_settings.png,40x40,160x160,0.1,Codex,review,设置入口图标；程序几何绘制；待目标尺寸与实机审图

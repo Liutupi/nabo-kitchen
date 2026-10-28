@@ -34,6 +34,8 @@ def profile(row):
         return 'icons', 'ui-glyph', dimensions[ident], False, False
     if ident.startswith('badge_'):
         return 'icons', 'badge', (40, 40), False, False
+    if ident in ('ui_fridge', 'ui_shopping', 'ui_recipe_book', 'ui_settings'):
+        return 'icons', 'menu-icon', (40, 40), False, False
     if ident.startswith(('heat_', 'method_')):
         return 'icons', 'method-heat', (24, 24), False, False
     raise ValueError(f'no explicit packing profile for {ident}')

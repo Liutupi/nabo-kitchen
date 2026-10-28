@@ -47,8 +47,17 @@ static void time_ring(kg_canvas* c, int64_t left, int64_t total, int done) {
     uint32_t limit = total > 0 ? (uint32_t)(((uint64_t)left * 65536) / (uint64_t)total) : 0;
     if (limit > 65536)
         limit = 65536;
-    for (int y = 46; y < 194; ++y)
-        for (int x = 46; x < 194; ++x) {
+    /* Restrict work to the active strip; the circle is identical to a full frame. */
+    int first_y = c->clip_y0 > 46 ? c->clip_y0 : 46;
+    int last_y = c->clip_y1 < 194 ? c->clip_y1 : 194;
+    int first_x = c->clip_x0 > 46 ? c->clip_x0 : 46;
+    int last_x = c->clip_x1 < 194 ? c->clip_x1 : 194;
+    if (first_y < c->y)
+        first_y = c->y;
+    if (last_y > c->y + c->height)
+        last_y = c->y + c->height;
+    for (int y = first_y; y < last_y; ++y)
+        for (int x = first_x; x < last_x; ++x) {
             int dx = x - 120, dy = y - 120, r = dx * dx + dy * dy;
             if (r < 57 * 57 || r > 71 * 71)
                 continue;
@@ -130,7 +139,13 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
                 c->error = 1;
                 break;
             }
-            kv_icon(c, s, km_ingredients[v->id].id, 14, y, 32, 32);
+            /* Do not lay out rows entirely outside the paper viewport: negative
+             * offscreen coordinates are valid, not a failed glyph render. */
+            if (y + 36 <= 46 || y >= 230)
+                continue;
+            if (v->main)
+                kg_round_rect(c, 12, y + 2, 3, 27, 1, GOLD);
+            kv_icon(c, s, km_ingredients[v->id].id, 17, y, 30, 30);
             kv_label(c, s, &a->han16, 52, y + 3, 110, 29, INK, km_ingredients[v->id].name);
             uint64_t amount = ((uint64_t)v->qty100 * u->conditions.people +
                                u->catalog->items[u->recipe].servings / 2) /
@@ -139,6 +154,7 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
             fixed(n, sizeof(n), (uint32_t)amount);
             snprintf(text, sizeof(text), "%s %s", n, units[v->unit]);
             kv_label(c, s, &a->han12, 164, y + 6, 60, 24, INK, text);
+            kg_rect(c, 52, y + 33, 167, 1, PAPER2);
         }
         for (unsigned i = 0; i < s->seasoning_count; ++i) {
             const kc_seasoning* v = &s->seasonings[i];
@@ -147,16 +163,27 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
                 c->error = 1;
                 break;
             }
+            if (y + 24 <= 46 || y >= 230)
+                continue;
             char amount[48];
             seasoning_quantity(amount, sizeof(amount), v->quantity, u->conditions.people,
                                u->catalog->items[u->recipe].servings);
             snprintf(text, sizeof(text), "%s %s", km_seasoning_names[v->id], amount);
-            kv_label(c, s, &a->han12, 16, y, 208, 22, INK, text);
+            kg_circle(c, 20, y + 9, 2, GOLD);
+            kv_label(c, s, &a->han12, 27, y, 195, 22, INK, text);
         }
         c->clip_x0 = x0;
         c->clip_y0 = y0;
         c->clip_x1 = x1;
         c->clip_y1 = y1;
+        if (u->paper_scroll_max) {
+            unsigned bar = 174u * 180u / (180u + u->paper_scroll_max);
+            if (bar < 12)
+                bar = 12;
+            unsigned top = (174u - bar) * u->paper_scroll / u->paper_scroll_max;
+            kg_round_rect(c, 226, 51, 3, 174, 1, PAPER2);
+            kg_round_rect(c, 226, 51 + (int)top, 3, (int)bar, 1, GOLD);
+        }
         kg_round_rect(c, 8, 242, 224, 38, 9, TOMATO);
         kv_label(c, s, &a->han16, 76, 247, 130, 30, WHITE, "OK 开始跟做");
         kv_footer(c, s, "↓ 加买菜单 · 长 ↓ 翻页 · OK 跟做");
@@ -175,8 +202,10 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
         kv_icon(c, s, text, 58, 74, 16, 16);
         kv_label(c, s, &a->han12, 77, 72, 48, 22, INK, heat_label(s->step.heat));
         snprintf(text, sizeof(text), "method_%s", km_methods[s->step.method]);
-        kv_icon(c, s, text, 128, 74, 16, 16);
-        kv_label(c, s, &a->han12, 148, 72, 68, 22, INK, method_label(s->step.method));
+        kv_icon(c, s, text, 119, 74, 16, 16);
+        kv_label(c, s, &a->han12, 139, 72, 49, 22, INK, method_label(s->step.method));
+        snprintf(text, sizeof(text), "%u/%u", u->sessions[u->recipe].index + 1, s->step_count);
+        kv_label(c, s, &a->latin12, 190, 73, 30, 18, RGB(124, 105, 116), text);
         int x0 = c->clip_x0, y0 = c->clip_y0, x1 = c->clip_x1, y1 = c->clip_y1;
         unsigned height = s->step.tip[0] ? 75 : 100;
         kg_clip(c, 20, 110, 202, height);
@@ -192,6 +221,7 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
             kv_label(c, s, &a->han12, 21, 185, 198, 19, INK, s->step.tip);
         }
         kg_round_rect(c, 8, 220, 150, 56, 10, PAPER2);
+        kg_round_rect(c, 8, 226, 4, 44, 2, s->step.timer_seconds ? BLUE : GREEN);
         const kt_timer* t = current_timer(u, u->recipe, u->sessions[u->recipe].index);
         if (t)
             time_text(text, sizeof(text), kt_remaining(t, s->now));
@@ -201,9 +231,21 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
             snprintf(text, sizeof(text), "准备好");
         kv_label(c, s, &a->han16, 24, 224, 126, 26, INK, text);
         kv_label(c, s, &a->han12, 24, 251, 126, 20, INK,
-                 t                       ? "后台计时中"
-                 : s->step.timer_seconds ? "OK 开始计时"
-                                         : "OK 下一步");
+                 t && t->status == KT_DONE     ? "时间到"
+                 : t && t->status == KT_PAUSED ? "已暂停"
+                 : t                           ? "后台计时中"
+                 : s->step.timer_seconds       ? "OK 开始计时"
+                                               : "OK 下一步");
+        if (t && t->total_ms > 0) {
+            int64_t left = kt_remaining(t, s->now);
+            unsigned progress =
+                (unsigned)(((uint64_t)(t->total_ms - left) * 126) / (uint64_t)t->total_ms);
+            if (progress > 126)
+                progress = 126;
+            kg_round_rect(c, 24, 270, 126, 3, 1, RGB(218, 205, 190));
+            if (progress)
+                kg_round_rect(c, 24, 270, (int)progress, 3, 1, BLUE);
+        }
         kv_icon(c, s, s->step.timer_seconds ? "face_focus" : "face_go", 176, 218, 56, 56);
         kv_footer(c, s, "OK 下一步 · ↑ 上一步 · 长 ↓ 用料");
         return;
@@ -229,16 +271,37 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
     }
     if (u->page == 8) {
         kv_header(c, s, "做好啦！", GREEN);
+        kg_circle(c, 120, 108, 60, RGB(43, 46, 57));
+        kg_circle(c, 120, 108, 47, RGB(54, 58, 62));
+        static const struct {
+            int16_t x, y;
+            uint16_t color;
+        } confetti[] = {{20, 60, GOLD},   {36, 86, BLUE},   {205, 65, TOMATO}, {219, 112, YELLOW},
+                        {20, 140, GREEN}, {212, 148, BLUE}, {48, 55, YELLOW},  {192, 132, GOLD}};
+        /* Deterministic slow drift requires no retained frame buffer or timer. */
+        unsigned phase = (unsigned)((uint64_t)(s->now >= 0 ? s->now : 0) / 240u % 8u);
+        for (unsigned i = 0; i < sizeof(confetti) / sizeof(*confetti); ++i) {
+            int drift = (int)((phase + i * 3u) % 8u);
+            kg_rect(c, confetti[i].x, confetti[i].y + drift, (i & 1) ? 3 : 5, (i & 1) ? 5 : 3,
+                    confetti[i].color);
+        }
         kv_food(c, s, u->recipe, 40, 48, 160, 120);
-        kv_icon(c, s, "ui_stamp_done", 142, 44, 64, 64);
+        kv_icon(c, s, "ui_stamp_done", 148, 44, 64, 64);
         kv_label(c, s, &a->han20, 12, 176, 220, 30, PAPER, u->catalog->items[u->recipe].name);
         ks_stats stats = ks_get_stats(&u->store, u->day);
         snprintf(text, sizeof(text), "我的菜谱 %u / %u", (unsigned)stats.unique, u->catalog->count);
-        kv_label(c, s, &a->han12, 12, 208, 160, 20, DIM, text);
-        snprintf(text, sizeof(text), "连续 %u 天 · 今日 %u 道", (unsigned)stats.streak,
-                 (unsigned)stats.today);
-        kv_label(c, s, &a->han12, 12, 238, 150, 22, PAPER, text);
-        kv_portrait(c, s, 112, 192, 128);
+        kv_label(c, s, &a->han12, 12, 208, 120, 20, DIM, text);
+        kg_round_rect(c, 12, 230, 113, 5, 2, PANEL);
+        unsigned fill = u->catalog->count ? (unsigned)(stats.unique * 113 / u->catalog->count) : 0;
+        if (fill > 113)
+            fill = 113;
+        if (fill)
+            kg_round_rect(c, 12, 230, (int)fill, 5, 2, GREEN);
+        snprintf(text, sizeof(text), "连续 %u 天", (unsigned)stats.streak);
+        kv_label(c, s, &a->han12, 12, 241, 114, 20, PAPER, text);
+        snprintf(text, sizeof(text), "今日 %u 道", (unsigned)stats.today);
+        kv_label(c, s, &a->han12, 12, 262, 114, 20, PAPER, text);
+        kv_portrait(c, s, 126, 192, 128);
         kv_footer(c, s, "OK 回吧台");
     }
 }

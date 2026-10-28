@@ -6,6 +6,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from package_fixtures import FROZEN,FROZEN_META,selected,recipe_ids,dictionary
 ROOT=Path(__file__).resolve().parents[2]
 class Shopping(C.Structure):
     _fields_=[('uid',C.c_uint32),('qty100',C.c_uint32),('id',C.c_uint8),('unit',C.c_uint8),('bought',C.c_uint8)]
@@ -13,15 +14,21 @@ READ=C.CFUNCTYPE(C.c_int,C.c_void_p,C.c_uint,C.POINTER(C.c_uint8),C.c_size_t,C.P
 WRITE=C.CFUNCTYPE(C.c_int,C.c_void_p,C.c_uint,C.POINTER(C.c_uint8),C.c_size_t)
 class JournalIO(C.Structure):_fields_=[('context',C.c_void_p),('read',READ),('write',WRITE)]
 class UiParity(unittest.TestCase):
+    recipe_path=FROZEN
+    metadata_path=FROZEN_META
+    complete=False
     @classmethod
     def setUpClass(cls):
         cjson=os.environ.get('CJSON_DIR')
         if not cjson or not (Path(cjson)/'cJSON.c').is_file():raise unittest.SkipTest('Set CJSON_DIR to pinned ESP-IDF cJSON')
-        cls.trace=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/ui_trace.cjs')]))
+        cls.ids=recipe_ids(cls.recipe_path,cls.complete)
+        if not cls.complete:assert len(cls.ids)==30
+        env=os.environ.copy();env['KITCHEN_TEST_RECIPE_IDS']=json.dumps(cls.ids)
+        cls.trace=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/ui_trace.cjs')],env=env))
         cls.tmp=tempfile.TemporaryDirectory();library=Path(cls.tmp.name)/'ui.so'
-        sources=['kitchen_ui.c','kitchen_lists.c','kitchen_model.c','kitchen_recommend.c','kitchen_session.c','kitchen_timer.c','kitchen_krc.c','kitchen_catalog.c','kitchen_metadata.c','kitchen_save.c','kitchen_journal.c']
+        sources=['kitchen_ui.c','kitchen_lists.c','kitchen_model.c','kitchen_recommend.c','kitchen_session.c','kitchen_timer.c','kitchen_krc.c','kitchen_catalog.c','kitchen_save.c','kitchen_journal.c']
         subprocess.run(['cc','-std=c11','-Wall','-Wextra','-Werror','-shared','-fPIC','-I',str(ROOT/'model'),'-I',cjson,
-                        *[str(ROOT/'model'/x) for x in sources],str(ROOT/'model/tests/ui_host.c'),str(Path(cjson)/'cJSON.c'),'-o',str(library)],check=True)
+                        *[str(ROOT/'model'/x) for x in sources],str(cls.metadata_path),str(ROOT/'model/tests/ui_host.c'),str(Path(cjson)/'cJSON.c'),'-o',str(library)],check=True)
         cls.dll=C.CDLL(str(library));cls.dll.host_init.argtypes=[C.POINTER(C.c_uint8),C.c_size_t,C.c_int32,C.c_uint,C.c_uint32,
             C.POINTER(C.c_uint8),C.c_uint,C.POINTER(C.c_uint8),C.c_uint]
         cls.dll.host_key.argtypes=[C.c_int,C.c_int,C.c_int64];cls.dll.host_tick.argtypes=[C.c_int64]
@@ -35,13 +42,16 @@ class UiParity(unittest.TestCase):
         cls.dll.host_save_info.argtypes=[C.c_int64];cls.dll.host_save_info.restype=C.c_char_p
         cls.dll.host_journal_load.argtypes=[C.POINTER(JournalIO),C.c_int64,C.c_int64,C.POINTER(C.c_int)]
         cls.dll.host_journal_store.argtypes=[C.POINTER(JournalIO),C.c_int64,C.c_int64]
-        blob=(ROOT/'checkpoints/2026-10-28/packages/kitchen_recipes.krc').read_bytes()
+        blob=cls.recipe_path.read_bytes()
         cls.buf=(C.c_uint8*len(blob)).from_buffer_copy(blob)
-        import sys
-        sys.path.insert(0,str(ROOT/'tools'));from build_firmware_metadata import build
-        meta=json.loads(build());cls.order=(C.c_uint8*len(meta['ingredient_order']))(*meta['ingredient_order'])
-        cls.fridge=(C.c_uint8*len(meta['fridge_order']))(*meta['fridge_order'])
-        cls.lists=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/lists_trace.mjs')]))
+        ingredients=json.loads((ROOT/'data/ingredients.json').read_text())['ingredients']
+        ordinals={x:i for i,x in enumerate(dictionary(blob)['ingredients'])}
+        assert set(ordinals)=={x['id'] for x in ingredients}
+        order=[ordinals[x['id']] for x in ingredients]
+        fridge=[ordinals[x['id']] for x in ingredients if x['v']==1]
+        cls.order=(C.c_uint8*len(order))(*order)
+        cls.fridge=(C.c_uint8*len(fridge))(*fridge)
+        cls.lists=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/lists_trace.mjs')],env=env))
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
     def test_actual_browser_flow(self):
@@ -115,4 +125,8 @@ class UiParity(unittest.TestCase):
         self.assertEqual(self.dll.host_journal_load(C.byref(io),2500,1800000000000,C.byref(lost)),4)
         self.assertEqual(self.dll.host_journal_store(C.byref(io),2500,1800000000000),2)
         read_error[0]=True;self.assertEqual(self.dll.host_journal_load(C.byref(io),2500,1800000000000,C.byref(lost)),2)
+if selected():
+    class UiParitySelected(UiParity):
+        recipe_path,metadata_path=selected()
+        complete=True
 if __name__=='__main__':unittest.main()

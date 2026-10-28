@@ -1,0 +1,100 @@
+{
+ "id": "jiangcong-menji",
+ "name": "姜葱焖鸡",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 500,
+   "unit": "克",
+   "main": true,
+   "note": "去骨"
+  },
+  {
+   "id": "ginger",
+   "qty": 20,
+   "unit": "克"
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "200毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "去骨鸡腿切块，姜切片，葱切段；生熟用具分开。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放油和姜片，中火炒香，加入鸡块翻炒。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加生抽、料酒和200毫升水，煮开后盖盖。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "转小火焖约15分钟，期间翻动并留意锅中水量。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "测最厚鸡块中心至少74℃，不足继续加热。",
+   "method": "braise",
+   "heat": "low",
+   "tip": "使用食物温度计"
+  },
+  {
+   "text": "加入葱段翻匀，关火盛出。",
+   "method": "stir_fry",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "claypot",
+  "sauce": "braise",
+  "layers": [
+   "chicken_thigh__pieces_braised"
+  ],
+  "garnish": [
+   "scallion",
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

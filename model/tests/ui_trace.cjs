@@ -11,6 +11,7 @@ const root=path.resolve(__dirname,'../..');
     browser=await chromium.launch({headless:true,executablePath:process.env.EDGE_PATH||'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'});
     const page=await browser.newPage();await page.goto(base+'/?test=1');await page.waitForFunction(()=>window.kitchenTest?.ready);
     const ids=(await (await fetch(base+'/api/recipes')).json()).map(x=>x.id);
+    if(process.env.KITCHEN_TEST_RECIPE_IDS && JSON.stringify(ids)!==JSON.stringify(JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS)))throw Error('Browser recipe set differs from KRC');
     const ingredients=(await (await fetch(base+'/data/ingredients.json')).json()).ingredients.map(x=>x.id).sort();
     const mask=(values,table)=>values.reduce((n,x)=>n|(1n<<BigInt(table.indexOf(x))),0n).toString();
     await page.evaluate(()=>window.kitchenTest.reset());

@@ -1,4 +1,5 @@
 import binascii
+from package_fixtures import selected,recipe_ids
 import ctypes as C
 import json
 from pathlib import Path
@@ -48,11 +49,17 @@ def translate(r,d):
 def reseal(data):struct.pack_into('<I',data,44,binascii.crc32(data[48:]))
 class KrcReader(unittest.TestCase):
     @classmethod
-    def setUpClass(cls):cls.tmp=tempfile.TemporaryDirectory();cls.dll=library(cls.tmp.name);cls.data=PACKAGE.read_bytes()
+    def setUpClass(cls):cls.tmp=tempfile.TemporaryDirectory();cls.dll=library(cls.tmp.name);cls.data=PACKAGE.read_bytes();cls.selected=selected()
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
     def test_all_real_recipes_match_sources(self):
-        ok,p,keep=open_pack(self.dll,self.data);self.assertEqual(ok,1);self.assertEqual(p.count,30)
+        self._check_real(PACKAGE,False)
+        if self.selected:self._check_real(self.selected[0],True)
+    def _check_real(self,path,complete):
+        self.data=path.read_bytes()
+        ids=recipe_ids(path,complete)
+        ok,p,keep=open_pack(self.dll,self.data);self.assertEqual(ok,1);self.assertEqual(p.count,len(ids))
+        if not complete:self.assertEqual(p.count,30)
         dictionary=json.loads(self.data[p.dictionary_offset:p.dictionary_offset+p.dictionary_length])
         for i in range(p.count):
             info=Index();self.assertEqual(self.dll.krc_index_at(C.byref(p),i,C.byref(info)),1)
@@ -68,6 +75,10 @@ class KrcReader(unittest.TestCase):
         self.assertEqual(self.dll.krc_index_at(C.byref(p),p.count,C.byref(Index())),0)
         self.assertEqual(self.dll.krc_read_body(C.byref(p),0,(C.c_uint8*1)(),1),-1)
     def test_corrupt_sections_and_bodies_fail(self):
+        for path in [PACKAGE]+([self.selected[0]] if self.selected else []):
+            with self.subTest(path=path):self._check_corrupt(path.read_bytes())
+    def _check_corrupt(self,data):
+        self.data=data
         for cut in (0,1,47,48,len(self.data)-1):
             self.assertEqual(open_pack(self.dll,self.data[:cut])[0],0)
         bad=bytearray(self.data);bad[-1]^=1;self.assertEqual(open_pack(self.dll,bad)[0],0)

@@ -2,7 +2,8 @@ import {readFile,readdir} from 'node:fs/promises';
 import {fridgeMatch} from '../../prototype/model.mjs';
 import {initialState,addShopping} from '../../prototype/state.mjs';
 const dir=new URL('../../data/recipes/curated/',import.meta.url);
-const recipes=await Promise.all((await readdir(dir)).filter(f=>f.endsWith('.json')).sort().map(async f=>JSON.parse(await readFile(new URL(f,dir),'utf8'))));
+let recipes=await Promise.all((await readdir(dir)).filter(f=>f.endsWith('.json')).sort().map(async f=>JSON.parse(await readFile(new URL(f,dir),'utf8'))));
+if(process.env.KITCHEN_TEST_RECIPE_IDS){const ids=JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS);const byId=new Map(recipes.map(x=>[x.id,x]));if(ids.some(x=>!byId.has(x)))throw Error('Missing test recipe');recipes=ids.map(x=>byId.get(x));}
 const ingredients=JSON.parse(await readFile(new URL('../../data/ingredients.json',import.meta.url),'utf8')).ingredients.map(x=>x.id).sort();
 const mask=xs=>xs.reduce((n,x)=>n|(1n<<BigInt(ingredients.indexOf(x))),0n).toString();
 let seed=0x87654321;const fridge=[];

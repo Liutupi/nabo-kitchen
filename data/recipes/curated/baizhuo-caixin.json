@@ -1,0 +1,84 @@
+{
+ "id": "baizhuo-caixin",
+ "name": "白灼菜心",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "清淡",
+  "适合新手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "choy_sum",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "715毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "菜心洗净，较粗菜梗对半切开；蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中加700毫升水和1小勺油，煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "放入菜心，水再开后煮约90秒至菜梗熟透。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 90
+  },
+  {
+   "text": "捞出沥水摆盘；小锅放剩余油，小火炒香蒜末。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "加入生抽和1大勺水煮开，淋在菜心上。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "choy_sum__blanched"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

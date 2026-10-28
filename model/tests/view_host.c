@@ -40,3 +40,39 @@ int view_boot_skip(void){
     ku_key(&state,KI_OK,KI_SHORT,1100);
     return state.page;
 }
+/* Additional visual-state probes; no user data or device interaction. */
+int view_combo(unsigned selected) {
+    if (selected >= 4 || catalog.count < 4) return 0;
+    state.page = 4; state.result_count = 4; state.result_focus = (uint8_t)selected;
+    for (unsigned i = 0; i < 4; ++i) state.result[i] = (uint16_t)i;
+    state.recipe = state.result[selected];
+    return kv_prepare(&scene, &state, &assets, 1000, 80, "20:30", frame);
+}
+int view_paper_scroll(unsigned offset) {
+    if (state.page != 5 || offset > UINT16_MAX) return 0;
+    state.paper_scroll = (uint16_t)offset;
+    return kv_prepare(&scene, &state, &assets, 1000, 80, "20:30", frame);
+}
+unsigned view_paper_max(void) { return state.paper_scroll_max; }
+int view_step_timer(unsigned kind) {
+    if (state.page != 6 || kind > 2) return 0;
+    kt_init(&state.timers);memset(state.timer_ids, 0, sizeof(state.timer_ids));
+    uint32_t id;if (!kt_add(&state.timers, 90, 1000, &id)) return 0;
+    state.timer_ids[0] = id;state.timer_recipe[0] = state.recipe;
+    state.timer_step[0] = state.sessions[state.recipe].index;
+    if (kind == 1) kt_toggle(&state.timers, id, 21000);
+    if (kind == 2 && !kt_tick(&state.timers, 91000)) return 0;
+    return kv_prepare(&scene, &state, &assets, kind == 2 ? 91000 : 21000, 80, "20:30", frame);
+}
+int view_complete_progress(void) {
+    if (state.page != 8) return 0;
+    state.store.cooked[0] = (ks_cooked){state.recipe, 1, state.day};
+    state.store.cooked_count = 1;
+    state.store.history[0] = (ks_record){state.recipe, state.day};
+    state.store.history_count = 1;
+    return kv_prepare(&scene, &state, &assets, 1000, 80, "20:30", frame);
+}
+
+int view_scene_time(unsigned elapsed) {
+    return kv_prepare(&scene, &state, &assets, 1000 + (int64_t)elapsed, 80, "20:30", frame);
+}

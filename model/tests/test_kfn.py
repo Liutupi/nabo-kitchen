@@ -1,5 +1,6 @@
 import binascii
 import ctypes as C
+import os
 from pathlib import Path
 import struct
 import subprocess
@@ -33,23 +34,33 @@ class FontReader(unittest.TestCase):
         cls.data=(ROOT/'checkpoints/2026-10-28/packages/kitchen_fonts.bin').read_bytes()
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
+    def sources(self):
+        yield 'frozen',self.data
+        if os.environ.get('KITCHEN_FONTS'):
+            yield 'candidate',Path(os.environ['KITCHEN_FONTS']).read_bytes()
     def test_all_frozen_glyphs_match_reference(self):
-        ok,p,keep=opened(self.dll,self.data);self.assertEqual(ok,1);reference=unpack_fonts(self.data)
-        self.assertEqual(p.glyph_count,12447)
-        for name,font in reference.fonts.items():
-            f=Font();self.assertEqual(self.dll.kfn_find_font(C.byref(p),name.encode(),C.byref(f)),1)
-            self.assertEqual((f.px,f.bpp,f.count),(font['px'],font['bpp'],len(font['glyphs'])))
-            for cp,expected in font['glyphs'].items():
-                g=Glyph();output=(C.c_uint8*1024)()
-                self.assertEqual(self.dll.kfn_read_glyph(C.byref(p),C.byref(f),cp,C.byref(g),output,len(output)),1)
-                self.assertEqual((g.width,g.height,g.x,g.y,g.advance,bytes(output[:g.length])),
-                    (expected.width,expected.height,expected.x,expected.y,expected.advance,expected.coverage))
-            self.assertEqual(self.dll.kfn_read_glyph(C.byref(p),C.byref(f),0x10ffff,C.byref(Glyph()),(C.c_uint8*1024)(),1024),0)
+        for label,data in self.sources():
+            with self.subTest(package=label):
+                ok,p,keep=opened(self.dll,data);self.assertEqual(ok,1);reference=unpack_fonts(data)
+                count=sum(len(font['glyphs']) for font in reference.fonts.values())
+                self.assertEqual(p.glyph_count,count)
+                if label=='frozen':self.assertEqual(p.glyph_count,12447)
+                for name,font in reference.fonts.items():
+                    f=Font();self.assertEqual(self.dll.kfn_find_font(C.byref(p),name.encode(),C.byref(f)),1)
+                    self.assertEqual((f.px,f.bpp,f.count),(font['px'],font['bpp'],len(font['glyphs'])))
+                    for cp,expected in font['glyphs'].items():
+                        g=Glyph();output=(C.c_uint8*1024)()
+                        self.assertEqual(self.dll.kfn_read_glyph(C.byref(p),C.byref(f),cp,C.byref(g),output,len(output)),1)
+                        self.assertEqual((g.width,g.height,g.x,g.y,g.advance,bytes(output[:g.length])),
+                            (expected.width,expected.height,expected.x,expected.y,expected.advance,expected.coverage))
+                    self.assertEqual(self.dll.kfn_read_glyph(C.byref(p),C.byref(f),0x10ffff,C.byref(Glyph()),(C.c_uint8*1024)(),1024),0)
     def test_corruption_and_bounds(self):
-        for n in [0,1,35,len(self.data)-1]:self.assertEqual(opened(self.dll,self.data[:n])[0],0)
-        bad=bytearray(self.data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
-        bad=bytearray(self.data);struct.pack_into('<I',bad,24,0xffffffff);self.assertEqual(opened(self.dll,bad)[0],0)
-        bad=bytearray(self.data);go=struct.unpack_from('<I',bad,20)[0];bad[go+9]=2
-        struct.pack_into('<I',bad,32,binascii.crc32(bad[36:]));self.assertEqual(opened(self.dll,bad)[0],0)
-        ok,p,keep=opened(self.dll,self.data);f=Font();self.assertEqual(self.dll.kfn_find_font(C.byref(p),b'not-a-font',C.byref(f)),0)
+        for label,data in self.sources():
+            with self.subTest(package=label):
+                for n in [0,1,35,len(data)-1]:self.assertEqual(opened(self.dll,data[:n])[0],0)
+                bad=bytearray(data);bad[-1]^=1;self.assertEqual(opened(self.dll,bad)[0],0)
+                bad=bytearray(data);struct.pack_into('<I',bad,24,0xffffffff);self.assertEqual(opened(self.dll,bad)[0],0)
+                bad=bytearray(data);go=struct.unpack_from('<I',bad,20)[0];bad[go+9]=2
+                struct.pack_into('<I',bad,32,binascii.crc32(bad[36:]));self.assertEqual(opened(self.dll,bad)[0],0)
+                ok,p,keep=opened(self.dll,data);f=Font();self.assertEqual(self.dll.kfn_find_font(C.byref(p),b'not-a-font',C.byref(f)),0)
 if __name__=='__main__':unittest.main()
