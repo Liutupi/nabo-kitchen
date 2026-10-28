@@ -1,10 +1,10 @@
 id,category,path,display,source,version,owner,status,note
 costume_A,costume,costume/costume_A.png,-,1024x1024,A1,Codex,review,白大褂系围裙；A1 2026-10-28 首轮已交付，待审图
 costume_B,costume,costume/costume_B.png,-,1024x1024,A1,Codex,review,下班的医生（推荐）；A1 2026-10-28 首轮已交付，待审图
-costume_C,costume,costume/costume_C.png,-,1024x1024,A1,Codex,review,小店主；A1 2026-10-28 首轮已交付，待审图
-style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,review,菜品和食材风格样板，放进 ui-mockup 的版式里；A1 2026-10-28 首轮已交付，待审图
-K1,grok-start,grok-start/K1.png,-,1024x1024,A2,Codex,todo,空手起始
-K2,grok-start,grok-start/K2.png,-,1024x1024,A2,Codex,todo,持锅起始
+costume_C,costume,costume/costume_C.png,-,1024x1024,A1,Codex,done,小店主；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡选定 C，定稿副本 costume/costume_final.png
+style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,done,菜品和食材风格样板，放进 ui-mockup 的版式里；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
+K1,grok-start,grok-start/K1.png,-,1024x1024,A2,Codex,review,空手起始；2026-10-28 C 定稿造型，1024x1024 纯绿幕首稿，待审图
+K2,grok-start,grok-start/K2.png,-,1024x1024,A2,Codex,review,持锅起始；2026-10-28 C 定稿造型，1024x1024 纯绿幕首稿，待审图
 idle,nabo-anim,grok-clips/idle.mp4,256x256 frames,video,0.1,Grok,todo,
 toss,nabo-anim,grok-clips/toss.mp4,256x256 frames,video,0.1,Grok,todo,
 serve,nabo-anim,grok-clips/serve.mp4,256x256 frames,video,0.1,Grok,todo,
@@ -25,7 +25,7 @@ face_oops,face,icons/face_oops.png,40x40,160x160,0.3,Codex,todo,
 face_sleepy,face,icons/face_sleepy.png,40x40,160x160,0.3,Codex,todo,
 pork_belly,ingredient,ingredients/pork_belly.png,40x40,160x160,0.1,Codex,todo,五花肉
 pork_lean,ingredient,ingredients/pork_lean.png,40x40,160x160,0.1,Codex,todo,瘦肉
-pork_rib,ingredient,ingredients/pork_rib.png,40x40,160x160,0.1,Codex,review,排骨；A1 2026-10-28 首轮已交付，待审图
+pork_rib,ingredient,ingredients/pork_rib.png,40x40,160x160,0.1,Codex,done,排骨；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 pork_mince,ingredient,ingredients/pork_mince.png,40x40,160x160,0.1,Codex,todo,肉末
 chicken_whole,ingredient,ingredients/chicken_whole.png,40x40,160x160,0.1,Codex,todo,整鸡
 chicken_wing,ingredient,ingredients/chicken_wing.png,40x40,160x160,0.1,Codex,todo,鸡翅
@@ -33,18 +33,18 @@ chicken_thigh,ingredient,ingredients/chicken_thigh.png,40x40,160x160,0.1,Codex,t
 beef,ingredient,ingredients/beef.png,40x40,160x160,0.1,Codex,todo,牛肉
 lap_cheong,ingredient,ingredients/lap_cheong.png,40x40,160x160,0.1,Codex,todo,腊肠
 pork_trotter,ingredient,ingredients/pork_trotter.png,40x40,160x160,0.2,Codex,todo,猪脚
-fish_whole,ingredient,ingredients/fish_whole.png,40x40,160x160,0.1,Codex,review,鱼（鲈鱼等）；A1 2026-10-28 首轮已交付，待审图
+fish_whole,ingredient,ingredients/fish_whole.png,40x40,160x160,0.1,Codex,done,鱼（鲈鱼等）；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 shrimp,ingredient,ingredients/shrimp.png,40x40,160x160,0.1,Codex,todo,虾
 squid,ingredient,ingredients/squid.png,40x40,160x160,0.2,Codex,todo,鱿鱼
 clam,ingredient,ingredients/clam.png,40x40,160x160,0.2,Codex,todo,花甲
 fish_fillet,ingredient,ingredients/fish_fillet.png,40x40,160x160,0.2,Codex,todo,鱼片
-egg,ingredient,ingredients/egg.png,40x40,160x160,0.1,Codex,review,鸡蛋；A1 2026-10-28 首轮已交付，待审图
-tofu,ingredient,ingredients/tofu.png,40x40,160x160,0.1,Codex,review,豆腐；A1 2026-10-28 首轮已交付，待审图
+egg,ingredient,ingredients/egg.png,40x40,160x160,0.1,Codex,done,鸡蛋；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
+tofu,ingredient,ingredients/tofu.png,40x40,160x160,0.1,Codex,done,豆腐；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 tofu_dried,ingredient,ingredients/tofu_dried.png,40x40,160x160,0.2,Codex,todo,豆干
 salted_egg,ingredient,ingredients/salted_egg.png,40x40,160x160,0.2,Codex,todo,咸蛋
-tomato,ingredient,ingredients/tomato.png,40x40,160x160,0.1,Codex,review,番茄；A1 2026-10-28 首轮已交付，待审图
+tomato,ingredient,ingredients/tomato.png,40x40,160x160,0.1,Codex,done,番茄；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 potato,ingredient,ingredients/potato.png,40x40,160x160,0.1,Codex,todo,土豆
-choy_sum,ingredient,ingredients/choy_sum.png,40x40,160x160,0.1,Codex,review,菜心；A1 2026-10-28 首轮已交付，待审图
+choy_sum,ingredient,ingredients/choy_sum.png,40x40,160x160,0.1,Codex,done,菜心；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 lettuce,ingredient,ingredients/lettuce.png,40x40,160x160,0.1,Codex,todo,生菜
 napa_cabbage,ingredient,ingredients/napa_cabbage.png,40x40,160x160,0.1,Codex,todo,大白菜
 eggplant,ingredient,ingredients/eggplant.png,40x40,160x160,0.1,Codex,todo,茄子
@@ -73,8 +73,8 @@ lotus_root,ingredient,ingredients/lotus_root.png,40x40,160x160,0.2,Codex,todo,�
 pumpkin,ingredient,ingredients/pumpkin.png,40x40,160x160,0.2,Codex,todo,南瓜
 rice,ingredient,ingredients/rice.png,40x40,160x160,0.2,Codex,todo,米饭
 noodle,ingredient,ingredients/noodle.png,40x40,160x160,0.2,Codex,todo,面条
-vessel_plate,dish-L0,dish-layers/vessel_plate.png,160x120,640x480,0.1,Codex,review,A1 2026-10-28 首轮已交付，待审图
-vessel_plate_shadow,dish-L0,dish-layers/vessel_plate_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；A1 2026-10-28 首轮已交付，待审图
+vessel_plate,dish-L0,dish-layers/vessel_plate.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
+vessel_plate_shadow,dish-L0,dish-layers/vessel_plate_shadow.png,160x120,640x480,0.1,Codex,done,投影单独一层；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 vessel_oval,dish-L0,dish-layers/vessel_oval.png,160x120,640x480,0.1,Codex,todo,
 vessel_oval_shadow,dish-L0,dish-layers/vessel_oval_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
 vessel_bowl,dish-L0,dish-layers/vessel_bowl.png,160x120,640x480,0.1,Codex,todo,
@@ -89,7 +89,7 @@ sauce_clear__plate,dish-L1,dish-layers/sauce_clear__plate.png,160x120,640x480,0.
 sauce_braise__plate,dish-L1,dish-layers/sauce_braise__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_braise__bowl,dish-L1,dish-layers/sauce_braise__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_braise__claypot,dish-L1,dish-layers/sauce_braise__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_tomato__plate,dish-L1,dish-layers/sauce_tomato__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；A1 2026-10-28 首轮已交付，待审图
+sauce_tomato__plate,dish-L1,dish-layers/sauce_tomato__plate.png,160x120,640x480,0.1,Codex,done,plate 组 = plate/oval/deep 共用；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 sauce_tomato__bowl,dish-L1,dish-layers/sauce_tomato__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_tomato__claypot,dish-L1,dish-layers/sauce_tomato__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_curry__plate,dish-L1,dish-layers/sauce_curry__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
@@ -102,11 +102,11 @@ sauce_clear_soup__claypot,dish-L1,dish-layers/sauce_clear_soup__claypot.png,160x
 sauce_black_bean__plate,dish-L1,dish-layers/sauce_black_bean__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_soy_steam__plate,dish-L1,dish-layers/sauce_soy_steam__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
 sauce_chili__plate,dish-L1,dish-layers/sauce_chili__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-egg__scrambled,dish-L2,dish-layers/egg__scrambled.png,160x120,640x480,0.1,Codex,review,炒蛋块；A1 2026-10-28 首轮已交付，待审图
+egg__scrambled,dish-L2,dish-layers/egg__scrambled.png,160x120,640x480,0.1,Codex,done,炒蛋块；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 egg__ribbon,dish-L2,dish-layers/egg__ribbon.png,160x120,640x480,0.1,Codex,todo,蛋花
 egg__fried,dish-L2,dish-layers/egg__fried.png,160x120,640x480,0.1,Codex,todo,荷包蛋
 egg__steamed_custard,dish-L2,dish-layers/egg__steamed_custard.png,160x120,640x480,0.1,Codex,todo,蒸水蛋
-tomato__wedge_cooked,dish-L2,dish-layers/tomato__wedge_cooked.png,160x120,640x480,0.1,Codex,review,炒软的番茄块；A1 2026-10-28 首轮已交付，待审图
+tomato__wedge_cooked,dish-L2,dish-layers/tomato__wedge_cooked.png,160x120,640x480,0.1,Codex,done,炒软的番茄块；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 tomato__wedge_soup,dish-L2,dish-layers/tomato__wedge_soup.png,160x120,640x480,0.1,Codex,todo,汤里的番茄块
 pork_belly__braised,dish-L2,dish-layers/pork_belly__braised.png,160x120,640x480,0.1,Codex,todo,红烧肉块
 pork_belly__slices_stirfried,dish-L2,dish-layers/pork_belly__slices_stirfried.png,160x120,640x480,0.1,Codex,todo,小炒五花肉片
@@ -142,13 +142,13 @@ broccoli__florets,dish-L2,dish-layers/broccoli__florets.png,160x120,640x480,0.1,
 winter_melon__soup_chunks,dish-L2,dish-layers/winter_melon__soup_chunks.png,160x120,640x480,0.1,Codex,todo,汤里的冬瓜块
 shiitake__braised,dish-L2,dish-layers/shiitake__braised.png,160x120,640x480,0.1,Codex,todo,焖香菇
 onion__slices,dish-L2,dish-layers/onion__slices.png,160x120,640x480,0.1,Codex,todo,洋葱丝
-garnish_scallion,dish-L3,dish-layers/garnish_scallion.png,160x120,640x480,0.1,Codex,review,A1 2026-10-28 首轮已交付，待审图
+garnish_scallion,dish-L3,dish-layers/garnish_scallion.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 garnish_chili_ring,dish-L3,dish-layers/garnish_chili_ring.png,160x120,640x480,0.1,Codex,todo,
 garnish_sesame,dish-L3,dish-layers/garnish_sesame.png,160x120,640x480,0.1,Codex,todo,
 garnish_cilantro,dish-L3,dish-layers/garnish_cilantro.png,160x120,640x480,0.1,Codex,todo,
 garnish_ginger_shred,dish-L3,dish-layers/garnish_ginger_shred.png,160x120,640x480,0.1,Codex,todo,
 garnish_garlic,dish-L3,dish-layers/garnish_garlic.png,160x120,640x480,0.1,Codex,todo,
-garnish_shine,dish-L3,dish-layers/garnish_shine.png,160x120,640x480,0.1,Codex,review,A1 2026-10-28 首轮已交付，待审图
+garnish_shine,dish-L3,dish-layers/garnish_shine.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 heat_high,icon,icons/heat_high.png,24x24,96x96,0.2,Codex,todo,
 heat_mid,icon,icons/heat_mid.png,24x24,96x96,0.2,Codex,todo,
 heat_low,icon,icons/heat_low.png,24x24,96x96,0.2,Codex,todo,

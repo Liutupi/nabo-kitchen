@@ -1,0 +1,86 @@
+{
+  "id": "K1",
+  "round": "A2 / CODEX_PROMPTS round2",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "selected_costume": "C, selected by Liu Dongpo in chat on2026-10-28",
+  "costume_final": "../costume/costume_final.png",
+  "costume_source_sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+  "identity_reference": "../reference/nabo-idle.png",
+  "identity_rule": "same NABO face, eyes, black round glasses, brown hair, white baseball cap; ECG+NABO upright, never mirrored",
+  "canvas": {
+    "size": [
+      1024,
+      1024
+    ],
+    "background": "#00FF00",
+    "bottom_anchor": [
+      512,
+      1023
+    ],
+    "cap_top_expected_y": 60,
+    "processed_frame_target": [
+      192,
+      192
+    ],
+    "processed_anchor": [
+      96,
+      191
+    ]
+  },
+  "pose": "Empty hands lightly clasped; white cloth on anatomicalLEFT forearm/viewerRIGHT; C right-shoulder towel retained.",
+  "native_originals_local": "private/a2/native/K1.png (ignored)",
+  "delivery_processing": "Alpha<8 invisible-edge dust cleared, uniform resampling/layout, composited onto exact opaque#00FF00; no face/body/hat repaint, no mirroring.",
+  "head_registration": "K1 is shared head-layout reference",
+  "qa": {
+    "size": [
+      1024,
+      1024
+    ],
+    "opaque_bg": "#00FF00",
+    "subject_bbox_alpha128": [
+      231,
+      62,
+      801,
+      1024
+    ],
+    "green_foreground_pixels_alpha128": 0,
+    "corners": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "sha256": "6f1be640cf2e940a0254a6cbf012e7c0dc4cc39c2392b828d6294917d08297dd"
+  },
+  "visual_checks": [
+    "Identity/outfitC visually inspected",
+    "Correct upright NABO+ECG hatlogo; not mirrored",
+    "Body/props no green",
+    "Waist cropped at bottom",
+    "Head overlay and150px proof inspected",
+    "No white sticker rim, no food/flame/steam",
+    "Shared1024canvas and bottom anchor"
+  ],
+  "acceptance": "Starting-image review pending; Grok video and192px frame packing not performed",
+  "prompts": {
+    "K1": "Use case: identity-preserve / precise-object-edit.\nDeliver ONE K1 starting-pose illustration for NABO Late Kitchen, using selected outfit C.\nInput image 1 is the edit target and APPROVED COSTUME/IDENTITY/FRAMING. Image 2 is original identity sheet, supporting identity only (leftmost open-eyed NABO), NOT the medical costume to copy.\nKeep the reference1 character identical: exact face, greyblue eyes, round black glasses, tousled brown hair, white baseball cap, correct upright blue ECG above legible N A B O letters on cap, navy Chinese mandarin-collar short jacket with frog closures, dark brown apron, white towel on his anatomical RIGHT shoulder (viewer LEFT), same proportions and local dark outlines. Never mirror.\nK1 requested change: his hands remain EMPTY and lightly clasped at lower chest with the same gentle smiling eyecontact; add ONE compact folded WHITE cleaning cloth draped OVER his anatomical LEFT forearm (viewer RIGHT). Retain the RIGHT-shoulder towel of approved C. Cloth must rest on forearm, not be held as a prop.\nReturn genuine TRANSPARENT background. The transparent cutout will be composited onto pure #00FF00 green for production. No ground/shadow/halo. No green anywhere on character or cloth.\nCRITICAL shared framing: same square composition as reference1, no zoom or shift. Target1024x1024, cap TOP at y~60 (5.9% canvas height), waist sliced by bottom canvas edge, face centered x512. Left/right roomy for later animation. Preserve head size and coordinates EXACTLY. If renderer changes pixel resolution keep normalized coordinates identical.\nClean 2D cartoon, flat color plus TWO discrete cel shade tones, upper-left light, no white sticker outline, no 3D, no fabric texture, no extra details. No text except existing nonmirrored NABO cap branding. Do not add medical badge, coat, stethoscope, cooking utensils, food, steam or effects. Original art."
+  }
+}

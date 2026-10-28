@@ -1,0 +1,96 @@
+{
+  "id": "K2",
+  "round": "A2 / CODEX_PROMPTS round2",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "selected_costume": "C, selected by Liu Dongpo in chat on2026-10-28",
+  "costume_final": "../costume/costume_final.png",
+  "costume_source_sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+  "identity_reference": "../reference/nabo-idle.png",
+  "identity_rule": "same NABO face, eyes, black round glasses, brown hair, white baseball cap; ECG+NABO upright, never mirrored",
+  "canvas": {
+    "size": [
+      1024,
+      1024
+    ],
+    "background": "#00FF00",
+    "bottom_anchor": [
+      512,
+      1023
+    ],
+    "cap_top_expected_y": 60,
+    "processed_frame_target": [
+      192,
+      192
+    ],
+    "processed_anchor": [
+      96,
+      191
+    ]
+  },
+  "pose": "AnatomicalRIGHT/viewerLEFT hand grips wooden empty ironblackwok handle, wok chestheight slightly towardhisRIGHT/viewerLEFT; anatomicalLEFT/viewerRIGHT hand holds spatula; nofood/flame/steam.",
+  "native_originals_local": "private/a2/native/K2.png (ignored)",
+  "delivery_processing": "Alpha<8 invisible-edge dust cleared, uniform resampling/layout, composited onto exact opaque#00FF00; no face/body/hat repaint, no mirroring.",
+  "head_registration": {
+    "method": "uniform scale plus x/y translation on entire K2 cutout; head-region photometric search; no rotation/mirroring",
+    "K2_scale": 1.006,
+    "K2_translate_px": [
+      -6,
+      2
+    ],
+    "head_region_MAE_256px": 7.694784164428711
+  },
+  "qa": {
+    "size": [
+      1024,
+      1024
+    ],
+    "opaque_bg": "#00FF00",
+    "subject_bbox_alpha128": [
+      112,
+      58,
+      881,
+      1024
+    ],
+    "green_foreground_pixels_alpha128": 0,
+    "corners": [
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ],
+      [
+        0,
+        255,
+        0
+      ]
+    ],
+    "sha256": "fe9c051c2a335e7cb3a9643420f4e2d4f51817ec80de6a4c2fd52aa95c699b2c"
+  },
+  "visual_checks": [
+    "Identity/outfitC visually inspected",
+    "Correct upright NABO+ECG hatlogo; not mirrored",
+    "Body/props no green",
+    "Waist cropped at bottom",
+    "Head overlay and150px proof inspected",
+    "No white sticker rim, no food/flame/steam",
+    "Shared1024canvas and bottom anchor"
+  ],
+  "acceptance": "Starting-image review pending; Grok video and192px frame packing not performed",
+  "prompts": {
+    "K2": "Use case: identity-preserve / precise-object-edit. Deliver ONE K2 cooking starting-pose illustration for NABO Late Kitchen.\nInput image1 K1 is the EDIT TARGET: keep EXACT head, cap, face, hair, glasses, character scale, position, crop, drawing style and outfit. Input image2 approved costume C is a costume consistency reference. Input image3 is original identity (leftmost open eyes only).\nChange only arm pose, cooking props and a subtly focused expression (still a small closed-mouth smile). KEEP THE HEAD OUTLINE AND COORDINATES UNCHANGED from image1. Front-facing torso navy Chinese mandarin-collar short jacket with frog closures, dark brown apron, white towel on HIS RIGHT SHOULDER (viewer LEFT) remains. Remove the additional cloth on LEFT FOREARM for this cooking pose; leave the shoulder towel.\nHAND ASSIGNMENT MUST BE EXACT, do not mirror: his anatomical RIGHT arm appears on the viewer LEFT. That RIGHT hand grips the single long BROWN WOODEN HANDLE of an EMPTY Chinese iron-black round-bottom WOK. The wok bowl sits in front of his lower chest, slightly toward HIS RIGHT (viewer LEFT), at roughly(x435,y760) on target1024 canvas, viewed enough from above to clearly see the EMPTY dark interior. Its wooden handle points left toward his RIGHT hand at roughly(x210,y800). The other anatomical LEFT hand (viewer RIGHT) holds a simple metal Chinese WOK SPATULA with a dark brown wooden handle above/near the wok rim at roughly(x720,y790). Show both hands and both utensils, natural comfortable working grip. Pan must NOT be held by left hand. No food, no flame, no steam, no sauces, no decorative sparkles.\nGenuine TRANSPARENT background, no ground/no shadow/no glow/no halo. Not green background in this intermediate render; will be composited over exact#00FF00. Absolutely NO GREEN on character, wok or spatula.\nSquare target1024x1024; match K1 framing: cap top~y60, head centered, same eye line and head size; waist cut by bottom edge y1024. Maintain ample side room, keep all props and arms fully inside canvas with at least8% side margin; later tossing needs clear space. If native resolution differs keep normalized coordinates.\nIdentity locked: same bluegrey eyes, black ROUND glasses, brown hair, white baseball cap with original correct blue ECG and upright legible 'NABO' (N A B O) logo; NEVER mirrored. No badge, coat, stethoscope. No other text or brands.\nClean flat 2D cartoon, two discrete cel shadow tones, local dark outlines, light upper-left; no white sticker outline, no soft3D, no textured fabric, no gradients. Original art.",
+    "K2_refine": "Precise-object-edit K2 correction. Reference1 is the K2 edit target. Reference2 is K1 and is the EXACT HEAD/FRAMING anchor.\nKeep NABO identity, selected outfit C (navy Mandarin frog-closure jacket, brown apron, right-shoulder white towel) and anatomical hand assignment unchanged: RIGHT hand at viewerLEFT grips wooden wok handle, LEFT hand at viewerRIGHT holds metal wok spatula.\nCorrect only wok/arm pose and cookware surface style: LIFT THE EMPTY WOK AND BOTH HANDS by about150px on a1024x1024 canvas, so the wok is held in front of the CHEST, not below belly. Wok rim top at approximately y650, bowl center around(x455,y770), lowest point aroundy875, wooden handle extends toward viewerLEFT hand around(x235,y710). Shift wok bowl slightly toward his anatomicalRIGHT/viewerLEFT of torso center. Bend elbows comfortably. Keep spatula visibly above empty pan interior, held by his anatomicalLEFT/viewerRIGHT hand. It must look natural and ready to toss. Keep ample lateral blank space.\nRender wok/spatula as CLEAN FLAT2D cartoon surfaces with only2 discrete grey tones plus a small sharp rim highlight, absolutely NO brushed-metal/paint/grain texture or soft3D. Wok ironblack; wood warmbrown. Nofood/fire/steam/green.\nCrucial: MATCH reference2 HEAD SIZE AND POSITION EXACTLY, including captop~y60/1024, same eyeheight and same frontal face. Do not enlarge/recenter head. Same torso scale and waist cropping at bottomedge. Keep black ROUND glasses, brownhair, whitecap, blue ECG and legible upright NABO caplogo (NEVER MIRRORED). Slightly focused small smile.\nOutput genuine TRANSPARENT background; one character only, square1024x1024 (or exact normalized equivalent). No ground, castshadow, text other than existing caplogo, no additional cloth on forearm. No white sticker outline. Change no other design element.",
+    "K2_chest": "K2 targeted pose fix. Edit reference1; reference2 is K1 for exact head alignment.\nThe wok is currently held too low. RAISE THE WHOLE EMPTY WOK, RIGHT HAND AND LEFT SPATULA HAND together until the wok UPPER RIM OVERLAPS AND HIDES the LOWER frog-closure button on the navy jacket. Wok lowest edge must end clearly ABOVE the apron WAIST TIE/BELT. Keep the waist tie visible below the wok, with blank brown apron separating them. This is chest-height holding, a compact empty wok in front of the chest, not abdomen.\nKeep only2 simple ironblack/charcoal flat tone shapes in bowl (no gradients/texture). Empty interior. Make wok about85% its current size, bowl center slightly to viewerLEFT of torso center. RIGHT anatomical hand/viewerLEFT grips single brown wooden wokhandle; LEFT anatomical hand/viewerRIGHT grips wokspatula. Bend elbows upward naturally; both hands near chest. All props fully visible, ample8% margins. Preserve right-shoulder/viewerLEFT white towel and navy Mandarin frog-closure jacket, brown apron. No left-arm cloth in K2.\nDo not change the head drawing, face, roundblack glasses, brownhair, whitecap or caplogo at all. Keep exactly K1 normalized headsize and position, captop5.9% ofimageheight, eyesat sameheight, waist cropped atbottom. Correct upright blue ECG above 'NABO', NEVER MIRROR. Frontal view, slight focused closed-mouth smile. No coat, badge, food, steam, flame, green on body.\nGenuine transparent background, single square1024x1024 character cutout (same normalized framing if native resolution differs). Flat2D two-step cel shading, local darklines, lightupperleft. No white sticker rim or3D."
+  }
+}
