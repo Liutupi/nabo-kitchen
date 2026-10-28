@@ -1,0 +1,53 @@
+{
+  "id": "pork_rib__braised",
+  "native": "private\\a4\\native\\cooked\\pork_rib__braised.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "6d2b2169d13cafa9021c9b395d1e700c36ccd8cc7d630d85bdaf1f23526ce9b0",
+  "crop": [
+    285,
+    305,
+    1185,
+    807
+  ],
+  "scale": 0.35856573705179284,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    162,
+    164
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\pork_rib__braised.png",
+  "sha256": "31ad23e8e5a046e1deb23eb79e7170d39f3f65f5eab3340bdeed5391d03907ea",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    162,
+    164,
+    485,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID pork_rib__braised: Five bite-size braised pork rib pieces in a low mound, rich caramel-brown meat wrapping short ivory bone ends, simple thick rounded shapes and amber flat highlights, no sauce puddle.",
+  "target_bbox": [
+    143,
+    164,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    323,
+    180
+  ]
+}

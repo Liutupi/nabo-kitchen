@@ -1,0 +1,53 @@
+{
+  "id": "shiitake__braised",
+  "native": "private\\a4\\native\\cooked\\shiitake__braised.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "b141c72cb5c079965673586bba4f323f3f5fd28545928c0f0d77ede2a33cb047",
+  "crop": [
+    236,
+    292,
+    1213,
+    854
+  ],
+  "scale": 0.302491103202847,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    176,
+    174
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\shiitake__braised.png",
+  "sha256": "6bc402d9a99106e4241841e4bd361172c1aab5cfcfb4915d353b60cd6b43afb0",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    176,
+    174,
+    472,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID shiitake__braised: Five braised shiitake mushroom caps and two thick mushroom slices, rich chestnut-brown caps with simple cross cuts and ivory undersides, warm dark damp edges, no garnish.",
+  "target_bbox": [
+    143,
+    174,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    296,
+    170
+  ]
+}

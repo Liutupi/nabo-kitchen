@@ -1,0 +1,53 @@
+{
+  "id": "winter_melon__soup_chunks",
+  "native": "private\\a4\\native\\cooked\\winter_melon__soup_chunks.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "8229bd7cc9b5417cbcb4ce98b779f7fe144198889949b772a5196171c2e66b6c",
+  "crop": [
+    245,
+    264,
+    1205,
+    870
+  ],
+  "scale": 0.2145214521452145,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    217,
+    200
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\winter_melon__soup_chunks.png",
+  "sha256": "131e0c934c493c00fc83160315911598b2ed61236222dd9f59b8ea59a61b18af",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    217,
+    200,
+    423,
+    330
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID winter_melon__soup_chunks: Five soft cooked winter melon chunks for soup, pale translucent jade-white rounded cuboids with gentle ivory light patches and light green edges, separated transparent gaps, no broth or other ingredients.",
+  "target_bbox": [
+    150,
+    200,
+    490,
+    330
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    206,
+    130
+  ]
+}

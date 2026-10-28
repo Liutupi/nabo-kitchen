@@ -1,0 +1,53 @@
+{
+  "id": "fish_whole__steamed",
+  "native": "private\\a4\\native\\cooked\\fish_whole__steamed.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "84b01aac55967b9b3edfcf4a1243244b0dacb626c9722052e0b9e5b70bab5edf",
+  "crop": [
+    129,
+    322,
+    1356,
+    787
+  ],
+  "scale": 0.3010752688172043,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    136,
+    190
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\fish_whole__steamed.png",
+  "sha256": "dac3304ce2cf10c938ea2b88988c5d6f37a4058341afac1254e7dae0b702eee7",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    136,
+    190,
+    505,
+    330
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID fish_whole__steamed: A whole cooked steamed sea bass, pale silver-white skin with muted blue-grey back, gently flattened body, horizontal head left tail right, small natural closed cooked eye, clean diagonal score cuts. Only the fish, no ginger/scallion/sauce/plate. Target bounding box(120,190)-(520,330).",
+  "target_bbox": [
+    120,
+    190,
+    520,
+    330
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    369,
+    140
+  ]
+}

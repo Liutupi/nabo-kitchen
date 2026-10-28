@@ -1,0 +1,53 @@
+{
+  "id": "shrimp__boiled",
+  "native": "private\\a4\\native\\cooked\\shrimp__boiled.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "0241cd0e9d25549697f4f7ab7a134ef7911e8c8c68d2946c2458af72b779fb41",
+  "crop": [
+    61,
+    208,
+    1387,
+    906
+  ],
+  "scale": 0.24355300859598855,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    162,
+    174
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\shrimp__boiled.png",
+  "sha256": "bb69d5a2aaa0574733b7b1578070b75b2f3e5aa4e219dd7b14f2bc1cdaa6688c",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    162,
+    174,
+    485,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID shrimp__boiled: Four WHOLE UNPEELED BOILED PRAWNS including their prominent LONG POINTED HEADS/cephalothorax, small natural black eyes on head, fine antennae and visible tiny legs, curved segmented orange shell abdomens ending in fan tails. Heads must remain attached, visibly distinct from curled peeled shrimp meat. Pink-orange cooked shells, ivory underside. Only whole prawns,no plate/lemon/sauce/garnish. Natural anatomy, no cute faces.",
+  "target_bbox": [
+    143,
+    174,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    323,
+    170
+  ]
+}

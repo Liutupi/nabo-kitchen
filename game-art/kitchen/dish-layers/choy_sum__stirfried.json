@@ -1,0 +1,53 @@
+{
+  "id": "choy_sum__stirfried",
+  "native": "private\\a4\\native\\cooked\\choy_sum__stirfried.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "37a07f03e3d28211093a1dbe3c0347d7205c24116a00f0aaf87d6d1782a99989",
+  "crop": [
+    278,
+    312,
+    1189,
+    804
+  ],
+  "scale": 0.34552845528455284,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    166,
+    174
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\choy_sum__stirfried.png",
+  "sha256": "3f18bdefc1f4cd76eebb1f2a5b3cbb18d8b1b09090a3b30dd6e2b1cabb8fadae",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    166,
+    174,
+    481,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID choy_sum__stirfried: A low compact pile of stir-fried choy sum, five long tender pale jade stems with vivid dark green folded rounded leaves, stems laid diagonally/sideways with green leaves overlapping. Cooked lightly wilted, no garlic pieces or garnish. Target bbox(143,174)-(505,344).",
+  "target_bbox": [
+    143,
+    174,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    315,
+    170
+  ]
+}

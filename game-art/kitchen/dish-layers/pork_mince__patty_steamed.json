@@ -1,0 +1,53 @@
+{
+  "id": "pork_mince__patty_steamed",
+  "native": "private\\a4\\native\\cooked\\pork_mince__patty_steamed.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "8ad8587d66607681dac65beb2d00213b443679d3e17ede279d18a13117cf0b33",
+  "crop": [
+    270,
+    344,
+    1179,
+    832
+  ],
+  "scale": 0.32786885245901637,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    175,
+    184
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\pork_mince__patty_steamed.png",
+  "sha256": "5f7112cc65fa480e3e51ce1beb1cadd4444f6b85638843b4ab7c44360b4efb76",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    175,
+    184,
+    473,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID pork_mince__patty_steamed: One low broad oval steamed minced pork patty, pale warm beige with a few simple tiny darker dots and flat cel-shaded folds; soft food texture represented by a few large clean shapes only, no sauce.",
+  "target_bbox": [
+    143,
+    184,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    298,
+    160
+  ]
+}

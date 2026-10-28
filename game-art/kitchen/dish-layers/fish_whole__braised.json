@@ -1,0 +1,53 @@
+{
+  "id": "fish_whole__braised",
+  "native": "private\\a4\\native\\cooked\\fish_whole__braised.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "ca773c4f6818339ba88c52d7bf3d6f2194825305865f1feb0b9bf3b6f7ce2052",
+  "crop": [
+    129,
+    291,
+    1370,
+    803
+  ],
+  "scale": 0.2734375,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    150,
+    190
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\fish_whole__braised.png",
+  "sha256": "fbb3bf7bc08a4b937a17ccec7cf9055aeda35ce4da39795aebcac8ec8b5ef313",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    150,
+    190,
+    489,
+    330
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID fish_whole__braised: One whole Chinese braised cooked fish, horizontal head left tail right, caramel chestnut-brown skin and golden flesh showing at two score cuts, small natural cooked eye, no kawaii face, only fish without sauce puddle or garnish.",
+  "target_bbox": [
+    120,
+    190,
+    520,
+    330
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    339,
+    140
+  ]
+}

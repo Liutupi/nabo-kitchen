@@ -1,0 +1,37 @@
+{
+  "id": "vessel_claypot_shadow",
+  "target": [
+    94,
+    408,
+    546,
+    446
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: an independent transparent layer for a Chinese home-cooking game on a 240x320 screen. Draw exactly ONE requested layer, on a genuinely transparent 640x480 PNG canvas. Image1 is an approved NABO food STYLE reference, not an edit target. Match this clean cute refined FLAT 2D cartoon illustration language, rounded shapes, warm appetizing colors, bold dark-brown #3B2730 outlines roughly8px at640x480 when specified, upper-left light, ONE flat highlight face and ONE flat shade face. No smooth gradients, no soft3D, no photo texture, no grain, no dramatic gloss. Perspective45degree top-down, shared coordinates centered(320,270). No face or anthropomorphic features, no text/logo/real brand, no steam/fire/UI, no fake checkerboard; transparent outside actual content. No unrequested food/vessel/garnish/shadow. Only the layer below:\nONLY a short tight cast-shadow footprint for vessel claypot shadow. A clean shallow horizontal darkbrown #3B2730 ellipse, ONE flat central dark tone and maximum one flatter translucent outer tone. Shadow ONLY, no object visible, no glow/blur/gradient. Footprintbbox94,408,546,446.",
+  "native_relative": "private\\a4\\native\\structure\\vessel_claypot_shadow.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_bbox_alpha8": [
+    246,
+    887,
+    1202,
+    990
+  ],
+  "delivery_relative": "game-art\\kitchen\\dish-layers\\vessel_claypot_shadow.png",
+  "size": [
+    640,
+    480
+  ],
+  "alpha_range": [
+    0,
+    255
+  ],
+  "source_sha256": "506f61ead3ff4496bd55c010c0ef764ad869a0b69aaeb3d4ff8b00ec45c6a65c",
+  "sha256": "a419ec0f86fdac5d28c7e0efeb5c28c1381fd4ec690a9323017091b8aaea034f",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "round": "CODEX round4 structure",
+  "review_note": "Source art preserved; exact64-color and #3B2730 remapping belong to later packing."
+}

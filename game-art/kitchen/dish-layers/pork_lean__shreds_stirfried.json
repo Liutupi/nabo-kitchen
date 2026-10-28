@@ -1,0 +1,53 @@
+{
+  "id": "pork_lean__shreds_stirfried",
+  "native": "private\\a4\\native\\cooked\\pork_lean__shreds_stirfried.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "24ba52c640c269fdcaf02428834ea652649dcf899d485db1ab7f753ae3da5626",
+  "crop": [
+    245,
+    305,
+    1205,
+    812
+  ],
+  "scale": 0.35502958579881655,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    154,
+    164
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\pork_lean__shreds_stirfried.png",
+  "sha256": "78b287459e7748806847de2043f766177ccc65157abea6efe003276d6c56e17e",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    154,
+    164,
+    495,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID pork_lean__shreds_stirfried: A compact mound of thin tender stir-fried pork shreds, soft tawny beige/pale caramel strips with darker damp undersides, no vegetables or sauce puddle.",
+  "target_bbox": [
+    143,
+    164,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    341,
+    180
+  ]
+}

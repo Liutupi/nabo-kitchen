@@ -1,0 +1,53 @@
+{
+  "id": "broccoli__florets",
+  "native": "private\\a4\\native\\cooked\\broccoli__florets.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "bd708aa283b12d8a78429f3b5bc031fc65f4f84348c8e66a66a5f8c627f04217",
+  "crop": [
+    233,
+    248,
+    1230,
+    865
+  ],
+  "scale": 0.2917341977309562,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    178,
+    164
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\broccoli__florets.png",
+  "sha256": "e56382a1e7c7cfbe43c13033ed4fbf1f788204d508e347c0acf10b7ae52fee3b",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    178,
+    164,
+    469,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID broccoli__florets: Five cooked broccoli florets in a low mound, plump rounded emerald crowns drawn as a few broad scalloped lobes and pale jade stems, no realistic tiny texture, no garlic or sauce.",
+  "target_bbox": [
+    143,
+    164,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    291,
+    180
+  ]
+}

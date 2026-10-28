@@ -1,0 +1,53 @@
+{
+  "id": "egg__steamed_custard",
+  "native": "private\\a4\\native\\cooked\\egg__steamed_custard.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "d60b0c1490c6ae27d8b7217bf6196587309c0b879204f07d7e74d72c65924ccc",
+  "crop": [
+    291,
+    344,
+    1158,
+    831
+  ],
+  "scale": 0.3080082135523614,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    186,
+    190
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\egg__steamed_custard.png",
+  "sha256": "7fef7d9a02e86d8e0b635e0c292e0d145d814356c8a7476b4e7b7b6e2b24f535",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    186,
+    190,
+    453,
+    340
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID egg__steamed_custard: Chinese steamed egg custard: one low broad oval portion of silky pale golden set custard with softly rounded edge, simple flat light patch and warm shaded underside. Bare custard food only, no ramekin,bowl,sauce,spoon,garnish.",
+  "target_bbox": [
+    150,
+    190,
+    490,
+    340
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    267,
+    150
+  ]
+}

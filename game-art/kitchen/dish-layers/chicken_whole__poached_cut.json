@@ -1,0 +1,53 @@
+{
+  "id": "chicken_whole__poached_cut",
+  "native": "private\\a4\\native\\cooked\\chicken_whole__poached_cut.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "e0bf1a5c79ea2bf730bb0f252451850e983cd8184d81ade3e84ffa381cf9b643",
+  "crop": [
+    172,
+    280,
+    1292,
+    828
+  ],
+  "scale": 0.32321428571428573,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    143,
+    166
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\chicken_whole__poached_cut.png",
+  "sha256": "5c5d65f7d294596650c2c0362a9086c04c4fbc0227e7c836bb14244567b867da",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    143,
+    166,
+    505,
+    343
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID chicken_whole__poached_cut: A low pile of six pieces of Cantonese poached chicken cut across bone, creamy ivory meat, pale golden skin caps, one small bone cross-section on some pieces, appetizing clearly cooked, no scallion/ginger.",
+  "target_bbox": [
+    143,
+    164,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    362,
+    177
+  ]
+}

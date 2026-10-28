@@ -1,0 +1,53 @@
+{
+  "id": "lettuce__stirfried",
+  "native": "private\\a4\\native\\cooked\\lettuce__stirfried.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_sha256": "4dac61d15dee759a1b699986012985a2540d7f7806481618783294bce0c529dc",
+  "crop": [
+    175,
+    253,
+    1292,
+    839
+  ],
+  "scale": 0.2901023890784983,
+  "size": [
+    640,
+    480
+  ],
+  "offset": [
+    162,
+    174
+  ],
+  "delivery": "game-art\\kitchen\\dish-layers\\lettuce__stirfried.png",
+  "sha256": "ebfcddf8416d0bcb39f7eb05ae077d8333887648ccd100e55a3e3afcfcddca0f",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    162,
+    174,
+    486,
+    344
+  ],
+  "round": "CODEX round4 cooked ingredient",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: ONE ORIGINAL 2D bitmap cooked-food layer for NABO kitchen, not a complete dish. Inputs are STYLE REFERENCES ONLY: first approved scrambled-egg food layer, second complete layered example; match their refined cute flat illustration and dark plum outline, do not reproduce their subjects or vessel. On a TRUE transparent background, draw ONLY the requested cooked ingredient. Camera looks down about45degrees, light upper left. Rounded full shapes, warm appetizing saturated colors, solid #3B2730 outlines about8pixels when delivered640x480, ONE flat light tone and ONE flat dark tone, crisp cel shading, no smooth gradients or photo texture. Lower food edges slightly darker and damp to blend with separately layered sauce. NO plate,bowl,pan,table,vessel,cast shadow,liquid puddle,garnish,steam,flames,text,label,logo,watermark,human,face,cute eyes or smile. Natural fish anatomy allowed only where requested. Isolated compact serving viewed horizontally, generous transparent margin. Use actual alpha transparency, not a painted checkerboard. Final shared canvas640x480, virtual vessel center320,270; content will be packed into the specified bounding box. Retain a clean coherent silhouette at160x120.\nSubject for exact ID lettuce__stirfried: A low mound of five broad wilted cooked lettuce leaves, pale lime centers and emerald folded edges, rounded wavy leaf silhouettes, simple large cel-shaded folds, no garlic or sauce.",
+  "target_bbox": [
+    143,
+    174,
+    505,
+    344
+  ],
+  "processing": "Uniform scale and offset on fixed640x480 transparent canvas; no procedural repaint or mirroring.",
+  "review_note": "Cooked layers have no cartoon faces/vessels/garnishes; group64-color packing remains pending.",
+  "content_size": [
+    324,
+    170
+  ]
+}

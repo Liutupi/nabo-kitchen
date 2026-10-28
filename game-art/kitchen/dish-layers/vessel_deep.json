@@ -1,0 +1,37 @@
+{
+  "id": "vessel_deep",
+  "target": [
+    75,
+    130,
+    565,
+    430
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: an independent transparent layer for a Chinese home-cooking game on a 240x320 screen. Draw exactly ONE requested layer, on a genuinely transparent 640x480 PNG canvas. Image1 is an approved NABO food STYLE reference, not an edit target. Match this clean cute refined FLAT 2D cartoon illustration language, rounded shapes, warm appetizing colors, bold dark-brown #3B2730 outlines roughly8px at640x480 when specified, upper-left light, ONE flat highlight face and ONE flat shade face. No smooth gradients, no soft3D, no photo texture, no grain, no dramatic gloss. Perspective45degree top-down, shared coordinates centered(320,270). No face or anthropomorphic features, no text/logo/real brand, no steam/fire/UI, no fake checkerboard; transparent outside actual content. No unrequested food/vessel/garnish/shadow. Only the layer below:\nOne EMPTY white porcelain deep serving dish, wider than soup bowl but deeper than flat plate. Oval opening centered320,270, broad white curved rim, cream inner surface, rounded high sidewall descends430. Overallbbox75,130..565,430. No food/liquid/shadow; samefamily as approvedplate.",
+  "native_relative": "private\\a4\\native\\structure\\vessel_deep.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "native_bbox_alpha8": [
+    132,
+    215,
+    1313,
+    927
+  ],
+  "delivery_relative": "game-art\\kitchen\\dish-layers\\vessel_deep.png",
+  "size": [
+    640,
+    480
+  ],
+  "alpha_range": [
+    0,
+    255
+  ],
+  "source_sha256": "eed915b3af18bc4dbc42ff820dcc99850fc98e1aff53bbff3ecd0a77e0d792b1",
+  "sha256": "06be81c165ab0d7283f89a9a640abd1fc4eb861b06736d756426d21a5ba401d8",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "round": "CODEX round4 structure",
+  "review_note": "Source art preserved; exact64-color and #3B2730 remapping belong to later packing."
+}
