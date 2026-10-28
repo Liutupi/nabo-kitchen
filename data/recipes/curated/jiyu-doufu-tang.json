@@ -1,0 +1,110 @@
+{
+ "id": "jiyu-doufu-tang",
+ "name": "鲫鱼豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "清淡"
+ ],
+ "minutes": 40,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "鲫鱼约400克"
+  },
+  {
+   "id": "tofu",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "1200毫升"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "white_pepper",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鲫鱼处理干净并擦干，豆腐切块，姜切片，葱打结。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，下鱼中火两面各煎3分钟。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "加入1200毫升热水、姜葱和料酒，大火煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "转中火煮15分钟。",
+   "method": "stew",
+   "heat": "mid",
+   "timer": 900
+  },
+  {
+   "text": "加入豆腐，再煮5分钟；鱼肉最厚处应达到63℃。",
+   "method": "stew",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "确认鱼肉不透明且易分离，加盐和白胡椒粉，盛出。",
+   "method": "mix",
+   "heat": "off",
+   "tip": "吃鱼时留意细刺"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "white",
+  "layers": [
+   "fish_whole__soup",
+   "tofu__cubes_soup"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

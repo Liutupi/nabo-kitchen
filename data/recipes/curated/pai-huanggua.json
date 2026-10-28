@@ -1,0 +1,88 @@
+{
+ "id": "pai-huanggua",
+ "name": "拍黄瓜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "免开火",
+  "快手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "cucumber",
+   "qty": 2,
+   "unit": "根",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "半小勺"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "半小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "黄瓜洗净擦干，用干净熟食砧板拍裂，切成3厘米段。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "黄瓜加盐拌匀，静置5分钟后倒去渗出的水。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 300
+  },
+  {
+   "text": "蒜剁末，与生抽、醋、糖、香油一起加入黄瓜拌匀。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "静置5分钟入味；暂不吃时加盖冷藏。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 300
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "cucumber__smashed"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

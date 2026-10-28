@@ -1,0 +1,107 @@
+{
+ "id": "fanqie-tudou-niurou-tang",
+ "name": "番茄土豆牛肉汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "清淡"
+ ],
+ "minutes": 95,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "potato",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "1800毫升"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉切2厘米块；番茄切块，土豆去皮切块，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "牛肉冷水下锅，煮开3分钟，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "汤锅放油，下番茄中火炒2分钟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加入牛肉、姜、料酒和1800毫升热水，煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "盖盖小火煮60分钟，至牛肉熟软。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 3600
+  },
+  {
+   "text": "加入土豆，小火再煮15分钟至土豆熟透，加盐。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 900
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "beef__chunks_stewed",
+   "tomato__wedge_soup",
+   "potato__chunks_soup"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

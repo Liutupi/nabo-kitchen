@@ -1,0 +1,99 @@
+{
+ "id": "kele-jichi",
+ "name": "可乐鸡翅",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭",
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_wing",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "cola",
+   "qty": "330毫升"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "半小勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡翅擦干，两面各划2刀；姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，鸡翅中火两面各煎2分钟。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加入姜、可乐、生抽、老抽和料酒，煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "盖盖小火焖15分钟，中途翻面1次。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "测最厚处达到74℃；不足继续煮至达到。",
+   "method": "braise",
+   "heat": "low"
+  },
+  {
+   "text": "开盖中火收汁3分钟，翻动鸡翅防止糖汁烧糊。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "chicken_wing__braised"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

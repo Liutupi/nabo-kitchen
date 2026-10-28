@@ -1,0 +1,101 @@
+{
+ "id": "hongshao-qiezi",
+ "name": "红烧茄子",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "eggplant",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 4,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "半小勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "150毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "茄子切3厘米块；蒜剁末，淀粉加2大勺水调匀。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，下茄子中火煎5分钟，中途翻动。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "加入蒜、生抽、老抽、糖、盐和剩余清水。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "盖盖小火焖6分钟，至茄子完全软熟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 360
+  },
+  {
+   "text": "淋入淀粉水，中火翻匀至汁稍浓，盛出。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "eggplant__braised"
+  ],
+  "garnish": [
+   "garlic",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

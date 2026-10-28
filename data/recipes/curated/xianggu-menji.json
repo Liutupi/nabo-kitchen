@@ -1,0 +1,100 @@
+{
+ "id": "xianggu-menji",
+ "name": "香菇焖鸡",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 40,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "2大勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "250毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿去骨切3厘米块，擦干；香菇对半切，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，炒香姜片，下鸡块中火炒3分钟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加入香菇、生抽、蚝油、料酒，翻匀。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加250毫升水，盖盖小火焖18分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 1080
+  },
+  {
+   "text": "测鸡块中心达到74℃，开盖中火收汁3分钟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "claypot",
+  "sauce": "braise",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "shiitake__braised"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,92 @@
+{
+ "id": "hupi-qingjiao",
+ "name": "虎皮青椒",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "green_pepper",
+   "qty": 4,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "2大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "青椒洗净擦干，去蒂去籽并轻压扁；蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "平底锅放油，下青椒中小火煎6分钟，两面起皱。",
+   "method": "fry",
+   "heat": "low",
+   "timer": 360
+  },
+  {
+   "text": "放入蒜末，加入生抽、醋、糖、盐和2大勺水。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "盖盖焖2分钟，开盖翻匀收汁后盛出。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "green_pepper__blistered"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

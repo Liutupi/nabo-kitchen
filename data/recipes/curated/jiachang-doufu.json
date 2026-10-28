@@ -1,0 +1,107 @@
+{
+ "id": "jiachang-doufu",
+ "name": "家常豆腐",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "carrot",
+   "qty": 100,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "150毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切1厘米厚片，胡萝卜切薄片，青椒切条，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，下豆腐中火两面各煎3分钟，盛出。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "原锅炒香蒜末，下胡萝卜和青椒炒2分钟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "放回豆腐，加生抽、蚝油、盐和150毫升水。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "小火焖5分钟，开盖中火收汁1分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 300
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "tofu__pan_fried",
+   "green_pepper__strips",
+   "carrot__slices"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

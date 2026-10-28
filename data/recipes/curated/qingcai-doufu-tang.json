@@ -1,0 +1,89 @@
+{
+ "id": "qingcai-doufu-tang",
+ "name": "青菜豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "choy_sum",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "1000毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "半小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "菜心洗净切4厘米段，豆腐切2厘米块。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内加1000毫升水和食用油，煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "加入豆腐，小火煮5分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 300
+  },
+  {
+   "text": "加入菜心，中火煮2分钟至菜梗熟透。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加盐和香油，关火后盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "tofu__cubes_soup",
+   "choy_sum__blanched"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

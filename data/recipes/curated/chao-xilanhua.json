@@ -1,0 +1,81 @@
+{
+ "id": "chao-xilanhua",
+ "name": "炒西兰花",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "broccoli",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "water",
+   "qty": "1000毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "西兰花切小朵，粗梗去硬皮切片，洗净；蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "1000毫升水烧开，下西兰花焯1分钟，沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "锅内放油，炒香蒜末，下西兰花大火炒2分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "加盐，确认菜梗熟而脆，翻匀盛出。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "broccoli__florets"
+  ],
+  "garnish": [
+   "garlic",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

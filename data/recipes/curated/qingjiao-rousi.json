@@ -1,0 +1,102 @@
+{
+ "id": "qingjiao-rousi",
+ "name": "青椒肉丝",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭",
+  "快手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_lean",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "猪肉切3毫米细丝；青椒去籽切丝，蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "肉丝拌生抽、料酒、淀粉和1小勺油，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "热锅放剩余油，下肉丝中火炒3分钟，拨散。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "下蒜和青椒，加盐，大火翻炒2分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "确认肉丝熟透后关火，静置3分钟再盛出。",
+   "method": "stir_fry",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "pork_lean__shreds_stirfried",
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

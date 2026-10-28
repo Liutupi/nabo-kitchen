@@ -1,0 +1,98 @@
+{
+ "id": "fanqie-dantang",
+ "name": "番茄蛋汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "清淡",
+  "快手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tomato",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "800毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "半小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切小块，葱切花，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，下番茄中火炒2分钟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加800毫升水，煮开后小火煮3分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 180
+  },
+  {
+   "text": "转中火，缓慢倒入蛋液，等20秒再轻推散。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 20
+  },
+  {
+   "text": "继续煮1分钟至蛋花全熟，加盐和香油，撒葱花。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "egg__ribbon",
+   "tomato__wedge_soup"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

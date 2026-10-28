@@ -1,0 +1,85 @@
+{
+ "id": "suanla-tudousi",
+ "name": "酸辣土豆丝",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "微辣",
+  "下饭"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "potato",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "dried_chili",
+   "qty": "2个"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "土豆去皮切2毫米细丝，用清水冲2遍后沥干；蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，小火炒香蒜片和干辣椒。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "下土豆丝，大火翻炒2分钟，沿锅边加醋。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "加盐，继续翻炒1分钟至熟透但仍脆，盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "potato__shreds"
+  ],
+  "garnish": [
+   "chili_ring"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

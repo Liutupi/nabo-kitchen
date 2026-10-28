@@ -51,7 +51,7 @@
    "heat": "off"
   },
   {
-   "text": "烧一锅水，加少许盐和几滴油，下菜心焯 30 秒，捞出沥干。",
+   "text": "烧开1000毫升水，加盐和1小勺油，下菜心焯30秒，沥干。",
    "method": "blanch",
    "heat": "high",
    "timer": 30,
@@ -82,5 +82,5 @@
  },
  "source": "curated",
  "author": "",
- "version": 1
+ "version": 2
 }

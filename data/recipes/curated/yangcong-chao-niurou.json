@@ -1,0 +1,98 @@
+{
+ "id": "yangcong-chao-niurou",
+ "name": "洋葱炒牛肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭",
+  "快手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "onion",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉逆纹切薄片；洋葱切瓣，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "牛肉拌生抽、淀粉和1小勺油，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "热锅放剩余油，炒香姜丝，下牛肉炒2分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "加入洋葱和蚝油，翻炒2分钟至洋葱断生。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "确认牛肉熟透，关火静置3分钟后盛出。",
+   "method": "stir_fry",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "beef__slices_stirfried",
+   "onion__slices"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

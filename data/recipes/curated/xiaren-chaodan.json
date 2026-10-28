@@ -1,0 +1,93 @@
+{
+ "id": "xiaren-chaodan",
+ "name": "虾仁炒蛋",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "虾去壳和虾线；葱切花，鸡蛋加盐打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "虾仁拌料酒，静置5分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 300
+  },
+  {
+   "text": "热锅放1大勺油，下虾仁中火炒2分钟至不透明。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加剩余油，倒入蛋液，稍凝固时推散。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "翻炒至蛋液完全凝固，虾仁中心熟透，撒葱花出锅。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "egg__scrambled",
+   "shrimp__peeled_stirfried"
+  ],
+  "garnish": [
+   "scallion",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

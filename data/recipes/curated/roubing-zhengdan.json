@@ -1,0 +1,93 @@
+{
+ "id": "roubing-zhengdan",
+ "name": "肉饼蒸蛋",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_mince",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "30毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "姜剁末，肉末加入姜、生抽、淀粉和30毫升水拌匀。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "浅盘刷油，肉末铺成不超过2厘米厚的肉饼，中间压窝。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "把2个鸡蛋打在肉饼中间。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "水开后放入蒸锅，中火蒸20分钟。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 1200
+  },
+  {
+   "text": "测肉饼中心达到71℃，蛋清蛋黄凝固；未熟继续蒸。",
+   "method": "steam",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": "clear",
+  "layers": [
+   "pork_mince__patty_egg_steamed"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

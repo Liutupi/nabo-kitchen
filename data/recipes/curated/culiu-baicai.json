@@ -1,0 +1,89 @@
+{
+ "id": "culiu-baicai",
+ "name": "醋溜白菜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "下饭"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "napa_cabbage",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "半小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜梗叶分开切片；蒜切片，醋、生抽和糖调匀。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，炒香蒜片，下白菜梗大火炒2分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "加入白菜叶，大火翻炒1分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "沿锅边倒入调味汁，加盐，翻炒30秒出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

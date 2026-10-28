@@ -1,0 +1,102 @@
+{
+ "id": "hongshao-yu",
+ "name": "红烧鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "半小勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "250毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鱼处理干净并擦干，两面各划2刀；姜切片，葱切段。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，下鱼中火煎4分钟，翻面再煎3分钟。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 420
+  },
+  {
+   "text": "加姜葱、生抽、老抽、料酒、糖和250毫升热水。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "煮开后小火焖10分钟，中途把汤汁浇在鱼身上。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "测最厚鱼肉达到63℃，鱼肉不透明且能轻松分离。",
+   "method": "braise",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "oval",
+  "sauce": "braise",
+  "layers": [
+   "fish_whole__braised"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

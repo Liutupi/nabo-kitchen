@@ -1,0 +1,84 @@
+{
+ "id": "zheng-shuidan",
+ "name": "蒸水蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "清淡",
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "225毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "半小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡蛋加盐打散，加入225毫升温水，搅匀后过筛。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "倒入浅碗，盖耐热盖或盘子，防止水滴落入。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "蒸锅水烧开后放入蛋碗，中小火蒸12分钟。",
+   "method": "steam",
+   "heat": "low",
+   "timer": 720
+  },
+  {
+   "text": "确认蛋液完全凝固，中心达到71℃；未熟继续蒸。",
+   "method": "steam",
+   "heat": "low"
+  },
+  {
+   "text": "关火焖2分钟，取出淋生抽和香油。",
+   "method": "steam",
+   "heat": "off",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": null,
+  "layers": [
+   "egg__steamed_custard"
+  ],
+  "garnish": [
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

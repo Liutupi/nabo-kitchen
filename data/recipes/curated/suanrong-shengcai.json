@@ -1,0 +1,80 @@
+{
+ "id": "suanrong-shengcai",
+ "name": "蒜蓉生菜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 10,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "lettuce",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 4,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "water",
+   "qty": "2大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "生菜洗净沥干，粗梗切开；蒜剁末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内放油，小火炒香蒜末。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "下生菜，加2大勺水，大火翻炒1分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "加盐，翻炒至菜叶全部软下，立刻盛出。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "lettuce__stirfried"
+  ],
+  "garnish": [
+   "garlic",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

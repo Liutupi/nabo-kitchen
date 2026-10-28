@@ -1,0 +1,97 @@
+{
+ "id": "baiqie-ji",
+ "name": "白切鸡",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 60,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "chicken_whole",
+   "qty": 1,
+   "unit": "只",
+   "main": true,
+   "note": "约1000克"
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 3,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "3000毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "处理整鸡并擦干，生熟砧板分开；姜切片，葱打结。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅内加3000毫升水和姜葱，烧开后放入整鸡。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "保持微沸煮25分钟，中途翻面1次。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 1500
+  },
+  {
+   "text": "测鸡腿最厚处达到74℃；不足继续煮至达到。",
+   "method": "boil",
+   "heat": "low",
+   "tip": "测温避开骨头"
+  },
+  {
+   "text": "关火浸5分钟。",
+   "method": "boil",
+   "heat": "off",
+   "timer": 300
+  },
+  {
+   "text": "取出静置10分钟，切块后配生抽。",
+   "method": "cut",
+   "heat": "off",
+   "timer": 600
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "chicken_whole__poached_cut"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}
