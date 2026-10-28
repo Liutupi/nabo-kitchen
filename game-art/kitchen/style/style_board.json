@@ -1,0 +1,480 @@
+{
+  "round": "A1",
+  "date": "2026-10-28",
+  "generator": "built-in image_gen",
+  "status": "review",
+  "identity_reference": "reference/nabo-idle.png",
+  "layout_reference": "reference/ui-mockup.png",
+  "costume_selected": null,
+  "board_preview_costume": "B only as preview; not selected",
+  "assets": [
+    {
+      "id": "costume_A",
+      "path": "costume/costume_A.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "ccbd06308e8599d1eac13dc0021c1f599a35082e6a54d278b24fc378f983fa57",
+      "status": "review"
+    },
+    {
+      "id": "costume_B",
+      "path": "costume/costume_B.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "408715b36d27071bd79c099782425bf9ad7482a01cd575e2985b3023888ec56c",
+      "status": "review"
+    },
+    {
+      "id": "costume_C",
+      "path": "costume/costume_C.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+      "status": "review"
+    },
+    {
+      "id": "style_board",
+      "path": "style/style_board.png",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGB",
+      "sha256": "420740b0b2d31081f749bf222a182c28392ff45826c04078fa13ef2330e5ab27",
+      "status": "review"
+    },
+    {
+      "id": "vessel_plate",
+      "path": "dish-layers/vessel_plate.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "8823cb8e3b3da9bf250abac2362f1fb7320efb9abae2e55e55f90fc2270babd5",
+      "status": "review"
+    },
+    {
+      "id": "vessel_plate_shadow",
+      "path": "dish-layers/vessel_plate_shadow.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "da80ec2521d80adf9cbdb5613ae506101f8e2b6f3745b3acb2a749dc6c68b164",
+      "status": "review"
+    },
+    {
+      "id": "sauce_tomato__plate",
+      "path": "dish-layers/sauce_tomato__plate.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "4059bffdf1bf89f322823763e68e52764f554f09e18335a6d5fac5964f19d5a8",
+      "status": "review"
+    },
+    {
+      "id": "egg__scrambled",
+      "path": "dish-layers/egg__scrambled.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "4483543c2a69957ab69a1a29a688628824d6915923aed18890c2ab3e64daabee",
+      "status": "review"
+    },
+    {
+      "id": "tomato__wedge_cooked",
+      "path": "dish-layers/tomato__wedge_cooked.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "711837ee7012de71852e0e4a7244a6f726e1f82d5fc7ff9fe9ae58629b35cc91",
+      "status": "review"
+    },
+    {
+      "id": "garnish_scallion",
+      "path": "dish-layers/garnish_scallion.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "60de69903bc850efff453f00a61d359f0864756e1580eca8f553dc82a743556a",
+      "status": "review"
+    },
+    {
+      "id": "garnish_shine",
+      "path": "dish-layers/garnish_shine.png",
+      "size": [
+        640,
+        480
+      ],
+      "mode": "RGBA",
+      "sha256": "7333aeeedc4f697ca061ee30bc962c19797c412396fb798c1256228e6c13ee4e",
+      "status": "review"
+    },
+    {
+      "id": "egg",
+      "path": "ingredients/egg.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "7227a4e547b2266947c799b38dda4ed41d1d5766db0a6c0b3b933d1542fcbf57",
+      "status": "review"
+    },
+    {
+      "id": "tomato",
+      "path": "ingredients/tomato.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "74b36c681deeedb4a38bdec2556f07999c43fce0d4a2eb14752734a7dd55bfe3",
+      "status": "review"
+    },
+    {
+      "id": "pork_rib",
+      "path": "ingredients/pork_rib.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "8008968de3304b07c7e60f9b273bd14d0d7ab4aaf2338180339148e75f6b8c26",
+      "status": "review"
+    },
+    {
+      "id": "choy_sum",
+      "path": "ingredients/choy_sum.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "bd3ced62fa14c0e130ae92d00904906016e2c1075d1553257e461741cb212d87",
+      "status": "review"
+    },
+    {
+      "id": "fish_whole",
+      "path": "ingredients/fish_whole.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "0f5b001be5f7dc59321e0045706bcdff18177f6c93bc31e52144442bd9bf85d5",
+      "status": "review"
+    },
+    {
+      "id": "tofu",
+      "path": "ingredients/tofu.png",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "46c520a6542c3259ebe68ee57b5c957e61d9429cf64a0d57fd8d16a280e44e53",
+      "status": "review"
+    }
+  ],
+  "additional_requested_preview": {
+    "path": "costume/compare_small.png",
+    "subject_height_px": 150,
+    "sha256": "d361704af71fac464061043bc24e863cbaffed3dca2d8ca89e6bac90be5c9aff"
+  },
+  "layer_order": [
+    "vessel_plate_shadow",
+    "vessel_plate",
+    "sauce_tomato__plate",
+    "egg__scrambled",
+    "tomato__wedge_cooked",
+    "garnish_scallion",
+    "garnish_shine"
+  ],
+  "plate_center": [
+    320,
+    270
+  ],
+  "board": {
+    "size": [
+      960,
+      1280
+    ],
+    "layout": "2x2 pages; each logical240x320 rendered2x",
+    "pages": [
+      "result_dark",
+      "result_cream",
+      "fridge_cream",
+      "fridge_dark"
+    ],
+    "food_source": "actual delivered PNG layers and icons"
+  },
+  "validation": {
+    "dimension_check": "pass",
+    "true_alpha_food": "pass",
+    "solid_green_costume_corners": "pass",
+    "identity_hat_orientation": "visually inspected; upright NABO, no mirroring",
+    "costume150px": "visually inspected",
+    "dish160x120": "visually inspected",
+    "ingredients40x40_both_backgrounds": "visually inspected",
+    "RGB565_simulation": "visually inspected; no obvious bands",
+    "hardware": "not performed; A1 art review only"
+  },
+  "review_notes": [
+    "Model outlines visually approximate #3B2730 but are not byte-exact. Native art contains slight color modulation; exact outline mapping and group64-color packing remain pending the existing packing workflow.",
+    "No A2/Grok start images or firmware work. User selection and art review pending."
+  ],
+  "native_originals_local": "private/a1/native/ (ignored by Git; source-sized delivered PNGs are versioned)",
+  "local_proofs": [
+    "private/a1/style_board_native.png",
+    "private/a1/style_board_rgb565.png",
+    "private/a1/food_exact_backgrounds_native.png",
+    "private/a1/dish_preview.png",
+    "private/a1/ingredients_40px.png"
+  ],
+  "delivery_transforms": {
+    "costume": "Transparent image_gen cutouts uniformly resampled to976x976, composited at(24,48) over exact solid RGB(0,255,0) 1024x1024; native files retained. compare_small uses150px canvas per variant, no mirroring.",
+    "dish": {
+      "vessel_plate": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          159,
+          315,
+          1288,
+          865
+        ],
+        "target_box": [
+          65,
+          134,
+          575,
+          406
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "sauce_tomato__plate": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          264,
+          366,
+          1194,
+          725
+        ],
+        "target_box": [
+          124,
+          184,
+          516,
+          356
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "egg__scrambled": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          133,
+          279,
+          1321,
+          822
+        ],
+        "target_box": [
+          143,
+          164,
+          505,
+          344
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "tomato__wedge_cooked": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          258,
+          313,
+          1236,
+          850
+        ],
+        "target_box": [
+          145,
+          177,
+          506,
+          346
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "garnish_scallion": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          321,
+          397,
+          1160,
+          654
+        ],
+        "target_box": [
+          180,
+          199,
+          462,
+          321
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "garnish_shine": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          414,
+          375,
+          1163,
+          693
+        ],
+        "target_box": [
+          191,
+          187,
+          470,
+          319
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      },
+      "vessel_plate_shadow": {
+        "native_size": [
+          1448,
+          1086
+        ],
+        "native_bbox_alpha8": [
+          184,
+          782,
+          1264,
+          890
+        ],
+        "target_box": [
+          78,
+          372,
+          568,
+          415
+        ],
+        "size": [
+          640,
+          480
+        ],
+        "alpha_range": [
+          0,
+          255
+        ]
+      }
+    },
+    "ingredients": "Fit alpha content inside132x132, preserve aspect, place centered on160x160 transparent canvas; no procedural redraw."
+  },
+  "prompts": {
+    "costume": {
+      "B": "Use case: identity-preserve costume exploration. Asset: costume_B.png for NABO late kitchen game.\nReference image 1 is the exact NABO identity sprite sheet: use the LEFTMOST open-eyed frame only. Reference image 2 is UI layout/style only, not character redesign.\nCreate ONE single character on a 1024x1024 canvas. Pure solid chroma green #00FF00 background, entirely opaque, no gradients/shadows/ground. Frontal half-body of this exact boy NABO, mild closed-mouth smile, looking straight at viewer. Both hands lightly clasped together at chest/lower sternum. Top of white baseball cap near y60, waist cropped by bottom edge at y1024. Centered with room to each side.\nCostume B ONLY: remove white coat and stethoscope. Navy blue medical scrubs, sleeves rolled to forearms; warm natural linen beige apron, small chest pocket with a simple ECG-line embroidered on it (no words). Clip small white-and-blue hospital ID badge onto an apron shoulder strap, plain graphic tiny ECG, no tiny writing.\nPreserve identity exactly: same face shape, large grey-blue eyes, black round eyeglasses, tousled brown hair, white baseball cap, proportions of the supplied NABO. The cap front MUST preserve original blue ECG waveform above legible 'NABO' (N A B O, upright, never mirrored). Small original side cap emblem should remain. This cap brand is the sole permitted text. No other text.\nClean hand-drawn 2D cartoon, flat colors + two discrete cel-shading values, dark outlines in local color, no white sticker outline, no soft 3D rendering, no realistic fabric texture. Upper-left light. No green anywhere on character or props. No extra objects or cloth on arm yet. Original art, no third party references.",
+      "A": "Use case identity-preserve. Modify clothing ONLY on reference image1, the B outfit NABO. Image2 original identity is supporting reference. Output a single NABO on a genuinely TRANSPARENT background, no other objects, no shadow. Preserve exact face, eyes, round black glasses, tousled brown hair, white baseball cap with upright original ECG and 'NABO' front logo, head size/location, hands-clasped pose, smile, proportions and waist crop from image1. Do not mirror. Change ONLY clothing to costume A: white doctor coat over navy medical scrubs, dark indigo-blue canvas apron tied over the coat. Keep hospital badge. Stethoscope tucked INSIDE apron pocket, only a short dark curved length visible at pocket lip, not hanging around neck. Rolled white sleeves at forearms. Apron has no text. 2D flat cartoon two discrete cel shadows, local dark outlines, upper-left light, no white sticker rim, no 3D, no textured fabric. No green anywhere. 1024x1024 square composition, cap top around y60, waist cropped at bottom. One character only, no sheet, no labels. Text is ONLY existing correct NABO cap logo.",
+      "C": "Use case identity-preserve. Modify clothing ONLY on reference image1, B outfit NABO. Image2 original identity supports identity. Output ONE character on a genuinely TRANSPARENT background, no shadow. Lock exact face, eyes, round black glasses, tousled brown hair, white baseball cap with upright original ECG and 'NABO' front logo, head size/location, both hands gently clasped at sternum, mild smile, proportions and waist crop of image1. Do not mirror. Change ONLY clothing to costume C: navy Chinese mandarin-collar short jacket with traditional simple frog closures, dark brown apron, white hand towel draped over HIS RIGHT shoulder (viewer-left). No hospital badge and no stethoscope for this outfit. Apron no writing. 2D flat cartoon two discrete cel shadows, dark local outlines, upper-left light, no white sticker rim, no 3D, no fabric texture. NO green on character. 1024x1024 square, cap top around y60, waist cropped at bottom. One character no sheet/no labels. Text ONLY existing correct NABO cap logo.",
+      "Bcutout": "Use case background-extraction. Edit target reference1, NABO costume B. Remove the green background completely, return genuine TRANSPARENT alpha. Keep the entire character exactly unchanged: every facial feature, black round glasses, brown hair, white cap ECG and upright 'NABO', badge, linen apron, scrubs, clasped hands, pose, framing, color and outlines. Preserve fine hair edges. No green fringe. Do not redraw, add, crop or mirror anything. Single square character cutout at original framing."
+    },
+    "dish": {
+      "vessel_plate": "Use case: stylized-concept\nAsset type: independent transparent game dish layer, vessel_plate, for a 240x320 pixel display.\nPrimary request: draw ONLY one empty white porcelain round dinner plate seen from a 45 degree elevated angle. Output transparent 640x480 canvas. Plate ellipse centered at (320,270), horizontal bounding box about x65..575 and y135..407. Keep surrounding blank transparent space and this deliberate lower-than-center placement.\nReference image: attached NABO UI mockup is STYLE reference only, not an edit target. Match its cute bold flat food illustration language, refined and attractive.\nStyle/medium: clean FLAT 2D cartoon illustration; thick solid dark brown #3B2730 outlines about 8 pixels at target size. Rounded pleasing white porcelain with a white rim and light cream inner surface, a single flat pale warm shadow tone and small flat upper-left highlight. Light upper-left. A subtle inner oval describes the plate rim; no patterns.\nConstraints: this is the plate-only L0 layer. No food, no sauce, no garnish, no face, no cast shadow below plate (shadow is a separate asset), no glints outside plate, no steam, no text, no logos, no background or fake checkerboard. No soft 3D, no smooth gradients, no grain or realistic texture, no white sticker border. Genuine alpha transparency outside plate. Keep center and margins as specified so other layers align.",
+      "sauce_tomato__plate": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY a low shallow puddle of thick bright warm tomato-red cooking sauce, spread across an irregular rounded horizontal oval at bbox (130,175)-(510,350), centered around (320,265). NO dark contour around this liquid, no drips or splashes outside puddle. Two simple flat warm red tone regions, faint orange-red inner highlight, darker red lower edge so cooked ingredients can blend. No whole tomato pieces, no eggs, no herbs, no plate. It is one cohesive flat sauce footprint.",
+      "egg__scrambled": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY 6 fluffy chunky pieces of cooked scrambled egg, golden warm yellow and cream with rich amber underside. Arrange as a cohesive generous shallow pile filling bbox (150,165)-(505,345), but leave several small transparent gaps between folds for tomatoes above. Large soft irregular lobed scrambled chunks, dark brown outer line approx8px, no face, no oil glints (separate layer), no sauce, no tomato, no plate. These must be real scrambled egg chunks with angular soft folds, not spheres or dumplings. Slightly darker damp bottom edges merge into sauce. Main pieces distributed horizontally across center around (320,255), not a tall mound.",
+      "tomato__wedge_cooked": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY 5 moist plump cooked tomato wedges, deep scarlet skin and bright coral-red cut faces, a few pale yellow seed shapes, warmly shaded darker submerged undersides. Arrange them separately across a horizontal ellipse, alternating orientations, with visible transparent gaps between wedges: roughly center positions (185,235),(280,200),(420,225),(465,295),(325,320). Total bbox (140,170)-(510,350). #3B2730 dark brown outlines approx8px. Each wedge distinct cooked softened crescent/wedge, appetizing rounded form. Do not form a solid red mound; leave large transparent gaps so golden scrambled egg underneath shows through. No leaves, no stem, no other ingredients, no plate, no sauce, no face.",
+      "garnish_scallion": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY 9 scattered short tiny slices of fresh scallion: green oval ring cross-sections with pale green interiors and #3B2730 dark brown outlines. Arrange sparsely as a shallow elliptical constellation across a dish top bbox (180,190)-(465,320), overall centered at (320,255). Ring sizes vary slightly 12-18px across at640x480, oval 45degree view, 4 to left and 5 to right with big transparent space between. No stalks, no garnish pile, no sauce, food or plate. This is a separate garnish layer to overlay cooked food, not a complete dish.",
+      "garnish_shine": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY five tiny WHITE FOUR-POINT STAR glints with small cream highlight streaks for gloss on the upper surfaces of a cooked dish. No dark outlines on white shine. Place glints sparsely across shallow ellipse with approximate positions (205,220),(310,200),(400,235),(270,295),(450,290), individual sizes 10-20px at640x480. Each is a simple bright four-point diamond/star with four tapered points, no soft halo, no sparkle dust. Keep rest fully transparent. No food, no plate, no sauce, no shadows. This layer is the glossy finishing accent on tomato scrambled eggs.",
+      "vessel_plate_shadow": "Use case: stylized-concept. Asset type: an isolated TRANSPARENT 2D game dish layer, part of a Chinese home cooked tomato scrambled eggs illustration. Output a 640x480 genuinely transparent PNG canvas; preserve empty space around ingredient placement. Reference image 1 is ONLY a style and perspective guide (empty white plate), NOT an object to include. The final shared plate center is (320,270), 45 degree top view. Light upper-left. Cute refined FLAT 2D, appetizing rounded shapes, solid #3B2730 8px outlines where requested, warm saturated colors, one FLAT light face plus one FLAT shade face, no smooth gradients, no realistic texture or soft 3D. All cooked food has NO face. No text, logo, UI, bowl, plate, utensils, background, steam, shadow, or fake checkerboard. The ONLY visible content must be the specific layer described below. No other layer visible, transparent everywhere else.\nLayer request: Draw ONLY one very short flat dark-brown cast shadow beneath a dinner plate, as an isolated clean shallow horizontal ellipse about x80..565,y365..415, centered (320,390). Dark #3B2730 central flat ellipse plus at most one flat slightly translucent outer edge. Short tight shadow should extend just below a plate whose bottom is y407, not far away. Genuine alpha outside this ellipse. No blur, no soft gradation, no plate, no food, no visible object, no highlight. It is a standalone flat cast-shadow layer."
+    },
+    "ingredients": {
+      "egg": {
+        "initial": "Use case: stylized-concept. Asset type: a production raster game inventory ingredient icon for NABO Late Kitchen. Subject: ONE whole raw chicken egg in shell, upright rounded egg shape, warm cream pale yellow shell. Add one tiny polite kawaii face centered on broad lower front: two dark bead eyes, very small curved smile, two pink blush cheeks. Style: refined cute FLAT 2D illustration, rounded confident forms, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5 px at final 160 px, one discrete upper-left light shape plus one discrete lower-right shade shape, clean flat colors, crisp contour. At 40 px it must read immediately as egg and the little face must remain readable. Composition: square transparent canvas, one centered icon occupying 80-84% of the square, minimum 8% empty margin on every side. View about 30 degrees down, light from upper left. Alpha background genuinely transparent. No plate, no cast shadow, no scene, no background color, no white sticker rim, no text, no labels, no logo, no watermark, no props. NO photorealism, no soft 3D, no texture, no gradients, no sparkly background. Deliver a single polished icon, not a sheet. Intended delivery 160x160 RGBA.",
+        "refinement": "Use case: precise-object-edit. Edit the reference egg icon only to remove every smooth gradient and all paper/noise texture. Keep exact shape, face placement, expression, thick dark #3B2730 contour, colors, lighting direction, composition and genuine transparent alpha unchanged. Fill each region with one perfectly uniform solid color. Flat cream base, one uniform pale ivory upper-left highlight shape, one uniform warm tan lower-right crescent shadow shape only, no intermediate shading. Eyes solid #3B2730 with tiny white dots, cheeks solid coral pink. Edge should remain thick crisp dark brown, NO white rim. Make a clean vector-like FLAT 2D raster game icon, readable at 40 pixels. Transparent background, no text, no props."
+      },
+      "tomato": {
+        "prompt": "Use case: stylized-concept. Asset type: production raster game inventory ingredient icon, one of a matching set for NABO Late Kitchen. Input image 1 is a STYLE REFERENCE ONLY: match its cute tiny face, thick dark brown outline, upper-left light and simple flat 2D silhouette. Replace subject entirely. Single centered subject on a genuinely transparent square canvas, minimum 8% empty margin on all sides, fills 80-84% square. Refined cute FLAT 2D illustration with confident rounded shapes, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5px at delivery 160x160. One uniform solid upper-left light region and one uniform solid lower-right shade region; pure flat colors. Each icon has ONE tiny polite face: two dark bead eyes, small curved smile, pink blush cheeks on its broad front. Must read as its raw grocery ingredient at 40px, tiny face readable. Top-down about 30 degrees, light upper left. No cast shadow, no scene, no background color, no plate, no white sticker rim, no text/labels/logo/watermark, no smooth gradient, no texture/noise, NO 3D. Single icon, not a sheet. Intended final 160x160 RGBA.\nSubject: ONE whole RAW ripe bright tomato, red-orange plump gently lobed body, a compact green star-shaped calyx and short stem on top. Face centered on front red surface. Red silhouette should remain clear at 40px. No slice."
+      },
+      "pork_rib": {
+        "prompt": "Use case: stylized-concept. Asset type: production raster game inventory ingredient icon, one of a matching set for NABO Late Kitchen. Input image 1 is a STYLE REFERENCE ONLY: match its cute tiny face, thick dark brown outline, upper-left light and simple flat 2D silhouette. Replace subject entirely. Single centered subject on a genuinely transparent square canvas, minimum 8% empty margin on all sides, fills 80-84% square. Refined cute FLAT 2D illustration with confident rounded shapes, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5px at delivery 160x160. One uniform solid upper-left light region and one uniform solid lower-right shade region; pure flat colors. Each icon has ONE tiny polite face: two dark bead eyes, small curved smile, pink blush cheeks on its broad front. Must read as its raw grocery ingredient at 40px, tiny face readable. Top-down about 30 degrees, light upper left. No cast shadow, no scene, no background color, no plate, no white sticker rim, no text/labels/logo/watermark, no smooth gradient, no texture/noise, NO 3D. Single icon, not a sheet. Intended final 160x160 RGBA.\nSubject: ONE compact raw pork rib portion, an oblong coral pink piece of raw meat with two creamy white rib bone cross-sections along upper edge and a clean simple darker pink meat band. Three-quarter view of grocery pork ribs, identifiable at 40px. Face centered on broad front meat surface. No wrapper, no cooked brown meat, no steak, no bone pile."
+      },
+      "choy_sum": {
+        "prompt": "Use case: stylized-concept. Asset type: production raster game inventory ingredient icon, one of a matching set for NABO Late Kitchen. Input image 1 is a STYLE REFERENCE ONLY: match its cute tiny face, thick dark brown outline, upper-left light and simple flat 2D silhouette. Replace subject entirely. Single centered subject on a genuinely transparent square canvas, minimum 8% empty margin on all sides, fills 80-84% square. Refined cute FLAT 2D illustration with confident rounded shapes, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5px at delivery 160x160. One uniform solid upper-left light region and one uniform solid lower-right shade region; pure flat colors. Each icon has ONE tiny polite face: two dark bead eyes, small curved smile, pink blush cheeks on its broad front. Must read as its raw grocery ingredient at 40px, tiny face readable. Top-down about 30 degrees, light upper left. No cast shadow, no scene, no background color, no plate, no white sticker rim, no text/labels/logo/watermark, no smooth gradient, no texture/noise, NO 3D. Single icon, not a sheet. Intended final 160x160 RGBA.\nSubject: ONE bunch of raw Chinese flowering cabbage CHOY SUM, three broad rounded fresh green leaves on pale green slender stems joined at the bottom, one tiny yellow flower bud near upper center. Upright bunch tapering to base. Face centered on broad middle leaf. Simple readable 40px silhouette, no pot, no roots, no tomato."
+      },
+      "fish_whole": {
+        "prompt": "Use case: stylized-concept. Asset type: production raster game inventory ingredient icon, one of a matching set for NABO Late Kitchen. Input image 1 is a STYLE REFERENCE ONLY: match its cute tiny face, thick dark brown outline, upper-left light and simple flat 2D silhouette. Replace subject entirely. Single centered subject on a genuinely transparent square canvas, minimum 8% empty margin on all sides, fills 80-84% square. Refined cute FLAT 2D illustration with confident rounded shapes, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5px at delivery 160x160. One uniform solid upper-left light region and one uniform solid lower-right shade region; pure flat colors. Each icon has ONE tiny polite face: two dark bead eyes, small curved smile, pink blush cheeks on its broad front. Must read as its raw grocery ingredient at 40px, tiny face readable. Top-down about 30 degrees, light upper left. No cast shadow, no scene, no background color, no plate, no white sticker rim, no text/labels/logo/watermark, no smooth gradient, no texture/noise, NO 3D. Single icon, not a sheet. Intended final 160x160 RGBA.\nSubject: ONE whole RAW silver-blue fish, horizontal with head on the viewer LEFT and forked tail on viewer RIGHT, belly pale cream, upper side slate blue, simple fin shapes. About 30 degree top view, friendly tiny polite kawaii face integrated into front head area with two bead eyes, small smile and pink cheeks; no extra big anatomical fish eye. Single intact fish, not fillet, no plate, no water."
+      },
+      "tofu": {
+        "prompt": "Use case: stylized-concept. Asset type: production raster game inventory ingredient icon, one of a matching set for NABO Late Kitchen. Input image 1 is a STYLE REFERENCE ONLY: match its cute tiny face, thick dark brown outline, upper-left light and simple flat 2D silhouette. Replace subject entirely. Single centered subject on a genuinely transparent square canvas, minimum 8% empty margin on all sides, fills 80-84% square. Refined cute FLAT 2D illustration with confident rounded shapes, uniform thick solid deep plum-brown #3B2730 outline equivalent to 5px at delivery 160x160. One uniform solid upper-left light region and one uniform solid lower-right shade region; pure flat colors. Each icon has ONE tiny polite face: two dark bead eyes, small curved smile, pink blush cheeks on its broad front. Must read as its raw grocery ingredient at 40px, tiny face readable. Top-down about 30 degrees, light upper left. No cast shadow, no scene, no background color, no plate, no white sticker rim, no text/labels/logo/watermark, no smooth gradient, no texture/noise, NO 3D. Single icon, not a sheet. Intended final 160x160 RGBA.\nSubject: ONE block of RAW fresh tofu, pale ivory cuboid in gentle three-quarter top view about 30 degrees, rounded corners and straight simple edges. Visible square top and front face, small polite face centered on broad FRONT side, exactly two bead eyes plus tiny smile and blush cheeks. One discrete warm cream shade on right side and ivory top, no porous texture, no food plate."
+      }
+    }
+  }
+}

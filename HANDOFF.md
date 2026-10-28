@@ -4,6 +4,26 @@
 
 ---
 
+## 最新状态 · 2026-10-28 下午 · Codex（Windows）
+
+**阶段：A1 第 1 轮已交付，17 项标为 review，等待刘东坡选造型和审图。**
+
+- 已创建私有仓库 [Liutupi/nabo-kitchen](https://github.com/Liutupi/nabo-kitchen)，本地 main 已通过 git push -u origin main 建立上游。收工按流程 rebase 后同步本轮交付。
+- 造型：costume/costume_A.png、costume_B.png、costume_C.png，均为 1024×1024、正面交握姿势、纯 #00FF00 绿幕；帽标 NABO 方向正确。costume/compare_small.png 是实际人物 150 px 高的并排检查图。
+- 菜品：dish-layers/ 内的 vessel_plate、vessel_plate_shadow、sauce_tomato__plate、egg__scrambled、tomato__wedge_cooked、garnish_scallion、garnish_shine，均为 640×480 独立透明 PNG，盘子中心固定 (320,270)，已按规定顺序实际合成。
+- 食材：ingredients/ 内 egg、tomato、pork_rib、choy_sum、fish_whole、tofu，均为 160×160 透明 PNG；小脸只在食材上，熟料和菜品没有脸。
+- 样板：style/style_board.png 为 960×1280，将 4 个 240×320 页面按 2 倍呈现：结果页深/浅底、冰箱页浅/深底。全部使用本轮实际图层和食材；B 造型只用于预览，**未定稿**。
+- 已检查 150 px 人物、160×120 合成菜、40×40 食材、两种实际底色和 RGB565 模拟；源图尺寸、透明通道和文件 ID 检查通过。本轮没有真机验证。
+- 使用内置 image_gen。完整提示词、输入/交付记录、SHA-256、坐标及待审事项见 style/style_board.json；额外原始生成图和检查图保存在本机 private/a1/，不进入 Git。规格尺寸的交付原图已进入版本库。
+
+### 审图注意与下一步
+
+1. 描边视觉上接近目标 #3B2730，但模型原图的实际色值并非精确一致，局部仍有轻微色彩变化。保留未限色原图供审图；建议在既定打包流程里统一映射描边色并检查每组 64 色，不能把本轮视为最终限色验收通过。**未修改任何定稿规格。**
+2. 刘东坡从 A/B/C 选择厨房造型，并审核菜品和食材风格。确认本轮之后才开始 A2 的 K1/K2 及后续批量素材。
+3. 本轮没有进行中的出图任务或操作阻塞；当前停在 A1 review，未制作下一轮素材、原型或固件。
+
+---
+
 ## 最新状态 · 2026-10-28 下午 · Claude（总架构师）
 
 **界面风格改版。**刘东坡看了第一版线框图，觉得太土、不够精致可爱，希望参照 NABO 工具箱的界面。已经改为和工具箱同一家族的视觉语言：
