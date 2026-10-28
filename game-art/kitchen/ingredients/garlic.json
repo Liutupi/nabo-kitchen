@@ -1,0 +1,32 @@
+{
+  "id": "garlic",
+  "round": "CODEX round3 / v0.1 and v0.2 ingredients",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: production raster inventory icon in the approved NABO Late Kitchen food set. Reference image is STYLE ONLY: preserve its rounded cute 2D design, dark plum-brown contour, tiny polite face, lighting and shading language, replace subject completely with the requested grocery ingredient. Draw ONE single ingredient icon on genuine transparent alpha. Raw/as-bought ingredient, seen about 30 degrees down. Square canvas, centered silhouette filling80-84% with at least8% clear margin all sides. Uniform solid thick #3B2730 contour equivalent to5px at160x160. Warm saturated flat colors with ONE upper-left light shape and ONE lower-right shadow shape, no gradients, no grain, no texture, no 3D. Exactly one little face on the broadest front surface: two dark bead eyes, tiny gentle smile, two small pink blush cheeks. Face must read at40px and ingredient shape immediately identifiable. No arms or legs. No plate/bowl/packaging unless needed by explicit subject, no cast shadow, no white sticker rim, no border card, no text/logo/watermark. Single icon, never a sheet. Intended final160x160RGBA.\nSubject: ONE whole raw garlicbulb, ivory cream rounded teardrop with4simpleclove divisions andshortpointedstalk. Tinyface centered on broadfront. No peeledclovepile.",
+  "path": "ingredients/garlic.png",
+  "size": [
+    160,
+    160
+  ],
+  "native_local": "private/a3/native/ingredients/garlic.png",
+  "native_size": [
+    1254,
+    1254
+  ],
+  "native_sha256": "70546c6345a6c7a7d1f0f7a9535fe86c3bbca2f53f44fc65901106c9a5852c5e",
+  "native_crop": [
+    91,
+    69,
+    1166,
+    1207
+  ],
+  "processing": "alpha-bounds crop; uniform Lanczos fit into132px; center on160px transparentcanvas; no repaint or quantization",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "sha256": "9bbc3f0cb879d724750524c3469833adc0c131ba7b1c492a41d2574ac0d91104",
+  "review_note": "Exact contour color and64color mapping deferred to packing; model/native minor color variation retained."
+}

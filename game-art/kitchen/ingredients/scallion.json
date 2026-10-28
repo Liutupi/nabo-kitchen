@@ -1,0 +1,32 @@
+{
+  "id": "scallion",
+  "round": "CODEX round3 / v0.1 and v0.2 ingredients",
+  "date": "2026-10-28",
+  "status": "review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: production raster inventory icon in the approved NABO Late Kitchen food set. Reference image is STYLE ONLY: preserve its rounded cute 2D design, dark plum-brown contour, tiny polite face, lighting and shading language, replace subject completely with the requested grocery ingredient. Draw ONE single ingredient icon on genuine transparent alpha. Raw/as-bought ingredient, seen about 30 degrees down. Square canvas, centered silhouette filling80-84% with at least8% clear margin all sides. Uniform solid thick #3B2730 contour equivalent to5px at160x160. Warm saturated flat colors with ONE upper-left light shape and ONE lower-right shadow shape, no gradients, no grain, no texture, no 3D. Exactly one little face on the broadest front surface: two dark bead eyes, tiny gentle smile, two small pink blush cheeks. Face must read at40px and ingredient shape immediately identifiable. No arms or legs. No plate/bowl/packaging unless needed by explicit subject, no cast shadow, no white sticker rim, no border card, no text/logo/watermark. Single icon, never a sheet. Intended final160x160RGBA.\nSubject: ONE compact bunch of THREE raw scallions, long richgreen tubular leaves on creamy white slender lower stalks with tinysimple roots, tiedtogetherbytheir silhouette only/no ribbon. Exactly one tinyface on broadestwhitebase. Fewclean leafdivisions, notchoysum.",
+  "path": "ingredients/scallion.png",
+  "size": [
+    160,
+    160
+  ],
+  "native_local": "private/a3/native/ingredients/scallion.png",
+  "native_size": [
+    1254,
+    1254
+  ],
+  "native_sha256": "0bb2c09f8398f24868efa38bd00a3398f45f6c8e0fc1a8dacfa810effb252d3a",
+  "native_crop": [
+    229,
+    47,
+    1186,
+    1209
+  ],
+  "processing": "alpha-bounds crop; uniform Lanczos fit into132px; center on160px transparentcanvas; no repaint or quantization",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "sha256": "1115ee30eac475daf40b4be210d5247b4434cdeb1ed815f7b7663a4ef70b32f3",
+  "review_note": "Exact contour color and64color mapping deferred to packing; model/native minor color variation retained."
+}
