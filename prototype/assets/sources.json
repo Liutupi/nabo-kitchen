@@ -1,0 +1,39 @@
+{
+  "cutouts": [
+    {
+      "name": "C",
+      "source": "game-art\\kitchen\\costume\\costume_final.png",
+      "source_sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+      "crop": [
+        232,
+        62,
+        799,
+        1024
+      ],
+      "processing": "uniform green-key and crop only, no repaint or mirroring",
+      "output_sha256": "ce8810065d34d626725a6b6c950f198af9f02968cd9b0e544d411f3a2a934ac8"
+    },
+    {
+      "name": "K2",
+      "source": "game-art\\kitchen\\grok-start\\K2.png",
+      "source_sha256": "fe9c051c2a335e7cb3a9643420f4e2d4f51817ec80de6a4c2fd52aa95c699b2c",
+      "crop": [
+        112,
+        58,
+        881,
+        1024
+      ],
+      "processing": "uniform green-key and crop only, no repaint or mirroring",
+      "output_sha256": "4b279cf3db241753f82257d9574d924ec38befec9e05a900deeeabae4f72085d"
+    }
+  ],
+  "font": {
+    "source_name": "SourceHanSansSC-Medium.otf",
+    "source_sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70",
+    "source_commit": "a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2",
+    "output_sha256": "2807a9407442cf3dd8c4d91355951c06c8ed4abcf26f4d01469e87889429bf12",
+    "characters": 3628,
+    "family": "KitchenHan",
+    "processing": "Unicode subset, reserved family renamed, WOFF2; official pinned SC Medium source"
+  }
+}

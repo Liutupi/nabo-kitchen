@@ -1,0 +1,28 @@
+✔ mulberry32 stable uint32 vectors and date/device separation (1.2251ms)
+✔ recency weights use sequential integer percentages, never exclusion (6.0843ms)
+✔ hard exclusions survive every soft relaxation and deterministic rerolls avoid same set (0.4615ms)
+✔ three/four dish assignments enforce roles, uniqueness, ingredients, methods and time (0.4084ms)
+✔ fridge scores main ingredients only, ignores seasonings and hides missing two (0.2883ms)
+✔ shopping scales and merges only same unit; bought entries sink and remain separate (0.3182ms)
+✔ full walk required for completion; repeated cooking increments lifetime but not unlock count (0.3428ms)
+✔ persistence corruption recovery and date rollover do not erase sessions (0.2918ms)
+✔ three total timers persist, pause/resume and expire independent of pages (0.3497ms)
+✔ approved thirty-menu library can form real three/four-dish combinations (20.865ms)
+✔ all fourteen pages render locally with real images, fonts, no runtime errors (2092.7315ms)
+✔ actual keyboard gestures: double UP is atomic; long UP leaves but timers keep going (1244.2962ms)
+✔ short OK starts step timer then advances, step progress persists after return/reload (266.6031ms)
+✔ timer limit, long OK pause/resume and top alarm route across any page (148.2187ms)
+✔ fridge toggles, shopping merges, favorites and two clear confirmations persist (164.7863ms)
+✔ day cache survives reopening and reroll allowance cannot be bypassed by changing conditions (361.614ms)
+✔ four-dish result keeps all four unique recipes and scrolls a three-card viewport (137.1373ms)
+✔ alarms route from cover and outside kitchen; canceled single UP is never lost to another key (389.974ms)
+✔ touch physical controls work at mobile size, with silent media and native screen pixels (403.8954ms)
+✔ all thirty recipes and every instruction can render without missing delivered art (975.6875ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6800.8925

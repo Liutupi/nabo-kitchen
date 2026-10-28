@@ -1,0 +1,511 @@
+{
+  "stage": "M1 browser implementation and automated smoke complete; user cooking acceptance pending",
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "feature_freeze": true,
+  "runtime": {
+    "node": "v24.19.0",
+    "browser": "Microsoft Edge 156.0.4314.42",
+    "mode": "headless, silent, local-only HTTP"
+  },
+  "command": "& 'C:\\Users\\pc\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe' --test --test-reporter=spec prototype/tests/model.test.mjs prototype/tests/ui.test.cjs",
+  "result": {
+    "tests": 20,
+    "model_tests": 10,
+    "ui_tests": 10,
+    "pass": 20,
+    "fail": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "duration_ms": 6800.8925
+  },
+  "test_output": {
+    "path": "validation/test-output.txt",
+    "sha256": "f99ba0756cd444e1330b7dbaf903058be6f01cfe13d430d212eeb9063d4b65e1"
+  },
+  "font": {
+    "source_name": "SourceHanSansSC-Medium.otf",
+    "source_sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70",
+    "source_commit": "a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2",
+    "output_sha256": "2807a9407442cf3dd8c4d91355951c06c8ed4abcf26f4d01469e87889429bf12",
+    "characters": 3628,
+    "family": "KitchenHan",
+    "processing": "Unicode subset, reserved family renamed, WOFF2; official pinned SC Medium source",
+    "file": "assets/kitchen-han.woff2",
+    "bytes": 1243708
+  },
+  "recency_policy": "weight-only; recent dishes remain eligible (user decision 2026-10-28)",
+  "test_clock": "frozen default 2026-10-28T12:00:00Z; advanceTime/reset drive deterministic time, separate localStorage",
+  "logical_screen": [
+    240,
+    320
+  ],
+  "viewports": [
+    [
+      900,
+      740
+    ],
+    [
+      390,
+      800
+    ]
+  ],
+  "recipe_count": 30,
+  "instruction_count": 148,
+  "recipes": [
+    {
+      "id": "baiqie-ji",
+      "path": "data/recipes/curated/baiqie-ji.json",
+      "steps": 6,
+      "sha256": "9883a9e66d1cd7cabcf53788d92e635501aa58da8e73625571d65e078549b27e"
+    },
+    {
+      "id": "baizhuo-xia",
+      "path": "data/recipes/curated/baizhuo-xia.json",
+      "steps": 5,
+      "sha256": "78ed72b28a8fc2c60401a9cb43fd281674828a50ba49738e03087791841d2282"
+    },
+    {
+      "id": "chao-xilanhua",
+      "path": "data/recipes/curated/chao-xilanhua.json",
+      "steps": 4,
+      "sha256": "4c24e8c59b17c60c47cd5df4bff7e4c75b3be94f8f2aa99b8dd8c8bb64905a88"
+    },
+    {
+      "id": "chizhi-zheng-paigu",
+      "path": "data/recipes/curated/chizhi-zheng-paigu.json",
+      "steps": 5,
+      "sha256": "39a5bc3d7608fcec6baf444d905a1d41da657f82229b76f3f2a81a7cefda94c8"
+    },
+    {
+      "id": "culiu-baicai",
+      "path": "data/recipes/curated/culiu-baicai.json",
+      "steps": 4,
+      "sha256": "cae9ee086fba35a6489d24ee67ede60d19cc9a1dba7284f4200b1d5bee83fd69"
+    },
+    {
+      "id": "donggua-paigu-tang",
+      "path": "data/recipes/curated/donggua-paigu-tang.json",
+      "steps": 6,
+      "sha256": "9cec6f7ffa23dca788e34d07e68a35e34cca338451d12d34892a42ffea103716"
+    },
+    {
+      "id": "fanqie-chaodan",
+      "path": "data/recipes/curated/fanqie-chaodan.json",
+      "steps": 5,
+      "sha256": "c415c37239907ddab558beca73755f7745a05d3b49e1baa087e792896abece78"
+    },
+    {
+      "id": "fanqie-dantang",
+      "path": "data/recipes/curated/fanqie-dantang.json",
+      "steps": 5,
+      "sha256": "dfac2570204d1e0e5d4423d7f47a63235f032a57e33bded75f36028158995929"
+    },
+    {
+      "id": "fanqie-tudou-niurou-tang",
+      "path": "data/recipes/curated/fanqie-tudou-niurou-tang.json",
+      "steps": 6,
+      "sha256": "31c73cdd82783e869a01aba8f77dc03086ae4f20bc251f872a586d6a40174759"
+    },
+    {
+      "id": "hongshao-paigu",
+      "path": "data/recipes/curated/hongshao-paigu.json",
+      "steps": 5,
+      "sha256": "ee20023a217e2113d16746f706310284157e4ea353c8ee2f8c9ef697b2707526"
+    },
+    {
+      "id": "hongshao-qiezi",
+      "path": "data/recipes/curated/hongshao-qiezi.json",
+      "steps": 5,
+      "sha256": "8cde0aafcacd76b8d402fe82cda2b5af3052e9214bf9c2dd324a9a77abe3b1ba"
+    },
+    {
+      "id": "hongshao-rou",
+      "path": "data/recipes/curated/hongshao-rou.json",
+      "steps": 5,
+      "sha256": "3e921a57cddabf846adfa7cd3e79abcbb328670ed752ef56f6546d6da27a94de"
+    },
+    {
+      "id": "hongshao-yu",
+      "path": "data/recipes/curated/hongshao-yu.json",
+      "steps": 5,
+      "sha256": "0eebe7fca7bb58519f9ab3f7d8c447e6751ac29b848fe682c169e6e978968bd1"
+    },
+    {
+      "id": "hupi-qingjiao",
+      "path": "data/recipes/curated/hupi-qingjiao.json",
+      "steps": 4,
+      "sha256": "e5c244cf635ace8101ee4376ef584d086e1740685ad6b2421170548fb3f54c52"
+    },
+    {
+      "id": "jiachang-doufu",
+      "path": "data/recipes/curated/jiachang-doufu.json",
+      "steps": 5,
+      "sha256": "fa0130dab9b0dd2d91f2a5631437ad3670a8935930a0b69e75140da8a42df8c9"
+    },
+    {
+      "id": "jiyu-doufu-tang",
+      "path": "data/recipes/curated/jiyu-doufu-tang.json",
+      "steps": 6,
+      "sha256": "1320aee73bf80a7d955cb70c6fa277518dbc38dad7d4dd27335f066b12001b3b"
+    },
+    {
+      "id": "kele-jichi",
+      "path": "data/recipes/curated/kele-jichi.json",
+      "steps": 6,
+      "sha256": "d939063e556442bb1800cfa36b153707c184a8fd07422d59ba211a929b9312bc"
+    },
+    {
+      "id": "pai-huanggua",
+      "path": "data/recipes/curated/pai-huanggua.json",
+      "steps": 4,
+      "sha256": "67f52d59b2e0e5a9fb3dd817b3bc6b50e8800c2742a00a482109f14d94fa6fc8"
+    },
+    {
+      "id": "qingcai-doufu-tang",
+      "path": "data/recipes/curated/qingcai-doufu-tang.json",
+      "steps": 5,
+      "sha256": "1bd99ca375945b2a8a2839cb551ebe5a9b2d381f4153368a77c06d672ade1c98"
+    },
+    {
+      "id": "qingjiao-rousi",
+      "path": "data/recipes/curated/qingjiao-rousi.json",
+      "steps": 5,
+      "sha256": "41ddc7bc9c4511108598c5f3d26d9b3d206d840d4d272fa383774b8eef88d974"
+    },
+    {
+      "id": "qingzheng-luyu",
+      "path": "data/recipes/curated/qingzheng-luyu.json",
+      "steps": 6,
+      "sha256": "64e27a1b301bcfcd27e91af6138796d7c31fd958d70b4c6a4b2cbf8cb2b3d283"
+    },
+    {
+      "id": "roubing-zhengdan",
+      "path": "data/recipes/curated/roubing-zhengdan.json",
+      "steps": 5,
+      "sha256": "f422a89d32a21bcbfe671361fe9f5b3021ec7a2ea0cb4aa01a5b2204cbce9f43"
+    },
+    {
+      "id": "suanla-tudousi",
+      "path": "data/recipes/curated/suanla-tudousi.json",
+      "steps": 4,
+      "sha256": "982e41b05258f30050685dc48b3bb31de146ac9a2db83c6f0a8cceb3cf1787e9"
+    },
+    {
+      "id": "suanrong-caixin",
+      "path": "data/recipes/curated/suanrong-caixin.json",
+      "steps": 4,
+      "sha256": "4f794a56840289ecc706896fd081abb2a9d369986043a43856f8d20b6c00f5d7"
+    },
+    {
+      "id": "suanrong-shengcai",
+      "path": "data/recipes/curated/suanrong-shengcai.json",
+      "steps": 4,
+      "sha256": "1b4d7454bf5770e842fc9209d46e594ef3c53fdf216a237fc2cff3ef655352cd"
+    },
+    {
+      "id": "xianggu-menji",
+      "path": "data/recipes/curated/xianggu-menji.json",
+      "steps": 5,
+      "sha256": "17c1032ce5d7448b4f16f7d9f3efcaaa058706fd05f557a2794c03c33c5bd77b"
+    },
+    {
+      "id": "xiangjian-doufu",
+      "path": "data/recipes/curated/xiangjian-doufu.json",
+      "steps": 4,
+      "sha256": "b69120496f77de3f710ae28beab8d9fb5d226d254d4e6ea485e5765c1321b892"
+    },
+    {
+      "id": "xiaren-chaodan",
+      "path": "data/recipes/curated/xiaren-chaodan.json",
+      "steps": 5,
+      "sha256": "49cb9891658f3ffcbef73696f46e9bd822ecad66e5cd8c14366f978a79380519"
+    },
+    {
+      "id": "yangcong-chao-niurou",
+      "path": "data/recipes/curated/yangcong-chao-niurou.json",
+      "steps": 5,
+      "sha256": "5848d5ba8f0d97b4a0175e8dd8b6ecdc03d4979322cb61e4da806047bb17ab5c"
+    },
+    {
+      "id": "zheng-shuidan",
+      "path": "data/recipes/curated/zheng-shuidan.json",
+      "steps": 5,
+      "sha256": "7d29dbcacc4d315555752734c6d0ccb1eab89a5fd56f00753d19b5746fd2ebae"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "validation/screens/P0.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 35251,
+      "sha256": "76077f2051b269c9b0bf6d375d029b040ad0e4954c3ec9861948f716356030d9"
+    },
+    {
+      "path": "validation/screens/P1.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 36752,
+      "sha256": "eb24a8e9d9438adf7fdcb26b192d202f88d585d56b45f5fbe1cced20aa7f2783"
+    },
+    {
+      "path": "validation/screens/P2.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 14849,
+      "sha256": "e2496aff58044703bdc9d9384830f4988588c4ef4a054239f2cfd1d6d0fddda4"
+    },
+    {
+      "path": "validation/screens/P3.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 43438,
+      "sha256": "8e299a9159ecdb5a3c85f9639bb9fdbf4407e7cb7e5955c53dc5a21530f6ca79"
+    },
+    {
+      "path": "validation/screens/P4.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 53198,
+      "sha256": "34e7a7e1e93c2e24a32d6fe7d1dcc1b3c1022e71a73c5d5b76205036a3695183"
+    },
+    {
+      "path": "validation/screens/P5.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 19396,
+      "sha256": "94d6604fcb46ee34c8caabbb3696303e2043af1657d215da343958bbf7c75192"
+    },
+    {
+      "path": "validation/screens/P6.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 26032,
+      "sha256": "c38021fe104c324ba777e9f3263053e35dd58dfdf389031eddff1fa34a66b57e"
+    },
+    {
+      "path": "validation/screens/P7.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 28022,
+      "sha256": "97dea2d0de4c5ecea56ed054b05654579319f87bea23df7564e85f8450b0d931"
+    },
+    {
+      "path": "validation/screens/P8.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 49383,
+      "sha256": "4569927631c8cb72bc3ea05908eeccea5e5273cb1cdaf027a326bc7b6a8a21ec"
+    },
+    {
+      "path": "validation/screens/P9.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 36363,
+      "sha256": "44b4e12a7fd2e467c5fc20483ee39c94416ea0eacc6a06171c4172572dc93c12"
+    },
+    {
+      "path": "validation/screens/P10.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 26058,
+      "sha256": "7b99b5986b1db9d869854b4079dde8360a68b82e5503a204e2f2bacf775dd5d9"
+    },
+    {
+      "path": "validation/screens/P11.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 15494,
+      "sha256": "102890afb3e4b78b960dfcbe005b2829e6f32478cee9c6fb23e1023a11a0a63c"
+    },
+    {
+      "path": "validation/screens/P12.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 27929,
+      "sha256": "ae1a79e7ea826a88f9a8f07d6ac786c66dc4cdefbc4edfb32fdbe86983f4fa72"
+    },
+    {
+      "path": "validation/screens/P13.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 12997,
+      "sha256": "c9f12615909aba7c37567a2308c872f45b0101beffca134ea0b2caf0468fd6c7"
+    },
+    {
+      "path": "validation/screens/P7-three-timers.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 32036,
+      "sha256": "c0dadf7b9722bd9cf0817de83deaf7dee238386bc8b66e4d2334a2f04248c810"
+    },
+    {
+      "path": "validation/screens/P8-complete.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 49196,
+      "sha256": "e22091993e0839455691c02290ac6af7ecdcf66f6a84c1079b5a6c6fcd1206fb"
+    },
+    {
+      "path": "validation/screens/four-dish.png",
+      "size": [
+        240,
+        320
+      ],
+      "bytes": 32908,
+      "sha256": "a372a1586d9d8f2f4de7cc52c14fd496d1785f96105894d781690461cc6de4b3"
+    },
+    {
+      "path": "validation/screens/mobile.png",
+      "size": [
+        390,
+        1090
+      ],
+      "bytes": 109181,
+      "sha256": "55acaeb5b85b7395345b6d08578b002bbd83d2babfd3987a68afbb682dbb14a1"
+    }
+  ],
+  "contact_sheet": {
+    "path": "validation/all-pages.png",
+    "sha256": "5b59c2921f66a76752e0f6576470a079c544c59d4ffeca24f519c76b73b66de1",
+    "note": "P7 uses actual three-timer test; P8 uses full-step completion test. Individual screenshots are direct browser captures; contact is layout-only composite."
+  },
+  "limits": [
+    "M1 roadmap acceptance still requires the user to complete a recipe on a phone.",
+    "No firmware build, C parity implementation, physical device or acoustic acceptance is claimed.",
+    "Browser currently uses static C/K2 poses; Grok playback not integrated.",
+    "Sound/volume settings are persisted; no audio output is implemented and default is silent.",
+    "Less-spicy/less-oil preferences persist; no unapproved new weight/tag mapping is applied.",
+    "Normal server binds127.0.0.1 only."
+  ],
+  "files": [
+    {
+      "path": "app.mjs",
+      "bytes": 13217,
+      "sha256": "7013e44949ea3a19754146835d9312fe452e61abb30df693b31a59b581570de2"
+    },
+    {
+      "path": "assets/C.png",
+      "bytes": 661215,
+      "sha256": "ce8810065d34d626725a6b6c950f198af9f02968cd9b0e544d411f3a2a934ac8"
+    },
+    {
+      "path": "assets/FONT-NOTICE.txt",
+      "bytes": 201,
+      "sha256": "49ed451394ea2bc0178b56824816767799513570d6be9e724ef59b1daae0b630"
+    },
+    {
+      "path": "assets/K2.png",
+      "bytes": 753318,
+      "sha256": "4b279cf3db241753f82257d9574d924ec38befec9e05a900deeeabae4f72085d"
+    },
+    {
+      "path": "assets/kitchen-han.woff2",
+      "bytes": 1243708,
+      "sha256": "2807a9407442cf3dd8c4d91355951c06c8ed4abcf26f4d01469e87889429bf12"
+    },
+    {
+      "path": "assets/OFL.txt",
+      "bytes": 4463,
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2"
+    },
+    {
+      "path": "assets/sources.json",
+      "bytes": 1384,
+      "sha256": "a01d387ef0d0be876132c1f795dd1b8611afaef0820c4efa8074c26ac46b9b51"
+    },
+    {
+      "path": "build_assets.py",
+      "bytes": 1317,
+      "sha256": "b334b410faebd9f960b6ced9bd4b7d444f468282f3832317e13141fde7031c28"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1891,
+      "sha256": "854b92f386d2c8e726c134abae7c274102975a17f5df4b768f936439452aac8a"
+    },
+    {
+      "path": "input.mjs",
+      "bytes": 1839,
+      "sha256": "291e334468e063c939a4ce446d89c7c9b0a1e937779a4ebe6d240aced45356f9"
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 5590,
+      "sha256": "7a205f006efc79ce50b1d3c9d51b813e5f871a572746f72f3c78814cef0ddb17"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7735,
+      "sha256": "41766554a3314f0e05b10461c814282591bdd3819694db702d8a31db0dd18582"
+    },
+    {
+      "path": "server.mjs",
+      "bytes": 2026,
+      "sha256": "4b9884907a24d55fe882f6ec005e2a2203bbf015219e4ec0ada5b399929516e2"
+    },
+    {
+      "path": "state.mjs",
+      "bytes": 3224,
+      "sha256": "c01e69080366342d31742943915d430f82befcdce4d4436827943aa4b932c42b"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 12423,
+      "sha256": "2a401411f8f12e928a0fec4fcae31ff0f748f8e6673a4ab2af29574b8f8fde9b"
+    },
+    {
+      "path": "tests/model.test.mjs",
+      "bytes": 6956,
+      "sha256": "90372283539d0568639314ec92a3923087c8e55b1db54ad3b729802e1c92abf2"
+    },
+    {
+      "path": "tests/ui.test.cjs",
+      "bytes": 11450,
+      "sha256": "2b5789da1333f9d1cf835597ee50169b1ca3380e37deba309206ed95a62ebb30"
+    },
+    {
+      "path": "timers.mjs",
+      "bytes": 1583,
+      "sha256": "dd70d228a29961be9c346d955b81577a4a6fccb91343629d8485cf19e92b5684"
+    },
+    {
+      "path": "view.mjs",
+      "bytes": 17433,
+      "sha256": "860ff2679da84be0ac4abaa6be421bd41fbd242b78a1a6cb38818c7cf8cd3699"
+    }
+  ]
+}
