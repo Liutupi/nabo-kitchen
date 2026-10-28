@@ -1,0 +1,86 @@
+{
+ "id": "suanrong-caixin",
+ "name": "蒜蓉菜心",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "快手",
+  "清淡",
+  "适合新手"
+ ],
+ "minutes": 10,
+ "difficulty": 1,
+ "servings": 2,
+ "season": [
+  10,
+  11,
+  12,
+  1,
+  2,
+  3
+ ],
+ "ingredients": [
+  {
+   "id": "choy_sum",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 4,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2 大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "菜心洗净，粗的梗对半切开；蒜剁成蒜蓉。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧一锅水，加少许盐和几滴油，下菜心焯 30 秒，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 30,
+   "tip": "加油焯水颜色更绿"
+  },
+  {
+   "text": "锅里放油，小火炒香一半蒜蓉。",
+   "method": "stir_fry",
+   "heat": "low"
+  },
+  {
+   "text": "转大火下菜心快速翻炒，加盐，放入剩下的蒜蓉，翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "choy_sum__stirfried"
+  ],
+  "garnish": [
+   "garlic",
+   "shine"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

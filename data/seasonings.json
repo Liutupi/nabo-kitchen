@@ -1,0 +1,85 @@
+{
+ "_note": "调料不画图标，冰箱模式默认家里都有。只在末尾追加。",
+ "seasonings": [
+  {
+   "id": "salt",
+   "name": "盐"
+  },
+  {
+   "id": "sugar",
+   "name": "白糖"
+  },
+  {
+   "id": "rock_sugar",
+   "name": "冰糖"
+  },
+  {
+   "id": "oil",
+   "name": "食用油"
+  },
+  {
+   "id": "soy_light",
+   "name": "生抽"
+  },
+  {
+   "id": "soy_dark",
+   "name": "老抽"
+  },
+  {
+   "id": "oyster",
+   "name": "蚝油"
+  },
+  {
+   "id": "vinegar",
+   "name": "醋"
+  },
+  {
+   "id": "cooking_wine",
+   "name": "料酒"
+  },
+  {
+   "id": "starch",
+   "name": "淀粉"
+  },
+  {
+   "id": "sesame_oil",
+   "name": "香油"
+  },
+  {
+   "id": "white_pepper",
+   "name": "白胡椒粉"
+  },
+  {
+   "id": "black_bean",
+   "name": "豆豉"
+  },
+  {
+   "id": "steam_soy",
+   "name": "蒸鱼豉油"
+  },
+  {
+   "id": "chili_bean",
+   "name": "豆瓣酱"
+  },
+  {
+   "id": "ketchup",
+   "name": "番茄酱"
+  },
+  {
+   "id": "star_anise",
+   "name": "八角"
+  },
+  {
+   "id": "sichuan_pepper",
+   "name": "花椒"
+  },
+  {
+   "id": "dried_chili",
+   "name": "干辣椒"
+  },
+  {
+   "id": "water",
+   "name": "清水"
+  }
+ ]
+}

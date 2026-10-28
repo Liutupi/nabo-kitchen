@@ -1,0 +1,98 @@
+{
+ "id": "fanqie-chaodan",
+ "name": "番茄炒蛋",
+ "aliases": [
+  "西红柿炒鸡蛋"
+ ],
+ "course": [
+  "meat",
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "下饭",
+  "适合新手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2 大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "sugar",
+   "qty": "1 小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块，葱切葱花；鸡蛋加一小撮盐打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅放 2 大勺油，油热后倒入蛋液，边缘凝固再推散，七成熟盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "tip": "油热透蛋才蓬松"
+  },
+  {
+   "text": "锅里补一点油，下番茄中火翻炒，压出汁水。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加盐和 1 小勺糖，翻匀后盖上锅盖焖 1 分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 60
+  },
+  {
+   "text": "倒回鸡蛋翻匀，撒葱花出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "tomato",
+  "layers": [
+   "egg__scrambled",
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [
+   "scallion",
+   "shine"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

@@ -1,0 +1,114 @@
+{
+ "name": "kitchen",
+ "status": "draft（第 1 轮样板屏确认后锁定）",
+ "colors": [
+  {
+   "id": "night",
+   "hex": "#0B0D14",
+   "rgb565": "0x0862",
+   "use": "屏幕底、夜空"
+  },
+  {
+   "id": "wall",
+   "hex": "#17110F",
+   "rgb565": "0x1081",
+   "use": "店内暗墙"
+  },
+  {
+   "id": "wall_lit",
+   "hex": "#2B1F1A",
+   "rgb565": "0x28E3",
+   "use": "灯下墙面"
+  },
+  {
+   "id": "counter_dark",
+   "hex": "#3A2414",
+   "rgb565": "0x3922",
+   "use": "吧台暗部"
+  },
+  {
+   "id": "counter",
+   "hex": "#5B3A23",
+   "rgb565": "0x59C4",
+   "use": "吧台木色，半透明边缘预混底色"
+  },
+  {
+   "id": "counter_hi",
+   "hex": "#8C5B33",
+   "rgb565": "0x8AC6",
+   "use": "吧台高光"
+  },
+  {
+   "id": "lamp",
+   "hex": "#FFB347",
+   "rgb565": "0xFD88",
+   "use": "暖灯"
+  },
+  {
+   "id": "lamp_hi",
+   "hex": "#FFD98A",
+   "rgb565": "0xFED1",
+   "use": "灯芯、高亮"
+  },
+  {
+   "id": "noren",
+   "hex": "#1F2D47",
+   "rgb565": "0x1968",
+   "use": "暖帘深靛"
+  },
+  {
+   "id": "paper",
+   "hex": "#EFE3C8",
+   "rgb565": "0xEF19",
+   "use": "纸菜单"
+  },
+  {
+   "id": "ink",
+   "hex": "#1E140E",
+   "rgb565": "0x18A1",
+   "use": "纸上墨色"
+  },
+  {
+   "id": "seal",
+   "hex": "#C8402F",
+   "rgb565": "0xCA05",
+   "use": "印章、警示"
+  },
+  {
+   "id": "fire",
+   "hex": "#FF7A2F",
+   "rgb565": "0xFBC5",
+   "use": "火苗"
+  },
+  {
+   "id": "steam",
+   "hex": "#E9E3D7",
+   "rgb565": "0xEF1A",
+   "use": "蒸汽"
+  },
+  {
+   "id": "text",
+   "hex": "#F4EADB",
+   "rgb565": "0xF75B",
+   "use": "主文字"
+  },
+  {
+   "id": "text_sub",
+   "hex": "#9C907F",
+   "rgb565": "0x9C8F",
+   "use": "次要文字"
+  },
+  {
+   "id": "fresh",
+   "hex": "#7CC261",
+   "rgb565": "0x7E0C",
+   "use": "勾选、已齐"
+  },
+  {
+   "id": "line",
+   "hex": "#3A2A20",
+   "rgb565": "0x3944",
+   "use": "分隔线"
+  }
+ ]
+}

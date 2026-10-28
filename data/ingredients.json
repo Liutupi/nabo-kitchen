@@ -1,0 +1,305 @@
+{
+ "_note": "ID 一旦发布永远不改名，只在末尾追加。v=首次需要的版本（1 表示 v0.1 就要美术图标）。cat: meat 肉 / seafood 海鲜 / egg_tofu 蛋豆 / veg 蔬菜 / staple 主食。",
+ "ingredients": [
+  {
+   "id": "pork_belly",
+   "name": "五花肉",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "pork_lean",
+   "name": "瘦肉",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "pork_rib",
+   "name": "排骨",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "pork_mince",
+   "name": "肉末",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "chicken_whole",
+   "name": "整鸡",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "chicken_wing",
+   "name": "鸡翅",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "chicken_thigh",
+   "name": "鸡腿",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "beef",
+   "name": "牛肉",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "lap_cheong",
+   "name": "腊肠",
+   "cat": "meat",
+   "v": 1
+  },
+  {
+   "id": "pork_trotter",
+   "name": "猪脚",
+   "cat": "meat",
+   "v": 2
+  },
+  {
+   "id": "fish_whole",
+   "name": "鱼（鲈鱼等）",
+   "cat": "seafood",
+   "v": 1
+  },
+  {
+   "id": "shrimp",
+   "name": "虾",
+   "cat": "seafood",
+   "v": 1
+  },
+  {
+   "id": "squid",
+   "name": "鱿鱼",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "clam",
+   "name": "花甲",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "fish_fillet",
+   "name": "鱼片",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "egg",
+   "name": "鸡蛋",
+   "cat": "egg_tofu",
+   "v": 1
+  },
+  {
+   "id": "tofu",
+   "name": "豆腐",
+   "cat": "egg_tofu",
+   "v": 1
+  },
+  {
+   "id": "tofu_dried",
+   "name": "豆干",
+   "cat": "egg_tofu",
+   "v": 2
+  },
+  {
+   "id": "salted_egg",
+   "name": "咸蛋",
+   "cat": "egg_tofu",
+   "v": 2
+  },
+  {
+   "id": "tomato",
+   "name": "番茄",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "potato",
+   "name": "土豆",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "choy_sum",
+   "name": "菜心",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "lettuce",
+   "name": "生菜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "napa_cabbage",
+   "name": "大白菜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "eggplant",
+   "name": "茄子",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "green_pepper",
+   "name": "青椒",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "carrot",
+   "name": "胡萝卜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "cucumber",
+   "name": "黄瓜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "broccoli",
+   "name": "西兰花",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "winter_melon",
+   "name": "冬瓜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "shiitake",
+   "name": "香菇",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "onion",
+   "name": "洋葱",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "scallion",
+   "name": "葱",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "ginger",
+   "name": "姜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "garlic",
+   "name": "蒜",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "gai_lan",
+   "name": "芥兰",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "cabbage",
+   "name": "包菜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "bitter_melon",
+   "name": "苦瓜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "loofah",
+   "name": "丝瓜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "bean_sprout",
+   "name": "豆芽",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "green_bean",
+   "name": "豆角",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "enoki",
+   "name": "金针菇",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "corn",
+   "name": "玉米",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "chili",
+   "name": "辣椒",
+   "cat": "veg",
+   "v": 1
+  },
+  {
+   "id": "cilantro",
+   "name": "香菜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "spinach",
+   "name": "菠菜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "lotus_root",
+   "name": "莲藕",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "pumpkin",
+   "name": "南瓜",
+   "cat": "veg",
+   "v": 2
+  },
+  {
+   "id": "rice",
+   "name": "米饭",
+   "cat": "staple",
+   "v": 2
+  },
+  {
+   "id": "noodle",
+   "name": "面条",
+   "cat": "staple",
+   "v": 2
+  }
+ ]
+}

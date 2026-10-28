@@ -1,0 +1,182 @@
+id,category,path,display,source,version,owner,status,note
+costume_A,costume,costume/costume_A.png,-,1024x1024,A1,Codex,todo,白大褂系围裙
+costume_B,costume,costume/costume_B.png,-,1024x1024,A1,Codex,todo,下班的医生（推荐）
+costume_C,costume,costume/costume_C.png,-,1024x1024,A1,Codex,todo,小店主
+style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,todo,样板屏，用来定风格
+K1,grok-start,grok-start/K1.png,-,1024x1024,A2,Codex,todo,空手起始
+K2,grok-start,grok-start/K2.png,-,1024x1024,A2,Codex,todo,持锅起始
+idle,nabo-anim,grok-clips/idle.mp4,256x256 frames,video,0.1,Grok,todo,
+toss,nabo-anim,grok-clips/toss.mp4,256x256 frames,video,0.1,Grok,todo,
+serve,nabo-anim,grok-clips/serve.mp4,256x256 frames,video,0.1,Grok,todo,
+tend,nabo-anim,grok-clips/tend.mp4,256x256 frames,video,0.1,Grok,todo,
+think,nabo-anim,grok-clips/think.mp4,256x256 frames,video,0.2,Grok,todo,
+ding,nabo-anim,grok-clips/ding.mp4,256x256 frames,video,0.3,Grok,todo,
+cheer,nabo-anim,grok-clips/cheer.mp4,256x256 frames,video,0.3,Grok,todo,
+shake,nabo-anim,grok-clips/shake.mp4,256x256 frames,video,0.3,Grok,todo,
+taste,nabo-anim,grok-clips/taste.mp4,256x256 frames,video,0.3,Grok,todo,
+doze,nabo-anim,grok-clips/doze.mp4,256x256 frames,video,0.3,Grok,todo,
+levelup,nabo-anim,grok-clips/levelup.mp4,256x256 frames,video,0.3,Grok,todo,
+wave,nabo-anim,grok-clips/wave.mp4,256x256 frames,video,opt,Grok,todo,
+face_go,face,icons/face_go.png,40x40,160x160,0.3,Codex,todo,
+face_focus,face,icons/face_focus.png,40x40,160x160,0.3,Codex,todo,
+face_wait,face,icons/face_wait.png,40x40,160x160,0.3,Codex,todo,
+face_happy,face,icons/face_happy.png,40x40,160x160,0.3,Codex,todo,
+face_oops,face,icons/face_oops.png,40x40,160x160,0.3,Codex,todo,
+face_sleepy,face,icons/face_sleepy.png,40x40,160x160,0.3,Codex,todo,
+pork_belly,ingredient,ingredients/pork_belly.png,40x40,160x160,0.1,Codex,todo,五花肉
+pork_lean,ingredient,ingredients/pork_lean.png,40x40,160x160,0.1,Codex,todo,瘦肉
+pork_rib,ingredient,ingredients/pork_rib.png,40x40,160x160,0.1,Codex,todo,排骨
+pork_mince,ingredient,ingredients/pork_mince.png,40x40,160x160,0.1,Codex,todo,肉末
+chicken_whole,ingredient,ingredients/chicken_whole.png,40x40,160x160,0.1,Codex,todo,整鸡
+chicken_wing,ingredient,ingredients/chicken_wing.png,40x40,160x160,0.1,Codex,todo,鸡翅
+chicken_thigh,ingredient,ingredients/chicken_thigh.png,40x40,160x160,0.1,Codex,todo,鸡腿
+beef,ingredient,ingredients/beef.png,40x40,160x160,0.1,Codex,todo,牛肉
+lap_cheong,ingredient,ingredients/lap_cheong.png,40x40,160x160,0.1,Codex,todo,腊肠
+pork_trotter,ingredient,ingredients/pork_trotter.png,40x40,160x160,0.2,Codex,todo,猪脚
+fish_whole,ingredient,ingredients/fish_whole.png,40x40,160x160,0.1,Codex,todo,鱼（鲈鱼等）
+shrimp,ingredient,ingredients/shrimp.png,40x40,160x160,0.1,Codex,todo,虾
+squid,ingredient,ingredients/squid.png,40x40,160x160,0.2,Codex,todo,鱿鱼
+clam,ingredient,ingredients/clam.png,40x40,160x160,0.2,Codex,todo,花甲
+fish_fillet,ingredient,ingredients/fish_fillet.png,40x40,160x160,0.2,Codex,todo,鱼片
+egg,ingredient,ingredients/egg.png,40x40,160x160,0.1,Codex,todo,鸡蛋
+tofu,ingredient,ingredients/tofu.png,40x40,160x160,0.1,Codex,todo,豆腐
+tofu_dried,ingredient,ingredients/tofu_dried.png,40x40,160x160,0.2,Codex,todo,豆干
+salted_egg,ingredient,ingredients/salted_egg.png,40x40,160x160,0.2,Codex,todo,咸蛋
+tomato,ingredient,ingredients/tomato.png,40x40,160x160,0.1,Codex,todo,番茄
+potato,ingredient,ingredients/potato.png,40x40,160x160,0.1,Codex,todo,土豆
+choy_sum,ingredient,ingredients/choy_sum.png,40x40,160x160,0.1,Codex,todo,菜心
+lettuce,ingredient,ingredients/lettuce.png,40x40,160x160,0.1,Codex,todo,生菜
+napa_cabbage,ingredient,ingredients/napa_cabbage.png,40x40,160x160,0.1,Codex,todo,大白菜
+eggplant,ingredient,ingredients/eggplant.png,40x40,160x160,0.1,Codex,todo,茄子
+green_pepper,ingredient,ingredients/green_pepper.png,40x40,160x160,0.1,Codex,todo,青椒
+carrot,ingredient,ingredients/carrot.png,40x40,160x160,0.1,Codex,todo,胡萝卜
+cucumber,ingredient,ingredients/cucumber.png,40x40,160x160,0.1,Codex,todo,黄瓜
+broccoli,ingredient,ingredients/broccoli.png,40x40,160x160,0.1,Codex,todo,西兰花
+winter_melon,ingredient,ingredients/winter_melon.png,40x40,160x160,0.1,Codex,todo,冬瓜
+shiitake,ingredient,ingredients/shiitake.png,40x40,160x160,0.1,Codex,todo,香菇
+onion,ingredient,ingredients/onion.png,40x40,160x160,0.1,Codex,todo,洋葱
+scallion,ingredient,ingredients/scallion.png,40x40,160x160,0.1,Codex,todo,葱
+ginger,ingredient,ingredients/ginger.png,40x40,160x160,0.1,Codex,todo,姜
+garlic,ingredient,ingredients/garlic.png,40x40,160x160,0.1,Codex,todo,蒜
+gai_lan,ingredient,ingredients/gai_lan.png,40x40,160x160,0.2,Codex,todo,芥兰
+cabbage,ingredient,ingredients/cabbage.png,40x40,160x160,0.2,Codex,todo,包菜
+bitter_melon,ingredient,ingredients/bitter_melon.png,40x40,160x160,0.2,Codex,todo,苦瓜
+loofah,ingredient,ingredients/loofah.png,40x40,160x160,0.2,Codex,todo,丝瓜
+bean_sprout,ingredient,ingredients/bean_sprout.png,40x40,160x160,0.2,Codex,todo,豆芽
+green_bean,ingredient,ingredients/green_bean.png,40x40,160x160,0.2,Codex,todo,豆角
+enoki,ingredient,ingredients/enoki.png,40x40,160x160,0.2,Codex,todo,金针菇
+corn,ingredient,ingredients/corn.png,40x40,160x160,0.2,Codex,todo,玉米
+chili,ingredient,ingredients/chili.png,40x40,160x160,0.1,Codex,todo,辣椒
+cilantro,ingredient,ingredients/cilantro.png,40x40,160x160,0.2,Codex,todo,香菜
+spinach,ingredient,ingredients/spinach.png,40x40,160x160,0.2,Codex,todo,菠菜
+lotus_root,ingredient,ingredients/lotus_root.png,40x40,160x160,0.2,Codex,todo,莲藕
+pumpkin,ingredient,ingredients/pumpkin.png,40x40,160x160,0.2,Codex,todo,南瓜
+rice,ingredient,ingredients/rice.png,40x40,160x160,0.2,Codex,todo,米饭
+noodle,ingredient,ingredients/noodle.png,40x40,160x160,0.2,Codex,todo,面条
+vessel_plate,dish-L0,dish-layers/vessel_plate.png,160x120,640x480,0.1,Codex,todo,
+vessel_plate_shadow,dish-L0,dish-layers/vessel_plate_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+vessel_oval,dish-L0,dish-layers/vessel_oval.png,160x120,640x480,0.1,Codex,todo,
+vessel_oval_shadow,dish-L0,dish-layers/vessel_oval_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+vessel_bowl,dish-L0,dish-layers/vessel_bowl.png,160x120,640x480,0.1,Codex,todo,
+vessel_bowl_shadow,dish-L0,dish-layers/vessel_bowl_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+vessel_claypot,dish-L0,dish-layers/vessel_claypot.png,160x120,640x480,0.1,Codex,todo,
+vessel_claypot_shadow,dish-L0,dish-layers/vessel_claypot_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+vessel_steamer,dish-L0,dish-layers/vessel_steamer.png,160x120,640x480,0.1,Codex,todo,
+vessel_steamer_shadow,dish-L0,dish-layers/vessel_steamer_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+vessel_deep,dish-L0,dish-layers/vessel_deep.png,160x120,640x480,0.1,Codex,todo,
+vessel_deep_shadow,dish-L0,dish-layers/vessel_deep_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
+sauce_clear__plate,dish-L1,dish-layers/sauce_clear__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_braise__plate,dish-L1,dish-layers/sauce_braise__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_braise__bowl,dish-L1,dish-layers/sauce_braise__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_braise__claypot,dish-L1,dish-layers/sauce_braise__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_tomato__plate,dish-L1,dish-layers/sauce_tomato__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_tomato__bowl,dish-L1,dish-layers/sauce_tomato__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_tomato__claypot,dish-L1,dish-layers/sauce_tomato__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_curry__plate,dish-L1,dish-layers/sauce_curry__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_curry__bowl,dish-L1,dish-layers/sauce_curry__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_curry__claypot,dish-L1,dish-layers/sauce_curry__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_white__bowl,dish-L1,dish-layers/sauce_white__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_white__claypot,dish-L1,dish-layers/sauce_white__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_clear_soup__bowl,dish-L1,dish-layers/sauce_clear_soup__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_clear_soup__claypot,dish-L1,dish-layers/sauce_clear_soup__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_black_bean__plate,dish-L1,dish-layers/sauce_black_bean__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_soy_steam__plate,dish-L1,dish-layers/sauce_soy_steam__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_chili__plate,dish-L1,dish-layers/sauce_chili__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+egg__scrambled,dish-L2,dish-layers/egg__scrambled.png,160x120,640x480,0.1,Codex,todo,炒蛋块
+egg__ribbon,dish-L2,dish-layers/egg__ribbon.png,160x120,640x480,0.1,Codex,todo,蛋花
+egg__fried,dish-L2,dish-layers/egg__fried.png,160x120,640x480,0.1,Codex,todo,荷包蛋
+egg__steamed_custard,dish-L2,dish-layers/egg__steamed_custard.png,160x120,640x480,0.1,Codex,todo,蒸水蛋
+tomato__wedge_cooked,dish-L2,dish-layers/tomato__wedge_cooked.png,160x120,640x480,0.1,Codex,todo,炒软的番茄块
+tomato__wedge_soup,dish-L2,dish-layers/tomato__wedge_soup.png,160x120,640x480,0.1,Codex,todo,汤里的番茄块
+pork_belly__braised,dish-L2,dish-layers/pork_belly__braised.png,160x120,640x480,0.1,Codex,todo,红烧肉块
+pork_belly__slices_stirfried,dish-L2,dish-layers/pork_belly__slices_stirfried.png,160x120,640x480,0.1,Codex,todo,小炒五花肉片
+pork_lean__shreds_stirfried,dish-L2,dish-layers/pork_lean__shreds_stirfried.png,160x120,640x480,0.1,Codex,todo,炒肉丝
+pork_lean__slices,dish-L2,dish-layers/pork_lean__slices.png,160x120,640x480,0.1,Codex,todo,滑肉片
+pork_rib__braised,dish-L2,dish-layers/pork_rib__braised.png,160x120,640x480,0.1,Codex,todo,红烧排骨
+pork_rib__steamed_black_bean,dish-L2,dish-layers/pork_rib__steamed_black_bean.png,160x120,640x480,0.1,Codex,todo,豉汁蒸排骨
+pork_rib__soup,dish-L2,dish-layers/pork_rib__soup.png,160x120,640x480,0.1,Codex,todo,汤里的排骨
+pork_mince__crumbs,dish-L2,dish-layers/pork_mince__crumbs.png,160x120,640x480,0.1,Codex,todo,肉末
+pork_mince__patty_steamed,dish-L2,dish-layers/pork_mince__patty_steamed.png,160x120,640x480,0.1,Codex,todo,蒸肉饼
+chicken_whole__poached_cut,dish-L2,dish-layers/chicken_whole__poached_cut.png,160x120,640x480,0.1,Codex,todo,白切鸡斩件
+chicken_wing__braised,dish-L2,dish-layers/chicken_wing__braised.png,160x120,640x480,0.1,Codex,todo,红烧鸡翅
+chicken_thigh__pieces_braised,dish-L2,dish-layers/chicken_thigh__pieces_braised.png,160x120,640x480,0.1,Codex,todo,焖鸡块
+beef__slices_stirfried,dish-L2,dish-layers/beef__slices_stirfried.png,160x120,640x480,0.1,Codex,todo,炒牛肉片
+lap_cheong__slices,dish-L2,dish-layers/lap_cheong__slices.png,160x120,640x480,0.1,Codex,todo,腊肠片
+fish_whole__steamed,dish-L2,dish-layers/fish_whole__steamed.png,160x120,640x480,0.1,Codex,todo,清蒸整鱼
+fish_whole__braised,dish-L2,dish-layers/fish_whole__braised.png,160x120,640x480,0.1,Codex,todo,红烧整鱼
+shrimp__boiled,dish-L2,dish-layers/shrimp__boiled.png,160x120,640x480,0.1,Codex,todo,白灼虾
+shrimp__peeled_stirfried,dish-L2,dish-layers/shrimp__peeled_stirfried.png,160x120,640x480,0.1,Codex,todo,炒虾仁
+tofu__cubes_braised,dish-L2,dish-layers/tofu__cubes_braised.png,160x120,640x480,0.1,Codex,todo,红烧豆腐块
+tofu__pan_fried,dish-L2,dish-layers/tofu__pan_fried.png,160x120,640x480,0.1,Codex,todo,煎豆腐
+potato__shreds,dish-L2,dish-layers/potato__shreds.png,160x120,640x480,0.1,Codex,todo,土豆丝
+potato__chunks_braised,dish-L2,dish-layers/potato__chunks_braised.png,160x120,640x480,0.1,Codex,todo,焖土豆块
+choy_sum__stirfried,dish-L2,dish-layers/choy_sum__stirfried.png,160x120,640x480,0.1,Codex,todo,炒菜心
+choy_sum__blanched,dish-L2,dish-layers/choy_sum__blanched.png,160x120,640x480,0.1,Codex,todo,白灼菜心
+lettuce__stirfried,dish-L2,dish-layers/lettuce__stirfried.png,160x120,640x480,0.1,Codex,todo,炒生菜
+napa_cabbage__stirfried,dish-L2,dish-layers/napa_cabbage__stirfried.png,160x120,640x480,0.1,Codex,todo,炒白菜
+eggplant__braised,dish-L2,dish-layers/eggplant__braised.png,160x120,640x480,0.1,Codex,todo,烧茄子
+green_pepper__strips,dish-L2,dish-layers/green_pepper__strips.png,160x120,640x480,0.1,Codex,todo,青椒丝
+carrot__slices,dish-L2,dish-layers/carrot__slices.png,160x120,640x480,0.1,Codex,todo,胡萝卜片
+cucumber__smashed,dish-L2,dish-layers/cucumber__smashed.png,160x120,640x480,0.1,Codex,todo,拍黄瓜
+broccoli__florets,dish-L2,dish-layers/broccoli__florets.png,160x120,640x480,0.1,Codex,todo,西兰花朵
+winter_melon__soup_chunks,dish-L2,dish-layers/winter_melon__soup_chunks.png,160x120,640x480,0.1,Codex,todo,汤里的冬瓜块
+shiitake__braised,dish-L2,dish-layers/shiitake__braised.png,160x120,640x480,0.1,Codex,todo,焖香菇
+onion__slices,dish-L2,dish-layers/onion__slices.png,160x120,640x480,0.1,Codex,todo,洋葱丝
+garnish_scallion,dish-L3,dish-layers/garnish_scallion.png,160x120,640x480,0.1,Codex,todo,
+garnish_chili_ring,dish-L3,dish-layers/garnish_chili_ring.png,160x120,640x480,0.1,Codex,todo,
+garnish_sesame,dish-L3,dish-layers/garnish_sesame.png,160x120,640x480,0.1,Codex,todo,
+garnish_cilantro,dish-L3,dish-layers/garnish_cilantro.png,160x120,640x480,0.1,Codex,todo,
+garnish_ginger_shred,dish-L3,dish-layers/garnish_ginger_shred.png,160x120,640x480,0.1,Codex,todo,
+garnish_garlic,dish-L3,dish-layers/garnish_garlic.png,160x120,640x480,0.1,Codex,todo,
+garnish_shine,dish-L3,dish-layers/garnish_shine.png,160x120,640x480,0.1,Codex,todo,
+heat_high,icon,icons/heat_high.png,24x24,96x96,0.2,Codex,todo,
+heat_mid,icon,icons/heat_mid.png,24x24,96x96,0.2,Codex,todo,
+heat_low,icon,icons/heat_low.png,24x24,96x96,0.2,Codex,todo,
+heat_off,icon,icons/heat_off.png,24x24,96x96,0.2,Codex,todo,
+method_stir_fry,icon,icons/method_stir_fry.png,24x24,96x96,0.2,Codex,todo,
+method_steam,icon,icons/method_steam.png,24x24,96x96,0.2,Codex,todo,
+method_boil,icon,icons/method_boil.png,24x24,96x96,0.2,Codex,todo,
+method_braise,icon,icons/method_braise.png,24x24,96x96,0.2,Codex,todo,
+method_fry,icon,icons/method_fry.png,24x24,96x96,0.2,Codex,todo,
+method_mix,icon,icons/method_mix.png,24x24,96x96,0.2,Codex,todo,
+method_cut,icon,icons/method_cut.png,24x24,96x96,0.2,Codex,todo,
+method_marinate,icon,icons/method_marinate.png,24x24,96x96,0.2,Codex,todo,
+method_blanch,icon,icons/method_blanch.png,24x24,96x96,0.2,Codex,todo,
+method_stew,icon,icons/method_stew.png,24x24,96x96,0.2,Codex,todo,
+badge_1,icon,icons/badge_1.png,40x40,160x160,0.3,Codex,todo,
+badge_2,icon,icons/badge_2.png,40x40,160x160,0.3,Codex,todo,
+badge_3,icon,icons/badge_3.png,40x40,160x160,0.3,Codex,todo,
+badge_4,icon,icons/badge_4.png,40x40,160x160,0.3,Codex,todo,
+ui_board_9,ui,ui/ui_board_9.png,9-slice,4x,0.1,Codex,todo,菜单木牌
+ui_paper_9,ui,ui/ui_paper_9.png,9-slice,4x,0.1,Codex,todo,纸菜单
+ui_lantern_dot,ui,icons/ui_lantern_dot.png,12x16,48x64,0.1,Codex,todo,
+ui_stamp_done,ui,icons/ui_stamp_done.png,56x56,224x224,0.3,Codex,todo,不写字
+ui_star,ui,icons/ui_star.png,12x12,48x48,0.3,Codex,todo,
+ui_timer_icon,ui,icons/ui_timer_icon.png,16x16,64x64,0.1,Codex,todo,
+bg_cover,bg,ui/bg_cover.png,240x320,960x1280,0.1,Codex,todo,
+bg_counter,bg,ui/bg_counter.png,240x196,960x784,0.1,Codex,todo,NABO 位置留暗
+bg_paper,bg,ui/bg_paper.png,32x32 tile,128x128,0.1,Codex,todo,
+prop_wok,prop,props/prop_wok.png,~32,4x,0.1,Codex,todo,
+prop_spatula,prop,props/prop_spatula.png,~32,4x,0.1,Codex,todo,
+prop_bowl,prop,props/prop_bowl.png,~32,4x,0.1,Codex,todo,
+prop_fan,prop,props/prop_fan.png,~32,4x,0.1,Codex,todo,

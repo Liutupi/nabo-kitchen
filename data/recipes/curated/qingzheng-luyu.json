@@ -1,0 +1,99 @@
+{
+ "id": "qingzheng-luyu",
+ "name": "清蒸鲈鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "清淡",
+  "宴客"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约 600 克"
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 3,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "steam_soy",
+   "qty": "2 大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1 大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2 大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鲈鱼洗净擦干，两面各划几刀，抹上少许料酒。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "姜切片垫在盘底，鱼身上也放几片姜和几段葱。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "水烧开后放入鱼，大火蒸 8 分钟。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 480,
+   "tip": "每多 100 克加 1 分钟"
+  },
+  {
+   "text": "关火再焖 2 分钟，取出后倒掉盘里的汤汁，拣掉姜葱。",
+   "method": "steam",
+   "heat": "off",
+   "timer": 120
+  },
+  {
+   "text": "铺上新切的葱丝和姜丝，淋上蒸鱼豉油。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "烧 2 大勺油，冒烟后浇在葱姜丝上。",
+   "method": "fry",
+   "heat": "high",
+   "tip": "油要够热才滋啦响"
+  }
+ ],
+ "dish": {
+  "vessel": "oval",
+  "sauce": "soy_steam",
+  "layers": [
+   "fish_whole__steamed"
+  ],
+  "garnish": [
+   "ginger_shred",
+   "scallion"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

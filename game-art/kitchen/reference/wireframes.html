@@ -1,0 +1,106 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root{--night:#0B0D14;--wall:#17110F;--walll:#2B1F1A;--cd:#3A2414;--c:#5B3A23;--ch:#8C5B33;--lamp:#FFB347;--paper:#EFE3C8;--ink:#1E140E;--seal:#C8402F;--text:#F4EADB;--sub:#9C907F;--fresh:#7CC261;--noren:#1F2D47}
+body{margin:0;background:#222;font-family:"Noto Sans CJK SC",sans-serif;padding:24px;width:1100px}
+h1{color:#eee;font-size:20px;margin:0 0 4px}.note{color:#aaa;font-size:12px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(4,240px);gap:28px 30px}
+.cap{color:#ddd;font-size:13px;margin-top:6px;line-height:1.4}.cap b{color:#FFB347}
+.s{width:240px;height:320px;position:relative;overflow:hidden;background:var(--night);color:var(--text);font-size:12px}
+.ph{position:absolute;border:1px dashed rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;text-align:center;color:rgba(255,255,255,.8);font-size:10px;line-height:1.25;box-sizing:border-box}
+.nabo{background:rgba(255,179,71,.18);border-color:var(--lamp);color:var(--lamp)}
+.dish{background:rgba(200,64,47,.25);border-color:#ff8a70}
+.abs{position:absolute}.wk{font-family:"Noto Serif CJK SC",serif}
+.board{background:var(--c);border-top:3px solid var(--ch)}
+.item{height:24px;display:flex;align-items:center;padding-left:26px;font-size:13px;color:var(--text)}
+.item.on{background:rgba(255,179,71,.18);color:#FFD98A}.item.on:before{content:"";position:absolute;left:10px;width:8px;height:11px;background:var(--lamp);border-radius:3px}
+.hint{position:absolute;bottom:0;left:0;right:0;height:18px;background:rgba(0,0,0,.45);color:var(--sub);font-size:9px;display:flex;justify-content:space-around;align-items:center}
+.chip{display:inline-block;border:1px solid var(--sub);color:var(--sub);border-radius:8px;padding:0 5px;font-size:9px;margin-right:3px}
+</style></head><body>
+<h1>NABO 深夜厨房 · 线框图（240×320，按 1:1 比例）</h1>
+<div class="note">虚线框表示素材占位（橙色是 NABO，红色是菜品），实线和文字由程序绘制。颜色取自 palette/kitchen.json 的草案。编号对应 DESIGN.md 第 4 节。</div>
+<div class="grid">
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:196px;background:var(--wall)"></div>
+ <div class="ph" style="left:0;top:0;width:240px;height:164px;border-color:#666;align-items:flex-end;justify-content:flex-end;padding:0 4px 2px 0">bg_counter（木架、吊灯；NABO 区域偏暗）</div>
+ <div class="abs wk" style="left:8px;top:6px;color:var(--lamp);font-size:12px">23:41</div>
+ <div class="abs" style="right:8px;top:6px;color:var(--sub);font-size:10px">⏱ 7:12</div>
+ <div class="ph nabo" style="left:56px;top:46px;width:128px;height:118px">NABO 半身<br>118 px 高<br>idle：擦碗</div>
+ <div class="abs" style="left:0;top:164px;width:240px;height:32px;background:var(--c);border-top:3px solid var(--ch)"></div>
+ <div class="abs board" style="left:10px;top:200px;width:220px;height:116px;border-radius:4px;background:var(--cd);border-top:2px solid var(--c)">
+  <div class="item on" style="position:relative">今天吃什么 <span style="margin-left:auto;margin-right:8px;color:var(--lamp)">●</span></div>
+  <div class="item">冰箱里有啥</div><div class="item">买菜单 <span class="chip" style="margin-left:6px">5</span></div>
+  <div class="item">我的菜谱 <span style="margin-left:auto;margin-right:8px;color:var(--sub);font-size:10px">23/300</span></div></div>
+</div><div class="cap"><b>P1 吧台首页</b>：上方是场景，吧台沿就是锚点线；下方是菜单木牌（第 5 项“设置”需要滚动才看到）。</div></div>
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:196px;background:var(--wall)"></div>
+ <div class="ph nabo" style="left:56px;top:18px;width:128px;height:118px">NABO<br>serve：请用</div>
+ <div class="abs" style="left:0;top:136px;width:240px;height:110px;background:var(--c);border-top:3px solid var(--ch)"></div>
+ <div class="ph dish" style="left:40px;top:122px;width:160px;height:120px">菜品合成<br>160×120<br>器皿 + 汤汁 + 熟料 + 点缀<br>（蒸汽由程序画）</div>
+ <div class="abs wk" style="left:0;right:0;top:250px;text-align:center;font-size:22px">番茄炒蛋</div>
+ <div class="abs" style="left:0;right:0;top:280px;text-align:center"><span class="chip">15 分钟</span><span class="chip">家常</span><span class="chip">下饭</span></div>
+ <div class="hint"><span>OK 开做</span><span>↓ 换一道（剩 2）</span><span>双击↑ 返回</span></div>
+</div><div class="cap"><b>P4 结果</b>：颠勺（P3）之后，菜飞到吧台的盘子上。搭配模式下三道菜横向排开，每道 72×54。</div></div>
+
+<div><div class="s" style="background:#14100D">
+ <div class="abs" style="left:0;top:0;width:240px;height:24px;background:var(--cd)"></div>
+ <div class="abs wk" style="left:8px;top:4px;font-size:13px">番茄炒蛋</div><div class="abs" style="right:8px;top:6px;color:var(--sub);font-size:10px">步骤 2/5</div>
+ <div class="ph" style="left:10px;top:32px;width:24px;height:24px;border-color:var(--lamp)">火</div>
+ <div class="ph" style="left:40px;top:32px;width:24px;height:24px;border-color:var(--lamp)">炒</div>
+ <div class="abs" style="left:70px;top:37px;color:var(--sub);font-size:10px">大火 · 炒</div>
+ <div class="abs" style="left:12px;top:70px;width:216px;font-size:18px;line-height:26px">热锅放 2 大勺油，油热后倒入蛋液，边缘凝固再推散，七成熟盛出。</div>
+ <div class="abs" style="left:12px;top:196px;color:var(--lamp);font-size:13px">小贴士：油热透蛋才蓬松</div>
+ <div class="abs" style="left:10px;top:238px;width:120px;height:40px;border:2px solid var(--lamp);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:18px" class="wk">⏱ 0:30</div>
+ <div class="ph nabo" style="left:186px;top:236px;width:44px;height:44px">face<br>40px</div>
+ <div class="hint"><span>OK 下一步</span><span>↑ 上一步</span><span>长按↓ 用料</span></div>
+</div><div class="cap"><b>P6 跟做</b>：最重要的一页。正文 18 px，一行 12 字，最多 4–5 行。全是静态内容，只在计时数字变化时重画。</div></div>
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:150px;background:var(--wall)"></div>
+ <div class="ph nabo" style="left:56px;top:14px;width:128px;height:118px">NABO<br>tend：守锅<br>偶尔插入 taste</div>
+ <div class="abs" style="left:0;top:132px;width:240px;height:18px;background:var(--c);border-top:3px solid var(--ch)"></div>
+ <div class="abs" style="left:60px;top:162px;width:120px;height:120px;border-radius:50%;border:8px solid var(--lamp);border-right-color:#3a2a20;box-sizing:border-box"></div>
+ <div class="abs wk" style="left:0;right:0;top:204px;text-align:center;font-size:30px">7:12</div>
+ <div class="abs" style="left:0;right:0;top:288px;text-align:center;color:var(--sub);font-size:10px">清蒸鲈鱼 · 还有 2 个计时器</div>
+ <div class="hint"><span>OK 暂停</span><span>↑↓ 切换计时器</span></div>
+</div><div class="cap"><b>P7 计时</b>：计时环由程序画；时间到时 NABO 敲锅（ding），屏幕边框闪烁，铃声响 3 次。</div></div>
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:22px;background:var(--cd)"></div>
+ <div class="abs" style="left:8px;top:4px;font-size:12px">冰箱里有啥 · 蔬菜</div><div class="abs" style="right:8px;top:5px;color:var(--fresh);font-size:10px">已选 4</div>
+ <div class="abs" style="left:0;top:26px;display:grid;grid-template-columns:repeat(5,48px);grid-auto-rows:48px">
+  <script>for(let i=0;i<20;i++)document.write(`<div style="width:48px;height:48px;position:relative"><div class="ph" style="left:4px;top:4px;width:40px;height:40px;${[0,3,6,11].includes(i)?'border:2px solid #7CC261':''}">${i==0?'番茄':i==3?'鸡蛋':''}</div>${[0,3,6,11].includes(i)?'<div style="position:absolute;right:3px;top:3px;color:#7CC261;font-size:12px">✓</div>':''}</div>`)</script>
+ </div>
+ <div class="ph nabo" style="left:8px;top:222px;width:60px;height:60px">think<br>（缩小或头像）</div>
+ <div class="abs" style="left:76px;top:236px;width:156px;color:var(--sub);font-size:11px">“这些够做两道了。”</div>
+ <div class="hint"><span>OK 勾选</span><span>长按 OK 推荐</span><span>双击↑ 返回</span></div>
+</div><div class="cap"><b>P9 冰箱</b>：5×4 的格子，每格放 40 px 的食材图标，按类别分页。</div></div>
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:46px;background:var(--cd)"></div>
+ <div class="ph" style="left:8px;top:4px;width:38px;height:38px;border-color:var(--lamp)">徽章</div>
+ <div class="abs wk" style="left:54px;top:6px;font-size:14px">深夜帮厨</div>
+ <div class="abs" style="left:54px;top:26px;color:var(--sub);font-size:10px">做过 23 道 · 连续 5 天</div>
+ <div class="abs" style="left:6px;top:54px;display:grid;grid-template-columns:repeat(3,72px);gap:12px 6px;padding-left:3px">
+  <script>for(let i=0;i<9;i++)document.write(`<div><div class="ph ${i<5?'dish':''}" style="position:relative;width:72px;height:54px">${i<5?'缩略图':'剪影 ?'}</div><div style="font-size:9px;text-align:center;color:${i<5?'#F4EADB':'#9C907F'};margin-top:2px">${i<5?['番茄炒蛋','蒜蓉菜心','白切鸡','蒸水蛋','红烧排骨'][i]:'？？？'}${i==2?' ★':''}</div></div>`)</script>
+ </div>
+ <div class="hint"><span>OK 打开</span><span>长按 OK 收藏</span><span>↑↓ 翻页</span></div>
+</div><div class="cap"><b>P12 我的菜谱</b>：缩略图在运行时由合成图按 2:1 缩小得到；没做过的显示剪影。</div></div>
+
+<div><div class="s">
+ <div class="ph" style="left:0;top:0;width:240px;height:320px;border-color:#666;background:var(--night)"></div><div class="abs" style="left:0;right:0;top:40px;text-align:center;color:rgba(255,255,255,.8);font-size:10px;line-height:1.4">bg_cover<br>雨后的小巷，暖帘（只有心电线标志）<br>灯笼，窗户透出暖光</div>
+ <div class="abs" style="left:88px;top:150px;width:64px;height:70px;background:var(--noren);opacity:.8;border-top:4px solid var(--c)"></div>
+ <div class="abs" style="left:150px;top:140px;width:16px;height:22px;border-radius:7px;background:var(--lamp)"></div>
+</div><div class="cap"><b>P0 封面</b>：约 1.2 秒，暖帘被风吹起一下，按任意键跳过。</div></div>
+
+<div><div class="s">
+ <div class="abs" style="left:0;top:0;width:240px;height:150px;background:var(--wall)"></div>
+ <div class="ph nabo" style="left:56px;top:14px;width:128px;height:118px">NABO<br>cheer / levelup</div>
+ <div class="abs" style="left:0;top:132px;width:240px;height:18px;background:var(--c);border-top:3px solid var(--ch)"></div>
+ <div class="ph dish" style="left:40px;top:160px;width:160px;height:96px">菜品</div>
+ <div class="ph" style="left:150px;top:170px;width:56px;height:56px;border-color:var(--seal);color:var(--seal);border-radius:50%">印章</div>
+ <div class="abs" style="left:0;right:0;top:268px;text-align:center;font-size:12px">今天做了 2 道 · 连续 5 天</div>
+ <div class="hint"><span>OK 回吧台</span></div>
+</div><div class="cap"><b>P8 上菜</b>：盖章，图鉴点亮；升级时接着播放升级动画并显示新徽章。</div></div>
+
+</div></body></html>
