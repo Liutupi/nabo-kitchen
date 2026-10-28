@@ -1,0 +1,99 @@
+{
+ "id": "tangcu-yu",
+ "name": "糖醋鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "ginger",
+   "qty": 5,
+   "unit": "片"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "100毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "姜切丝、葱切段；另用刀板处理鱼擦干并划浅口，洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油中火煎鱼，两面金黄定型。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "加姜、水、生抽、醋和糖，煮开后转小火。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "盖盖焖约8分钟，鱼最厚处中心达63℃。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 480
+  },
+  {
+   "text": "撒葱段收汁，关火盛出。",
+   "method": "braise",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "oval",
+  "sauce": "braise",
+  "layers": [
+   "fish_whole__braised"
+  ],
+  "garnish": [
+   "ginger_shred",
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

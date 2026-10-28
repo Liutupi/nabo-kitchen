@@ -1,0 +1,87 @@
+{
+ "id": "qingjiao-tudoupian",
+ "name": "青椒土豆片",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "potato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "80毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "土豆去皮切薄片洗净，青椒切块，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅热油炒香蒜末，放土豆片翻炒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加水盖盖焖至土豆熟透，用筷子可轻戳穿。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "放青椒炒至断生，加盐炒匀。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "potato__chunks_braised",
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

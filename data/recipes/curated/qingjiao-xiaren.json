@@ -1,0 +1,81 @@
+{
+ "id": "qingjiao-xiaren",
+ "name": "青椒炒虾仁",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "青椒去籽切块、姜切丝；另用刀板去虾壳和虾线并洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加1小勺油，中火炒虾至变色盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 90
+  },
+  {
+   "text": "再加1小勺油炒姜和青椒至断生。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "倒回虾仁翻炒至肉不透明、熟透，加盐。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 90
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "shrimp__peeled_stirfried",
+   "green_pepper__strips"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

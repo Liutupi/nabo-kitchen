@@ -1,0 +1,91 @@
+{
+ "id": "suanxiang-paigu",
+ "name": "蒜香蒸排骨",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 45,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_rib",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 4,
+   "unit": "瓣"
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "蒜切末、姜切丝；另用刀板切排骨，洗手洗净用具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "排骨拌生抽、淀粉和油，静置15分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 900
+  },
+  {
+   "text": "放蒜姜并摊平；水开后上蒸锅。",
+   "method": "steam",
+   "heat": "high"
+  },
+  {
+   "text": "蒸约25分钟，避骨测中心至少63℃。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 1500
+  },
+  {
+   "text": "关火静置3分钟，再取出食用。",
+   "method": "steam",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": null,
+  "layers": [
+   "pork_rib__steamed_black_bean"
+  ],
+  "garnish": [
+   "garlic",
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,74 @@
+{
+ "id": "huanggua-chaodan",
+ "name": "黄瓜炒鸡蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "cucumber",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "黄瓜洗净切片；鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅加油，倒蛋液炒至完全凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "锅中放入黄瓜翻炒2分钟至熟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "倒回熟鸡蛋，加盐炒匀，确认热透后出锅。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "cucumber__smashed",
+   "egg__scrambled"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -214,6 +214,9 @@ void kv_lists_draw(kg_canvas* c, const kv_scene* s) {
             }
             kv_label(c, s, &a->han12, 164, y + 8, 62, 22, INK, text);
         }
+        if (u->settings_mode)
+            kv_label(c, s, &a->han12, 10, 278, 220, 14, PAPER,
+                     "仅筛食材，调料及交叉接触不筛查");
         kv_footer(c, s, u->settings_mode ? "↑↓ 选择 · OK 切换 · 双 ↑ 返回" : "↑↓ 选择 · OK 调整");
     }
 }

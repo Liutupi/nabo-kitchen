@@ -1,0 +1,85 @@
+{
+ "id": "xianggu-roubing",
+ "name": "香菇蒸肉饼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_mince",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 80,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "香菇和姜切细末，与肉末一起放碗中。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "加生抽、淀粉和水搅匀，摊成薄饼放盘内。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "水开后蒸约15分钟，最厚中心至少71℃。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 900
+  },
+  {
+   "text": "未达温度继续蒸熟，关火取出。",
+   "method": "steam",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": null,
+  "layers": [
+   "pork_mince__patty_steamed",
+   "shiitake__braised"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

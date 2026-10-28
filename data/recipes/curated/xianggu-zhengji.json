@@ -1,0 +1,86 @@
+{
+ "id": "xianggu-zhengji",
+ "name": "香菇蒸鸡",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 350,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 100,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "香菇切片、姜切丝；另用刀板切鸡块并洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "鸡块拌生抽、淀粉和油，静置10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "香菇铺盘底，放鸡块和姜；水开后上锅。",
+   "method": "steam",
+   "heat": "high"
+  },
+  {
+   "text": "盖盖蒸约15分钟，测鸡肉最厚处中心达74℃。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 900
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": "soy_steam",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "shiitake__braised"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

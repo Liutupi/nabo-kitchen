@@ -1,0 +1,75 @@
+{
+ "id": "suanxiang-xiaren",
+ "name": "蒜香虾仁",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "蒜切末；另用刀板去虾壳和虾线，沥干后洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放油，小火炒香蒜末，不要炒焦。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 30
+  },
+  {
+   "text": "转中火放虾仁，翻炒至完全不透明。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 150
+  },
+  {
+   "text": "加盐拌匀；检查最厚虾肉熟透后盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "shrimp__peeled_stirfried"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

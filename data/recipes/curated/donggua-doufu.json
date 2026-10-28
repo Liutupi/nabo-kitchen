@@ -1,0 +1,83 @@
+{
+ "id": "donggua-doufu",
+ "name": "冬瓜炖豆腐",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "winter_melon",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "250毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "冬瓜去皮切薄块，豆腐切块，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香姜丝，加冬瓜翻炒。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加水煮开，放豆腐小火炖10分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "冬瓜软透、豆腐热透后加盐。",
+   "method": "stew",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "winter_melon__soup_chunks",
+   "tofu__cubes_soup"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

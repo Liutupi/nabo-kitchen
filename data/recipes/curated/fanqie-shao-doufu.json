@@ -1,0 +1,83 @@
+{
+ "id": "fanqie-shao-doufu",
+ "name": "番茄烧豆腐",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tomato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "100毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块，豆腐切块，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香蒜，放番茄炒出汁。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加入豆腐和水煮开，小火煮6分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 360
+  },
+  {
+   "text": "待豆腐热透后加盐，轻轻翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "tomato__wedge_soup",
+   "tofu__cubes_braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

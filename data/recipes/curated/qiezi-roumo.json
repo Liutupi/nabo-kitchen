@@ -1,0 +1,87 @@
+{
+ "id": "qiezi-roumo",
+ "name": "肉末烧茄子",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_mince",
+   "qty": 180,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "eggplant",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "100毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "茄子切条，蒜切末；生肉和蔬菜分开处理。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油炒肉末至散开变色，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "另加1小勺油炒蒜和茄子，加水焖软。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 420
+  },
+  {
+   "text": "倒回肉末和生抽煮透，肉末中心至少71℃。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "eggplant__braised",
+   "pork_mince__crumbs"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

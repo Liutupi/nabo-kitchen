@@ -1,0 +1,74 @@
+{
+ "id": "xianggu-zhengdan",
+ "name": "香菇蒸蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "150毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "香菇切薄片；鸡蛋打散，加盐和水拌匀。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "蛋液倒入耐热碗，将香菇铺入。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "蒸锅水开后入锅，中火蒸12分钟。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 720
+  },
+  {
+   "text": "检查蛋液完全凝固、中心热透，否则继续蒸。",
+   "method": "steam",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": null,
+  "layers": [
+   "egg__steamed_custard",
+   "shiitake__braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

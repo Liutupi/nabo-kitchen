@@ -1,0 +1,78 @@
+{
+ "id": "congjiang-zheng-jitui",
+ "name": "葱姜蒸鸡腿",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿切块，不冲洗；生鸡用具与双手洗净。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "加姜葱、生抽和油拌匀，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "水开后放入蒸锅，中火蒸18分钟。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 1080
+  },
+  {
+   "text": "避开骨头测最厚处中心至少74℃，不足续蒸。",
+   "method": "steam",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "chicken_thigh__pieces_braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

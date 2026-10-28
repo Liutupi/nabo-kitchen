@@ -1,0 +1,80 @@
+{
+ "id": "huluobo-chaodan",
+ "name": "胡萝卜炒蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "carrot",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "胡萝卜切薄片，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油炒蛋至完全凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "另放1小勺油炒胡萝卜，加水焖至变软。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "倒回鸡蛋炒匀，加盐后出锅。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "egg__scrambled",
+   "carrot__slices"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,89 @@
+{
+ "id": "xianggu-xilanhua",
+ "name": "香菇炒西兰花",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "broccoli",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "2大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "西兰花切小朵洗净，香菇切片，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "另备适量水烧开，放入西兰花焯1分钟，捞出沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "锅放油炒香蒜末与香菇。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加入西兰花和水，盖锅煮2分钟至熟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加盐翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "shiitake__braised",
+   "broccoli__florets"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,80 @@
+{
+ "id": "fanqie-jiandan",
+ "name": "番茄煎蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块，鸡蛋逐个打入小碗。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油，煎蛋两面至蛋黄完全凝固。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "另放1小勺油炒番茄，加水煮软。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "放回煎蛋煮1分钟，加盐调味。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "tomato",
+  "layers": [
+   "egg__fried",
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

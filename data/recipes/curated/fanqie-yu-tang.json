@@ -1,0 +1,87 @@
+{
+ "id": "fanqie-yu-tang",
+ "name": "番茄鱼汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "tomato",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "800毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块、姜切片；另用刀板处理鱼并擦干，洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油煎鱼两面定型，放姜和番茄略炒。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "加入热水煮开，转小火煮约15分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "鱼最厚处中心达63℃后加盐调味。",
+   "method": "boil",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "tomato",
+  "layers": [
+   "fish_whole__soup",
+   "tomato__wedge_soup"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

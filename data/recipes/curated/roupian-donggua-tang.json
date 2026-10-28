@@ -1,0 +1,83 @@
+{
+ "id": "roupian-donggua-tang",
+ "name": "冬瓜肉片汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_lean",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "winter_melon",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "瘦肉切薄片；冬瓜去皮切片，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "水和姜煮开，放冬瓜煮约8分钟至软。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 480
+  },
+  {
+   "text": "放肉片煮至最厚处中心至少63℃。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "关火静置3分钟，加盐调味。",
+   "method": "boil",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "pork_lean__slices",
+   "winter_melon__soup_chunks"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

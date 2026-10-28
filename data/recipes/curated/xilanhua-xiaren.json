@@ -1,0 +1,87 @@
+{
+ "id": "xilanhua-xiaren",
+ "name": "西兰花炒虾仁",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "broccoli",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "500毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "西兰花切小朵、蒜切末；另用刀板去虾壳和虾线并洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，西兰花焯约2分钟后沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "锅热油炒蒜末，放虾仁中火翻炒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 150
+  },
+  {
+   "text": "放西兰花炒匀；虾肉不透明且熟透后加盐。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 90
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "shrimp__peeled_stirfried",
+   "broccoli__florets"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

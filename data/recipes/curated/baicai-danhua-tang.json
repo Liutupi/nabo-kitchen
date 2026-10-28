@@ -1,0 +1,81 @@
+{
+ "id": "baicai-danhua-tang",
+ "name": "白菜蛋花汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "napa_cabbage",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "700毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜洗净切细丝，鸡蛋打散，葱切碎。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "水煮开，加入白菜煮5分钟至熟。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "缓慢倒入蛋液，继续煮至蛋花完全凝固。",
+   "method": "boil",
+   "heat": "mid"
+  },
+  {
+   "text": "加盐和葱花，煮开后出锅。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "napa_cabbage__stirfried",
+   "egg__ribbon"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

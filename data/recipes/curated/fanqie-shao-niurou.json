@@ -1,0 +1,93 @@
+{
+ "id": "fanqie-shao-niurou",
+ "name": "番茄烧牛肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 75,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "500毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉切小块，番茄切块；生肉器具单独清洗。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香姜片及番茄，加入牛肉炒变色。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "倒水煮开，撇沫后加生抽，小火炖50分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 3000
+  },
+  {
+   "text": "牛肉中心至少63℃，不足继续炖至软。",
+   "method": "stew",
+   "heat": "low"
+  },
+  {
+   "text": "加盐调味，离火静置3分钟再吃。",
+   "method": "mix",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "braise",
+  "layers": [
+   "beef__chunks_stewed",
+   "tomato__wedge_soup"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

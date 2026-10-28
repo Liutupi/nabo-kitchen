@@ -16,6 +16,8 @@ def selected():
     meta=os.environ.get('KITCHEN_METADATA_C')
     if bool(recipe)!=bool(meta):
         raise RuntimeError('Set both KITCHEN_RECIPES_KRC and KITCHEN_METADATA_C')
+    if recipe and len(dictionary(Path(recipe).read_bytes())['ids'])>64:
+        raise RuntimeError('The design model supports at most 64 recipes; test larger packages in the expanded firmware model')
     return (Path(recipe),Path(meta)) if recipe else None
 
 def recipe_ids(path, complete=False):

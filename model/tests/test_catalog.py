@@ -36,7 +36,9 @@ class CatalogReader(unittest.TestCase):
         cls.data=cls.recipe_path.read_bytes()
         cls.ids=recipe_ids(cls.recipe_path,cls.complete)
         if not cls.complete:assert len(cls.ids)==30
-        by_id={x['id']:x for x in json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/catalog_trace.mjs')]))}
+        env=os.environ.copy();env['KITCHEN_TEST_RECIPE_IDS']=json.dumps(cls.ids)
+        by_id={x['id']:x for x in json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/catalog_trace.mjs')],env=env))}
+        assert list(by_id)==cls.ids
         cls.expected=[by_id[i] for i in cls.ids]
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()

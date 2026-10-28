@@ -1,0 +1,93 @@
+{
+ "id": "qingcai-roupian",
+ "name": "菜心炒肉片",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_lean",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "choy_sum",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "肉切薄片，菜心切段，姜切丝；生熟分开。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油炒肉片至变色后盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 150
+  },
+  {
+   "text": "另加1小勺油炒姜和菜心，加水焖熟菜梗。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "倒回肉片和生抽炒至最厚处中心至少63℃。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "关火静置3分钟后盛出。",
+   "method": "stir_fry",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "pork_lean__slices",
+   "choy_sum__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

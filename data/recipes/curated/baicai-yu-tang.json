@@ -1,0 +1,93 @@
+{
+ "id": "baicai-yu-tang",
+ "name": "白菜鱼汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "napa_cabbage",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "800毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜切段、姜切片；另用刀板处理鱼并擦干，洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油煎鱼两面定型，放姜和热水煮开。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "转小火煮10分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "放入白菜，再煮5分钟至白菜熟透。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 300
+  },
+  {
+   "text": "鱼最厚处中心达63℃且白菜熟透后加盐。",
+   "method": "boil",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "fish_whole__soup",
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

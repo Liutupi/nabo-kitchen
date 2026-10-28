@@ -1,0 +1,85 @@
+{
+ "id": "donggua-doufu-tang",
+ "name": "冬瓜豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "winter_melon",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "700毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "冬瓜去皮切薄块，豆腐切块，葱切碎。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油炒香冬瓜，加入水煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "加入豆腐，小火煮10分钟至食材熟透。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "加盐及葱花，煮开后出锅。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "winter_melon__soup_chunks",
+   "tofu__cubes_soup"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,80 @@
+{
+ "id": "yangcong-tudou",
+ "name": "洋葱炒土豆",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "potato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "onion",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "80毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "土豆去皮切薄片洗净，洋葱切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油炒洋葱至稍软，放土豆片翻炒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加水盖盖焖至土豆熟透，用筷子可轻戳穿。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "加盐翻匀，收干多余汤汁。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "potato__chunks_braised",
+   "onion__slices"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

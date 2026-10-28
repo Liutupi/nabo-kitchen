@@ -1,0 +1,93 @@
+{
+ "id": "qingjiao-chaoniurou",
+ "name": "青椒炒牛肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "3大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉切薄片，青椒去籽切丝；生肉用具分开清洗。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油，放姜片及牛肉炒至变色。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加入青椒及水，加盖煮5分钟至蔬菜熟软。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "测肉最厚处中心至少63℃，不足继续加热。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加生抽和盐翻匀，离火静置3分钟再吃。",
+   "method": "mix",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "beef__slices_stirfried",
+   "green_pepper__strips"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

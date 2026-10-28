@@ -1,0 +1,80 @@
+{
+ "id": "congshao-doufu",
+ "name": "葱烧豆腐",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tofu",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "80毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切块，葱白切段、葱叶切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油，煎豆腐两面微黄盛出。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "另加1小勺油炒葱白，倒入生抽和水煮开。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "放回豆腐焖5分钟，撒葱叶盛出。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 300
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "tofu__pan_fried"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

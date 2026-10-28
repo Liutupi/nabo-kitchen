@@ -1,8 +1,6 @@
-import {readFile,readdir} from 'node:fs/promises';
 import {primaryMethod,recipeWeight,recommend} from '../../prototype/model.mjs';
-const directory=new URL('../../data/recipes/curated/',import.meta.url);
-const actual=await Promise.all((await readdir(directory)).filter(f=>f.endsWith('.json')).sort()
-  .map(async f=>JSON.parse(await readFile(new URL(f,directory),'utf8'))));
+import {testRecipes} from './recipe_fixture.mjs';
+const actual=await testRecipes();
 const recipe=(id,course,ingredient,method,minutes=10)=>({id,course,minutes,difficulty:1,tags:[],
   ingredients:[{id:ingredient,main:true}],steps:[{method}]});
 const fixture=[recipe('a',['meat','veg'],'x','steam'),recipe('b',['meat','veg'],'x','steam'),

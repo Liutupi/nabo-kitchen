@@ -1,9 +1,11 @@
 import ctypes as C
 import json
+import os
 from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from package_fixtures import FROZEN,recipe_ids
 
 ROOT=Path(__file__).resolve().parents[2]
 class Recipe(C.Structure):
@@ -55,7 +57,11 @@ def replay(dll,cases):
 class RecommendParity(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.cases=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/recommend_trace.mjs')]))
+        ids=recipe_ids(FROZEN);assert len(ids)==30
+        env=os.environ.copy();env['KITCHEN_TEST_RECIPE_IDS']=json.dumps(ids)
+        cls.cases=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/recommend_trace.mjs')],env=env))
+        actual_cases=cls.cases[-96:]
+        assert len(actual_cases)==96 and all([r['id'] for r in case['recipes']]==ids for case in actual_cases)
         cls.source=(ROOT/'model/kitchen_recommend.c').read_text()
     def test_reference(self):
         with tempfile.TemporaryDirectory() as tmp: replay(build(tmp,self.source),self.cases)

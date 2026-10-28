@@ -1,0 +1,87 @@
+{
+ "id": "baicai-paigu-tang",
+ "name": "白菜排骨汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 65,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_rib",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "napa_cabbage",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "2000毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "排骨切块、白菜切段、姜切片，生熟分开。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "排骨加1升冷水煮开，再煮3分钟，捞出沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "加1升热水与姜，小火煮约40分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 2400
+  },
+  {
+   "text": "放白菜再煮10分钟至软，加盐调味。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "避骨测中心至少63℃，关火静置3分钟。",
+   "method": "stew",
+   "heat": "off",
+   "timer": 180
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "pork_rib__soup",
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}
