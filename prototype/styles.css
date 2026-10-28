@@ -58,6 +58,7 @@ footer{position:absolute;bottom:0;height:28px;width:240px;background:var(--ink);
 .glow.two{left:42px;top:-2px;width:140px;height:116px;background:#463a58}
 .dish{position:relative;flex:none}
 .dish img{position:absolute;left:0;top:0;width:100%;height:100%}
+.dish-pending{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:7px;background:var(--panel);color:var(--paper);font-size:12px;white-space:nowrap}
 .dish.unknown img{filter:brightness(0);opacity:.18}
 .dish.unknown b{position:absolute;inset:0;text-align:center;top:12px;font-size:22px;color:var(--dim);font-family:Archivo}
 .dish-name{font-size:20px}

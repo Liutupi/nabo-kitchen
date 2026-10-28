@@ -1,0 +1,86 @@
+{
+ "id": "xianggu-chaodougan",
+ "name": "香菇炒豆干",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tofu_dried",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "香菇洗净切片；豆干切条，蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅放油，加入蒜片炒香。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 30
+  },
+  {
+   "text": "加入香菇翻炒，倒水加盖煮熟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加入豆干和生抽，炒热至豆干中心热透。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "shiitake__braised"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

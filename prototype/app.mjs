@@ -2,7 +2,7 @@ import * as model from './model.mjs';
 import * as store from './state.mjs';
 import {Timers} from './timers.mjs';
 import {bindControls} from './input.mjs';
-import {render} from './view.mjs';
+import {render,setDishHeroes} from './view.mjs';
 
 const testMode=new URLSearchParams(location.search).has('test');
 const key=testMode?'nabo-kitchen-isolated-tests':store.STORAGE_KEY;
@@ -10,7 +10,8 @@ const testEpoch=Date.UTC(2026,9,28,12),clockKey=key+'-clock';
 let testClock=testEpoch;
 if(testMode){try{testClock=Number(localStorage.getItem(clockKey))||testEpoch;}catch{}}
 const now=()=>testMode?testClock:Date.now(),day=()=>model.localDay(new Date(now()));
-const [recipes,ingredientData]=await Promise.all([fetch('/api/recipes').then(r=>{if(!r.ok)throw Error('菜谱加载失败');return r.json();}),fetch('/data/ingredients.json').then(r=>r.json())]);
+const [recipes,ingredientData,heroes]=await Promise.all([fetch('/api/recipes').then(r=>{if(!r.ok)throw Error('菜谱加载失败');return r.json();}),fetch('/data/ingredients.json').then(r=>r.json()),fetch('/api/dish-heroes').then(r=>r.ok?r.json():[]).catch(()=>[])]);
+setDishHeroes(heroes);
 const ingredients=ingredientData.ingredients;
 let state=store.restore(localStorage,key,day());
 const timers=new Timers(now,state.timerItems||[]);

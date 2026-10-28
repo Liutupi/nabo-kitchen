@@ -118,6 +118,19 @@ void kv_food(kg_canvas* c, const kv_scene* s, unsigned recipe, int x, int y, uns
         c->error = 1;
         return;
     }
+    /* A complete illustration is optional and keyed by the stable recipe ID.
+     * Its absence is normal; retain the existing layered drawing as fallback. */
+    if (y + (int)h <= c->y || y >= c->y + c->height)
+        return;
+    char hero_id[48];
+    snprintf(hero_id, sizeof(hero_id), "hero_%s", s->state->catalog->items[recipe].id);
+    ksp_sprite hero;
+    if (ksp_find(s->assets->dish, hero_id, &hero)) {
+        if (hero.frame_width != 160 || hero.frame_height != 120 ||
+            !kg_sprite_scaled(c, s->assets->dish, &hero, x, y, w, h))
+            c->error = 1;
+        return;
+    }
     const kc_dish* d = &s->assets->dishes[recipe];
     const char* vessel = km_vessels[d->vessel];
     char name[140];

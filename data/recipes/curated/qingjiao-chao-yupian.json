@@ -1,0 +1,85 @@
+{
+ "id": "qingjiao-chao-yupian",
+ "name": "青椒炒鱼片",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_fillet",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "青椒去籽切片，姜切片；另用刀板切鱼片并洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加1小勺油，炒青椒，加30毫升水焖熟，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加剩余油炒香姜片，放鱼片、20毫升水和生抽煮熟。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "鱼片最厚处达63℃后加入配菜，拌匀盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

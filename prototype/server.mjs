@@ -2,6 +2,7 @@ import http from 'node:http';
 import {readFile,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {heroRecipeIds} from './dish-heroes.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const selectedIds=process.env.KITCHEN_TEST_RECIPE_IDS ? JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS) : null;
 if(selectedIds && (!Array.isArray(selectedIds) || selectedIds.some(x=>typeof x!=='string') || new Set(selectedIds).size!==selectedIds.length)) throw Error('Invalid test recipe IDs');
@@ -9,6 +10,13 @@ const mime={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=
 const server=http.createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
+    if(url.pathname==='/api/dish-heroes'){
+      const base=path.join(root,'game-art/kitchen');
+      const csv=await readFile(path.join(base,'ASSET_LIST.csv'),'utf8');
+      const files=await readdir(path.join(base,'dish-hero')).catch(e=>{if(e.code==='ENOENT')return [];throw e;});
+      res.writeHead(200,{'Content-Type':mime['.json'],'Cache-Control':'no-store'});
+      res.end(JSON.stringify(heroRecipeIds(csv,files)));return;
+    }
     if(url.pathname==='/api/recipes'){
       const dir=path.join(root,'data/recipes/curated');const files=(await readdir(dir)).filter(x=>x.endsWith('.json')).sort();
       let recipes=await Promise.all(files.map(async x=>JSON.parse(await readFile(path.join(dir,x),'utf8'))));

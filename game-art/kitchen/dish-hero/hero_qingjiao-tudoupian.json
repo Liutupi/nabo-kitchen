@@ -1,0 +1,19 @@
+{
+  "id": "hero_qingjiao-tudoupian",
+  "recipe_id": "qingjiao-tudoupian",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingjiao-tudoupian-source.png",
+  "original_sha256": "bd1528effa36830a8f9f7bb052961489a51b64730fd0d4bf248dabf0014e0cea",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "a00e7b537321c374cedeefcd9b7afd3d244f29e763e016eff6036d5d881127af",
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

@@ -1,0 +1,81 @@
+{
+ "id": "fanqie-yupian-tang",
+ "name": "番茄鱼片汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_fillet",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄洗净切块，姜切片；另用刀板切鱼片并洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中加700毫升水及姜煮开，放番茄煮软。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "加入鱼片煮至最厚处达63℃；不足继续煮。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加盐拌匀，关火盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "tomato__wedge_soup"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,96 @@
+{
+ "id": "yangcong-chao-huajia",
+ "name": "洋葱炒花甲",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "onion",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "100毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "洋葱洗净切片，蒜切片；花甲洗净，敲壳仍不闭合的活贝丢弃。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "处理生贝后洗手并洗净刀板和水槽；破壳的丢弃。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅加油，放蒜片炒香。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 30
+  },
+  {
+   "text": "加入洋葱翻炒至断生。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加入花甲、清水和生抽，加盖煮至贝壳张开。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "贝肉须熟透；丢弃未开口的贝壳，再盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "onion__slices"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

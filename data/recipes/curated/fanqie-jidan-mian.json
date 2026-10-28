@@ -1,0 +1,86 @@
+{
+ "id": "fanqie-jidan-mian",
+ "name": "番茄鸡蛋面",
+ "course": [
+  "staple"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "noodle",
+   "qty": 180,
+   "unit": "克",
+   "main": true,
+   "note": "干面"
+  },
+  {
+   "id": "tomato",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "800毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "取干面180克；番茄洗净切块，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油，倒入蛋液炒至凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "放番茄炒软，加入800毫升水煮开。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "按包装说明煮熟面条，加入鸡蛋与盐煮至蛋热透。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "egg__ribbon",
+   "tomato__wedge_soup"
+  ],
+  "garnish": [],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

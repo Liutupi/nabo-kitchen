@@ -187,3 +187,12 @@ ui_fridge,icon,icons/ui_fridge.png,40x40,160x160,0.1,Codex,review,冰箱入口�
 ui_shopping,icon,icons/ui_shopping.png,40x40,160x160,0.1,Codex,review,买菜单入口图标；程序几何绘制；待目标尺寸与实机审图
 ui_recipe_book,icon,icons/ui_recipe_book.png,40x40,160x160,0.1,Codex,review,我的菜谱入口图标；程序几何绘制；待目标尺寸与实机审图
 ui_settings,icon,icons/ui_settings.png,40x40,160x160,0.1,Codex,review,设置入口图标；程序几何绘制；待目标尺寸与实机审图
+hero_huanggua-chaodan,hero,dish-hero/hero_huanggua-chaodan.png,160x120,640x480,0.1,Codex,review,黄瓜炒鸡蛋完整菜图样稿；待逐图审美及实机验收
+hero_congjiang-zheng-jitui,hero,dish-hero/hero_congjiang-zheng-jitui.png,160x120,640x480,0.1,Codex,review,葱姜蒸鸡腿完整菜图样稿；待逐图审美及实机验收
+hero_donggua-paigu-tang,hero,dish-hero/hero_donggua-paigu-tang.png,160x120,640x480,0.1,Codex,review,冬瓜排骨汤完整菜图样稿；待逐图审美及实机验收
+hero_suanxiang-paigu,hero,dish-hero/hero_suanxiang-paigu.png,160x120,640x480,0.1,Codex,review,蒜香蒸排骨完整菜图样稿；待逐图审美及实机验收
+hero_qingjiao-tudoupian,hero,dish-hero/hero_qingjiao-tudoupian.png,160x120,640x480,0.1,Codex,review,青椒土豆片完整菜图样稿；待逐图审美及实机验收
+hero_jiangcong-jianyu,hero,dish-hero/hero_jiangcong-jianyu.png,160x120,640x480,0.1,Codex,review,姜葱煎鱼完整菜图样稿；待逐图审美及实机验收
+hero_fanqie-huajia-tang,hero,dish-hero/hero_fanqie-huajia-tang.png,160x120,640x480,0.1,Codex,review,番茄花甲汤完整菜图样稿；待逐图审美及实机验收
+hero_fanqie-yupian-tang,hero,dish-hero/hero_fanqie-yupian-tang.png,160x120,640x480,0.1,Codex,review,番茄鱼片汤完整菜图样稿；待逐图审美及实机验收
+hero_yangcong-chao-youyu,hero,dish-hero/hero_yangcong-chao-youyu.png,160x120,640x480,0.1,Codex,review,洋葱炒鱿鱼完整菜图样稿；待逐图审美及实机验收

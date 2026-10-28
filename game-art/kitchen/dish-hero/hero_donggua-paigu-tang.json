@@ -1,0 +1,22 @@
+{
+  "id": "hero_donggua-paigu-tang",
+  "recipe_id": "donggua-paigu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_donggua-paigu-tang-source.png",
+  "original_sha256": "7cae45ec4cca28dd109ebac6112d01315fd49558ace5279284a5dc7ed756586f",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "2b61a1657b8ce09f7aad4ddee348ff5dc6f81d14da554d6a8fc6d2bac4725aad",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

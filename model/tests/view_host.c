@@ -1,4 +1,5 @@
 #include "kitchen_view.h"
+#include "kitchen_view_internal.h"
 #include "kitchen_metadata.h"
 #include <string.h>
 static krc_pack recipes;static kc_item items[KR_MAX_RECIPES];static kc_catalog catalog={items,KR_MAX_RECIPES,0};
@@ -24,6 +25,11 @@ int view_page(unsigned page,unsigned recipe){
     return kv_prepare(&scene,&state,&assets,1000,80,"20:30",frame);
 }
 int view_draw(uint16_t *pixels,int y,int height){kg_canvas c;kg_init(&c,pixels,240,y,height,0x18c6);return kv_draw(&c,&scene);}
+int view_food(uint16_t *pixels,int y,int height,unsigned recipe){
+    if(!pixels || recipe>=catalog.count || y<0 || height<=0 || y+height>120)return 0;
+    kg_canvas c;kg_init(&c,pixels,160,y,height,0x18c6);
+    kv_food(&c,&scene,recipe,0,0,160,120);return !c.error;
+}
 int view_step(unsigned step){state.page=6;state.sessions[state.recipe].index=(uint8_t)step;
     return kv_prepare(&scene,&state,&assets,1000,80,"20:30",frame);}
 int view_boot_at(unsigned elapsed){

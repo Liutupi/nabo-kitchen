@@ -1,0 +1,79 @@
+{
+ "id": "kugua-chaodan",
+ "name": "苦瓜炒鸡蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "bitter_melon",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "30毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "苦瓜去籽切薄片；鸡蛋打入碗中打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅放1小勺油，倒蛋炒至凝固盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "放剩余油，加苦瓜和水炒熟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "放回鸡蛋加盐，炒至蛋液完全凝固后盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "egg__scrambled"
+  ],
+  "garnish": [],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

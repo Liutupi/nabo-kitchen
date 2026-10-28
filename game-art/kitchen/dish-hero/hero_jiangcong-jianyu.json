@@ -1,0 +1,19 @@
+{
+  "id": "hero_jiangcong-jianyu",
+  "recipe_id": "jiangcong-jianyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_jiangcong-jianyu-source.png",
+  "original_sha256": "90014b5550ce00f63ef9b757bb08d55cc24cd62ed5761c5b09382c95e356baa6",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "8cd20c12545b99f3faf34ac784719fd182451ce46a6bc593ed8b43eb2750a588",
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

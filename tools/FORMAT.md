@@ -41,6 +41,7 @@ requested repertoire for the font pipeline.
 | CSV family | Display frame | Runtime pool / palette group |
 |---|---:|---|
 | all dish-L0..L3 |160x120|dish / one shared palette per L0,L1,L2,L3|
+| optional hero |160x120|dish / one palette per complete recipe illustration|
 | ingredient |40x40|icons / ingredient|
 | face |40x40|icons / face|
 | heat,method |24x24|icons / method-heat|
@@ -61,8 +62,22 @@ unchanged selected duplicate outside CSV; it is not counted twice.
 The conservative decimal budgets are dish200,000B, icons120,000B, ui40,000B.
 `--strict-budget` exits2 if a pool exceeds its budget. A successful static build
 alone never claims the architecture's approximately1.84MB total is complete:
-animation, fonts, recipes and hero art have separate budgets. Missing hero images
-retain the specified layered-dish fallback. No device partition is written.
+animation, fonts and recipes have separate budgets. Registered hero art is included
+in the dish pool and its reported budget. No device partition is written.
+
+The offline kitchen candidate deliberately exceeds the original dish pool budget
+when the first nine complete illustrations are included. Its separate 5 MiB
+resource partition has a larger overall budget; report the actual packed size
+and remaining partition capacity instead of treating the original budget as met.
+
+Optional complete dish illustrations are registered in `ASSET_LIST.csv` with
+category `hero`, ID `hero_<stable-recipe-id>`, path `dish-hero/<ID>.png`, and a
+640×480 RGBA source canvas containing transparent pixels. Each complete image
+receives its own palette. The browser and C model select that image when present
+and otherwise retain the existing layers. This naming convention adds no field to
+the recipe JSON, KRC dictionary or saved-state format; adding art does require a
+new sprite bundle and a firmware build with hero rendering. Keep the original
+image and provenance beside the deliverable and review the decoded 160×120 result.
 
 ## Pixel preparation
 
