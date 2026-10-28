@@ -32,15 +32,19 @@ def function_body(source: str, name: str) -> str:
 class KeyWakeGuardWiringTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.main = read("main/main.c")
+        cls.main = read("main/offline_kitchen.c")
 
     def test_on_key_consumes_the_guard_before_the_readiness_check(self) -> None:
         # A release can arrive after the post-init voltage sample but before input
         # dispatch is ready. on_key must run the guard first so that release still
         # disarms it, instead of being discarded by the readiness early-return.
-        body = function_body(self.main, "on_key")
+        body = function_body(self.main, "on_button")
         self.assertIn("key_guard_consume(", body)
-        self.assertLess(body.index("key_guard_consume("), body.index("!s_input_ready"))
+        self.assertLess(body.index("key_guard_consume("), body.index("!input_ready"))
+
+    def test_long_up_home_shortcut_does_not_bypass_the_opening_screen(self) -> None:
+        body = function_body(self.main, "dispatch")
+        self.assertRegex(body, r"key\s*==\s*KI_UP\s*&&\s*kind\s*==\s*KI_LONG\s*&&\s*s->ui\.page\s*!=\s*0")
 
 
 if __name__ == "__main__":

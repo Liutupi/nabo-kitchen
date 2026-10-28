@@ -11,6 +11,10 @@ usage() {
 run_static_checks() {
     local actionlint_bin
     local test_dir
+    local section_gc="-Wl,--gc-sections"
+    if [[ "$(uname -s)" == "Darwin" ]]; then
+        section_gc="-Wl,-dead_strip"
+    fi
 
     python3 tools/check_repo.py
 
@@ -60,10 +64,45 @@ run_static_checks() {
     for demo in audio low_power ble wifi; do
         "${CC:-cc}" -std=c11 -Wall -Wextra -Werror \
             -ffunction-sections -fdata-sections -Itests/demo_stubs -Imain \
-            "tests/test_demo_${demo}_runtime.c" -Wl,--gc-sections \
+            "tests/test_demo_${demo}_runtime.c" "${section_gc}" \
             -o "${test_dir}/test_demo_${demo}_runtime"
         "${test_dir}/test_demo_${demo}_runtime"
     done
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/kitchen \
+        tests/test_kitchen_calendar.c main/kitchen/kitchen_calendar.c \
+        -o "${test_dir}/test_kitchen_calendar"
+    "${test_dir}/test_kitchen_calendar"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/kitchen \
+        tests/test_kitchen_undated.c main/kitchen/kitchen_ui.c main/kitchen/kitchen_session.c \
+        main/kitchen/kitchen_model.c main/kitchen/kitchen_recommend.c main/kitchen/kitchen_lists.c \
+        main/kitchen/kitchen_timer.c main/kitchen/kitchen_save.c main/kitchen/kitchen_metadata.c \
+        -o "${test_dir}/test_kitchen_undated"
+    "${test_dir}/test_kitchen_undated"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/kitchen \
+        tests/test_kitchen_fridge_nav.c main/kitchen/kitchen_ui.c main/kitchen/kitchen_session.c \
+        main/kitchen/kitchen_model.c main/kitchen/kitchen_recommend.c main/kitchen/kitchen_lists.c \
+        main/kitchen/kitchen_timer.c main/kitchen/kitchen_save.c main/kitchen/kitchen_metadata.c \
+        -o "${test_dir}/test_kitchen_fridge_nav"
+    "${test_dir}/test_kitchen_fridge_nav"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/kitchen \
+        tests/test_kitchen_migration.c main/kitchen/kitchen_save.c main/kitchen/kitchen_session.c \
+        main/kitchen/kitchen_timer.c main/kitchen/kitchen_metadata.c \
+        -o "${test_dir}/test_kitchen_migration"
+    "${test_dir}/test_kitchen_migration"
+    "${CC:-cc}" -O2 -std=c11 -Wall -Wextra -Werror -DKR_TEST_TRACE -Imain/kitchen \
+        tests/test_kitchen_scale.c main/kitchen/kitchen_save.c main/kitchen/kitchen_session.c \
+        main/kitchen/kitchen_timer.c main/kitchen/kitchen_metadata.c \
+        main/kitchen/kitchen_recommend.c main/kitchen/kitchen_model.c \
+        -o "${test_dir}/test_kitchen_scale"
+    "${test_dir}/test_kitchen_scale"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -ffunction-sections -fdata-sections \
+        -Imain/kitchen tests/test_kitchen_calendar_view.c \
+        main/kitchen/kitchen_calendar.c main/kitchen/kitchen_calendar_view.c \
+        main/kitchen/kitchen_view.c main/kitchen/kitchen_canvas.c main/kitchen/kitchen_kfn.c \
+        "${section_gc}" -o "${test_dir}/test_kitchen_calendar_view"
+    "${test_dir}/test_kitchen_calendar_view"
+    PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_bundle.py
+    PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_mixer.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_deep_sleep_contract.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_key_wake_contract.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_check_repo.py

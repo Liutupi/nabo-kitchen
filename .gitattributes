@@ -1,0 +1,2 @@
+# Preserve upstream license text byte-for-byte, including its line-end spaces.
+assets/kitchen/licenses/*.txt whitespace=-blank-at-eol

@@ -43,6 +43,9 @@
 
 ## 找到你的起点
 
+本工作区还包含独立的 [NABO 深夜厨房应用](../README.zh_CN.md)。
+
+
 | 我想要…… | 从这里开始 |
 | --- | --- |
 | 使用设备、体验官方玩法 | [快速上手](https://ai-passport.folotoy.cn/guides/getting-started/) · [官方玩法](https://ai-passport.folotoy.cn/plays/) |
