@@ -20,17 +20,18 @@ class HeroAssets(unittest.TestCase):
     def test_registered_sample_preserves_original_and_review_status(self):
         rows = asset_rows(ROOT)
         base = ROOT / 'game-art/kitchen/dish-hero'
-        for ident in ('hero_huanggua-chaodan', 'hero_congjiang-zheng-jitui',
-                      'hero_donggua-paigu-tang', 'hero_suanxiang-paigu',
-                      'hero_qingjiao-tudoupian', 'hero_jiangcong-jianyu',
-                      'hero_fanqie-huajia-tang', 'hero_fanqie-yupian-tang',
-                      'hero_yangcong-chao-youyu'):
+        heroes = [ident for ident, row in rows.items() if row['category'] == 'hero']
+        self.assertGreaterEqual(len(heroes), 17)
+        for ident in heroes:
             with self.subTest(ident=ident):
-                self.assertEqual(rows[ident]['status'], 'review')
+                self.assertIn(rows[ident]['status'], ('review', 'done'))
                 metadata = json.loads((base / (ident + '.json')).read_text(encoding='utf-8'))
+                self.assertTrue((ROOT / 'data/recipes/curated' /
+                                 (metadata['recipe_id'] + '.json')).is_file())
+                self.assertEqual(ident, 'hero_' + metadata['recipe_id'])
                 original = base / metadata['original']
                 source = base / (ident + '.png')
-                self.assertEqual(metadata['status'], 'review')
+                self.assertEqual(metadata['status'], rows[ident]['status'])
                 self.assertEqual(hashlib.sha256(original.read_bytes()).hexdigest(), metadata['original_sha256'])
                 self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), metadata['asset_sha256'])
                 with Image.open(source) as image:

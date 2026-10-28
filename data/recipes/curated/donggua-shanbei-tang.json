@@ -1,0 +1,86 @@
+{
+ "id": "donggua-shanbei-tang",
+ "name": "冬瓜扇贝汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "scallop",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "winter_melon",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "冬瓜去皮切薄片、姜切片；扇贝肉另用生食器具处理。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "处理生扇贝后洗手并清洗刀板、台面。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "700毫升水加姜煮开，放冬瓜煮至软。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 480
+  },
+  {
+   "text": "加入扇贝肉煮熟；肉不透明、扎实且最厚处达63℃。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加盐调味盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "winter_melon__soup_chunks"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

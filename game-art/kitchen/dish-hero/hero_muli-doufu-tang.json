@@ -1,0 +1,22 @@
+{
+  "id": "hero_muli-doufu-tang",
+  "recipe_id": "muli-doufu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_muli-doufu-tang-source.png",
+  "original_sha256": "ca027d4e637a6979368da07d0dc680635fbbe2e84f921451e0d0050b49cecccc",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "107e73b9ba6b9f0d7677b0027a119cfdddeadc74224a181c58ec264366ba6211",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

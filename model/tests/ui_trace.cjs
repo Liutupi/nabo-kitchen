@@ -9,11 +9,15 @@ const root=path.resolve(__dirname,'../..');
     const base=await new Promise((resolve,reject)=>{let timeout=setTimeout(()=>reject(Error('server timeout')),10000);
       server.stdout.on('data',d=>{const match=String(d).match(/http:\/\/127\.0\.0\.1:\d+/);if(match){clearTimeout(timeout);resolve(match[0]);}});server.on('error',reject);});
     browser=await chromium.launch({headless:true,executablePath:process.env.EDGE_PATH||'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge'});
-    const page=await browser.newPage();await page.goto(base+'/?test=1');await page.waitForFunction(()=>window.kitchenTest?.ready);
+    const fixture=await import('./recipe_fixture.mjs');
+    const ingredientData=await fixture.testIngredients();
+    const ingredients=ingredientData.ingredients.map(x=>x.id).sort();
+    const page=await browser.newPage();
+    await page.route('**/data/ingredients.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(ingredientData)}));
+    await page.goto(base+'/?test=1');await page.waitForFunction(()=>window.kitchenTest?.ready);
     const ids=(await (await fetch(base+'/api/recipes')).json()).map(x=>x.id);
     if(process.env.KITCHEN_TEST_RECIPE_IDS && JSON.stringify(ids)!==JSON.stringify(JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS)))throw Error('Browser recipe set differs from KRC');
-    const ingredients=(await (await fetch(base+'/data/ingredients.json')).json()).ingredients.map(x=>x.id).sort();
-    const mask=(values,table)=>values.reduce((n,x)=>n|(1n<<BigInt(table.indexOf(x))),0n).toString();
+    const mask=(values,table)=>values.reduce((n,x)=>{const i=table.indexOf(x);if(i<0)throw Error(`Unknown mask ID: ${x}`);return n|(1n<<BigInt(i));},0n).toString();
     await page.evaluate(()=>window.kitchenTest.reset());
     let now=Date.UTC(2026,9,28,12);const trace=[];
     async function snapshot(op,key='',kind='short'){

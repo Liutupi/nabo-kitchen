@@ -1,0 +1,16 @@
+{
+  "id": "oyster_meat",
+  "subject": "去壳牡蛎肉",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/oyster_meat-source.png",
+  "original_sha256": "1935c14e89e54096e66a2c3904f89183d0cae898caaebcdb1069c27328dce2fa",
+  "path": "ingredients/oyster_meat.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "a7c45de384ee382ef8ad1f558c4977f2247195ce0a7fbd6f24242eb9ad2209e6",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

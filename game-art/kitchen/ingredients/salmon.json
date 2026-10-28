@@ -1,0 +1,16 @@
+{
+  "id": "salmon",
+  "subject": "生三文鱼肉",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/salmon-source.png",
+  "original_sha256": "b1bf213b360596794afe39eb43d692d92eb065ded6700d60e3f6f0b6015976bf",
+  "path": "ingredients/salmon.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "2bf33cca5d717eb191da1c2bd171a1c8e8ab86dd5e739d2daaabc4b83c3318eb",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

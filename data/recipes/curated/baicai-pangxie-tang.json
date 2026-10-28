@@ -1,0 +1,86 @@
+{
+ "id": "baicai-pangxie-tang",
+ "name": "白菜螃蟹汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "crab",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "napa_cabbage",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜洗净切段，姜切片；另用生食刀板处理洗净的鲜活蟹。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "蟹切块后洗手，并洗净接触生蟹的器具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "700毫升水加姜煮开，放白菜煮至熟软。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "加入蟹块煮透，最厚蟹肉达63℃且呈白色不透明。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 600
+  },
+  {
+   "text": "加盐调味盛出；测温避开蟹壳。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

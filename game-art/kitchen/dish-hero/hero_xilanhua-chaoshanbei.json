@@ -1,0 +1,22 @@
+{
+  "id": "hero_xilanhua-chaoshanbei",
+  "recipe_id": "xilanhua-chaoshanbei",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xilanhua-chaoshanbei-source.png",
+  "original_sha256": "3d38b9d4d3afa02c7ad2b4c6e0d188bdec888ce18bcbf4356790363cdbfad7d1",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "ea1c7a71791d21360a004b4bfaf8bc765d6a127f21c8e98a4012b837e3505aa1",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

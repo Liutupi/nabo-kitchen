@@ -11,6 +11,8 @@ from asset_codec import index_image, pack_sprites, prepare_image, unpack_sprites
 from check_recipes import ROOT, asset_rows, dish_asset_ids, load_recipes
 
 BUDGETS = {'dish': 200000, 'icons': 120000, 'ui': 40000}
+SEAFOOD_EXTRA = frozenset(('crab', 'scallop', 'oyster_meat', 'mussel',
+                           'razor_clam', 'abalone', 'octopus', 'salmon'))
 
 
 def profile(row):
@@ -34,6 +36,9 @@ def profile(row):
         return 'ui', 'startup', (220, 90), False, False
     if ident == 'ui_lantern':
         return 'ui', 'startup', (26, 26), False, False
+    if category == 'ingredient' and ident in SEAFOOD_EXTRA:
+        # Keep the original ingredient palette unchanged when adding seafood.
+        return 'icons', 'seafood-' + ident, (40, 40), False, False
     if category in ('ingredient', 'face'):
         return 'icons', category, (40, 40), category == 'face', False
     if category == 'prop':

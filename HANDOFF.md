@@ -4,6 +4,43 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（macOS）· 收工检查点
+
+**用户要求今天先停止，更新 GitHub 并写交接。新增开发已停止，今天不再刷机。以下内容覆盖较早状态块中的“当前版本”描述。**
+
+### GitHub 与本机位置
+
+- 本分支 `codex/kitchen-model` 保存可编辑菜谱、美术、打包工具、原型和冻结模型测试。本机 `/Volumes/NABO-Build-20261004/nabo-kitchen`。
+- 独立离线固件源码已完整保存到同仓库的 [`codex/offline-kitchen`](https://github.com/Liutupi/nabo-kitchen/tree/codex/offline-kitchen)，提交 `f67c7ee115b7fc0851991ca0cbc8afb4c8039290`；本机 `/Volumes/NABO-Build-20261004/ai-passport-nabo-kitchen-offline`。基于 FoloToy 模板 `a06235e`，ESP-IDF 5.5.3；没有推送到 FoloToy 上游，也没有修改用户原工作区。
+- 固件详细双语交接见 [`docs/development/offline-kitchen-handoff.zh_CN.md`](https://github.com/Liutupi/nabo-kitchen/blob/codex/offline-kitchen/docs/development/offline-kitchen-handoff.zh_CN.md)。源码、资源包、字体许可、合成测试夹具和千条索引实验都已保存；设备日志、身份、原始 NVS 及私密信息未提交。
+
+### 工牌实际运行的是 128 道版
+
+- 实际应用 SHA256 `8ccfcbdfa7f8ef0ee3e9987a0a9da2167eb91974414ac74ed4d09e15e4569562`，资源 SHA256 `21ee0798fbcc8abf69cbf243517d26e50a87f0c1fee20b5d7a27d9897ded51e0`：128 道、50 食材、5 类冰箱、9 张完整菜图。该版按授权只更新应用和资源，保留已有兼容 bootloader、分区与 NVS/PHY/files。不能用后面源码的新完整镜像哈希冒充已安装版本。
+- 用户已确认开机动画、欢迎语、开机停留等 OK 进入、实体冰箱分类和勾选正常；此前隔离流程走通抽菜→用料→跟做。128 版隔离测试进入海鲜类并抓取完整 320 行画面，结束已退出 TEST、关闭串口。后一次四菜压力测试被 `pending-save` 拒绝，未清除记录绕过保护，不能记为通过。
+
+### 最新源码已保存，尚未刷入
+
+- 新增 8 种海鲜和 16 道配套菜，现为 **144 道草案、58 种食材、13 种海鲜、17 张完整菜图**。其他菜仍使用原有图层或明确“菜图制作中”占位。新食材图标均为 review；新增做法待逐道实厨，完整图待视觉验收。不是一千道菜，也不是全部 144 道都专绘完成。
+- 用户最新要求已写入离线源码：无限次换菜、删除无效每日重抽设置；计时页长按下键取消当前计时，保留其他计时；开机与首页文字精确为 **`NABO 陪你做饭`**，欢迎语音文件未改。这些功能**还不在工牌里**。
+- 模型上限改为 192；单次存档缓冲 9216 B、UI 栈 12 KiB，诊断新增最小剩余栈。192 极限满载宿主存档 8231 B，现有 24 KiB NVS 能否容纳双槽及原设置仍未证实，不能擅自擦除或改分区。
+- 当前固件分支资源包 2,480,194 B，SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`；资源区余 2,762,686 B。`assets/kitchen/checkpoint.json` 有每包哈希。字体和菜图超出旧分项预算，离线版按实际 5 MiB 整体预算验算，不声称旧预算达标。
+
+### 验证与下一步
+
+```text
+Build: NOT RUN（最新组合源码；旧 128 版已构建通过并刷入）
+Host tests: PASS（静态、144 道真实资源绘制 9 项、真实 50→58 食材迁移）
+Device tests: NOT RUN（最新组合源码；旧 128 版开机/冰箱已实机确认）
+Unverified: 新海鲜、无限换菜、取消计时、NABO 文案、192容量、NVS满载、任务栈及断电恢复
+```
+
+- 收工前仅做检查点核对：修正真实资源测试中写死 50 食材的旧断言，按 KRC 字典读取后 9 项通过；静态和真实旧存档迁移通过。素材工具 30 项、冻结 30 菜/50 食材模型 32 项通过。最新组合未执行完整固件构建，也没有刷机。
+- 下次先拉取两个分支、读固件双语交接，检查工作树和资源哈希；激活 IDF 5.5.3 后跑完整 `./tools/validate.sh`，另跑 `tests/test_real_catalog_views.py`（需 CJSON_DIR）和 `tests/test_kitchen_ingredient_migration.py`。通过后再生成、核验分段包并确认本次刷机范围与授权。
+- 千道菜仅完成 `experiments/krc_stream/` 独立概念验证：真实格式合成 1000/1500 条的分页、ID 和按需解压通过，未接生产 UI/推荐/存档，没有千道真实内容。仍需紧凑目录、分页状态、存档/分区迁移、资源预算和实机验证；不能只调常量或凑重复菜名交付。
+
+---
+
 ## 最新状态 · 2026-10-28 · Codex（macOS）· 冰箱分类与 128 道候选
 
 - 用户确认新版开机画面停留，短按 OK 可进入首页；该功能已刷入并通过用户实机确认。104 道旧版的隔离实机流程走通首页 → 条件 → 抽菜 → 用料 → 跟做，结束后退出 TEST。当前设备仍是 104 道、六张完整菜图版本。

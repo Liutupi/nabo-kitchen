@@ -23,7 +23,11 @@ class UiParity(unittest.TestCase):
         if not cjson or not (Path(cjson)/'cJSON.c').is_file():raise unittest.SkipTest('Set CJSON_DIR to pinned ESP-IDF cJSON')
         cls.ids=recipe_ids(cls.recipe_path,cls.complete)
         if not cls.complete:assert len(cls.ids)==30
+        blob=cls.recipe_path.read_bytes()
+        ingredient_ids=dictionary(blob)['ingredients']
+        if not cls.complete:assert len(ingredient_ids)==50
         env=os.environ.copy();env['KITCHEN_TEST_RECIPE_IDS']=json.dumps(cls.ids)
+        env['KITCHEN_TEST_INGREDIENT_IDS']=json.dumps(ingredient_ids)
         cls.trace=json.loads(subprocess.check_output(['node',str(ROOT/'model/tests/ui_trace.cjs')],env=env))
         cls.tmp=tempfile.TemporaryDirectory();library=Path(cls.tmp.name)/'ui.so'
         sources=['kitchen_ui.c','kitchen_lists.c','kitchen_model.c','kitchen_recommend.c','kitchen_session.c','kitchen_timer.c','kitchen_krc.c','kitchen_catalog.c','kitchen_save.c','kitchen_journal.c']
@@ -42,11 +46,12 @@ class UiParity(unittest.TestCase):
         cls.dll.host_save_info.argtypes=[C.c_int64];cls.dll.host_save_info.restype=C.c_char_p
         cls.dll.host_journal_load.argtypes=[C.POINTER(JournalIO),C.c_int64,C.c_int64,C.POINTER(C.c_int)]
         cls.dll.host_journal_store.argtypes=[C.POINTER(JournalIO),C.c_int64,C.c_int64]
-        blob=cls.recipe_path.read_bytes()
         cls.buf=(C.c_uint8*len(blob)).from_buffer_copy(blob)
         ingredients=json.loads((ROOT/'data/ingredients.json').read_text())['ingredients']
         ordinals={x:i for i,x in enumerate(dictionary(blob)['ingredients'])}
-        assert set(ordinals)=={x['id'] for x in ingredients}
+        assert len(ordinals)==len(ingredient_ids)
+        ingredients=[x for x in ingredients if x['id'] in ordinals]
+        assert len(ingredients)==len(ordinals) and {x['id'] for x in ingredients}==set(ordinals)
         order=[ordinals[x['id']] for x in ingredients]
         fridge=[ordinals[x['id']] for x in ingredients if x['v']==1]
         cls.order=(C.c_uint8*len(order))(*order)

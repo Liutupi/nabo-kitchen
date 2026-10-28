@@ -1,0 +1,16 @@
+{
+  "id": "razor_clam",
+  "subject": "带壳蛏子",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/razor_clam-source.png",
+  "original_sha256": "4ff94a1dddc73ecbdc87edda85920e0bd22be332b256b04159d4b38ca21c5ff1",
+  "path": "ingredients/razor_clam.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "06c16853839784e90d42676095ffb26acd6d7cd1ffcfec8e7a3a59a196969e49",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

@@ -1,0 +1,91 @@
+{
+ "id": "chengzi-doufu-tang",
+ "name": "蛏子豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "razor_clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切块，姜切片；另用器具刷洗鲜活贝壳。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "破壳、敲壳仍不闭合的活贝丢弃；处理后洗手洗具。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放700毫升水和姜煮开，加入豆腐煮熟。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "放入贝类煮至开口；未开口的丢弃。",
+   "method": "boil",
+   "heat": "mid"
+  },
+  {
+   "text": "开口后的贝类继续煮3分钟，至贝肉熟透。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐调味盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "tofu__cubes_soup"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

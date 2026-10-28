@@ -1,10 +1,9 @@
-import {readFile} from 'node:fs/promises';
-import {testRecipes} from './recipe_fixture.mjs';
+import {testRecipes,testIngredients} from './recipe_fixture.mjs';
 import {fridgeMatch} from '../../prototype/model.mjs';
 import {initialState,addShopping} from '../../prototype/state.mjs';
 const recipes=await testRecipes();
-const ingredients=JSON.parse(await readFile(new URL('../../data/ingredients.json',import.meta.url),'utf8')).ingredients.map(x=>x.id).sort();
-const mask=xs=>xs.reduce((n,x)=>n|(1n<<BigInt(ingredients.indexOf(x))),0n).toString();
+const ingredients=(await testIngredients()).ingredients.map(x=>x.id).sort();
+const mask=xs=>xs.reduce((n,x)=>{const i=ingredients.indexOf(x);if(i<0)throw Error(`Unknown ingredient ID: ${x}`);return n|(1n<<BigInt(i));},0n).toString();
 let seed=0x87654321;const fridge=[];
 for(let n=0;n<120;n++){
   const have=[],excluded=[];

@@ -1,0 +1,22 @@
+{
+  "id": "hero_yangcong-chao-zhangyu",
+  "recipe_id": "yangcong-chao-zhangyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_yangcong-chao-zhangyu-source.png",
+  "original_sha256": "8fa579408e9a5dcb201cd43502107e9f83395394aeee0eed1125a537f13c86bf",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "760bf52860fb20f016bd2f1c7c3e168b74c39c634e530b288ca58194a52fafcf",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

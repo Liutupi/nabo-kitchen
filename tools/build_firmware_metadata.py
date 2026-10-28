@@ -15,12 +15,15 @@ def build(root=ROOT, recipes_krc=None, font_chars=None, all_fridge=False):
     seasonings=json.loads((root/'data/seasonings.json').read_text())['seasonings']
     ing={x['id']:x for x in ingredients};season={x['id']:x for x in seasonings}
     if len(ing)!=len(ingredients) or len(season)!=len(seasonings):raise ValueError('duplicate IDs')
-    if set(ing)!=set(dictionary['ingredients']) or set(season)!=set(dictionary['seasonings']):
-        raise ValueError('metadata IDs do not match the frozen KRC dictionary')
+    if not set(dictionary['ingredients']) <= set(ing) or set(season)!=set(dictionary['seasonings']):
+        raise ValueError('metadata IDs do not cover the KRC dictionary')
     ordinal={name:i for i,name in enumerate(dictionary['ingredients'])}
+    # Old recipe packs may contain a strict subset of an expanded registry.
+    # Never assign them ordinals for ingredients absent from their dictionary.
+    available = [x for x in ingredients if x['id'] in ordinal]
     data={'ingredients':[{'name':ing[i]['name'],'category':ing[i]['cat'],'version':ing[i]['v']} for i in dictionary['ingredients']],
-          'ingredient_order':[ordinal[x['id']] for x in ingredients],
-          'fridge_order':[ordinal[x['id']] for x in ingredients if all_fridge or x['v']==1],
+          'ingredient_order':[ordinal[x['id']] for x in available],
+          'fridge_order':[ordinal[x['id']] for x in available if all_fridge or x['v']==1],
           'seasonings':[season[i]['name'] for i in dictionary['seasonings']]}
     chars=set(Path(font_chars).read_text(encoding='utf-8'))
     labels=''.join(x['name'] for x in data['ingredients'])+''.join(data['seasonings'])

@@ -1,0 +1,22 @@
+{
+  "id": "hero_chengzi-doufu-tang",
+  "recipe_id": "chengzi-doufu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_chengzi-doufu-tang-source.png",
+  "original_sha256": "fb77bf4cd00f9deede419287f43e3d210ea8215bfe783ab21dd586a83bf4fc32",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "df41ae0deb70f480453b86c1ab78a6f84e6c96264ea908b732f142fdb41e1fd6",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

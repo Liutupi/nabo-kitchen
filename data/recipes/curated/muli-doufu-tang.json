@@ -1,0 +1,91 @@
+{
+ "id": "muli-doufu-tang",
+ "name": "牡蛎豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "oyster_meat",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切块，姜切片；生牡蛎肉用独立器具处理。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "处理生牡蛎后洗手，并清洗接触的器具和台面。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "700毫升水加姜煮开，放豆腐煮热。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "加入牡蛎肉，煮至水再次沸腾。",
+   "method": "boil",
+   "heat": "mid"
+  },
+  {
+   "text": "再沸后煮至少3分钟，牡蛎边缘卷曲、熟透。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐调味盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "tofu__cubes_soup"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

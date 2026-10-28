@@ -1,0 +1,100 @@
+{
+ "id": "muli-chaodan",
+ "name": "牡蛎炒鸡蛋",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "oyster_meat",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "500毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "葱洗净切花，鸡蛋打散；牡蛎肉用独立器具处理。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "处理生牡蛎后洗手，并清洗接触的器具和台面。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "500毫升水煮开，放牡蛎肉，煮至水再次沸腾。",
+   "method": "boil",
+   "heat": "mid"
+  },
+  {
+   "text": "再沸后煮至少3分钟，至牡蛎边缘卷曲并熟透。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "捞出牡蛎沥干；锅加全部油，倒入牡蛎。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加蛋液炒匀，炒至蛋液凝固、中心达71℃。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐和葱花拌匀，确认牡蛎和鸡蛋熟透后盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "egg__scrambled"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}
