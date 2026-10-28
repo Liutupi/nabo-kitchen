@@ -26,3 +26,17 @@ int view_page(unsigned page,unsigned recipe){
 int view_draw(uint16_t *pixels,int y,int height){kg_canvas c;kg_init(&c,pixels,240,y,height,0x18c6);return kv_draw(&c,&scene);}
 int view_step(unsigned step){state.page=6;state.sessions[state.recipe].index=(uint8_t)step;
     return kv_prepare(&scene,&state,&assets,1000,80,"20:30",frame);}
+int view_boot_at(unsigned elapsed){
+    ku_startup(&state,1000);
+    return kv_prepare(&scene,&state,&assets,1000+(int64_t)elapsed,80,"20:30",frame);
+}
+int view_boot_page(unsigned elapsed){
+    ku_startup(&state,1000);
+    ku_tick(&state,1000+(int64_t)elapsed);
+    return state.page;
+}
+int view_boot_skip(void){
+    ku_startup(&state,1000);
+    ku_key(&state,KI_OK,KI_SHORT,1100);
+    return state.page;
+}

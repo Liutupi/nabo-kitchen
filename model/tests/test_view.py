@@ -18,6 +18,7 @@ class ViewTest(unittest.TestCase):
         cls.dll=C.CDLL(str(lib));cls.dll.view_open.argtypes=[x for _ in range(6) for x in (C.POINTER(C.c_uint8),C.c_size_t)]
         cls.dll.view_page.argtypes=[C.c_uint,C.c_uint];cls.dll.view_draw.argtypes=[C.POINTER(C.c_uint16),C.c_int,C.c_int]
         cls.dll.view_step.argtypes=[C.c_uint]
+        cls.dll.view_boot_at.argtypes=[C.c_uint];cls.dll.view_boot_page.argtypes=[C.c_uint]
         paths=[PKG/'kitchen_recipes.krc',Path(os.environ.get('KITCHEN_FONTS',str(PKG/'kitchen_fonts.bin'))),PKG/'kitchen_dish.bin',
                PKG/'kitchen_icons.bin',PKG/'kitchen_ui.bin',PKG/'kitchen_nabo.bin']
         cls.buffers=[];args=[]
@@ -41,6 +42,31 @@ class ViewTest(unittest.TestCase):
                 for color in full:rgb.extend((((color>>11)&31)*255//31,((color>>5)&63)*255//63,(color&31)*255//31))
                 preview.paste(Image.frombytes('RGB',(240,320),bytes(rgb)),((page%4)*240,(page//4)*320))
         out=ROOT/'private/kitchen-render';out.mkdir(parents=True,exist_ok=True);preview.save(out/'pages.png')
+    def test_boot_timeline_and_stripes(self):
+        import hashlib
+        self.assertEqual(self.dll.view_page(0,0),1)
+        self.assertEqual(self.dll.view_boot_page(0),0)
+        self.assertEqual(self.dll.view_boot_page(3599),0)
+        self.assertEqual(self.dll.view_boot_page(3600),1)
+        self.assertEqual(self.dll.view_boot_skip(),1)
+        preview=Image.new('RGB',(240*4,320),(0,0,0))
+        hashes=[]
+        for i,elapsed in enumerate((0,900,1700,2900)):
+            self.assertEqual(self.dll.view_boot_at(elapsed),1)
+            full=(C.c_uint16*(240*320))()
+            self.assertEqual(self.dll.view_draw(full,0,320),1,f'boot {elapsed} has missing glyph or asset')
+            rows=[]
+            for y in range(0,320,8):
+                strip=(C.c_uint16*(240*8))()
+                self.assertEqual(self.dll.view_draw(strip,y,8),1)
+                rows.extend(strip)
+            self.assertEqual(list(full),rows,f'boot {elapsed} stripes')
+            hashes.append(hashlib.sha256(bytes(full)).digest())
+            rgb=bytearray()
+            for color in full:rgb.extend((((color>>11)&31)*255//31,((color>>5)&63)*255//63,(color&31)*255//31))
+            preview.paste(Image.frombytes('RGB',(240,320),bytes(rgb)),(i*240,0))
+        self.assertEqual(len(set(hashes)),4,'each stage must change the drawn frame')
+        out=ROOT/'private/kitchen-render';out.mkdir(parents=True,exist_ok=True);preview.save(out/'boot-timeline.png')
     def test_all_dishes_ingredients_and_steps_render(self):
         import json
         recipes=[json.loads(p.read_text()) for p in sorted((ROOT/'data/recipes/curated').glob('*.json'))]

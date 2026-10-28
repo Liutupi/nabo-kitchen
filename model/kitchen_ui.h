@@ -5,6 +5,9 @@
 #include "kitchen_session.h"
 #include "kitchen_timer.h"
 
+/* P0 uses one monotonic clock for animation and the startup transition. */
+#define KU_BOOT_DURATION_MS 3600
+
 typedef struct {
     uint8_t people, minutes, combo;
 } ku_conditions;

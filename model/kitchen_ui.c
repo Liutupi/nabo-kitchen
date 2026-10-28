@@ -188,7 +188,7 @@ void ku_tick(ku_ui* u, int64_t now) {
 void ku_startup(ku_ui* u, int64_t now) {
     if (u) {
         u->page = 0;
-        u->transition_due = now + 1200;
+        u->transition_due = now + KU_BOOT_DURATION_MS;
     }
 }
 static void step_next(ku_ui* u, int64_t now) {

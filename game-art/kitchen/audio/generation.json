@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-28",
+  "generator": "Dreamina Canvas TTS",
+  "text": "那波，陪你做饭。",
+  "voice_name": "阳光小男孩",
+  "project_id": "e73a2a57-e0e4-456b-b404-d6c083df9595",
+  "node_id": "node_4h3eejrmc3",
+  "submit_id": "7311da5e-b561-47d9-95f3-7a97cbcf5473",
+  "resource_id": "7948fb5d-d0c8-4c23-9736-cbd57d4d9ee3",
+  "original": "originals/dreamina-7948fb5d-d0c8-4c23-9736-cbd57d4d9ee3.mp3",
+  "original_sha256": "50ebeb40793dbf2ae679439b04f55cca9729591c0d192c82fee0965c9e7d75e2",
+  "processed": "boot-welcome.wav",
+  "processed_sha256": "dbef3025e48db73df5abdd0befa770047c93db780c870a8b6bde1b96ee052f7b",
+  "runtime_pcm_sha256": "b47e9a9e8845a130495896d8628a153f7d17339442e7e9d6f7ef3a61c81d4a22",
+  "processed_format": "PCM signed 16-bit little-endian, mono, 16000 Hz",
+  "processing": "trim 0.30–2.25 s; highpass 90 Hz; lowpass 6500 Hz; loudnorm I=-16 TP=-3 LRA=7; 10ms fade-in",
+  "runtime_note": "Play at 1.4 seconds into boot, respect kitchen sound/volume and hardware speaker settings."
+}

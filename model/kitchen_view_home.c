@@ -13,18 +13,63 @@ static void keyrow(kg_canvas* c, const kv_scene* s, int y, const char* key, cons
     kv_label(c, s, &s->assets->han12, 17, y + 4, 24, 20, INK, key);
     kv_label(c, s, &s->assets->han15, 49, y + 3, 94, 25, PAPER, text);
 }
+/* Avoid decompressing every static sprite for stripes it cannot touch. */
+static int boot_ui_sprite(kg_canvas* c, const kv_scene* s, const char* name, int x, int y,
+                          unsigned width, unsigned height) {
+    if (y + (int)height <= c->y || y >= c->y + c->height)
+        return 1;
+    ksp_sprite sprite;
+    return ksp_find(s->assets->ui, name, &sprite) &&
+           kg_sprite_scaled(c, s->assets->ui, &sprite, x, y, width, height);
+}
 void kv_home_draw(kg_canvas* c, const kv_scene* s) {
     const ku_ui* u = s->state;
     char text[96];
     if (u->page == 0) {
+        int64_t remaining = u->transition_due > s->now ? u->transition_due - s->now : 0;
+        int elapsed = remaining >= KU_BOOT_DURATION_MS ? 0 : KU_BOOT_DURATION_MS - (int)remaining;
+        static const uint8_t stars[][2] = {{8, 35},   {29, 33},  {54, 34},   {79, 30},
+                                           {162, 29}, {191, 34}, {213, 31},  {27, 68},
+                                           {12, 112}, {55, 125}, {184, 111}, {218, 124}};
         kg_rect(c, 0, 0, 240, 320, BG);
-        ksp_sprite logo;
-        if (ksp_find(s->assets->ui, "logo_wordmark", &logo))
-            kg_sprite_scaled(c, s->assets->ui, &logo, 10, 42, 220, 90);
-        else
+        for (unsigned i = 0; i < sizeof(stars) / sizeof(*stars); ++i) {
+            int bright = ((elapsed / 650 + (int)i) % 3) == 0;
+            kg_rect(c, stars[i][0], stars[i][1], bright ? 2 : 1, bright ? 2 : 1,
+                    bright ? PAPER2 : DIM);
+        }
+        /* Crescent and lanterns are independent of the character animation frames. */
+        kg_circle(c, 209, 54, 12, GOLD);
+        kg_circle(c, 214, 50, 10, BG);
+        if (!boot_ui_sprite(c, s, "ui_lantern", 8, 149, 27, 27) ||
+            !boot_ui_sprite(c, s, "ui_lantern", 205, 149, 27, 27) ||
+            !boot_ui_sprite(c, s, "logo_wordmark", 10, 42, 220, 90))
             c->error = 1;
-        kv_label(c, s, &s->assets->han12, 50, 138, 180, 22, DIM, "今晚吃什么，我来想");
-        kv_portrait(c, s, 48, 175, 144);
+        kv_label(c, s, &s->assets->han12, 78, 138, 140, 22, DIM, "那波，陪你做饭");
+        static const struct {
+            const char* name;
+            int x, y;
+        } food[] = {{"tomato", 39, 185}, {"choy_sum", 81, 168}, {"fish_whole", 133, 170},
+                    {"tofu", 179, 187},  {"egg", 17, 220},      {"pork_belly", 200, 227}};
+        for (unsigned i = 0; i < sizeof(food) / sizeof(*food); ++i) {
+            int progress = elapsed - 450 - (int)i * 180;
+            if (progress <= 0)
+                continue;
+            if (progress > 280)
+                progress = 280;
+            unsigned size = (unsigned)(28 * progress / 280);
+            if (!size)
+                size = 1;
+            int x = food[i].x + (28 - (int)size) / 2;
+            int y = food[i].y + (280 - progress) * 18 / 280 + (28 - (int)size) / 2;
+            kv_icon(c, s, food[i].name, x, y, size, size);
+        }
+        int rise = elapsed - 1450;
+        if (rise > 0) {
+            if (rise > 800)
+                rise = 800;
+            int y = 164 + (800 - rise) * 156 / 800;
+            kv_portrait(c, s, 42, y, 156);
+        }
         return;
     }
     if (u->page == 1) {
