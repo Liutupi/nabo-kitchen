@@ -1,0 +1,16 @@
+{
+  "id": "face_happy",
+  "path": "icons/face_happy.png",
+  "size": [
+    160,
+    160
+  ],
+  "prompt": "Use case: identity-preserve, game avatar. ONE transparent160x160 HEAD-AND-SHOULDERS avatar for NABO Late Kitchen, matching selectedC. Input1 approvedC wardrobe/face, input2 originalidentity (leftmostopeneyes). Lock same face/eyes, black ROUND glasses, brown tousledhair, whiteBASEBALLcap with originalblueECG and uprightlegible 'NABO', no mirroring. NavyMandarin-collar frogjacket and smallhint ofwhiteRIGHTshouldertowel. Only headandshoulders (except smallfist if specified), bigheadfilling80% square,8%clearalpha margins. Frontview upperleftlight clean2D flat+twocelshadows localdarkoutline; no whitestickerrim/3D/texture. No text except correctexistingNABOcaplogo, no symbols/bubbles/props/effects. Preserve identity when expressionchanges. Happy warm closed-eyesmile, cheeks slightlyrosy, joyfulclosedmouth, no teeth.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-5dbf8483-a57e-4160-9f41-9c12e2eebeea.png",
+  "native_local": "private/a5/native/face_happy.png",
+  "sha256": "3d02badc86c2df7d11ce69336e5cc91c5dd8809d4fb4139076a6d9499aab9532",
+  "mode": "built-in image_gen",
+  "status": "review",
+  "process": "crop transparent padding, uniformly fit to target canvas, preserve alpha; no repaint/mirroring",
+  "native_sha256": "9135620ea0a6f2e57e9cbec90d62f34772b7f361628535357f5d408eaee02681"
+}

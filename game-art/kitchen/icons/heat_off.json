@@ -1,0 +1,19 @@
+{
+  "id": "heat_off",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\heat_off.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "339f1bd7a7509b4cbc6e30fe0204bbfb361e83a20089795a9e6beb13023df3db",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "807c4c098a04c0a9027f6bcb787cca85ca9c029d75ad3f368dfa4698697ef954"
+}

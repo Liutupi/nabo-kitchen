@@ -1,0 +1,19 @@
+{
+  "id": "heat_low",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\heat_low.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "1flame heat indicator",
+  "sha256": "b42a0b8c5d2a93576bea500105fcb8d5c4b81f6b8e49e8abc6d7a5f89aa4fdfa",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "03b49e917dff3106839e2e9e468102617d62c06c29e060821edc0e8de2cf90ef"
+}

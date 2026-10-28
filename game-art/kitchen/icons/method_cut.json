@@ -1,0 +1,19 @@
+{
+  "id": "method_cut",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\method_cut.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "438947740eb84f0d8043e0d358155923637a8f4a9b45e076c85e61096e32e834",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "1648dcdf01e9ed876849f88b6cd4518f91ca328034ee23d25795442b07c45644"
+}

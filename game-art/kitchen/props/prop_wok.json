@@ -1,0 +1,16 @@
+{
+  "id": "prop_wok",
+  "path": "props/prop_wok.png",
+  "size": [
+    128,
+    128
+  ],
+  "prompt": "Use case: game-asset / stylized-concept. ONE isolated production raster prop for NABO Late Kitchen. Reference1 is selectedC NABO cooking pose: match its flat2D drawing style and utensil design, not the person. Transparent background, no character or hands. Darkbrown #3B2730 thick contour, two discrete celtones, upperleftlight, warm clean colors. No smooth gradients, texture, soft3D, white sticker border, text, faces, food, flame or steam. Single subject entirely in frame, generous8%margin. Final128x128 RGBA. Draw the EMPTY ironblack Chinese roundbottom wok with a single brown WOODEN HANDLE pointing to viewerLEFT, samewok asreference. View45degrees down so emptyinterior visible. Handle and bowl both clearly recognized at32px.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-3974addf-c4c2-4752-9cc3-55983078a5ab.png",
+  "native_local": "private/a5/native/prop_wok.png",
+  "sha256": "bb9b3c48e5babccd5c3ddcabd1403e8ef2b213b47d0f8bd2afcf3ee9827db7ab",
+  "mode": "built-in image_gen",
+  "status": "review",
+  "process": "crop transparent padding, uniformly fit to target canvas, preserve alpha; no repaint/mirroring",
+  "native_sha256": "b3f2348aa8920a095123f10e9e2b3c951531f5b1883d5f1977325354371b0292"
+}

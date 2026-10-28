@@ -1,0 +1,16 @@
+{
+  "id": "prop_spatula",
+  "path": "props/prop_spatula.png",
+  "size": [
+    128,
+    128
+  ],
+  "prompt": "Use case: game-asset / stylized-concept. ONE isolated production raster prop for NABO Late Kitchen. Reference1 is selectedC NABO cooking pose: match its flat2D drawing style and utensil design, not the person. Transparent background, no character or hands. Darkbrown #3B2730 thick contour, two discrete celtones, upperleftlight, warm clean colors. No smooth gradients, texture, soft3D, white sticker border, text, faces, food, flame or steam. Single subject entirely in frame, generous8%margin. Final128x128 RGBA. Draw ONLY the Chinese WOK SPATULA fromreference: broad gently curved lightgrey metal scoop with darkbrown woodenhandle, diagonal handle pointsupperRIGHT and blade lowerLEFT. Natural simple outline,2flatgreys plusbrownhandle. No pan.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-31fccda8-7c38-4484-b28b-76bd05ee92e8.png",
+  "native_local": "private/a5/native/prop_spatula.png",
+  "sha256": "9baaa948e8e8ba547d104dd3970655df446f25bcedb48792a15ffbdc21f2c63c",
+  "mode": "built-in image_gen",
+  "status": "review",
+  "process": "crop transparent padding, uniformly fit to target canvas, preserve alpha; no repaint/mirroring",
+  "native_sha256": "9b6474b27804a2ac7a1f353668266b1b646cc04f17447c279c65be481aea0731"
+}

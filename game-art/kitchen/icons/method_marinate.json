@@ -1,0 +1,19 @@
+{
+  "id": "method_marinate",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\method_marinate.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "2162a4a4850d62e654eceafeca0b061100f5029da2755c1aa9c0cff6f0dafd90",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "c4694a4c5eb8da16057977deec2a93ba91076837388c69623c08343a7fa33543"
+}

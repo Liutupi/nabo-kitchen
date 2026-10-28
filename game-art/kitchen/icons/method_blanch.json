@@ -1,0 +1,19 @@
+{
+  "id": "method_blanch",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\method_blanch.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "5732ae7f86722a125fe6bf66a448e493c1ae58472ae807f453295ab6d901829a",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "13a09af8188dc8dc6a0b05e921a72aa8d65b8903124f6e86bc9563f1cc7e9246"
+}

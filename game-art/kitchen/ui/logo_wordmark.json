@@ -1,0 +1,19 @@
+{
+  "id": "logo_wordmark",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\ui\\logo_wordmark.svg",
+  "size": [
+    880,
+    360
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "Archivo Black and NotoSansSC Medium text converted to vector paths; NABO/深夜厨房 exact lettering",
+  "sha256": "e3862b60e3d5692e6915645947e9a63cfa47bc08c851f2698f823428023eab09",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "5b80611b995230d823e9301224d1e413bb8d3efa03f695374ec972d2fa0128a9"
+}

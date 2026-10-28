@@ -1,0 +1,16 @@
+{
+  "id": "prop_bowl",
+  "path": "props/prop_bowl.png",
+  "size": [
+    128,
+    128
+  ],
+  "prompt": "Use case: game-asset / stylized-concept. ONE isolated production raster prop for NABO Late Kitchen. Reference1 is selectedC NABO cooking pose: match its flat2D drawing style and utensil design, not the person. Transparent background, no character or hands. Darkbrown #3B2730 thick contour, two discrete celtones, upperleftlight, warm clean colors. No smooth gradients, texture, soft3D, white sticker border, text, faces, food, flame or steam. Single subject entirely in frame, generous8%margin. Final128x128 RGBA. Draw one small EMPTY white porcelain rice bowl, roundcreamwhite body,45degrees topview, darkbrownoutline and onecreamshadow shape. Simple broadopening clearlyvisible. No decoration, content orspoon.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-af091c65-5e25-4832-9454-815c2ec69cd5.png",
+  "native_local": "private/a5/native/prop_bowl.png",
+  "sha256": "c004b413cbd722f603075df687d1ae188c83882c648f0900b04417443af8bdff",
+  "mode": "built-in image_gen",
+  "status": "review",
+  "process": "crop transparent padding, uniformly fit to target canvas, preserve alpha; no repaint/mirroring",
+  "native_sha256": "fb4964b431adb658bf13be7efc544d1cae76b43499417e055efe012b48626173"
+}

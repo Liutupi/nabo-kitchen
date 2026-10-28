@@ -1,0 +1,19 @@
+{
+  "id": "ui_lantern",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\ui_lantern.svg",
+  "size": [
+    104,
+    104
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "dba199c79c5ca506cea4222a1473ebf9b930a708e759be3fbbddce20d0c911c7",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "04cc36a5aaa81dcc70d2bcbbe2f3aac45512b803297d5c1e3fc98457d7e15813"
+}

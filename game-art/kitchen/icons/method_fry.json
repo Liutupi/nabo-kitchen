@@ -1,0 +1,19 @@
+{
+  "id": "method_fry",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\method_fry.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "8d8b245f4f24af7c95a8b71720568c3c0e70c0e696adf37df53307503bdefbf4",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "c4507dd98c8188bbe63b7a5809b96ea566ae2a8ae4e6be8e703dc0a962e0efb2"
+}

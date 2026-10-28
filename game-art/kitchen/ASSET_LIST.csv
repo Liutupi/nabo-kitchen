@@ -17,163 +17,163 @@ taste,nabo-anim,grok-clips/taste.mp4,256x256 frames,video,0.3,Grok,todo,
 doze,nabo-anim,grok-clips/doze.mp4,256x256 frames,video,0.3,Grok,todo,
 levelup,nabo-anim,grok-clips/levelup.mp4,256x256 frames,video,0.3,Grok,todo,
 wave,nabo-anim,grok-clips/wave.mp4,256x256 frames,video,opt,Grok,todo,
-face_go,face,icons/face_go.png,40x40,160x160,0.3,Codex,todo,
-face_focus,face,icons/face_focus.png,40x40,160x160,0.3,Codex,todo,
-face_wait,face,icons/face_wait.png,40x40,160x160,0.3,Codex,todo,
-face_happy,face,icons/face_happy.png,40x40,160x160,0.3,Codex,todo,
-face_oops,face,icons/face_oops.png,40x40,160x160,0.3,Codex,todo,
-face_sleepy,face,icons/face_sleepy.png,40x40,160x160,0.3,Codex,todo,
-pork_belly,ingredient,ingredients/pork_belly.png,40x40,160x160,0.1,Codex,todo,五花肉
-pork_lean,ingredient,ingredients/pork_lean.png,40x40,160x160,0.1,Codex,todo,瘦肉
+face_go,face,icons/face_go.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+face_focus,face,icons/face_focus.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+face_wait,face,icons/face_wait.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+face_happy,face,icons/face_happy.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+face_oops,face,icons/face_oops.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+face_sleepy,face,icons/face_sleepy.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_belly,ingredient,ingredients/pork_belly.png,40x40,160x160,0.1,Codex,review,五花肉；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_lean,ingredient,ingredients/pork_lean.png,40x40,160x160,0.1,Codex,review,瘦肉；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 pork_rib,ingredient,ingredients/pork_rib.png,40x40,160x160,0.1,Codex,done,排骨；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-pork_mince,ingredient,ingredients/pork_mince.png,40x40,160x160,0.1,Codex,todo,肉末
-chicken_whole,ingredient,ingredients/chicken_whole.png,40x40,160x160,0.1,Codex,todo,整鸡
-chicken_wing,ingredient,ingredients/chicken_wing.png,40x40,160x160,0.1,Codex,todo,鸡翅
-chicken_thigh,ingredient,ingredients/chicken_thigh.png,40x40,160x160,0.1,Codex,todo,鸡腿
-beef,ingredient,ingredients/beef.png,40x40,160x160,0.1,Codex,todo,牛肉
-lap_cheong,ingredient,ingredients/lap_cheong.png,40x40,160x160,0.1,Codex,todo,腊肠
-pork_trotter,ingredient,ingredients/pork_trotter.png,40x40,160x160,0.2,Codex,todo,猪脚
+pork_mince,ingredient,ingredients/pork_mince.png,40x40,160x160,0.1,Codex,review,肉末；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_whole,ingredient,ingredients/chicken_whole.png,40x40,160x160,0.1,Codex,review,整鸡；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_wing,ingredient,ingredients/chicken_wing.png,40x40,160x160,0.1,Codex,review,鸡翅；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_thigh,ingredient,ingredients/chicken_thigh.png,40x40,160x160,0.1,Codex,review,鸡腿；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+beef,ingredient,ingredients/beef.png,40x40,160x160,0.1,Codex,review,牛肉；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+lap_cheong,ingredient,ingredients/lap_cheong.png,40x40,160x160,0.1,Codex,review,腊肠；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_trotter,ingredient,ingredients/pork_trotter.png,40x40,160x160,0.2,Codex,review,猪脚；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 fish_whole,ingredient,ingredients/fish_whole.png,40x40,160x160,0.1,Codex,done,鱼（鲈鱼等）；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-shrimp,ingredient,ingredients/shrimp.png,40x40,160x160,0.1,Codex,todo,虾
-squid,ingredient,ingredients/squid.png,40x40,160x160,0.2,Codex,todo,鱿鱼
-clam,ingredient,ingredients/clam.png,40x40,160x160,0.2,Codex,todo,花甲
-fish_fillet,ingredient,ingredients/fish_fillet.png,40x40,160x160,0.2,Codex,todo,鱼片
+shrimp,ingredient,ingredients/shrimp.png,40x40,160x160,0.1,Codex,review,虾；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+squid,ingredient,ingredients/squid.png,40x40,160x160,0.2,Codex,review,鱿鱼；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+clam,ingredient,ingredients/clam.png,40x40,160x160,0.2,Codex,review,花甲；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+fish_fillet,ingredient,ingredients/fish_fillet.png,40x40,160x160,0.2,Codex,review,鱼片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 egg,ingredient,ingredients/egg.png,40x40,160x160,0.1,Codex,done,鸡蛋；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 tofu,ingredient,ingredients/tofu.png,40x40,160x160,0.1,Codex,done,豆腐；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-tofu_dried,ingredient,ingredients/tofu_dried.png,40x40,160x160,0.2,Codex,todo,豆干
-salted_egg,ingredient,ingredients/salted_egg.png,40x40,160x160,0.2,Codex,todo,咸蛋
+tofu_dried,ingredient,ingredients/tofu_dried.png,40x40,160x160,0.2,Codex,review,豆干；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+salted_egg,ingredient,ingredients/salted_egg.png,40x40,160x160,0.2,Codex,review,咸蛋；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 tomato,ingredient,ingredients/tomato.png,40x40,160x160,0.1,Codex,done,番茄；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-potato,ingredient,ingredients/potato.png,40x40,160x160,0.1,Codex,todo,土豆
+potato,ingredient,ingredients/potato.png,40x40,160x160,0.1,Codex,review,土豆；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 choy_sum,ingredient,ingredients/choy_sum.png,40x40,160x160,0.1,Codex,done,菜心；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-lettuce,ingredient,ingredients/lettuce.png,40x40,160x160,0.1,Codex,todo,生菜
-napa_cabbage,ingredient,ingredients/napa_cabbage.png,40x40,160x160,0.1,Codex,todo,大白菜
-eggplant,ingredient,ingredients/eggplant.png,40x40,160x160,0.1,Codex,todo,茄子
-green_pepper,ingredient,ingredients/green_pepper.png,40x40,160x160,0.1,Codex,todo,青椒
-carrot,ingredient,ingredients/carrot.png,40x40,160x160,0.1,Codex,todo,胡萝卜
-cucumber,ingredient,ingredients/cucumber.png,40x40,160x160,0.1,Codex,todo,黄瓜
-broccoli,ingredient,ingredients/broccoli.png,40x40,160x160,0.1,Codex,todo,西兰花
-winter_melon,ingredient,ingredients/winter_melon.png,40x40,160x160,0.1,Codex,todo,冬瓜
-shiitake,ingredient,ingredients/shiitake.png,40x40,160x160,0.1,Codex,todo,香菇
-onion,ingredient,ingredients/onion.png,40x40,160x160,0.1,Codex,todo,洋葱
-scallion,ingredient,ingredients/scallion.png,40x40,160x160,0.1,Codex,todo,葱
-ginger,ingredient,ingredients/ginger.png,40x40,160x160,0.1,Codex,todo,姜
-garlic,ingredient,ingredients/garlic.png,40x40,160x160,0.1,Codex,todo,蒜
-gai_lan,ingredient,ingredients/gai_lan.png,40x40,160x160,0.2,Codex,todo,芥兰
-cabbage,ingredient,ingredients/cabbage.png,40x40,160x160,0.2,Codex,todo,包菜
-bitter_melon,ingredient,ingredients/bitter_melon.png,40x40,160x160,0.2,Codex,todo,苦瓜
-loofah,ingredient,ingredients/loofah.png,40x40,160x160,0.2,Codex,todo,丝瓜
-bean_sprout,ingredient,ingredients/bean_sprout.png,40x40,160x160,0.2,Codex,todo,豆芽
-green_bean,ingredient,ingredients/green_bean.png,40x40,160x160,0.2,Codex,todo,豆角
-enoki,ingredient,ingredients/enoki.png,40x40,160x160,0.2,Codex,todo,金针菇
-corn,ingredient,ingredients/corn.png,40x40,160x160,0.2,Codex,todo,玉米
-chili,ingredient,ingredients/chili.png,40x40,160x160,0.1,Codex,todo,辣椒
-cilantro,ingredient,ingredients/cilantro.png,40x40,160x160,0.2,Codex,todo,香菜
-spinach,ingredient,ingredients/spinach.png,40x40,160x160,0.2,Codex,todo,菠菜
-lotus_root,ingredient,ingredients/lotus_root.png,40x40,160x160,0.2,Codex,todo,莲藕
-pumpkin,ingredient,ingredients/pumpkin.png,40x40,160x160,0.2,Codex,todo,南瓜
-rice,ingredient,ingredients/rice.png,40x40,160x160,0.2,Codex,todo,米饭
-noodle,ingredient,ingredients/noodle.png,40x40,160x160,0.2,Codex,todo,面条
+lettuce,ingredient,ingredients/lettuce.png,40x40,160x160,0.1,Codex,review,生菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+napa_cabbage,ingredient,ingredients/napa_cabbage.png,40x40,160x160,0.1,Codex,review,大白菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+eggplant,ingredient,ingredients/eggplant.png,40x40,160x160,0.1,Codex,review,茄子；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+green_pepper,ingredient,ingredients/green_pepper.png,40x40,160x160,0.1,Codex,review,青椒；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+carrot,ingredient,ingredients/carrot.png,40x40,160x160,0.1,Codex,review,胡萝卜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+cucumber,ingredient,ingredients/cucumber.png,40x40,160x160,0.1,Codex,review,黄瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+broccoli,ingredient,ingredients/broccoli.png,40x40,160x160,0.1,Codex,review,西兰花；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+winter_melon,ingredient,ingredients/winter_melon.png,40x40,160x160,0.1,Codex,review,冬瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+shiitake,ingredient,ingredients/shiitake.png,40x40,160x160,0.1,Codex,review,香菇；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+onion,ingredient,ingredients/onion.png,40x40,160x160,0.1,Codex,review,洋葱；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+scallion,ingredient,ingredients/scallion.png,40x40,160x160,0.1,Codex,review,葱；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+ginger,ingredient,ingredients/ginger.png,40x40,160x160,0.1,Codex,review,姜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+garlic,ingredient,ingredients/garlic.png,40x40,160x160,0.1,Codex,review,蒜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+gai_lan,ingredient,ingredients/gai_lan.png,40x40,160x160,0.2,Codex,review,芥兰；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+cabbage,ingredient,ingredients/cabbage.png,40x40,160x160,0.2,Codex,review,包菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+bitter_melon,ingredient,ingredients/bitter_melon.png,40x40,160x160,0.2,Codex,review,苦瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+loofah,ingredient,ingredients/loofah.png,40x40,160x160,0.2,Codex,review,丝瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+bean_sprout,ingredient,ingredients/bean_sprout.png,40x40,160x160,0.2,Codex,review,豆芽；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+green_bean,ingredient,ingredients/green_bean.png,40x40,160x160,0.2,Codex,review,豆角；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+enoki,ingredient,ingredients/enoki.png,40x40,160x160,0.2,Codex,review,金针菇；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+corn,ingredient,ingredients/corn.png,40x40,160x160,0.2,Codex,review,玉米；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chili,ingredient,ingredients/chili.png,40x40,160x160,0.1,Codex,review,辣椒；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+cilantro,ingredient,ingredients/cilantro.png,40x40,160x160,0.2,Codex,review,香菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+spinach,ingredient,ingredients/spinach.png,40x40,160x160,0.2,Codex,review,菠菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+lotus_root,ingredient,ingredients/lotus_root.png,40x40,160x160,0.2,Codex,review,莲藕；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pumpkin,ingredient,ingredients/pumpkin.png,40x40,160x160,0.2,Codex,review,南瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+rice,ingredient,ingredients/rice.png,40x40,160x160,0.2,Codex,review,米饭；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+noodle,ingredient,ingredients/noodle.png,40x40,160x160,0.2,Codex,review,面条；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 vessel_plate,dish-L0,dish-layers/vessel_plate.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 vessel_plate_shadow,dish-L0,dish-layers/vessel_plate_shadow.png,160x120,640x480,0.1,Codex,done,投影单独一层；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-vessel_oval,dish-L0,dish-layers/vessel_oval.png,160x120,640x480,0.1,Codex,todo,
-vessel_oval_shadow,dish-L0,dish-layers/vessel_oval_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
-vessel_bowl,dish-L0,dish-layers/vessel_bowl.png,160x120,640x480,0.1,Codex,todo,
-vessel_bowl_shadow,dish-L0,dish-layers/vessel_bowl_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
-vessel_claypot,dish-L0,dish-layers/vessel_claypot.png,160x120,640x480,0.1,Codex,todo,
-vessel_claypot_shadow,dish-L0,dish-layers/vessel_claypot_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
-vessel_steamer,dish-L0,dish-layers/vessel_steamer.png,160x120,640x480,0.1,Codex,todo,
-vessel_steamer_shadow,dish-L0,dish-layers/vessel_steamer_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
-vessel_deep,dish-L0,dish-layers/vessel_deep.png,160x120,640x480,0.1,Codex,todo,
-vessel_deep_shadow,dish-L0,dish-layers/vessel_deep_shadow.png,160x120,640x480,0.1,Codex,todo,投影单独一层
-sauce_clear__plate,dish-L1,dish-layers/sauce_clear__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_braise__plate,dish-L1,dish-layers/sauce_braise__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_braise__bowl,dish-L1,dish-layers/sauce_braise__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_braise__claypot,dish-L1,dish-layers/sauce_braise__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+vessel_oval,dish-L0,dish-layers/vessel_oval.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_oval_shadow,dish-L0,dish-layers/vessel_oval_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_bowl,dish-L0,dish-layers/vessel_bowl.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_bowl_shadow,dish-L0,dish-layers/vessel_bowl_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_claypot,dish-L0,dish-layers/vessel_claypot.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_claypot_shadow,dish-L0,dish-layers/vessel_claypot_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_steamer,dish-L0,dish-layers/vessel_steamer.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_steamer_shadow,dish-L0,dish-layers/vessel_steamer_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_deep,dish-L0,dish-layers/vessel_deep.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+vessel_deep_shadow,dish-L0,dish-layers/vessel_deep_shadow.png,160x120,640x480,0.1,Codex,review,投影单独一层；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_clear__plate,dish-L1,dish-layers/sauce_clear__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_braise__plate,dish-L1,dish-layers/sauce_braise__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_braise__bowl,dish-L1,dish-layers/sauce_braise__bowl.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_braise__claypot,dish-L1,dish-layers/sauce_braise__claypot.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 sauce_tomato__plate,dish-L1,dish-layers/sauce_tomato__plate.png,160x120,640x480,0.1,Codex,done,plate 组 = plate/oval/deep 共用；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-sauce_tomato__bowl,dish-L1,dish-layers/sauce_tomato__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_tomato__claypot,dish-L1,dish-layers/sauce_tomato__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_curry__plate,dish-L1,dish-layers/sauce_curry__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_curry__bowl,dish-L1,dish-layers/sauce_curry__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_curry__claypot,dish-L1,dish-layers/sauce_curry__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_white__bowl,dish-L1,dish-layers/sauce_white__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_white__claypot,dish-L1,dish-layers/sauce_white__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_clear_soup__bowl,dish-L1,dish-layers/sauce_clear_soup__bowl.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_clear_soup__claypot,dish-L1,dish-layers/sauce_clear_soup__claypot.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_black_bean__plate,dish-L1,dish-layers/sauce_black_bean__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_soy_steam__plate,dish-L1,dish-layers/sauce_soy_steam__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
-sauce_chili__plate,dish-L1,dish-layers/sauce_chili__plate.png,160x120,640x480,0.1,Codex,todo,plate 组 = plate/oval/deep 共用
+sauce_tomato__bowl,dish-L1,dish-layers/sauce_tomato__bowl.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_tomato__claypot,dish-L1,dish-layers/sauce_tomato__claypot.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_curry__plate,dish-L1,dish-layers/sauce_curry__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_curry__bowl,dish-L1,dish-layers/sauce_curry__bowl.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_curry__claypot,dish-L1,dish-layers/sauce_curry__claypot.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_white__bowl,dish-L1,dish-layers/sauce_white__bowl.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_white__claypot,dish-L1,dish-layers/sauce_white__claypot.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_clear_soup__bowl,dish-L1,dish-layers/sauce_clear_soup__bowl.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_clear_soup__claypot,dish-L1,dish-layers/sauce_clear_soup__claypot.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_black_bean__plate,dish-L1,dish-layers/sauce_black_bean__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_soy_steam__plate,dish-L1,dish-layers/sauce_soy_steam__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+sauce_chili__plate,dish-L1,dish-layers/sauce_chili__plate.png,160x120,640x480,0.1,Codex,review,plate 组 = plate/oval/deep 共用；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 egg__scrambled,dish-L2,dish-layers/egg__scrambled.png,160x120,640x480,0.1,Codex,done,炒蛋块；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-egg__ribbon,dish-L2,dish-layers/egg__ribbon.png,160x120,640x480,0.1,Codex,todo,蛋花
-egg__fried,dish-L2,dish-layers/egg__fried.png,160x120,640x480,0.1,Codex,todo,荷包蛋
-egg__steamed_custard,dish-L2,dish-layers/egg__steamed_custard.png,160x120,640x480,0.1,Codex,todo,蒸水蛋
+egg__ribbon,dish-L2,dish-layers/egg__ribbon.png,160x120,640x480,0.1,Codex,review,蛋花；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+egg__fried,dish-L2,dish-layers/egg__fried.png,160x120,640x480,0.1,Codex,review,荷包蛋；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+egg__steamed_custard,dish-L2,dish-layers/egg__steamed_custard.png,160x120,640x480,0.1,Codex,review,蒸水蛋；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 tomato__wedge_cooked,dish-L2,dish-layers/tomato__wedge_cooked.png,160x120,640x480,0.1,Codex,done,炒软的番茄块；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-tomato__wedge_soup,dish-L2,dish-layers/tomato__wedge_soup.png,160x120,640x480,0.1,Codex,todo,汤里的番茄块
-pork_belly__braised,dish-L2,dish-layers/pork_belly__braised.png,160x120,640x480,0.1,Codex,todo,红烧肉块
-pork_belly__slices_stirfried,dish-L2,dish-layers/pork_belly__slices_stirfried.png,160x120,640x480,0.1,Codex,todo,小炒五花肉片
-pork_lean__shreds_stirfried,dish-L2,dish-layers/pork_lean__shreds_stirfried.png,160x120,640x480,0.1,Codex,todo,炒肉丝
-pork_lean__slices,dish-L2,dish-layers/pork_lean__slices.png,160x120,640x480,0.1,Codex,todo,滑肉片
-pork_rib__braised,dish-L2,dish-layers/pork_rib__braised.png,160x120,640x480,0.1,Codex,todo,红烧排骨
-pork_rib__steamed_black_bean,dish-L2,dish-layers/pork_rib__steamed_black_bean.png,160x120,640x480,0.1,Codex,todo,豉汁蒸排骨
-pork_rib__soup,dish-L2,dish-layers/pork_rib__soup.png,160x120,640x480,0.1,Codex,todo,汤里的排骨
-pork_mince__crumbs,dish-L2,dish-layers/pork_mince__crumbs.png,160x120,640x480,0.1,Codex,todo,肉末
-pork_mince__patty_steamed,dish-L2,dish-layers/pork_mince__patty_steamed.png,160x120,640x480,0.1,Codex,todo,蒸肉饼
-chicken_whole__poached_cut,dish-L2,dish-layers/chicken_whole__poached_cut.png,160x120,640x480,0.1,Codex,todo,白切鸡斩件
-chicken_wing__braised,dish-L2,dish-layers/chicken_wing__braised.png,160x120,640x480,0.1,Codex,todo,红烧鸡翅
-chicken_thigh__pieces_braised,dish-L2,dish-layers/chicken_thigh__pieces_braised.png,160x120,640x480,0.1,Codex,todo,焖鸡块
-beef__slices_stirfried,dish-L2,dish-layers/beef__slices_stirfried.png,160x120,640x480,0.1,Codex,todo,炒牛肉片
-lap_cheong__slices,dish-L2,dish-layers/lap_cheong__slices.png,160x120,640x480,0.1,Codex,todo,腊肠片
-fish_whole__steamed,dish-L2,dish-layers/fish_whole__steamed.png,160x120,640x480,0.1,Codex,todo,清蒸整鱼
-fish_whole__braised,dish-L2,dish-layers/fish_whole__braised.png,160x120,640x480,0.1,Codex,todo,红烧整鱼
-shrimp__boiled,dish-L2,dish-layers/shrimp__boiled.png,160x120,640x480,0.1,Codex,todo,白灼虾
-shrimp__peeled_stirfried,dish-L2,dish-layers/shrimp__peeled_stirfried.png,160x120,640x480,0.1,Codex,todo,炒虾仁
-tofu__cubes_braised,dish-L2,dish-layers/tofu__cubes_braised.png,160x120,640x480,0.1,Codex,todo,红烧豆腐块
-tofu__pan_fried,dish-L2,dish-layers/tofu__pan_fried.png,160x120,640x480,0.1,Codex,todo,煎豆腐
-potato__shreds,dish-L2,dish-layers/potato__shreds.png,160x120,640x480,0.1,Codex,todo,土豆丝
-potato__chunks_braised,dish-L2,dish-layers/potato__chunks_braised.png,160x120,640x480,0.1,Codex,todo,焖土豆块
-choy_sum__stirfried,dish-L2,dish-layers/choy_sum__stirfried.png,160x120,640x480,0.1,Codex,todo,炒菜心
-choy_sum__blanched,dish-L2,dish-layers/choy_sum__blanched.png,160x120,640x480,0.1,Codex,todo,白灼菜心
-lettuce__stirfried,dish-L2,dish-layers/lettuce__stirfried.png,160x120,640x480,0.1,Codex,todo,炒生菜
-napa_cabbage__stirfried,dish-L2,dish-layers/napa_cabbage__stirfried.png,160x120,640x480,0.1,Codex,todo,炒白菜
-eggplant__braised,dish-L2,dish-layers/eggplant__braised.png,160x120,640x480,0.1,Codex,todo,烧茄子
-green_pepper__strips,dish-L2,dish-layers/green_pepper__strips.png,160x120,640x480,0.1,Codex,todo,青椒丝
-carrot__slices,dish-L2,dish-layers/carrot__slices.png,160x120,640x480,0.1,Codex,todo,胡萝卜片
-cucumber__smashed,dish-L2,dish-layers/cucumber__smashed.png,160x120,640x480,0.1,Codex,todo,拍黄瓜
-broccoli__florets,dish-L2,dish-layers/broccoli__florets.png,160x120,640x480,0.1,Codex,todo,西兰花朵
-winter_melon__soup_chunks,dish-L2,dish-layers/winter_melon__soup_chunks.png,160x120,640x480,0.1,Codex,todo,汤里的冬瓜块
-shiitake__braised,dish-L2,dish-layers/shiitake__braised.png,160x120,640x480,0.1,Codex,todo,焖香菇
-onion__slices,dish-L2,dish-layers/onion__slices.png,160x120,640x480,0.1,Codex,todo,洋葱丝
+tomato__wedge_soup,dish-L2,dish-layers/tomato__wedge_soup.png,160x120,640x480,0.1,Codex,review,汤里的番茄块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_belly__braised,dish-L2,dish-layers/pork_belly__braised.png,160x120,640x480,0.1,Codex,review,红烧肉块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_belly__slices_stirfried,dish-L2,dish-layers/pork_belly__slices_stirfried.png,160x120,640x480,0.1,Codex,review,小炒五花肉片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_lean__shreds_stirfried,dish-L2,dish-layers/pork_lean__shreds_stirfried.png,160x120,640x480,0.1,Codex,review,炒肉丝；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_lean__slices,dish-L2,dish-layers/pork_lean__slices.png,160x120,640x480,0.1,Codex,review,滑肉片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_rib__braised,dish-L2,dish-layers/pork_rib__braised.png,160x120,640x480,0.1,Codex,review,红烧排骨；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_rib__steamed_black_bean,dish-L2,dish-layers/pork_rib__steamed_black_bean.png,160x120,640x480,0.1,Codex,review,豉汁蒸排骨；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_rib__soup,dish-L2,dish-layers/pork_rib__soup.png,160x120,640x480,0.1,Codex,review,汤里的排骨；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_mince__crumbs,dish-L2,dish-layers/pork_mince__crumbs.png,160x120,640x480,0.1,Codex,review,肉末；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+pork_mince__patty_steamed,dish-L2,dish-layers/pork_mince__patty_steamed.png,160x120,640x480,0.1,Codex,review,蒸肉饼；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_whole__poached_cut,dish-L2,dish-layers/chicken_whole__poached_cut.png,160x120,640x480,0.1,Codex,review,白切鸡斩件；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_wing__braised,dish-L2,dish-layers/chicken_wing__braised.png,160x120,640x480,0.1,Codex,review,红烧鸡翅；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+chicken_thigh__pieces_braised,dish-L2,dish-layers/chicken_thigh__pieces_braised.png,160x120,640x480,0.1,Codex,review,焖鸡块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+beef__slices_stirfried,dish-L2,dish-layers/beef__slices_stirfried.png,160x120,640x480,0.1,Codex,review,炒牛肉片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+lap_cheong__slices,dish-L2,dish-layers/lap_cheong__slices.png,160x120,640x480,0.1,Codex,review,腊肠片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+fish_whole__steamed,dish-L2,dish-layers/fish_whole__steamed.png,160x120,640x480,0.1,Codex,review,清蒸整鱼；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+fish_whole__braised,dish-L2,dish-layers/fish_whole__braised.png,160x120,640x480,0.1,Codex,review,红烧整鱼；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+shrimp__boiled,dish-L2,dish-layers/shrimp__boiled.png,160x120,640x480,0.1,Codex,review,白灼虾；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+shrimp__peeled_stirfried,dish-L2,dish-layers/shrimp__peeled_stirfried.png,160x120,640x480,0.1,Codex,review,炒虾仁；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+tofu__cubes_braised,dish-L2,dish-layers/tofu__cubes_braised.png,160x120,640x480,0.1,Codex,review,红烧豆腐块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+tofu__pan_fried,dish-L2,dish-layers/tofu__pan_fried.png,160x120,640x480,0.1,Codex,review,煎豆腐；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+potato__shreds,dish-L2,dish-layers/potato__shreds.png,160x120,640x480,0.1,Codex,review,土豆丝；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+potato__chunks_braised,dish-L2,dish-layers/potato__chunks_braised.png,160x120,640x480,0.1,Codex,review,焖土豆块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+choy_sum__stirfried,dish-L2,dish-layers/choy_sum__stirfried.png,160x120,640x480,0.1,Codex,review,炒菜心；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+choy_sum__blanched,dish-L2,dish-layers/choy_sum__blanched.png,160x120,640x480,0.1,Codex,review,白灼菜心；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+lettuce__stirfried,dish-L2,dish-layers/lettuce__stirfried.png,160x120,640x480,0.1,Codex,review,炒生菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+napa_cabbage__stirfried,dish-L2,dish-layers/napa_cabbage__stirfried.png,160x120,640x480,0.1,Codex,review,炒白菜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+eggplant__braised,dish-L2,dish-layers/eggplant__braised.png,160x120,640x480,0.1,Codex,review,烧茄子；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+green_pepper__strips,dish-L2,dish-layers/green_pepper__strips.png,160x120,640x480,0.1,Codex,review,青椒丝；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+carrot__slices,dish-L2,dish-layers/carrot__slices.png,160x120,640x480,0.1,Codex,review,胡萝卜片；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+cucumber__smashed,dish-L2,dish-layers/cucumber__smashed.png,160x120,640x480,0.1,Codex,review,拍黄瓜；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+broccoli__florets,dish-L2,dish-layers/broccoli__florets.png,160x120,640x480,0.1,Codex,review,西兰花朵；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+winter_melon__soup_chunks,dish-L2,dish-layers/winter_melon__soup_chunks.png,160x120,640x480,0.1,Codex,review,汤里的冬瓜块；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+shiitake__braised,dish-L2,dish-layers/shiitake__braised.png,160x120,640x480,0.1,Codex,review,焖香菇；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+onion__slices,dish-L2,dish-layers/onion__slices.png,160x120,640x480,0.1,Codex,review,洋葱丝；2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 garnish_scallion,dish-L3,dish-layers/garnish_scallion.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-garnish_chili_ring,dish-L3,dish-layers/garnish_chili_ring.png,160x120,640x480,0.1,Codex,todo,
-garnish_sesame,dish-L3,dish-layers/garnish_sesame.png,160x120,640x480,0.1,Codex,todo,
-garnish_cilantro,dish-L3,dish-layers/garnish_cilantro.png,160x120,640x480,0.1,Codex,todo,
-garnish_ginger_shred,dish-L3,dish-layers/garnish_ginger_shred.png,160x120,640x480,0.1,Codex,todo,
-garnish_garlic,dish-L3,dish-layers/garnish_garlic.png,160x120,640x480,0.1,Codex,todo,
+garnish_chili_ring,dish-L3,dish-layers/garnish_chili_ring.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+garnish_sesame,dish-L3,dish-layers/garnish_sesame.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+garnish_cilantro,dish-L3,dish-layers/garnish_cilantro.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+garnish_ginger_shred,dish-L3,dish-layers/garnish_ginger_shred.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+garnish_garlic,dish-L3,dish-layers/garnish_garlic.png,160x120,640x480,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 garnish_shine,dish-L3,dish-layers/garnish_shine.png,160x120,640x480,0.1,Codex,done,A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
-heat_high,icon,icons/heat_high.png,24x24,96x96,0.2,Codex,todo,
-heat_mid,icon,icons/heat_mid.png,24x24,96x96,0.2,Codex,todo,
-heat_low,icon,icons/heat_low.png,24x24,96x96,0.2,Codex,todo,
-heat_off,icon,icons/heat_off.png,24x24,96x96,0.2,Codex,todo,
-method_stir_fry,icon,icons/method_stir_fry.png,24x24,96x96,0.2,Codex,todo,
-method_steam,icon,icons/method_steam.png,24x24,96x96,0.2,Codex,todo,
-method_boil,icon,icons/method_boil.png,24x24,96x96,0.2,Codex,todo,
-method_braise,icon,icons/method_braise.png,24x24,96x96,0.2,Codex,todo,
-method_fry,icon,icons/method_fry.png,24x24,96x96,0.2,Codex,todo,
-method_mix,icon,icons/method_mix.png,24x24,96x96,0.2,Codex,todo,
-method_cut,icon,icons/method_cut.png,24x24,96x96,0.2,Codex,todo,
-method_marinate,icon,icons/method_marinate.png,24x24,96x96,0.2,Codex,todo,
-method_blanch,icon,icons/method_blanch.png,24x24,96x96,0.2,Codex,todo,
-method_stew,icon,icons/method_stew.png,24x24,96x96,0.2,Codex,todo,
-badge_1,icon,icons/badge_1.png,40x40,160x160,0.3,Codex,todo,
-badge_2,icon,icons/badge_2.png,40x40,160x160,0.3,Codex,todo,
-badge_3,icon,icons/badge_3.png,40x40,160x160,0.3,Codex,todo,
-badge_4,icon,icons/badge_4.png,40x40,160x160,0.3,Codex,todo,
-ui_lantern_dot,ui,icons/ui_lantern_dot.png,12x16,48x64,0.1,Codex,todo,
-ui_stamp_done,ui,icons/ui_stamp_done.png,56x56,224x224,0.3,Codex,todo,不写字
-ui_star,ui,icons/ui_star.png,12x12,48x48,0.3,Codex,todo,
-ui_timer_icon,ui,icons/ui_timer_icon.png,16x16,64x64,0.1,Codex,todo,
-prop_wok,prop,props/prop_wok.png,~32,4x,0.1,Codex,todo,
-prop_spatula,prop,props/prop_spatula.png,~32,4x,0.1,Codex,todo,
-prop_bowl,prop,props/prop_bowl.png,~32,4x,0.1,Codex,todo,
-prop_fan,prop,props/prop_fan.png,~32,4x,0.1,Codex,todo,
-logo_wordmark,ui,ui/logo_wordmark.png,<=220x90,4x,0.1,Codex,todo,开机字标
-ui_lantern,ui,icons/ui_lantern.png,26x26,104x104,0.1,Codex,todo,开机灯笼
+heat_high,icon,icons/heat_high.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+heat_mid,icon,icons/heat_mid.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+heat_low,icon,icons/heat_low.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+heat_off,icon,icons/heat_off.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_stir_fry,icon,icons/method_stir_fry.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_steam,icon,icons/method_steam.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_boil,icon,icons/method_boil.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_braise,icon,icons/method_braise.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_fry,icon,icons/method_fry.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_mix,icon,icons/method_mix.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_cut,icon,icons/method_cut.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_marinate,icon,icons/method_marinate.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_blanch,icon,icons/method_blanch.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+method_stew,icon,icons/method_stew.png,24x24,96x96,0.2,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+badge_1,icon,icons/badge_1.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+badge_2,icon,icons/badge_2.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+badge_3,icon,icons/badge_3.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+badge_4,icon,icons/badge_4.png,40x40,160x160,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+ui_lantern_dot,ui,icons/ui_lantern_dot.png,12x16,48x64,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+ui_stamp_done,ui,icons/ui_stamp_done.png,56x56,224x224,0.3,Codex,review,不写字；2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+ui_star,ui,icons/ui_star.png,12x12,48x48,0.3,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+ui_timer_icon,ui,icons/ui_timer_icon.png,16x16,64x64,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+prop_wok,prop,props/prop_wok.png,~32,4x,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+prop_spatula,prop,props/prop_spatula.png,~32,4x,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+prop_bowl,prop,props/prop_bowl.png,~32,4x,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+prop_fan,prop,props/prop_fan.png,~32,4x,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
+logo_wordmark,ui,ui/logo_wordmark.png,<=220x90,4x,0.1,Codex,review,开机字标；2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+ui_lantern,ui,icons/ui_lantern.png,26x26,104x104,0.1,Codex,review,开机灯笼；2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON

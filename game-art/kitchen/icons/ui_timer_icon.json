@@ -1,0 +1,19 @@
+{
+  "id": "ui_timer_icon",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\ui_timer_icon.svg",
+  "size": [
+    64,
+    64
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "9ac6660fd0a54a894481d4fb159dff4900e1fd5a0025e8a5f80669094d46ccbb",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "de84d3cb82996fdcb217878db94fae37283880b02eb84c84c744e9052d655d33"
+}

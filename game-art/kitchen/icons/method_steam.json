@@ -1,0 +1,19 @@
+{
+  "id": "method_steam",
+  "status": "review",
+  "generator": "repo-native vector artwork, extended from reference/ui-mockup/art.js visual language",
+  "source": "game-art\\kitchen\\icons\\method_steam.svg",
+  "size": [
+    96,
+    96
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent per icon"
+  ],
+  "notes": "",
+  "sha256": "c99c55dfa04f43bf6f66c39eb09941d366f1ccdcd188905677c5fd67cd260940",
+  "validation": "Source vector and exact-size PNG, small-size contact and RGB565 proof inspected separately. Logo text converted to path outlines.",
+  "source_sha256": "2f17225a60a3997f73d60c8626f105da15fb945f9ff0cba08ba47f4f78a3393c"
+}

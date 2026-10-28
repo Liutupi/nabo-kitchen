@@ -1,0 +1,16 @@
+{
+  "id": "prop_fan",
+  "path": "props/prop_fan.png",
+  "size": [
+    128,
+    128
+  ],
+  "prompt": "Use case: game-asset / stylized-concept. ONE isolated production raster prop for NABO Late Kitchen. Reference1 is selectedC NABO cooking pose: match its flat2D drawing style and utensil design, not the person. Transparent background, no character or hands. Darkbrown #3B2730 thick contour, two discrete celtones, upperleftlight, warm clean colors. No smooth gradients, texture, soft3D, white sticker border, text, faces, food, flame or steam. Single subject entirely in frame, generous8%margin. Final128x128 RGBA. Draw one small Chinese PALM-LEAF HAND FAN (蒲扇), rounded heart-like palmleaffan head in cream/goldenochre with a short brownhandle downward. Simple five darkbrown structural riblines, graphic flatcolored leaves, no woven photographictexture.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-23d9bc21-932d-48e7-99af-c7788f00dbc1.png",
+  "native_local": "private/a5/native/prop_fan.png",
+  "sha256": "351904e5139fa3f4e5552c55c68bab72c553085afd7d317fade17c5679cbbc37",
+  "mode": "built-in image_gen",
+  "status": "review",
+  "process": "crop transparent padding, uniformly fit to target canvas, preserve alpha; no repaint/mirroring",
+  "native_sha256": "294d3c363616d4b9cbe091a54639d9d2900d24639fbfc35ca613b8392d5832e3"
+}
