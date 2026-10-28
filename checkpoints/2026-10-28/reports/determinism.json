@@ -1,0 +1,11 @@
+{
+  "static_packages_byte_identical": [
+    "review_static.ksp",
+    "kitchen_dish.bin",
+    "kitchen_icons.bin",
+    "kitchen_ui.bin"
+  ],
+  "recipe_pack_byte_identical": true,
+  "static_assets": 172,
+  "recipes": 30
+}

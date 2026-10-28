@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-28",
+  "runtime_packages": {
+    "kitchen_dish.bin": {
+      "bytes": 149460,
+      "budget_bytes": 200000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 82,
+      "palette_entries": {
+        "dish-L0": 48,
+        "dish-L1": 56,
+        "dish-L2": 62,
+        "dish-L3": 60
+      },
+      "sha256": "98bf4e8a7ac84e27dc102709019d728194d50d1a3e3159ce2cb994f3da9a822e"
+    },
+    "kitchen_icons.bin": {
+      "bytes": 52383,
+      "budget_bytes": 120000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 82,
+      "palette_entries": {
+        "badge": 53,
+        "face": 62,
+        "ingredient": 63,
+        "method-heat": 47,
+        "prop": 56,
+        "ui-glyph": 36
+      },
+      "sha256": "c08673b9638a27dd19213a4d9feafdaffccef8a2da5c3cc3842d3336826c913f"
+    },
+    "kitchen_ui.bin": {
+      "bytes": 3779,
+      "budget_bytes": 40000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 2,
+      "palette_entries": {
+        "startup": 56
+      },
+      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"
+    },
+    "kitchen_fonts.bin": {
+      "bytes": 959955,
+      "budget_bytes": 380000,
+      "within_budget": false,
+      "sha256": "0be5ad106f4763a1bbaa6ae96cd096223bcb1cad99c0d704931c06c62c69513f"
+    },
+    "kitchen_recipes.krc": {
+      "bytes": 26113,
+      "budget_bytes": 150000,
+      "within_budget": true,
+      "recipes": 30,
+      "sha256": "388fa2c18e6d5f80a55dc9d71d728cc63279e83913216bec449da7946d525d4b"
+    },
+    "kitchen_nabo.bin": {
+      "bytes": 495064,
+      "budget_bytes": 716800,
+      "within_budget": true,
+      "sha256": "8d77f446f672a34cbc0f71178ec341d0407fd9e47806e3172c35ff2b343f88e7"
+    }
+  },
+  "runtime_package_bytes": 1686754,
+  "audit_only_excluded_bytes": 84746,
+  "font_subbudget_passed": false,
+  "total_is_not_firmware_flash_acceptance": true,
+  "excluded": [
+    "hero art",
+    "sound",
+    "Xiaozhi baseline resources",
+    "firmware/container overhead",
+    "browser WOFF2",
+    "audit-only review_static.ksp"
+  ],
+  "static_csv_pngs": 172,
+  "asset_status_counts": {
+    "done": 15,
+    "review": 161,
+    "todo": 8
+  },
+  "recipe_count": 30,
+  "menu_names_approved": true,
+  "recipe_content_accepted": false,
+  "browser_tests": 20,
+  "host_codec_tests": 30,
+  "pending": [
+    "font size optimization",
+    "192 vs 256 animation frame profile review",
+    "Grok runtime playback",
+    "recipe kitchen acceptance",
+    "phone complete-cooking acceptance",
+    "C parity and renderers",
+    "firmware repository/build/device validation",
+    "one-week home use"
+  ]
+}

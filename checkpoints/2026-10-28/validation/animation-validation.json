@@ -1,0 +1,25 @@
+{
+  "unit_test_command": "python -m unittest discover -s tools/tests -p test_kitchen_animations.py -v",
+  "unit_tests_passed": 14,
+  "native_sources_unchanged": true,
+  "decoded42frames_pixel_exact": true,
+  "source_and_runtime_audio_played": false,
+  "runtime_audio_packaged": false,
+  "fresh_extraction_rebuild_byte_identical": true,
+  "package_bytes": 495064,
+  "package_sha256": "8d77f446f672a34cbc0f71178ec341d0407fd9e47806e3172c35ff2b343f88e7",
+  "palette_count": 59,
+  "loop_seam_pixels": {
+    "idle": 0,
+    "tend": 0
+  },
+  "target_counts": {
+    "idle": 10,
+    "toss": 14,
+    "serve": 8,
+    "tend": 10
+  },
+  "source_video_qa": "reports/animation-source-review.json",
+  "package_report": "reports/animations-report.json",
+  "scope_boundary": "Engineering sourceQA and hostcodec proven; no device/C3performance or uservisualacceptance claimed."
+}

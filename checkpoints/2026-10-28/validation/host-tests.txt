@@ -1,0 +1,75 @@
+$ python tools/fetch_fonts.py
+verified cache: SourceHanSansSC-Medium.otf
+verified cache: OFL.SourceHanSans.txt
+verified cache: OFL.ArchivoBlack.txt
+
+
+$ python tools/check_recipes.py
+Validated 30 recipes: schema, ingredient/seasoning and all dish references/PNGs
+
+
+$ python -m unittest discover -s tools -p test_kitchen_*.py -v
+test_blank_sprite_and_duplicate_ids (test_kitchen_assets.AssetCodecTests.test_blank_sprite_and_duplicate_ids) ... ok
+test_corruption_checks_include_resealed_structural_bounds (test_kitchen_assets.AssetCodecTests.test_corruption_checks_include_resealed_structural_bounds) ... ok
+test_frame_crop_and_transparent_index_roundtrip (test_kitchen_assets.AssetCodecTests.test_frame_crop_and_transparent_index_roundtrip) ... ok
+test_half_alpha_matte_and_character_hair_not_canonicalized (test_kitchen_assets.AssetCodecTests.test_half_alpha_matte_and_character_hair_not_canonicalized) ... ok
+test_packbits_packets_and_seeded_random (test_kitchen_assets.AssetCodecTests.test_packbits_packets_and_seeded_random) ... ok
+test_shared_palette_determinism (test_kitchen_assets.AssetCodecTests.test_shared_palette_determinism) ... ok
+test_all_real_curated_roundtrip_and_flash_index (test_kitchen_recipes.RecipeCodecTests.test_all_real_curated_roundtrip_and_flash_index) ... ok
+test_corruption_crc_and_resealed_offsets_and_metadata (test_kitchen_recipes.RecipeCodecTests.test_corruption_crc_and_resealed_offsets_and_metadata) ... ok
+test_heatshrink_independent_decoder_matches_c_binding (test_kitchen_recipes.RecipeCodecTests.test_heatshrink_independent_decoder_matches_c_binding) ... ok
+test_numbered_payload_over_2kb_rejected (test_kitchen_recipes.RecipeCodecTests.test_numbered_payload_over_2kb_rejected) ... ok
+test_vessel_sauce_garnish_and_png_foreign_keys (test_kitchen_recipes.RecipeCodecTests.test_vessel_sauce_garnish_and_png_foreign_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.461s
+
+OK
+
+
+$ python -m unittest discover -s tools/tests -p test_kitchen_*.py -v
+test_action_name_and_bounds_rejected (test_kitchen_animations.AnimationCodecTests.test_action_name_and_bounds_rejected) ... ok
+test_delta_and_repeat_are_used_and_reconstruct_exactly (test_kitchen_animations.AnimationCodecTests.test_delta_and_repeat_are_used_and_reconstruct_exactly) ... ok
+test_encoder_rejects_invalid_inputs (test_kitchen_animations.AnimationCodecTests.test_encoder_rejects_invalid_inputs) ... ok
+test_firstframe_delta_rejected_after_allCRCs_repaired (test_kitchen_animations.AnimationCodecTests.test_firstframe_delta_rejected_after_allCRCs_repaired) ... ok
+test_fullframe_crc_detects_wrong_reconstructed_pixels (test_kitchen_animations.AnimationCodecTests.test_fullframe_crc_detects_wrong_reconstructed_pixels) ... ok
+test_green_key_does_not_erase_blue_clothing_and_despills_edge (test_kitchen_animations.AnimationCodecTests.test_green_key_does_not_erase_blue_clothing_and_despills_edge) ... ok
+test_header_dimensions_anchor_fps_and_offsets_rejected (test_kitchen_animations.AnimationCodecTests.test_header_dimensions_anchor_fps_and_offsets_rejected) ... ok
+test_noisy_keyframes_have_raw_fallback (test_kitchen_animations.AnimationCodecTests.test_noisy_keyframes_have_raw_fallback) ... ok
+test_out_of_bounds_delta_rejected_after_CRC_repair (test_kitchen_animations.AnimationCodecTests.test_out_of_bounds_delta_rejected_after_CRC_repair) ... ok
+test_output_deterministic_and_action_order_canonical (test_kitchen_animations.AnimationCodecTests.test_output_deterministic_and_action_order_canonical) ... ok
+test_repeat_payload_metadata_rejected (test_kitchen_animations.AnimationCodecTests.test_repeat_payload_metadata_rejected) ... ok
+test_roundtrip_movement_erases_prior_transparent_pixels (test_kitchen_animations.AnimationCodecTests.test_roundtrip_movement_erases_prior_transparent_pixels) ... ok
+test_source_selection_is_integer_deterministic_and_preserves_ends (test_kitchen_animations.AnimationCodecTests.test_source_selection_is_integer_deterministic_and_preserves_ends) ... ok
+test_truncation_and_body_corruption_rejected (test_kitchen_animations.AnimationCodecTests.test_truncation_and_body_corruption_rejected) ... ok
+test_invalid_encoder_and_coverage (test_kitchen_fonts.FontCodecTests.test_invalid_encoder_and_coverage) ... ok
+test_raw_and_rle_paths (test_kitchen_fonts.FontCodecTests.test_raw_and_rle_paths) ... ok
+test_roundtrip_both_depths_and_empty_glyph (test_kitchen_fonts.FontCodecTests.test_roundtrip_both_depths_and_empty_glyph) ... ok
+test_seeded_resealed_mutations_fail_cleanly (test_kitchen_fonts.FontCodecTests.test_seeded_resealed_mutations_fail_cleanly) ... ok
+test_truncation_crc_and_resealed_bounds (test_kitchen_fonts.FontCodecTests.test_truncation_crc_and_resealed_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.137s
+
+OK
+
+
+$ python tools/pack_assets.py pack --strict-budget
+{"static_csv_coverage": 172, "roundtrip": true, "packages": {"review_static.ksp": {"bytes": 84746, "budget_bytes": null, "within_budget": null, "runtime": false, "assets": 6, "palette_entries": {"costume": 60, "grok-start": 58, "style": 48}, "sha256": "84576dc25c9b63690e74007aa2f39ac88938802a0fbc486c78a4810036570372"}, "kitchen_dish.bin": {"bytes": 149460, "budget_bytes": 200000, "within_budget": true, "runtime": true, "assets": 82, "palette_entries": {"dish-L0": 48, "dish-L1": 56, "dish-L2": 62, "dish-L3": 60}, "sha256": "98bf4e8a7ac84e27dc102709019d728194d50d1a3e3159ce2cb994f3da9a822e"}, "kitchen_icons.bin": {"bytes": 52383, "budget_bytes": 120000, "within_budget": true, "runtime": true, "assets": 82, "palette_entries": {"badge": 53, "face": 62, "ingredient": 63, "method-heat": 47, "prop": 56, "ui-glyph": 36}, "sha256": "c08673b9638a27dd19213a4d9feafdaffccef8a2da5c3cc3842d3336826c913f"}, "kitchen_ui.bin": {"bytes": 3779, "budget_bytes": 40000, "within_budget": true, "runtime": true, "assets": 2, "palette_entries": {"startup": 56}, "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"}}}
+
+
+$ python tools/pack_assets.py composite
+Composed 30 recipes from decoded KSP1 indices at160x120
+
+
+$ python tools/pack_recipes.py pack --font-chars build/kitchen/kitchen_fonts.chars.txt
+{"packages": {"kitchen_recipes.krc": {"bytes": 26113, "budget_bytes": 150000, "within_budget": true, "recipes": 30, "sha256": "388fa2c18e6d5f80a55dc9d71d728cc63279e83913216bec449da7946d525d4b"}}, "roundtrip": true, "font_coverage": "checked"}
+
+
+$ python tools/pack_recipes.py check build/kitchen/kitchen_recipes.krc
+KRC1 verified: 30 recipes, 16-byte index, heatshrink8/4, max decoded 1176 bytes
+
+
+$ python tools/pack_fonts.py --out build/kitchen/determinism/fonts --browser-out build/kitchen/determinism/fonts/kitchen-han.woff2
+{"packages": {"kitchen_fonts.bin": {"bytes": 959955, "budget_bytes": 380000, "within_budget": false, "sha256": "0be5ad106f4763a1bbaa6ae96cd096223bcb1cad99c0d704931c06c62c69513f"}}, "glyphs": 12447, "body_characters": 3628, "browser_subset_bytes": 1243708, "roundtrip": true}
+

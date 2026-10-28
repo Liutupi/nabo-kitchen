@@ -1,0 +1,4373 @@
+{
+  "format": "KSP1",
+  "static_csv_coverage": 172,
+  "asset_csv_sha256": "c0603a05a78dd3096fdb14f8e878c3e9bee2a73b9b926ee95fdaa72df4c78564",
+  "source_originals_modified": false,
+  "roundtrip": true,
+  "packages": {
+    "review_static.ksp": {
+      "bytes": 84746,
+      "budget_bytes": null,
+      "within_budget": null,
+      "runtime": false,
+      "assets": 6,
+      "palette_entries": {
+        "costume": 60,
+        "grok-start": 58,
+        "style": 48
+      },
+      "sha256": "84576dc25c9b63690e74007aa2f39ac88938802a0fbc486c78a4810036570372"
+    },
+    "kitchen_dish.bin": {
+      "bytes": 149460,
+      "budget_bytes": 200000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 82,
+      "palette_entries": {
+        "dish-L0": 48,
+        "dish-L1": 56,
+        "dish-L2": 62,
+        "dish-L3": 60
+      },
+      "sha256": "98bf4e8a7ac84e27dc102709019d728194d50d1a3e3159ce2cb994f3da9a822e"
+    },
+    "kitchen_icons.bin": {
+      "bytes": 52383,
+      "budget_bytes": 120000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 82,
+      "palette_entries": {
+        "badge": 53,
+        "face": 62,
+        "ingredient": 63,
+        "method-heat": 47,
+        "prop": 56,
+        "ui-glyph": 36
+      },
+      "sha256": "c08673b9638a27dd19213a4d9feafdaffccef8a2da5c3cc3842d3336826c913f"
+    },
+    "kitchen_ui.bin": {
+      "bytes": 3779,
+      "budget_bytes": 40000,
+      "within_budget": true,
+      "runtime": true,
+      "assets": 2,
+      "palette_entries": {
+        "startup": 56
+      },
+      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"
+    }
+  },
+  "runtime_static_bytes": 205622,
+  "audit_note": "costume A/B/C, style board and K1/K2 are review previews; no fabricated animation frames",
+  "other_budget_inputs": {
+    "kitchen_nabo.bin": "separate animation pipeline",
+    "fonts": "separate subset pipeline",
+    "kitchen_hero.bin": "not supplied; recipe hero flags use layer fallback"
+  },
+  "firmware_total_complete": false,
+  "assets": {
+    "costume_A": {
+      "path": "costume/costume_A.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "display_frame": [
+        150,
+        150
+      ],
+      "pool": "audit",
+      "palette_group": "costume",
+      "source_sha256": "ccbd06308e8599d1eac13dc0021c1f599a35082e6a54d278b24fc378f983fa57",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 955,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        34,
+        9,
+        84,
+        141
+      ],
+      "payload_bytes": 7617
+    },
+    "costume_B": {
+      "path": "costume/costume_B.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "display_frame": [
+        150,
+        150
+      ],
+      "pool": "audit",
+      "palette_group": "costume",
+      "source_sha256": "408715b36d27071bd79c099782425bf9ad7482a01cd575e2985b3023888ec56c",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 965,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        34,
+        9,
+        83,
+        141
+      ],
+      "payload_bytes": 7359
+    },
+    "costume_C": {
+      "path": "costume/costume_C.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "display_frame": [
+        150,
+        150
+      ],
+      "pool": "audit",
+      "palette_group": "costume",
+      "source_sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 973,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        33,
+        9,
+        85,
+        141
+      ],
+      "payload_bytes": 7558
+    },
+    "style_board": {
+      "path": "style/style_board.png",
+      "source_size": [
+        960,
+        1280
+      ],
+      "display_frame": [
+        240,
+        320
+      ],
+      "pool": "audit",
+      "palette_group": "style",
+      "source_sha256": "420740b0b2d31081f749bf222a182c28392ff45826c04078fa13ef2330e5ab27",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 0,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        0,
+        0,
+        240,
+        320
+      ],
+      "payload_bytes": 37942
+    },
+    "K1": {
+      "path": "grok-start/K1.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "display_frame": [
+        192,
+        192
+      ],
+      "pool": "audit",
+      "palette_group": "grok-start",
+      "source_sha256": "6f1be640cf2e940a0254a6cbf012e7c0dc4cc39c2392b828d6294917d08297dd",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 1225,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        43,
+        11,
+        108,
+        181
+      ],
+      "payload_bytes": 11565
+    },
+    "K2": {
+      "path": "grok-start/K2.png",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "display_frame": [
+        192,
+        192
+      ],
+      "pool": "audit",
+      "palette_group": "grok-start",
+      "source_sha256": "fe9c051c2a335e7cb3a9643420f4e2d4f51817ec80de6a4c2fd52aa95c699b2c",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 1447,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        20,
+        10,
+        146,
+        182
+      ],
+      "payload_bytes": 11948
+    },
+    "face_go": {
+      "path": "icons/face_go.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "a9b846c8358d88de5cc6c8e13756a1a070b87650e2b882f066771a032f58fb0c",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 668,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        29,
+        34
+      ],
+      "payload_bytes": 813
+    },
+    "face_focus": {
+      "path": "icons/face_focus.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "335d8512bf4672ff207aa3fbe31a88e1c7d2a609b7eb82528928ef8e7be04ff7",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 634,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        29,
+        34
+      ],
+      "payload_bytes": 799
+    },
+    "face_wait": {
+      "path": "icons/face_wait.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "87ef11a211a8cdaa71a5b48bc20887c66ce426806d240e92a5328d0067db91ae",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 636,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        30,
+        34
+      ],
+      "payload_bytes": 792
+    },
+    "face_happy": {
+      "path": "icons/face_happy.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "3d02badc86c2df7d11ce69336e5cc91c5dd8809d4fb4139076a6d9499aab9532",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 667,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 833
+    },
+    "face_oops": {
+      "path": "icons/face_oops.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "e2ff01147265699a6862b702e8b01541627c9e5e9ccb4fae4053314273fe0dd7",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 656,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        30,
+        34
+      ],
+      "payload_bytes": 815
+    },
+    "face_sleepy": {
+      "path": "icons/face_sleepy.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "face",
+      "source_sha256": "e4b36b9161d005ecc85d0e1f384272399000016569aa850f680cdb56e323ea84",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": true,
+      "partial_alpha_pixels": 675,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 848
+    },
+    "pork_belly": {
+      "path": "ingredients/pork_belly.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "245123a5ab9a40987b1e6bf0179292f15c62a330dfc61a1ce07ca4c583524bab",
+      "canonical_outline_pixels": 28,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 565,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        8,
+        34,
+        24
+      ],
+      "payload_bytes": 583
+    },
+    "pork_lean": {
+      "path": "ingredients/pork_lean.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "73739df75c66e87cbd3c80f22eb74de025e8413a7846b5b324a4b8c5ae82c6b7",
+      "canonical_outline_pixels": 43,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 574,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        7,
+        34,
+        26
+      ],
+      "payload_bytes": 428
+    },
+    "pork_rib": {
+      "path": "ingredients/pork_rib.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "8008968de3304b07c7e60f9b273bd14d0d7ab4aaf2338180339148e75f6b8c26",
+      "canonical_outline_pixels": 55,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 645,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 729
+    },
+    "pork_mince": {
+      "path": "ingredients/pork_mince.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "2e5df51353658c562763c3d902611fe4c0affb68a3312ef4d27d36b7d7cccab4",
+      "canonical_outline_pixels": 63,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 678,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        29
+      ],
+      "payload_bytes": 787
+    },
+    "chicken_whole": {
+      "path": "ingredients/chicken_whole.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "ba508218f4fcfb314883b5538b5d1e6c642a26d53e17ed4644eafd3f67e3e406",
+      "canonical_outline_pixels": 37,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 757,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 770
+    },
+    "chicken_wing": {
+      "path": "ingredients/chicken_wing.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "4e00b4031ed82b0ecd87eaa70ee5a452acc1adcc2d458f392e6d59c073102b62",
+      "canonical_outline_pixels": 38,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 412,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        8,
+        34,
+        24
+      ],
+      "payload_bytes": 488
+    },
+    "chicken_thigh": {
+      "path": "ingredients/chicken_thigh.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "cec97bd7361240ee7efc4fa64cf07e8dd65a2f0fe5356ebbf4c733eb234a6ce6",
+      "canonical_outline_pixels": 53,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 545,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        33,
+        34
+      ],
+      "payload_bytes": 568
+    },
+    "beef": {
+      "path": "ingredients/beef.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "58d189d4dba4ccc37b04e81c951057914146b4dc747961ff39b506a8ceb6a6ea",
+      "canonical_outline_pixels": 49,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 642,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        6,
+        34,
+        28
+      ],
+      "payload_bytes": 560
+    },
+    "lap_cheong": {
+      "path": "ingredients/lap_cheong.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "fbf65f42c3af899652ee839947dc40cdd3f941654b3b153e163fcf31cba3a9ac",
+      "canonical_outline_pixels": 47,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 522,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 668
+    },
+    "pork_trotter": {
+      "path": "ingredients/pork_trotter.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "e9208d4d7d18b37f9a5b3f854a23ed5bfc08b59eedcd8de354653b8bb9c60665",
+      "canonical_outline_pixels": 36,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 546,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 657
+    },
+    "fish_whole": {
+      "path": "ingredients/fish_whole.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "0f5b001be5f7dc59321e0045706bcdff18177f6c93bc31e52144442bd9bf85d5",
+      "canonical_outline_pixels": 59,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 357,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        9,
+        34,
+        21
+      ],
+      "payload_bytes": 431
+    },
+    "shrimp": {
+      "path": "ingredients/shrimp.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "35d23dd2ceb38123cf2d2bc907e5ac3a6729213cd29f9d71105267b96b823413",
+      "canonical_outline_pixels": 67,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 465,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        30
+      ],
+      "payload_bytes": 636
+    },
+    "squid": {
+      "path": "ingredients/squid.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "03064cf7b1aaaf9b30f869f4a1ef8af0a42ee11ac1f6f9c2948d6c5ea941bca7",
+      "canonical_outline_pixels": 34,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 476,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        8,
+        3,
+        24,
+        34
+      ],
+      "payload_bytes": 582
+    },
+    "clam": {
+      "path": "ingredients/clam.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "e2df06a12fe060cd8121be27b17bff5278cd470094a3cd7f748947cc1c37997a",
+      "canonical_outline_pixels": 52,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 658,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        29
+      ],
+      "payload_bytes": 625
+    },
+    "fish_fillet": {
+      "path": "ingredients/fish_fillet.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "85ab2acf28c5acee3081a166623bdd7d90eb3eccecfbf5200eb149ee413e8158",
+      "canonical_outline_pixels": 51,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 502,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        8,
+        34,
+        24
+      ],
+      "payload_bytes": 529
+    },
+    "egg": {
+      "path": "ingredients/egg.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "7227a4e547b2266947c799b38dda4ed41d1d5766db0a6c0b3b933d1542fcbf57",
+      "canonical_outline_pixels": 44,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 670,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 566
+    },
+    "tofu": {
+      "path": "ingredients/tofu.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "46c520a6542c3259ebe68ee57b5c957e61d9429cf64a0d57fd8d16a280e44e53",
+      "canonical_outline_pixels": 50,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 699,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        30
+      ],
+      "payload_bytes": 641
+    },
+    "tofu_dried": {
+      "path": "ingredients/tofu_dried.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "1d762c3f38f1ca036046f55a989ecbfc2a1ae331317d2efa59a27c3afeeaf841",
+      "canonical_outline_pixels": 50,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 773,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        34,
+        34
+      ],
+      "payload_bytes": 820
+    },
+    "salted_egg": {
+      "path": "ingredients/salted_egg.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "7a085d8b9ce8b98b067fbb977e5fcbfdb5ba40ee13cddcf034607013ff530202",
+      "canonical_outline_pixels": 48,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 772,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 665
+    },
+    "tomato": {
+      "path": "ingredients/tomato.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "74b36c681deeedb4a38bdec2556f07999c43fce0d4a2eb14752734a7dd55bfe3",
+      "canonical_outline_pixels": 68,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 699,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        30
+      ],
+      "payload_bytes": 536
+    },
+    "potato": {
+      "path": "ingredients/potato.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "d32a92229db8401e5f8eebd947708ca81d88c2d4663fba2b6066bf7885fcb06e",
+      "canonical_outline_pixels": 62,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 771,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        34,
+        34
+      ],
+      "payload_bytes": 670
+    },
+    "choy_sum": {
+      "path": "ingredients/choy_sum.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "bd3ced62fa14c0e130ae92d00904906016e2c1075d1553257e461741cb212d87",
+      "canonical_outline_pixels": 52,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 498,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        30,
+        34
+      ],
+      "payload_bytes": 628
+    },
+    "lettuce": {
+      "path": "ingredients/lettuce.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "183aea3228cdfe3714a4601a81311f7b078f21d21f6259c32f80a44ad4573a6c",
+      "canonical_outline_pixels": 60,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 788,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        34,
+        33
+      ],
+      "payload_bytes": 848
+    },
+    "napa_cabbage": {
+      "path": "ingredients/napa_cabbage.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "d714f2adcd8c63e39d1ed34199ce24b64cfaaa91a141f8c7677a28cf463b24a2",
+      "canonical_outline_pixels": 25,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 576,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        8,
+        3,
+        24,
+        34
+      ],
+      "payload_bytes": 704
+    },
+    "eggplant": {
+      "path": "ingredients/eggplant.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "cac9bfb90b943d93cf9daa4f41819ccaf075807cf0148826dfffd4b00762c5d5",
+      "canonical_outline_pixels": 83,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 520,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 424
+    },
+    "green_pepper": {
+      "path": "ingredients/green_pepper.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "6d8d266f61aec62051060d410e5d6fdfc6e51e598f936bd7c6d5a3df8288e2dd",
+      "canonical_outline_pixels": 79,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 706,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 731
+    },
+    "carrot": {
+      "path": "ingredients/carrot.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "44d17f417c8f13dac071cd93da1e7656a0398f4a581a1e9853bcf8463add8cf6",
+      "canonical_outline_pixels": 51,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 392,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        9,
+        3,
+        22,
+        34
+      ],
+      "payload_bytes": 438
+    },
+    "cucumber": {
+      "path": "ingredients/cucumber.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "f4eaaf20d67c1f3a518d0d4a73b53177a8900169ff9a7efec2128b90d76bcf0f",
+      "canonical_outline_pixels": 87,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 406,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        8,
+        3,
+        24,
+        34
+      ],
+      "payload_bytes": 470
+    },
+    "broccoli": {
+      "path": "ingredients/broccoli.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "3a51a9a652b9c1168049cc636bb1128a028e0d0d47ea2332ac3c631fc0c1690d",
+      "canonical_outline_pixels": 91,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 686,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 684
+    },
+    "winter_melon": {
+      "path": "ingredients/winter_melon.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "05451df0c2e3fa7555884183837889c0f7cb717cf101e766c93ce827d77ac023",
+      "canonical_outline_pixels": 68,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 768,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        34,
+        34
+      ],
+      "payload_bytes": 846
+    },
+    "shiitake": {
+      "path": "ingredients/shiitake.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "2c67f1dedf13d73cb6d3ea1acafc42ee8bae2fe6028e53a525b133c11eeeccae",
+      "canonical_outline_pixels": 91,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 685,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 648
+    },
+    "onion": {
+      "path": "ingredients/onion.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "3623ad8f0457f803241f182827f4dc78a67afcd217e59d099d8ddea489660629",
+      "canonical_outline_pixels": 37,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 567,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 546
+    },
+    "scallion": {
+      "path": "ingredients/scallion.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "1115ee30eac475daf40b4be210d5247b4434cdeb1ed815f7b7663a4ef70b32f3",
+      "canonical_outline_pixels": 50,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 385,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 546
+    },
+    "ginger": {
+      "path": "ingredients/ginger.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "e526d660088e561611a7576e6a16c30cf37c551087507d011602aa051136249a",
+      "canonical_outline_pixels": 60,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 566,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 663
+    },
+    "garlic": {
+      "path": "ingredients/garlic.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "9bbc3f0cb879d724750524c3469833adc0c131ba7b1c492a41d2574ac0d91104",
+      "canonical_outline_pixels": 35,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 630,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 687
+    },
+    "gai_lan": {
+      "path": "ingredients/gai_lan.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "45a229d1df481971275006b74b1e0410e765687801a8a09869e78c4ee1ebea99",
+      "canonical_outline_pixels": 70,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 609,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 769
+    },
+    "cabbage": {
+      "path": "ingredients/cabbage.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "b10a83951b9f528d30b7a53986718ae5d1281bc2abe418eaf8338705812b2e2a",
+      "canonical_outline_pixels": 47,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 810,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        34,
+        34
+      ],
+      "payload_bytes": 821
+    },
+    "bitter_melon": {
+      "path": "ingredients/bitter_melon.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "52fe6eab7eae686708a9b69d9ce371e1c45ec50c4b8576b0454d760cd5905d86",
+      "canonical_outline_pixels": 54,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 505,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        6,
+        3,
+        28,
+        34
+      ],
+      "payload_bytes": 631
+    },
+    "loofah": {
+      "path": "ingredients/loofah.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "c91a4660306a080f464d3e0726add70516c63ab33d6d4e8882530261542df8d2",
+      "canonical_outline_pixels": 40,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 363,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        8,
+        3,
+        24,
+        34
+      ],
+      "payload_bytes": 509
+    },
+    "bean_sprout": {
+      "path": "ingredients/bean_sprout.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "a8f87fe1648a703b1d2305780f460ba593448fb99a2495d99b61b92c5af4f03b",
+      "canonical_outline_pixels": 54,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 539,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        30,
+        34
+      ],
+      "payload_bytes": 697
+    },
+    "green_bean": {
+      "path": "ingredients/green_bean.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "c77b5a1a8269fc9e557cf7257e839d9a80c31c2e4c6ac3cf84fe3097ca577b97",
+      "canonical_outline_pixels": 51,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 488,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 646
+    },
+    "enoki": {
+      "path": "ingredients/enoki.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "9933ddc6fb4ba2bc44d49ee3ffb633a5549706a5a139ea87a1c7839b5eb42c5b",
+      "canonical_outline_pixels": 39,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 594,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        5,
+        3,
+        30,
+        34
+      ],
+      "payload_bytes": 745
+    },
+    "corn": {
+      "path": "ingredients/corn.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "2c5b79319d4103b0669af8da3522b66e73628388d1b8d9292c9a85cdf08bf6ef",
+      "canonical_outline_pixels": 44,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 554,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        7,
+        3,
+        25,
+        34
+      ],
+      "payload_bytes": 681
+    },
+    "chili": {
+      "path": "ingredients/chili.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "177f6020d94dd01c25168791a2ac91640f072cb08a65684c8baeea98881fd5a0",
+      "canonical_outline_pixels": 42,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 253,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        10,
+        3,
+        20,
+        34
+      ],
+      "payload_bytes": 347
+    },
+    "cilantro": {
+      "path": "ingredients/cilantro.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "c0ad23d7fa9b41533359deaede157033e5d29a98be51007b045a62f9feb72641",
+      "canonical_outline_pixels": 83,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 618,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 799
+    },
+    "spinach": {
+      "path": "ingredients/spinach.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "7b86163d74a95575bcb33d9fd2c90b1af2be64ddee7f0dc889d5514cc4e01a12",
+      "canonical_outline_pixels": 67,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 522,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        3,
+        32,
+        34
+      ],
+      "payload_bytes": 666
+    },
+    "lotus_root": {
+      "path": "ingredients/lotus_root.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "0a388bfe46eba248ac28b9763793fc098cd7305f51e732abc17a82f079fa6d35",
+      "canonical_outline_pixels": 40,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 707,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        5,
+        34,
+        30
+      ],
+      "payload_bytes": 797
+    },
+    "pumpkin": {
+      "path": "ingredients/pumpkin.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "72581d9d8a7632603f1af227558ae9abc06c822fc1e08507534224f3e4976d34",
+      "canonical_outline_pixels": 54,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 721,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 557
+    },
+    "rice": {
+      "path": "ingredients/rice.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "e2bd788a12ef03acd3f22a9aecb3baa58f5456c91d9faec5d0951bcba40708e1",
+      "canonical_outline_pixels": 32,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 682,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 687
+    },
+    "noodle": {
+      "path": "ingredients/noodle.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "ingredient",
+      "source_sha256": "d87698f8a71035fd827109cb106f409bbc5bc328bbd483c28158f4c1dc1148be",
+      "canonical_outline_pixels": 49,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 780,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        4,
+        34,
+        32
+      ],
+      "payload_bytes": 877
+    },
+    "vessel_plate": {
+      "path": "dish-layers/vessel_plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "8823cb8e3b3da9bf250abac2362f1fb7320efb9abae2e55e55f90fc2270babd5",
+      "canonical_outline_pixels": 346,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 6719,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        16,
+        33,
+        128,
+        69
+      ],
+      "payload_bytes": 4982
+    },
+    "vessel_plate_shadow": {
+      "path": "dish-layers/vessel_plate_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "da80ec2521d80adf9cbdb5613ae506101f8e2b6f3745b3acb2a749dc6c68b164",
+      "canonical_outline_pixels": 263,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 922,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        19,
+        93,
+        123,
+        11
+      ],
+      "payload_bytes": 365
+    },
+    "vessel_oval": {
+      "path": "dish-layers/vessel_oval.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "ee7d9ec698dacf82cc341135c35129d92f893e5a6cde948a386d351c1057b6a2",
+      "canonical_outline_pixels": 359,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 6136,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        13,
+        37,
+        134,
+        61
+      ],
+      "payload_bytes": 3143
+    },
+    "vessel_oval_shadow": {
+      "path": "dish-layers/vessel_oval_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "b83c1702b23d5333e1e93debd51f189d80df8926f31688e92cba282f36e59e5f",
+      "canonical_outline_pixels": 274,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 938,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        16,
+        90,
+        128,
+        11
+      ],
+      "payload_bytes": 223
+    },
+    "vessel_bowl": {
+      "path": "dish-layers/vessel_bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "241bffd6e2627f96b0e8c1f9d89c0d26c772caf9de2620699891292b1e916c80",
+      "canonical_outline_pixels": 363,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 6436,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        21,
+        33,
+        118,
+        76
+      ],
+      "payload_bytes": 3568
+    },
+    "vessel_bowl_shadow": {
+      "path": "dish-layers/vessel_bowl_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "6935a2811c055a5a744ebfdcf144dc9104034228c3e2f58e370d91fef190ecc3",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 713,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        25,
+        101,
+        110,
+        10
+      ],
+      "payload_bytes": 342
+    },
+    "vessel_claypot": {
+      "path": "dish-layers/vessel_claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "2715038b544fa14a9be3644fbeef8720c27d0365d87e4c4a366a76d1718c1dda",
+      "canonical_outline_pixels": 391,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 6514,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        16,
+        35,
+        128,
+        74
+      ],
+      "payload_bytes": 3120
+    },
+    "vessel_claypot_shadow": {
+      "path": "dish-layers/vessel_claypot_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "a419ec0f86fdac5d28c7e0efeb5c28c1381fd4ec690a9323017091b8aaea034f",
+      "canonical_outline_pixels": 242,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 720,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        23,
+        102,
+        114,
+        10
+      ],
+      "payload_bytes": 405
+    },
+    "vessel_steamer": {
+      "path": "dish-layers/vessel_steamer.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "fd2c24f64493a15a7ea5c6380998b719f3dbe22fcff2c68b4bf9e9d20d3c8bd7",
+      "canonical_outline_pixels": 371,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 7128,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        21,
+        32,
+        118,
+        76
+      ],
+      "payload_bytes": 5201
+    },
+    "vessel_steamer_shadow": {
+      "path": "dish-layers/vessel_steamer_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "5e02becead82fc4f9efcdfb34b421247a291d04b097e0775f4920f5c1e00335f",
+      "canonical_outline_pixels": 236,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 697,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        25,
+        101,
+        110,
+        10
+      ],
+      "payload_bytes": 157
+    },
+    "vessel_deep": {
+      "path": "dish-layers/vessel_deep.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "06be81c165ab0d7283f89a9a640abd1fc4eb861b06736d756426d21a5ba401d8",
+      "canonical_outline_pixels": 335,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 6935,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        18,
+        32,
+        124,
+        76
+      ],
+      "payload_bytes": 3777
+    },
+    "vessel_deep_shadow": {
+      "path": "dish-layers/vessel_deep_shadow.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L0",
+      "source_sha256": "c3fcb8cef8d69ee8e91ecf2f2a8039fe349af92c504fca0c0ccaff4e649ff856",
+      "canonical_outline_pixels": 246,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 756,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        22,
+        100,
+        116,
+        10
+      ],
+      "payload_bytes": 390
+    },
+    "sauce_clear__plate": {
+      "path": "dish-layers/sauce_clear__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "a5e78a49d7f33341a495f857f851bfcf018fe2aaec6ceebf1f0877264ef43ea2",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2943,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1011
+    },
+    "sauce_braise__plate": {
+      "path": "dish-layers/sauce_braise__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "7e73a0cb97b867d168ea81bfcf1c5d52e939c644d021316a469c1ffdab72a5dc",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3007,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1602
+    },
+    "sauce_braise__bowl": {
+      "path": "dish-layers/sauce_braise__bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "10e5000bb42be9f74c18f459624be1755f34a5f5003a10dc6cd7f7918fcc8176",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3184,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 975
+    },
+    "sauce_braise__claypot": {
+      "path": "dish-layers/sauce_braise__claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "04b8954ea13a69f67d2d6aed5945b43f363f6c7ade15a1a27f3c61e1cf93ac07",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2736,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        47,
+        90,
+        41
+      ],
+      "payload_bytes": 797
+    },
+    "sauce_tomato__plate": {
+      "path": "dish-layers/sauce_tomato__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "4059bffdf1bf89f322823763e68e52764f554f09e18335a6d5fac5964f19d5a8",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3006,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1303
+    },
+    "sauce_tomato__bowl": {
+      "path": "dish-layers/sauce_tomato__bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "e0b6644ca254e0d702f25bcb771a79e039863944bcfcf3a8df89d846bee942c1",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3188,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 886
+    },
+    "sauce_tomato__claypot": {
+      "path": "dish-layers/sauce_tomato__claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "986efae4b2c101c6e193f72a252f7c454dce0c053bac4576c27b0ecc34ee2c55",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2685,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        47,
+        90,
+        41
+      ],
+      "payload_bytes": 807
+    },
+    "sauce_curry__plate": {
+      "path": "dish-layers/sauce_curry__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "cb3c4273c75e272f71be756437386e76833d089fe7d1f3999f5e31ecc44ba6be",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3010,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 960
+    },
+    "sauce_curry__bowl": {
+      "path": "dish-layers/sauce_curry__bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "6718869c997e1a9127b2b77a2b8409a4822adfd743c52054d35c7809ce8723c4",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3208,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1429
+    },
+    "sauce_curry__claypot": {
+      "path": "dish-layers/sauce_curry__claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "980afc23bb4f6b2b878d516bcfa9d66636268d8fe09897c5828cb1168ed0e5e5",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2742,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        47,
+        90,
+        41
+      ],
+      "payload_bytes": 1657
+    },
+    "sauce_white__bowl": {
+      "path": "dish-layers/sauce_white__bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "fac4e858672e51a099e93979d5dec47142553cc9ed9829b5dca2a1d625231222",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3197,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 768
+    },
+    "sauce_white__claypot": {
+      "path": "dish-layers/sauce_white__claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "6176c67ea54e8c0e52a99c1efc8483c258cb388695287f86aab2584db1039416",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2737,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        47,
+        90,
+        41
+      ],
+      "payload_bytes": 1677
+    },
+    "sauce_clear_soup__bowl": {
+      "path": "dish-layers/sauce_clear_soup__bowl.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "0a6ed43e4bfab938f0951c118b60bc40068c7f8c4e8ef3ac14477e67d7a78e86",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 3170,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1168
+    },
+    "sauce_clear_soup__claypot": {
+      "path": "dish-layers/sauce_clear_soup__claypot.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "16c039d53d32c501fb435b4bd8d2c63bc069e62db6786159f070148329011e48",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2709,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        47,
+        90,
+        41
+      ],
+      "payload_bytes": 1368
+    },
+    "sauce_black_bean__plate": {
+      "path": "dish-layers/sauce_black_bean__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "0af58e3129d6566dede84154e8cd5d47e74a9c2acfecd8aa97a54d4ddc35eec5",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2978,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1021
+    },
+    "sauce_soy_steam__plate": {
+      "path": "dish-layers/sauce_soy_steam__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "8f9974b5f7322c41b8d2014ff9f4172bd3c713303ae11fb45c856208a29f63be",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2984,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1143
+    },
+    "sauce_chili__plate": {
+      "path": "dish-layers/sauce_chili__plate.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L1",
+      "source_sha256": "ab4bdf954ea65d6e1fafb4a91587c18184f44443f7599f4155f92d010028a2a5",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2996,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        31,
+        46,
+        98,
+        43
+      ],
+      "payload_bytes": 1395
+    },
+    "egg__scrambled": {
+      "path": "dish-layers/egg__scrambled.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "4483543c2a69957ab69a1a29a688628824d6915923aed18890c2ab3e64daabee",
+      "canonical_outline_pixels": 137,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2589,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        35,
+        41,
+        92,
+        45
+      ],
+      "payload_bytes": 2736
+    },
+    "egg__ribbon": {
+      "path": "dish-layers/egg__ribbon.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "e800c561ece49ae9284f373460af92f602a7ca1de9a93392af1383e0d749393b",
+      "canonical_outline_pixels": 83,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1464,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        42,
+        50,
+        76,
+        33
+      ],
+      "payload_bytes": 1789
+    },
+    "egg__fried": {
+      "path": "dish-layers/egg__fried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "387c7ca402339def9c0cf7761ff64477a2d8528d973492268dc8009fb70e26f5",
+      "canonical_outline_pixels": 76,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1950,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        42,
+        44,
+        78,
+        41
+      ],
+      "payload_bytes": 1903
+    },
+    "egg__steamed_custard": {
+      "path": "dish-layers/egg__steamed_custard.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "7fef7d9a02e86d8e0b635e0c292e0d145d814356c8a7476b4e7b7b6e2b24f535",
+      "canonical_outline_pixels": 117,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1830,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        46,
+        47,
+        67,
+        38
+      ],
+      "payload_bytes": 1230
+    },
+    "tomato__wedge_cooked": {
+      "path": "dish-layers/tomato__wedge_cooked.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "711837ee7012de71852e0e4a7244a6f726e1f82d5fc7ff9fe9ae58629b35cc91",
+      "canonical_outline_pixels": 199,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1508,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        36,
+        44,
+        91,
+        43
+      ],
+      "payload_bytes": 1807
+    },
+    "tomato__wedge_soup": {
+      "path": "dish-layers/tomato__wedge_soup.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "4b4a6b2c2660067fd58a4d422ca1b1278468a2675f344f1a9958b387509e7727",
+      "canonical_outline_pixels": 87,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 920,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        54,
+        50,
+        53,
+        33
+      ],
+      "payload_bytes": 1215
+    },
+    "pork_belly__braised": {
+      "path": "dish-layers/pork_belly__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "0abd59563046b93ea20123c3e146c2a4b1ccc8850065247f55b95ff16c27a377",
+      "canonical_outline_pixels": 139,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2008,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        47,
+        41,
+        68,
+        45
+      ],
+      "payload_bytes": 2192
+    },
+    "pork_belly__slices_stirfried": {
+      "path": "dish-layers/pork_belly__slices_stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "86b44ec8e907cb43422acdc5253611a5a4ddded38071f6aa57d4f0592b070336",
+      "canonical_outline_pixels": 145,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2114,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        36,
+        43,
+        90,
+        40
+      ],
+      "payload_bytes": 2357
+    },
+    "pork_lean__shreds_stirfried": {
+      "path": "dish-layers/pork_lean__shreds_stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "78b287459e7748806847de2043f766177ccc65157abea6efe003276d6c56e17e",
+      "canonical_outline_pixels": 218,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2461,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        38,
+        41,
+        86,
+        45
+      ],
+      "payload_bytes": 2666
+    },
+    "pork_lean__slices": {
+      "path": "dish-layers/pork_lean__slices.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "0542d6c2082b661c09a88ff42c2bce36cbb92dda74b84828843c1b5ef227a61b",
+      "canonical_outline_pixels": 101,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2251,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        39,
+        43,
+        84,
+        43
+      ],
+      "payload_bytes": 2254
+    },
+    "pork_rib__braised": {
+      "path": "dish-layers/pork_rib__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "31ad23e8e5a046e1deb23eb79e7170d39f3f65f5eab3340bdeed5391d03907ea",
+      "canonical_outline_pixels": 188,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2308,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        41,
+        81,
+        45
+      ],
+      "payload_bytes": 2460
+    },
+    "pork_rib__steamed_black_bean": {
+      "path": "dish-layers/pork_rib__steamed_black_bean.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "834f47f601c1e82f14083ae0d90602f2e258e3b7e6399e5e4c99f987dd975070",
+      "canonical_outline_pixels": 96,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2094,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        43,
+        43,
+        76,
+        43
+      ],
+      "payload_bytes": 2353
+    },
+    "pork_rib__soup": {
+      "path": "dish-layers/pork_rib__soup.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "0a7bd9b0b91fb8eb4f60eab1b4d097a962abb32a5d0ad6c7eaca75dd33844df8",
+      "canonical_outline_pixels": 55,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 942,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        53,
+        50,
+        54,
+        33
+      ],
+      "payload_bytes": 1141
+    },
+    "pork_mince__crumbs": {
+      "path": "dish-layers/pork_mince__crumbs.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "e69d7b65d59fc0304ae4c5b95474433466b55ba8c1646b5f5f82cd8836d294aa",
+      "canonical_outline_pixels": 146,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1416,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        46,
+        49,
+        68,
+        35
+      ],
+      "payload_bytes": 1632
+    },
+    "pork_mince__patty_steamed": {
+      "path": "dish-layers/pork_mince__patty_steamed.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "5f7112cc65fa480e3e51ce1beb1cadd4444f6b85638843b4ab7c44360b4efb76",
+      "canonical_outline_pixels": 107,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2148,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        44,
+        46,
+        74,
+        40
+      ],
+      "payload_bytes": 2000
+    },
+    "chicken_whole__poached_cut": {
+      "path": "dish-layers/chicken_whole__poached_cut.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "5c5d65f7d294596650c2c0362a9086c04c4fbc0227e7c836bb14244567b867da",
+      "canonical_outline_pixels": 80,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2623,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        36,
+        41,
+        90,
+        45
+      ],
+      "payload_bytes": 2709
+    },
+    "chicken_wing__braised": {
+      "path": "dish-layers/chicken_wing__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "00ca03f006c1911486e2f8554beed22db04f143a3f8c5740b83403b9b9b88163",
+      "canonical_outline_pixels": 172,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2324,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        39,
+        41,
+        84,
+        45
+      ],
+      "payload_bytes": 2403
+    },
+    "chicken_thigh__pieces_braised": {
+      "path": "dish-layers/chicken_thigh__pieces_braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "c32d5c61192d0fa9c46c2937bde078c76b40e5bfcacb459c9b4ef378ae7feda5",
+      "canonical_outline_pixels": 164,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2622,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        36,
+        41,
+        90,
+        45
+      ],
+      "payload_bytes": 2816
+    },
+    "beef__slices_stirfried": {
+      "path": "dish-layers/beef__slices_stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "35265802ed290027a1918d161b511c08496695af5f06a71aec5d6656fd88efdc",
+      "canonical_outline_pixels": 229,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2193,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        39,
+        41,
+        84,
+        45
+      ],
+      "payload_bytes": 2262
+    },
+    "lap_cheong__slices": {
+      "path": "dish-layers/lap_cheong__slices.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "8804501658773f98ab22c258a7b518095c38b5f0ecc983f7f66bc338a8b15547",
+      "canonical_outline_pixels": 149,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2634,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        36,
+        43,
+        90,
+        43
+      ],
+      "payload_bytes": 2812
+    },
+    "fish_whole__steamed": {
+      "path": "dish-layers/fish_whole__steamed.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "dac3304ce2cf10c938ea2b88988c5d6f37a4058341afac1254e7dae0b702eee7",
+      "canonical_outline_pixels": 157,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1804,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        34,
+        47,
+        92,
+        36
+      ],
+      "payload_bytes": 1931
+    },
+    "fish_whole__braised": {
+      "path": "dish-layers/fish_whole__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "fbb3bf7bc08a4b937a17ccec7cf9055aeda35ce4da39795aebcac8ec8b5ef313",
+      "canonical_outline_pixels": 132,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1745,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        37,
+        47,
+        85,
+        36
+      ],
+      "payload_bytes": 1965
+    },
+    "shrimp__boiled": {
+      "path": "dish-layers/shrimp__boiled.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "bb69d5a2aaa0574733b7b1578070b75b2f3e5aa4e219dd7b14f2bc1cdaa6688c",
+      "canonical_outline_pixels": 53,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1629,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        43,
+        82,
+        43
+      ],
+      "payload_bytes": 2081
+    },
+    "shrimp__peeled_stirfried": {
+      "path": "dish-layers/shrimp__peeled_stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "7f3fb4562eaf702fafe70c1a4a09599acf87360ba2daeba6866602c35608f921",
+      "canonical_outline_pixels": 67,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1632,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        48,
+        43,
+        66,
+        43
+      ],
+      "payload_bytes": 1941
+    },
+    "tofu__cubes_braised": {
+      "path": "dish-layers/tofu__cubes_braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "1c8709d460f0356acbe7f77fa375ada38b1b7ee66bda18bb54cbc4268219ef44",
+      "canonical_outline_pixels": 124,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2067,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        47,
+        41,
+        68,
+        45
+      ],
+      "payload_bytes": 2222
+    },
+    "tofu__pan_fried": {
+      "path": "dish-layers/tofu__pan_fried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "54b759942bb464998391d6e3b4a60338ea57afd68bc75213408b399fe2e4532d",
+      "canonical_outline_pixels": 72,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1728,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        46,
+        43,
+        70,
+        43
+      ],
+      "payload_bytes": 1927
+    },
+    "potato__shreds": {
+      "path": "dish-layers/potato__shreds.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "820320d92c534f125673824132fbcc9063c24f8877538d822fa3a9f0599d6231",
+      "canonical_outline_pixels": 170,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2122,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        37,
+        46,
+        88,
+        40
+      ],
+      "payload_bytes": 2425
+    },
+    "potato__chunks_braised": {
+      "path": "dish-layers/potato__chunks_braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "1f16e9ed133fd1bbc51550ccc2ad497faa36faaf69faa543b5eb9c10bad0e26c",
+      "canonical_outline_pixels": 141,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2283,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        41,
+        41,
+        80,
+        45
+      ],
+      "payload_bytes": 2236
+    },
+    "choy_sum__stirfried": {
+      "path": "dish-layers/choy_sum__stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "3f18bdefc1f4cd76eebb1f2a5b3cbb18d8b1b09090a3b30dd6e2b1cabb8fadae",
+      "canonical_outline_pixels": 124,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2149,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        41,
+        43,
+        79,
+        43
+      ],
+      "payload_bytes": 2251
+    },
+    "choy_sum__blanched": {
+      "path": "dish-layers/choy_sum__blanched.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "fee7fcb90de89345a8e397b7f8451633166d96fb3ebf7ee51bc30fdfcd0d85ab",
+      "canonical_outline_pixels": 114,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1950,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        44,
+        43,
+        74,
+        43
+      ],
+      "payload_bytes": 2018
+    },
+    "lettuce__stirfried": {
+      "path": "dish-layers/lettuce__stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "ebfcddf8416d0bcb39f7eb05ae077d8333887648ccd100e55a3e3afcfcddca0f",
+      "canonical_outline_pixels": 97,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2212,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        43,
+        82,
+        43
+      ],
+      "payload_bytes": 2291
+    },
+    "napa_cabbage__stirfried": {
+      "path": "dish-layers/napa_cabbage__stirfried.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "2827dabb844ae294d947702ebc9a3e8af2363eb17c0841c031017389429f1db3",
+      "canonical_outline_pixels": 85,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2264,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        43,
+        82,
+        43
+      ],
+      "payload_bytes": 2483
+    },
+    "eggplant__braised": {
+      "path": "dish-layers/eggplant__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "02da12f9ea5c85c085fc55893c52eaab7987702801883f372e28716a5da59bfb",
+      "canonical_outline_pixels": 173,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1999,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        43,
+        43,
+        76,
+        43
+      ],
+      "payload_bytes": 2024
+    },
+    "green_pepper__strips": {
+      "path": "dish-layers/green_pepper__strips.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "4844a554853a927a6080043e4f016ecc99c2c9e2f8d426b5fc18f00c29213107",
+      "canonical_outline_pixels": 185,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2016,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        46,
+        82,
+        40
+      ],
+      "payload_bytes": 2094
+    },
+    "carrot__slices": {
+      "path": "dish-layers/carrot__slices.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "87268ed5e5a945e505bd7da21462237749c4f3892ddbebee4e85d8b50af7c07f",
+      "canonical_outline_pixels": 54,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1796,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        46,
+        46,
+        70,
+        40
+      ],
+      "payload_bytes": 1882
+    },
+    "cucumber__smashed": {
+      "path": "dish-layers/cucumber__smashed.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "a9fa6c64e770b6be8fee009442c7b2f7be0c138b4d6aea997fc02df8b15662aa",
+      "canonical_outline_pixels": 138,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2062,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        43,
+        43,
+        75,
+        43
+      ],
+      "payload_bytes": 2131
+    },
+    "broccoli__florets": {
+      "path": "dish-layers/broccoli__florets.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "e56382a1e7c7cfbe43c13033ed4fbf1f788204d508e347c0acf10b7ae52fee3b",
+      "canonical_outline_pixels": 127,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2030,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        44,
+        41,
+        73,
+        45
+      ],
+      "payload_bytes": 2145
+    },
+    "winter_melon__soup_chunks": {
+      "path": "dish-layers/winter_melon__soup_chunks.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "131e0c934c493c00fc83160315911598b2ed61236222dd9f59b8ea59a61b18af",
+      "canonical_outline_pixels": 46,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1026,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        54,
+        50,
+        52,
+        33
+      ],
+      "payload_bytes": 1111
+    },
+    "shiitake__braised": {
+      "path": "dish-layers/shiitake__braised.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "6bc402d9a99106e4241841e4bd361172c1aab5cfcfb4915d353b60cd6b43afb0",
+      "canonical_outline_pixels": 226,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2163,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        44,
+        43,
+        74,
+        43
+      ],
+      "payload_bytes": 2301
+    },
+    "onion__slices": {
+      "path": "dish-layers/onion__slices.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "74620d92b303d897ff67fcb18dfdc91caab78fc5fee2cf90c92a7cb11f63ce53",
+      "canonical_outline_pixels": 177,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1985,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        41,
+        46,
+        80,
+        40
+      ],
+      "payload_bytes": 2144
+    },
+    "garnish_scallion": {
+      "path": "dish-layers/garnish_scallion.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "60de69903bc850efff453f00a61d359f0864756e1580eca8f553dc82a743556a",
+      "canonical_outline_pixels": 100,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 252,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        45,
+        49,
+        71,
+        32
+      ],
+      "payload_bytes": 492
+    },
+    "garnish_chili_ring": {
+      "path": "dish-layers/garnish_chili_ring.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "7ea102380408c5d9d623f3f899682ce391e6b598d52ef5001eff2bc130b4afc9",
+      "canonical_outline_pixels": 16,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 347,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        45,
+        49,
+        71,
+        32
+      ],
+      "payload_bytes": 642
+    },
+    "garnish_sesame": {
+      "path": "dish-layers/garnish_sesame.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "4caff06c5907c8f8c4c39dac5bbae915de6b1595f4aaa0ae47615ba56e51c3dd",
+      "canonical_outline_pixels": 53,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 159,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        46,
+        49,
+        69,
+        31
+      ],
+      "payload_bytes": 387
+    },
+    "garnish_cilantro": {
+      "path": "dish-layers/garnish_cilantro.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "eb9fb9ed89ca26448092c367222dc4df79aa99fb1656e33b9a661cb112bf4d90",
+      "canonical_outline_pixels": 104,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 524,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        54,
+        49,
+        54,
+        28
+      ],
+      "payload_bytes": 793
+    },
+    "garnish_ginger_shred": {
+      "path": "dish-layers/garnish_ginger_shred.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "f866fa892c1c58891f92bf8d4c2e3bf050fd56366a05550a094f94971d6778bf",
+      "canonical_outline_pixels": 76,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 552,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        53,
+        48,
+        57,
+        30
+      ],
+      "payload_bytes": 1026
+    },
+    "garnish_garlic": {
+      "path": "dish-layers/garnish_garlic.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "5b35daffd754865804b081a4267ef4bff853f19801dd8388c72053e9318e5219",
+      "canonical_outline_pixels": 120,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 357,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        45,
+        49,
+        72,
+        32
+      ],
+      "payload_bytes": 744
+    },
+    "garnish_shine": {
+      "path": "dish-layers/garnish_shine.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L3",
+      "source_sha256": "7333aeeedc4f697ca061ee30bc962c19797c412396fb798c1256228e6c13ee4e",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 159,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        48,
+        46,
+        69,
+        33
+      ],
+      "payload_bytes": 324
+    },
+    "heat_high": {
+      "path": "icons/heat_high.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "f0e46b5a9750c8cb38adfb452ff943cae02422fff79f071fd1bea4cb80ab176f",
+      "canonical_outline_pixels": 69,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 112,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        6,
+        22,
+        15
+      ],
+      "payload_bytes": 235
+    },
+    "heat_mid": {
+      "path": "icons/heat_mid.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "213646d93627cbd0e209dafcde7e491a72e14ce76f3fb8737f2148f29b65baf8",
+      "canonical_outline_pixels": 74,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 107,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        6,
+        20,
+        15
+      ],
+      "payload_bytes": 241
+    },
+    "heat_low": {
+      "path": "icons/heat_low.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "b42a0b8c5d2a93576bea500105fcb8d5c4b81f6b8e49e8abc6d7a5f89aa4fdfa",
+      "canonical_outline_pixels": 70,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 111,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        2,
+        16,
+        21
+      ],
+      "payload_bytes": 272
+    },
+    "heat_off": {
+      "path": "icons/heat_off.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "339f1bd7a7509b4cbc6e30fe0204bbfb361e83a20089795a9e6beb13023df3db",
+      "canonical_outline_pixels": 60,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 126,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        21,
+        21
+      ],
+      "payload_bytes": 340
+    },
+    "method_stir_fry": {
+      "path": "icons/method_stir_fry.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "1152b77abcd7c3ecd19c85b8ab44ec63e75cc349015d0c3a2e4d6bdf53ab9e03",
+      "canonical_outline_pixels": 41,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 122,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        1,
+        22,
+        20
+      ],
+      "payload_bytes": 264
+    },
+    "method_steam": {
+      "path": "icons/method_steam.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "c99c55dfa04f43bf6f66c39eb09941d366f1ccdcd188905677c5fd67cd260940",
+      "canonical_outline_pixels": 62,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 138,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        20,
+        19
+      ],
+      "payload_bytes": 231
+    },
+    "method_boil": {
+      "path": "icons/method_boil.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "9e93bc601751d12cefa1c5d86af695f11362426f543a2c0c02138f6e9128e9a5",
+      "canonical_outline_pixels": 95,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 136,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        3,
+        22,
+        19
+      ],
+      "payload_bytes": 228
+    },
+    "method_braise": {
+      "path": "icons/method_braise.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "1a8a96a5c50ad22268522f4bbe47fd37d036177310622026eb6d0ca86709ce7e",
+      "canonical_outline_pixels": 78,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 126,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        3,
+        22,
+        19
+      ],
+      "payload_bytes": 253
+    },
+    "method_fry": {
+      "path": "icons/method_fry.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "8d8b245f4f24af7c95a8b71720568c3c0e70c0e696adf37df53307503bdefbf4",
+      "canonical_outline_pixels": 76,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 128,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        5,
+        22,
+        16
+      ],
+      "payload_bytes": 240
+    },
+    "method_mix": {
+      "path": "icons/method_mix.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "449e96ab59fb266bb2b925acf186823af321b4f1ce9a1f8e30eba1a181a8fc4e",
+      "canonical_outline_pixels": 54,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 161,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        20,
+        20
+      ],
+      "payload_bytes": 292
+    },
+    "method_cut": {
+      "path": "icons/method_cut.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "438947740eb84f0d8043e0d358155923637a8f4a9b45e076c85e61096e32e834",
+      "canonical_outline_pixels": 92,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 144,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        1,
+        21,
+        22
+      ],
+      "payload_bytes": 251
+    },
+    "method_marinate": {
+      "path": "icons/method_marinate.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "2162a4a4850d62e654eceafeca0b061100f5029da2755c1aa9c0cff6f0dafd90",
+      "canonical_outline_pixels": 95,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 154,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        1,
+        22,
+        21
+      ],
+      "payload_bytes": 306
+    },
+    "method_blanch": {
+      "path": "icons/method_blanch.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "5732ae7f86722a125fe6bf66a448e493c1ae58472ae807f453295ab6d901829a",
+      "canonical_outline_pixels": 96,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 162,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        1,
+        22,
+        21
+      ],
+      "payload_bytes": 302
+    },
+    "method_stew": {
+      "path": "icons/method_stew.png",
+      "source_size": [
+        96,
+        96
+      ],
+      "display_frame": [
+        24,
+        24
+      ],
+      "pool": "icons",
+      "palette_group": "method-heat",
+      "source_sha256": "496f78e21b20c9d1c152658b59bcb33102033beb0ad1cb876bfe5eab6d185209",
+      "canonical_outline_pixels": 76,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 137,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        1,
+        22,
+        21
+      ],
+      "payload_bytes": 275
+    },
+    "badge_1": {
+      "path": "icons/badge_1.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "badge",
+      "source_sha256": "066b85d118bc5eff78dbc8901672f9c07323324ff825ca8738f6cdea9094b269",
+      "canonical_outline_pixels": 140,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 224,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        36,
+        36
+      ],
+      "payload_bytes": 955
+    },
+    "badge_2": {
+      "path": "icons/badge_2.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "badge",
+      "source_sha256": "f7ca0f049ad41c0cc1086ccb8ede89a8c1a1a6a51170ec5b27113a430faf92ac",
+      "canonical_outline_pixels": 133,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 224,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        36,
+        36
+      ],
+      "payload_bytes": 943
+    },
+    "badge_3": {
+      "path": "icons/badge_3.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "badge",
+      "source_sha256": "e202345a055b8338bb74a5fa751334880efe3ad999914c686da7d40fbaaa7986",
+      "canonical_outline_pixels": 140,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 222,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        36,
+        36
+      ],
+      "payload_bytes": 843
+    },
+    "badge_4": {
+      "path": "icons/badge_4.png",
+      "source_size": [
+        160,
+        160
+      ],
+      "display_frame": [
+        40,
+        40
+      ],
+      "pool": "icons",
+      "palette_group": "badge",
+      "source_sha256": "71e699c7029846c5b787ea87f500be1cd70790d2e337d2350bc73085a9214dbe",
+      "canonical_outline_pixels": 140,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 224,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        2,
+        36,
+        36
+      ],
+      "payload_bytes": 1051
+    },
+    "ui_lantern_dot": {
+      "path": "icons/ui_lantern_dot.png",
+      "source_size": [
+        48,
+        64
+      ],
+      "display_frame": [
+        12,
+        16
+      ],
+      "pool": "icons",
+      "palette_group": "ui-glyph",
+      "source_sha256": "a9c604e4accb11306c5f25f2ef5efe48e87792795bc59348910f4202b6275670",
+      "canonical_outline_pixels": 38,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 62,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        1,
+        1,
+        10,
+        15
+      ],
+      "payload_bytes": 125
+    },
+    "ui_stamp_done": {
+      "path": "icons/ui_stamp_done.png",
+      "source_size": [
+        224,
+        224
+      ],
+      "display_frame": [
+        56,
+        56
+      ],
+      "pool": "icons",
+      "palette_group": "ui-glyph",
+      "source_sha256": "3a7b27132dcbf038f8d888787f3fc55364bfd0a6f5af920ee08688390e7b314e",
+      "canonical_outline_pixels": 0,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 895,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        3,
+        3,
+        50,
+        50
+      ],
+      "payload_bytes": 1535
+    },
+    "ui_star": {
+      "path": "icons/ui_star.png",
+      "source_size": [
+        48,
+        48
+      ],
+      "display_frame": [
+        12,
+        12
+      ],
+      "pool": "icons",
+      "palette_group": "ui-glyph",
+      "source_sha256": "f61cfe2dd0d1f58286b9c4315c71bfd14874995078e4c9ffaecf8b18d43bfef9",
+      "canonical_outline_pixels": 23,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 58,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        0,
+        0,
+        12,
+        11
+      ],
+      "payload_bytes": 104
+    },
+    "ui_timer_icon": {
+      "path": "icons/ui_timer_icon.png",
+      "source_size": [
+        64,
+        64
+      ],
+      "display_frame": [
+        16,
+        16
+      ],
+      "pool": "icons",
+      "palette_group": "ui-glyph",
+      "source_sha256": "9ac6660fd0a54a894481d4fb159dff4900e1fd5a0025e8a5f80669094d46ccbb",
+      "canonical_outline_pixels": 48,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 74,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        0,
+        12,
+        15
+      ],
+      "payload_bytes": 146
+    },
+    "prop_wok": {
+      "path": "props/prop_wok.png",
+      "source_size": [
+        128,
+        128
+      ],
+      "display_frame": [
+        32,
+        32
+      ],
+      "pool": "icons",
+      "palette_group": "prop",
+      "source_sha256": "bb9b3c48e5babccd5c3ddcabd1403e8ef2b213b47d0f8bd2afcf3ee9827db7ab",
+      "canonical_outline_pixels": 37,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 202,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        8,
+        28,
+        16
+      ],
+      "payload_bytes": 250
+    },
+    "prop_spatula": {
+      "path": "props/prop_spatula.png",
+      "source_size": [
+        128,
+        128
+      ],
+      "display_frame": [
+        32,
+        32
+      ],
+      "pool": "icons",
+      "palette_group": "prop",
+      "source_sha256": "9baaa948e8e8ba547d104dd3970655df446f25bcedb48792a15ffbdc21f2c63c",
+      "canonical_outline_pixels": 22,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 144,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        3,
+        28,
+        26
+      ],
+      "payload_bytes": 265
+    },
+    "prop_bowl": {
+      "path": "props/prop_bowl.png",
+      "source_size": [
+        128,
+        128
+      ],
+      "display_frame": [
+        32,
+        32
+      ],
+      "pool": "icons",
+      "palette_group": "prop",
+      "source_sha256": "c004b413cbd722f603075df687d1ae188c83882c648f0900b04417443af8bdff",
+      "canonical_outline_pixels": 16,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 427,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        2,
+        4,
+        28,
+        23
+      ],
+      "payload_bytes": 373
+    },
+    "prop_fan": {
+      "path": "props/prop_fan.png",
+      "source_size": [
+        128,
+        128
+      ],
+      "display_frame": [
+        32,
+        32
+      ],
+      "pool": "icons",
+      "palette_group": "prop",
+      "source_sha256": "351904e5139fa3f4e5552c55c68bab72c553085afd7d317fade17c5679cbbc37",
+      "canonical_outline_pixels": 28,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 357,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        2,
+        24,
+        28
+      ],
+      "payload_bytes": 464
+    },
+    "logo_wordmark": {
+      "path": "ui/logo_wordmark.png",
+      "source_size": [
+        880,
+        360
+      ],
+      "display_frame": [
+        220,
+        90
+      ],
+      "pool": "ui",
+      "palette_group": "startup",
+      "source_sha256": "e3862b60e3d5692e6915645947e9a63cfa47bc08c851f2698f823428023eab09",
+      "canonical_outline_pixels": 34,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2169,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        42,
+        14,
+        137,
+        63
+      ],
+      "payload_bytes": 3127
+    },
+    "ui_lantern": {
+      "path": "icons/ui_lantern.png",
+      "source_size": [
+        104,
+        104
+      ],
+      "display_frame": [
+        26,
+        26
+      ],
+      "pool": "ui",
+      "palette_group": "startup",
+      "source_sha256": "dba199c79c5ca506cea4222a1473ebf9b930a708e759be3fbbddce20d0c911c7",
+      "canonical_outline_pixels": 78,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 136,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        4,
+        1,
+        18,
+        25
+      ],
+      "payload_bytes": 363
+    },
+    "tofu__cubes_soup": {
+      "path": "dish-layers/tofu__cubes_soup.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "5e9bea07e972881b25476a5e335e3d206a872a12b6e237140b4483ec556cf611",
+      "canonical_outline_pixels": 74,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1043,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        53,
+        48,
+        54,
+        34
+      ],
+      "payload_bytes": 1166
+    },
+    "green_pepper__blistered": {
+      "path": "dish-layers/green_pepper__blistered.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "0aef11c7b2cb1455430eebaf5b17559137fb08912ec9ee7885ac695ea6ce5237",
+      "canonical_outline_pixels": 245,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2188,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        40,
+        43,
+        83,
+        43
+      ],
+      "payload_bytes": 2088
+    },
+    "fish_whole__soup": {
+      "path": "dish-layers/fish_whole__soup.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "93cab71f8f555aa31ba990cb24d6b9c9d5ee186351e267aa204243d7de181bbd",
+      "canonical_outline_pixels": 202,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1638,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        41,
+        47,
+        77,
+        37
+      ],
+      "payload_bytes": 1623
+    },
+    "pork_mince__patty_egg_steamed": {
+      "path": "dish-layers/pork_mince__patty_egg_steamed.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "fe9690906028230a31ad7abba91a36183afae00a8df78f9a8d46d29f408b84ca",
+      "canonical_outline_pixels": 160,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 2072,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        50,
+        41,
+        62,
+        46
+      ],
+      "payload_bytes": 2071
+    },
+    "beef__chunks_stewed": {
+      "path": "dish-layers/beef__chunks_stewed.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "fd1ee630451d3e746208c74b480ea98d9fb72080f252d01c65bfff5413b12852",
+      "canonical_outline_pixels": 129,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1462,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        50,
+        45,
+        63,
+        40
+      ],
+      "payload_bytes": 1691
+    },
+    "potato__chunks_soup": {
+      "path": "dish-layers/potato__chunks_soup.png",
+      "source_size": [
+        640,
+        480
+      ],
+      "display_frame": [
+        160,
+        120
+      ],
+      "pool": "dish",
+      "palette_group": "dish-L2",
+      "source_sha256": "3ac1d4ebd25c9f77c1c5cb711fafe4c345786129de9160e745cbfe71ff7a07f8",
+      "canonical_outline_pixels": 73,
+      "character_canonicalization_disabled": false,
+      "partial_alpha_pixels": 1232,
+      "alpha_threshold": 16,
+      "crop_xywh": [
+        53,
+        48,
+        59,
+        35
+      ],
+      "payload_bytes": 1224
+    }
+  }
+}

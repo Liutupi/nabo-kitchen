@@ -1,0 +1,2667 @@
+{
+  "checkpoint": "2026-10-28",
+  "git_tag": "checkpoint-2026-10-28",
+  "created_utc": "2026-10-28T09:18:17.673911+00:00",
+  "implementation_commit": "1a8a626f4c8c02801b2c1a78a251e103a24c7a07",
+  "source_scope": "all tracked and nonignored delivered inputs except checkpoint outputs; UTF-8 CRLF normalized to LF",
+  "status": "engineering checkpoint; no firmware release or device acceptance",
+  "files": {
+    "packages/kitchen_dish.bin": {
+      "bytes": 149460,
+      "sha256": "98bf4e8a7ac84e27dc102709019d728194d50d1a3e3159ce2cb994f3da9a822e",
+      "normalization": "bytes"
+    },
+    "packages/kitchen_fonts.bin": {
+      "bytes": 959955,
+      "sha256": "0be5ad106f4763a1bbaa6ae96cd096223bcb1cad99c0d704931c06c62c69513f",
+      "normalization": "bytes"
+    },
+    "packages/kitchen_fonts.chars.txt": {
+      "bytes": 10691,
+      "sha256": "3aa6673035d6d1c29939384784deaa8bfee569549aeee12171d6d89cc9a8346f",
+      "normalization": "utf8-lf"
+    },
+    "packages/kitchen_icons.bin": {
+      "bytes": 52383,
+      "sha256": "c08673b9638a27dd19213a4d9feafdaffccef8a2da5c3cc3842d3336826c913f",
+      "normalization": "bytes"
+    },
+    "packages/kitchen_nabo.bin": {
+      "bytes": 495064,
+      "sha256": "8d77f446f672a34cbc0f71178ec341d0407fd9e47806e3172c35ff2b343f88e7",
+      "normalization": "bytes"
+    },
+    "packages/kitchen_recipes.krc": {
+      "bytes": 26113,
+      "sha256": "388fa2c18e6d5f80a55dc9d71d728cc63279e83913216bec449da7946d525d4b",
+      "normalization": "bytes"
+    },
+    "packages/kitchen_ui.bin": {
+      "bytes": 3779,
+      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5",
+      "normalization": "bytes"
+    },
+    "packages/OFL.ArchivoBlack.txt": {
+      "bytes": 4399,
+      "sha256": "4eb085b4f06e3c1625d8b577902bf639d480633635837bf2ed94d1a7b1b842f5",
+      "normalization": "utf8-lf"
+    },
+    "packages/OFL.SourceHanSans.txt": {
+      "bytes": 4463,
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "normalization": "utf8-lf"
+    },
+    "packages/review_static.ksp": {
+      "bytes": 84746,
+      "sha256": "84576dc25c9b63690e74007aa2f39ac88938802a0fbc486c78a4810036570372",
+      "normalization": "bytes"
+    },
+    "proofs/animation-contact-dark.png": {
+      "bytes": 981418,
+      "sha256": "2acb89a7546a022acb84989008de65a30ca06e41812624baca66cd999c44f11b",
+      "normalization": "bytes"
+    },
+    "proofs/animation-contact-paper.png": {
+      "bytes": 1021502,
+      "sha256": "d53aa3a08a7a5808f32f0b51891b957cda5b45002877b1dbb9211b1216401f1c",
+      "normalization": "bytes"
+    },
+    "proofs/fonts-proof.png": {
+      "bytes": 28358,
+      "sha256": "15a1031b0738a98a550f93b017daf3cddf5f551b72b2874aa035c6e42a23d6ef",
+      "normalization": "bytes"
+    },
+    "proofs/recipes/composites.json": {
+      "bytes": 10254,
+      "sha256": "f1b396dd4bc82a2d951eaf0391a2bb074c46235ddaed90cbef6efa751c408895",
+      "normalization": "utf8-lf"
+    },
+    "proofs/recipes/contact_cream.png": {
+      "bytes": 268441,
+      "sha256": "c32d06c3671b6207c5a83ac85be2c9c37ad788ed5f9b41f158b12f5832ad349b",
+      "normalization": "bytes"
+    },
+    "proofs/recipes/contact_dark.png": {
+      "bytes": 268980,
+      "sha256": "79fe668a392b1593f915f77afff3ab5895a2fe613903c8a4c2998232a7c8e57e",
+      "normalization": "bytes"
+    },
+    "README.md": {
+      "bytes": 3026,
+      "sha256": "23bf3e4bc16295b8cea17f07f764ee2af2c98d8dca3c16a408f6bf215c9d9905",
+      "normalization": "utf8-lf"
+    },
+    "reports/animation-source-review.json": {
+      "bytes": 4089,
+      "sha256": "811e90e87b29dac1bdb08044764b942c0d359b1b36d69bfdbff79229943f6755",
+      "normalization": "utf8-lf"
+    },
+    "reports/animations-report.json": {
+      "bytes": 46132,
+      "sha256": "2e98bd0254b08b7778de86eb7706ae0e160c54f11740943fb732e0d2197d2e15",
+      "normalization": "utf8-lf"
+    },
+    "reports/determinism.json": {
+      "bytes": 219,
+      "sha256": "1cdfe1a6ea0c2156b1a167893d6b739b219bcb51dc8ac5570887cb3c4b5abdbe",
+      "normalization": "utf8-lf"
+    },
+    "reports/fonts-report.json": {
+      "bytes": 3004,
+      "sha256": "3f92a4d1d22aeb6ee063d094d2bcd38a3d5a45d2838ea2d806153deba3e88a5a",
+      "normalization": "utf8-lf"
+    },
+    "reports/kitchen_recipes.json": {
+      "bytes": 21846,
+      "sha256": "9d6e22d5f211a614c5b52d1e178c5b665eb9397b69f2e31baa3017b7e2b3aaa2",
+      "normalization": "utf8-lf"
+    },
+    "reports/static_report.json": {
+      "bytes": 104886,
+      "sha256": "08f08a6aa8375a35adae986d3810d30d484185ebb974cc095e866c848ccb8d8e",
+      "normalization": "utf8-lf"
+    },
+    "reports/summary.json": {
+      "bytes": 2634,
+      "sha256": "2130359b1504126a04ecd07dd0ada65c3a3d060ca2e120d4703c64d06160f923",
+      "normalization": "utf8-lf"
+    },
+    "validation/animation-validation.json": {
+      "bytes": 860,
+      "sha256": "b6e097181af0608c05d54179b6f0b3045ff49ac68b27f47b5cd5ad654473c788",
+      "normalization": "utf8-lf"
+    },
+    "validation/host-tests.json": {
+      "bytes": 2084,
+      "sha256": "9d42424ef642b8cf0916002e4aad6068ad6a024c4741874341404e0bc9f6beb7",
+      "normalization": "utf8-lf"
+    },
+    "validation/host-tests.txt": {
+      "bytes": 7034,
+      "sha256": "adc64c8585fc971c788d35fca605a01c09c2aaa721926a7e3ebefa82128c21a7",
+      "normalization": "utf8-lf"
+    },
+    "validation/publication-check.json": {
+      "bytes": 532,
+      "sha256": "4f561310979964465fe6383dfb9e3687c5b51daca8a85db57a1f71d29266eae1",
+      "normalization": "utf8-lf"
+    }
+  },
+  "source_files": {
+    ".gitignore": {
+      "bytes": 81,
+      "sha256": "6acd53041d5753602dc2f4a9e8de057b9ffa25c29050f89e6eb7325c068cf824",
+      "normalization": "utf8-lf"
+    },
+    "AGENTS.md": {
+      "bytes": 3334,
+      "sha256": "f012873f474bdc5bba5d3bc851556e869b2f96410c033687b4a0514af098017a",
+      "normalization": "utf8-lf"
+    },
+    "HANDOFF.md": {
+      "bytes": 19355,
+      "sha256": "948af91c202448dda75f48dd30176b03b5c11b8a89972eee6482395974ea91de",
+      "normalization": "utf8-lf"
+    },
+    "LICENSE": {
+      "bytes": 1180,
+      "sha256": "4ffec8d42ac591244d8fcec923582f4d464c71a784f07cbf34cec00f6282055c",
+      "normalization": "utf8-lf"
+    },
+    "NOTICE.md": {
+      "bytes": 650,
+      "sha256": "5b22dc31b597714bab928480be97fb95d602627eeea520a11cb391f4392b06d8",
+      "normalization": "utf8-lf"
+    },
+    "README.md": {
+      "bytes": 3143,
+      "sha256": "3f88380a2cf80aa124f662f66dfac11c3481424bd966387946a918331c25ad52",
+      "normalization": "utf8-lf"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 693,
+      "sha256": "4baa245aa3fb082b23792a5169d786f2f6334d1d6114f7f7757aabe7516dabc6",
+      "normalization": "utf8-lf"
+    },
+    "data/RECIPE_FORMAT.md": {
+      "bytes": 3196,
+      "sha256": "f54863aef2b6e8d3dcee5b00304988314497033331deebb646546d9fed86b358",
+      "normalization": "utf8-lf"
+    },
+    "data/ingredients.json": {
+      "bytes": 4205,
+      "sha256": "d5592cc3b8832a2dd12b8b3aa8ddd51337e45f605e41b378c929f3d8a41b300f",
+      "normalization": "utf8-lf"
+    },
+    "data/lines.json": {
+      "bytes": 1230,
+      "sha256": "f34fdcb268d90e6dab68c4fad0787fe69d9294e85ba85249dfc9efacf81b1017",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/CANDIDATES.md": {
+      "bytes": 1964,
+      "sha256": "d28e7f5dcb1f11f79d67753cc68b613c7992a6a1da85459a54b3499ec373baea",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/REVIEW.md": {
+      "bytes": 1873,
+      "sha256": "b97b34cee7d288a4f9de446585e8d3026733e2d554a1249990c674358ddffa21",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/baiqie-ji.json": {
+      "bytes": 1584,
+      "sha256": "818927d9e3b38e073ab7933463a1854a0c9d1bb828d2c19b0d78b38175ec58df",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/baizhuo-xia.json": {
+      "bytes": 1365,
+      "sha256": "83eaad1cc6d2e1b61e5993ffe620e6674e9c589036617d1433fcb9e783687d40",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/chao-xilanhua.json": {
+      "bytes": 1280,
+      "sha256": "cf4ef60d2bc03f8dc7ae5a3739dc26ba486dfa57ce7e3612e5a7a0d430f0bcb1",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/chizhi-zheng-paigu.json": {
+      "bytes": 1510,
+      "sha256": "7bd5f4e48e3099a1d424c1e55288c881208a96ce397655d10aa18e72859d2c54",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/culiu-baicai.json": {
+      "bytes": 1385,
+      "sha256": "e8bd2d5976580f7f2108eda367229781f84cfc735fd70ace7d3dca335a4f95d6",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/donggua-paigu-tang.json": {
+      "bytes": 1575,
+      "sha256": "ce69c2a2aa35dbde061c2ce9b69047e213afda5e3bff28d46fd9a5247ce0d325",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/fanqie-chaodan.json": {
+      "bytes": 1579,
+      "sha256": "c415c37239907ddab558beca73755f7745a05d3b49e1baa087e792896abece78",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/fanqie-dantang.json": {
+      "bytes": 1527,
+      "sha256": "e3c6495effdda12ef5542257ffa641ab6040403718a1e4b2101b7857337acfe0",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/fanqie-tudou-niurou-tang.json": {
+      "bytes": 1772,
+      "sha256": "aa8ca267d57890b595a48fdf4163f763282b55838716a28b35df8b41f00775aa",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/hongshao-paigu.json": {
+      "bytes": 1631,
+      "sha256": "2171d8e73dcc76caa56a535ca8c9da50edebd0ef1d8542df62426aa0d84a519a",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/hongshao-qiezi.json": {
+      "bytes": 1571,
+      "sha256": "0788a77fead650357772bbb867a4dfaa59f2201b18aa2b6b718ba4433a1496e7",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/hongshao-rou.json": {
+      "bytes": 1710,
+      "sha256": "2ec90d4197978752b278fdc7c8eba84b7238551df9345243e97be0f7aede92d7",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/hongshao-yu.json": {
+      "bytes": 1643,
+      "sha256": "97c0b9a5633ba62bc9471549f9e53ada957b530e278ea5438eb59d1150fcfc73",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/hupi-qingjiao.json": {
+      "bytes": 1415,
+      "sha256": "12acf77a39037fb0cedcb07bff08dc7a31d0982a59104a8d43c4f59753c0526e",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/jiachang-doufu.json": {
+      "bytes": 1691,
+      "sha256": "5d30266c4467a9032391e4ddbd22a8eef7ec82915fa3b423c86f6a27cb9a8c03",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/jiyu-doufu-tang.json": {
+      "bytes": 1801,
+      "sha256": "fa923ee4600e5a16ac441fdad618144ab34ddf2944948302157d7af868386697",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/kele-jichi.json": {
+      "bytes": 1605,
+      "sha256": "78bc60e3d4dd125601f21386a2b8b7620531ee05137895e53a2b38d3c45c499d",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/pai-huanggua.json": {
+      "bytes": 1383,
+      "sha256": "6adfdb1d63373ef40dcac0faf896a29ef1962c8ddf4c580dafe86e7297a4a9d7",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/qingcai-doufu-tang.json": {
+      "bytes": 1395,
+      "sha256": "8edd5cda8d8aba692d4cf6aba3bad49d8fdb27884688d023f858a0b4fa296fbc",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/qingjiao-rousi.json": {
+      "bytes": 1644,
+      "sha256": "6056066689441a5a7412505d8fbd5dbfa08cda8577bc56718b1b06af2263ee30",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/qingzheng-luyu.json": {
+      "bytes": 1741,
+      "sha256": "8bbab075d7de4c2dadd909d0fe4556cebfad47403e790c13efd23813a3937401",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/roubing-zhengdan.json": {
+      "bytes": 1486,
+      "sha256": "c992073fd7e9cfd4206517437a0308c92341b2f02ca670debe31365aa890cc0c",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/suanla-tudousi.json": {
+      "bytes": 1332,
+      "sha256": "b558f2071710f68a1448ab00cd5d2f92ce52b69c719c5eacfb29b01db9ed9c9a",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/suanrong-caixin.json": {
+      "bytes": 1315,
+      "sha256": "a1cfcbdadfc909adbcf7a3fe425e59101320c8e95d1c10dd142e9ea06e60c49d",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/suanrong-shengcai.json": {
+      "bytes": 1219,
+      "sha256": "26c6bb96c0f799c04d5405e4a9ab7e21470e8d2c054ed01d0f86d29932090794",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/xianggu-menji.json": {
+      "bytes": 1609,
+      "sha256": "1fbb3700ff4d625a44f4df8173237eb5272c117a94cdcec9292c8d9a6df04403",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/xiangjian-doufu.json": {
+      "bytes": 1307,
+      "sha256": "c9593e55ec7b0e1fa74993922e5207923d19a8e50cfb7c27627a18b36c10f230",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/xiaren-chaodan.json": {
+      "bytes": 1499,
+      "sha256": "eaae8434d141d8c16de0695686030b29f29690acf44e86f0ebbbc70b96bf9c85",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/yangcong-chao-niurou.json": {
+      "bytes": 1566,
+      "sha256": "c90875d76d0deee0fb4e7a65b1a7bb058c9bb353b48a4ef1db4f9fe79bae343b",
+      "normalization": "utf8-lf"
+    },
+    "data/recipes/curated/zheng-shuidan.json": {
+      "bytes": 1374,
+      "sha256": "b708342759726eb137cc1a55e3e3640d7bcd8f7ded9e618780820966ef7b35e7",
+      "normalization": "utf8-lf"
+    },
+    "data/schema/recipe.schema.json": {
+      "bytes": 4900,
+      "sha256": "a4a33d295ee5458919d64de9bdc822fef819a035678db957ec6a0381df50d88e",
+      "normalization": "utf8-lf"
+    },
+    "data/seasonings.json": {
+      "bytes": 1184,
+      "sha256": "a1104d8a551c8cbf73865fa0c0ca7d750a0979df70620aced2719db01a5a43e8",
+      "normalization": "utf8-lf"
+    },
+    "docs/ARCHITECTURE.md": {
+      "bytes": 13528,
+      "sha256": "7740197bd290a7c11c58021a7419e9b76531a809740f116ad6ae42abd22232cd",
+      "normalization": "utf8-lf"
+    },
+    "docs/ROADMAP.md": {
+      "bytes": 3625,
+      "sha256": "18349e96c5adfd12c14e58fec8b31f663c2880e71afe6bef5573f59b103ec8e2",
+      "normalization": "utf8-lf"
+    },
+    "docs/WORKFLOW.md": {
+      "bytes": 2215,
+      "sha256": "bc41b47f5d88cf1e64584ee8d5aef45506b29f21a2b581c59416841ca708d8d4",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ART_BRIEF.md": {
+      "bytes": 15450,
+      "sha256": "a33b820b16ba686357dc83fa03d62d7b95990ec4e07eb0e5755cf565a74968eb",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ASSET_LIST.csv": {
+      "bytes": 32796,
+      "sha256": "cb9c0622d38c7839b6ad3fd22a92538f710caacf6fcadfebcfebca9df516d0aa",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/CODEX_PROMPTS.md": {
+      "bytes": 5477,
+      "sha256": "86ecc75e0e931f557e9cecbd0ca9b35cc6c0362621e370f5ab0891aa73d0943d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/DESIGN.md": {
+      "bytes": 9035,
+      "sha256": "d7dbeb6405ff0cabd32600fcc9c18f473e8528a77c1d6224f81fe7340e6a5fc6",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/GROK_PROMPTS.md": {
+      "bytes": 3220,
+      "sha256": "a2f8170394c2322026c14a3bd5b26413e6b79559c4125480d7a7a17a9b8aa23c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/UI_DESIGN.md": {
+      "bytes": 6991,
+      "sha256": "f7341305b85bc4953fcf2e60add05b27e2ba508c7f4b70c7d6264831c9d99114",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/audio/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/costume/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/costume/compare_small.png": {
+      "bytes": 70623,
+      "sha256": "d361704af71fac464061043bc24e863cbaffed3dca2d8ca89e6bac90be5c9aff",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/costume/costume_A.png": {
+      "bytes": 629975,
+      "sha256": "ccbd06308e8599d1eac13dc0021c1f599a35082e6a54d278b24fc378f983fa57",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/costume/costume_B.png": {
+      "bytes": 617017,
+      "sha256": "408715b36d27071bd79c099782425bf9ad7482a01cd575e2985b3023888ec56c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/costume/costume_C.png": {
+      "bytes": 607178,
+      "sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/costume/costume_final.png": {
+      "bytes": 607178,
+      "sha256": "f668780750cc69fb92df66b6d768c2901f4fb3fba0a8109515dad6945aff8fe7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-hero/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/_combos.png": {
+      "bytes": 107971,
+      "sha256": "f9d017fff39d3fb3b8cd460021dc384400a4573b06647ca02a5cbfc9e4dd8535",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/beef__chunks_stewed.json": {
+      "bytes": 1731,
+      "sha256": "1042cea19d33880c4070201b244959a7fbf44277931cbbf105af5ca9cd4d3794",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/beef__chunks_stewed.png": {
+      "bytes": 68489,
+      "sha256": "fd1ee630451d3e746208c74b480ea98d9fb72080f252d01c65bfff5413b12852",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/beef__slices_stirfried.json": {
+      "bytes": 2589,
+      "sha256": "c9386edca2186d99e22b58f38a7d7cf54eee9d48710022fde0dc083302b103aa",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/beef__slices_stirfried.png": {
+      "bytes": 86879,
+      "sha256": "35265802ed290027a1918d161b511c08496695af5f06a71aec5d6656fd88efdc",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/broccoli__florets.json": {
+      "bytes": 2569,
+      "sha256": "b41c1e843c872fa91be69aa4c365dbbb8dd8035783e01b9003e707143b2b1e8b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/broccoli__florets.png": {
+      "bytes": 86758,
+      "sha256": "e56382a1e7c7cfbe43c13033ed4fbf1f788204d508e347c0acf10b7ae52fee3b",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/carrot__slices.json": {
+      "bytes": 2542,
+      "sha256": "c7c875c31d65d7056770f2518877c153b839018b72e96203f654cfd1e01657d0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/carrot__slices.png": {
+      "bytes": 72371,
+      "sha256": "87268ed5e5a945e505bd7da21462237749c4f3892ddbebee4e85d8b50af7c07f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/chicken_thigh__pieces_braised.json": {
+      "bytes": 2593,
+      "sha256": "3f086e1777f1a4fe6fc6e230b7b7e1d22c44d7a33f96c9f2c51b897097bdc643",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/chicken_thigh__pieces_braised.png": {
+      "bytes": 108558,
+      "sha256": "c32d5c61192d0fa9c46c2937bde078c76b40e5bfcacb459c9b4ef378ae7feda5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/chicken_whole__poached_cut.json": {
+      "bytes": 2632,
+      "sha256": "428462a694fa927773b5da332f0343758355da9247a5b9c30e53fe9bd99bbcd7",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/chicken_whole__poached_cut.png": {
+      "bytes": 104996,
+      "sha256": "5c5d65f7d294596650c2c0362a9086c04c4fbc0227e7c836bb14244567b867da",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/chicken_wing__braised.json": {
+      "bytes": 2591,
+      "sha256": "4a64e4978cbcbe0eecbd34f23956fbc2d0edf3b3dda375b167b8717f79cf61d9",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/chicken_wing__braised.png": {
+      "bytes": 96118,
+      "sha256": "00ca03f006c1911486e2f8554beed22db04f143a3f8c5740b83403b9b9b88163",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/choy_sum__blanched.json": {
+      "bytes": 2584,
+      "sha256": "c5ef28d49e51323d1627836f62ff3b14bd812a4e69f2bb8ad4bd33c27a6ce0de",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/choy_sum__blanched.png": {
+      "bytes": 87410,
+      "sha256": "fee7fcb90de89345a8e397b7f8451633166d96fb3ebf7ee51bc30fdfcd0d85ab",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/choy_sum__stirfried.json": {
+      "bytes": 2666,
+      "sha256": "b94c05e0ff093f00a9d2a9e8006d70bb473b0974a624cfadca9ef389b3255357",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/choy_sum__stirfried.png": {
+      "bytes": 97718,
+      "sha256": "3f18bdefc1f4cd76eebb1f2a5b3cbb18d8b1b09090a3b30dd6e2b1cabb8fadae",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/cucumber__smashed.json": {
+      "bytes": 2568,
+      "sha256": "48319e73ae032804b926b194fbabdfcff22e6639704078418a52a3069e3b059c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/cucumber__smashed.png": {
+      "bytes": 91051,
+      "sha256": "a9fa6c64e770b6be8fee009442c7b2f7be0c138b4d6aea997fc02df8b15662aa",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/egg__fried.json": {
+      "bytes": 2540,
+      "sha256": "cc7581a749a8df943537454aa570c5b0af19c02a6aad83cd93873bddff221dfa",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/egg__fried.png": {
+      "bytes": 75159,
+      "sha256": "387c7ca402339def9c0cf7761ff64477a2d8528d973492268dc8009fb70e26f5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/egg__ribbon.json": {
+      "bytes": 2574,
+      "sha256": "261d4afa519653d904620e26b0fa6807959f2bb51e5fdf214e113bb965c7431d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/egg__ribbon.png": {
+      "bytes": 71442,
+      "sha256": "e800c561ece49ae9284f373460af92f602a7ca1de9a93392af1383e0d749393b",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/egg__scrambled.png": {
+      "bytes": 101569,
+      "sha256": "4483543c2a69957ab69a1a29a688628824d6915923aed18890c2ab3e64daabee",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/egg__steamed_custard.json": {
+      "bytes": 2629,
+      "sha256": "f9ba51b57cc247dee0fe68b14a60566946f661028ac9295afb074f6a6f424ad1",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/egg__steamed_custard.png": {
+      "bytes": 57974,
+      "sha256": "7fef7d9a02e86d8e0b635e0c292e0d145d814356c8a7476b4e7b7b6e2b24f535",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/eggplant__braised.json": {
+      "bytes": 2581,
+      "sha256": "4344c2af107b7efaf39ad878389a96fc0c0dd81952d894ed255c07f90918d333",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/eggplant__braised.png": {
+      "bytes": 87911,
+      "sha256": "02da12f9ea5c85c085fc55893c52eaab7987702801883f372e28716a5da59bfb",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__braised.json": {
+      "bytes": 2618,
+      "sha256": "ef3171fc97f53e00cc89e5cb95fcb73d7a9e3187bf4f1c70ffa993ee87a2be08",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__braised.png": {
+      "bytes": 82912,
+      "sha256": "fbb3bf7bc08a4b937a17ccec7cf9055aeda35ce4da39795aebcac8ec8b5ef313",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__soup.json": {
+      "bytes": 1764,
+      "sha256": "e9a5d0ec4478baf0bb1f25d2f37dc4b34ae6d3009decac709c1aca4ee2f44468",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__soup.png": {
+      "bytes": 66368,
+      "sha256": "93cab71f8f555aa31ba990cb24d6b9c9d5ee186351e267aa204243d7de181bbd",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__steamed.json": {
+      "bytes": 2684,
+      "sha256": "1dc6028e6709d4047b707355c01697ca680d39da858762a060b7974b8e222da2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/fish_whole__steamed.png": {
+      "bytes": 85463,
+      "sha256": "dac3304ce2cf10c938ea2b88988c5d6f37a4058341afac1254e7dae0b702eee7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_chili_ring.json": {
+      "bytes": 1944,
+      "sha256": "3aa627229f7002e2a073e3049a00228c26e0497531473a5cbeba9428f76e7bc4",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/garnish_chili_ring.png": {
+      "bytes": 23791,
+      "sha256": "7ea102380408c5d9d623f3f899682ce391e6b598d52ef5001eff2bc130b4afc9",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_cilantro.json": {
+      "bytes": 1974,
+      "sha256": "a46aa00211ed65e714b0ab33aeb74093665600bc2a985786a15951f33217a720",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/garnish_cilantro.png": {
+      "bytes": 32423,
+      "sha256": "eb9fb9ed89ca26448092c367222dc4df79aa99fb1656e33b9a661cb112bf4d90",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_garlic.json": {
+      "bytes": 1932,
+      "sha256": "f0bf5e2bda24420a7f5ac8714cb516a214620cf8361cc877df26d12ab52c4187",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/garnish_garlic.png": {
+      "bytes": 27498,
+      "sha256": "5b35daffd754865804b081a4267ef4bff853f19801dd8388c72053e9318e5219",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_ginger_shred.json": {
+      "bytes": 2023,
+      "sha256": "dcbfbb4dc37a7dc18249aadd56ab02399c2a5a35e8400c3ea6d95db222ceab58",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/garnish_ginger_shred.png": {
+      "bytes": 41888,
+      "sha256": "f866fa892c1c58891f92bf8d4c2e3bf050fd56366a05550a094f94971d6778bf",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_scallion.png": {
+      "bytes": 19138,
+      "sha256": "60de69903bc850efff453f00a61d359f0864756e1580eca8f553dc82a743556a",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_sesame.json": {
+      "bytes": 1938,
+      "sha256": "ecb448def09aa37b78f75f7548a7b399aaa9b970ba915773375dd2dcedf8dc28",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/garnish_sesame.png": {
+      "bytes": 14340,
+      "sha256": "4caff06c5907c8f8c4c39dac5bbae915de6b1595f4aaa0ae47615ba56e51c3dd",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/garnish_shine.png": {
+      "bytes": 9550,
+      "sha256": "7333aeeedc4f697ca061ee30bc962c19797c412396fb798c1256228e6c13ee4e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/green_pepper__blistered.json": {
+      "bytes": 1750,
+      "sha256": "f0e71665552de70d53df187e27b7f65902bfa7e0ab3b1dcdd5b9f1d0a309f286",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/green_pepper__blistered.png": {
+      "bytes": 86136,
+      "sha256": "0aef11c7b2cb1455430eebaf5b17559137fb08912ec9ee7885ac695ea6ce5237",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/green_pepper__strips.json": {
+      "bytes": 2570,
+      "sha256": "70f39977efd706ebaf30b9f19f73e32b644db2c651294c3a440635e6b88ec92c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/green_pepper__strips.png": {
+      "bytes": 89260,
+      "sha256": "4844a554853a927a6080043e4f016ecc99c2c9e2f8d426b5fc18f00c29213107",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/lap_cheong__slices.json": {
+      "bytes": 2576,
+      "sha256": "64611b07469ddcaacc5bdd78b3918ef15b27009976ef9cd9456813d6305deff0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/lap_cheong__slices.png": {
+      "bytes": 111625,
+      "sha256": "8804501658773f98ab22c258a7b518095c38b5f0ecc983f7f66bc338a8b15547",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/lettuce__stirfried.json": {
+      "bytes": 2576,
+      "sha256": "3ab8feaf481eaf89ecdf0a4667a28a64f3aecb8951f6eaec68d27d93dee29d42",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/lettuce__stirfried.png": {
+      "bytes": 99386,
+      "sha256": "ebfcddf8416d0bcb39f7eb05ae077d8333887648ccd100e55a3e3afcfcddca0f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/napa_cabbage__stirfried.json": {
+      "bytes": 2593,
+      "sha256": "fd5fdefd9b023740a59fde49551ada4aeb5abe9b343f0850ecfa899df18e2423",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/napa_cabbage__stirfried.png": {
+      "bytes": 102848,
+      "sha256": "2827dabb844ae294d947702ebc9a3e8af2363eb17c0841c031017389429f1db3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/onion__slices.json": {
+      "bytes": 2563,
+      "sha256": "080450f69a5805756add6871ef8a8d6a1e0f7b09bc736509bc98f6eef3fa205b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/onion__slices.png": {
+      "bytes": 85804,
+      "sha256": "74620d92b303d897ff67fcb18dfdc91caab78fc5fee2cf90c92a7cb11f63ce53",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_belly__braised.json": {
+      "bytes": 2592,
+      "sha256": "03a82e74ef5c86cbbeafaecdfc5a74f9de47a0bbb2f5e3d7ea9f2fa390e3d5cc",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_belly__braised.png": {
+      "bytes": 91545,
+      "sha256": "0abd59563046b93ea20123c3e146c2a4b1ccc8850065247f55b95ff16c27a377",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_belly__slices_stirfried.json": {
+      "bytes": 2608,
+      "sha256": "d08083ce888c76f4e820dfe90346d8e759a03e5bfcf4fb7646288998ae95c942",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_belly__slices_stirfried.png": {
+      "bytes": 96321,
+      "sha256": "86b44ec8e907cb43422acdc5253611a5a4ddded38071f6aa57d4f0592b070336",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_lean__shreds_stirfried.json": {
+      "bytes": 2583,
+      "sha256": "80ad4cc4317be252cc38d52ad5a20d7c2d09d10d743b45c78cc58377b9b43b30",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_lean__shreds_stirfried.png": {
+      "bytes": 108617,
+      "sha256": "78b287459e7748806847de2043f766177ccc65157abea6efe003276d6c56e17e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_lean__slices.json": {
+      "bytes": 2552,
+      "sha256": "48f9b9892b24c7e8b70ea7515eb149e73394e35afe1ac1f937cf68fbdfe21558",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_lean__slices.png": {
+      "bytes": 87747,
+      "sha256": "0542d6c2082b661c09a88ff42c2bce36cbb92dda74b84828843c1b5ef227a61b",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__crumbs.json": {
+      "bytes": 2548,
+      "sha256": "ad694c871506694d23a879ca02a49aa42579367a03641cf9dc9d0568aa800283",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__crumbs.png": {
+      "bytes": 65121,
+      "sha256": "e69d7b65d59fc0304ae4c5b95474433466b55ba8c1646b5f5f82cd8836d294aa",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__patty_egg_steamed.json": {
+      "bytes": 1836,
+      "sha256": "c51e6a756da54727f85550d80afa9d7a948bf7b0c1d3398bad9268507d1ed4eb",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__patty_egg_steamed.png": {
+      "bytes": 77120,
+      "sha256": "fe9690906028230a31ad7abba91a36183afae00a8df78f9a8d46d29f408b84ca",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__patty_steamed.json": {
+      "bytes": 2621,
+      "sha256": "594474d26a822bf6bdb69035352e72860ab474b320ff8de3077d3d67838fd4cd",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_mince__patty_steamed.png": {
+      "bytes": 76511,
+      "sha256": "5f7112cc65fa480e3e51ce1beb1cadd4444f6b85638843b4ab7c44360b4efb76",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__braised.json": {
+      "bytes": 2574,
+      "sha256": "b818f71ef061622a3b35eb0cc519b9c8a19c2e1f3727b30ced79c12fd2ba0e00",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__braised.png": {
+      "bytes": 100788,
+      "sha256": "31ad23e8e5a046e1deb23eb79e7170d39f3f65f5eab3340bdeed5391d03907ea",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__soup.json": {
+      "bytes": 2527,
+      "sha256": "e7b7ed0b5e6accbbc6422f7510e1fc9ad33b4ad01e9410c59222847475038ef3",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__soup.png": {
+      "bytes": 50501,
+      "sha256": "0a7bd9b0b91fb8eb4f60eab1b4d097a962abb32a5d0ad6c7eaca75dd33844df8",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__steamed_black_bean.json": {
+      "bytes": 2624,
+      "sha256": "dffab18e7e6c0abcc19d132348ad0be3717b149461375766346eca38138a9f40",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/pork_rib__steamed_black_bean.png": {
+      "bytes": 98272,
+      "sha256": "834f47f601c1e82f14083ae0d90602f2e258e3b7e6399e5e4c99f987dd975070",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/potato__chunks_braised.json": {
+      "bytes": 2576,
+      "sha256": "40ae685b5f12019d39d10798796fc33240d68e1fb470157367630a23c87d1433",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/potato__chunks_braised.png": {
+      "bytes": 87895,
+      "sha256": "1f16e9ed133fd1bbc51550ccc2ad497faa36faaf69faa543b5eb9c10bad0e26c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/potato__chunks_soup.json": {
+      "bytes": 1707,
+      "sha256": "1c41e6d85a9fe6ffdf01bc20de41af2e85595d39b17bc218ed8783e949a6fb9e",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/potato__chunks_soup.png": {
+      "bytes": 49794,
+      "sha256": "3ac1d4ebd25c9f77c1c5cb711fafe4c345786129de9160e745cbfe71ff7a07f8",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/potato__shreds.json": {
+      "bytes": 2828,
+      "sha256": "0e662ebedd9be68027c24b0bdedfaa120e4d61abfc57b083a57e03178584c521",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/potato__shreds.png": {
+      "bytes": 95261,
+      "sha256": "820320d92c534f125673824132fbcc9063c24f8877538d822fa3a9f0599d6231",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_black_bean__plate.json": {
+      "bytes": 2088,
+      "sha256": "d0aeda38d5a4d2bec416a3feec5afa0e0855523940be81872c2fd9c492b4c25f",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_black_bean__plate.png": {
+      "bytes": 68779,
+      "sha256": "0af58e3129d6566dede84154e8cd5d47e74a9c2acfecd8aa97a54d4ddc35eec5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__bowl.json": {
+      "bytes": 2105,
+      "sha256": "bd2d30a74b6c8cf82f03d3cd002405d2e65f99ad19c97bc0e64172fecc964361",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__bowl.png": {
+      "bytes": 68176,
+      "sha256": "10e5000bb42be9f74c18f459624be1755f34a5f5003a10dc6cd7f7918fcc8176",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__claypot.json": {
+      "bytes": 2117,
+      "sha256": "44248a9248ed702287c92fccb53ec6debc743a5c05b9e8cad0ad27ddea8d833c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__claypot.png": {
+      "bytes": 60074,
+      "sha256": "04b8954ea13a69f67d2d6aed5945b43f363f6c7ade15a1a27f3c61e1cf93ac07",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__plate.json": {
+      "bytes": 2054,
+      "sha256": "97bcc91c4bf366876e3ecb82c151b564b9d31703c3f19ae3c7f12735e997065c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_braise__plate.png": {
+      "bytes": 65297,
+      "sha256": "7e73a0cb97b867d168ea81bfcf1c5d52e939c644d021316a469c1ffdab72a5dc",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_chili__plate.json": {
+      "bytes": 2077,
+      "sha256": "1b9b7754de5d7586789f75fc99a268c33be5415787683d8045cef19ce61317d2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_chili__plate.png": {
+      "bytes": 69506,
+      "sha256": "ab4bdf954ea65d6e1fafb4a91587c18184f44443f7599f4155f92d010028a2a5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear__plate.json": {
+      "bytes": 2053,
+      "sha256": "20cff50f9082bd4426a6c0663b4d7f9d6a3fdb0adf9b3f07104550e0d3883e10",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear__plate.png": {
+      "bytes": 65572,
+      "sha256": "a5e78a49d7f33341a495f857f851bfcf018fe2aaec6ceebf1f0877264ef43ea2",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear_soup__bowl.json": {
+      "bytes": 2113,
+      "sha256": "23b03d14a8f2c3a9128b81e3a9cfae6214aeffaf2d266580310ee4facd3d0113",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear_soup__bowl.png": {
+      "bytes": 69075,
+      "sha256": "0a6ed43e4bfab938f0951c118b60bc40068c7f8c4e8ef3ac14477e67d7a78e86",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear_soup__claypot.json": {
+      "bytes": 2125,
+      "sha256": "cd4433fdd199da89f30188769722e9557b3f0a496b3a045cc6cfce4ddda0a2da",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_clear_soup__claypot.png": {
+      "bytes": 60935,
+      "sha256": "16c039d53d32c501fb435b4bd8d2c63bc069e62db6786159f070148329011e48",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__bowl.json": {
+      "bytes": 2075,
+      "sha256": "9d5c73dde3ce79e7b3c575560b0c6a862c822da2ccbfe86d09b22aecd95ad775",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__bowl.png": {
+      "bytes": 65482,
+      "sha256": "6718869c997e1a9127b2b77a2b8409a4822adfd743c52054d35c7809ce8723c4",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__claypot.json": {
+      "bytes": 2087,
+      "sha256": "79795a3e1dd859af34144ce277b48be80fb5ec1d00879a62d79aafe4ae21faa9",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__claypot.png": {
+      "bytes": 57929,
+      "sha256": "980afc23bb4f6b2b878d516bcfa9d66636268d8fe09897c5828cb1168ed0e5e5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__plate.json": {
+      "bytes": 2024,
+      "sha256": "2bff34303708a82896210e8715302dd2d96be363419d21d9bd8c45cd45ed034c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_curry__plate.png": {
+      "bytes": 65987,
+      "sha256": "cb3c4273c75e272f71be756437386e76833d089fe7d1f3999f5e31ecc44ba6be",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_soy_steam__plate.json": {
+      "bytes": 2064,
+      "sha256": "c777cf10436bd754b3df463be191dee9cc5baa0a9bbee4461539411e831addb1",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_soy_steam__plate.png": {
+      "bytes": 69888,
+      "sha256": "8f9974b5f7322c41b8d2014ff9f4172bd3c713303ae11fb45c856208a29f63be",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_tomato__bowl.json": {
+      "bytes": 2124,
+      "sha256": "f7681566c1b2a50dee4e00149b6988d3ff3c63f2fa87c3c3de4880d8ce66cb44",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_tomato__bowl.png": {
+      "bytes": 67357,
+      "sha256": "e0b6644ca254e0d702f25bcb771a79e039863944bcfcf3a8df89d846bee942c1",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_tomato__claypot.json": {
+      "bytes": 2136,
+      "sha256": "298b788cd54a9d986525ee50e13d7fbd0341c00827f71bd8a92556361055d272",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_tomato__claypot.png": {
+      "bytes": 59185,
+      "sha256": "986efae4b2c101c6e193f72a252f7c454dce0c053bac4576c27b0ecc34ee2c55",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_tomato__plate.png": {
+      "bytes": 66040,
+      "sha256": "4059bffdf1bf89f322823763e68e52764f554f09e18335a6d5fac5964f19d5a8",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_white__bowl.json": {
+      "bytes": 2101,
+      "sha256": "4c6356dfb26e2adcf7b0083d6ed0f03806d8b9476701cf7b1a19c1280ee6fd25",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_white__bowl.png": {
+      "bytes": 64275,
+      "sha256": "fac4e858672e51a099e93979d5dec47142553cc9ed9829b5dca2a1d625231222",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/sauce_white__claypot.json": {
+      "bytes": 2113,
+      "sha256": "07ae9f6045cb9ad430dbf968dc80e4260de2b460324bc6aa89ac08f8e0e2cae4",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/sauce_white__claypot.png": {
+      "bytes": 57424,
+      "sha256": "6176c67ea54e8c0e52a99c1efc8483c258cb388695287f86aab2584db1039416",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/shiitake__braised.json": {
+      "bytes": 2560,
+      "sha256": "aa9ec6ac966f5117567f39fae54678a059ea388a6ef94a24b1c89a27e8d2831c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/shiitake__braised.png": {
+      "bytes": 90177,
+      "sha256": "6bc402d9a99106e4241841e4bd361172c1aab5cfcfb4915d353b60cd6b43afb0",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/shrimp__boiled.json": {
+      "bytes": 2804,
+      "sha256": "abef4c4b671d1ebddb8e51121508884a34017537e27d8a8e7050315d76f8a4c7",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/shrimp__boiled.png": {
+      "bytes": 88808,
+      "sha256": "bb69d5a2aaa0574733b7b1578070b75b2f3e5aa4e219dd7b14f2bc1cdaa6688c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/shrimp__peeled_stirfried.json": {
+      "bytes": 2578,
+      "sha256": "396d0b93686d4ff737e45c261eeeaa369ae32bbf03ce88309c9675f2309d35ae",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/shrimp__peeled_stirfried.png": {
+      "bytes": 78646,
+      "sha256": "7f3fb4562eaf702fafe70c1a4a09599acf87360ba2daeba6866602c35608f921",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/tofu__cubes_braised.json": {
+      "bytes": 2562,
+      "sha256": "cb3d617c8d8cd43b455e651e217be7d150bd61187624b5e067c20e4eae3522d0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/tofu__cubes_braised.png": {
+      "bytes": 86815,
+      "sha256": "1c8709d460f0356acbe7f77fa375ada38b1b7ee66bda18bb54cbc4268219ef44",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/tofu__cubes_soup.json": {
+      "bytes": 1686,
+      "sha256": "b463f2cb4104e88e5b591619e98500a47cbbed16b5941de7302d374f73068708",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/tofu__cubes_soup.png": {
+      "bytes": 42569,
+      "sha256": "5e9bea07e972881b25476a5e335e3d206a872a12b6e237140b4483ec556cf611",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/tofu__pan_fried.json": {
+      "bytes": 2566,
+      "sha256": "3c8c4c2453f87c6b4a4ab4514cb0ea3ff3004da99fc4dbf857f5dbf0333eb5f6",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/tofu__pan_fried.png": {
+      "bytes": 73901,
+      "sha256": "54b759942bb464998391d6e3b4a60338ea57afd68bc75213408b399fe2e4532d",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/tomato__wedge_cooked.png": {
+      "bytes": 69875,
+      "sha256": "711837ee7012de71852e0e4a7244a6f726e1f82d5fc7ff9fe9ae58629b35cc91",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/tomato__wedge_soup.json": {
+      "bytes": 2566,
+      "sha256": "e54a770007cb2836769ea4d51dc6f7014c7a6147ca993d963cd848d8e2e44ab6",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/tomato__wedge_soup.png": {
+      "bytes": 50371,
+      "sha256": "4b4a6b2c2660067fd58a4d422ca1b1278468a2675f344f1a9958b387509e7727",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_bowl.json": {
+      "bytes": 2015,
+      "sha256": "12d0d68ef947354d92305b4ffa1106159f5ef19d200a1f3c7a31ad4e145dd01b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_bowl.png": {
+      "bytes": 141458,
+      "sha256": "241bffd6e2627f96b0e8c1f9d89c0d26c772caf9de2620699891292b1e916c80",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_bowl_shadow.json": {
+      "bytes": 1987,
+      "sha256": "3b578a677a393ba2dd6fe650c138a2569fb984e4888418dbb80cbdc66f691b72",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_bowl_shadow.png": {
+      "bytes": 20335,
+      "sha256": "6935a2811c055a5a744ebfdcf144dc9104034228c3e2f58e370d91fef190ecc3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_claypot.json": {
+      "bytes": 2024,
+      "sha256": "c72c36932f9c1789a480bfa0c1d3b73fbf1a1527d44445fa3933a7fdbd265965",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_claypot.png": {
+      "bytes": 154232,
+      "sha256": "2715038b544fa14a9be3644fbeef8720c27d0365d87e4c4a366a76d1718c1dda",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_claypot_shadow.json": {
+      "bytes": 1997,
+      "sha256": "8aaff46932e1f8485a88f2146bec6584c41a387d27fe3de7d00820a09cc5f2f0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_claypot_shadow.png": {
+      "bytes": 21564,
+      "sha256": "a419ec0f86fdac5d28c7e0efeb5c28c1381fd4ec690a9323017091b8aaea034f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_deep.json": {
+      "bytes": 1970,
+      "sha256": "9a90cd14f47d90e6134779d7c795500952d684e78f2d5f23407be91d722af8fb",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_deep.png": {
+      "bytes": 150572,
+      "sha256": "06be81c165ab0d7283f89a9a640abd1fc4eb861b06736d756426d21a5ba401d8",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_deep_shadow.json": {
+      "bytes": 1985,
+      "sha256": "573766adedbee6ddbc2a68791118ebb84d691ee561ff25325261467efed8569b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_deep_shadow.png": {
+      "bytes": 23176,
+      "sha256": "c3fcb8cef8d69ee8e91ecf2f2a8039fe349af92c504fca0c0ccaff4e649ff856",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_oval.json": {
+      "bytes": 1952,
+      "sha256": "021c3866c9bc060217f52fc885d7dc0ee5d8c7922f278222de3cd3bb5bf2c742",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_oval.png": {
+      "bytes": 131841,
+      "sha256": "ee7d9ec698dacf82cc341135c35129d92f893e5a6cde948a386d351c1057b6a2",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_oval_shadow.json": {
+      "bytes": 1985,
+      "sha256": "8a611703318496fec429b46aed3fa47fff7cd450e11955b508f65d0554bf02e3",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_oval_shadow.png": {
+      "bytes": 25794,
+      "sha256": "b83c1702b23d5333e1e93debd51f189d80df8926f31688e92cba282f36e59e5f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_plate.png": {
+      "bytes": 141249,
+      "sha256": "8823cb8e3b3da9bf250abac2362f1fb7320efb9abae2e55e55f90fc2270babd5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_plate_shadow.png": {
+      "bytes": 25917,
+      "sha256": "da80ec2521d80adf9cbdb5613ae506101f8e2b6f3745b3acb2a749dc6c68b164",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_steamer.json": {
+      "bytes": 2023,
+      "sha256": "159ce375c1d0187bff7ee51f4fd21743707e50b56ed58d227189818aae44a8a0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_steamer.png": {
+      "bytes": 206438,
+      "sha256": "fd2c24f64493a15a7ea5c6380998b719f3dbe22fcff2c68b4bf9e9d20d3c8bd7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/vessel_steamer_shadow.json": {
+      "bytes": 1999,
+      "sha256": "d50eeb2a25923bf4fb0f5e7bab8fc69c3df4fe494fff6cee58fa020f67eae98e",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/vessel_steamer_shadow.png": {
+      "bytes": 21495,
+      "sha256": "5e02becead82fc4f9efcdfb34b421247a291d04b097e0775f4920f5c1e00335f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/dish-layers/winter_melon__soup_chunks.json": {
+      "bytes": 2627,
+      "sha256": "0410d5f6aed8ef54b8c30a190d0681b86487c6f1de63866cb67e95c9bdfe24d8",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/dish-layers/winter_melon__soup_chunks.png": {
+      "bytes": 44429,
+      "sha256": "131e0c934c493c00fc83160315911598b2ed61236222dd9f59b8ea59a61b18af",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-clips/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/grok-clips/PICKS.md": {
+      "bytes": 548,
+      "sha256": "0f2f5c22dd50af162e6037730a8f50e9ee8d7ae913da4258a4f0f634d14a8af9",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/grok-clips/contact.png": {
+      "bytes": 527201,
+      "sha256": "cf460d78c5e0498bd81882ab2783871cc939be4c799ace0caf5d77c869082d48",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-clips/idle.mp4": {
+      "bytes": 1143031,
+      "sha256": "edc23cdb6ced55d70dd08c9bb81d147f39c71d3b763ce72803125e9d7676d693",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-clips/serve.mp4": {
+      "bytes": 1490886,
+      "sha256": "c2b288cecae802457340927bfdf8169a2d3f1448bdedc0389f062afb9393c204",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-clips/tend.mp4": {
+      "bytes": 1736358,
+      "sha256": "84944912b4b92dc00507a63e36375bdc4ef82c92cd418d32dfb05dcb5ebd2eea",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-clips/toss.mp4": {
+      "bytes": 1750942,
+      "sha256": "5bf7cccfda9ba1727869ec672eafa69d718987dcc514a71fc57269581432a4f3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-start/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/grok-start/K1.json": {
+      "bytes": 4106,
+      "sha256": "126ffe20492c6fb519b5ea4e39e150eaac2869d9314f7be467b59ea7ae2850de",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/grok-start/K1.png": {
+      "bytes": 617213,
+      "sha256": "6f1be640cf2e940a0254a6cbf012e7c0dc4cc39c2392b828d6294917d08297dd",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/grok-start/K2.json": {
+      "bytes": 8563,
+      "sha256": "ebcce48ee5df43f88648d4ae68d6ed41433595f1a77569d6ed9b187ffcab734a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/grok-start/K2.png": {
+      "bytes": 673095,
+      "sha256": "fe9c051c2a335e7cb3a9643420f4e2d4f51817ec80de6a4c2fd52aa95c699b2c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_1.json": {
+      "bytes": 649,
+      "sha256": "1665d332344e4e8099265f31e64260fa4b26d7fd61ce8caeb8ba146447151315",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_1.png": {
+      "bytes": 8625,
+      "sha256": "066b85d118bc5eff78dbc8901672f9c07323324ff825ca8738f6cdea9094b269",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/badge_1.svg": {
+      "bytes": 503,
+      "sha256": "95a39b39c3f90e66d3656c92826e74bb73c3219225f854053128b661c6c4784c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_2.json": {
+      "bytes": 649,
+      "sha256": "db28539f7303443840d4fdb1811c0978187f834cbfff4db8ca777f509f81553c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_2.png": {
+      "bytes": 9589,
+      "sha256": "f7ca0f049ad41c0cc1086ccb8ede89a8c1a1a6a51170ec5b27113a430faf92ac",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/badge_2.svg": {
+      "bytes": 517,
+      "sha256": "20c46be828719eadd1bfbb921429ff878b813fc83373f45d320eb42b8958010f",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_3.json": {
+      "bytes": 649,
+      "sha256": "c30375f9959cb07328c7c8e20f62534954bb1a607eeee39e969878c6969e517b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_3.png": {
+      "bytes": 9492,
+      "sha256": "e202345a055b8338bb74a5fa751334880efe3ad999914c686da7d40fbaaa7986",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/badge_3.svg": {
+      "bytes": 514,
+      "sha256": "578cdb9d5461e2d6e6bb83a66d2e10152485afdcc503620591bfb00bad442024",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_4.json": {
+      "bytes": 649,
+      "sha256": "278f5862ff7bae3b7be0b17a053df98181e6b0f2276924d9f711e8a16eaf84a5",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/badge_4.png": {
+      "bytes": 11272,
+      "sha256": "71e699c7029846c5b787ea87f500be1cd70790d2e337d2350bc73085a9214dbe",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/badge_4.svg": {
+      "bytes": 684,
+      "sha256": "733e67f2fc491cfe8d3af9cd09826dc2dbde42127833ab41a4828548ae5b1b01",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_focus.json": {
+      "bytes": 1512,
+      "sha256": "00324d8478cd448d57eb0a7fe9d4ffa5f19a7a35721333689c91a5264bc8d126",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_focus.png": {
+      "bytes": 31268,
+      "sha256": "335d8512bf4672ff207aa3fbe31a88e1c7d2a609b7eb82528928ef8e7be04ff7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/face_go.json": {
+      "bytes": 1522,
+      "sha256": "ea3b4828acc39345a29b6d9d9cd4510fa65178997f7ab0290918b6dcadf85fb5",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_go.png": {
+      "bytes": 33511,
+      "sha256": "a9b846c8358d88de5cc6c8e13756a1a070b87650e2b882f066771a032f58fb0c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/face_happy.json": {
+      "bytes": 1456,
+      "sha256": "5c82fc9aa56086b5d40b4e4106b945acd24e324b8a8897f3ab7a2f9c2bcd3ea4",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_happy.png": {
+      "bytes": 32610,
+      "sha256": "3d02badc86c2df7d11ce69336e5cc91c5dd8809d4fb4139076a6d9499aab9532",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/face_oops.json": {
+      "bytes": 1489,
+      "sha256": "9a08ff681554f853911ac501ee2db248ab64c87ba5b440dce937a9f73b12ebd0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_oops.png": {
+      "bytes": 32227,
+      "sha256": "e2ff01147265699a6862b702e8b01541627c9e5e9ccb4fae4053314273fe0dd7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/face_sleepy.json": {
+      "bytes": 1450,
+      "sha256": "a6fc3d7ee44242b004180ae99485e034238fce25f7e8820e17543cc48ddc8b7a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_sleepy.png": {
+      "bytes": 33056,
+      "sha256": "e4b36b9161d005ecc85d0e1f384272399000016569aa850f680cdb56e323ea84",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/face_wait.json": {
+      "bytes": 1474,
+      "sha256": "e52536541bcebcfd5b9819e634c96dbc0c61e21350a4b253d83cab514f41e98d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/face_wait.png": {
+      "bytes": 31742,
+      "sha256": "87ef11a211a8cdaa71a5b48bc20887c66ce426806d240e92a5328d0067db91ae",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/heat_high.json": {
+      "bytes": 672,
+      "sha256": "a1fd9dba8a41c8e56f91d73951091cb6a36684889efe17d9e7018e29f0c36434",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_high.png": {
+      "bytes": 2154,
+      "sha256": "f0e46b5a9750c8cb38adfb452ff943cae02422fff79f071fd1bea4cb80ab176f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/heat_high.svg": {
+      "bytes": 775,
+      "sha256": "acf21845e2550bcb4baff8286767cfd8bf0fdaf07c40ff66ce8604072f64e497",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_low.json": {
+      "bytes": 670,
+      "sha256": "e4b591c992d49882cad6faae21edd5032463f4b8ab6d23e7e8f02bb0cb0fcec0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_low.png": {
+      "bytes": 2526,
+      "sha256": "b42a0b8c5d2a93576bea500105fcb8d5c4b81f6b8e49e8abc6d7a5f89aa4fdfa",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/heat_low.svg": {
+      "bytes": 420,
+      "sha256": "03b49e917dff3106839e2e9e468102617d62c06c29e060821edc0e8de2cf90ef",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_mid.json": {
+      "bytes": 670,
+      "sha256": "24ebb216f53fa8d0423879932bf057e3ea699317ab6f030193dcb72606179e25",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_mid.png": {
+      "bytes": 1734,
+      "sha256": "213646d93627cbd0e209dafcde7e491a72e14ce76f3fb8737f2148f29b65baf8",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/heat_mid.svg": {
+      "bytes": 577,
+      "sha256": "7cfd48fe1d001f3440e37378e15ae196aa426e7aa1f0cf06979a393ade2d2655",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_off.json": {
+      "bytes": 649,
+      "sha256": "c47cc2889a0d145626b2f2c2aba4bc2b949f1bf52a5493313f883d67bae7d954",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/heat_off.png": {
+      "bytes": 2406,
+      "sha256": "339f1bd7a7509b4cbc6e30fe0204bbfb361e83a20089795a9e6beb13023df3db",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/heat_off.svg": {
+      "bytes": 365,
+      "sha256": "807c4c098a04c0a9027f6bcb787cca85ca9c029d75ad3f368dfa4698697ef954",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_blanch.json": {
+      "bytes": 659,
+      "sha256": "47b71f039fe6d35b112565b3d7682cef4fbaac833aec385cc756ea834dee353d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_blanch.png": {
+      "bytes": 2352,
+      "sha256": "5732ae7f86722a125fe6bf66a448e493c1ae58472ae807f453295ab6d901829a",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_blanch.svg": {
+      "bytes": 453,
+      "sha256": "13a09af8188dc8dc6a0b05e921a72aa8d65b8903124f6e86bc9563f1cc7e9246",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_boil.json": {
+      "bytes": 655,
+      "sha256": "696b22cd5cc5a8ec3de51ec7a9dfd5a246035f15065618d71e2cbdf07ec902bd",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_boil.png": {
+      "bytes": 1960,
+      "sha256": "9e93bc601751d12cefa1c5d86af695f11362426f543a2c0c02138f6e9128e9a5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_boil.svg": {
+      "bytes": 478,
+      "sha256": "08c3c01ca8439dab96a1effab4b79d6c836c7c8d2f89507721d32eaf7477e55a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_braise.json": {
+      "bytes": 659,
+      "sha256": "ec523f74ea9fd6824a409cb332c8965bfd3af1afdb595357ec9977c41b94aea7",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_braise.png": {
+      "bytes": 1469,
+      "sha256": "1a8a96a5c50ad22268522f4bbe47fd37d036177310622026eb6d0ca86709ce7e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_braise.svg": {
+      "bytes": 404,
+      "sha256": "73932ee867f8117292ce540530636cc2573335827189b7dbcd6787bea779c23b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_cut.json": {
+      "bytes": 653,
+      "sha256": "19fd7684c08ad37dd410a1b3650b58f14523a07fce67e3fdd9e4f4dccda67fd2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_cut.png": {
+      "bytes": 1748,
+      "sha256": "438947740eb84f0d8043e0d358155923637a8f4a9b45e076c85e61096e32e834",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_cut.svg": {
+      "bytes": 345,
+      "sha256": "1648dcdf01e9ed876849f88b6cd4518f91ca328034ee23d25795442b07c45644",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_fry.json": {
+      "bytes": 653,
+      "sha256": "993e71d9f224e4aade15ce2222b3fec5198f23b9b7058eb0aed2adee69676409",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_fry.png": {
+      "bytes": 2425,
+      "sha256": "8d8b245f4f24af7c95a8b71720568c3c0e70c0e696adf37df53307503bdefbf4",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_fry.svg": {
+      "bytes": 524,
+      "sha256": "c4507dd98c8188bbe63b7a5809b96ea566ae2a8ae4e6be8e703dc0a962e0efb2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_marinate.json": {
+      "bytes": 663,
+      "sha256": "02c75abc6b75bdafaeb88889c19ec2f07f3318eb7cfb68fa1d4ec77627edb0a7",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_marinate.png": {
+      "bytes": 2578,
+      "sha256": "2162a4a4850d62e654eceafeca0b061100f5029da2755c1aa9c0cff6f0dafd90",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_marinate.svg": {
+      "bytes": 521,
+      "sha256": "c4694a4c5eb8da16057977deec2a93ba91076837388c69623c08343a7fa33543",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_mix.json": {
+      "bytes": 653,
+      "sha256": "67fa2b08f90419c91153df7586ea5e2f70942875efa39d834f768d26b1923220",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_mix.png": {
+      "bytes": 2364,
+      "sha256": "449e96ab59fb266bb2b925acf186823af321b4f1ce9a1f8e30eba1a181a8fc4e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_mix.svg": {
+      "bytes": 407,
+      "sha256": "dc016e972d612a33fb01ab9e3308cede6a087dd6d2c07e67d9acc6583a685344",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_steam.json": {
+      "bytes": 657,
+      "sha256": "43a2dbb3d6c03413a5ad9782009ea6cf0c24078c061105639df8d922d5416b5b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_steam.png": {
+      "bytes": 1528,
+      "sha256": "c99c55dfa04f43bf6f66c39eb09941d366f1ccdcd188905677c5fd67cd260940",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_steam.svg": {
+      "bytes": 457,
+      "sha256": "2f17225a60a3997f73d60c8626f105da15fb945f9ff0cba08ba47f4f78a3393c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_stew.json": {
+      "bytes": 655,
+      "sha256": "f92a02e7912f753d1a47bfaf7d332655728c2c300ce7eaa5d7a85615686d897a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_stew.png": {
+      "bytes": 1838,
+      "sha256": "496f78e21b20c9d1c152658b59bcb33102033beb0ad1cb876bfe5eab6d185209",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_stew.svg": {
+      "bytes": 425,
+      "sha256": "2efca26e62577e5e334f58af7a5c99529cfe7f71c90cfc9addee917f299a2b19",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_stir_fry.json": {
+      "bytes": 663,
+      "sha256": "bc1ba94831b5aa4145b8e5d0d77c83342e3e26c961848990febd8505358fe9dc",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/method_stir_fry.png": {
+      "bytes": 2095,
+      "sha256": "1152b77abcd7c3ecd19c85b8ab44ec63e75cc349015d0c3a2e4d6bdf53ab9e03",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/method_stir_fry.svg": {
+      "bytes": 452,
+      "sha256": "9de5263652ec2221261a0d268cd6848e5fc0c2804514d0d29354ddba077e3b4e",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_lantern.json": {
+      "bytes": 655,
+      "sha256": "8c69a227d02891bef34cd5978dbe30f028f7574de7b9d83422e6929686da57ea",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_lantern.png": {
+      "bytes": 3022,
+      "sha256": "dba199c79c5ca506cea4222a1473ebf9b930a708e759be3fbbddce20d0c911c7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/ui_lantern.svg": {
+      "bytes": 475,
+      "sha256": "04cc36a5aaa81dcc70d2bcbbe2f3aac45512b803297d5c1e3fc98457d7e15813",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_lantern_dot.json": {
+      "bytes": 661,
+      "sha256": "14e22e4fa4c54e39b047edbbd634791aa02be7714059f83529af933434550af0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_lantern_dot.png": {
+      "bytes": 1806,
+      "sha256": "a9c604e4accb11306c5f25f2ef5efe48e87792795bc59348910f4202b6275670",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/ui_lantern_dot.svg": {
+      "bytes": 474,
+      "sha256": "7f9e5c85c67464e70200f6e1ce5288afcf3c616199cb91fd522b5b970989f5cb",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_stamp_done.json": {
+      "bytes": 661,
+      "sha256": "617cb30a37f3157efec8279c05388d845950e959ac8b1a68c470e83437398c27",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_stamp_done.png": {
+      "bytes": 13530,
+      "sha256": "3a7b27132dcbf038f8d888787f3fc55364bfd0a6f5af920ee08688390e7b314e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/ui_stamp_done.svg": {
+      "bytes": 542,
+      "sha256": "c80526fdfa9125bb1703d9326f7df8d51eec175d0719e721ca643c41e5e7012a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_star.json": {
+      "bytes": 647,
+      "sha256": "d426fe27bf01683de1da8ad757f2856c2ec5c19cf9412cf70d1fabe633c5abd9",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_star.png": {
+      "bytes": 1069,
+      "sha256": "f61cfe2dd0d1f58286b9c4315c71bfd14874995078e4c9ffaecf8b18d43bfef9",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/ui_star.svg": {
+      "bytes": 285,
+      "sha256": "a106ba805d2513f4594528a3d9313663d932478d8550f0c7fe796960b5a32422",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_timer_icon.json": {
+      "bytes": 659,
+      "sha256": "dd358b8a062aea6d4bc5131b28d88c5349f1ebb504f8aff5f70b6c4b7ab7ed28",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/icons/ui_timer_icon.png": {
+      "bytes": 2050,
+      "sha256": "9ac6660fd0a54a894481d4fb159dff4900e1fd5a0025e8a5f80669094d46ccbb",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/icons/ui_timer_icon.svg": {
+      "bytes": 350,
+      "sha256": "de84d3cb82996fdcb217878db94fae37283880b02eb84c84c744e9052d655d33",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/_contact_40px.png": {
+      "bytes": 226686,
+      "sha256": "f0036ec3a9d84116d480d7555f5e968fefcc2cb0a3e841c563526f77b91aa589",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/bean_sprout.json": {
+      "bytes": 2226,
+      "sha256": "707b4c63f21e6c40563f32b26d98002a99f3b6d639e26144f043b5cfe7c662c6",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/bean_sprout.png": {
+      "bytes": 25271,
+      "sha256": "a8f87fe1648a703b1d2305780f460ba593448fb99a2495d99b61b92c5af4f03b",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/beef.json": {
+      "bytes": 2190,
+      "sha256": "920a10e4a00804f5aa1bcb6095787b5af187853796af1017e2517fa86727580a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/beef.png": {
+      "bytes": 21708,
+      "sha256": "58d189d4dba4ccc37b04e81c951057914146b4dc747961ff39b506a8ceb6a6ea",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/bitter_melon.json": {
+      "bytes": 2228,
+      "sha256": "a9a54808f1380e034abdea5e8db15e847212da4429ddb11f3d07d0e90dd10291",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/bitter_melon.png": {
+      "bytes": 22028,
+      "sha256": "52fe6eab7eae686708a9b69d9ce371e1c45ec50c4b8576b0454d760cd5905d86",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/broccoli.json": {
+      "bytes": 2226,
+      "sha256": "30ee870b6219f1b9430096d23bd1566e6d1a895b450e311da9f0856fca2c4536",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/broccoli.png": {
+      "bytes": 25362,
+      "sha256": "3a51a9a652b9c1168049cc636bb1128a028e0d0d47ea2332ac3c631fc0c1690d",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/cabbage.json": {
+      "bytes": 2207,
+      "sha256": "464985f0d50be4e538676469f227ee3d2eb964cddda88d4438883c64c45aa308",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/cabbage.png": {
+      "bytes": 30121,
+      "sha256": "b10a83951b9f528d30b7a53986718ae5d1281bc2abe418eaf8338705812b2e2a",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/carrot.json": {
+      "bytes": 2197,
+      "sha256": "dc66aa95e444ca3d57721970747157d7982692114a34d8ce0c4efe0be3af61f6",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/carrot.png": {
+      "bytes": 15935,
+      "sha256": "44d17f417c8f13dac071cd93da1e7656a0398f4a581a1e9853bcf8463add8cf6",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/chicken_thigh.json": {
+      "bytes": 2188,
+      "sha256": "4f0b159e6ed622c18b22436bfd13e9f023610ca849026dd6e8ee53d36979ddb2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/chicken_thigh.png": {
+      "bytes": 19195,
+      "sha256": "cec97bd7361240ee7efc4fa64cf07e8dd65a2f0fe5356ebbf4c733eb234a6ce6",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/chicken_whole.json": {
+      "bytes": 2277,
+      "sha256": "e208af0b79b75a6bdbd0124074d5ede7c4d0733eacf1dad4eb3d5430b97e1188",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/chicken_whole.png": {
+      "bytes": 26631,
+      "sha256": "ba508218f4fcfb314883b5538b5d1e6c642a26d53e17ed4644eafd3f67e3e406",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/chicken_wing.json": {
+      "bytes": 2226,
+      "sha256": "3b816901b69eda9caf95656b84c5d38895b459d8daf60e2f9ab517807475efbd",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/chicken_wing.png": {
+      "bytes": 16556,
+      "sha256": "4e00b4031ed82b0ecd87eaa70ee5a452acc1adcc2d458f392e6d59c073102b62",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/chili.json": {
+      "bytes": 2174,
+      "sha256": "4d01eee1971297aa9a3ec187320cfb420f9cb8577e8bb645801192cefce928a0",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/chili.png": {
+      "bytes": 12230,
+      "sha256": "177f6020d94dd01c25168791a2ac91640f072cb08a65684c8baeea98881fd5a0",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/choy_sum.png": {
+      "bytes": 23200,
+      "sha256": "bd3ced62fa14c0e130ae92d00904906016e2c1075d1553257e461741cb212d87",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/cilantro.json": {
+      "bytes": 2199,
+      "sha256": "c0d0c135b6cf85fc481505a25251af754617029ac0d1344243a2aee207f04a74",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/cilantro.png": {
+      "bytes": 29210,
+      "sha256": "c0ad23d7fa9b41533359deaede157033e5d29a98be51007b045a62f9feb72641",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/clam.json": {
+      "bytes": 2181,
+      "sha256": "c63d08916efabb5988a77585995902e129986c78f819ed32849328aa74f5a342",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/clam.png": {
+      "bytes": 25019,
+      "sha256": "e2df06a12fe060cd8121be27b17bff5278cd470094a3cd7f748947cc1c37997a",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/corn.json": {
+      "bytes": 2183,
+      "sha256": "952248f97184d425c7951b106e2643c6711b91651ef34f60deb19b5c521bce46",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/corn.png": {
+      "bytes": 24057,
+      "sha256": "2c5b79319d4103b0669af8da3522b66e73628388d1b8d9292c9a85cdf08bf6ef",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/cucumber.json": {
+      "bytes": 2200,
+      "sha256": "d182f7fc07ce9bad139ba80598951ce4b47a0c40bf889350d62e878a683e008e",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/cucumber.png": {
+      "bytes": 15176,
+      "sha256": "f4eaaf20d67c1f3a518d0d4a73b53177a8900169ff9a7efec2128b90d76bcf0f",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/egg.png": {
+      "bytes": 18076,
+      "sha256": "7227a4e547b2266947c799b38dda4ed41d1d5766db0a6c0b3b933d1542fcbf57",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/eggplant.json": {
+      "bytes": 2194,
+      "sha256": "c522314baf6e01fa41eab9053aaa2de3a4ffe19c2a453806c4131e53c68209dd",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/eggplant.png": {
+      "bytes": 17063,
+      "sha256": "cac9bfb90b943d93cf9daa4f41819ccaf075807cf0148826dfffd4b00762c5d5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/enoki.json": {
+      "bytes": 2212,
+      "sha256": "755ec9ea00f6e297e51253da7fba8ce16a6b75c90686a7e0f539817391458aa2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/enoki.png": {
+      "bytes": 27031,
+      "sha256": "9933ddc6fb4ba2bc44d49ee3ffb633a5549706a5a139ea87a1c7839b5eb42c5b",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/fish_fillet.json": {
+      "bytes": 2265,
+      "sha256": "c343c0cc82e4fdc7a32c1ccdcc6d649f26aebb774be32bd9f83f3854c4884e5f",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/fish_fillet.png": {
+      "bytes": 17630,
+      "sha256": "85ab2acf28c5acee3081a166623bdd7d90eb3eccecfbf5200eb149ee413e8158",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/fish_whole.png": {
+      "bytes": 16747,
+      "sha256": "0f5b001be5f7dc59321e0045706bcdff18177f6c93bc31e52144442bd9bf85d5",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/gai_lan.json": {
+      "bytes": 2235,
+      "sha256": "59671ebbf47906dfc4db569293d077db0cf2aed75142c4176f025aa5fc8a4f84",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/gai_lan.png": {
+      "bytes": 28577,
+      "sha256": "45a229d1df481971275006b74b1e0410e765687801a8a09869e78c4ee1ebea99",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/garlic.json": {
+      "bytes": 2167,
+      "sha256": "f73f14bdd3eea688d9ab2683be91075a2dd4c8e874c1cc9079a3104d549f9f2b",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/garlic.png": {
+      "bytes": 20484,
+      "sha256": "9bbc3f0cb879d724750524c3469833adc0c131ba7b1c492a41d2574ac0d91104",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/ginger.json": {
+      "bytes": 2191,
+      "sha256": "9999c6768620aedbf31e98273e29375e96cbb37070f40753dbb7cb57cda49e49",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/ginger.png": {
+      "bytes": 22160,
+      "sha256": "e526d660088e561611a7576e6a16c30cf37c551087507d011602aa051136249a",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/green_bean.json": {
+      "bytes": 2199,
+      "sha256": "9f0ccfdcfaa8878461ff3ed7b393427790c5844b283f3d8371b5541a99d95f39",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/green_bean.png": {
+      "bytes": 21934,
+      "sha256": "c77b5a1a8269fc9e557cf7257e839d9a80c31c2e4c6ac3cf84fe3097ca577b97",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/green_pepper.json": {
+      "bytes": 2210,
+      "sha256": "03ad484e77adf8f1e7156d7208fb7db028e437eab0b3cd651e45cb15e46d7fc3",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/green_pepper.png": {
+      "bytes": 24379,
+      "sha256": "6d8d266f61aec62051060d410e5d6fdfc6e51e598f936bd7c6d5a3df8288e2dd",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/lap_cheong.json": {
+      "bytes": 2247,
+      "sha256": "db7bec5c81e1743ad6376e07a6501a5b9c3baeafb43741af372f443a6c6593ba",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/lap_cheong.png": {
+      "bytes": 24431,
+      "sha256": "fbf65f42c3af899652ee839947dc40cdd3f941654b3b153e163fcf31cba3a9ac",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/lettuce.json": {
+      "bytes": 2222,
+      "sha256": "313eb70c00262982231599090fda2ac4300bc91b0957d07d758b3c8e9ed5b13c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/lettuce.png": {
+      "bytes": 33678,
+      "sha256": "183aea3228cdfe3714a4601a81311f7b078f21d21f6259c32f80a44ad4573a6c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/loofah.json": {
+      "bytes": 2200,
+      "sha256": "a1628a1a0ad49a27b6174827548fe5ed868a2ee679d370f8264566f88b558a5e",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/loofah.png": {
+      "bytes": 17690,
+      "sha256": "c91a4660306a080f464d3e0726add70516c63ab33d6d4e8882530261542df8d2",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/lotus_root.json": {
+      "bytes": 2243,
+      "sha256": "c059923b855b8904361cf4352bd8f76e2a567d395c658a406e5f819eb663aeda",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/lotus_root.png": {
+      "bytes": 25167,
+      "sha256": "0a388bfe46eba248ac28b9763793fc098cd7305f51e732abc17a82f079fa6d35",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/napa_cabbage.json": {
+      "bytes": 2253,
+      "sha256": "b19a8a9b603b69d1d192bea124b8397b74d65e2763249492152e90141e932c53",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/napa_cabbage.png": {
+      "bytes": 23847,
+      "sha256": "d714f2adcd8c63e39d1ed34199ce24b64cfaaa91a141f8c7677a28cf463b24a2",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/noodle.json": {
+      "bytes": 2196,
+      "sha256": "7bcbe1e74b23d87b98a5fb540d56c9eda23283bfdbaefc166f25e0628655a98c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/noodle.png": {
+      "bytes": 32472,
+      "sha256": "d87698f8a71035fd827109cb106f409bbc5bc328bbd483c28158f4c1dc1148be",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/onion.json": {
+      "bytes": 2167,
+      "sha256": "88ad9d3f45ce7ec057f0ac0c7c100ef49c294188a34bc546b9b7656488602073",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/onion.png": {
+      "bytes": 23039,
+      "sha256": "3623ad8f0457f803241f182827f4dc78a67afcd217e59d099d8ddea489660629",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pork_belly.json": {
+      "bytes": 2219,
+      "sha256": "4f6318d27007461b58e01e9262fe089585109c6488cec686958d1f49189dfbab",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/pork_belly.png": {
+      "bytes": 20422,
+      "sha256": "245123a5ab9a40987b1e6bf0179292f15c62a330dfc61a1ce07ca4c583524bab",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pork_lean.json": {
+      "bytes": 2183,
+      "sha256": "2ebf485f9a255ffc95e85304c8f6e5e30f04481458cc74f2b0b5d391d2e08cc5",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/pork_lean.png": {
+      "bytes": 18003,
+      "sha256": "73739df75c66e87cbd3c80f22eb74de025e8413a7846b5b324a4b8c5ae82c6b7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pork_mince.json": {
+      "bytes": 2204,
+      "sha256": "a4672f6b4acf2a1a18d190d884924431f42e22c7f09299e759f004252b7494d1",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/pork_mince.png": {
+      "bytes": 28551,
+      "sha256": "2e5df51353658c562763c3d902611fe4c0affb68a3312ef4d27d36b7d7cccab4",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pork_rib.png": {
+      "bytes": 24466,
+      "sha256": "8008968de3304b07c7e60f9b273bd14d0d7ab4aaf2338180339148e75f6b8c26",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pork_trotter.json": {
+      "bytes": 2232,
+      "sha256": "edd6e25caf2c162dfc08dd1bac38b2b2146d7c3f1a2b0eb72737fe9df4062bb2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/pork_trotter.png": {
+      "bytes": 20968,
+      "sha256": "e9208d4d7d18b37f9a5b3f854a23ed5bfc08b59eedcd8de354653b8bb9c60665",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/potato.json": {
+      "bytes": 2169,
+      "sha256": "3ae5f3b8c223cd1b812764c3462002bade96e255bdcdf0cdca1c28dedec61271",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/potato.png": {
+      "bytes": 23038,
+      "sha256": "d32a92229db8401e5f8eebd947708ca81d88c2d4663fba2b6066bf7885fcb06e",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/pumpkin.json": {
+      "bytes": 2182,
+      "sha256": "e108fa0272515471552a0bbbf8ef8eae56a9af0f299e7fb0eaafb29eff7de947",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/pumpkin.png": {
+      "bytes": 23482,
+      "sha256": "72581d9d8a7632603f1af227558ae9abc06c822fc1e08507534224f3e4976d34",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/rice.json": {
+      "bytes": 2262,
+      "sha256": "d7b6579cef6a431cc1999b6355113c94366dc874ae647391a08f36da556eeaa9",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/rice.png": {
+      "bytes": 23492,
+      "sha256": "e2bd788a12ef03acd3f22a9aecb3baa58f5456c91d9faec5d0951bcba40708e1",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/salted_egg.json": {
+      "bytes": 2233,
+      "sha256": "994fe914912da471c4688bed74ec15c384060e351216ecec7d73064ad126e5c2",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/salted_egg.png": {
+      "bytes": 24950,
+      "sha256": "7a085d8b9ce8b98b067fbb977e5fcbfdb5ba40ee13cddcf034607013ff530202",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/scallion.json": {
+      "bytes": 2275,
+      "sha256": "39f44868fa011318009281330f16b12a245450c4f394a3237b42ac21b7d66237",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/scallion.png": {
+      "bytes": 19704,
+      "sha256": "1115ee30eac475daf40b4be210d5247b4434cdeb1ed815f7b7663a4ef70b32f3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/shiitake.json": {
+      "bytes": 2183,
+      "sha256": "0773f1c6c5a015bc9b2fd26c4b477b2c2e935cb699fd4e65cc9ab3cdfdb2bce1",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/shiitake.png": {
+      "bytes": 23751,
+      "sha256": "2c67f1dedf13d73cb6d3ea1acafc42ee8bae2fe6028e53a525b133c11eeeccae",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/shrimp.json": {
+      "bytes": 2241,
+      "sha256": "51cbe2e449554c650bf9f6ece72b45b6739e4b4bcf6a162201200f502f2fa32f",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/shrimp.png": {
+      "bytes": 22279,
+      "sha256": "35d23dd2ceb38123cf2d2bc907e5ac3a6729213cd29f9d71105267b96b823413",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/spinach.json": {
+      "bytes": 2195,
+      "sha256": "b0e627c1f7ee0ef04d329c1dbb48af2c84a0272b43a840b988a20265239ad3e5",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/spinach.png": {
+      "bytes": 23215,
+      "sha256": "7b86163d74a95575bcb33d9fd2c90b1af2be64ddee7f0dc889d5514cc4e01a12",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/squid.json": {
+      "bytes": 2240,
+      "sha256": "05bf292ff94d05e340621c1e3e04f49070f3d3eca65d80a584fccb72738ec79a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/squid.png": {
+      "bytes": 19887,
+      "sha256": "03064cf7b1aaaf9b30f869f4a1ef8af0a42ee11ac1f6f9c2948d6c5ea941bca7",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/tofu.png": {
+      "bytes": 18383,
+      "sha256": "46c520a6542c3259ebe68ee57b5c957e61d9429cf64a0d57fd8d16a280e44e53",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/tofu_dried.json": {
+      "bytes": 2204,
+      "sha256": "42139a471e48080eb80e64fe2bcb5b307fbd72b18324ec8f7fc3b209627b1feb",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/tofu_dried.png": {
+      "bytes": 28556,
+      "sha256": "1d762c3f38f1ca036046f55a989ecbfc2a1ae331317d2efa59a27c3afeeaf841",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/tomato.png": {
+      "bytes": 22556,
+      "sha256": "74b36c681deeedb4a38bdec2556f07999c43fce0d4a2eb14752734a7dd55bfe3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ingredients/winter_melon.json": {
+      "bytes": 2298,
+      "sha256": "1ab3c9bfb745aebb59f8fbc6df723a2e802b31ef89fc8bfdfcfdc43e7c3be34a",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ingredients/winter_melon.png": {
+      "bytes": 23811,
+      "sha256": "05451df0c2e3fa7555884183837889c0f7cb717cf101e766c93ce827d77ac023",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/palette/kitchen.json": {
+      "bytes": 1714,
+      "sha256": "4137cc96227ce409c2102009721cdc6a2a55e6955f5421af9dde952e4402922d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/prop_bowl.json": {
+      "bytes": 1344,
+      "sha256": "d7f284dc737bcb56f05bd5c90a3920d43e88d952b17a33203310e9ff049f9c54",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/prop_bowl.png": {
+      "bytes": 13141,
+      "sha256": "c004b413cbd722f603075df687d1ae188c83882c648f0900b04417443af8bdff",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/props/prop_fan.json": {
+      "bytes": 1387,
+      "sha256": "dfd1ac124dcf27ff3912e2b2c9241765b3ff306abebc4a221885db3e0511bd8d",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/prop_fan.png": {
+      "bytes": 15834,
+      "sha256": "351904e5139fa3f4e5552c55c68bab72c553085afd7d317fade17c5679cbbc37",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/props/prop_spatula.json": {
+      "bytes": 1387,
+      "sha256": "b6d0613f9bee3936e634529f69f8b38c965ee862e55c32094ea64b8698950299",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/prop_spatula.png": {
+      "bytes": 8479,
+      "sha256": "9baaa948e8e8ba547d104dd3970655df446f25bcedb48792a15ffbdc21f2c63c",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/props/prop_wok.json": {
+      "bytes": 1363,
+      "sha256": "e4e2c7cc71d7697b2f9de50dc9122b008524e47048a15fc7c1213813d7bd9931",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/props/prop_wok.png": {
+      "bytes": 8198,
+      "sha256": "bb9b3c48e5babccd5c3ddcabd1403e8ef2b213b47d0f8bd2afcf3ee9827db7ab",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/reference/nabo-idle.png": {
+      "bytes": 32117,
+      "sha256": "c63575691d15220e8d6fafdab911a10767a5fc1c13925992dbd10e3a5e93d3fa",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/reference/ui-mockup.png": {
+      "bytes": 1462900,
+      "sha256": "e3580dd81f3f798ff90fb12b2ae1d0155e26d6a1b2f074568465c38e08c5ddc3",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/reference/ui-mockup/README.md": {
+      "bytes": 505,
+      "sha256": "1e907dc2515370c2acdba638596244a266a7f6100f64c4f70c43355e0b4bd391",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/reference/ui-mockup/archivo-black-latin-400-normal.woff2": {
+      "bytes": 18604,
+      "sha256": "25f33e61cf995abd6be62931cf03bf427286259177b43618cc410ee0157cfd30",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/reference/ui-mockup/art.js": {
+      "bytes": 12527,
+      "sha256": "9c26d4bef307101c126e4a1e6dc9af25c17282a6fce225ee9abc5a5dc633ad4f",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/reference/ui-mockup/index.html": {
+      "bytes": 21733,
+      "sha256": "86e1f2f470cb43952ca801581d3c7284c2657f008730486c2172cb5fe9a77b86",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/reference/ui-mockup/nabo.png": {
+      "bytes": 653439,
+      "sha256": "6b2ca691e86535ac1b4406a440f012cf9bc463a5bf8ce483ec073b7f63f63118",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/style/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/style/style_board.json": {
+      "bytes": 34580,
+      "sha256": "05a2d8b6e543394e1bc08d47212fca2175484f8bb1daa3ecf1818c22a440158c",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/style/style_board.png": {
+      "bytes": 301240,
+      "sha256": "420740b0b2d31081f749bf222a182c28392ff45826c04078fa13ef2330e5ab27",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ui/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ui/logo_wordmark.json": {
+      "bytes": 759,
+      "sha256": "155138b71911c55161e4492428bdc63e07311177ca4255a206ef052b2b0bfbda",
+      "normalization": "utf8-lf"
+    },
+    "game-art/kitchen/ui/logo_wordmark.png": {
+      "bytes": 13930,
+      "sha256": "e3862b60e3d5692e6915645947e9a63cfa47bc08c851f2698f823428023eab09",
+      "normalization": "bytes"
+    },
+    "game-art/kitchen/ui/logo_wordmark.svg": {
+      "bytes": 4300,
+      "sha256": "5b80611b995230d823e9301224d1e413bb8d3efa03f695374ec972d2fa0128a9",
+      "normalization": "utf8-lf"
+    },
+    "prototype/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalization": "utf8-lf"
+    },
+    "prototype/README.md": {
+      "bytes": 7735,
+      "sha256": "41766554a3314f0e05b10461c814282591bdd3819694db702d8a31db0dd18582",
+      "normalization": "utf8-lf"
+    },
+    "prototype/app.mjs": {
+      "bytes": 13217,
+      "sha256": "7013e44949ea3a19754146835d9312fe452e61abb30df693b31a59b581570de2",
+      "normalization": "utf8-lf"
+    },
+    "prototype/assets/C.png": {
+      "bytes": 661215,
+      "sha256": "ce8810065d34d626725a6b6c950f198af9f02968cd9b0e544d411f3a2a934ac8",
+      "normalization": "bytes"
+    },
+    "prototype/assets/FONT-NOTICE.txt": {
+      "bytes": 200,
+      "sha256": "5ced1715416ddc12e7a09fd60af5ce5f963172f7f84198150e9b142d28c44c9b",
+      "normalization": "utf8-lf"
+    },
+    "prototype/assets/K2.png": {
+      "bytes": 753318,
+      "sha256": "4b279cf3db241753f82257d9574d924ec38befec9e05a900deeeabae4f72085d",
+      "normalization": "bytes"
+    },
+    "prototype/assets/OFL.txt": {
+      "bytes": 4463,
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "normalization": "utf8-lf"
+    },
+    "prototype/assets/kitchen-han.woff2": {
+      "bytes": 1243708,
+      "sha256": "2807a9407442cf3dd8c4d91355951c06c8ed4abcf26f4d01469e87889429bf12",
+      "normalization": "bytes"
+    },
+    "prototype/assets/sources.json": {
+      "bytes": 1345,
+      "sha256": "eb596e0a4d186d48c8b42ade5f2c9b9f6367ae4a68419b809ad006b2f15bc720",
+      "normalization": "utf8-lf"
+    },
+    "prototype/build_assets.py": {
+      "bytes": 1317,
+      "sha256": "b334b410faebd9f960b6ced9bd4b7d444f468282f3832317e13141fde7031c28",
+      "normalization": "utf8-lf"
+    },
+    "prototype/index.html": {
+      "bytes": 1891,
+      "sha256": "854b92f386d2c8e726c134abae7c274102975a17f5df4b768f936439452aac8a",
+      "normalization": "utf8-lf"
+    },
+    "prototype/input.mjs": {
+      "bytes": 1839,
+      "sha256": "291e334468e063c939a4ce446d89c7c9b0a1e937779a4ebe6d240aced45356f9",
+      "normalization": "utf8-lf"
+    },
+    "prototype/model.mjs": {
+      "bytes": 5590,
+      "sha256": "7a205f006efc79ce50b1d3c9d51b813e5f871a572746f72f3c78814cef0ddb17",
+      "normalization": "utf8-lf"
+    },
+    "prototype/server.mjs": {
+      "bytes": 2026,
+      "sha256": "4b9884907a24d55fe882f6ec005e2a2203bbf015219e4ec0ada5b399929516e2",
+      "normalization": "utf8-lf"
+    },
+    "prototype/state.mjs": {
+      "bytes": 3224,
+      "sha256": "c01e69080366342d31742943915d430f82befcdce4d4436827943aa4b932c42b",
+      "normalization": "utf8-lf"
+    },
+    "prototype/styles.css": {
+      "bytes": 12277,
+      "sha256": "3433fb358fb6d75286c2fa39a782e0640c94bbbd833427c1d7f5e4485e097248",
+      "normalization": "utf8-lf"
+    },
+    "prototype/tests/model.test.mjs": {
+      "bytes": 6956,
+      "sha256": "90372283539d0568639314ec92a3923087c8e55b1db54ad3b729802e1c92abf2",
+      "normalization": "utf8-lf"
+    },
+    "prototype/tests/ui.test.cjs": {
+      "bytes": 11450,
+      "sha256": "2b5789da1333f9d1cf835597ee50169b1ca3380e37deba309206ed95a62ebb30",
+      "normalization": "utf8-lf"
+    },
+    "prototype/timers.mjs": {
+      "bytes": 1583,
+      "sha256": "dd70d228a29961be9c346d955b81577a4a6fccb91343629d8485cf19e92b5684",
+      "normalization": "utf8-lf"
+    },
+    "prototype/validation/all-pages.png": {
+      "bytes": 396041,
+      "sha256": "5b59c2921f66a76752e0f6576470a079c544c59d4ffeca24f519c76b73b66de1",
+      "normalization": "bytes"
+    },
+    "prototype/validation/report.json": {
+      "bytes": 15412,
+      "sha256": "ea3b787e6bd99944fc9286c09f4c2c83054b5a55c8f7e8255335adff33391335",
+      "normalization": "utf8-lf"
+    },
+    "prototype/validation/screens/P0.png": {
+      "bytes": 35251,
+      "sha256": "76077f2051b269c9b0bf6d375d029b040ad0e4954c3ec9861948f716356030d9",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P1.png": {
+      "bytes": 36752,
+      "sha256": "eb24a8e9d9438adf7fdcb26b192d202f88d585d56b45f5fbe1cced20aa7f2783",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P10.png": {
+      "bytes": 26058,
+      "sha256": "7b99b5986b1db9d869854b4079dde8360a68b82e5503a204e2f2bacf775dd5d9",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P11.png": {
+      "bytes": 15494,
+      "sha256": "102890afb3e4b78b960dfcbe005b2829e6f32478cee9c6fb23e1023a11a0a63c",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P12.png": {
+      "bytes": 27929,
+      "sha256": "ae1a79e7ea826a88f9a8f07d6ac786c66dc4cdefbc4edfb32fdbe86983f4fa72",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P13.png": {
+      "bytes": 12997,
+      "sha256": "c9f12615909aba7c37567a2308c872f45b0101beffca134ea0b2caf0468fd6c7",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P2.png": {
+      "bytes": 14849,
+      "sha256": "e2496aff58044703bdc9d9384830f4988588c4ef4a054239f2cfd1d6d0fddda4",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P3.png": {
+      "bytes": 43438,
+      "sha256": "8e299a9159ecdb5a3c85f9639bb9fdbf4407e7cb7e5955c53dc5a21530f6ca79",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P4.png": {
+      "bytes": 53198,
+      "sha256": "34e7a7e1e93c2e24a32d6fe7d1dcc1b3c1022e71a73c5d5b76205036a3695183",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P5.png": {
+      "bytes": 19396,
+      "sha256": "94d6604fcb46ee34c8caabbb3696303e2043af1657d215da343958bbf7c75192",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P6.png": {
+      "bytes": 26032,
+      "sha256": "c38021fe104c324ba777e9f3263053e35dd58dfdf389031eddff1fa34a66b57e",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P7-three-timers.png": {
+      "bytes": 32036,
+      "sha256": "c0dadf7b9722bd9cf0817de83deaf7dee238386bc8b66e4d2334a2f04248c810",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P7.png": {
+      "bytes": 28022,
+      "sha256": "97dea2d0de4c5ecea56ed054b05654579319f87bea23df7564e85f8450b0d931",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P8-complete.png": {
+      "bytes": 49196,
+      "sha256": "e22091993e0839455691c02290ac6af7ecdcf66f6a84c1079b5a6c6fcd1206fb",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P8.png": {
+      "bytes": 49383,
+      "sha256": "4569927631c8cb72bc3ea05908eeccea5e5273cb1cdaf027a326bc7b6a8a21ec",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/P9.png": {
+      "bytes": 36363,
+      "sha256": "44b4e12a7fd2e467c5fc20483ee39c94416ea0eacc6a06171c4172572dc93c12",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/four-dish.png": {
+      "bytes": 32908,
+      "sha256": "a372a1586d9d8f2f4de7cc52c14fd496d1785f96105894d781690461cc6de4b3",
+      "normalization": "bytes"
+    },
+    "prototype/validation/screens/mobile.png": {
+      "bytes": 109181,
+      "sha256": "55acaeb5b85b7395345b6d08578b002bbd83d2babfd3987a68afbb682dbb14a1",
+      "normalization": "bytes"
+    },
+    "prototype/validation/test-output.txt": {
+      "bytes": 2038,
+      "sha256": "d426211387994b519f04138cffa4f7e77e02719aa7585a0ed3e26f8a72ee8635",
+      "normalization": "utf8-lf"
+    },
+    "prototype/view.mjs": {
+      "bytes": 17433,
+      "sha256": "860ff2679da84be0ac4abaa6be421bd41fbd242b78a1a6cb38818c7cf8cd3699",
+      "normalization": "utf8-lf"
+    },
+    "tools/ANIMATION_FORMAT.md": {
+      "bytes": 6745,
+      "sha256": "86610aba0793feea9a3c3836c719ae116a293d8fdf7ac6940c39e81823fd4d20",
+      "normalization": "utf8-lf"
+    },
+    "tools/FONT_FORMAT.md": {
+      "bytes": 2562,
+      "sha256": "5f6518c4f0bf20091a8af02dce29db89df388dd4b75dee00441b0f56c801265e",
+      "normalization": "utf8-lf"
+    },
+    "tools/FORMAT.md": {
+      "bytes": 12059,
+      "sha256": "ed1b589c7d1c48c0d7a22cdae72a37bd5b793d0fcd22fc915dd996137ed8dba9",
+      "normalization": "utf8-lf"
+    },
+    "tools/_bootstrap.py": {
+      "bytes": 256,
+      "sha256": "0dedabd15fe7f3fe5f57c12b265ff0d1353dbac085819a88e738311a4d823109",
+      "normalization": "utf8-lf"
+    },
+    "tools/animation_codec.py": {
+      "bytes": 10438,
+      "sha256": "2fb9615be679079c1dbbb4d89eae70f2118a65c7ae5a0d1dce647368eff6bec8",
+      "normalization": "utf8-lf"
+    },
+    "tools/asset_codec.py": {
+      "bytes": 12659,
+      "sha256": "0f36cc11378e0ed8294052f48fe2d386eda577ba2b545f96bf80512dae268ebc",
+      "normalization": "utf8-lf"
+    },
+    "tools/check_recipes.py": {
+      "bytes": 4504,
+      "sha256": "5e5fe9c8de92447d6ee1c5aabd686cc33d4148be76378a0783a3bb535da90eb6",
+      "normalization": "utf8-lf"
+    },
+    "tools/fetch_fonts.py": {
+      "bytes": 1792,
+      "sha256": "487336a8c03afc7c5892c9d02ecc8b61378cf87b77aa35d41a0d00e1451cfd27",
+      "normalization": "utf8-lf"
+    },
+    "tools/font_codec.py": {
+      "bytes": 6725,
+      "sha256": "6d8caead5579bec305e6c69bebab7fcd1da8443b2ae6c296ed703f17d00ced99",
+      "normalization": "utf8-lf"
+    },
+    "tools/fonts/OFL.ArchivoBlack.txt": {
+      "bytes": 4399,
+      "sha256": "4eb085b4f06e3c1625d8b577902bf639d480633635837bf2ed94d1a7b1b842f5",
+      "normalization": "utf8-lf"
+    },
+    "tools/fonts/OFL.SourceHanSans.txt": {
+      "bytes": 4463,
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "normalization": "utf8-lf"
+    },
+    "tools/fonts/level1_3500.source.json": {
+      "bytes": 1214,
+      "sha256": "615b0fab003e935d57d3dde081b71e01d1cd29714416e1168db55e3721602e33",
+      "normalization": "utf8-lf"
+    },
+    "tools/fonts/level1_3500.txt": {
+      "bytes": 10535,
+      "sha256": "4caca78057eb62257ed475e0a140b02a58c5907fd054613a93cfdec3a7df6320",
+      "normalization": "utf8-lf"
+    },
+    "tools/fonts/sources.json": {
+      "bytes": 1209,
+      "sha256": "dca05039696ea633c09bb7dc26542419a774c3480c0f900bcdc21d5fc2e4e08c",
+      "normalization": "utf8-lf"
+    },
+    "tools/heatshrink_codec.py": {
+      "bytes": 1636,
+      "sha256": "a0ee5898ffd3632dc7bdf6dd8f9c178bd2c658211c76c187dc272802b47f1ad4",
+      "normalization": "utf8-lf"
+    },
+    "tools/pack_animations.py": {
+      "bytes": 14827,
+      "sha256": "e45e0a321e6af2994fd24ad984acc39021f886248ba20a92db622858ae8145d4",
+      "normalization": "utf8-lf"
+    },
+    "tools/pack_assets.py": {
+      "bytes": 9990,
+      "sha256": "b2a303d572f0f30bb5b74c3319035a61503127c859159425435d8f5e538398ac",
+      "normalization": "utf8-lf"
+    },
+    "tools/pack_fonts.py": {
+      "bytes": 10893,
+      "sha256": "13f13a03aae0d01c24d878fc430782090e1c55d357da36bed06d6a708ffd7384",
+      "normalization": "utf8-lf"
+    },
+    "tools/pack_recipes.py": {
+      "bytes": 3402,
+      "sha256": "b622b1d1df55ece098fe5e455023815f0595eb63fcf7dab1c387e69daac4deab",
+      "normalization": "utf8-lf"
+    },
+    "tools/recipe_codec.py": {
+      "bytes": 11042,
+      "sha256": "695b92a4ad78c88674b607ccbc9c186a14b9c616c05774bb2e65d646f5732dc8",
+      "normalization": "utf8-lf"
+    },
+    "tools/requirements-fonts.txt": {
+      "bytes": 52,
+      "sha256": "419462951e00e74c7f13058f2c4d41685695b8f39655083ca69d690abf5a2726",
+      "normalization": "utf8-lf"
+    },
+    "tools/requirements.txt": {
+      "bytes": 265,
+      "sha256": "c512b46a4eaa9169304a8e117634fb545d7e75cca87d3b050e023655ccac384b",
+      "normalization": "utf8-lf"
+    },
+    "tools/test_kitchen_assets.py": {
+      "bytes": 5145,
+      "sha256": "59c23c155a4b90f2df9e9f22abae4f294d95b6d781d31dac2cb685d8d1f714e7",
+      "normalization": "utf8-lf"
+    },
+    "tools/test_kitchen_recipes.py": {
+      "bytes": 4574,
+      "sha256": "b86956a42afac247be6ece48b9b7867bb2e344e850d9bfc3cecc42b8f28c1415",
+      "normalization": "utf8-lf"
+    },
+    "tools/tests/test_kitchen_animations.py": {
+      "bytes": 8847,
+      "sha256": "66630832d15014159590b52ffff77d9ca2dbc3dce80083128b1c1b24dda0e4af",
+      "normalization": "utf8-lf"
+    },
+    "tools/tests/test_kitchen_fonts.py": {
+      "bytes": 3680,
+      "sha256": "c58d58d5baeb00d0b131e45270d3f276bc5108a4a011b80674d521d20e2aace4",
+      "normalization": "utf8-lf"
+    },
+    "tools/validation/animation-source-review.json": {
+      "bytes": 4089,
+      "sha256": "811e90e87b29dac1bdb08044764b942c0d359b1b36d69bfdbff79229943f6755",
+      "normalization": "utf8-lf"
+    },
+    "tools/verify_checkpoint.py": {
+      "bytes": 1964,
+      "sha256": "3e27d476e7d621183200043eb4c4926fbad19c0df3b606f1be7aa944906d0796",
+      "normalization": "utf8-lf"
+    }
+  }
+}

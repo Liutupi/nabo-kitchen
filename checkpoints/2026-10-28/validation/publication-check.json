@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-10-28T09:18:17.411195+00:00",
+  "requested_visibility": "public",
+  "current_nonignored_files": 531,
+  "utf8_files_scanned": 312,
+  "commits_text_history_scanned": 11,
+  "checks": [
+    "openai_like_secret",
+    "github_token",
+    "aws_access_id",
+    "private_key",
+    "assigned_credentials"
+  ],
+  "findings": [],
+  "private_build_dist_tracked": false,
+  "scope": "Bounded filename and credential-pattern scan of current nonignored inputs and Git text diffs; not a universal secret-detection guarantee."
+}

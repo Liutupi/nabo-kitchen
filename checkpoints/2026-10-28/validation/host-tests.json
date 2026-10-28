@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-28T09:10:59.355089+00:00",
+  "python": "3.12.14",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "tools/fetch_fonts.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/check_recipes.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_kitchen_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/tests",
+        "-p",
+        "test_kitchen_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/pack_assets.py",
+        "pack",
+        "--strict-budget"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/pack_assets.py",
+        "composite"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/pack_recipes.py",
+        "pack",
+        "--font-chars",
+        "build/kitchen/kitchen_fonts.chars.txt"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/pack_recipes.py",
+        "check",
+        "build/kitchen/kitchen_recipes.krc"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "argv": [
+        "python",
+        "tools/pack_fonts.py",
+        "--out",
+        "build/kitchen/determinism/fonts",
+        "--browser-out",
+        "build/kitchen/determinism/fonts/kitchen-han.woff2"
+      ],
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "font_determinism": {
+    "bitmap_font_byte_identical": true,
+    "browser_subset_byte_identical": true
+  },
+  "all_commands_passed": true,
+  "scope": "host codecs/JSON/references/coverage and rebuild; no C or device acceptance"
+}

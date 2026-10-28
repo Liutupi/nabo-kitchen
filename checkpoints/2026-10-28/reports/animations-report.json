@@ -1,0 +1,1658 @@
+{
+  "format": "KAN1",
+  "version": 1,
+  "frame_size": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    191
+  ],
+  "fps": 12,
+  "palette_rgb565": [
+    0,
+    14630,
+    31335,
+    10565,
+    25127,
+    10702,
+    61278,
+    6542,
+    16871,
+    18918,
+    63358,
+    65502,
+    4363,
+    65535,
+    65305,
+    27175,
+    16904,
+    18821,
+    8622,
+    65273,
+    65046,
+    10500,
+    44046,
+    65338,
+    63422,
+    8386,
+    48632,
+    65143,
+    65208,
+    52465,
+    8452,
+    2217,
+    12548,
+    65503,
+    25391,
+    23046,
+    40180,
+    14758,
+    59165,
+    16838,
+    14660,
+    62867,
+    23079,
+    56920,
+    4161,
+    16740,
+    22981,
+    27273,
+    37641,
+    14725,
+    6473,
+    31466,
+    63292,
+    63356,
+    10598,
+    27240,
+    6308,
+    8455,
+    10632
+  ],
+  "palette_count": 59,
+  "transparent_index": 0,
+  "package": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\private\\t1\\animations\\kitchen_nabo.bin",
+  "package_bytes": 495064,
+  "package_sha256": "8d77f446f672a34cbc0f71178ec341d0407fd9e47806e3172c35ff2b343f88e7",
+  "budget_bytes": 716800,
+  "within700KiB_budget": true,
+  "source_files_unchanged": true,
+  "roundtrip_pixel_exact": true,
+  "runtime_audio": false,
+  "source_qa_is_separate_from_codec": true,
+  "visual_source_acceptance": "per-source supplied review only; user acceptance not inferred",
+  "reproduction": {
+    "ffmpeg": "C:\\Users\\pc\\Documents\\Codex\\2026-10-10\\h\\work\\packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "ffprobe": "C:\\Users\\pc\\AppData\\Local\\JianyingPro\\Apps\\11.7.0.14627\\ffprobe.exe",
+    "input_dir": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\game-art\\kitchen\\grok-clips",
+    "close_loop_endpoints": true,
+    "select": [
+      "idle=0,5,11,16,21,27,34,38,43,48",
+      "toss=0,4,7,11,15,18,22,26,30,33,37,41,44,48",
+      "serve=0,8,14,21,27,33,41,48",
+      "tend=0,7,13,20,27,33,40,47,53,60"
+    ]
+  },
+  "actions": {
+    "idle": {
+      "source": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\game-art\\kitchen\\grok-clips\\idle.mp4",
+      "source_sha256": "edc23cdb6ced55d70dd08c9bb81d147f39c71d3b763ce72803125e9d7676d693",
+      "source_video": {
+        "width": 720,
+        "height": 720,
+        "avg_frame_rate": "24/1",
+        "duration": "4.041667",
+        "nb_frames": "97",
+        "codec_name": "h264"
+      },
+      "source_audio_streams": [
+        {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_extracted_or_packaged": false,
+      "extraction": {
+        "source_sha256": "edc23cdb6ced55d70dd08c9bb81d147f39c71d3b763ce72803125e9d7676d693",
+        "count": 49,
+        "fps": 12,
+        "mapped_video_stream": 0,
+        "audio_mapped": false,
+        "attached_posters_mapped": false
+      },
+      "selected_12fps_indices": [
+        0,
+        5,
+        11,
+        16,
+        21,
+        27,
+        34,
+        38,
+        43,
+        48
+      ],
+      "actual_12fps_indices": [
+        0,
+        5,
+        11,
+        16,
+        21,
+        27,
+        34,
+        38,
+        43,
+        0
+      ],
+      "selected_source_seconds": [
+        0.0,
+        0.4166666666666667,
+        0.9166666666666666,
+        1.3333333333333333,
+        1.75,
+        2.25,
+        2.8333333333333335,
+        3.1666666666666665,
+        3.5833333333333335,
+        0.0
+      ],
+      "loop_endpoint_selection": "lastslotusesactualfirstsourceframeafterverifiedreturnpose; exactquantizedloopseam",
+      "target_frames": 10,
+      "loop": true,
+      "start_pose": "K1",
+      "target_fps": 12,
+      "target_duration_seconds": 0.8333333333333334,
+      "temporal_processing": "select actual12fps grid frames including endpoints; retime to required framecount at12fps; no interpolation or generated frames",
+      "visual_review": {
+        "source_sha256": "edc23cdb6ced55d70dd08c9bb81d147f39c71d3b763ce72803125e9d7676d693",
+        "verdict": "engineering_visual_pass",
+        "user_acceptance_inferred": false,
+        "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+        "checks": {
+          "real_action_present": true,
+          "front_identity_and_C_costume": true,
+          "upright_cap_logo": true,
+          "waist_bottom_anchor_stable": true,
+          "locked_camera": true,
+          "props_inside_frame": true,
+          "no_baked_food_fire_steam": true,
+          "return_pose_visually_matches": true
+        },
+        "notes": [
+          "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+          "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo."
+        ]
+      },
+      "preparation": [
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1235,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 323082,
+          "source_edge_pixels_despilled": 1561,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1298,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 321163,
+          "source_edge_pixels_despilled": 1808,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1229,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 324676,
+          "source_edge_pixels_despilled": 1584,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1322,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 320726,
+          "source_edge_pixels_despilled": 1532,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1196,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 325490,
+          "source_edge_pixels_despilled": 1521,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1199,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 326016,
+          "source_edge_pixels_despilled": 1431,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1198,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 325551,
+          "source_edge_pixels_despilled": 1411,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1215,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 324184,
+          "source_edge_pixels_despilled": 1456,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1234,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 323262,
+          "source_edge_pixels_despilled": 1536,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1235,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 323082,
+          "source_edge_pixels_despilled": 1561,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        }
+      ],
+      "encoded_bytes": 115669,
+      "frame_records": [
+        {
+          "mode": 0,
+          "rectangle": [
+            0,
+            0,
+            192,
+            192
+          ],
+          "payload_bytes": 11493
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            41,
+            11,
+            112,
+            181
+          ],
+          "payload_bytes": 11657
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            41,
+            11,
+            112,
+            181
+          ],
+          "payload_bytes": 11493
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            39,
+            13,
+            115,
+            179
+          ],
+          "payload_bytes": 11823
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            39,
+            13,
+            115,
+            179
+          ],
+          "payload_bytes": 11549
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            43,
+            13,
+            107,
+            179
+          ],
+          "payload_bytes": 11524
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            44,
+            13,
+            106,
+            179
+          ],
+          "payload_bytes": 11402
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            43,
+            12,
+            107,
+            180
+          ],
+          "payload_bytes": 11552
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            43,
+            11,
+            107,
+            181
+          ],
+          "payload_bytes": 11621
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            43,
+            11,
+            108,
+            181
+          ],
+          "payload_bytes": 11375
+        }
+      ],
+      "first_last_quantized": {
+        "changed_pixels": 0,
+        "frame_pixels": 36864,
+        "foreground_rgb_mae": 0.0
+      },
+      "quantization_errors": [
+        {
+          "foreground_rgb_mae": 4.663218876067173,
+          "max_channel_error": 70
+        },
+        {
+          "foreground_rgb_mae": 4.608224203585029,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.663523350349783,
+          "max_channel_error": 70
+        },
+        {
+          "foreground_rgb_mae": 4.6166388734482116,
+          "max_channel_error": 68
+        },
+        {
+          "foreground_rgb_mae": 4.603972156890695,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.672525902107895,
+          "max_channel_error": 72
+        },
+        {
+          "foreground_rgb_mae": 4.6022333095747205,
+          "max_channel_error": 83
+        },
+        {
+          "foreground_rgb_mae": 4.66926272066459,
+          "max_channel_error": 75
+        },
+        {
+          "foreground_rgb_mae": 4.66016294522317,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.663218876067173,
+          "max_channel_error": 70
+        }
+      ],
+      "roundtrip_pixel_exact": true
+    },
+    "toss": {
+      "source": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\game-art\\kitchen\\grok-clips\\toss.mp4",
+      "source_sha256": "5bf7cccfda9ba1727869ec672eafa69d718987dcc514a71fc57269581432a4f3",
+      "source_video": {
+        "width": 720,
+        "height": 720,
+        "avg_frame_rate": "24/1",
+        "duration": "4.041667",
+        "nb_frames": "97",
+        "codec_name": "h264"
+      },
+      "source_audio_streams": [
+        {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_extracted_or_packaged": false,
+      "extraction": {
+        "source_sha256": "5bf7cccfda9ba1727869ec672eafa69d718987dcc514a71fc57269581432a4f3",
+        "count": 49,
+        "fps": 12,
+        "mapped_video_stream": 0,
+        "audio_mapped": false,
+        "attached_posters_mapped": false
+      },
+      "selected_12fps_indices": [
+        0,
+        4,
+        7,
+        11,
+        15,
+        18,
+        22,
+        26,
+        30,
+        33,
+        37,
+        41,
+        44,
+        48
+      ],
+      "actual_12fps_indices": [
+        0,
+        4,
+        7,
+        11,
+        15,
+        18,
+        22,
+        26,
+        30,
+        33,
+        37,
+        41,
+        44,
+        48
+      ],
+      "selected_source_seconds": [
+        0.0,
+        0.3333333333333333,
+        0.5833333333333334,
+        0.9166666666666666,
+        1.25,
+        1.5,
+        1.8333333333333333,
+        2.1666666666666665,
+        2.5,
+        2.75,
+        3.0833333333333335,
+        3.4166666666666665,
+        3.6666666666666665,
+        4.0
+      ],
+      "loop_endpoint_selection": "actualsourceendretained",
+      "target_frames": 14,
+      "loop": false,
+      "start_pose": "K2",
+      "target_fps": 12,
+      "target_duration_seconds": 1.1666666666666667,
+      "temporal_processing": "select actual12fps grid frames including endpoints; retime to required framecount at12fps; no interpolation or generated frames",
+      "visual_review": {
+        "source_sha256": "5bf7cccfda9ba1727869ec672eafa69d718987dcc514a71fc57269581432a4f3",
+        "verdict": "engineering_visual_pass",
+        "user_acceptance_inferred": false,
+        "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+        "checks": {
+          "real_action_present": true,
+          "front_identity_and_C_costume": true,
+          "upright_cap_logo": true,
+          "waist_bottom_anchor_stable": true,
+          "locked_camera": true,
+          "props_inside_frame": true,
+          "no_baked_food_fire_steam": true,
+          "return_pose_visually_matches": true
+        },
+        "notes": [
+          "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+          "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo."
+        ]
+      },
+      "preparation": [
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1442,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315812,
+          "source_edge_pixels_despilled": 1871,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1432,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315652,
+          "source_edge_pixels_despilled": 2047,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1458,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 312187,
+          "source_edge_pixels_despilled": 2171,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1471,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 307481,
+          "source_edge_pixels_despilled": 2114,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1583,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 297987,
+          "source_edge_pixels_despilled": 2180,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1737,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 285019,
+          "source_edge_pixels_despilled": 2517,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1664,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 296864,
+          "source_edge_pixels_despilled": 2395,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1410,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 311586,
+          "source_edge_pixels_despilled": 1879,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1402,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 312929,
+          "source_edge_pixels_despilled": 2037,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1417,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 314445,
+          "source_edge_pixels_despilled": 1935,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1433,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315958,
+          "source_edge_pixels_despilled": 2037,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1426,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315877,
+          "source_edge_pixels_despilled": 1799,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1426,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315887,
+          "source_edge_pixels_despilled": 1795,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1424,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315874,
+          "source_edge_pixels_despilled": 1814,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        }
+      ],
+      "encoded_bytes": 164588,
+      "frame_records": [
+        {
+          "mode": 0,
+          "rectangle": [
+            0,
+            0,
+            192,
+            192
+          ],
+          "payload_bytes": 11599
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            20,
+            10,
+            146,
+            182
+          ],
+          "payload_bytes": 11527
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            20,
+            10,
+            149,
+            182
+          ],
+          "payload_bytes": 11672
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            18,
+            12,
+            151,
+            180
+          ],
+          "payload_bytes": 11858
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            16,
+            15,
+            151,
+            177
+          ],
+          "payload_bytes": 12352
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            16,
+            8,
+            153,
+            184
+          ],
+          "payload_bytes": 11969
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            16,
+            8,
+            153,
+            184
+          ],
+          "payload_bytes": 12474
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            16,
+            16,
+            153,
+            176
+          ],
+          "payload_bytes": 11454
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            15,
+            148,
+            177
+          ],
+          "payload_bytes": 11618
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            12,
+            148,
+            180
+          ],
+          "payload_bytes": 11718
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            10,
+            147,
+            182
+          ],
+          "payload_bytes": 11572
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            10,
+            145,
+            182
+          ],
+          "payload_bytes": 11527
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            24,
+            10,
+            139,
+            182
+          ],
+          "payload_bytes": 11529
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            24,
+            11,
+            138,
+            180
+          ],
+          "payload_bytes": 11467
+        }
+      ],
+      "first_last_quantized": {
+        "changed_pixels": 3190,
+        "frame_pixels": 36864,
+        "foreground_rgb_mae": 1.9952380952380953
+      },
+      "quantization_errors": [
+        {
+          "foreground_rgb_mae": 4.786620608687799,
+          "max_channel_error": 69
+        },
+        {
+          "foreground_rgb_mae": 4.824648077964266,
+          "max_channel_error": 75
+        },
+        {
+          "foreground_rgb_mae": 4.870977757079813,
+          "max_channel_error": 68
+        },
+        {
+          "foreground_rgb_mae": 4.962962962962963,
+          "max_channel_error": 75
+        },
+        {
+          "foreground_rgb_mae": 4.702652222637281,
+          "max_channel_error": 74
+        },
+        {
+          "foreground_rgb_mae": 4.632519847103793,
+          "max_channel_error": 82
+        },
+        {
+          "foreground_rgb_mae": 4.9470314558629775,
+          "max_channel_error": 91
+        },
+        {
+          "foreground_rgb_mae": 4.804584717607973,
+          "max_channel_error": 65
+        },
+        {
+          "foreground_rgb_mae": 4.812782641627125,
+          "max_channel_error": 72
+        },
+        {
+          "foreground_rgb_mae": 4.949658033411818,
+          "max_channel_error": 66
+        },
+        {
+          "foreground_rgb_mae": 4.792545376460749,
+          "max_channel_error": 66
+        },
+        {
+          "foreground_rgb_mae": 4.847420863553175,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.860506632318713,
+          "max_channel_error": 75
+        },
+        {
+          "foreground_rgb_mae": 4.872130332610268,
+          "max_channel_error": 76
+        }
+      ],
+      "roundtrip_pixel_exact": true
+    },
+    "serve": {
+      "source": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\game-art\\kitchen\\grok-clips\\serve.mp4",
+      "source_sha256": "c2b288cecae802457340927bfdf8169a2d3f1448bdedc0389f062afb9393c204",
+      "source_video": {
+        "width": 720,
+        "height": 720,
+        "avg_frame_rate": "24/1",
+        "duration": "4.041667",
+        "nb_frames": "97",
+        "codec_name": "h264"
+      },
+      "source_audio_streams": [
+        {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_extracted_or_packaged": false,
+      "extraction": {
+        "source_sha256": "c2b288cecae802457340927bfdf8169a2d3f1448bdedc0389f062afb9393c204",
+        "count": 49,
+        "fps": 12,
+        "mapped_video_stream": 0,
+        "audio_mapped": false,
+        "attached_posters_mapped": false
+      },
+      "selected_12fps_indices": [
+        0,
+        8,
+        14,
+        21,
+        27,
+        33,
+        41,
+        48
+      ],
+      "actual_12fps_indices": [
+        0,
+        8,
+        14,
+        21,
+        27,
+        33,
+        41,
+        48
+      ],
+      "selected_source_seconds": [
+        0.0,
+        0.6666666666666666,
+        1.1666666666666667,
+        1.75,
+        2.25,
+        2.75,
+        3.4166666666666665,
+        4.0
+      ],
+      "loop_endpoint_selection": "actualsourceendretained",
+      "target_frames": 8,
+      "loop": false,
+      "start_pose": "K1",
+      "target_fps": 12,
+      "target_duration_seconds": 0.6666666666666666,
+      "temporal_processing": "select actual12fps grid frames including endpoints; retime to required framecount at12fps; no interpolation or generated frames",
+      "visual_review": {
+        "source_sha256": "c2b288cecae802457340927bfdf8169a2d3f1448bdedc0389f062afb9393c204",
+        "verdict": "engineering_visual_pass",
+        "user_acceptance_inferred": false,
+        "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+        "checks": {
+          "real_action_present": true,
+          "front_identity_and_C_costume": true,
+          "upright_cap_logo": true,
+          "waist_bottom_anchor_stable": true,
+          "locked_camera": true,
+          "props_inside_frame": true,
+          "no_baked_food_fire_steam": true,
+          "return_pose_visually_matches": true
+        },
+        "notes": [
+          "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+          "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo.",
+          "Isolatedwink visible on source12fps frame34/zeroindex33; explicit8frame selection retainsit."
+        ]
+      },
+      "preparation": [
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1231,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 323120,
+          "source_edge_pixels_despilled": 1569,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1322,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 318748,
+          "source_edge_pixels_despilled": 2005,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1620,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 304823,
+          "source_edge_pixels_despilled": 2116,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1686,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 305969,
+          "source_edge_pixels_despilled": 2000,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1698,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 305488,
+          "source_edge_pixels_despilled": 2007,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1657,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 305911,
+          "source_edge_pixels_despilled": 2043,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1252,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 321791,
+          "source_edge_pixels_despilled": 1837,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1226,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 323097,
+          "source_edge_pixels_despilled": 1632,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        }
+      ],
+      "encoded_bytes": 97444,
+      "frame_records": [
+        {
+          "mode": 0,
+          "rectangle": [
+            0,
+            0,
+            192,
+            192
+          ],
+          "payload_bytes": 11491
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            33,
+            11,
+            120,
+            181
+          ],
+          "payload_bytes": 11649
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            8,
+            11,
+            160,
+            181
+          ],
+          "payload_bytes": 12763
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            5,
+            16,
+            169,
+            176
+          ],
+          "payload_bytes": 12786
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            5,
+            19,
+            169,
+            173
+          ],
+          "payload_bytes": 12759
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            4,
+            18,
+            170,
+            174
+          ],
+          "payload_bytes": 12730
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            4,
+            11,
+            168,
+            181
+          ],
+          "payload_bytes": 11620
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            41,
+            11,
+            110,
+            181
+          ],
+          "payload_bytes": 11502
+        }
+      ],
+      "first_last_quantized": {
+        "changed_pixels": 3069,
+        "frame_pixels": 36864,
+        "foreground_rgb_mae": 1.900438380570598
+      },
+      "quantization_errors": [
+        {
+          "foreground_rgb_mae": 4.64642270701384,
+          "max_channel_error": 64
+        },
+        {
+          "foreground_rgb_mae": 4.725144588267695,
+          "max_channel_error": 82
+        },
+        {
+          "foreground_rgb_mae": 4.659953391914138,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.565376108570079,
+          "max_channel_error": 74
+        },
+        {
+          "foreground_rgb_mae": 4.546736873648837,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.645349460636085,
+          "max_channel_error": 81
+        },
+        {
+          "foreground_rgb_mae": 4.642727272727273,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 4.679665868881693,
+          "max_channel_error": 73
+        }
+      ],
+      "roundtrip_pixel_exact": true
+    },
+    "tend": {
+      "source": "D:\\AI PASSPORT XIAOZHI\\nabo-kitchen\\game-art\\kitchen\\grok-clips\\tend.mp4",
+      "source_sha256": "84944912b4b92dc00507a63e36375bdc4ef82c92cd418d32dfb05dcb5ebd2eea",
+      "source_video": {
+        "width": 720,
+        "height": 720,
+        "avg_frame_rate": "24/1",
+        "duration": "5.041667",
+        "nb_frames": "121",
+        "codec_name": "h264"
+      },
+      "source_audio_streams": [
+        {
+          "codec_name": "aac",
+          "sample_rate": "48000",
+          "channels": 2
+        }
+      ],
+      "audio_extracted_or_packaged": false,
+      "extraction": {
+        "source_sha256": "84944912b4b92dc00507a63e36375bdc4ef82c92cd418d32dfb05dcb5ebd2eea",
+        "count": 61,
+        "fps": 12,
+        "mapped_video_stream": 0,
+        "audio_mapped": false,
+        "attached_posters_mapped": false
+      },
+      "selected_12fps_indices": [
+        0,
+        7,
+        13,
+        20,
+        27,
+        33,
+        40,
+        47,
+        53,
+        60
+      ],
+      "actual_12fps_indices": [
+        0,
+        7,
+        13,
+        20,
+        27,
+        33,
+        40,
+        47,
+        53,
+        0
+      ],
+      "selected_source_seconds": [
+        0.0,
+        0.5833333333333334,
+        1.0833333333333333,
+        1.6666666666666667,
+        2.25,
+        2.75,
+        3.3333333333333335,
+        3.9166666666666665,
+        4.416666666666667,
+        0.0
+      ],
+      "loop_endpoint_selection": "lastslotusesactualfirstsourceframeafterverifiedreturnpose; exactquantizedloopseam",
+      "target_frames": 10,
+      "loop": true,
+      "start_pose": "K2",
+      "target_fps": 12,
+      "target_duration_seconds": 0.8333333333333334,
+      "temporal_processing": "select actual12fps grid frames including endpoints; retime to required framecount at12fps; no interpolation or generated frames",
+      "visual_review": {
+        "source_sha256": "84944912b4b92dc00507a63e36375bdc4ef82c92cd418d32dfb05dcb5ebd2eea",
+        "verdict": "engineering_visual_pass",
+        "user_acceptance_inferred": false,
+        "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+        "checks": {
+          "real_action_present": true,
+          "front_identity_and_C_costume": true,
+          "upright_cap_logo": true,
+          "waist_bottom_anchor_stable": true,
+          "locked_camera": true,
+          "props_inside_frame": true,
+          "no_baked_food_fire_steam": true,
+          "return_pose_visually_matches": true
+        },
+        "notes": [
+          "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+          "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo.",
+          "Container hasonefinalframe beyondnominal5seconds;5.041667s source retained. Cooking andtwofanbeats visible."
+        ]
+      },
+      "preparation": [
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1429,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315808,
+          "source_edge_pixels_despilled": 1909,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1418,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 314873,
+          "source_edge_pixels_despilled": 2038,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1429,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 311523,
+          "source_edge_pixels_despilled": 1881,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1431,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 311737,
+          "source_edge_pixels_despilled": 2085,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1525,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 301861,
+          "source_edge_pixels_despilled": 2089,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1434,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 305587,
+          "source_edge_pixels_despilled": 1884,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1542,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 309353,
+          "source_edge_pixels_despilled": 1954,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1480,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 309200,
+          "source_edge_pixels_despilled": 2169,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1402,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 314984,
+          "source_edge_pixels_despilled": 2104,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        },
+        {
+          "canonical_outline_pixels": 0,
+          "character_canonicalization_disabled": true,
+          "partial_alpha_pixels": 1429,
+          "alpha_threshold": 16,
+          "source_green_pixels_keyed": 315808,
+          "source_edge_pixels_despilled": 1909,
+          "source_size": [
+            720,
+            720
+          ],
+          "placement": "uniform full-canvas resize; bottom edge fixed; no per-frame crop/translation"
+        }
+      ],
+      "encoded_bytes": 117049,
+      "frame_records": [
+        {
+          "mode": 0,
+          "rectangle": [
+            0,
+            0,
+            192,
+            192
+          ],
+          "payload_bytes": 11569
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            10,
+            146,
+            182
+          ],
+          "payload_bytes": 11440
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            20,
+            9,
+            149,
+            183
+          ],
+          "payload_bytes": 11535
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            20,
+            9,
+            149,
+            183
+          ],
+          "payload_bytes": 11678
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            9,
+            147,
+            183
+          ],
+          "payload_bytes": 12082
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            22,
+            9,
+            145,
+            183
+          ],
+          "payload_bytes": 11818
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            22,
+            9,
+            145,
+            183
+          ],
+          "payload_bytes": 12024
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            22,
+            9,
+            145,
+            183
+          ],
+          "payload_bytes": 11684
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            9,
+            146,
+            183
+          ],
+          "payload_bytes": 11596
+        },
+        {
+          "mode": 1,
+          "rectangle": [
+            21,
+            10,
+            145,
+            182
+          ],
+          "payload_bytes": 11443
+        }
+      ],
+      "first_last_quantized": {
+        "changed_pixels": 0,
+        "frame_pixels": 36864,
+        "foreground_rgb_mae": 0.0
+      },
+      "quantization_errors": [
+        {
+          "foreground_rgb_mae": 4.761017370287547,
+          "max_channel_error": 69
+        },
+        {
+          "foreground_rgb_mae": 4.740870581361379,
+          "max_channel_error": 74
+        },
+        {
+          "foreground_rgb_mae": 4.846044916473061,
+          "max_channel_error": 71
+        },
+        {
+          "foreground_rgb_mae": 4.819862301033849,
+          "max_channel_error": 73
+        },
+        {
+          "foreground_rgb_mae": 5.073365029054411,
+          "max_channel_error": 82
+        },
+        {
+          "foreground_rgb_mae": 5.21263216831406,
+          "max_channel_error": 66
+        },
+        {
+          "foreground_rgb_mae": 5.245740655687509,
+          "max_channel_error": 71
+        },
+        {
+          "foreground_rgb_mae": 5.169454465945119,
+          "max_channel_error": 75
+        },
+        {
+          "foreground_rgb_mae": 4.836539543255709,
+          "max_channel_error": 72
+        },
+        {
+          "foreground_rgb_mae": 4.761017370287547,
+          "max_channel_error": 69
+        }
+      ],
+      "roundtrip_pixel_exact": true
+    }
+  }
+}

@@ -1,0 +1,465 @@
+[
+  {
+    "id": "baiqie-ji",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "chicken_whole__poached_cut",
+      "garnish_ginger_shred"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "ebcc0c4551651a269d36a28f63718750d2151c2a501c81e929f78d05c5175e64"
+  },
+  {
+    "id": "baizhuo-xia",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "shrimp__boiled"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "a5d92379ed57c2dc23815860787c8214224f56fbf3b71ed13cfc180dd5278197"
+  },
+  {
+    "id": "chao-xilanhua",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "broccoli__florets",
+      "garnish_garlic",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "78570eac4f27891ac5c823ed43c0bdf48119131bf74c45a08cb71770c2ff20e4"
+  },
+  {
+    "id": "chizhi-zheng-paigu",
+    "layers": [
+      "vessel_deep_shadow",
+      "vessel_deep",
+      "sauce_black_bean__plate",
+      "pork_rib__steamed_black_bean",
+      "garnish_garlic"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "307deba8eee006b90650eb0ae368f4de1fe53f1d84ae209b6ac5486312025d9c"
+  },
+  {
+    "id": "culiu-baicai",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "napa_cabbage__stirfried",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "3d31ca46e5e33f1995fc2ff68c067d7116e9fd2c5d3c4dd6b603991aa0b770e8"
+  },
+  {
+    "id": "donggua-paigu-tang",
+    "layers": [
+      "vessel_bowl_shadow",
+      "vessel_bowl",
+      "sauce_clear_soup__bowl",
+      "pork_rib__soup",
+      "winter_melon__soup_chunks"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "61630c21ab29908358ae48932b5b08fc01f7f8a57df17a52c0535e44d90b7acc"
+  },
+  {
+    "id": "fanqie-chaodan",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_tomato__plate",
+      "egg__scrambled",
+      "tomato__wedge_cooked",
+      "garnish_scallion",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "353489a43c808e9a01a94ab6b3d53c2f0aa0f938083591fb7b7c366d07d72549"
+  },
+  {
+    "id": "fanqie-dantang",
+    "layers": [
+      "vessel_bowl_shadow",
+      "vessel_bowl",
+      "sauce_clear_soup__bowl",
+      "egg__ribbon",
+      "tomato__wedge_soup",
+      "garnish_scallion"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "86f74a82caacffcb0c938ad749faa42c72af3bb8ed326e4d7603b3e51de914c1"
+  },
+  {
+    "id": "fanqie-tudou-niurou-tang",
+    "layers": [
+      "vessel_bowl_shadow",
+      "vessel_bowl",
+      "sauce_clear_soup__bowl",
+      "beef__chunks_stewed",
+      "tomato__wedge_soup",
+      "potato__chunks_soup"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "6684e1e7c38ab8e6f688ae8242eeaca316d32c930cd49e2f251c29baf54c0ae5"
+  },
+  {
+    "id": "hongshao-paigu",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_braise__plate",
+      "pork_rib__braised",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "2ec74d39dc6b105faf2a0317d9866669b58aa8b9a0bd46603e20be77f33d0485"
+  },
+  {
+    "id": "hongshao-qiezi",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_braise__plate",
+      "eggplant__braised",
+      "garnish_garlic",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "a42ee9ccf2bf1936f47ced419375f2273440f6cd2b23eb8eed97a0e6822b9ae2"
+  },
+  {
+    "id": "hongshao-rou",
+    "layers": [
+      "vessel_claypot_shadow",
+      "vessel_claypot",
+      "sauce_braise__claypot",
+      "pork_belly__braised",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "1f08e7f31351185a90e196656c7c663bdffac039336d7398716827d6cf0ae954"
+  },
+  {
+    "id": "hongshao-yu",
+    "layers": [
+      "vessel_oval_shadow",
+      "vessel_oval",
+      "sauce_braise__plate",
+      "fish_whole__braised",
+      "garnish_scallion"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "4d0d1b32a18a2199024795d62f1c6b6498d0ab908498bc09e1d2b535c3163d4b"
+  },
+  {
+    "id": "hupi-qingjiao",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_braise__plate",
+      "green_pepper__blistered",
+      "garnish_garlic"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "e728ccb65d950ba503730ff7a50a3d036971846f016b279b9461176410655c89"
+  },
+  {
+    "id": "jiachang-doufu",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_braise__plate",
+      "tofu__pan_fried",
+      "green_pepper__strips",
+      "carrot__slices",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "74ddfde17dbc52ca59cbcb055d3da54feeebc76bd2c5b30e83761710ba968d52"
+  },
+  {
+    "id": "jiyu-doufu-tang",
+    "layers": [
+      "vessel_bowl_shadow",
+      "vessel_bowl",
+      "sauce_white__bowl",
+      "fish_whole__soup",
+      "tofu__cubes_soup"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "82920a84ce6673f51b5235dbdf4c5b77a0fab327f1a6dc20ba4f3bdaf2f73470"
+  },
+  {
+    "id": "kele-jichi",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_braise__plate",
+      "chicken_wing__braised",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "73f9487b7b410e29211aad6283987f0cc87298044a3a12f13d49ac5daa0db723"
+  },
+  {
+    "id": "pai-huanggua",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "cucumber__smashed",
+      "garnish_garlic"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "e4fef6c71195450e3498de37dadd2947628582b1219bf9e9be5b13d2670a98aa"
+  },
+  {
+    "id": "qingcai-doufu-tang",
+    "layers": [
+      "vessel_bowl_shadow",
+      "vessel_bowl",
+      "sauce_clear_soup__bowl",
+      "tofu__cubes_soup",
+      "choy_sum__blanched"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "b10fa24aa3be122bf5d3aff5712368c82e9dadaeade88aac554bf055c2335168"
+  },
+  {
+    "id": "qingjiao-rousi",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "pork_lean__shreds_stirfried",
+      "green_pepper__strips",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "b79d001ec2db48f37d90c63bee3be929b9b791d69ec21e464f8cc8844e35e5ca"
+  },
+  {
+    "id": "qingzheng-luyu",
+    "layers": [
+      "vessel_oval_shadow",
+      "vessel_oval",
+      "sauce_soy_steam__plate",
+      "fish_whole__steamed",
+      "garnish_ginger_shred",
+      "garnish_scallion"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "c435ca462c9f049cd0b66be6249854436f07290cbc4e1b07738fd8bac74ec2a3"
+  },
+  {
+    "id": "roubing-zhengdan",
+    "layers": [
+      "vessel_deep_shadow",
+      "vessel_deep",
+      "sauce_clear__plate",
+      "pork_mince__patty_egg_steamed",
+      "garnish_scallion"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "c0d5fbf8421c7049c29d718d7e551213eefd59d91a9d00dd218a24520b38e871"
+  },
+  {
+    "id": "suanla-tudousi",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "potato__shreds",
+      "garnish_chili_ring"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "0cddaa763079d6037f15588a267accdb512b0143298d3e5e889f490f26e5484b"
+  },
+  {
+    "id": "suanrong-caixin",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "choy_sum__stirfried",
+      "garnish_garlic",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "1c463eba9ee325c9d3c27aee6ca7bc922ce894e1d4a097c283bcee705b7e884a"
+  },
+  {
+    "id": "suanrong-shengcai",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "lettuce__stirfried",
+      "garnish_garlic",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "6b47c2103f987255e00dcf69362b0a664b27d2c51100125de924e85ec036f5b0"
+  },
+  {
+    "id": "xianggu-menji",
+    "layers": [
+      "vessel_claypot_shadow",
+      "vessel_claypot",
+      "sauce_braise__claypot",
+      "chicken_thigh__pieces_braised",
+      "shiitake__braised",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "b6b0f6d67b79db89c597ac51170eb194de3735a5ff423c4d6565d8e37bfc660f"
+  },
+  {
+    "id": "xiangjian-doufu",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "tofu__pan_fried",
+      "garnish_scallion",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "68ad59738e95579d4572aac2b5b836527b75bcf8e219c6252eac3855356eaf8a"
+  },
+  {
+    "id": "xiaren-chaodan",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "egg__scrambled",
+      "shrimp__peeled_stirfried",
+      "garnish_scallion",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "e6030aeae30bb12edfd93bcae616fe7438992aceef58b86ae6450116876547c5"
+  },
+  {
+    "id": "yangcong-chao-niurou",
+    "layers": [
+      "vessel_plate_shadow",
+      "vessel_plate",
+      "sauce_clear__plate",
+      "beef__slices_stirfried",
+      "onion__slices",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "93c69498cc823bc6963929ec0c8e6e31ffebe7bb8b5b8b54a4b7417c7656a92a"
+  },
+  {
+    "id": "zheng-shuidan",
+    "layers": [
+      "vessel_deep_shadow",
+      "vessel_deep",
+      "egg__steamed_custard",
+      "garnish_shine"
+    ],
+    "frame": [
+      160,
+      120
+    ],
+    "decoded_rgba_sha256": "7f5f4344a95f251d0adb42b2f0eb7dca09f936d8d0256c0d24edf99ea6767b62"
+  }
+]

@@ -1,0 +1,143 @@
+{
+  "format": "KFN1",
+  "packages": {
+    "kitchen_fonts.bin": {
+      "bytes": 959955,
+      "budget_bytes": 380000,
+      "within_budget": false,
+      "sha256": "0be5ad106f4763a1bbaa6ae96cd096223bcb1cad99c0d704931c06c62c69513f"
+    }
+  },
+  "roundtrip": true,
+  "glyphs": 12447,
+  "font_profiles": [
+    {
+      "id": "han12",
+      "px": 12,
+      "bpp": 2,
+      "glyphs": 3628
+    },
+    {
+      "id": "han15",
+      "px": 15,
+      "bpp": 2,
+      "glyphs": 544
+    },
+    {
+      "id": "han16",
+      "px": 16,
+      "bpp": 2,
+      "glyphs": 3628
+    },
+    {
+      "id": "han18",
+      "px": 18,
+      "bpp": 2,
+      "glyphs": 3628
+    },
+    {
+      "id": "han20",
+      "px": 20,
+      "bpp": 2,
+      "glyphs": 544
+    },
+    {
+      "id": "latin12",
+      "px": 12,
+      "bpp": 2,
+      "glyphs": 95
+    },
+    {
+      "id": "latin16",
+      "px": 16,
+      "bpp": 2,
+      "glyphs": 95
+    },
+    {
+      "id": "latin22",
+      "px": 22,
+      "bpp": 2,
+      "glyphs": 95
+    },
+    {
+      "id": "latin34",
+      "px": 34,
+      "bpp": 2,
+      "glyphs": 95
+    },
+    {
+      "id": "latin40",
+      "px": 40,
+      "bpp": 2,
+      "glyphs": 95
+    }
+  ],
+  "source_fonts": {
+    "han_sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70",
+    "archivo_woff_sha256": "25f33e61cf995abd6be62931cf03bf427286259177b43618cc410ee0157cfd30"
+  },
+  "level1": {
+    "description": "2013通用规范汉字表一级字3500，按字表序号1..3500，从官方GF0023-2020 UCS/字表序号列提取",
+    "source": "https://jw.beijing.gov.cn/language/bzgf/202105/P020210512414220837538.pdf",
+    "source_sha256": "0ff0890afc34c5e486edeebafb05350dec69a7bf0d1d75044d7d3f7b722ec3d0",
+    "range": [
+      1,
+      3500
+    ],
+    "unique_characters": 3500,
+    "extraction": "pypdf text, bounded 4-digit serial plus 5/6-digit UCS tokens; CJK range and strict unique serial/codepoint checks",
+    "output_sha256": "9845d5fa5188894ab5bc1cd8bd515fee6d7a6f732013c51fe52381881da6c6c2",
+    "first20_codepoints": [
+      "0x4e00",
+      "0x4e59",
+      "0x4e8c",
+      "0x5341",
+      "0x4e01",
+      "0x5382",
+      "0x4e03",
+      "0x535c",
+      "0x516b",
+      "0x4eba",
+      "0x5165",
+      "0x513f",
+      "0x5315",
+      "0x51e0",
+      "0x4e5d",
+      "0x5201",
+      "0x4e86",
+      "0x5200",
+      "0x529b",
+      "0x4e43"
+    ],
+    "last20_codepoints": [
+      "0x5dcd",
+      "0x7c4d",
+      "0x9cde",
+      "0x9b54",
+      "0x7cef",
+      "0x704c",
+      "0x8b6c",
+      "0x8822",
+      "0x9738",
+      "0x9732",
+      "0x9739",
+      "0x8e8f",
+      "0x9eef",
+      "0x9ad3",
+      "0x8d63",
+      "0x56ca",
+      "0x9576",
+      "0x74e4",
+      "0x7f50",
+      "0x77d7"
+    ]
+  },
+  "body_characters": 3628,
+  "ui_characters": 544,
+  "recipe_glyphs_missing": [],
+  "browser_subset_bytes": 1243708,
+  "pillow": "12.3.0",
+  "freetype": "2.14.3",
+  "proof": "fonts-proof.png",
+  "scope": "KFN glyph masks/metrics roundtrip; no C/device rendering or kitchen acceptance"
+}

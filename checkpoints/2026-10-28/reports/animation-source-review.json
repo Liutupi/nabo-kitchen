@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-28",
+  "actions": {
+    "idle": {
+      "source_sha256": "edc23cdb6ced55d70dd08c9bb81d147f39c71d3b763ce72803125e9d7676d693",
+      "verdict": "engineering_visual_pass",
+      "user_acceptance_inferred": false,
+      "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+      "checks": {
+        "real_action_present": true,
+        "front_identity_and_C_costume": true,
+        "upright_cap_logo": true,
+        "waist_bottom_anchor_stable": true,
+        "locked_camera": true,
+        "props_inside_frame": true,
+        "no_baked_food_fire_steam": true,
+        "return_pose_visually_matches": true
+      },
+      "notes": [
+        "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+        "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo."
+      ]
+    },
+    "toss": {
+      "source_sha256": "5bf7cccfda9ba1727869ec672eafa69d718987dcc514a71fc57269581432a4f3",
+      "verdict": "engineering_visual_pass",
+      "user_acceptance_inferred": false,
+      "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+      "checks": {
+        "real_action_present": true,
+        "front_identity_and_C_costume": true,
+        "upright_cap_logo": true,
+        "waist_bottom_anchor_stable": true,
+        "locked_camera": true,
+        "props_inside_frame": true,
+        "no_baked_food_fire_steam": true,
+        "return_pose_visually_matches": true
+      },
+      "notes": [
+        "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+        "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo."
+      ]
+    },
+    "serve": {
+      "source_sha256": "c2b288cecae802457340927bfdf8169a2d3f1448bdedc0389f062afb9393c204",
+      "verdict": "engineering_visual_pass",
+      "user_acceptance_inferred": false,
+      "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+      "checks": {
+        "real_action_present": true,
+        "front_identity_and_C_costume": true,
+        "upright_cap_logo": true,
+        "waist_bottom_anchor_stable": true,
+        "locked_camera": true,
+        "props_inside_frame": true,
+        "no_baked_food_fire_steam": true,
+        "return_pose_visually_matches": true
+      },
+      "notes": [
+        "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+        "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo.",
+        "Isolatedwink visible on source12fps frame34/zeroindex33; explicit8frame selection retainsit."
+      ]
+    },
+    "tend": {
+      "source_sha256": "84944912b4b92dc00507a63e36375bdc4ef82c92cd418d32dfb05dcb5ebd2eea",
+      "verdict": "engineering_visual_pass",
+      "user_acceptance_inferred": false,
+      "review_basis": "Silent12fps decoded source contact, source first/end comparison and bounds; serve wink additionally inspected framebyframe at12fps. Noaudio played.",
+      "checks": {
+        "real_action_present": true,
+        "front_identity_and_C_costume": true,
+        "upright_cap_logo": true,
+        "waist_bottom_anchor_stable": true,
+        "locked_camera": true,
+        "props_inside_frame": true,
+        "no_baked_food_fire_steam": true,
+        "return_pose_visually_matches": true
+      },
+      "notes": [
+        "Source contains AAC stereo; not listened to, allaudio excluded from extraction/package.",
+        "Source endpose compression variation recorded; exactpixel roundtrip refers to quantizedframes, not rawvideo.",
+        "Container hasonefinalframe beyondnominal5seconds;5.041667s source retained. Cooking andtwofanbeats visible."
+      ]
+    }
+  }
+}
