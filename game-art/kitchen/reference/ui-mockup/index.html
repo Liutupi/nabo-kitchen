@@ -1,0 +1,169 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><title>NABO 深夜厨房 · 界面样板</title>
+<script src="art.js"></script>
+<style>
+@font-face{font-family:Archivo;src:url(archivo-black-latin-400-normal.woff2)}
+:root{--bg:#1D1A30;--panel:#2C2845;--ink:#15122A;--paper:#FBF1E3;--paper2:#F3E4CF;--gold:#FFB45E;--white:#fff;--dim:#8E88AA;
+--tomato:#FF6B5B;--egg:#FFC93F;--leaf:#4FC98A;--soup:#5DB7F2;--soy:#D9905A;--grey:#C5C3D3;--ol:#3B2730;--red:#E65152}
+*{box-sizing:border-box}
+body{margin:0;background:#0d0c16;font-family:"Noto Sans CJK SC",sans-serif;padding:28px 28px 40px;width:1424px;color:#eee}
+h1{font-size:22px;margin:0 0 6px}.lead{color:#a9a3c4;font-size:13px;margin:0 0 22px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(5,240px);gap:34px 36px}
+.cap{font-size:12.5px;color:#cfc9e6;margin-top:8px;line-height:1.5}.cap b{color:var(--gold)}
+.s{width:240px;height:320px;background:var(--bg);position:relative;overflow:hidden;font-weight:500;color:var(--paper);border-radius:2px;box-shadow:0 0 0 1px #2b2840}
+.a{position:absolute}
+.top{position:absolute;left:0;top:0;width:240px;height:32px;background:var(--ink);display:flex;align-items:center;padding:0 10px;font-size:16px;color:var(--paper)}
+.top .r{margin-left:auto;font-size:12px;color:var(--gold);display:flex;align-items:center;gap:3px;font-family:Archivo;letter-spacing:.5px}
+.ging{position:absolute;left:0;top:32px;width:240px;height:6px;background:
+ linear-gradient(90deg,rgba(255,255,255,.55) 50%,transparent 0) 0 0/6px 6px,
+ linear-gradient(rgba(255,255,255,.55) 50%,transparent 0) 0 0/6px 6px,var(--acc)}
+.bot{position:absolute;left:0;bottom:0;width:240px;height:28px;background:var(--ink);font-size:12px;color:var(--dim);display:flex;align-items:center;justify-content:center;gap:8px}
+.bot b{color:var(--paper);font-weight:500}
+.card{position:absolute;background:var(--paper);border-radius:10px;color:var(--ink);overflow:hidden}
+.card.bar:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--acc)}
+.chip{display:inline-flex;align-items:center;height:18px;padding:0 7px;border-radius:9px;font-size:12px;color:var(--ink);background:var(--paper2);margin-right:4px;gap:2px}
+.num{font-family:Archivo}
+.key{position:absolute;left:8px;width:138px;height:31px;border-radius:8px;background:var(--panel);display:flex;align-items:center;font-size:15px;color:var(--paper);box-shadow:0 2px 0 #120f22}
+.key i{font-style:normal;width:30px;height:22px;margin:0 8px 0 6px;border-radius:6px;background:var(--paper);color:var(--ink);font-family:Archivo;font-size:11px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 0 #9b8f80}
+.key small{display:block;font-size:12px;color:var(--dim);line-height:1;margin-top:1px}
+.key.hot{background:var(--acc);color:var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.key.hot small{color:rgba(21,18,42,.7)}
+.nabo{position:absolute;background:url(nabo.png) center top/100% auto no-repeat}
+.head{position:absolute;border-radius:50%;background:#F7D9C4 url(nabo.png) 50% 3%/170% auto no-repeat;border:3px solid var(--gold)}
+.bub{position:absolute;background:var(--paper);color:var(--ink);border-radius:10px;padding:6px 9px;font-size:13px;line-height:1.3}
+.bub.l:after{content:"";position:absolute;left:-6px;top:14px;border:6px solid transparent;border-right-color:var(--paper);border-left:0}
+.bub.r:after{content:"";position:absolute;right:-6px;bottom:12px;border:6px solid transparent;border-left-color:var(--paper);border-right:0}
+.glow{position:absolute;border-radius:50%}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:1px;opacity:.7}
+.ph{position:absolute;font-size:9px;color:rgba(255,255,255,.35);letter-spacing:.5px}
+</style></head><body>
+<h1>NABO 深夜厨房 · 界面样板 v2（240×320 实际尺寸）</h1>
+<p class="lead">沿用 NABO 工具箱的视觉语言：深色底、圆角奶油色卡片、粗描边扁平图标、实体按键行、NABO 气泡。工具箱的“挂绳织带”换成<b style="color:#FFB45E">格子桌布条</b>，每个功能一个食物点缀色；深夜感靠月亮、灯笼和时钟表现。<br>
+菜品和食材是我用 SVG 画的<b style="color:#FFB45E">占位图</b>，只用来定版式和气质；NABO 暂时借用工具箱的造型，厨房造型等 Codex 第 1 轮出图。</p>
+<div class="grid" id="g"></div>
+<script>
+const G=document.getElementById('g');
+const add=(html,cap)=>{G.insertAdjacentHTML('beforeend',`<div><div class="s">${html}</div><div class="cap">${cap}</div></div>`)};
+const tb=(t,acc,r='')=>`<div class="top">${t}<span class="r">${r}</span></div><div class="ging" style="--acc:${acc}"></div>`;
+const clock=`${icon('moon','#FFD98A',14)} 23:41`;
+const keys=(rows,acc,y0=176)=>rows.map((r,i)=>`<div class="key ${r[3]?'hot':''}" style="top:${y0+i*34}px;--acc:${acc}"><i>${r[0]}</i><div>${r[1]}${r[2]?`<small>${r[2]}</small>`:''}</div></div>`).join('');
+let stars='';for(let i=0;i<26;i++){stars+=`<div class="star" style="left:${(i*53)%236}px;top:${(i*37)%120+4}px;opacity:${.3+(i%4)*.18}"></div>`}
+
+// 1 开机封面
+add(`${stars}
+<div class="a" style="right:22px;top:18px">${icon('moon','#FFD98A',30)}</div>
+<div class="a num" style="left:0;right:0;top:44px;text-align:center;font-size:40px;color:#fff;letter-spacing:1px">NABO</div>
+<div class="a" style="left:0;right:0;top:92px;text-align:center;font-size:20px;font-weight:700;color:var(--gold);letter-spacing:4px">深夜厨房</div>
+<div class="a" style="left:0;right:0;top:122px;text-align:center;font-size:12px;color:var(--dim)">今晚吃什么，我来想</div>
+<div class="a" style="left:22px;top:150px">${icon('lantern','#FF8A5B',26)}</div><div class="a" style="right:22px;top:150px">${icon('lantern','#FF8A5B',26)}</div>
+<div class="glow" style="left:40px;top:180px;width:160px;height:160px;background:#2A2440"></div><div class="glow" style="left:60px;top:200px;width:120px;height:120px;background:#342C4C"></div>
+${['egg','tomato','choy','fish','shiitake','carrot'].map((k,i)=>{const a=Math.PI*(1.12+i*0.153);return `<div class="a" style="left:${120+Math.cos(a)*92-15}px;top:${232+Math.sin(a)*86-15}px">${ingIcon(k,30)}</div>`}).join('')}
+<div class="nabo" style="left:78px;top:186px;width:84px;height:150px"></div>
+`,
+`<b>P0 开机封面</b>：夜空、月亮、两盏灯笼，6 个食材绕着 NABO 转一圈后 NABO 升起。和工具箱的开机画面是同一套路。`);
+
+// 2 吧台首页
+add(`${tb('NABO 深夜厨房','#FFB45E',clock)}
+<div class="a" style="left:0;top:38px;width:240px;height:70px;background:var(--panel)"></div>
+<div class="head" style="left:10px;top:44px;width:58px;height:58px"></div>
+<div class="bub l" style="left:80px;top:48px;width:150px"><div style="font-size:15px">今晚吃点啥？</div><div style="font-size:12px;color:#8a7f73">今天还没抽签 · 剩 3 次</div></div>
+<div class="card" style="left:8px;top:114px;width:224px;height:58px;background:var(--tomato);border:2px solid var(--ink);box-shadow:0 3px 0 #15122A">
+ <div class="a" style="left:10px;top:9px;width:38px;height:38px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;border:2px solid var(--ink)">${icon('wok','#FF6B5B',26)}</div>
+ <div class="a" style="left:58px;top:8px;font-size:18px;font-weight:700">今天吃什么</div><div class="a" style="left:58px;top:32px;font-size:12px;opacity:.8">颠一下锅，马上决定</div>
+ <div class="a" style="right:10px;top:18px;font-family:Archivo;font-size:16px">›</div></div>
+${[['冰箱','有啥做啥','fridge','#5DB7F2'],['买菜单','5 样待买','basket','#4FC98A'],['我的菜谱','23 / 300','book','#FFC93F'],['设置','口味 · 声音','gear','#C5C3D3']].map((c,i)=>`<div class="card bar" style="--acc:${c[3]};left:${8+(i%2)*116}px;top:${180+Math.floor(i/2)*50}px;width:108px;height:44px"><div class="a" style="left:10px;top:10px">${icon(c[2],c[3])}</div><div class="a" style="left:38px;top:5px;font-size:15px">${c[0]}</div><div class="a" style="left:38px;top:24px;font-size:12px;color:#8a7f73">${c[1]}</div></div>`).join('')}
+<div class="bot">↑↓ 选择 · <b>OK</b> 进入 · 长按 OK 直接颠勺</div>`,
+`<b>P1 吧台首页</b>：结构照搬工具箱菜单（欢迎条 + 卡片），但把“今天吃什么”做成一张大红卡，是整个应用的主角。`);
+
+// 3 抽菜结果
+add(`${tb('今天就吃它！','#FF6B5B',clock)}
+<div class="card" style="left:8px;top:44px;width:224px;height:116px;background:#2C2845">
+ <div class="glow" style="left:22px;top:-18px;width:180px;height:150px;background:#3A3150"></div><div class="glow" style="left:42px;top:-2px;width:140px;height:116px;background:#463A58"></div>
+ <div class="a" style="left:37px;top:2px">${DISH.tomato(150,112)}</div></div>
+<div class="a" style="left:12px;top:164px;font-size:20px;font-weight:700">番茄炒蛋</div>
+<div class="a" style="left:12px;top:192px"><span class="chip" style="background:#FFE2A8">${icon('timer','#FF6B5B',13)} 15 分钟</span><span class="chip" style="background:#FFD2C8">下饭</span></div>
+${keys([['↑','回吧台'],['↓','换一道','今天还剩 2 次'],['OK','开做！','',1]],'#FF6B5B',216)}
+<div class="nabo" style="left:154px;top:172px;width:84px;height:150px"></div>
+<div class="bub r" style="left:150px;top:150px;font-size:12px;padding:3px 7px">这道我拿手</div>`,
+`<b>P4 结果</b>：菜放在一圈暖光里（用色阶画，不做渐变）。左边是工具箱同款按键行，最重要的“开做！”高亮；右下是 NABO 和一句台词。`);
+
+// 4 搭配
+add(`${tb('今晚的搭配','#FF6B5B',clock)}
+<div class="a" style="left:12px;top:46px;font-size:12px;color:var(--dim)">一荤一素一汤 · 3 人份</div><div class="a num" style="right:12px;top:44px;font-size:14px;color:var(--gold)">35<span style="font-family:'Noto Sans CJK SC';font-size:11px"> 分钟</span></div>
+${[['fish','清蒸鲈鱼','荤','#FF6B5B'],['choy','蒜蓉菜心','素','#4FC98A'],['soup','番茄蛋汤','汤','#5DB7F2']].map((d,i)=>`<div class="card" style="left:${8+i*76}px;top:${i==1?64:72}px;width:72px;height:${i==1?104:92}px;${i==1?'border:2px solid var(--gold);box-shadow:0 3px 0 #15122A;background:#fff':''}"><div class="a" style="left:0;top:4px;width:72px;height:16px;text-align:center"><span class="chip" style="background:${d[3]};height:16px;font-size:11px;padding:0 6px;color:#fff">${d[2]}</span></div><div class="a" style="left:0;top:${i==1?22:20}px">${DISH[d[0]](72,54)}</div><div class="a" style="left:0;right:0;top:${i==1?80:74}px;text-align:center;font-size:12px">${d[1]}</div></div>`).join('')}
+<div class="head" style="left:10px;top:184px;width:44px;height:44px;border-width:2px"></div>
+<div class="bub l" style="left:64px;top:186px;width:166px;font-size:12px">菜心先焯，鱼上锅蒸的时候正好炒菜。</div>
+${keys([['↑↓','选一道'],['OK','从鱼开始做','',1]],'#FF6B5B',238).replace(/width:138px/g,'width:224px')}
+`,
+`<b>P4 搭配模式</b>：三道菜一字排开，选中的那道放大并抬起。NABO 会给出做菜顺序的小建议（规则在原型里定）。`);
+
+// 5 跟做
+add(`${tb('番茄炒蛋','#FFC93F','<span style="font-family:Archivo;color:#FFC93F">2 / 5</span>')}
+<div class="a" style="left:8px;top:46px;display:flex;gap:4px">${[1,1,0,0,0].map((f,i)=>`<div style="width:42px;height:6px;border-radius:3px;background:${i<2?'#FFC93F':'#3a3556'}"></div>`).join('')}</div>
+<div class="card" style="left:8px;top:60px;width:224px;height:150px;background:var(--paper)">
+ <div class="a num" style="left:10px;top:8px;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--egg);font-size:16px;display:flex;align-items:center;justify-content:center">02</div>
+ <div class="a" style="left:52px;top:14px"><span class="chip" style="background:#FFD2C8">${icon('fire','#FF6B5B',14)} 大火</span><span class="chip" style="background:#FFE9B0">${icon('stir','#FFC93F',14)} 炒</span></div>
+ <div class="a" style="left:12px;top:50px;width:202px;font-size:18px;line-height:25px;color:var(--ink)">热锅放 2 大勺油，油热后倒入蛋液，边缘凝固再推散。</div>
+ <div class="a" style="left:0;right:0;bottom:0;height:26px;background:#FFE9B0;font-size:12px;display:flex;align-items:center;padding-left:12px;color:#7a5b16">💡 油热透，蛋才蓬松</div></div>
+<div class="a" style="left:8px;top:220px;width:150px;height:56px;border-radius:28px;background:var(--panel);border:2px solid var(--egg);display:flex;align-items:center;padding-left:10px;gap:8px">${icon('timer','#FFC93F',28)}<div><div class="num" style="font-size:22px;color:#fff;line-height:1">0:30</div><div style="font-size:12px;color:var(--dim)">OK 开始计时</div></div></div>
+<div class="head" style="left:176px;top:218px;width:56px;height:56px;border-color:var(--egg)"></div>
+<div class="bot">OK 下一步 · ↑ 上一步 · 长↓ 用料</div>`,
+`<b>P6 跟做</b>：一张大字卡片，序号、火候、做法一眼看到；小贴士用黄条。计时做成胶囊，NABO 只露头像，不抢字的位置。`);
+
+// 6 计时
+add(`${tb('计时','#5DB7F2',clock)}
+<svg class="a" style="left:46px;top:46px" width="148" height="148" viewBox="0 0 148 148"><circle cx="74" cy="74" r="64" stroke="#2C2845" stroke-width="14" fill="none"/><circle cx="74" cy="74" r="64" stroke="#5DB7F2" stroke-width="14" fill="none" stroke-linecap="round" stroke-dasharray="402" stroke-dashoffset="120" transform="rotate(-90 74 74)"/>${[...Array(12)].map((_,i)=>`<circle cx="${74+Math.cos(i*Math.PI/6)*48}" cy="${74+Math.sin(i*Math.PI/6)*48}" r="1.6" fill="#4a4566"/>`).join('')}</svg>
+<div class="a num" style="left:0;right:0;top:96px;text-align:center;font-size:34px;color:#fff">07:12</div>
+<div class="a" style="left:0;right:0;top:136px;text-align:center;font-size:12px;color:var(--dim)">蒸鲈鱼</div>
+<div class="a" style="left:8px;top:204px;display:flex;flex-direction:column;gap:6px">
+ <div class="chip" style="height:26px;width:138px;background:var(--panel);color:var(--paper);border-radius:8px;font-size:13px">${icon('timer','#FF6B5B',16)} 排骨 <span class="num" style="margin-left:auto;font-size:13px">18:40</span></div>
+ <div class="chip" style="height:26px;width:138px;background:var(--panel);color:var(--paper);border-radius:8px;font-size:13px">${icon('timer','#4FC98A',16)} 菜心 <span class="num" style="margin-left:auto;font-size:13px">00:25</span></div></div>
+<div class="nabo" style="left:154px;top:176px;width:84px;height:150px"></div>
+
+<div class="bot" style="justify-content:flex-start;padding-left:10px">OK 暂停 · ↑↓ 切换</div>`,
+`<b>P7 计时</b>：大号圆环和数字，下面是另外两个计时器的小条；NABO 在右下守锅，偶尔冒一句话。时间到了圆环变红闪烁。`);
+
+// 7 冰箱
+add(`${tb('冰箱里有啥','#5DB7F2','<span style="color:#4FC98A;font-family:Noto Sans CJK SC;font-size:12px">已选 4</span>')}
+<div class="a" style="left:8px;top:44px;display:flex;gap:4px">${['肉','海鲜','蛋豆','蔬菜'].map((t,i)=>`<span class="chip" style="height:22px;padding:0 10px;font-size:13px;${i==3?'background:#5DB7F2;color:#15122A':'background:#2C2845;color:#cfc9e6'}">${t}</span>`).join('')}</div>
+${['tomato','choy','potato','carrot','pepper','shiitake','garlic','egg'].map((k,i)=>{const sel=[0,1,4,6].includes(i),cur=i==5;const names={tomato:'番茄',choy:'菜心',potato:'土豆',carrot:'胡萝卜',pepper:'青椒',shiitake:'香菇',garlic:'蒜',egg:'鸡蛋'};return `<div class="card" style="left:${8+(i%4)*58}px;top:${74+Math.floor(i/4)*72}px;width:52px;height:66px;${cur?'background:var(--gold);':''}${sel?'outline:2px solid #4FC98A;':''}${cur?'border:2px solid var(--ink);':''}"><div class="a" style="left:${cur?4:6}px;top:${cur?2:4}px">${ingIcon(k,40)}</div><div class="a" style="left:0;right:0;top:${cur?44:46}px;text-align:center;font-size:12px">${names[k]}</div>${sel?`<div class="a" style="right:2px;top:2px;width:15px;height:15px;border-radius:50%;background:#4FC98A;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:700">✓</div>`:''}</div>`}).join('')}
+<div class="head" style="left:10px;top:224px;width:40px;height:40px;border-width:2px;border-color:#5DB7F2"></div>
+<div class="bub l" style="left:60px;top:226px;width:170px;font-size:12px">这些能做 <b style="color:#E65152;font-size:14px">6</b> 道菜，长按 OK 看看</div>
+<div class="bot">OK 勾选 · 长按 OK 推荐 · 长↑ 返回</div>`,
+`<b>P9 冰箱</b>：食材是带小脸的可爱图标，放在奶油色小卡上；勾选的加绿勾，当前格变金色。NABO 实时算出能做几道。`);
+
+// 8 上菜完成
+add(`${tb('做好啦！','#4FC98A',clock)}
+${[...Array(18)].map((_,i)=>`<div class="a" style="left:${(i*41)%228+6}px;top:${(i*29)%110+44}px;width:${i%3?6:4}px;height:${i%3?3:4}px;border-radius:1px;background:${['#FF6B5B','#FFC93F','#4FC98A','#5DB7F2'][i%4]};transform:rotate(${i*37}deg)"></div>`).join('')}
+<div class="a" style="left:40px;top:50px">${DISH.tomato(160,120)}</div>
+<div class="a" style="left:138px;top:46px;width:64px;height:64px;border-radius:50%;border:3px solid #E65152;color:#E65152;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transform:rotate(-14deg);background:rgba(251,241,227,.92)"><div style="text-align:center;line-height:1.05">完成<div style="font-size:9px;letter-spacing:1px">NABO</div></div></div>
+<div class="a" style="left:12px;top:176px;font-size:18px;font-weight:700">番茄炒蛋 <span style="font-size:12px;color:var(--dim);font-weight:500">第 3 次</span></div>
+<div class="a" style="left:12px;top:204px;font-size:12px;color:var(--dim)">我的菜谱 24 / 300</div>
+<div class="a" style="left:12px;top:222px;width:132px;height:8px;border-radius:4px;background:#2C2845"><div style="width:20%;height:8px;border-radius:4px;background:var(--egg)"></div></div>
+<div class="a" style="left:12px;top:240px"><span class="chip" style="background:#FF6B5B;color:#fff">${icon('fire','#FFE07A',13)} 连续 5 天</span></div>
+<div class="nabo" style="left:154px;top:176px;width:84px;height:150px"></div>
+<div class="bub r" style="left:110px;top:150px;font-size:12px;padding:4px 8px">吃饭了！</div>
+<div class="bot" style="justify-content:flex-start;padding-left:12px">OK 回吧台</div>`,
+`<b>P8 完成</b>：彩纸、盖章、进度条和连续天数一起出现，给“做完一顿饭”一点仪式感。`);
+
+// 9 图鉴
+add(`${tb('我的菜谱','#FFC93F','<span style="font-family:Archivo;color:#FFC93F">24/300</span>')}
+<div class="card" style="left:8px;top:44px;width:224px;height:52px;background:var(--panel);color:var(--paper)">
+ <div class="a" style="left:8px;top:6px;width:40px;height:40px;border-radius:50%;background:#C98A4A;border:2px solid #15122A;display:flex;align-items:center;justify-content:center">${icon('stir','#FFE07A',26)}</div>
+ <div class="a" style="left:56px;top:6px;font-size:15px">深夜帮厨</div>
+ <div class="a" style="left:56px;top:28px;width:110px;height:7px;border-radius:4px;background:#1D1A30"><div style="width:60%;height:7px;border-radius:4px;background:var(--gold)"></div></div>
+ <div class="a" style="left:172px;top:24px;font-size:12px;color:var(--dim)">还差 16</div></div>
+${[['tomato','番茄炒蛋',1],['choy','蒜蓉菜心',0],['fish','清蒸鲈鱼',1],['soup','番茄蛋汤',0],[null],[null]].map((d,i)=>`<div class="card" style="left:${8+(i%3)*76}px;top:${104+Math.floor(i/3)*86}px;width:72px;height:80px;${d[0]?'':'background:#2C2845'}">${d[0]?`<div class="a" style="left:0;top:4px">${DISH[d[0]](72,54)}</div><div class="a" style="left:0;right:0;top:58px;text-align:center;font-size:12px">${d[1]}</div>${d[2]?'<div class="a" style="right:4px;top:3px;color:#FFB45E;font-size:13px">★</div>':''}`:`<div class="a" style="left:12px;top:14px;width:48px;height:32px;border-radius:50%;background:#3a3556"></div><div class="a num" style="left:0;right:0;top:18px;text-align:center;color:#6d678c;font-size:18px">?</div><div class="a" style="left:0;right:0;top:58px;text-align:center;font-size:12px;color:#6d678c">还没做过</div>`}</div>`).join('')}
+<div class="bot">↑↓ 选择 · OK 打开 · 长按 OK 收藏</div>`,
+`<b>P12 我的菜谱</b>：顶部是等级卡和升级进度；做过的菜彩色显示，没做过的是暗格问号，收藏的有星星。`);
+
+// 10 买菜单
+add(`${tb('买菜单','#4FC98A','<span style="color:#cfc9e6;font-family:Noto Sans CJK SC;font-size:12px">还差 3 样</span>')}
+<div class="card" style="left:14px;top:50px;width:212px;height:232px;background:var(--paper);transform:rotate(-1.2deg);box-shadow:0 4px 0 #15122A">
+ <div class="a" style="left:76px;top:-4px;width:60px;height:14px;background:rgba(255,201,63,.75);transform:rotate(2deg)"></div>
+ <div class="a" style="left:14px;top:16px;font-size:12px;color:#8a7f73">番茄炒蛋 · 蒜蓉菜心</div>
+ ${[['tomato','番茄','2 个',1],['egg','鸡蛋','3 个',0],['choy','菜心','400 克',0],['garlic','蒜','4 瓣',1],['pepper','青椒','1 个',0]].map((r,i)=>`<div class="a" style="left:10px;top:${38+i*38}px;width:192px;height:34px;display:flex;align-items:center;gap:6px;${r[3]?'opacity:.45':''}"><div style="width:18px;height:18px;border-radius:5px;border:2px solid var(--ol);background:${r[3]?'#4FC98A':'#fff'};color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:700">${r[3]?'✓':''}</div>${ingIcon(r[0],30)}<span style="font-size:15px;${r[3]?'text-decoration:line-through':''}">${r[1]}</span><span style="margin-left:auto;font-size:13px;color:#8a7f73">${r[2]}</span></div>`).join('')}
+</div>
+<div class="bot">OK 打勾 · ↑↓ 选择 · 长↑ 返回</div>`,
+`<b>P11 买菜单</b>：一张贴着胶带、略微歪着的便签，适合去菜市场时看；买到的划掉，自动沉到下面。`);
+</script>
+</body></html>

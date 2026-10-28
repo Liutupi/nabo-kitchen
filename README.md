@@ -1,6 +1,6 @@
 # NABO 深夜厨房 · LATE KITCHEN
 
-FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手。NABO 在一间深夜小店的吧台后面，帮你决定**今天吃什么**，再一步一步带你**把菜做出来**。
+FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手。NABO 下了夜班开了一间小厨房，帮你决定**今天吃什么**，再一步一步带你**把菜做出来**。
 
 > 产品名为暂定。“深夜食堂”只作为画风和氛围的参考，产品名称、画面和文字里都不使用这几个字。
 
@@ -27,7 +27,8 @@ FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手�
 | 任何人，每次开工前 | [HANDOFF.md](HANDOFF.md)：当前状态和下一步 |
 | 第一次来 | [AGENTS.md](AGENTS.md)：分工、目录归属和规矩 |
 | 做架构或固件 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
-| 做玩法或界面 | [game-art/kitchen/DESIGN.md](game-art/kitchen/DESIGN.md) |
+| 做玩法 | [game-art/kitchen/DESIGN.md](game-art/kitchen/DESIGN.md) |
+| 做界面 | [game-art/kitchen/UI_DESIGN.md](game-art/kitchen/UI_DESIGN.md)，样板图 `game-art/kitchen/reference/ui-mockup.png` |
 | 做美术 | [game-art/kitchen/ART_BRIEF.md](game-art/kitchen/ART_BRIEF.md)，再看 [CODEX_PROMPTS.md](game-art/kitchen/CODEX_PROMPTS.md) 或 [GROK_PROMPTS.md](game-art/kitchen/GROK_PROMPTS.md) |
 | 写或审菜谱 | [data/RECIPE_FORMAT.md](data/RECIPE_FORMAT.md) |
 | 想看进度 | [docs/ROADMAP.md](docs/ROADMAP.md) |

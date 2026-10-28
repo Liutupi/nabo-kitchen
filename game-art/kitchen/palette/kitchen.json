@@ -1,114 +1,97 @@
 {
  "name": "kitchen",
- "status": "draft（第 1 轮样板屏确认后锁定）",
+ "version": "0.2",
+ "status": "界面配色已按工具箱风格定稿；食物颜色等第 1 轮样板确认",
  "colors": [
   {
-   "id": "night",
-   "hex": "#0B0D14",
-   "rgb565": "0x0862",
-   "use": "屏幕底、夜空"
+   "id": "BG",
+   "hex": "#1D1A30",
+   "rgb565": "0x18C6",
+   "use": "页面底色"
   },
   {
-   "id": "wall",
-   "hex": "#17110F",
-   "rgb565": "0x1081",
-   "use": "店内暗墙"
+   "id": "PANEL",
+   "hex": "#2C2845",
+   "rgb565": "0x2948",
+   "use": "深色卡、按键行"
   },
   {
-   "id": "wall_lit",
-   "hex": "#2B1F1A",
-   "rgb565": "0x28E3",
-   "use": "灯下墙面"
+   "id": "INK",
+   "hex": "#15122A",
+   "rgb565": "0x1085",
+   "use": "顶栏、底栏、浅色卡上的字"
   },
   {
-   "id": "counter_dark",
-   "hex": "#3A2414",
-   "rgb565": "0x3922",
-   "use": "吧台暗部"
+   "id": "PAPER",
+   "hex": "#FBF1E3",
+   "rgb565": "0xFF9C",
+   "use": "奶油色卡片、正文"
   },
   {
-   "id": "counter",
-   "hex": "#5B3A23",
-   "rgb565": "0x59C4",
-   "use": "吧台木色，半透明边缘预混底色"
+   "id": "PAPER2",
+   "hex": "#F3E4CF",
+   "rgb565": "0xF739",
+   "use": "标签底"
   },
   {
-   "id": "counter_hi",
-   "hex": "#8C5B33",
-   "rgb565": "0x8AC6",
-   "use": "吧台高光"
+   "id": "GOLD",
+   "hex": "#FFB45E",
+   "rgb565": "0xFDAB",
+   "use": "选中、强调、灯笼"
   },
   {
-   "id": "lamp",
-   "hex": "#FFB347",
-   "rgb565": "0xFD88",
-   "use": "暖灯"
+   "id": "WHITE",
+   "hex": "#FFFFFF",
+   "rgb565": "0xFFFF",
+   "use": "大数字"
   },
   {
-   "id": "lamp_hi",
-   "hex": "#FFD98A",
-   "rgb565": "0xFED1",
-   "use": "灯芯、高亮"
+   "id": "DIM",
+   "hex": "#8E88AA",
+   "rgb565": "0x8C55",
+   "use": "次要说明"
   },
   {
-   "id": "noren",
-   "hex": "#1F2D47",
-   "rgb565": "0x1968",
-   "use": "暖帘深靛"
+   "id": "OUTLINE",
+   "hex": "#3B2730",
+   "rgb565": "0x3926",
+   "use": "菜品、食材、图标描边"
   },
   {
-   "id": "paper",
-   "hex": "#EFE3C8",
-   "rgb565": "0xEF19",
-   "use": "纸菜单"
+   "id": "RED",
+   "hex": "#E65152",
+   "rgb565": "0xE28A",
+   "use": "计时到、印章"
   },
   {
-   "id": "ink",
-   "hex": "#1E140E",
-   "rgb565": "0x18A1",
-   "use": "纸上墨色"
+   "id": "TOMATO",
+   "hex": "#FF6B5B",
+   "rgb565": "0xFB4B",
+   "use": "点缀：今天吃什么"
   },
   {
-   "id": "seal",
-   "hex": "#C8402F",
-   "rgb565": "0xCA05",
-   "use": "印章、警示"
+   "id": "SOUP",
+   "hex": "#5DB7F2",
+   "rgb565": "0x5DBE",
+   "use": "点缀：冰箱、计时"
   },
   {
-   "id": "fire",
-   "hex": "#FF7A2F",
-   "rgb565": "0xFBC5",
-   "use": "火苗"
+   "id": "LEAF",
+   "hex": "#4FC98A",
+   "rgb565": "0x4E51",
+   "use": "点缀：买菜单、勾选"
   },
   {
-   "id": "steam",
-   "hex": "#E9E3D7",
-   "rgb565": "0xEF1A",
-   "use": "蒸汽"
+   "id": "EGG",
+   "hex": "#FFC93F",
+   "rgb565": "0xFE47",
+   "use": "点缀：我的菜谱、跟做"
   },
   {
-   "id": "text",
-   "hex": "#F4EADB",
-   "rgb565": "0xF75B",
-   "use": "主文字"
-  },
-  {
-   "id": "text_sub",
-   "hex": "#9C907F",
-   "rgb565": "0x9C8F",
-   "use": "次要文字"
-  },
-  {
-   "id": "fresh",
-   "hex": "#7CC261",
-   "rgb565": "0x7E0C",
-   "use": "勾选、已齐"
-  },
-  {
-   "id": "line",
-   "hex": "#3A2A20",
-   "rgb565": "0x3944",
-   "use": "分隔线"
+   "id": "GREY",
+   "hex": "#C5C3D3",
+   "rgb565": "0xC61A",
+   "use": "点缀：设置"
   }
  ]
 }

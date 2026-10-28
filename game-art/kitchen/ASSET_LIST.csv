@@ -2,7 +2,7 @@ id,category,path,display,source,version,owner,status,note
 costume_A,costume,costume/costume_A.png,-,1024x1024,A1,Codex,todo,白大褂系围裙
 costume_B,costume,costume/costume_B.png,-,1024x1024,A1,Codex,todo,下班的医生（推荐）
 costume_C,costume,costume/costume_C.png,-,1024x1024,A1,Codex,todo,小店主
-style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,todo,样板屏，用来定风格
+style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,todo,菜品和食材风格样板，放进 ui-mockup 的版式里
 K1,grok-start,grok-start/K1.png,-,1024x1024,A2,Codex,todo,空手起始
 K2,grok-start,grok-start/K2.png,-,1024x1024,A2,Codex,todo,持锅起始
 idle,nabo-anim,grok-clips/idle.mp4,256x256 frames,video,0.1,Grok,todo,
@@ -167,16 +167,13 @@ badge_1,icon,icons/badge_1.png,40x40,160x160,0.3,Codex,todo,
 badge_2,icon,icons/badge_2.png,40x40,160x160,0.3,Codex,todo,
 badge_3,icon,icons/badge_3.png,40x40,160x160,0.3,Codex,todo,
 badge_4,icon,icons/badge_4.png,40x40,160x160,0.3,Codex,todo,
-ui_board_9,ui,ui/ui_board_9.png,9-slice,4x,0.1,Codex,todo,菜单木牌
-ui_paper_9,ui,ui/ui_paper_9.png,9-slice,4x,0.1,Codex,todo,纸菜单
 ui_lantern_dot,ui,icons/ui_lantern_dot.png,12x16,48x64,0.1,Codex,todo,
 ui_stamp_done,ui,icons/ui_stamp_done.png,56x56,224x224,0.3,Codex,todo,不写字
 ui_star,ui,icons/ui_star.png,12x12,48x48,0.3,Codex,todo,
 ui_timer_icon,ui,icons/ui_timer_icon.png,16x16,64x64,0.1,Codex,todo,
-bg_cover,bg,ui/bg_cover.png,240x320,960x1280,0.1,Codex,todo,
-bg_counter,bg,ui/bg_counter.png,240x196,960x784,0.1,Codex,todo,NABO 位置留暗
-bg_paper,bg,ui/bg_paper.png,32x32 tile,128x128,0.1,Codex,todo,
 prop_wok,prop,props/prop_wok.png,~32,4x,0.1,Codex,todo,
 prop_spatula,prop,props/prop_spatula.png,~32,4x,0.1,Codex,todo,
 prop_bowl,prop,props/prop_bowl.png,~32,4x,0.1,Codex,todo,
 prop_fan,prop,props/prop_fan.png,~32,4x,0.1,Codex,todo,
+logo_wordmark,ui,ui/logo_wordmark.png,<=220x90,4x,0.1,Codex,todo,开机字标
+ui_lantern,ui,icons/ui_lantern.png,26x26,104x104,0.1,Codex,todo,开机灯笼
