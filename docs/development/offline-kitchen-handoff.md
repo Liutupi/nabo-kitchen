@@ -2,7 +2,7 @@
 
 # Offline kitchen handoff — 2026-10-29
 
-Work resumed at the user's request. The combined 144-recipe candidate now passes the complete gate and is packaged locally; device acceptance is pending. This is not a release. Do not flash or erase the device merely because this branch exists.
+Work resumed at the user's request. The first 144-recipe candidate was flashed with approval. Startup exposed a watchdog warning; a scheduling repair is built and packaged, awaiting its own flash approval. This is not a release. Do not flash or erase the device merely because this branch exists.
 
 ## Where the work lives
 
@@ -12,15 +12,17 @@ Work resumed at the user's request. The combined 144-recipe candidate now passes
 
 ## Firmware currently on the device
 
-The installed application is the verified **128-recipe / 50-ingredient / nine-complete-illustration** version. Application SHA256: `8ccfcbdfa7f8ef0ee3e9987a0a9da2167eb91974414ac74ed4d09e15e4569562`. Installed resource SHA256: `21ee0798fbcc8abf69cbf243517d26e50a87f0c1fee20b5d7a27d9897ded51e0`.
+The approved **144-recipe / 58-ingredient / 17-complete-illustration** candidate was written and independently verified, app SHA256 `9e21fad27eff0fc63efb6aeb26dcf01f2e29cfb8a722d3108ec7cf62a059579d`, resource SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`. Identity, 8 MiB capacity, disabled Secure Boot/encryption, the retained bootloader and unchanged partition table were checked before writing. Only app/resources were written; NVS, PHY and files were preserved.
 
 The installed bootloader came from the earlier compatible offline candidate (SHA256 `c20c3a4bd3d38e6670bda9ed1a67d6883b7290122e40a3a31371e2a84aa95bd7`). The partition table SHA256 is `23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499`. Later updates wrote only the approved app and resource segments. This mixed installed state must not be identified by a newer complete-image hash.
 
 The user confirmed the opening animation and welcome voice, the opening screen holding until OK, and physical fridge category/ingredient selection. A 128-version isolated test reached the seafood page, selected ingredients, captured all 320 display rows, and restored normal mode. The earlier 104-version isolated flow passed home → conditions → draw → ingredients → cooking. These observations do not certify every timer, power-loss case, animation frame rate or household recipe.
 
-The last four-dish device test was refused with `pending-save`; no record or timer was cleared to bypass it. The port was closed. Private device logs remain outside GitHub. Do not automatically open/reset the port during the next session before establishing the user's intended test scope.
+The earlier four-dish test was refused with `pending-save`. New read-only status confirms the cause: a restored timer with an unacknowledged clock-loss warning (`dirty=1`, `clock_lost=1`, `storage_fault=0`, journal sequence 140). The user was asked to press OK twice; no records were cleared. Reopening the native USB port produced another fresh boot log, so acknowledgement and isolated testing must share one persistent serial connection to avoid resetting the restored timers again. Initial 144-version status reports 194,900 free heap bytes, largest block 114,688 bytes, and 8,672 minimum free UI stack bytes. These precede the four-dish stress test.
 
-## Latest source checkpoint: not yet flashed
+Full startup logs also contain an IDLE-task watchdog warning at 5,437 ms while `kitchen_ui` was running. Matching ELF `17c0f929a...` decodes the sampled PC/RA to a FreeRTOS critical-section exit, not a complete caller trace. Resource validation completed at 2,970 ms; uninterrupted higher-priority initialization delayed the idle task until startup completed. The repair yields between bundle validation, resource parsing and catalog initialization without disabling the watchdog. It still needs a physical boot retest. All monitors were closed; raw logs and target identity remain private.
+
+## Latest implementation
 
 - 144 recipe drafts, 58 ingredients, 13 seafood types and 17 complete dish illustrations. Remaining dishes use existing layers or an explicit art-pending placeholder. Recipes and new art remain subject to household cooking and visual review.
 - Model capacity increased to 192 recipes; stable-ID KST1 migration preserves older recipe and ingredient selections. Multi-dish draws above 64 recipes use bounded candidate pools and are not equivalent to exhaustive weighted search.
@@ -34,8 +36,8 @@ The last four-dish device test was refused with `pending-save`; no record or tim
 ```text
 Build: PASS for the complete ESP-IDF 5.5.3 gate
 Host tests: PASS for static, actual 144-recipe rendering/migration and NVS stress
-Device tests: NOT RUN for the latest combined source
-Unverified: device seafood/icon appearance, unlimited redraw, timer cancellation,
+Device tests: FAIL for first 144-version startup (watchdog); repair NOT RUN
+Unverified: repaired boot, device seafood/icon appearance, unlimited redraw, timer cancellation,
 worker stack, occupied-device NVS capacity and physical power-loss behavior
 ```
 
@@ -47,13 +49,15 @@ Using unmodified ESP-IDF 5.5.3 NVS storage/page/GC sources with synthetic NOR I/
 
 ## Verified local candidate
 
-- Segmented package: `/Users/tupi/Library/Caches/nabo-kitchen-fw/offline-144-nvs-0019ff996826`.
-- Debug archive: `build/firmware/0019ff996826c0fcf8b278a7724886983d9a61e5428838ff9ce4e11865020a5f/`.
-- Full image SHA256: `0019ff996826c0fcf8b278a7724886983d9a61e5428838ff9ce4e11865020a5f`.
-- App: 513,136 bytes; SHA256 `9e21fad27eff0fc63efb6aeb26dcf01f2e29cfb8a722d3108ec7cf62a059579d`.
-- Matching ELF SHA256: `17c0f929a080ff52757b07958144a818317deca0fb3322bfd300244250606713`; embedded version `f67c7ee-dirty` identifies the tested working tree before its source checkpoint commit.
+- Segmented package: `/Users/tupi/Library/Caches/nabo-kitchen-fw/offline-144-yield-907e959e29ff`.
+- Debug archive: `build/firmware/907e959e29ffe0a5c2754c820317db24953315a32c44d90647a813d6491f9922/`.
+- Full image SHA256: `907e959e29ffe0a5c2754c820317db24953315a32c44d90647a813d6491f9922`.
+- App: 513,184 bytes; SHA256 `5b77ba87157481f4be8e5e70540f0984d1f2131e8cfc3117a60503c47203ed15`.
+- Matching ELF SHA256: `2650225e83603a557c0153efa7cc1f932aa111b937a70264019c894fe936c7d5`; embedded version `697a44a-dirty` identifies the tested working tree before its source checkpoint commit.
 - Resources retain SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`. Archive and segmented-package verification both passed. Generated firmware/debug files remain local.
-- USB enumeration found the prior `/dev/cu.usbmodem212401`; no port was opened or reset. Approval was requested for this candidate's app/resource-only update; consent and hardware acceptance are still pending.
+- The intended port is `/dev/cu.usbmodem212401`. The first app/resource update was approved and completed. Approval is now pending for the repaired app only; keep the installed resources, bootloader, table and user data.
+
+GitHub synchronization is blocked: CLI authentication for Liutupi is invalid, the connected GitHub integration rejects tree writes with HTTP 403, and SSH access is unavailable. The source repair commit `697a44a` is local; remote `codex/offline-kitchen` remains `f67c7ee`. Do not claim the new work was pushed. Preserve local commits and resume pushing only after GitHub access is restored.
 
 ## Resume steps
 

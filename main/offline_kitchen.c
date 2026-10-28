@@ -126,6 +126,9 @@ static bool load_resources(kitchen_state *s) {
       s->recipes.count > KR_MAX_RECIPES || s->animation.width != 192 ||
       s->animation.height != 192)
     return false;
+  /* Resource CRC/decompression is CPU work on this single-core board. Let the
+   * idle task run between initialization stages instead of starving its WDT. */
+  vTaskDelay(pdMS_TO_TICKS(2));
   s->items = heap_caps_calloc(s->recipes.count, sizeof(kc_item),
                               MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
   if (!s->items)
@@ -135,6 +138,7 @@ static bool load_resources(kitchen_state *s) {
       !kv_assets_init(&s->assets, &s->catalog, &s->recipes, &s->fonts, &s->dish,
                       &s->icons, &s->ui_art, &s->animation))
     return false;
+  vTaskDelay(pdMS_TO_TICKS(2));
   /* There is no trusted clock. Preserve an existing saved day; never advance it
    * on reboot. */
   if (!ku_init(&s->ui, &s->catalog, &s->recipes, 0, 1, esp_random(),
@@ -551,7 +555,9 @@ static void read_console(kitchen_state *s, int64_t now) {
 }
 static void worker(void *arg) {
   kitchen_state *s = arg;
-  if (!map_resources(s) || !load_resources(s)) {
+  bool mapped = map_resources(s);
+  vTaskDelay(pdMS_TO_TICKS(2));
+  if (!mapped || !load_resources(s)) {
     ESP_LOGE(TAG, "kitchen assets or memory unavailable");
     /* A red screen is an explicit failure, rather than falsely showing old UI.
      */
