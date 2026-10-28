@@ -1,0 +1,39 @@
+{
+  "id": "green_pepper__blistered",
+  "bbox": [
+    140,
+    174,
+    510,
+    344
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. Three cooked WHOLE green peppers flattened into irregular longplump bodies, blistered skin with a few deepgreen/brown seared patches. No redchilies, no filling, no slices or strips. Stems removed, horizontal overlapping arrangement, shiny green tiger-skin-pepper mainlayer.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-4da8f75d-528e-42f4-a202-8300af7067a1.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/green_pepper__blistered.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    337,
+    365,
+    1164,
+    794
+  ],
+  "content_size": [
+    328,
+    170
+  ],
+  "offset": [
+    161,
+    174
+  ],
+  "sha256": "0aef11c7b2cb1455430eebaf5b17559137fb08912ec9ee7885ac695ea6ce5237",
+  "native_sha256": "bf5b4b5d0914131557dc69d01ed05d27db1134e6797a400f03f6899ab93abe2e",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "fish_whole__soup",
+  "bbox": [
+    130,
+    190,
+    510,
+    335
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. One small whole cooked CRUCIAN CARP for fish-tofu soup, silvercream pale skin and dark greyback, rounded shortbody unlike longseabass, headviewerLEFT tailRIGHT, natural small closedeye only. Thin 45degree topview horizontal silhouette, bottomedge darker as submerged; no liquid/bowl/ginger or garnish.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-f69c21eb-bc92-4369-b638-a086a565d50b.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/fish_whole__soup.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    323,
+    363,
+    1179,
+    770
+  ],
+  "content_size": [
+    305,
+    145
+  ],
+  "offset": [
+    167,
+    190
+  ],
+  "sha256": "93cab71f8f555aa31ba990cb24d6b9c9d5ee186351e267aa204243d7de181bbd",
+  "native_sha256": "af3633c4271d7a54c0ce3a2b3e57b5abe9c1526ef8c2c5704c57c4068dde3974",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}

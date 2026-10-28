@@ -1,0 +1,39 @@
+{
+  "id": "pork_mince__patty_egg_steamed",
+  "bbox": [
+    150,
+    165,
+    500,
+    345
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. One shallow round cooked minced pork patty, warm pale beige/grey mincedmeat texture represented by only a few broad simpleflatforms, with TWO fully STEAMED eggs nestled in small hollows on top, whites set ivory and small rounded golden cooked yolks. Not fried/no browning, noface. This is meat-patty-with-steamed-eggs main layer; no garnish/plate.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-65fddb32-886b-4187-a226-9eb1f31c6398.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/pork_mince__patty_egg_steamed.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    331,
+    286,
+    1119,
+    865
+  ],
+  "content_size": [
+    245,
+    180
+  ],
+  "offset": [
+    202,
+    165
+  ],
+  "sha256": "fe9690906028230a31ad7abba91a36183afae00a8df78f9a8d46d29f408b84ca",
+  "native_sha256": "b7e55e73caf577cee6d60d9b8b4c63fe451cec9a4ee3ff361e85491528509f07",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "tofu__cubes_soup",
+  "bbox": [
+    170,
+    195,
+    470,
+    325
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. Six plain gently simmered TOFU CUBES, pale ivory WHITE uncolored surfaces, softly rounded edges, no fried skin, no browning, no sauce. A shallow scattered cluster with gaps, cubeedges simple, suited to clear vegetable soup.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-6ae23a19-5211-49c4-9973-296cc69af0c1.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/tofu__cubes_soup.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    372,
+    345,
+    1110,
+    792
+  ],
+  "content_size": [
+    215,
+    130
+  ],
+  "offset": [
+    212,
+    195
+  ],
+  "sha256": "5e9bea07e972881b25476a5e335e3d206a872a12b6e237140b4483ec556cf611",
+  "native_sha256": "37e5935aec70ffe28337173bd695ac27dd0dc79765f30b5c6441f255fcdac9da",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "beef__chunks_stewed",
+  "bbox": [
+    160,
+    180,
+    490,
+    340
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. Seven small cooked stewed BEEF CHUNKS for clear tomato beef soup, irregular2cm cubes of warm tan/brown lean meat, one darker side and a few simple fibre lines. No pork fatbands, no redbraise glaze, no sauce, no vegetables. Shallow loosepile with transparentgaps.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-cdfdad20-05e8-4a85-b645-1a237a65aca2.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/beef__chunks_stewed.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    344,
+    313,
+    1187,
+    856
+  ],
+  "content_size": [
+    248,
+    160
+  ],
+  "offset": [
+    201,
+    180
+  ],
+  "sha256": "fd1ee630451d3e746208c74b480ea98d9fb72080f252d01c65bfff5413b12852",
+  "native_sha256": "4261791bb2e830291da193270c489d2cc64645dd6a0ff3472ff98cfaab94ad65",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}

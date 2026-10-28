@@ -5,10 +5,10 @@ costume_C,costume,costume/costume_C.png,-,1024x1024,A1,Codex,done,小店主；A1
 style_board,style,style/style_board.png,240x320,960x1280,A1,Codex,done,菜品和食材风格样板，放进 ui-mockup 的版式里；A1 2026-10-28 首轮已交付，待审图；2026-10-28 刘东坡确认菜品和食材风格通过
 K1,grok-start,grok-start/K1.png,-,1024x1024,A2,Codex,review,空手起始；2026-10-28 C 定稿造型，1024x1024 纯绿幕首稿，待审图
 K2,grok-start,grok-start/K2.png,-,1024x1024,A2,Codex,review,持锅起始；2026-10-28 C 定稿造型，1024x1024 纯绿幕首稿，待审图
-idle,nabo-anim,grok-clips/idle.mp4,256x256 frames,video,0.1,Grok,todo,
-toss,nabo-anim,grok-clips/toss.mp4,256x256 frames,video,0.1,Grok,todo,
-serve,nabo-anim,grok-clips/serve.mp4,256x256 frames,video,0.1,Grok,todo,
-tend,nabo-anim,grok-clips/tend.mp4,256x256 frames,video,0.1,Grok,todo,
+idle,nabo-anim,grok-clips/idle.mp4,256x256 frames,video,0.1,Grok,review,2026-10-28 原视频已收到，工程抽帧与解码验证通过，待美术及真机验收
+toss,nabo-anim,grok-clips/toss.mp4,256x256 frames,video,0.1,Grok,review,2026-10-28 原视频已收到，工程抽帧与解码验证通过，待美术及真机验收
+serve,nabo-anim,grok-clips/serve.mp4,256x256 frames,video,0.1,Grok,review,2026-10-28 原视频已收到，工程抽帧与解码验证通过，待美术及真机验收
+tend,nabo-anim,grok-clips/tend.mp4,256x256 frames,video,0.1,Grok,review,2026-10-28 原视频已收到，工程抽帧与解码验证通过，待美术及真机验收
 think,nabo-anim,grok-clips/think.mp4,256x256 frames,video,0.2,Grok,todo,
 ding,nabo-anim,grok-clips/ding.mp4,256x256 frames,video,0.3,Grok,todo,
 cheer,nabo-anim,grok-clips/cheer.mp4,256x256 frames,video,0.3,Grok,todo,
@@ -177,3 +177,9 @@ prop_bowl,prop,props/prop_bowl.png,~32,4x,0.1,Codex,review,2026-10-28 自主推�
 prop_fan,prop,props/prop_fan.png,~32,4x,0.1,Codex,review,2026-10-28 自主推进批量交付，待审图；源图和提示词见同名JSON
 logo_wordmark,ui,ui/logo_wordmark.png,<=220x90,4x,0.1,Codex,review,开机字标；2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
 ui_lantern,ui,icons/ui_lantern.png,26x26,104x104,0.1,Codex,review,开机灯笼；2026-10-28 自主推进批量交付，待审图；原生SVG与PNG同名交付，源稿及检查记录见同名JSON
+tofu__cubes_soup,dish-L2,dish-layers/tofu__cubes_soup.png,160x120,640x480,0.1,Codex,review,汤里的原色豆腐块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+green_pepper__blistered,dish-L2,dish-layers/green_pepper__blistered.png,160x120,640x480,0.1,Codex,review,虎皮整青椒；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+fish_whole__soup,dish-L2,dish-layers/fish_whole__soup.png,160x120,640x480,0.1,Codex,review,鱼汤里的整条熟鲫鱼；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+pork_mince__patty_egg_steamed,dish-L2,dish-layers/pork_mince__patty_egg_steamed.png,160x120,640x480,0.1,Codex,review,肉饼上蒸熟鸡蛋；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+beef__chunks_stewed,dish-L2,dish-layers/beef__chunks_stewed.png,160x120,640x480,0.1,Codex,review,汤里炖熟牛肉块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+potato__chunks_soup,dish-L2,dish-layers/potato__chunks_soup.png,160x120,640x480,0.1,Codex,review,汤里原色土豆块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图

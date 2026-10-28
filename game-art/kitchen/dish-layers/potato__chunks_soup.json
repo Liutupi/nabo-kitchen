@@ -1,0 +1,39 @@
+{
+  "id": "potato__chunks_soup",
+  "bbox": [
+    180,
+    195,
+    480,
+    330
+  ],
+  "prompt": "Use case: game cooked ingredient layer. One original refinedcute FLAT2D cookedfood layer for NABO LateKitchen, true TRANSPARENT640x480 canvas. Reference1approved scrambled egg is STYLEONLY: match rounded warm flatshapes and darkbrown #3B2730 roughly8px outline, one discrete highlight+one discrete shadow, upperleftlight, 45degree topview, no photo texture/3D/smoothgradients. Shared dishcenter320,270; isolate requestedfood as compact shallow serving with no vessel, saucepool, garnish, steam, fire, face, text or logos. Damp darker loweredges blend with soup; no cartoon eyes/mouth. Generousblankmargin; eventual160x120. Six plain tender POTATO CHUNKS for soup, pale buttery ivory-yellow, irregular2cm softened cubes, unbrowned surfaces, no curry/redbraise, no skins or seasoning. Shallow loosecluster with transparentgaps, simple flat yellow highlight/shade.",
+  "native": "C:\\Users\\pc\\.codex\\generated_images\\01a18151-49a5-7590-9d08-af2b51172a8b\\exec-353189b6-034d-43a7-8811-2753553108fb.png",
+  "status": "review",
+  "mode": "built-in image_gen",
+  "size": [
+    640,
+    480
+  ],
+  "native_local": "private/d1/native/potato__chunks_soup.png",
+  "native_size": [
+    1448,
+    1086
+  ],
+  "crop": [
+    334,
+    343,
+    1129,
+    802
+  ],
+  "content_size": [
+    234,
+    135
+  ],
+  "offset": [
+    213,
+    195
+  ],
+  "sha256": "3ac1d4ebd25c9f77c1c5cb711fafe4c345786129de9160e745cbfe71ff7a07f8",
+  "native_sha256": "630006520060743be8765388098d1db2b8951854be3d27ad7d0520764937aa7b",
+  "processing": "Transparent bounds crop, uniform fit and placement on sharedcanvas; no repaint or mirroring."
+}
