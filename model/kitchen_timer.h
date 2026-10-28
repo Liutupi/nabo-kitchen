@@ -17,14 +17,14 @@ typedef struct {
     uint32_t count, next_id;
 } kt_service;
 
-void kt_init(kt_service *service);
+void kt_init(kt_service* service);
 /* Return 1 on success, 0 when seconds is zero, capacity is full, or time overflows. */
-int kt_add(kt_service *service, uint32_t seconds, int64_t now, uint32_t *id);
-int64_t kt_remaining(const kt_timer *timer, int64_t now);
-int kt_tick(kt_service *service, int64_t now);
-void kt_toggle(kt_service *service, uint32_t id, int64_t now);
-void kt_cancel(kt_service *service, uint32_t id);
-uint32_t kt_alarm(kt_service *service, int64_t now);
-void kt_acknowledge(kt_service *service, uint32_t id);
+int kt_add(kt_service* service, uint32_t seconds, int64_t now, uint32_t* id);
+int64_t kt_remaining(const kt_timer* timer, int64_t now);
+int kt_tick(kt_service* service, int64_t now);
+void kt_toggle(kt_service* service, uint32_t id, int64_t now);
+void kt_cancel(kt_service* service, uint32_t id);
+uint32_t kt_alarm(kt_service* service, int64_t now);
+void kt_acknowledge(kt_service* service, uint32_t id);
 
 #endif

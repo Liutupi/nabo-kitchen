@@ -19,8 +19,7 @@ typedef struct {
     uint16_t minutes, weight;
     uint8_t courses, method, repeated_main;
 } kr_recipe;
-typedef enum { KR_OK = 0, KR_NO_ALLOWED = 1, KR_NO_COMBINATION = 2,
-               KR_INVALID = 3 } kr_status;
+typedef enum { KR_OK = 0, KR_NO_ALLOWED = 1, KR_NO_COMBINATION = 2, KR_INVALID = 3 } kr_status;
 typedef struct {
     kr_status status;
     uint16_t indices[4];
@@ -28,7 +27,7 @@ typedef struct {
 } kr_result;
 
 /* minutes==0 means unlimited; avoid is the previously selected set. No heap. */
-kr_result kitchen_recommend(const kr_recipe *recipes, size_t count, uint64_t excluded,
-                            unsigned combo, unsigned minutes, uint32_t seed,
-                            const uint16_t *avoid, size_t avoid_count);
+kr_result kitchen_recommend(const kr_recipe* recipes, size_t count, uint64_t excluded,
+                            unsigned combo, unsigned minutes, uint32_t seed, const uint16_t* avoid,
+                            size_t avoid_count);
 #endif

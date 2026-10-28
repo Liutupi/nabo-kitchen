@@ -68,8 +68,8 @@ class RecommendParity(unittest.TestCase):
             ('s->avoid_filter && same_avoid(s)', '0 && same_avoid(s)'),
             ('s->length > 1 && earlier_permutation(s, 0, 0, 0)',
              '0 && earlier_permutation(s, 0, 0, 0)'),
-            ('if (same_method) notes |= KR_METHOD_RELAXED;',
-             'if (0 && same_method) notes |= KR_METHOD_RELAXED;'),
+            ('if (same_method)\n        notes |= KR_METHOD_RELAXED;',
+             'if (0 && same_method)\n        notes |= KR_METHOD_RELAXED;'),
         ]
         for old,new in mutations:
             with self.subTest(mutation=old), tempfile.TemporaryDirectory() as tmp:
