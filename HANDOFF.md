@@ -8,6 +8,14 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-29 · Codex（Windows）· 任务 2 完成
+
+- 完整 8 MiB 备份已校验并只留本机；通过 Edge 社区“安装最新版”完成 v0.1.0 首次完整安装。
+- bootloader、分区表、应用、资源独立读回均与发布产物逐字节一致；受控重启无看门狗、panic 或存储故障。
+- 用户确认进入厨房、走完一道菜到完成页，实体暂停/取消计时正常；这是流程验证，不计实厨或单独听感验收。
+- 本次 bootloader 首装通过，任务 2 无需重打 v0.1.1；[固件脱敏验证报告](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-first-install-validation-20261029.json)。
+- 下一步：任务 3；另记“暂停入口不易发现”的提示优化建议，既定按键规则不变。
+
 ### 2026-10-29 · Codex（Windows）· 任务 1 完成
 
 - 内容目录已跟踪 `main`，固件目录已跟踪 `firmware`；旧美术/发布目录转为只读用途的 detached 快照。
