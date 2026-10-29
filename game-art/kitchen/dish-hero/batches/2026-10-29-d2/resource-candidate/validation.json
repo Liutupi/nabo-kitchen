@@ -1,0 +1,157 @@
+{
+  "content_commit": "1288bcecb663046ffab07bb3573ffddfe921b6db",
+  "recipes": 145,
+  "heroes": 145,
+  "removed_ids": 35,
+  "new_glyphs": {
+    "腩": true,
+    "煸": true,
+    "蘸": true,
+    "黏": true
+  },
+  "files": {
+    "kitchen_recipes.krc": {
+      "bytes": 107251,
+      "sha256": "f09770c44e7a86b107507e1558364896b27304ecd5e8a96c8bf962b670b86074"
+    },
+    "kitchen_fonts.bin": {
+      "bytes": 969902,
+      "sha256": "ef22dd028fe7fd9e9f1a39dcb711091db34693dadd74922a7cf10d7371e3adac"
+    },
+    "kitchen_dish.bin": {
+      "bytes": 1607326,
+      "sha256": "b63597c16d00e90b4736949fe7a9b18d38a7a8f8bef3e3c61591ef1286019c84"
+    },
+    "kitchen_icons.bin": {
+      "bytes": 60871,
+      "sha256": "ab84384d378d2125dad44d532ae2d65631fa489b272da815792ec0283051739c"
+    },
+    "kitchen_ui.bin": {
+      "bytes": 3779,
+      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"
+    },
+    "kitchen_nabo.bin": {
+      "bytes": 1019522,
+      "sha256": "c2764800befdb1ff28a0c5b88eaf725c82e59d7c738ac9445e4b9d89d064b368"
+    },
+    "kitchen_bundle.bin": {
+      "bytes": 3768770,
+      "sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d"
+    }
+  },
+  "resource_partition_bytes": 5242880,
+  "partition_remaining_bytes": 1474110,
+  "source_art_status": "review",
+  "device_tests": "NOT RUN",
+  "build": "PASS",
+  "budget_note": "Historical dish/font sub-budgets remain exceeded; no specification or budget changed. Actual 5MiB resource partition checked.",
+  "host_tests": "PASS",
+  "content_tests": {
+    "tools_tests": 31,
+    "top_level_codecs": 11,
+    "result": "PASS"
+  },
+  "firmware_gate": "./tools/validate.sh --all",
+  "capability_dependent_skips": 21,
+  "real_C_rendering": "PASS: all 145 recipes and required hero sprites; complete/stripe equivalence",
+  "save_migration": "PASS: known retired IDs filtered from menus, history, cooked, sessions, favorites, wanted and timers; remaining settings/records retained; unknown IDs reject atomically",
+  "firmware_archive": {
+    "full_bin_sha256": "beeae0887d3539c4594761939ae39b10534fd41d664c0c2236b46315e535bb29",
+    "app_elf_sha256": "66bb30b3df295cb307e44b2640b488110d03bc0cc2af175f93fe2ad4b00ba326",
+    "app_descriptor": {
+      "embedded_elf_sha256": "66bb30b3df295cb307e44b2640b488110d03bc0cc2af175f93fe2ad4b00ba326",
+      "idf_version": "v5.5.3",
+      "project_name": "FoloToy-AI-Passport",
+      "version": "v0.1.0-7-gfddaac9-dirty"
+    },
+    "files": {
+      "FoloToy-AI-Passport-full.bin": {
+        "sha256": "beeae0887d3539c4594761939ae39b10534fd41d664c0c2236b46315e535bb29",
+        "size": 5865922
+      },
+      "FoloToy-AI-Passport.bin": {
+        "sha256": "159b61aa5c04193e85bfc13f46d9e64bd43f611fb65f864686bf226c9c37c504",
+        "size": 515600
+      },
+      "FoloToy-AI-Passport.elf": {
+        "sha256": "66bb30b3df295cb307e44b2640b488110d03bc0cc2af175f93fe2ad4b00ba326",
+        "size": 6715644
+      },
+      "FoloToy-AI-Passport.map": {
+        "sha256": "dd695e2f04e0de7e3f6c394904b083f88247f633c16cff32fdbf244af43409de",
+        "size": 3318613
+      },
+      "bootloader/bootloader.bin": {
+        "sha256": "f962d7b5ae258b01e838366c6df5136d89a32c11f2921edccf37d1ccbcf4d55f",
+        "size": 21024
+      },
+      "flash_args": {
+        "sha256": "d36013d05443b8c6b55fc8e69d8b179fe6b017cfd38676a3fdacc1e3d3d05e00",
+        "size": 189
+      },
+      "partition_table/partition-table.bin": {
+        "sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+        "size": 3072
+      }
+    },
+    "local_path": "build/firmware/beeae0887d3539c4594761939ae39b10534fd41d664c0c2236b46315e535bb29"
+  },
+  "production_source_sha256": {
+    "main/kitchen/kitchen_bundle.c": "69025adb95d3af6e23cac98a9a4e0426deebe61ada5a193f12e209af70e50d51",
+    "main/kitchen/kitchen_bundle.h": "d953863adefb6b8188f0b1b3e74345ec175147024b835718aaab7950026d82e8",
+    "main/kitchen/kitchen_calendar.c": "ba4cef120b233b73d6ac74b3e4e23c56c696b24e129e028254ce1cb8f064dc1d",
+    "main/kitchen/kitchen_calendar.h": "cb63b565d97b91773089274beba3b91dbdfc263ae9c0eb668c87382b0536b978",
+    "main/kitchen/kitchen_calendar_view.c": "7d34c31100838718643d91010a323ff54be6593eb23c93d4e80d9f39f9dcf03b",
+    "main/kitchen/kitchen_calendar_view.h": "063bf3e9c0acb512cf9268a1f770cea86a2da92aee0e2ac6b4ca6f0fd254605d",
+    "main/kitchen/kitchen_canvas.c": "ffb1b8943b972ad7ed7f869b6cbecd95f207386f1bbf6a21b1e8e0d26eba8d5f",
+    "main/kitchen/kitchen_canvas.h": "d2287d3e1bb68a71341741d7c8746a4e9f366e21345df715d88c103a73c17d90",
+    "main/kitchen/kitchen_catalog.c": "d9af9e7359a7db0e960ad7a7cbbbe2653239e26f9e121f40f8fb7711c04a8c24",
+    "main/kitchen/kitchen_catalog.h": "998520bf9bf2f81bad1551d7dc0795092bc8a7890f350b1890bd60e14f6a5150",
+    "main/kitchen/kitchen_crc32.h": "487ed112a77094d889eb311f065126591eacc58d7984f0666d2d7e3c0831858e",
+    "main/kitchen/kitchen_input.c": "b07ff55e8da6ec8917ff5421fe3400787c97bb3334a0a9a6c851f5053c9ffc58",
+    "main/kitchen/kitchen_input.h": "0ceb9cf5fe3d675f20ebf652d727480a9b2bf03a8efedc820b5de0e86b5d61ba",
+    "main/kitchen/kitchen_journal.c": "d76a48af13925c0db1e41b5cf3acc585a76edb7a1910928fe91685dc1f0d1890",
+    "main/kitchen/kitchen_journal.h": "cb12ccbf51a2df734e4079bde9aeb9777716a12b747a18a688bef452d5623783",
+    "main/kitchen/kitchen_kan.c": "ad163e8737f585d7c33fcbf28f8ad05c0b4b1a444fd2b2ab6eba0951ee575639",
+    "main/kitchen/kitchen_kan.h": "33730df731589f14c100bc4c9fbefbbcd2c500a918e8e98cd36b3bb0a371db08",
+    "main/kitchen/kitchen_kfn.c": "80c9ad69016e29c230f83d4cc9726bd304b9be01eea73be6ea9316b956ba1e35",
+    "main/kitchen/kitchen_kfn.h": "88714d265ea02bc62341f72ab2324334f5be128927bb4c4c6a2a5d8162739921",
+    "main/kitchen/kitchen_krc.c": "7b26665879fe4665bbfe25c60d249dd66d2f5ae790095fdf67c2874362da95d1",
+    "main/kitchen/kitchen_krc.h": "9724ef087e2cbb3e00e555e950c0a66d12ecf562b84e608379391390347c93e8",
+    "main/kitchen/kitchen_ksp.c": "ae15c580e17bd5e824bb52b8b7419866b415c3d11946be8011f2b34116b987da",
+    "main/kitchen/kitchen_ksp.h": "552817eaa676cd8e3b02ecea588a99c1b2f1555cbae5c90b2e8bb8b4bd681e86",
+    "main/kitchen/kitchen_lists.c": "84adb5b38e40a9c316ca17254b2d65ddb12d6f9521b411d0f76b35979a312add",
+    "main/kitchen/kitchen_metadata.c": "4c14037c8cac2aa1f1bce70df78262b66d7916efec7e147f8ab60e319b1e8423",
+    "main/kitchen/kitchen_metadata.h": "86cf948dd1a011f86eec3a49241dc86b4cf7dc83a5d3dc2451dfd94f6d318e1f",
+    "main/kitchen/kitchen_model.c": "722178b8177a7c6695a504eb735e4b4bc38d8e3604f73fa825d650f24b765a2a",
+    "main/kitchen/kitchen_model.h": "c99d271f5e0ab2ba1ce677211c8a42a878fdf43ad8de854b13c64bd1cbcff925",
+    "main/kitchen/kitchen_recommend.c": "0b6b4b7535572639eb2cab95358d51b3cdac4db691553fbfa6630bf5c239240b",
+    "main/kitchen/kitchen_recommend.h": "3bae14f30461795134c0cf22d7c4daca56917af74710830fe58b50c1b5ff1732",
+    "main/kitchen/kitchen_retired.h": "b26588f75b4d6ae54e29716e1a010e46577c5eb4cb08a1379cb3de34f787563a",
+    "main/kitchen/kitchen_save.c": "49b14eaaad4da129f324f495a1575db151bf79d9b6ef50aac3f28cde7bd6f7b7",
+    "main/kitchen/kitchen_save.h": "c7dd7b2136a36f75a9cdf0a25daf35ef37bf7e5e8a09f8a0c56d6fadef107de7",
+    "main/kitchen/kitchen_session.c": "c0b00fbcaa6233d19e948ccababbb471ceba86e3d5889d90267eff4439fa0ec7",
+    "main/kitchen/kitchen_session.h": "2aa70c078165a6058d983713232cdd7f077790c65354ac37a3b2b83f9351888f",
+    "main/kitchen/kitchen_timer.c": "2c344a3ec4adefa9304df126284715a9c0bae7a439c3789268b8612c85c32d10",
+    "main/kitchen/kitchen_timer.h": "9a970d7ccd31c0a51bbfb9d8b11c6cf68e7505bc2203466907db1d183dbcc91b",
+    "main/kitchen/kitchen_ui.c": "9d73f0f6d63f910e59d659fcf93bc572aeada179f5a6de5fc4c1d662856a1e49",
+    "main/kitchen/kitchen_ui.h": "b9290a21d93e323a200425750006c223f73fcc48b5f3064be54af3a0e1180652",
+    "main/kitchen/kitchen_view.c": "086c397f8c9e4efce24ac89d4c906838a00bdeafc736eda353dda8d1d5ce6cac",
+    "main/kitchen/kitchen_view.h": "104ce505aa69e3286bcb8d83c301144a821f5833a5e4f589f75e54e7877a34f9",
+    "main/kitchen/kitchen_view_cooking.c": "37c4b4f5b724c824b9683d6300b2037ab248abf1e6c53fbe29d07a6ce5b4d7f5",
+    "main/kitchen/kitchen_view_home.c": "b72f910edce257c28fbeb5728631fe51b7fbcd874eccaa53212ff6dab5c38530",
+    "main/kitchen/kitchen_view_internal.h": "5e153f9300251d0ed0ca2ca45cb97130936caed53f0e11b20e45c0b7363ab5f6",
+    "main/kitchen/kitchen_view_lists.c": "139bbfb907f55d462373770e74b0435c3c272bbe1cb0445a5d1a49af0c9514f0",
+    "main/kitchen/nabo_kitchen_mixer.c": "71405cdf054a2a9b1bd362ab52aa325adcf7fa0ac49a88a82b7a80a778ddeab0",
+    "main/kitchen/nabo_kitchen_mixer.h": "1ec3c647d0fb62b2276a0ac26b107f134a14deda209dcd0b93828eac30f743b2",
+    "main/kitchen/nabo_kitchen_startup.pcm": "b47e9a9e8845a130495896d8628a153f7d17339442e7e9d6f7ef3a61c81d4a22",
+    "main/kitchen/nabo_kitchen_store.c": "acf006911bf02600d655227a954f18943d481cedf842a185e155daded926aa35",
+    "main/kitchen/nabo_kitchen_store.h": "1e12a0f138bc7b95a2d7b149524c7b5e31714971e76d6db67889a92b22c6661e"
+  },
+  "unverified": [
+    "D2 on-device installation and physical display",
+    "All-recipe art and cooking acceptance",
+    "v0.2 date-free behavior not implemented in this task-5 build",
+    "New bootloader has no device acceptance; no flashing performed"
+  ]
+}

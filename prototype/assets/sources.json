@@ -31,8 +31,8 @@
     "source_name": "SourceHanSansSC-Medium.otf",
     "source_sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70",
     "source_commit": "a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2",
-    "output_sha256": "2807a9407442cf3dd8c4d91355951c06c8ed4abcf26f4d01469e87889429bf12",
-    "characters": 3628,
+    "output_sha256": "6914fa097fcf7565d0fa67e503ac94448d356d5699219b8df5bcbd41508efb18",
+    "characters": 3635,
     "family": "KitchenHan",
     "processing": "Unicode subset, reserved family renamed, WOFF2; official pinned SC Medium source"
   }

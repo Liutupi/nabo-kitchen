@@ -3,11 +3,13 @@ import argparse
 import json
 from pathlib import Path
 import struct
+from asset_codec import fnv1a
 
 ROOT=Path(__file__).resolve().parents[1]
+D2_PACKAGES=Path('game-art/kitchen/dish-hero/batches/2026-10-29-d2/resource-candidate')
 def build(root=ROOT, recipes_krc=None, font_chars=None, all_fridge=False):
-    recipes_krc = recipes_krc or root/'checkpoints/2026-10-28/packages/kitchen_recipes.krc'
-    font_chars = font_chars or root/'checkpoints/2026-10-28/packages/kitchen_fonts.chars.txt'
+    recipes_krc = recipes_krc or root/D2_PACKAGES/'kitchen_recipes.krc'
+    font_chars = font_chars or root/D2_PACKAGES/'kitchen_fonts.chars.txt'
     raw=Path(recipes_krc).read_bytes()
     offset,length=struct.unpack_from('<II',raw,20)
     dictionary=json.loads(raw[offset:offset+length])
@@ -31,7 +33,7 @@ def build(root=ROOT, recipes_krc=None, font_chars=None, all_fridge=False):
     if missing:raise ValueError(f'font missing metadata characters: {"".join(missing)}')
     return json.dumps(data,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode('utf-8')
 def build_c(root=ROOT, recipes_krc=None, font_chars=None, all_fridge=False):
-    recipes_krc = recipes_krc or root/'checkpoints/2026-10-28/packages/kitchen_recipes.krc'
+    recipes_krc = recipes_krc or root/D2_PACKAGES/'kitchen_recipes.krc'
     raw=Path(recipes_krc).read_bytes()
     offset,length=struct.unpack_from('<II',raw,20);dictionary=json.loads(raw[offset:offset+length])
     data=json.loads(build(root, recipes_krc, font_chars, all_fridge));ingredients=json.loads((root/'data/ingredients.json').read_text())['ingredients']
@@ -46,9 +48,23 @@ def build_c(root=ROOT, recipes_krc=None, font_chars=None, all_fridge=False):
         values=dictionary[name];lines += [f'const char *const km_{name}[] = {{{", ".join(q(x) for x in values)}}};',f'const unsigned km_{name}_count = {len(values)};']
     values=data['seasonings'];lines += [f'const char *const km_seasoning_names[] = {{{", ".join(q(x) for x in values)}}};',f'const unsigned km_seasoning_count = {len(values)};']
     return ('\n'.join(lines)+'\n').encode('utf-8')
+def build_retired(root=ROOT):
+    removed=json.loads((root/'data/D2_REMOVED.json').read_text(encoding='utf-8'))['removed']
+    hashes=[fnv1a(row['id']) for row in removed]
+    if len(hashes)!=len(set(hashes)):raise ValueError('duplicate retired recipe hashes')
+    lines=['/* Generated from main/data/D2_REMOVED.json. Keep unknown IDs rejected. */',
+           '#ifndef KITCHEN_RETIRED_H','#define KITCHEN_RETIRED_H','#include <stdint.h>',
+           'static int kitchen_recipe_retired(uint32_t hash) {','    switch (hash) {']
+    lines += [f'    case 0x{h:08x}u: /* {row["id"]} */' for h,row in zip(hashes,removed)]
+    lines += ['        return 1;','    default: return 0;','    }','}','#endif','']
+    return '\n'.join(lines).encode('utf-8')
+
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--c-output',type=Path);parser.add_argument('--recipes-krc',type=Path);parser.add_argument('--font-chars',type=Path);parser.add_argument('--all-fridge',action='store_true',help='Expose every registered ingredient in the offline fridge');args=parser.parse_args()
-    if not args.output and not args.c_output:parser.error('at least one output is required')
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--c-output',type=Path);parser.add_argument('--retired-output',type=Path);parser.add_argument('--recipes-krc',type=Path);parser.add_argument('--font-chars',type=Path);parser.add_argument('--all-fridge',action='store_true',help='Expose every registered ingredient in the offline fridge');args=parser.parse_args()
+    if not args.output and not args.c_output and not args.retired_output:parser.error('at least one output is required')
     for target,data in ((args.output,build(recipes_krc=args.recipes_krc,font_chars=args.font_chars,all_fridge=args.all_fridge)),(args.c_output,build_c(recipes_krc=args.recipes_krc,font_chars=args.font_chars,all_fridge=args.all_fridge))):
         if target:target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data);print(f'Wrote {len(data)} bytes to {target}')
+    if args.retired_output:
+        args.retired_output.parent.mkdir(parents=True,exist_ok=True)
+        args.retired_output.write_bytes(build_retired())
 if __name__=='__main__':main()
