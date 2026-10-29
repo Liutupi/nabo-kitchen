@@ -1,0 +1,24 @@
+{
+  "id": "hero_xianggu-chaorou",
+  "recipe_id": "xianggu-chaorou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-chaorou-source.png",
+  "original_sha256": "1b124c351b97b77ad9ad141f6deb33dd6fc7539fa35091a4e527c7bb81943f48",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6661de256bee07d78f1824e894dac73bc5bcc03741b1a4e456bed538505670f5",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-chaorou. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇炒肉. Actual recipe ingredients: 瘦肉 (main), 香菇 (main), 姜. Preparation reference: 瘦肉切薄片，香菇切片；生肉用具分开清洗。 锅加油，放姜片及瘦肉炒至变色。 加入香菇及水，加盖煮5分钟至蔬菜熟软。 测肉最厚处中心至少63℃，不足继续加热。 加生抽和盐翻匀，离火静置3分钟再吃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "c384984f7de8062207e5b3ab3c5b1bd1e34b04ab27c62a62b36ed925a4c87783",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

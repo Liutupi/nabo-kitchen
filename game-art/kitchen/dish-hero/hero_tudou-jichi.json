@@ -1,0 +1,24 @@
+{
+  "id": "hero_tudou-jichi",
+  "recipe_id": "tudou-jichi",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_tudou-jichi-source.png",
+  "original_sha256": "73a220a2634e563b6f299d0d11dd68acea202926d8fe34c7c9867d26adf3d651",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "555708935aab33a4df31fa9977572b243ebd2f6fee88d43f15525cb76ef37037",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_tudou-jichi. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 土豆焖鸡翅. Actual recipe ingredients: 鸡翅 (main), 土豆 (main), 姜. Preparation reference: 土豆去皮切块、姜切片；另用刀板处理鸡翅并洗手洗具。 锅放油，中火煎鸡翅至两面微黄。 加入姜、土豆、生抽和水，煮开后转小火。 盖盖焖约20分钟，土豆软且鸡肉中心达74℃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4887495214f6d20ab616855b047bb3dd4e6732cb082277658dc20b7806035559",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "hero_xianggu-chaodougan",
+  "recipe_id": "xianggu-chaodougan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-chaodougan-source.png",
+  "original_sha256": "6668b9d7af901a6a71674bf3fc7ae19ac72c4998f81bf752a1bf01cc99a8c4ff",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6aed0842b1575dd01b7abcd78fe153994eb53635508aa3b19f53918b9b8a8358",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-chaodougan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇炒豆干. Actual recipe ingredients: 豆干 (main), 香菇 (main), 蒜. Preparation reference: 香菇洗净切片；豆干切条，蒜切片。 热锅放油，加入蒜片炒香。 加入香菇翻炒，倒水加盖煮熟。 加入豆干和生抽，炒热至豆干中心热透。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4824d196778972521b16f6b8bc0385ef67669581731e74f3f6668f5b8c914eec",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

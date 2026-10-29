@@ -1,0 +1,24 @@
+{
+  "id": "hero_tudou-men-paigu",
+  "recipe_id": "tudou-men-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_tudou-men-paigu-source.png",
+  "original_sha256": "d9280cd5bc8cd60f72b71f4bf5979136b6c53737293dc987de65815fc3a0eb69",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "73aee3cb76270b84c04a855c5091fe02c3bf38a9d7deb09a9cec0b4281c5226b",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_tudou-men-paigu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 土豆焖排骨. Actual recipe ingredients: 排骨 (main), 土豆 (main), 姜. Preparation reference: 排骨切小块；土豆去皮切块，姜切片；生熟分开。 排骨加800毫升水煮开，煮3分钟后沥出。 锅中放油和姜片，下排骨翻炒，加入生抽和老抽。 加700毫升热水煮开，盖盖转小火焖35分钟。 加入土豆，再焖15分钟至土豆软熟。 测厚肉处至少63℃，关火静置3分钟。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a small dark earthenware casserole. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "21b7e309f03b2507e10f11fa41650b27146d418dbd0d86f4e9a8a2366c6179bf",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
