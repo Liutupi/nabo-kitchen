@@ -1,0 +1,170 @@
+{
+  "version": "0.2.0-dev",
+  "checked_at": "2026-10-29T16:29:27.731072+00:00",
+  "status": "timer_home_fix_validated_awaiting_new_application_consent",
+  "source_code_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
+  "prototype_code_commit": "ce063567498f1dba596e126408ee26f42b2066f7",
+  "problem": "After leaving the cooking page, physical controls could not open running or paused timers from home before an alarm fired",
+  "behavior": [
+    "Six permanent home choices; ordinary UP/DOWN plus short OK opens timers",
+    "One short UP from the default home focus selects timers",
+    "Timer entry remains present for empty, running, paused and finished states",
+    "Hold OK pauses/resumes; hold DOWN cancels only the selected timer; double UP returns",
+    "Cancel preserves recipe step progress and prevents silent timer restart",
+    "Paused timers restored from KST2 stay reachable after reboot"
+  ],
+  "build": "PASS",
+  "host_tests": "PASS",
+  "device_tests": "NOT RUN",
+  "published": false,
+  "validation": {
+    "complete_gate": "PASS",
+    "archive_verify": "PASS",
+    "prototype_tests": 33,
+    "real_C_rendering_tests": 13,
+    "physical_keyboard_browser_regressions": 2,
+    "C_navigation_persistence_and_multi_timer_cancellation": "PASS",
+    "recipe_catalog_count": 145,
+    "weight_vectors": 160,
+    "draw_vectors": 40,
+    "maximum_NVS_saves": 100,
+    "simulated_NVS_power_cut_boundaries": 484,
+    "capability_dependent_skips": 21
+  },
+  "production_source_lf_sha256": {
+    "main/kitchen/kitchen_bundle.c": "61fbfc325a546f214075d16995e692ba54fc5786c157b4b736aa3cbb55bbe1ac",
+    "main/kitchen/kitchen_bundle.h": "0a959cda5fb4d9e2153febc1d0881112ac673475930c7ffcbbcb2510562d8b77",
+    "main/kitchen/kitchen_calendar.c": "db437987183a82e3281c71037d290d61f8f425c7a75f967a55427151008bc175",
+    "main/kitchen/kitchen_calendar.h": "acc1f241d704bdc845dbffba6a952598ad02215e5277ced86ef68898d483db9e",
+    "main/kitchen/kitchen_calendar_view.c": "f4306caecd134758f1253fb854c566a0bf453cba5acce14b561c13ee5eb855a6",
+    "main/kitchen/kitchen_calendar_view.h": "49a92452228a7d2e14101c2ddbd686dcb75fe74ac3bdb9bee7f17a2cfe123b8c",
+    "main/kitchen/kitchen_canvas.c": "73d0e31831fe8e723509f5ab64bcda0f711df467ec47b7a16135ca442e67ce45",
+    "main/kitchen/kitchen_canvas.h": "e86a0214bddee06009f4f9f79cf5e7c33ed83e735ebe3e76803debf8b847f1c2",
+    "main/kitchen/kitchen_catalog.c": "b2b5172171507bb33fe1a511058f5282d0e5893bebfd17278902c9c0ea5449c8",
+    "main/kitchen/kitchen_catalog.h": "baebb545805baafc07f7223156a21a6df7d7543bbde671d1aa4628aa0961e340",
+    "main/kitchen/kitchen_crc32.h": "487ed112a77094d889eb311f065126591eacc58d7984f0666d2d7e3c0831858e",
+    "main/kitchen/kitchen_input.c": "9fe6fcf645782c89c240b48a4608771a37c6039bbe8ba5bce2c3cdbc5fe0950f",
+    "main/kitchen/kitchen_input.h": "88e0ae121c790bcb88513dfb060033656f912e04cc285c9b5cfa8b2c216e28c5",
+    "main/kitchen/kitchen_journal.c": "c3e90e67bfcd4ec84df63be1b26f57603febe29ba2d4d80ad655b81be25e2093",
+    "main/kitchen/kitchen_journal.h": "3155877337a1f62cd8631e2db68459f61203d6143d4a75d1823c9a5041675c0e",
+    "main/kitchen/kitchen_kan.c": "ad163e8737f585d7c33fcbf28f8ad05c0b4b1a444fd2b2ab6eba0951ee575639",
+    "main/kitchen/kitchen_kan.h": "80d5bf3701e153e7b515b56265cb7747090c2cfb13ae9e64bf54f92d141cca82",
+    "main/kitchen/kitchen_kfn.c": "80c9ad69016e29c230f83d4cc9726bd304b9be01eea73be6ea9316b956ba1e35",
+    "main/kitchen/kitchen_kfn.h": "d75c652b6f0d06c03fec760b451530a3b1c63f9cc2b35982a9b695db5c4c0bf3",
+    "main/kitchen/kitchen_krc.c": "7b26665879fe4665bbfe25c60d249dd66d2f5ae790095fdf67c2874362da95d1",
+    "main/kitchen/kitchen_krc.h": "fa2600429d77d0971d3f4bbb11aed46e8ac7d5225e9f0ca15c491c09c92d50f7",
+    "main/kitchen/kitchen_ksp.c": "ae15c580e17bd5e824bb52b8b7419866b415c3d11946be8011f2b34116b987da",
+    "main/kitchen/kitchen_ksp.h": "acee9e770efe31385a9745c7925c61b47ea5de768430323e8f752b81e414cdf5",
+    "main/kitchen/kitchen_lists.c": "84c98bce077bd542c061fa5db6824337b2b4ba4b5f77a7d6f9326fc4c1a49196",
+    "main/kitchen/kitchen_metadata.c": "4c14037c8cac2aa1f1bce70df78262b66d7916efec7e147f8ab60e319b1e8423",
+    "main/kitchen/kitchen_metadata.h": "4908e0e622ea6aaa18b46eb4d4337a3c54c6917a9ccea3f535686be3aa5f4c75",
+    "main/kitchen/kitchen_model.c": "5668dd5cc76561634f9502d6aaa0c1eabe905ae7fc4bb87ac013d2933b46b789",
+    "main/kitchen/kitchen_model.h": "76d101716e7a4a330f2992f3af7521283aa6aab0dccc28f28aac26e48fab5971",
+    "main/kitchen/kitchen_recommend.c": "e7a617514a665cb64eebe0a3b21bc009da7d4685af0d04ae82687efad8b182f6",
+    "main/kitchen/kitchen_recommend.h": "0e0200eae0679666a9cec63d4d252a53227e56e01453d83fe2862e4adc0b6203",
+    "main/kitchen/kitchen_retired.h": "b26588f75b4d6ae54e29716e1a010e46577c5eb4cb08a1379cb3de34f787563a",
+    "main/kitchen/kitchen_save.c": "e00825f9c94ab8125c57ab9b651be9d5447296e6c7256663316d5da310518cae",
+    "main/kitchen/kitchen_save.h": "24f5cdb7c9acce20858773abc3f63d07b1e60fd1f77085901055aba9b1e3a8cf",
+    "main/kitchen/kitchen_session.c": "38a81a2842222ed4b99f790db75cd68a63cdd8e33c7d0066f52e13ad7665ad97",
+    "main/kitchen/kitchen_session.h": "f5238f491a06513aff18fa006c458ddbde6d2e742e0baf317f00cc22f4140dc6",
+    "main/kitchen/kitchen_timer.c": "2449f63ec9b4f9f3bda168c7ea84add1e7c3dd25abb3d7b9b6e953e0b1c8808e",
+    "main/kitchen/kitchen_timer.h": "29258af4d1d9acf8032ef14ce420af51137e34728c7c04a56e9835a3e450a4e5",
+    "main/kitchen/kitchen_ui.c": "5f1b87aac371dc7f3665c348e2c6b26cb3fe1e893e011f229659db93000b8d81",
+    "main/kitchen/kitchen_ui.h": "6d4cd34fde07e3ebc867df472f0ba1b0ca891932b274a9e942d33adeeeab5495",
+    "main/kitchen/kitchen_view.c": "18f28477b4c1b25b86f0fcf126bdf3633a0cda7b81b4d71c2bd7a93bec338be1",
+    "main/kitchen/kitchen_view.h": "272a7257940561f275f8571af061fd5348d69c496deceeaef77d6aae8f6c7d68",
+    "main/kitchen/kitchen_view_cooking.c": "3d3a0b79023a1aec08a9ee99367713edcdbdf26739c236803cc7641a20a352bf",
+    "main/kitchen/kitchen_view_home.c": "515f03165e49467d59fc3fd1e5ca3d2ff87898d29a452a360b46a39e5e3a56f5",
+    "main/kitchen/kitchen_view_internal.h": "1d7303fe063d6dbf478af91ac38762bb2c9b5673008cd7cb5aae293eb1701e6f",
+    "main/kitchen/kitchen_view_lists.c": "2a390ec0b5039668f917da9a3a09c897eb9f9bf3a745a2e3fe8c497927517f68",
+    "main/kitchen/nabo_kitchen_mixer.c": "c291d03993cd6a226a46d1714c7d9056c14f66113b6066e7c8b192410136989a",
+    "main/kitchen/nabo_kitchen_mixer.h": "09c9da13c1ac53d17b45139084e752f24ae988f6542827b40a4b41731cbf23b7",
+    "main/kitchen/nabo_kitchen_store.c": "5dbaf6a162c83ac4f1989b7fda0902c8144caa5d1682900da0d86f089d4e8414",
+    "main/kitchen/nabo_kitchen_store.h": "29684b8f920dd2161574aba87c442dfa32ff11218e16ecae32e2f795a091f704",
+    "main/offline_kitchen.c": "338dfb50c9786f06b924d3cd1fc795a910b1f1f7bc165f91d42fe06227e53ea8",
+    "main/CMakeLists.txt": "b0d0866f2438b28580419667636922533a9936f3e3d40d5494d7034d2284c658",
+    "CMakeLists.txt": "d25b8ef716e4cc450818fa96e13f25b2939162715a62e3bb4d8e01dcf5f4724f"
+  },
+  "archive": {
+    "app_descriptor": {
+      "embedded_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+      "idf_version": "v5.5.3",
+      "project_name": "FoloToy-AI-Passport",
+      "version": "0.2.0-dev"
+    },
+    "app_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+    "files": {
+      "FoloToy-AI-Passport-full.bin": {
+        "sha256": "bec4c231a178191ee3935c66ffad6e5e49b7678ebbbc27618ed77e2ab069af10",
+        "size": 5865922
+      },
+      "FoloToy-AI-Passport.bin": {
+        "sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+        "size": 513456
+      },
+      "FoloToy-AI-Passport.elf": {
+        "sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+        "size": 6703140
+      },
+      "FoloToy-AI-Passport.map": {
+        "sha256": "9bd03cf5b4507168ce07214c937656b6aba430967004aa0689f82b22b97ad9e2",
+        "size": 3319231
+      },
+      "bootloader/bootloader.bin": {
+        "sha256": "3676466270b63760c8c102b3ac35961a3717a0e7fb94871d35cfd5a4914cadfb",
+        "size": 21024
+      },
+      "flash_args": {
+        "sha256": "d36013d05443b8c6b55fc8e69d8b179fe6b017cfd38676a3fdacc1e3d3d05e00",
+        "size": 189
+      },
+      "partition_table/partition-table.bin": {
+        "sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+        "size": 3072
+      }
+    },
+    "flash_size_bytes": 8388608,
+    "full_bin_sha256": "bec4c231a178191ee3935c66ffad6e5e49b7678ebbbc27618ed77e2ab069af10",
+    "image_offsets": {
+      "FoloToy-AI-Passport.bin": 65536,
+      "bootloader/bootloader.bin": 0,
+      "kitchen_bundle.bin": 2097152,
+      "partition_table/partition-table.bin": 32768
+    },
+    "schema_version": 1,
+    "target": "esp32c3"
+  },
+  "archive_local_path": "build/firmware/bec4c231a178191ee3935c66ffad6e5e49b7678ebbbc27618ed77e2ab069af10",
+  "resources": {
+    "bytes": 3768770,
+    "sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+    "changed": false,
+    "already_installed": true
+  },
+  "flash_proposal": {
+    "status": "awaiting_explicit_consent_for_this_new_application",
+    "target": "Same previously confirmed COM11 badge; re-enumerate before any approved write",
+    "application_file": "build/candidates/kitchen-v02-timer-home-bec4c231a178/application.bin",
+    "offset": "0x10000",
+    "bytes": 513456,
+    "sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+    "preserve": [
+      "installed bootloader",
+      "partition table",
+      "NVS/PHY",
+      "D2 resources",
+      "files"
+    ],
+    "data_impact": "Same KST2 format; keep compatible settings and records. Running timers recover paused after reboot.",
+    "full_image_not_proposed": true
+  },
+  "previous_device_update": "offline-v02-device-validation-20261030.json",
+  "previous_device_application_sha256": "72d1651f9a60ac5f42ced730fa12990aa4e9a77dffe35132e36efa82daf54ab4",
+  "host_rendered_preview": "../../assets/kitchen/validation/v0.2/timer-home-20261030/home-running.png",
+  "unverified": [
+    "New candidate is not flashed; prior device results do not verify the new timer entry",
+    "Real departure to home, re-entry, pause/cancel and reboot recovery on the badge",
+    "At least three actual v0.2 cooking sessions before any future publication",
+    "New full-image bootloader has not been flashed or device-validated"
+  ]
+}

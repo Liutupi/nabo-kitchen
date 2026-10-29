@@ -1,9 +1,9 @@
 {
   "version": "0.2.0-dev",
-  "status": "automated_device_checks_passed_awaiting_physical_acceptance",
+  "status": "device_navigation_issue_followed_up_by_new_timer_home_candidate",
   "build": "PASS",
   "host_tests": "PASS",
-  "device_tests": "automated PASS; physical acceptance PENDING",
+  "device_tests": "automated PASS; physical navigation issue reported; new timer-home application not flashed",
   "published": false,
   "content": {
     "recipes": 145,
@@ -181,5 +181,6 @@
     "Fresh full-archive bootloader was not flashed or device-validated"
   ],
   "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578",
-  "device_validation_report": "offline-v02-device-validation-20261030.json"
+  "device_validation_report": "offline-v02-device-validation-20261030.json",
+  "follow_up_candidate": "offline-v02-timer-home-validation-20261030.json"
 }

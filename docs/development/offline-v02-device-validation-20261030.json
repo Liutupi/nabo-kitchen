@@ -1,7 +1,7 @@
 {
   "version": "0.2.0-dev",
   "checked_at": "2026-10-29T16:17:10.963253+00:00",
-  "status": "automated_device_checks_passed_awaiting_physical_acceptance",
+  "status": "automated_device_checks_passed_with_navigation_issue_reported",
   "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578",
   "consent": {
     "confirmed": true,
@@ -11,12 +11,14 @@
   "host_tests": "PASS",
   "device_tests": {
     "automated": "PASS",
-    "physical": "PENDING"
+    "physical": "ISSUE_REPORTED; remaining acceptance pending"
   },
   "physical_feedback": {
     "user_question": "Can the timer be manually turned off?",
     "guidance": "On the timer page, hold DOWN for about one second to cancel the selected timer; hold OK to pause/resume. Short DOWN on the step page scrolls to the bottom, then opens timers; double UP returns.",
-    "acceptance_provided": false
+    "acceptance_provided": false,
+    "reported_problem": "Cannot reopen timers after leaving the recipe; home has no timer entry",
+    "follow_up": "offline-v02-timer-home-validation-20261030.json"
   },
   "target": {
     "port": "COM11",

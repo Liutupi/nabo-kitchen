@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## 2026-10-30: timer navigation fixed; new application awaits consent
+
+The user's device feedback identified a real navigation gap: after leaving a recipe, home had no physical-key entry to running or paused timers. A permanent sixth **Timers** choice now opens P7 with normal UP/DOWN and short OK; short UP from the default home focus selects it. Empty, running, paused and finished timer states stay reachable. Hold OK pauses/resumes, hold DOWN cancels only the selected timer, and double UP returns; canceling preserves step progress and the started marker.
+
+The prototype passed 33 checks, including actual keyboard departure/re-entry/cancel and reload recovery. Production C navigation/persistence/multiple-timer checks, 13 actual-resource rendering checks, the complete firmware gate and strict archive verification passed; 21 capability-dependent checks were skipped. See the [exact candidate report](offline-v02-timer-home-validation-20261030.json) and [production C host preview](../../assets/kitchen/validation/v0.2/timer-home-20261030/home-running.png), which is not a device capture.
+
+Only a new 513,456-byte application at 0x10000 is proposed; D2 resources and KST2 format are unchanged. The badge still has the previous 512,864-byte application. Previous approval and device observations do not verify or authorize this new candidate; await its explicit consent and then repeat the physical departure/re-entry/pause/cancel path. No release or community update; three actual v0.2 cooking sessions are still required before future publication.
+
 ## 2026-10-30: v0.2 application and D2 resources installed; physical acceptance pending
 
 The user approved the exact 512,864-byte application and 3,768,770-byte D2 resources on the previously confirmed COM11 badge. Both components passed independent SHA256 readback. Before reboot, the installed bootloader, partition table, NVS/PHY, files and untouched tails were unchanged. Current NVS was saved locally and remains private.

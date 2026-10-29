@@ -22,5 +22,8 @@
       "file": "home-done.png",
       "sha256": "814f688a6959ef61b5b71965cf3baa4195b8f81e5d0e6b5c22f23da94c47d9ed"
     }
-  ]
+  ],
+  "source_code_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
+  "candidate_application_sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+  "candidate_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c"
 }
