@@ -2,6 +2,8 @@
 
 # Community release media
 
+`v0.2.0/` contains the current 900 x 1200 cover and four posters: 145 D2 recipes, native interfaces and the permanent home Timers entry. The cover is the unchanged inspected promotional illustration. Poster 5 uses complete accepted captures from the installed timer fix; posters 3/4 use production C host rendering. Sources and hashes are in its `media-manifest.json`. No screen was AI-redrawn or repaired. Recipes/art remain under review.
+
 `v0.1.1/` is an **unpublished clean-capture checkpoint**. The user requested completion of dish art, D2 resources and v0.2 before publication. All five 900 x 1200 upload candidates were opened and inspected. Image three uses a complete clean device result frame; image five uses complete running/paused timer frames with clear controls. Other interfaces use production C rendering with an explicitly hidden clock. No frame is AI-redrawn or repaired by painting over missing rows. Original v0.1.0 media remains unchanged. See [validation and source hashes](../../docs/community/v0.1.1/release-validation.json) and the checkpoint's `media-manifest.json`.
 
 Reproduce it with `tools/render_kitchen_release_media.py --version v0.1.1 --content-root <content-checkout> --font <licensed-font-file> --sharp-root <node-sharp-directory> --device-captures-dir <verified-clean-PNGs>`. Device inputs `result.png`, `timer-running.png` and `timer-paused.png` are retained in `v0.1.1/source-ui/`; the cover original and generation record remain under `v0.1.0/`.

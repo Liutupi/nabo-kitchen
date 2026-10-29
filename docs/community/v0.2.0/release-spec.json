@@ -1,0 +1,29 @@
+{
+  "release": "v0.2.0",
+  "application_sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+  "application_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+  "resource_sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+  "bootloader_sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+  "runtime_source_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
+  "content_source_commit": "9d8cc8032bf8a95a3a2cb4dbe640c70754f179d9",
+  "application_embedded_build_version": "0.2.0-dev",
+  "validation": {
+    "build": "PASS for exact accepted application; no rebuild during packaging",
+    "host_tests": "PASS",
+    "prototype_tests": 33,
+    "actual_C_rendering_tests": 13,
+    "parity_weight_vectors": 160,
+    "parity_draw_vectors": 40,
+    "device_application_and_resource_readback": "PASS",
+    "bounded_boots_of_latest_application": 2,
+    "timer_navigation": "PASS with isolated native input",
+    "physical_home_timer_entry": "PASS confirmed by user",
+    "KST2_NVS_and_records_preservation": "PASS for segmented update; all 24 KiB unchanged",
+    "bootloader": "Build output reused from v0.1.0 first-install-validated package; retained on latest application tests",
+    "full_image_first_install_of_this_release": "NOT RUN",
+    "three_actual_cooking_sessions": "NOT COMPLETED; user explicitly authorized experience publication",
+    "all_recipe_and_art_acceptance": "PENDING REVIEW",
+    "capability_dependent_host_skips": 21,
+    "report": "docs/development/offline-v02-timer-home-device-20261030.json"
+  }
+}

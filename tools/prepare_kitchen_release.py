@@ -134,6 +134,9 @@ def prepare(archive: Path, bundle: Path, output: Path, release_spec: Path | None
     payload["manifest.json"] = (public / "manifest.json").read_bytes()
     for name in ("installation.md", "installation.zh_CN.md"):
         payload[name] = (root / "docs/community" / version / name).read_bytes()
+    if release_spec:
+        for name in ("instructions.en.txt", "instructions.zh_CN.txt"):
+            payload[name] = (root / "docs/community" / version / name).read_bytes()
     # Keep the packaged instructions self-contained; relative repository links
     # are rewritten to the immutable release source when copied into the ZIP.
     for name in ("installation.md", "installation.zh_CN.md"):

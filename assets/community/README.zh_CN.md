@@ -2,6 +2,8 @@
 
 # 社区发布图片
 
+`v0.2.0/` 是当前 900 × 1200 封面和四张介绍图，更新为 145 道 D2 菜谱与首页常驻计时器。封面沿用已审看宣传插画；第五张使用修复版完整设备画面，第三/四张为生产 C 主机绘制。来源及哈希见该目录 `media-manifest.json`，未用 AI 重绘或补缺行，菜谱与美术仍待审校。
+
 `v0.1.1/` 是**未发布的干净截图检查点**。用户要求先完善菜图、D2 资源和 v0.2，再统一发布。五个 900 × 1200 候选上传文件均逐张打开审看：第三张使用完整干净设备结果画面，第五张使用完整运行/暂停计时画面并明确说明按键，其余界面由生产 C 代码以隐藏时钟方式绘制。没有 AI 重绘或补画缺行，原 v0.1.0 素材未改。见[验证及来源哈希](../../docs/community/v0.1.1/release-validation.json)和检查点内的 `media-manifest.json`。
 
 复现命令为 `tools/render_kitchen_release_media.py --version v0.1.1 --content-root <内容仓库> --font <有使用许可的字体文件> --sharp-root <node-sharp目录> --device-captures-dir <已核验干净PNG目录>`。三张设备输入名为 `result.png`、`timer-running.png`、`timer-paused.png`，保存在 `v0.1.1/source-ui/`；复用封面的原图和生成记录仍在 `v0.1.0/`。

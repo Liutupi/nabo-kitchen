@@ -1,0 +1,13 @@
+{
+  "release": "v0.2.0",
+  "github_status": "prepared_not_published",
+  "community_status": "prepared_not_submitted",
+  "project_id": 1755,
+  "base_revision_id": 4068,
+  "slug": "nabo-6",
+  "github_url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0",
+  "firmware_sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+  "pending_action": "Official update authorization and submission; public status is still prior revision 4068",
+  "no_new_flash": true,
+  "published": false
+}

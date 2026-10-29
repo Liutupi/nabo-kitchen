@@ -1,0 +1,8 @@
+v0.2.0 experience release
+• D2 recipe quality update: 145 recipes, with 36 new or replacement dish illustrations and no missing complete dish images.
+• Removed date confirmation/settings and invalid clock placeholders. Recency now follows completed cooking sessions.
+• Persisted draw counter and menu across reboots, unlimited redraws, and count-based levels and summaries.
+• Whole-card warm-orange selection with dark text for clearer navigation.
+• Permanent home Timers entry to reopen, pause, resume or cancel timers after leaving a recipe.
+• Compatible records migrate to the new save format with retired dish references removed. The accepted application and resources are packaged unchanged.
+• Acceptance through three actual cooking sessions remains incomplete; this is an experience prerelease with recipes and artwork under review.

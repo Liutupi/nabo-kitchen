@@ -10,6 +10,14 @@
 > with `CHANGELOG.zh_CN.md`. The entries currently under `Unreleased` are pending
 > review for the next release; they are not a finalized release history.
 
+## v0.2.0 - NABO Midnight Kitchen experience prerelease - 2026-10-30
+
+- Ship the 145-recipe D2 quality update with 36 new/replacement complete dish illustrations.
+- Remove date setup and calendar-based recommendations; persist the menu and draw count, and use completed-cooking recency and count-based levels.
+- Highlight the full selected card and add a permanent home Timers entry with pause/resume/cancel access after leaving a recipe.
+- Package the exact device-validated application and D2 resources with the previously first-install-validated bootloader. Refresh bilingual instructions and source-labeled gallery images.
+- Publish as an experience prerelease at the creator's request: three actual cooking sessions, this merged image's first installation and full art/hardware acceptance remain incomplete.
+
 ## v0.1.0 - NABO Midnight Kitchen - 2026-10-29
 
 - First standalone offline kitchen experience: dinner draws, fridge recommendations, shopping, ingredients, guided steps, favorites, cooking records and three pausable timers.

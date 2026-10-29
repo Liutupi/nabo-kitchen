@@ -1,0 +1,21 @@
+{
+  "title_zh": "NABO 深夜厨房",
+  "title_en": "NABO Midnight Kitchen",
+  "version": "v0.2.0",
+  "status": "prepared_experience_prerelease",
+  "community_project_id": 1755,
+  "community_base_revision_id": 4068,
+  "source_url": "https://github.com/Liutupi/nabo-kitchen",
+  "release_url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0",
+  "description_zh": "今晚吃什么？让戴白帽的 NABO 陪你想一想。选好人数、时间和荤素搭配，颠勺抽出今晚的家常菜；不合口味，就继续换一道。\n\nv0.2.0 体验版包含 145 道家常菜谱与完整菜图、58 种冰箱食材、采购清单、收藏和做菜记录。开机直接进厨房，不用再确认日期；最近做过的菜按做饭次数降低推荐权重，上次的菜单会保留到换菜或做完。\n\n看用料、照步骤慢慢做，需要等待时交给最多三个独立计时器。离开步骤也没关系：首页新增常驻“计时器”入口，随时进入、暂停、继续或取消。选中项整块变成暖橙色，更容易看清。\n\n全部离线运行，无需配网。当前仍是体验版，菜谱和美术持续校对，尚未完成三道实际下厨验收及全部菜谱的实厨检查。封面为宣传插画；附图已区分菜品插画、代码绘制界面与设备采集画面。",
+  "description_en": "What is for dinner? Let NABO, your white-capped kitchen companion, help you choose. Set the number of people, available time and meal combination, then draw a home-style dish. Keep drawing until something feels right.\n\nThis v0.2.0 experience release includes 145 recipes with complete dish illustrations, 58 pantry ingredients, a shopping list, favorites and cooking records. Start cooking without setting a date. Recent dishes receive a lower draw weight based on completed cooking sessions, and your last menu stays available until you replace it or finish cooking.\n\nCheck the ingredients and follow the steps at your own pace, with up to three independent timers. A permanent Timers entry on the home menu lets you reopen, pause, resume or cancel them after leaving a recipe. The entire selected card turns warm orange so your selection is easier to see.\n\nEverything works offline without network setup. This is an experience release: recipes and artwork remain under review, and acceptance through three actual cooking sessions has not yet been completed. The cover is promotional art; gallery captions distinguish dish illustrations, code-rendered interfaces and device frame captures.",
+  "cover": "assets/community/v0.2.0/01-cover.webp",
+  "images": [
+    "assets/community/v0.2.0/02-dish-collection.webp",
+    "assets/community/v0.2.0/03-tonights-menu.webp",
+    "assets/community/v0.2.0/04-cook-together.webp",
+    "assets/community/v0.2.0/05-device-captures.webp"
+  ],
+  "authorization": "User requested firmware publication and community update; explicitly accepted experience release without three actual cooking sessions",
+  "rights_and_rules": "Use the official update authorization flow; no existing create-only grant reused"
+}

@@ -1,0 +1,133 @@
+{
+  "release": "v0.2.0",
+  "channel": "experience-prerelease",
+  "prepared_at": "2026-10-29T16:57:32.947897+00:00",
+  "user_instruction": "Publish firmware, then update the existing community project",
+  "cooking_acceptance": "User explicitly confirmed not yet three actual cooking sessions and authorized an experience release disclosing its scope",
+  "build": "PASS for unchanged accepted prebuilt application",
+  "host_tests": "PASS",
+  "device_tests": "PASS for limited write/readback, boots, isolated timer route and user-confirmed home entry",
+  "application_embedded_version": "0.2.0-dev",
+  "application_sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+  "application_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+  "resource_sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+  "bootloader_sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+  "bootloader_provenance": "Build output from the prior first-install-validated kitchen package, not a device dump; unchanged bootloader used when running the accepted latest application",
+  "original_candidate_full_sha256": "bec4c231a178191ee3935c66ffad6e5e49b7678ebbbc27618ed77e2ab069af10",
+  "full_image": {
+    "file": "nabo-kitchen-v0.2.0-full.bin",
+    "bytes": 5865922,
+    "sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+    "offset": 0
+  },
+  "public_assets": [
+    {
+      "file": "manifest.json",
+      "bytes": 4197,
+      "sha256": "0942e39b72bd2ccaaf167f649050ede0a19b06db2376e44e1b3565a01718a25d"
+    },
+    {
+      "file": "nabo-kitchen-v0.2.0-full.bin",
+      "bytes": 5865922,
+      "sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e"
+    },
+    {
+      "file": "nabo-kitchen-v0.2.0.zip",
+      "bytes": 2763019,
+      "sha256": "51987240caedcfe1dd7d85246276a2ce8c47ae09a4c7ee5358ee80d9057796ca"
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 265,
+      "sha256": "5d6aab86ade57b188dd78c752af9b16269ce34ed276109c4f16a7d228673306a"
+    }
+  ],
+  "zip_entries": [
+    "KITCHEN-CODE-LICENSE",
+    "LICENSE",
+    "NOTICE.md",
+    "NOTICE.zh_CN.md",
+    "SHA256SUMS.txt",
+    "app.bin",
+    "bootloader.bin",
+    "installation.md",
+    "installation.zh_CN.md",
+    "instructions.en.txt",
+    "instructions.zh_CN.txt",
+    "kitchen_bundle.bin",
+    "licenses/OFL.ArchivoBlack.txt",
+    "licenses/OFL.SourceHanSans.txt",
+    "licenses/font-sources.json",
+    "manifest.json",
+    "partition-table.bin",
+    "segments.json"
+  ],
+  "all_merged_gaps_ff": true,
+  "no_device_dump_or_private_data": true,
+  "package_archive": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+  "media": [
+    {
+      "file": "assets/community/v0.2.0/01-cover.webp",
+      "sha256": "4f8d9bc38cd018e7c14ee463c027b0163ec25c3c8fcdac139479f4604c34d581",
+      "bytes": 302270,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "exact_upload_file_visually_inspected": true
+    },
+    {
+      "file": "assets/community/v0.2.0/02-dish-collection.webp",
+      "sha256": "dceb7fcd6698c6c313695cee000f6145288266fe03b5bfe134cbcbf784488fc6",
+      "bytes": 137408,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "exact_upload_file_visually_inspected": true
+    },
+    {
+      "file": "assets/community/v0.2.0/03-tonights-menu.webp",
+      "sha256": "985cd2b3fbb6b41903c8aaa1d2527a05a287998941856dbba19341fe1bcea376",
+      "bytes": 110364,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "exact_upload_file_visually_inspected": true
+    },
+    {
+      "file": "assets/community/v0.2.0/04-cook-together.webp",
+      "sha256": "4ceaead6ef8b484588b8d8f71e77c4a69db8a84201f7a92571914b9d4e50faff",
+      "bytes": 96652,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "exact_upload_file_visually_inspected": true
+    },
+    {
+      "file": "assets/community/v0.2.0/05-device-captures.webp",
+      "sha256": "e19e9bf03d8fce405c30b30b677cf584ac249ba43a7009dfd278397fa7daf6e1",
+      "bytes": 110312,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "exact_upload_file_visually_inspected": true
+    }
+  ],
+  "source_code_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
+  "content_source_commit": "9d8cc8032bf8a95a3a2cb4dbe640c70754f179d9",
+  "publisher_preflight": "Merged image and exact portrait cover validation passed",
+  "unverified": [
+    "Three actual cooking sessions",
+    "First installation of this specific recomposed full image",
+    "All-recipe kitchen review, art acceptance, extended physical button/audio/hardware acceptance"
+  ],
+  "no_new_flash": true,
+  "old_release_unchanged": true,
+  "published": false,
+  "release_static_and_host_gate": "PASS; 21 capability-dependent skips",
+  "release_packaging_checks": "PASS; exact segments, erased gaps, ZIP contents and bilingual usage, image formats/visual inspection and publisher preview"
+}
