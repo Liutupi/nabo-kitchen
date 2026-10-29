@@ -4,6 +4,16 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 菜图补全进行中
+
+用户要求完成全部未完成菜图并持续关注 GitHub。**美术在 [codex/kitchen-dish-art-20261029](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-dish-art-20261029) 继续，从内容分支 `codex/kitchen-model` 的 `c31bae7` 创建。** 本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-art`。已核对 144 道菜、17 张原有完整菜图、127 张待补；逐菜实际交付进度、生成提示词、配方哈希与双底色小图见 [可恢复批次清单](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-dish-art-20261029/game-art/kitchen/dish-hero/batches/2026-10-29)。请其他电脑先核对该清单，避免重复出图。
+
+首批 4 张完整菜图、原图及元数据已推送，状态 `review`；当前继续生成剩余项。保持已通过的菜品风格、稳定 ID、640×480 透明画布与 160×120 显示，不修改菜谱/既定规则。已设置每 30 分钟跟进远端分支、PR/CI 和交接，仅在实质变化、冲突、批次完成或失败时通知；主任务制作时不重复生成。后续每批校验、小步提交并 rebase/push。当前无开放 PR，内容分支未返回 commit status；这不代表 CI 已通过。
+
+固件最新状态仍以下方 Windows 运行时块为准，本批没有构建或刷写设备。新图需打包、实际资源容量和逐图视觉复核后才能成为设备候选，`review` 不是实厨或实机验收。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 运行时优化与实机复测
 
 **已按最新交接继续独立离线厨房开发。本块覆盖下方旧候选的看门狗/无声/提示复发状态，但不代表全部菜谱或长期硬件认证完成。**
