@@ -6,7 +6,7 @@
     "build": "NOT RUN: accepted application reused; archived build identity verified",
     "host_tests": "PASS: unchanged-resource candidate checks and six device/C dish-pixel comparisons",
     "device_tests": "PASS: limited flash/readback, three controlled boots, six complete captures and state restoration",
-    "physical_panel_audio_confirmation": "pending user observation"
+    "physical_panel_audio_confirmation": "NOT OBSERVED: user has not yet seen the panel or heard the greeting"
   },
   "resource": {
     "source_commit": "116ee8ea2ed72e5e5094805c397b8f1449d08b75",
@@ -64,7 +64,7 @@
     "voice_samples": 31200,
     "voice_nonzero_samples": 27072,
     "audio_write_errors": 0,
-    "current_human_listening": "pending"
+    "current_human_listening": "not yet observed by user"
   },
   "captures": {
     "accepted_frames": 6,
@@ -95,5 +95,10 @@
     "The first write-script attempt stopped before Flash writing because it tried to reload an overlapping RAM stub; corrected to reuse the identified loader.",
     "Host simulator navigation timing was corrected; the complete wrong-page capture was excluded.",
     "The older runtime-validation.json records the host-only stage; this report records the later authorized hardware session."
-  ]
+  ],
+  "human_observation": {
+    "status": "not_observed_yet",
+    "accepted_as_pass": false,
+    "failure_reported": false
+  }
 }
