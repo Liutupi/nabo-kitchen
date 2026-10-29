@@ -4,6 +4,17 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 社区首版已通过并公开，匿名下载核验完成
+
+**[NABO 深夜厨房社区首版已公开](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)**，项目 `1755`、已发布版本 `4068`。服务端审核时间为 `2026-10-29T09:26:31Z`（北京时间 17:26:31），本次跟进确认作者后台显示“已发布”，并实际复制、打开公开链接；下方旧“审核中/未公开”属于历史记录。没有重复提交、新建项目或授权。
+
+- **公开验证**：匿名页面及公开 API 均 HTTP 200，API 为项目 1755、版本 4068、published。API 地址 `/api/plays/id/1755` 来自公开页面已观察资源，返回的 `downloadUrl` 与 `firmware.url` 一致指向 `/api/download/community/nabo-6`。实际匿名下载 5,853,214 B，SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`，与 GitHub 已验证完整镜像逐字节一致；五张匿名公开图与此前逐张核对的服务端图片相同。公开“安装最新版”、介绍、五图和源码入口存在。
+- **接手记录**：[公开核验 JSON](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/community-publication-verification.json)、[公开页面凭证](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/assets/community/v0.1.0/community-published.jpg)、[当前提交状态](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/submission-status.json)，均在 `codex/release-v0.1.0`。main README 已换为实际社区链接，旧审核截图保留为历史证据。
+- **边界不变**：只核对公开安装入口，没有选择设备，已刷新取消设备选择；没有刷机、重编、改 tag、发布新 Release 或替换已验附件。社区审核通过不等于 144 道菜的美术/实厨或实际面板/听感验收，图仍为 `review`。内容分支仍 `c99d979b630286ef3ec385c2e6f1485940ecb5a3`，144 道配方、缺图 0；无开放 PR、新 CI 失败或远端协作冲突。
+- **后续跟进**：每 30 分钟 GitHub/内容/公开可用性检查继续，审核完成不再反复报告；原一次性发布令牌无需用于日常公开检查。新有效配方引起缺图且没有人在制作时再补，不重复生成现有图，不覆盖其他电脑成果。仅实质变化、失败/冲突或需要决定时通知。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 社区首版已提交，项目 1755 / 版本 4068 审核中
 
 用户已明确选择“同意并提交”，网页权利/社区规则确认已完成，**下方旧“等待确认”不再适用**。通过官方 `folotoy-ai-passport-publisher` 1.13.0 获取仅新建一次的授权，核对未有回执后，只提交了一次；返回 **project `1755`、revision `4068`、slug `nabo-6`、status `pending`**。创作者后台也显示“审核中”，没有已发布 revision 或已确认的公开社区链接。不要重复新建、授权或提交，也不要写成社区已经公开。
