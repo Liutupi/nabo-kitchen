@@ -4,6 +4,19 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 144 张菜图资源已刷入并完成有限设备验证
+
+用户明确要求刷机验证后，已核对先前确认的同一工牌、8 MiB/安全状态、应用和布局，**只从 `0x200000` 写入新资源包**。3,756,062 B 资源完整读回 SHA256 为 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`，与交付一致。应用仍是已接受的 `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`，没有重编或重刷应用、整片擦除、改分区或发布 Release；分区表、bootloader、NVS/PHY 和 files 均核对保留。下方旧“尚未上机”是刷写之前的阶段记录。
+
+- **设备验证**：3 次受控启动匹配原 ELF，资源校验均约 2,278 ms，未见看门狗或崩溃。蒸水蛋、玉米排骨汤、白菜炖豆腐、番茄炒蛋、青椒蛏子汤、清蒸鲈鱼共 6 张完整 320 行设备画面，菜图区 100,800 个 RGB565 像素与生产 C 预期一致，覆盖菜库尾部 142/143。最后空闲堆 198,336 B、最大块 114,688 B，UI 栈最低余 6,968 B。
+- **数据与退出**：已退出 TEST、关闭串口，恢复原暂停计时器、声音开启/70% 音量；存档序号始终为 151，没有写测试存档。语音消费 31,200 个采样、音频写入错误 0，但当前实际面板/听感仍待用户确认。
+- **接手成果**：内容/美术 `codex/kitchen-model` 和备份美术分支提交 `3d637629c9fbe93c4b6ec32a1fc2265a8685bf06`；[设备报告](https://github.com/Liutupi/nabo-kitchen/blob/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-validation.json)、[真实设备画面与离线复核](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-captures)。固件交接提交 `01881ed3296d9b9b57aab7aa8f60685cdd055372`，见 [双语固件交接](https://github.com/Liutupi/nabo-kitchen/blob/codex/runtime-fixes-20261029/docs/development/offline-kitchen-handoff.zh_CN.md)。固件默认旧 17 图 fixture/原整机归档没有覆盖；当前设备使用的是本批单独资源包，勿将旧完整镜像哈希写成更新后整机身份。
+- **限制与下一步**：全部图仍是 `review`，有限设备抽样不是 144 道逐图审美、实厨或长期验收。11 次截图请求只保留 6 张正确完整画面；1 张跳错页和 4 次截断/未完整结束传输均排除，鸡蛋炒饭完整 USB 画面未取得。USB 截图分帧/流控仍待改善。继续人工审图和实厨、实际面板/声音观察及长期使用；每 30 分钟 GitHub 跟进继续，heartbeat 不得自行刷机。
+
+原始日志、设备身份、NVS/PHY/files 副本均留在固件本机忽略目录 `build/device-qa/art-20261029/`；GitHub 只保存脱敏报告、已验证画面和可复现命令。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 全部缺失菜图已交付 GitHub
 
 **127 张缺失完整菜图已补齐，当前 144/144 道有图，缺图 0；新增行全部为 `review`，等待逐图审美、实厨与实机验收。** 已推送并快进到 [codex/kitchen-model](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)，交付提交 `116ee8ea2ed72e5e5094805c397b8f1449d08b75`；同一成果保存在 `codex/kitchen-dish-art-20261029`。main 保留接手入口，勿混合内容/固件两个分支根目录。
