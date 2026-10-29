@@ -2,6 +2,24 @@
 
 # 离线厨房交接 — 2026-10-29
 
+## 最新设备验证：144 张完整菜图资源已安装
+
+用户明确要求完成美术后的刷机验证。先核对之前确认的同一块工牌、8 MiB Flash/安全状态、已安装应用、分区表和旧资源，随后仅从 `0x200000` 写资源包。3,756,062 B 资源及完整设备读回均为 SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`。应用仍是已接受的 `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`，没有新建应用、整片擦除或发布 Release。已核对应用、分区表、bootloader、NVS/PHY 和 files 保留。
+
+3 次受控启动均匹配 ELF 前缀 `698af7057`，新资源校验约在 2,278 ms 完成，无看门狗/panic。蒸水蛋、玉米排骨汤、白菜炖豆腐、番茄炒蛋、青椒蛏子汤、清蒸鲈鱼取得完整 240×320 设备画面，覆盖菜库索引 142、143；菜图区 100,800 个 RGB565 像素与未改生产 C 绘制完全一致。最后空闲堆 198,336 B、最大连续块 114,688 B，新资源测试中 UI 栈最低余 6,968 B。已退出 TEST、关闭串口，原暂停计时器与声音开启/70% 音量恢复，存档序号保持 151。
+
+见[脱敏设备报告](offline-art-device-validation-20261029.json)和[六张设备画面及像素检查](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-captures)。11 次截图请求仅保留 6 张；1 张完整但跳错页的画面和 4 次截断/未完整结束的传输均排除。没有取得鸡蛋炒饭的完整 USB 画面，不计入通过项。已有 USB 截图分帧/流控仍是诊断工具限制。当前实际面板与欢迎语听感仍待用户观察，语音数据消费正常且音频写入无错误不能替代实际观察。
+
+可编辑美术与精确资源包在 `codex/kitchen-model`，初始交付提交 `116ee8ea2ed72e5e5094805c397b8f1449d08b75`；美术均保持 `review`。本固件目录的默认 `assets/kitchen` 和已接受整机归档有意保留旧 17 张图 fixture，本次资源单独验证没有覆盖或重编它们。继续时使用美术分支的精确 `resource-candidate/kitchen_bundle.bin` 和报告，不要用旧合并镜像哈希代表更新后设备的整片 Flash。原始日志、设备身份和保留区副本只在被忽略的 `build/device-qa/` 本机目录。
+
+```text
+Build: NOT RUN（核对并复用已接受应用及调试归档）
+Host tests: PASS（资源候选检查及六张设备/C 像素比对）
+Device tests: PASS（资源回读、三次启动、六张画面、状态恢复）
+Unverified: 实际面板/听感、全部菜谱审美和实厨、长期使用、
+真实断电/满载 NVS 及截图传输可靠性
+```
+
 ## 最新续作：Windows 运行时修正
 
 本块覆盖下方较早的停止检查点。从 `f799a2f3196e0d28a1777663a7cb65fcd8d84c4d` 在独立工作目录的 `codex/runtime-fixes-20261029` 分支继续；可编辑内容仍在 `codex/kitchen-model`。菜谱、美术、PCM、分区布局和 KST1 字节格式均未改变。

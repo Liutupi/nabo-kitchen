@@ -2,6 +2,24 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Latest device session: 144 complete dish illustrations installed
+
+The user explicitly requested flashing and validation of the completed art. After verifying the same previously approved board, its 8 MiB Flash/security state, installed application, partition table and old assets, only the resource bundle was written at `0x200000`. The 3,756,062-byte bundle and its complete device readback both have SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`. The application remains the accepted `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202` image; no new application build, whole-chip erase or Release was performed. Application, partition table, bootloader, NVS/PHY and files preservation was verified.
+
+Three controlled boots matched ELF prefix `698af7057`, validated the new bundle at approximately 2,278 ms, and showed no watchdog/panic. Six complete 240x320 device captures cover egg custard, corn/rib soup, cabbage/tofu, tomato/egg, green-pepper/razor-clam soup and steamed bass, including catalog indices 142 and 143. Their 100,800 dish-area RGB565 pixels exactly match the unchanged production C renderer. Final free heap is 198,336 bytes, largest block 114,688, and minimum UI stack headroom after this update 6,968. TEST mode was exited and the serial port closed. The original paused timer and sound/70% volume were restored; journal sequence remained 151.
+
+See the [sanitized device report](offline-art-device-validation-20261029.json) and [six device captures with pixel checks](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-captures). Eleven capture requests yielded six retained frames; one complete wrong-page capture and four incomplete/unterminated transfers were excluded. A complete fried-rice USB frame was not obtained and is not counted as passed. Existing USB capture framing/flow control remains an open diagnostic-tool limitation. Actual panel appearance and audible greeting still require the current user's observation; consumed voice data and zero audio-write errors do not replace that observation.
+
+The editable art and exact bundle are on `codex/kitchen-model`, initially delivered at `116ee8ea2ed72e5e5094805c397b8f1449d08b75`. All art remains `review`. This firmware checkout's default `assets/kitchen` and accepted full-image archive deliberately retain the older 17-hero fixture; they were not overwritten or rebuilt for this resource-only device session. Reuse the art branch's exact `resource-candidate/kitchen_bundle.bin` and report when continuing, and do not describe the old merged-image hash as the updated device's full-Flash identity. Raw logs, device identity and protected-region copies remain local under ignored `build/device-qa/`.
+
+```text
+Build: NOT RUN (accepted application and debug archive verified and reused)
+Host tests: PASS (candidate checks and six device/C pixel comparisons)
+Device tests: PASS (resource readback, three boots, six captures, state restoration)
+Unverified: actual panel/audio observation, all-recipe visual/cooking acceptance,
+long-term use, physical power/full-NVS cases and capture transport robustness
+```
+
 ## Latest continuation: Windows runtime fixes
 
 This section supersedes the earlier stop checkpoint below. Work continued from
