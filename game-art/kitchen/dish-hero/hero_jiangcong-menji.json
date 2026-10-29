@@ -1,0 +1,24 @@
+{
+  "id": "hero_jiangcong-menji",
+  "recipe_id": "jiangcong-menji",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_jiangcong-menji-source.png",
+  "original_sha256": "8109686e9970fd2cada22aa011d6a2a0c8010524e5c807e88569785976bcd140",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "38d2f647eac473653e4a54dbe091846e9a40827fe7cd5b4f45840af50c3e5f05",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jiangcong-menji. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 姜葱焖鸡. Actual recipe ingredients: 鸡腿 (main), 姜, 葱. Preparation reference: 去骨鸡腿切块，姜切片，葱切段；生熟用具分开。 锅中放油和姜片，中火炒香，加入鸡块翻炒。 加生抽、料酒和200毫升水，煮开后盖盖。 转小火焖约15分钟，期间翻动并留意锅中水量。 测最厚鸡块中心至少74℃，不足继续加热。 加入葱段翻匀，关火盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a small dark earthenware casserole. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "8d201930ddea88a1a5a445c17251005acc91402d4685283ef583cab45c039893",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
