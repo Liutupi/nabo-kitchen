@@ -1,0 +1,107 @@
+{
+  "release": "v0.1.0",
+  "verified_at": "2026-10-29T09:23:57.563510+00:00",
+  "project_id": 1755,
+  "revision_id": 4068,
+  "slug": "nabo-6",
+  "status": "pending",
+  "published_revision": null,
+  "manage_url": "https://ai-passport.folotoy.cn/account/?project=1755",
+  "saved_firmware_href": "/api/me/revisions/4068/firmware",
+  "authenticated_browser_download": {
+    "result": "PASS",
+    "bytes": 5853214,
+    "sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+    "matches_prepared_and_github_bytes": true
+  },
+  "anonymous_saved_href_http_status": 401,
+  "authenticated_cdn_redirect_chain": "NOT SEPARATELY OBSERVED; authenticated saved-href download bytes verified",
+  "bilingual_readback": "PASS: all eight title, description, instructions and changelog fields exactly match",
+  "gallery_note": "Server-returned WebP bytes differ from upload, consistent with recompression. All five exact returned files were viewed; dimensions/order/content are preserved. Both hashes and pixel comparison recorded.",
+  "gallery": [
+    {
+      "index": 0,
+      "file": "01-cover.webp",
+      "saved_href": "/api/me/revisions/4068/images/0?v=1",
+      "width": 900,
+      "height": 1200,
+      "uploaded_bytes": 302270,
+      "uploaded_sha256": "4f8d9bc38cd018e7c14ee463c027b0163ec25c3c8fcdac139479f4604c34d581",
+      "stored_bytes": 180686,
+      "stored_sha256": "f1585ff91505c90482e166ea426e66b9b403caaeadf2eae541f3c475cf8e16a3",
+      "byte_identical": false,
+      "psnr_db": 37.98,
+      "visual_review": "PASS: exact downloaded image viewed; correct order, complete layout and readable captions"
+    },
+    {
+      "index": 1,
+      "file": "02-dish-collection.webp",
+      "saved_href": "/api/me/revisions/4068/images/1?v=1",
+      "width": 900,
+      "height": 1200,
+      "uploaded_bytes": 135018,
+      "uploaded_sha256": "bd7034bd924f51509ba754904cb59606293fa40acf7d2889269cc0c67e3a3379",
+      "stored_bytes": 83728,
+      "stored_sha256": "26801ec2a0574298825345310a693f4bb8bdd1509271858efab5bdd7f025d25d",
+      "byte_identical": false,
+      "psnr_db": 41.59,
+      "visual_review": "PASS: exact downloaded image viewed; correct order, complete layout and readable captions"
+    },
+    {
+      "index": 2,
+      "file": "03-tonights-menu.webp",
+      "saved_href": "/api/me/revisions/4068/images/2?v=1",
+      "width": 900,
+      "height": 1200,
+      "uploaded_bytes": 115094,
+      "uploaded_sha256": "65b24e7f059019160d41815bab0a7c6ad8b175f9ac9d52b96969f79bfdccd556",
+      "stored_bytes": 70014,
+      "stored_sha256": "21fb7f0fc6c26ee61944d74954d6ce0612de676a920d26b9784a04f0f08d71a9",
+      "byte_identical": false,
+      "psnr_db": 41.78,
+      "visual_review": "PASS: exact downloaded image viewed; correct order, complete layout and readable captions"
+    },
+    {
+      "index": 3,
+      "file": "04-cook-together.webp",
+      "saved_href": "/api/me/revisions/4068/images/3?v=1",
+      "width": 900,
+      "height": 1200,
+      "uploaded_bytes": 100276,
+      "uploaded_sha256": "5be6f5126c35c7b1579f6fce47ff35268a0188a68a39b99eb05768a945c2c3ae",
+      "stored_bytes": 61458,
+      "stored_sha256": "535e9abe9363f6d6268ab5d3e9f71abb9d42165f53161c9dbd43fe008cbfebda",
+      "byte_identical": false,
+      "psnr_db": 43.35,
+      "visual_review": "PASS: exact downloaded image viewed; correct order, complete layout and readable captions"
+    },
+    {
+      "index": 4,
+      "file": "05-device-captures.webp",
+      "saved_href": "/api/me/revisions/4068/images/4?v=1",
+      "width": 900,
+      "height": 1200,
+      "uploaded_bytes": 184834,
+      "uploaded_sha256": "55a0ed835a514a62d6bea6da2be8c66a346928de156345d09a47c3618625fbd9",
+      "stored_bytes": 116732,
+      "stored_sha256": "9d7a9706f6cf86a0a58ef8709883ad8a30f99a72db476d326799258343a1561e",
+      "byte_identical": false,
+      "psnr_db": 39.27,
+      "visual_review": "PASS: exact downloaded image viewed; correct order, complete layout and readable captions"
+    }
+  ],
+  "receipt": {
+    "ok": true,
+    "projectId": 1755,
+    "revisionId": 4068,
+    "slug": "nabo-6",
+    "status": "pending",
+    "allowRemix": true
+  },
+  "proof": {
+    "file": "assets/community/v0.1.0/submission-review-status.jpg",
+    "sha256": "99bf5da4a1b62a6d19b6e37698a619d490e823d4ac96dfb29e01f0cd714c5eb0"
+  },
+  "no_duplicate_submission": true,
+  "no_new_flashing": true
+}

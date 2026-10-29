@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Community submission: project 1755, revision 4068
+
+After the user explicitly confirmed the website rights/rules statement and submission, the official publisher 1.13.0 created exactly one new firmware project: `1755`, revision `4068`, slug `nabo-6`. Both the official API receipt and creator workbench show **pending / under review**. There is no published revision or confirmed public community page yet. The earlier authorization wait below is historical and resolved. Do not authorize or submit again.
+
+All eight bilingual title, description, instructions and changelog fields were read back exactly. The saved firmware link `/api/me/revisions/4068/firmware` was downloaded through the authenticated browser: 5,853,214 bytes, SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`, byte-identical to the GitHub release. Anonymous access to that private saved-version endpoint returns HTTP 401; CDN redirects were not separately observed. This is not evidence of public community availability.
+
+All five saved images were downloaded in order and individually viewed. The returned WebP bytes differ from uploads, consistent with server recompression; dimensions remain 900 x 1200, layouts/text are intact, and pixel PSNR is 37.98-43.35 dB. Both original and returned hashes are recorded. See [community verification](../community/v0.1.0/community-verification.json), [submission state](../community/v0.1.0/submission-status.json), and [the review receipt screenshot](../../assets/community/v0.1.0/submission-review-status.jpg). No fresh build or hardware write occurred in this submission. Continue the existing quiet monitor; notify on a real moderation result, failure or required decision, and do not send unchanged pending reminders.
+
 ## Release preparation: v0.1.0 experience release
 
 GitHub publication is now complete: [v0.1.0](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0), a public prerelease targeting `77ef2a926281ef7e5c4376ecd7158af1e915b06a`. All four public assets, including the checksum file, were independently downloaded without authentication and match their prepared byte counts and hashes. ZIP members/checksums and merged erased gaps also passed. See [publication verification](../community/v0.1.0/publication-verification.json) and [submission status](../community/v0.1.0/submission-status.json). Community materials are finished and preview-validated; submission is waiting for the user's action-time confirmation of the website rights/rules statement. Do not repeat the authorization or submission after a receipt exists. A pending receipt is not public community availability. No new hardware write was performed for publication.

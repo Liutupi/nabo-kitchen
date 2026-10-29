@@ -177,8 +177,12 @@
   },
   "github_public_download_verification": "PASS: anonymous HTTP 200 and exact byte/SHA checks for all four assets, including SHA256SUMS.txt; ZIP members, all internal checksums and merged erased gaps rechecked",
   "community": {
-    "status": "prepared_not_submitted",
-    "reason": "Awaiting action-time confirmation of the website rights/rules declaration before authorizing publication."
+    "status": "pending",
+    "project_id": 1755,
+    "revision_id": 4068,
+    "slug": "nabo-6",
+    "publicly_published": false,
+    "verification": "community-verification.json"
   },
   "art_status": "144 of 144 complete images; all review, not done",
   "dish_payload_bytes": 1596273,

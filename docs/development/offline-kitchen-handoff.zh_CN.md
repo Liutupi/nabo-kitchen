@@ -2,6 +2,14 @@
 
 # 离线厨房交接 — 2026-10-29
 
+## 社区已提交：项目 1755，版本 4068
+
+用户明确同意网页权利/规则声明并提交后，使用官方 publisher 1.13.0 仅新建了一个固件项目：`1755`，版本 `4068`，slug 为 `nabo-6`。官方 API 回执和创作者后台均为**审核中 / pending**，没有已发布版本或已确认的公开社区页面。下方“等待授权确认”属于历史状态，已经解决；不要重复授权或提交。
+
+中英标题、介绍、用法及更新日志共八项逐字读回一致。从已保存页面的 `/api/me/revisions/4068/firmware` 通过已登录浏览器回下载固件，5,853,214 字节，SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`，与 GitHub 发布文件逐字节相同。匿名访问此私有版本下载地址为 HTTP 401，CDN 重定向链未单独观察；不能据此声称社区已公开。
+
+五张保存后的图片已按顺序回下载并逐张查看。返回 WebP 字节与上传不同，符合服务端重新压缩的表现；尺寸仍为 900 × 1200，排版和文字完整，像素 PSNR 为 37.98-43.35 dB，原始与返回哈希分别记录。见[社区核验](../community/v0.1.0/community-verification.json)、[提交状态](../community/v0.1.0/submission-status.json)和[审核凭证](../../assets/community/v0.1.0/submission-review-status.jpg)。本次没有新构建或硬件写入。继续原有安静跟进，仅在审核结果、失败或需要决定时通知，不重复提醒审核等待。
+
 ## 发布准备：v0.1.0 首版体验版
 
 GitHub 已完成公开发布：[v0.1.0](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，为 prerelease，tag 指向 `77ef2a926281ef7e5c4376ecd7158af1e915b06a`。四个公开附件（包括校验文件）均独立匿名回下载并核对字节数与哈希；ZIP 成员/内部校验和合并空隙全 FF 复核通过。见[公开验证](../community/v0.1.0/publication-verification.json)及[提交状态](../community/v0.1.0/submission-status.json)。社区材料及预览已经齐备，等待用户在实际授权动作前确认网页的权利/规则声明；有回执后不得重复授权或提交，审核中不能写成社区已公开。发布过程没有新增硬件写入。
