@@ -11,7 +11,7 @@
 | 项目 | 状态 |
 |---|---|
 | 已发布 | v0.1.0：[GitHub prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，[社区项目 1755](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)。应用 `a6f4a167…`，资源 `f1c0f215…` |
-| 分支 | **只剩两个**：`main`（规格、菜谱、美术、原型、工具）和 `firmware`（固件源码和发布材料）。旧分支的末端都打了 `archive/*` 标签 |
+| 分支 | **以后只用两个**：`main`（规格、菜谱、美术、原型、工具）和 `firmware`（固件源码和发布材料，指向原 `codex/release-v0.1.0` 的末端 `2499341`）。另外 6 个 `codex/*` 分支的内容已全部包含在这两个分支里，**待删除**（Claude 这边没有删除远端分支的权限，见任务 1） |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | 109 道菜有完整菜图；**36 道新菜没有菜图**，暂时用图层合成显示；退役的 35 张在 `game-art/kitchen/dish-hero/retired/` |
 | 设备 | 用户工牌运行的还是 v0.1.0（144 道旧菜谱） |
@@ -22,7 +22,7 @@
 
 | # | 任务 | 完成标准 |
 |---|---|---|
-| 1 | **切换本机仓库**：内容目录改跟 `main`，固件目录改跟 `firmware`；30 分钟定时检查也改看这两个分支。不要推送旧的 `codex/*` 分支（推送会把它们重新建出来） | `git branch -vv` 显示跟踪 `origin/main` 和 `origin/firmware` |
+| 1 | **切换本机仓库并删除旧分支**：内容目录改跟 `main`，固件目录改跟 `firmware`；30 分钟定时检查也改看这两个分支。确认 `git merge-base --is-ancestor` 都通过后，删除远端的 6 个 `codex/*` 分支：`kitchen-model`、`kitchen-dish-art-20261029`、`prototype-packing`（已在 main 里），`release-v0.1.0`、`runtime-fixes-20261029`、`offline-kitchen`（已在 firmware 里） | `git ls-remote --heads origin` 只剩 `main` 和 `firmware` |
 | 2 | **v0.1.1：首次安装实机验证**。先完整备份一块工牌，从社区页面“安装最新版”刷入 v0.1.0 的完整镜像，确认能开机、进厨房、走完一道菜。不通过就改用实机验证过的 bootloader `c20c3a4b…` 重新打包 | 在 `firmware` 分支写验证 JSON；需要重打包时发布 v0.1.1 |
 | 3 | **干净的宣传截图**：截图模式隐藏 TEST 角标，顶栏不显示 `-:--`。替换社区第 5 张图，和 v0.1.1 一起更新 | 五张图里都没有 TEST 和 `-:--` |
 | 4 | **补 36 张菜图**：新菜谱 ID 见 `data/recipes/D2_PROPOSAL.md` 的 A、C 两节（也可以用 `dish.hero` 为 `false` 筛出来），风格和现有菜图一致；登记进 `ASSET_LIST.csv`，菜谱的 `dish.hero` 改成 `true` | `tools/tests/test_kitchen_heroes.py` 通过，145 道都有菜图 |
@@ -48,6 +48,6 @@
 | 2026-10-28 | Codex 可以自主推进，规格不擅自改，交付保持 review | 刘东坡 |
 | 2026-10-29 | 仓库公开；v0.1.0 发布到 GitHub 和社区 | 刘东坡 |
 | 2026-10-29 | **D2 菜谱质量版**：按 D2_PROPOSAL 全部执行（瘦肉粥代替皮蛋瘦肉粥） | 刘东坡 |
-| 2026-10-29 | **仓库整理**：kitchen-model 合并进 main，固件固定在 `firmware` 分支，删除其余 6 个 `codex/*` 分支（保留 `archive/*` 标签） | 刘东坡 |
+| 2026-10-29 | **仓库整理**：kitchen-model 合并进 main，固件固定在 `firmware` 分支，删除其余 6 个 `codex/*` 分支（内容都已包含在这两个分支里） | 刘东坡 |
 | 2026-10-29 | **去掉日期依赖**：按做饭次数降权，开机不再确认日期 | 刘东坡 |
 | 2026-10-29 | 交接改成短格式，长篇记录归档 | 刘东坡 |
