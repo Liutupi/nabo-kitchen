@@ -8,7 +8,7 @@
 
 3 次受控启动均匹配 ELF 前缀 `698af7057`，新资源校验约在 2,278 ms 完成，无看门狗/panic。蒸水蛋、玉米排骨汤、白菜炖豆腐、番茄炒蛋、青椒蛏子汤、清蒸鲈鱼取得完整 240×320 设备画面，覆盖菜库索引 142、143；菜图区 100,800 个 RGB565 像素与未改生产 C 绘制完全一致。最后空闲堆 198,336 B、最大连续块 114,688 B，新资源测试中 UI 栈最低余 6,968 B。已退出 TEST、关闭串口，原暂停计时器与声音开启/70% 音量恢复，存档序号保持 151。
 
-见[脱敏设备报告](offline-art-device-validation-20261029.json)和[六张设备画面及像素检查](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-captures)。11 次截图请求仅保留 6 张；1 张完整但跳错页的画面和 4 次截断/未完整结束的传输均排除。没有取得鸡蛋炒饭的完整 USB 画面，不计入通过项。已有 USB 截图分帧/流控仍是诊断工具限制。当前实际面板与欢迎语听感仍待用户观察，语音数据消费正常且音频写入无错误不能替代实际观察。
+见[脱敏设备报告](offline-art-device-validation-20261029.json)和[六张设备画面及像素检查](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/device-captures)。11 次截图请求仅保留 6 张；1 张完整但跳错页的画面和 4 次截断/未完整结束的传输均排除。没有取得鸡蛋炒饭的完整 USB 画面，不计入通过项。已有 USB 截图分帧/流控仍是诊断工具限制。用户随后表示暂时没看到或没听到，实际面板与听感记为未观察；没有报告故障，也不记人工验收通过。语音数据消费正常且音频写入无错误不能替代实际观察。
 
 可编辑美术与精确资源包在 `codex/kitchen-model`，初始交付提交 `116ee8ea2ed72e5e5094805c397b8f1449d08b75`；美术均保持 `review`。本固件目录的默认 `assets/kitchen` 和已接受整机归档有意保留旧 17 张图 fixture，本次资源单独验证没有覆盖或重编它们。继续时使用美术分支的精确 `resource-candidate/kitchen_bundle.bin` 和报告，不要用旧合并镜像哈希代表更新后设备的整片 Flash。原始日志、设备身份和保留区副本只在被忽略的 `build/device-qa/` 本机目录。
 
