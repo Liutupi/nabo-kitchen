@@ -4,6 +4,41 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（macOS）· 换电脑交接
+
+**用户要求停止本轮推进，更新 GitHub 后到另一台电脑修改。本块覆盖之前“启动修正已通过”的结论：重复启动又出现看门狗，欢迎语仍无声，尚未完成实机认证。串口已关闭，未进入 TEST，也没有再刷其他候选。**
+
+### 从这里接手
+
+- 固件源码：[`codex/offline-kitchen`](https://github.com/Liutupi/nabo-kitchen/tree/codex/offline-kitchen)，本轮固件交接提交 `f799a2f3196e0d28a1777663a7cb65fcd8d84c4d`。先读该分支的 [双语详细交接](https://github.com/Liutupi/nabo-kitchen/blob/codex/offline-kitchen/docs/development/offline-kitchen-handoff.zh_CN.md) 和 `AGENTS.md`。
+- 可编辑菜谱、美术、工具、原型：本分支 [`codex/kitchen-model`](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)。两个分支根目录完全不同，建议用两个独立克隆，勿混合文件或只拉取旧 `main` 后继续开发。
+- 当前产品方向是用户已同意的**独立离线厨房**，已移除小智联网/配网/云对话；旧介绍中的“小智加厨房”属于历史基线。用户已同意无限换菜、计时页长按下取消当前计时、开机停留按 OK 进入，文字精确为 `NABO 陪你做饭`；旧每日重抽上限已取消。欢迎语音文件未换。
+
+### 设备与问题
+
+- 工牌当前为 **144 道草案、58 种食材、13 种海鲜、17 张完整菜图**。不是千道真实菜谱，也不是每道都有专绘；新增内容仍待家庭实做/视觉审核。
+- 当前已按同意写入并校验的应用 SHA256 `5b77ba87157481f4be8e5e70540f0984d1f2131e8cfc3117a60503c47203ed15`，资源 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`；保留兼容 bootloader、分区表、NVS/PHY/files。完整候选 `907e959e29ffe0a5c2754c820317db24953315a32c44d90647a813d6491f9922` 的哈希不能代表混合保留的整机镜像。
+- **启动告警复现**：同 ELF `2650225e83603a557c0153efa7cc1f932aa111b937a70264019c894fe936c7d5` 下，5,437 ms 的采样 MEPC `0x4200e5e6` 定位到 `kitchen_krc.c:15` 的 CRC（内联到 `krc_read_body:99`），RA `0x4200bc0a` 定位到 `kitchen_catalog.c:55` 的 `load_item`。粗粒度阶段间延时 2 ms 不足以证明修复，应优先给逐菜加载设置有界让出点或优化并验证等价 CRC；不要关闭看门狗掩盖。
+- **欢迎语仍无声**：用户已明确确认。驱动初始化无错误、1.95 秒 PCM 非静音，但不等于实际扬声器输出。下次先增加只读声音/音量、audio_ready、语音触发/消费诊断，核对保存设置，再查 ES8311/I2S 播放链路。
+- 用户确认按 OK 能消除时钟提示；后续打开原生 USB 串口导致重启后，又看到 `clock_lost=1`、`dirty=1`，存档序号增至 143、`storage_fault=0`。检查计时器运行/暂停及提示持久化，不清记录绕过保护。隔离功能测试尚未开始。
+- NVS 满载回收修复已做：实际 IDF 引擎的合成 24 KiB NOR 中，保留额外 2 KiB 设置，100 次 192 道满载保存及 484 个断电操作切点通过；空间全满时保留当前存档和其他命名空间。此结果不等于真实设备 NVS 满载/物理断电已验收。
+
+### 下一台电脑先做
+
+1. 检查已有工作树状态，再拉取上述两个分支；没有克隆时可分别执行 `git clone --branch codex/offline-kitchen https://github.com/Liutupi/nabo-kitchen.git nabo-kitchen-firmware` 和 `git clone --branch codex/kitchen-model https://github.com/Liutupi/nabo-kitchen.git nabo-kitchen-content`。
+2. 固件使用 ESP-IDF **5.5.3**，运行 `./tools/validate.sh`。该门禁已包含真实 144 道资源绘制、50→58 食材迁移、实际 NVS 引擎压力测试。无本机绝对路径依赖；图源、许可和资源包均在仓库，私密日志/设备身份/ELF 和固件产物不上传。
+3. 先修复启动看门狗与声音，再复测多次重启；随后测试海鲜两页、超过三次的四菜换组、用料到采购、计时暂停/取消、不自动重启。记录堆栈，隔离结束恢复正常模式，确认未写用户存档并关闭串口。
+4. 新构建须按项目规定确认具体候选和刷写范围后再刷；不要自动整片擦除、改分区或重写 bootloader。192 上限与千条合成索引试验不等于完成千道真实菜谱。
+
+```text
+Build: PASS
+Host tests: PASS
+Device tests: FAIL（启动看门狗复现、欢迎语无声）
+Unverified: 可靠启动、声音、提示持久化、144 道新功能实机流程及真实断电/满载
+```
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（macOS）· 启动修正已补刷
 
 - 用户明确同意后，仅补刷并独立校验应用 `5b77ba87157481f4be8e5e70540f0984d1f2131e8cfc3117a60503c47203ed15`，144 道资源和用户数据保持。启动 ELF `2650225e8...` 与归档相符；限时启动和后续观察没有看门狗、渲染停止或崩溃，空闲堆 198,368 B、UI 栈最低剩余 8,656 B。
