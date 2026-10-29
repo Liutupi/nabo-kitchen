@@ -1,0 +1,24 @@
+{
+  "id": "hero_xianggu-doufu",
+  "recipe_id": "xianggu-doufu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-doufu-source.png",
+  "original_sha256": "74cb5e24586c15fb157dd3386dc19ccd7172d1f6d73d302659bb098a6dec0040",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "af7e3d0ba9a1be9f9036b9e38227e26e0c06b078471479b809885026a6646f8e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-doufu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇焖豆腐. Actual recipe ingredients: 豆腐 (main), 香菇 (main), 姜. Preparation reference: 豆腐切块，香菇洗净切片，姜切丝。 锅放油炒香姜丝和香菇。 加入水、生抽和豆腐，煮开后转小火。 盖盖焖约8分钟，香菇和豆腐熟透。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "5df856b3b695a9fd792ae0e742b0e847329ac5bec14f44f17351f659e9faecc8",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

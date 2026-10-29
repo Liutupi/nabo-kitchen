@@ -1,0 +1,24 @@
+{
+  "id": "hero_xianggu-xilanhua",
+  "recipe_id": "xianggu-xilanhua",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-xilanhua-source.png",
+  "original_sha256": "062c5655bee65b628ff2d71c142b3f10c08ed1fa59ac16859c05218afb7ac2ab",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "35639d4f115b1f823e0dbc28221606c2537d65400768cf31e0b5ecc8e2ad8074",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-xilanhua. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇炒西兰花. Actual recipe ingredients: 香菇 (main), 西兰花 (main), 蒜. Preparation reference: 西兰花切小朵洗净，香菇切片，蒜切末。 另备适量水烧开，放入西兰花焯1分钟，捞出沥水。 锅放油炒香蒜末与香菇。 加入西兰花和水，盖锅煮2分钟至熟。 加盐翻匀出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "c690d4489f17c52241d87346b8bb866423eb4db60d89872e42af3d3fc794dfa2",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

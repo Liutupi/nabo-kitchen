@@ -1,0 +1,24 @@
+{
+  "id": "hero_xianggu-zhengdan",
+  "recipe_id": "xianggu-zhengdan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-zhengdan-source.png",
+  "original_sha256": "3c880cda64478fca8be085efcfcfa3835e8144fab79dc51a7b071a5ea93cad7b",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "b6d975cc28643b7edeaed38327ab4cdab997af50eec1f965d39de5c37a43c4d4",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-zhengdan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇蒸蛋. Actual recipe ingredients: 香菇 (main), 鸡蛋 (main). Preparation reference: 香菇切薄片；鸡蛋打散，加盐和水拌匀。 蛋液倒入耐热碗，将香菇铺入。 蒸锅水开后入锅，中火蒸12分钟。 检查蛋液完全凝固、中心热透，否则继续蒸。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "98df3e585596e7b2f36a1b35c10b7ee84323f8f29151eec611ee55f6dae94cce",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
