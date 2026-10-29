@@ -1,0 +1,24 @@
+{
+  "id": "hero_qingjiao-xiaren",
+  "recipe_id": "qingjiao-xiaren",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingjiao-xiaren-source.png",
+  "original_sha256": "dbd64148b6a49d472b4b2eb404860a0c2e007aaf7a09c5c1997da5e430fca80b",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "18cabfa1f8adede143695e8fec45b597772258419186b69c358717074c020184",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-xiaren. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒炒虾仁. Actual recipe ingredients: 虾 (main), 青椒 (main), 姜. Preparation reference: 青椒去籽切块、姜切丝；另用刀板去虾壳和虾线并洗手洗具。 锅加1小勺油，中火炒虾至变色盛出。 再加1小勺油炒姜和青椒至断生。 倒回虾仁翻炒至肉不透明、熟透，加盐。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "09e60ea88cc62dbe54b2856f3960eaaf77254e7c55acca25bd0fe5e99dc645e7",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
