@@ -178,5 +178,6 @@
     "Physical selection contrast and all buttons",
     "Actual panel/audio and long-term kitchen use",
     "At least 3 actual v0.2 cooking sessions before any future release"
-  ]
+  ],
+  "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578"
 }
