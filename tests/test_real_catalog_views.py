@@ -34,6 +34,7 @@ class RealCatalogViews(unittest.TestCase):
         sources = sorted((ROOT / "main/kitchen").glob("kitchen_*.c"))
         subprocess.run([os.environ.get("CC", "cc"), "-std=c11", "-O2", "-Wall", "-Wextra",
                         "-Werror", "-shared", "-fPIC", "-I", str(ROOT / "main/kitchen"),
+                        *(['-Wl,--export-all-symbols'] if os.name == 'nt' else []),
                         "-I", str(cjson), *map(str, sources),
                         str(ROOT / "tests/kitchen_view_host.c"), str(cjson / "cJSON.c"),
                         "-o", str(library)], check=True)
@@ -64,6 +65,9 @@ class RealCatalogViews(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
+        if os.name == 'nt':
+            from _ctypes import FreeLibrary
+            FreeLibrary(cls.dll._handle)
         cls.temp.cleanup()
 
     def check_render(self, where):
@@ -136,6 +140,8 @@ class RealCatalogViews(unittest.TestCase):
             for seed in range(16):
                 self.assertEqual(self.dll.view_actual_draw(seed, combo), 1,
                                  f"combo={combo}, seed={seed}")
+    def test_cooperative_catalog_matches_every_item_and_yields_per_recipe(self):
+        self.assertEqual(self.dll.view_catalog_cooperative(), 1)
 
     def test_fridge_categories_and_item_modes(self):
         for category in range(5):

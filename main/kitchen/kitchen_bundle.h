@@ -13,4 +13,8 @@ typedef struct {
 /* Validates the complete bundle, including each payload CRC and bounded index.
  */
 bool kb_open(const void *data, size_t size, kb_assets *out);
+/* Same checks; invoke progress after each <=4096-byte checksum slice. Caller
+ * may block/yield from its worker. No RTOS dependency or validation bypass. */
+bool kb_open_cooperative(const void *data, size_t size, kb_assets *out,
+                         void (*progress)(void *), void *context);
 #endif

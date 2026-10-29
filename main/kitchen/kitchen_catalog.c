@@ -129,6 +129,10 @@ done:
     return ok;
 }
 int kc_load(kc_catalog* out, const krc_pack* pack) {
+    return kc_load_cooperative(out, pack, NULL, NULL);
+}
+int kc_load_cooperative(kc_catalog* out, const krc_pack* pack,
+                        void (*progress)(void*), void* context) {
     if (out)
         out->count = 0;
     if (!out || !out->items || !pack || !pack->data || !pack->count ||
@@ -145,11 +149,14 @@ int kc_load(kc_catalog* out, const krc_pack* pack) {
         cJSON_Delete(dict);
         return 0;
     }
-    for (unsigned i = 0; i < pack->count; ++i)
+    for (unsigned i = 0; i < pack->count; ++i) {
         if (!load_item(&out->items[i], pack, i, dict)) {
             cJSON_Delete(dict);
             return 0;
         }
+        if (progress)
+            progress(context);
+    }
     out->count = pack->count;
     cJSON_Delete(dict);
     return 1;

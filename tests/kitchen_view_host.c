@@ -7,6 +7,14 @@
 static krc_pack recipes;static kc_item items[KR_MAX_RECIPES];static kc_catalog catalog={items,KR_MAX_RECIPES,0};
 static kfn_pack fonts;static ksp_pack dishes,icons,ui;static kan_pack animation;static kan_action idle;
 static kv_assets assets;static ku_ui state;static kv_scene scene;static uint8_t frame[192*192];
+static void catalog_progress(void *context){++*(unsigned*)context;}
+int view_catalog_cooperative(void){
+    kc_item scratch_items[KR_MAX_RECIPES]={0};
+    kc_catalog scratch={scratch_items,KR_MAX_RECIPES,0};unsigned calls=0;
+    if(!kc_load_cooperative(&scratch,&recipes,catalog_progress,&calls))return 0;
+    return scratch.count==catalog.count&&calls==catalog.count&&
+        !memcmp(scratch.items,catalog.items,catalog.count*sizeof(kc_item));
+}
 int view_open(const uint8_t *r,size_t rn,const uint8_t *f,size_t fn,const uint8_t *d,size_t dn,
               const uint8_t *i,size_t in,const uint8_t *u,size_t un,const uint8_t *a,size_t an){
     if(!krc_open(&recipes,r,rn)||!kc_load(&catalog,&recipes)||!kfn_open(&fonts,f,fn)||

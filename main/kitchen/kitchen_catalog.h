@@ -35,6 +35,10 @@ typedef struct {
  * validation; requires cJSON and may allocate transiently.
  * Caller must use a worker task and cannot assume the data survives if it fails. */
 int kc_load(kc_catalog* out, const krc_pack* pack);
+/* Same validation and result; call progress after each validated recipe. A
+ * device worker can block for a scheduler tick here without adding RTOS to C. */
+int kc_load_cooperative(kc_catalog* out, const krc_pack* pack,
+                        void (*progress)(void*), void* context);
 /* Fetch a step on demand. The fixed buffers hold up to 48/16 four-byte scalars. */
 int kc_read_step(const krc_pack* pack, unsigned recipe, unsigned step, kc_step* out,
                  unsigned* step_count);

@@ -1,17 +1,12 @@
 #include "kitchen_kan.h"
 #include <string.h>
+#include "kitchen_crc32.h"
 static uint16_t u16(const uint8_t* p) { return (uint16_t)(p[0] | (uint16_t)p[1] << 8); }
 static uint32_t u32(const uint8_t* p) {
     return (uint32_t)p[0] | (uint32_t)p[1] << 8 | (uint32_t)p[2] << 16 | (uint32_t)p[3] << 24;
 }
 static uint32_t crc32(const uint8_t* p, size_t n) {
-    uint32_t c = UINT32_MAX;
-    for (size_t i = 0; i < n; ++i) {
-        c ^= p[i];
-        for (unsigned j = 0; j < 8; ++j)
-            c = (c >> 1) ^ (0xedb88320u & (0u - (c & 1u)));
-    }
-    return ~c;
+    return kcrc32(p, n);
 }
 static int name_valid(const uint8_t* p) {
     if (p[0] < 'a' || p[0] > 'z')
