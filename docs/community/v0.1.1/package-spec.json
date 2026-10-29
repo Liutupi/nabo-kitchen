@@ -1,0 +1,21 @@
+{
+  "release": "v0.1.1",
+  "application_sha256": "52e249206800ad4a27cfed4080f2b4664a17e66b15dfdc595d32dd9f6c842afd",
+  "application_elf_sha256": "45d08c5495ade59c5f5eac4ec71130ed517c75691cd4f88c94318ab58fd33f57",
+  "resource_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+  "bootloader_sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+  "runtime_source_commit": "7db76094a2e60a0989c318e8af2d8fda090c6b98",
+  "content_source_commit": "f09afeada92bd01370f39e9c88ce861609321dc8",
+  "application_embedded_build_version": "v0.1.0-5-g3caf11b-dirty",
+  "validation": {
+    "build": "PASS",
+    "host_tests": "PASS",
+    "application_readback": "PASS",
+    "protected_regions_unchanged": true,
+    "controlled_boots": 1,
+    "complete_clean_frames": 3,
+    "physical_screen_and_kitchen_entry": "User confirmed",
+    "new_merged_community_reinstallation": "NOT RUN",
+    "all_recipe_cooking_and_art_acceptance": "PENDING REVIEW"
+  }
+}

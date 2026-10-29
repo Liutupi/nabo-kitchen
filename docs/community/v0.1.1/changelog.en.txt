@@ -1,0 +1,4 @@
+v0.1.1 — clean captures and clearer instructions
+- Add an isolated diagnostic capture mode that hides the test badge and unavailable clock for the captured frame, then restores diagnostic markings.
+- Refresh gallery images three and five with complete frames, without painting over missing rows.
+- Explain timer controls in image five: long OK pauses/resumes, long DOWN cancels, and double UP returns to the steps.

@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path'),sharp=require(process.argv[2]);(async()=>{for(const name of process.argv.slice(3)){const p=path.join(__dirname,name);await sharp(p+'.svg').webp({quality:96}).toFile(p+'.webp');console.log(name)}})().catch(e=>{console.error(e);process.exit(1)})

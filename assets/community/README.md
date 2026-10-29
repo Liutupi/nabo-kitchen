@@ -2,6 +2,10 @@
 
 # Community release media
 
+`v0.1.1/` is an **unpublished clean-capture checkpoint**. The user requested completion of dish art, D2 resources and v0.2 before publication. All five 900 x 1200 upload candidates were opened and inspected. Image three uses a complete clean device result frame; image five uses complete running/paused timer frames with clear controls. Other interfaces use production C rendering with an explicitly hidden clock. No frame is AI-redrawn or repaired by painting over missing rows. Original v0.1.0 media remains unchanged. See [validation and source hashes](../../docs/community/v0.1.1/release-validation.json) and the checkpoint's `media-manifest.json`.
+
+Reproduce it with `tools/render_kitchen_release_media.py --version v0.1.1 --content-root <content-checkout> --font <licensed-font-file> --sharp-root <node-sharp-directory> --device-captures-dir <verified-clean-PNGs>`. Device inputs `result.png`, `timer-running.png` and `timer-paused.png` are retained in `v0.1.1/source-ui/`; the cover original and generation record remain under `v0.1.0/`.
+
 `v0.1.0/community-published.jpg` records the actual public page after approval of revision 4068. It is a publication receipt, not an upload gallery image. [Anonymous publication checks](../../docs/community/v0.1.0/community-publication-verification.json) confirm the public firmware matches GitHub and all five public images match their reviewed stored versions.
 
 The additional `v0.1.0/submission-review-status.jpg` is a creator-workbench receipt, not an upload gallery image. It shows project 1755 / revision 4068 under review. The server-returned gallery WebPs were separately downloaded and viewed: the website recompresses their bytes while retaining dimensions and content; [both hashes and pixel checks](../../docs/community/v0.1.0/community-verification.json) are recorded. The original media manifest remains the upload-source snapshot.

@@ -1,0 +1,100 @@
+{
+  "version": "v0.1.1",
+  "cover": "unchanged, reviewed promotional illustration from v0.1.0",
+  "gallery": "native SVG layout; original project dish PNGs; clean production C rendering and complete device clean-mode captures",
+  "font_source_sha256": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6",
+  "files": {
+    "01-cover.webp": {
+      "bytes": 302270,
+      "sha256": "4f8d9bc38cd018e7c14ee463c027b0163ec25c3c8fcdac139479f4604c34d581"
+    },
+    "02-dish-collection.svg": {
+      "bytes": 3074885,
+      "sha256": "24ae9d4fd9e4344137e1137892b3a47c752f87e8ee484c49fb9740c9aaabd1ac"
+    },
+    "02-dish-collection.webp": {
+      "bytes": 134884,
+      "sha256": "2d5c07c4045857f66c332e84ef8bab359df80582396ba46bdde87287b10d625f"
+    },
+    "03-tonights-menu.svg": {
+      "bytes": 99729,
+      "sha256": "bd9077d9184b1b78a73258027d0b277221bf39d68b03b22df6bca472e731a0bf"
+    },
+    "03-tonights-menu.webp": {
+      "bytes": 112836,
+      "sha256": "b701782786dadaa0ab028421a979e303fa880a038824c508a64e139c1e78bfbd"
+    },
+    "04-cook-together.svg": {
+      "bytes": 71397,
+      "sha256": "79c07737755a10cbc7f04a1b2761e1aff3b64598ffb95b688a885c208d7d0bfc"
+    },
+    "04-cook-together.webp": {
+      "bytes": 98342,
+      "sha256": "195c7b9e427da8757bb91db7713384c44703907851d916a2dbfc596c0a613d13"
+    },
+    "05-device-captures.svg": {
+      "bytes": 86004,
+      "sha256": "dca1c8acddcbf0163dc55f52f9ea4914b564c8e4f9538f8f75dd599a4acd2985"
+    },
+    "05-device-captures.webp": {
+      "bytes": 107754,
+      "sha256": "2b6ef1d71dbc92562bf463947cd33e8436f6108d1deb66636208d625b8d489e1"
+    },
+    "render-svg.cjs": {
+      "bytes": 287,
+      "sha256": "5e1321cc02695802c670cd1d546fced4ca15b5988f88942ae013f8c46bec6c54"
+    },
+    "source-art/hero_baiqie-ji.png": {
+      "bytes": 370847,
+      "sha256": "5afdd3b9c2c9cde1de052efe28ff956b6ee7a4322ff50f4b196a9e1c9380f884"
+    },
+    "source-art/hero_fanqie-chaodan.png": {
+      "bytes": 394884,
+      "sha256": "97b3966d31afd72b607108d6e7326c1b27d8ca3a4d995d8e9af822c76db720c0"
+    },
+    "source-art/hero_jidan-chaofan.png": {
+      "bytes": 417977,
+      "sha256": "faabc247a06639b7070b5968e12c1d9480ad1c816cb653f8c4e856ffc8eb39fa"
+    },
+    "source-art/hero_pai-huanggua.png": {
+      "bytes": 392155,
+      "sha256": "c2d323eced195ac9812353b12abde61a9cea81315302a06c42b03ea3d45c4cc3"
+    },
+    "source-art/hero_qingzheng-luyu.png": {
+      "bytes": 307940,
+      "sha256": "3b3898af9de9cf75b400522b4d970a2ed8d8b85ed7fc9d191f4f7f60176d44ad"
+    },
+    "source-art/hero_yumi-paigu-tang.png": {
+      "bytes": 385727,
+      "sha256": "325e27673df34b725e4161fbaf06b3f6bf78066eaa1857abc89896194d58ec73"
+    },
+    "source-ui/conditions.png": {
+      "bytes": 6266,
+      "sha256": "d807512e2e4a456367b19c64fe5803e2e911caffa5b70f2361d8ece14acd990a"
+    },
+    "source-ui/home.png": {
+      "bytes": 15450,
+      "sha256": "1e65eca1821ca193426df6e8970ae4466cfebf8d70c2cc36d0392c5b93dd9dfd"
+    },
+    "source-ui/ingredients.png": {
+      "bytes": 8690,
+      "sha256": "9c72c7c52f33c6c34b27f8e683145b948d159a745bb9aea18e6a57a19ef21a72"
+    },
+    "source-ui/result.png": {
+      "bytes": 31061,
+      "sha256": "74dba79ea89ed5f765a309a55a4b3a20e4a7148c7849c778ba4f0091f7b56cdb"
+    },
+    "source-ui/steps.png": {
+      "bytes": 9821,
+      "sha256": "4171ce9b162276214446def4e677c0350ac958d5c501b25c790339fe79474726"
+    },
+    "source-ui/timer-paused.png": {
+      "bytes": 13820,
+      "sha256": "5a69fdc06b4de210780c67d974ce3148c6ce0db614990bd0e43716be2fd2f342"
+    },
+    "source-ui/timer-running.png": {
+      "bytes": 13972,
+      "sha256": "f79da4e1a84a645427a1261ed6627763e12c5c882299b5ec2afb90b9eb269690"
+    }
+  }
+}

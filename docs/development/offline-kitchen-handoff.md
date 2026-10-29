@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Task 3 media checkpoint: publication deferred
+
+The user clarified that firmware and dish art must be completed before publishing. No v0.1.1 Release or new community revision was created. Continue with task 4, then D2 resources and v0.2; community authorization is deferred to final publication.
+
+The clean-capture application passed the complete gate, application-only write/readback, protected-region checks, bounded boot and the user's opening-screen/kitchen-entry confirmation. Three complete clean device frames are in the new [media checkpoint](../../assets/community/README.md); all five upload candidates were visually inspected. The fifth image explains timer pause, cancel and return controls. One incomplete frame was rejected and retried; ordinary diagnostic mode still restores its isolation badge. Test mode was exited, save sequence 11 and preferences were restored, and the serial port was closed. See [validation](../community/v0.1.1/release-validation.json).
+
+The v0.1.1-named files are unpublished preparation with the old 144-recipe resources, without D2 or the later date-free workflow. The request for a new official community update prompt is deferred with publication.
+
 ## Task 2 passed: community first installation
 
 Work now follows only `main` for content and `firmware` for firmware, in the order specified by [the main handoff](https://github.com/Liutupi/nabo-kitchen/blob/main/HANDOFF.md). The earlier branch names below are historical.

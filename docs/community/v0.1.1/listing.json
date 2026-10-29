@@ -1,0 +1,20 @@
+{
+  "title_zh": "NABO 深夜厨房",
+  "title_en": "NABO Midnight Kitchen",
+  "source_url": "https://github.com/Liutupi/nabo-kitchen",
+  "version": "v0.1.1",
+  "status": "validated_unpublished_checkpoint",
+  "community_project_id": 1755,
+  "community_base_revision_id": 4068,
+  "release_url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.1",
+  "description_zh": "今晚吃什么？让戴白帽的 NABO 陪你想一想。选好人数、时间和菜品组合，颠勺抽出今晚的家常菜；不合口味，就再换一道。\n\n当前体验版包含 144 道家常菜谱草案和完整菜图、58 种冰箱食材（含 13 种海鲜）、采购清单、收藏与做菜记录。看用料、照步骤慢慢做，需要等待时交给可暂停的计时器。整套体验离线运行，开机按 OK 就能开始。\n\n这是 v0.1.1 体验版：菜谱和插画仍在持续校对，尚未逐道完成实厨验收。近期做过的菜会降低权重，七天内仍可再次抽到。封面为宣传插画，附图已区分插画、代码绘制界面与设备采集画面。",
+  "description_en": "What is for dinner? Let NABO, your white-capped kitchen companion, help you choose. Set the number of people, available time and meal combination, then draw a home-style dish. Keep drawing until something feels right.\n\nThis experience release includes 144 recipe drafts with complete dish illustrations, 58 pantry ingredients including 13 seafood types, a shopping list, favorites and cooking records. Check the ingredients, follow the steps and pause or resume timers while you cook. Everything runs offline; press OK after the opening animation to begin.\n\nVersion 0.1.1 is an early experience release. Recipes and illustrations remain under review and have not all been tested by cooking. Recent dishes receive a lower draw weight and may reappear within seven days. The cover is promotional art; gallery captions distinguish illustrations, code-rendered interfaces and device frame captures.",
+  "cover": "assets/community/v0.1.1/01-cover.webp",
+  "images": [
+    "assets/community/v0.1.1/02-dish-collection.webp",
+    "assets/community/v0.1.1/03-tonights-menu.webp",
+    "assets/community/v0.1.1/04-cook-together.webp",
+    "assets/community/v0.1.1/05-device-captures.webp"
+  ],
+  "publication_deferred_reason": "User clarified: finish firmware, D2 images and resources before publication."
+}
