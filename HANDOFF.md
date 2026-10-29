@@ -4,6 +4,31 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 运行时优化与实机复测
+
+**已按最新交接继续独立离线厨房开发。本块覆盖下方旧候选的看门狗/无声/提示复发状态，但不代表全部菜谱或长期硬件认证完成。**
+
+- **最新固件代码**在 [codex/runtime-fixes-20261029](https://github.com/Liutupi/nabo-kitchen/tree/codex/runtime-fixes-20261029)，提交 `c7cdc0b94a6009672333dc1736b4f1c33f0a0537`，从 `codex/offline-kitchen` 的 `f799a2f` 继续。先读该分支 [详细交接](https://github.com/Liutupi/nabo-kitchen/blob/codex/runtime-fixes-20261029/docs/development/offline-kitchen-handoff.zh_CN.md)、[脱敏验证记录](https://github.com/Liutupi/nabo-kitchen/blob/codex/runtime-fixes-20261029/docs/development/offline-runtime-validation-20261029.json) 和 `AGENTS.md`。本机源码目录 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-runtime`。main 仍是入口，不能把固件分支根目录合进设计目录。
+- 可编辑菜谱、美术、原型仍在 [codex/kitchen-model](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)。本轮没有修改 144 道草案、58 食材、13 种海鲜、17 张完整菜图、欢迎语 PCM 或资源包。
+- **启动修正**：资源 CRC 改为等价查表；资源包每最多 4096 字节、菜库每一道主动让出 CPU，工作任务阻塞一个正数 tick，看门狗保持开启。实机 6 次受控启动均匹配新 ELF 前缀，未见看门狗/panic，资源校验约在开机后 1,655 ms 完成。
+- **计时恢复**：确认时钟提示时立即保存暂停状态，避免旧的 1.5 秒延迟窗口。用户实际确认提示后，6 次复位没有再出现该提示，原暂停计时器保留；将来无可信时钟而中断运行计时，仍会按设计暂停并提示。
+- **无声定位**：新增只读声音/音量、语音请求/消费、音频写入错误、计时状态诊断。实机原保存设置为声音关闭、音量 70%，所以欢迎语请求数为 0。用户在设置打开声音后已明确确认实际声音正常；每次启动只请求一遍、消费 31,200 个采样，写入错误为零。没有换驱动/PCM，也没有绕过静音设置。
+- **实际刷入**：经具体候选同意并再次确认目标设备后，先校验分区表与现有资源匹配，只写 `0x10000` 应用并独立校验。应用 514,704 B，SHA256 `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`；ELF `698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f`。资源保持 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`。未刷 bootloader、分区表、NVS/PHY/files。
+- 完整候选归档 `build/firmware/ea2bae8053a427827bc912aff570aa2fa9b84ce1da8e95ca2e19dd3d421c2f4b/`，分段包 `build/candidates/offline-runtime-ea2bae8053a4/`。生成文件与私密设备记录只在本机忽略目录。该完整镜像哈希不能代表保留旧 bootloader 的整机 Flash；不要重编译后冒充当前已测文件。
+- **实机隔离流程**已走通四菜及额外 4 次确认完成的换组、第四张卡片聚焦、海鲜两页及勾选、用料加入采购、计时启动/暂停/继续/取消。仅在 TEST 模式自动注入按键，不等于实体计时长按手感通过。用户存档序号在隔离期间始终为 145；结束已恢复原暂停计时与用户设置（声音开、70%）、退出 TEST、关闭串口。最后空闲堆 198,336 B，最大块 114,688 B；UI 栈最低剩余 5,664 B。
+- **门禁**：完整 ESP-IDF 5.5.3 构建、宿主测试、镜像/归档/分段校验通过；真实资源绘制 10 项，NVS 100 次极限保存及 484 个模拟断电切点通过。Windows 测试工具补齐原生 DLL/COFF/libc/路径兼容；21 项依赖目录符号链接权限的宿主检查明确跳过，未要求改变系统权限。
+
+```text
+Build: PASS
+Host tests: PASS（21 项宿主符号链接能力检查跳过）
+Device tests: PASS（本次有限启动、声音、恢复与隔离流程）
+Unverified: 长期厨房使用、全部菜谱实做、真实断电/满载 NVS、实体计时长按手感和厨房环境计时铃听感
+```
+
+后续从 runtime-fixes 分支继续。USB 截图偶发不完整行，已拒收并重采完整 320 行画面；分帧/流控可作为后续诊断工具优化，不把每次采集都视为成功。本轮未创建 Release，也未把有限复测写成完整认证。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（macOS）· 跨电脑接手入口
 
 **当前未通过实机认证。用户已要求把本轮源码与交接保存到 GitHub，然后换另一台电脑继续。本块覆盖下方 2026-10-28 冻结状态，main 仅增加入口，最新代码和内容分别在以下分支。**
