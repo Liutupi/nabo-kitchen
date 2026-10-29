@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tests": 33,
+  "source": "Browser prototype; not physical device acceptance",
+  "code_commit": "ce063567498f1dba596e126408ee26f42b2066f7",
+  "source_lf_sha256": {
+    "prototype/app.mjs": "687fdf8ac6d2b4269a09967e2447f222a3c92e3393f2194cda063dc0e157bbd8",
+    "prototype/view.mjs": "bad1f9a2914ac72efc8267e77043d2b467c356aa927a557854e59fc54038589e",
+    "prototype/timers.mjs": "b19ab6852615c60d60b96da88bddbf9d6bb7e62d380663793efda7c71393dc70",
+    "prototype/tests/ui.test.cjs": "ba5346c4fd65ddab7c4ad31d5ea426e4ce0d4b3fc1a1bf4a548718e1f49509af"
+  },
+  "image": {
+    "file": "home-timer-entry.png",
+    "sha256": "d9f6e85d6e9261b6d7818e3168558772e940e023d0149fda862855ee121c5a4a"
+  },
+  "regression_checks": [
+    "Six permanent home choices; ordinary UP/DOWN plus short OK opens timers",
+    "One short UP from the default home focus selects timers",
+    "Timer entry remains present for empty, running, paused and finished states",
+    "Hold OK pauses/resumes; hold DOWN cancels only the selected timer; double UP returns",
+    "Cancel preserves recipe step progress and prevents silent timer restart",
+    "Paused timers restored from KST2 stay reachable after reboot"
+  ],
+  "firmware_validation": "https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-timer-home-validation-20261030.json"
+}

@@ -8,6 +8,14 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-30 · Codex（Windows）· 任务 6 计时器入口已修复，待更新
+
+- 用户确认的问题是离开跟做页面后没有计时器入口；不是暂停/取消按键失效，前一轮不标为完整验收。
+- 首页新增常驻“计时器”入口，普通上下选择和 OK 进入；长 OK 暂停/继续、长下键取消、双击上键返回。
+- 原型 33 项、C 导航/恢复/取消、13 项实际资源绘制、完整构建门禁和严格归档通过；空/运行/暂停/到时均可进。
+- [新候选与完整验证](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-timer-home-validation-20261030.json)，[生产 C 主机预览](https://github.com/Liutupi/nabo-kitchen/blob/firmware/assets/kitchen/validation/v0.2/timer-home-20261030/home-running.png)；不是设备截图。
+- 当前设备仍为先前应用；新修复仅需更新应用，D2 资源/存档格式不变，待新的具体同意和实机复测。本轮不发布。
+
 ### 2026-10-30 · Codex（Windows）· 任务 6 已更新实机，待实体确认
 
 - 经本次明确同意，仅更新 COM11 的 v0.2 应用与 D2 资源，独立 SHA256 读回一致；重启前保留区核对通过。
@@ -90,7 +98,7 @@
 | 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | **145/145 道完整菜图，缺图 0**；36 张 D2 新图已交付，全部保持 `review`，退役图保留 |
-| 设备 | 已同意并安装 v0.2 应用及 145 道 D2 资源，读回/有限启动/迁移/USB 画面检查通过；待实体操作确认，未发布 |
+| 设备 | 已安装前一 v0.2 应用及 145 道 D2 资源；计时器首页入口修复已完成构建验证，待新应用更新和实体复测，未发布 |
 | 规格变更 | v0.2 去掉日期依赖，见 [DESIGN.md 第 8 节](game-art/kitchen/DESIGN.md) |
 | 评估 | [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |
 
