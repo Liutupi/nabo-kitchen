@@ -1,0 +1,24 @@
+{
+  "id": "hero_suanrong-caixin",
+  "recipe_id": "suanrong-caixin",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanrong-caixin-source.png",
+  "original_sha256": "d9532e7a3a6060c37fa5092d9ef9c456b48fa82ea3849ca82ce7b4867693eb3e",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "02ccaeff4ffdfffe08a13c085dc068b0805d0b30b8bd86468aaf78ce4462a21e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanrong-caixin. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜蓉菜心. Actual recipe ingredients: 菜心 (main), 蒜. Preparation reference: 菜心洗净，粗的梗对半切开；蒜剁成蒜蓉。 烧开1000毫升水，加盐和1小勺油，下菜心焯30秒，沥干。 锅里放油，小火炒香一半蒜蓉。 转大火下菜心快速翻炒，加盐，放入剩下的蒜蓉，翻匀出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4f794a56840289ecc706896fd081abb2a9d369986043a43856f8d20b6c00f5d7",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
