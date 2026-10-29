@@ -3,6 +3,7 @@
 #include "kitchen_ui.h"
 #include "kitchen_save.h"
 #include "kitchen_metadata.h"
+#include "kitchen_retired.h"
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,7 +34,9 @@ int main(int argc, char** argv) {
     const char* input=getenv("KITCHEN_TEST_KRC");
     kc_catalog now={new_items,KR_MAX_RECIPES,catalog_load(input ? input : "assets/kitchen/kitchen_recipes.krc",new_items,KR_MAX_RECIPES)};
     assert(old.count == 128 && now.count >= 128);
-    for(unsigned i=0;i<128;++i)(void)hash_index(&now,old.items[i].hash);
+    for(unsigned i=0;i<128;++i) {
+        if (!kitchen_recipe_retired(old.items[i].hash)) (void)hash_index(&now,old.items[i].hash);
+    }
     uint8_t bytes[KU_SAVE_MAX];FILE* f=fopen("tests/fixtures/kitchen_state_128_50ingredients.kst","rb");assert(f);
     size_t n=fread(bytes,1,sizeof bytes,f);fclose(f);assert(n);
     ku_ui dest={0},scratch={0};dest.catalog=&now;dest.fridge=5;dest.excluded=7;uint32_t seq=0;int lost=0;
@@ -49,8 +52,16 @@ int main(int argc, char** argv) {
     assert(dest.shopping[0].id==id("shrimp") && dest.shopping[0].uid==11 && dest.shopping[0].qty100==12500 && !dest.shopping[0].bought);
     assert(dest.shopping[1].id==id("egg") && dest.shopping[1].uid==12 && dest.shopping[1].qty100==300 && dest.shopping[1].bought);
     assert(dest.shopping[2].id==id("fish_whole") && dest.shopping[2].uid==13 && dest.shopping[2].qty100==45000 && !dest.shopping[2].bought);
-    unsigned a=hash_index(&now,old.items[2].hash), b=hash_index(&now,old.items[127].hash);
-    assert(dest.saved_count==2 && dest.saved_result[0]==a && dest.saved_result[1]==b);
-    assert(ku_recipe_bit(dest.favorites,a) && ku_recipe_bit(dest.favorites,b));
-    puts("PASS: real 128/50 KST1 migrates reordered 58 ingredients, shopping, favorites and saved recipes");
+    if (kitchen_recipe_retired(old.items[2].hash) || kitchen_recipe_retired(old.items[127].hash)) {
+        assert(!dest.has_saved && !dest.saved_count);
+    } else {
+        unsigned a=hash_index(&now,old.items[2].hash), b=hash_index(&now,old.items[127].hash);
+        assert(dest.saved_count==2 && dest.saved_result[0]==a && dest.saved_result[1]==b);
+    }
+    for (unsigned i=0;i<2;++i) {
+        unsigned old_index=i ? 127 : 2;
+        if (!kitchen_recipe_retired(old.items[old_index].hash))
+            assert(ku_recipe_bit(dest.favorites,hash_index(&now,old.items[old_index].hash)));
+    }
+    puts("PASS: real 128/50 KST1 preserves ingredients and shopping while discarding retired recipes");
 }

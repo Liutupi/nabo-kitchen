@@ -2,6 +2,7 @@
 #include <limits.h>
 #include <string.h>
 #include "kitchen_metadata.h"
+#include "kitchen_retired.h"
 typedef struct {
     uint8_t* data;
     size_t cap, pos;
@@ -76,7 +77,7 @@ static int recipe_for(const ku_ui* u, uint32_t h) {
                 return -1;
             found = (int)i;
         }
-    return found;
+    return found < 0 && kitchen_recipe_retired(h) ? -2 : found;
 }
 static int ingredient_for(uint32_t h) {
     int found = -1;
@@ -238,12 +239,13 @@ size_t ku_save_encode(const ku_ui* u, uint8_t* buffer, size_t cap, uint32_t sequ
     }
     return w.pos;
 }
-static int read_recipe_mask(reader* r, const ku_ui* u, uint64_t out[KR_RECIPE_WORDS]) {
+static int read_recipe_mask(reader* r, const ku_ui* u, uint64_t out[KR_RECIPE_WORDS], int* removed) {
     unsigned n = (unsigned)get(r, 1);
     if (n > KR_MAX_RECIPES) return 0;
     uint64_t bits[KR_RECIPE_WORDS] = {0};
     for (unsigned i = 0; i < n; ++i) {
         int index = recipe_for(u, (uint32_t)get(r, 4));
+        if (index == -2) { *removed = 1; continue; }
         if (index < 0 || ku_recipe_bit(bits, (unsigned)index)) return 0;
         ku_recipe_flip(bits, (unsigned)index);
     }
@@ -275,6 +277,7 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         return 0;
     *scratch = *u;
     ku_ui* tmp = scratch;
+    int removed = 0;
     tmp->conditions = read_conditions(&r);
     tmp->difficulty = (uint8_t)get(&r, 1);
     tmp->reroll_limit = (uint8_t)get(&r, 1);
@@ -299,11 +302,14 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
     uint64_t seen[KR_RECIPE_WORDS] = {0};
     for (unsigned i = 0; i < tmp->saved_count; ++i) {
         int idx = recipe_for(tmp, (uint32_t)get(&r, 4));
+        if (idx == -2) { removed = 1; continue; }
         if (idx < 0 || ku_recipe_bit(seen, (unsigned)idx))
             return 0;
         ku_recipe_flip(seen, (unsigned)idx);
         tmp->saved_result[i] = (uint16_t)idx;
     }
+    /* A meal with a retired member is invalid as a whole, never silently partial. */
+    if (removed) { tmp->has_saved = 0; tmp->saved_count = 0; tmp->saved_notes = 0; }
     ks_init(&tmp->store);
     tmp->store.has_streak = (uint8_t)get(&r, 1);
     tmp->store.streak_last_day = (int32_t)(uint32_t)get(&r, 4);
@@ -313,25 +319,31 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
     tmp->store.history_count = (uint8_t)get(&r, 1);
     if (tmp->store.history_count > 60)
         return 0;
-    for (unsigned i = 0; i < tmp->store.history_count; ++i) {
+    unsigned history_count = tmp->store.history_count;
+    tmp->store.history_count = 0;
+    for (unsigned i = 0; i < history_count; ++i) {
         int idx = recipe_for(tmp, (uint32_t)get(&r, 4));
         int32_t day = (int32_t)(uint32_t)get(&r, 4);
-        if (idx < 0)
-            return 0;
-        tmp->store.history[i] = (ks_record){(uint16_t)idx, day};
+        if (idx == -2) { removed = 1; continue; }
+        if (idx < 0) return 0;
+        tmp->store.history[tmp->store.history_count++] = (ks_record){(uint16_t)idx, day};
     }
     tmp->store.cooked_count = (uint8_t)get(&r, 1);
     if (tmp->store.cooked_count > KS_MAX_RECIPES)
         return 0;
     memset(seen, 0, sizeof seen);
-    for (unsigned i = 0; i < tmp->store.cooked_count; ++i) {
+    unsigned cooked_count = tmp->store.cooked_count;
+    tmp->store.cooked_count = 0;
+    for (unsigned i = 0; i < cooked_count; ++i) {
         int idx = recipe_for(tmp, (uint32_t)get(&r, 4));
         uint32_t count = (uint32_t)get(&r, 4);
         int32_t day = (int32_t)(uint32_t)get(&r, 4);
-        if (idx < 0 || !count || ku_recipe_bit(seen, (unsigned)idx))
+        if (!count) return 0;
+        if (idx == -2) { removed = 1; continue; }
+        if (idx < 0 || ku_recipe_bit(seen, (unsigned)idx))
             return 0;
         ku_recipe_flip(seen, (unsigned)idx);
-        tmp->store.cooked[i] = (ks_cooked){(uint16_t)idx, count, day};
+        tmp->store.cooked[tmp->store.cooked_count++] = (ks_cooked){(uint16_t)idx, count, day};
     }
     memset(tmp->sessions, 0, sizeof(tmp->sessions));
     memset(tmp->timer_steps, 0, sizeof(tmp->timer_steps));
@@ -344,14 +356,14 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         uint16_t visited = (uint16_t)get(&r, 2);
         uint8_t pos = (uint8_t)get(&r, 1), complete = (uint8_t)get(&r, 1);
         uint16_t timed = (uint16_t)get(&r, 2);
-        if (idx < 0 || ku_recipe_bit(seen, (unsigned)idx) || pos >= 12 || complete > 1 ||
-            (visited & 0xf000) || (timed & 0xf000))
-            return 0;
+        if (pos >= 12 || complete > 1 || (visited & 0xf000) || (timed & 0xf000)) return 0;
+        if (idx == -2) { removed = 1; continue; }
+        if (idx < 0 || ku_recipe_bit(seen, (unsigned)idx)) return 0;
         ku_recipe_flip(seen, (unsigned)idx);
         tmp->sessions[idx] = (ks_session){visited, pos, complete};
         tmp->timer_steps[idx] = timed;
     }
-    if (!read_recipe_mask(&r, tmp, tmp->favorites) || !read_recipe_mask(&r, tmp, tmp->wanted) ||
+    if (!read_recipe_mask(&r, tmp, tmp->favorites, &removed) || !read_recipe_mask(&r, tmp, tmp->wanted, &removed) ||
         !read_ingredient_mask(&r, &tmp->excluded) || !read_ingredient_mask(&r, &tmp->fridge))
         return 0;
     tmp->shopping_count = (uint8_t)get(&r, 1);
@@ -375,7 +387,10 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         return 0;
     memset(tmp->timer_ids, 0, sizeof(tmp->timer_ids));
     int lost = 0;
-    for (unsigned i = 0; i < tmp->timers.count; ++i) {
+    unsigned timer_count = tmp->timers.count;
+    uint32_t raw_timer_ids[3] = {0};
+    tmp->timers.count = 0;
+    for (unsigned i = 0; i < timer_count; ++i) {
         uint32_t id = (uint32_t)get(&r, 4);
         uint64_t total = get(&r, 8), left = get(&r, 8);
         unsigned status = (unsigned)get(&r, 1), ack = (unsigned)get(&r, 1);
@@ -383,14 +398,16 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         unsigned step = (unsigned)get(&r, 1), valid = (unsigned)get(&r, 1);
         uint64_t deadline = get(&r, 8);
         if (!id || id >= tmp->timers.next_id || !total || total > INT64_MAX || left > total ||
-            status > KT_DONE || ack > 1 || recipe < 0 || step >= 12 || valid > 1 ||
+            status > KT_DONE || ack > 1 || recipe == -1 || step >= 12 || valid > 1 ||
             deadline > INT64_MAX)
             return 0;
         for (unsigned j = 0; j < i; ++j)
-            if (tmp->timer_ids[j] == id)
+            if (raw_timer_ids[j] == id)
                 return 0;
+        raw_timer_ids[i] = id;
         if (status == KT_DONE && left)
             return 0;
+        if (recipe == -2) { removed = 1; continue; }
         if (status == KT_RUNNING) {
             if (valid && wall >= 0 && deadline >= left && (uint64_t)wall >= deadline - left)
                 left = deadline > (uint64_t)wall ? deadline - (uint64_t)wall : 0;
@@ -401,11 +418,12 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         }
         if (left > total || left > (uint64_t)(INT64_MAX - mono))
             return 0;
-        tmp->timers.items[i] = (kt_timer){
+        unsigned target = tmp->timers.count++;
+        tmp->timers.items[target] = (kt_timer){
             id, (int64_t)total, (int64_t)left, mono + (int64_t)left, (kt_status)status, (int)ack};
-        tmp->timer_ids[i] = id;
-        tmp->timer_recipe[i] = (uint16_t)recipe;
-        tmp->timer_step[i] = (uint8_t)step;
+        tmp->timer_ids[target] = id;
+        tmp->timer_recipe[target] = (uint16_t)recipe;
+        tmp->timer_step[target] = (uint8_t)step;
     }
     if (!r.ok || r.pos != length)
         return 0;
@@ -414,7 +432,7 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
     tmp->stack_count = 0;
     tmp->outside = 0;
     tmp->result_count = 0;
-    tmp->dirty = 0;
+    tmp->dirty = removed;
     *u = *tmp;
     if (sequence)
         *sequence = seq;

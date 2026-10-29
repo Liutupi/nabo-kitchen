@@ -103,6 +103,11 @@ run_static_checks() {
         main/kitchen/kitchen_timer.c main/kitchen/kitchen_metadata.c \
         -o "${test_dir}/test_kitchen_migration"
     "${test_dir}/test_kitchen_migration"
+    "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -Imain/kitchen \
+        tests/test_kitchen_retired.c main/kitchen/kitchen_save.c main/kitchen/kitchen_session.c \
+        main/kitchen/kitchen_timer.c main/kitchen/kitchen_metadata.c \
+        -o "${test_dir}/test_kitchen_retired"
+    "${test_dir}/test_kitchen_retired"
     "${CC:-cc}" -O2 -std=c11 -Wall -Wextra -Werror -DKR_TEST_TRACE -Imain/kitchen \
         tests/test_kitchen_scale.c main/kitchen/kitchen_save.c main/kitchen/kitchen_session.c \
         main/kitchen/kitchen_timer.c main/kitchen/kitchen_metadata.c \

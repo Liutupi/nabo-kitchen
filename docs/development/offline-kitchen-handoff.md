@@ -2,6 +2,10 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## D2 resources rebuilt; task 5 complete
+
+The 145-recipe D2 resources, fonts and all hero sprites have been rebuilt. The 3,768,770-byte bundle leaves 1,474,110 bytes in its 5 MiB partition. The complete build/host gate and strict archive check passed; 21 capability-dependent tests were skipped. Known retired recipes are filtered from legacy saves while compatible records/settings survive; unknown hashes still reject atomically. See [validation](offline-d2-validation-20261029.json). No device was flashed and nothing was released. Continue main task 6 for the date-free workflow and whole-card focus colors, synchronizing the prototype first.
+
 ## Task 3 media checkpoint: publication deferred
 
 The user clarified that firmware and dish art must be completed before publishing. No v0.1.1 Release or new community revision was created. Continue with task 4, then D2 resources and v0.2; community authorization is deferred to final publication.
