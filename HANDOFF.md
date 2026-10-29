@@ -4,6 +4,20 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（macOS）· 跨电脑接手入口
+
+**当前未通过实机认证。用户已要求把本轮源码与交接保存到 GitHub，然后换另一台电脑继续。本块覆盖下方 2026-10-28 冻结状态，main 仅增加入口，最新代码和内容分别在以下分支。**
+
+- **固件**：[codex/offline-kitchen](https://github.com/Liutupi/nabo-kitchen/tree/codex/offline-kitchen)，已推送 `f799a2f3196e0d28a1777663a7cb65fcd8d84c4d`。先读 [离线固件详细交接](https://github.com/Liutupi/nabo-kitchen/blob/codex/offline-kitchen/docs/development/offline-kitchen-handoff.zh_CN.md) 和该分支的 `AGENTS.md`。
+- **菜谱、美术、工具、原型**：[codex/kitchen-model](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)，先读 [最新交接](https://github.com/Liutupi/nabo-kitchen/blob/codex/kitchen-model/HANDOFF.md)。建议两个独立克隆；只拉旧 main 不会得到当前固件或新增素材。
+- 当前是用户已同意的**独立离线厨房**，已移除小智网络/配网/云对话；旧介绍里的“小智加厨房”是历史基线。当前为 **144 道草案、58 食材、13 种海鲜、17 张完整菜图**。无限换菜、计时页长按下取消当前计时、开机等 OK 进入、`NABO 陪你做饭` 文案已实现；仍不是千道真实菜谱。
+- 设备实际应用 SHA256 `5b77ba87157481f4be8e5e70540f0984d1f2131e8cfc3117a60503c47203ed15`，资源 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`，按同意仅写应用/资源，保留原兼容 bootloader、分区及用户数据。串口已关闭，未强行进入 TEST 或删除计时记录。
+- **必须先修复**：重复启动又出现 IDLE 看门狗，采样定位到 `krc_read_body` 的 CRC / `load_item`；粗粒度阶段间延时 2 ms 仍不足。用户确认欢迎语依旧无声，不能将驱动无报错当成发声。用户可按 OK 消除时钟提示，但串口重启后提示又出现，需查计时状态持久化。详细地址、ELF 身份、复现与下一步均已写入固件交接。
+- 完整 ESP-IDF 5.5.3 构建及宿主测试通过；**Device tests: FAIL**（看门狗复现、欢迎语无声）。NVS 100 次极限保存/484 个模拟断电切点通过属于宿主结果，真实满载/断电、新功能物理操作仍待验收。请勿发布为正式认证固件。
+- 下一台电脑先检查工作树，再拉取上述分支。新的构建和刷机继续遵守固件 AGENTS 的 ESP-IDF、完整门禁、具体候选同意及分段保留数据要求。私密日志、NVS、设备身份和本机 ELF/固件产物未上传。
+
+---
+
 ## 最新状态 · 2026-10-28 · Codex（Windows）· 成果冻结与 GitHub 交接
 
 **按刘东坡本次指令收束并保存全部当前交付，仓库改为公开。以本块为当前状态，下面的“菜单未定 / 视频缺失 / 等 K1/K2”等段落为历史记录。**
