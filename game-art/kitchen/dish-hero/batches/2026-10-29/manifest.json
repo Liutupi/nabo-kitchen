@@ -1416,5 +1416,7 @@
     "coverage": "coverage-validation.json",
     "static": "static_report.json",
     "runtime": "runtime-validation.json"
-  }
+  },
+  "device_validation": "device-validation.json",
+  "hardware_state": "resource-only installed; limited device checks passed; human panel/audio observation pending"
 }

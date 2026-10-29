@@ -1,0 +1,104 @@
+{
+  "result": "PASS",
+  "scope": "complete 320-row device captures vs unchanged production C rendering; dish area only",
+  "device_app_sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+  "device_resource_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+  "checks": [
+    {
+      "capture": "capture-01.png",
+      "recipe_id": "zheng-shuidan",
+      "catalog_index": 143,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "572c67c135fb826a1ea4619b1f0e9614a8f507027f824dba8acf99d0321ceca9",
+      "complete_rows": 320
+    },
+    {
+      "capture": "capture-02.png",
+      "recipe_id": "yumi-paigu-tang",
+      "catalog_index": 142,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "fb9f1634a1ab4e0bc1c162a1a6df6c8c5cc6eeba44909025c2eecde405a6621d",
+      "complete_rows": 320
+    },
+    {
+      "capture": "capture-03.png",
+      "recipe_id": "baicai-doufu",
+      "catalog_index": 1,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "7527920a85f8fc5bfb8ac6ab8b989e9b6ac6be87a0984ccc0aed2b3355b88cfd",
+      "complete_rows": 320
+    },
+    {
+      "capture": "capture-04.png",
+      "recipe_id": "fanqie-chaodan",
+      "catalog_index": 27,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "311e027cbae9ece244c526adadae682b0b321351e289554ed6d3cd1d03407fb8",
+      "complete_rows": 320
+    },
+    {
+      "capture": "capture-05.png",
+      "recipe_id": "qingjiao-chengzi-tang",
+      "catalog_index": 81,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "cc2b2e5462df8cf1b61a2bc2c3215473aef9aad2acaac48a2bc321522a4940cc",
+      "complete_rows": 320
+    },
+    {
+      "capture": "capture-06.png",
+      "recipe_id": "qingzheng-luyu",
+      "catalog_index": 86,
+      "dish_rectangle_xywh": [
+        45,
+        46,
+        150,
+        112
+      ],
+      "rgb565_pixels_compared": 16800,
+      "mismatched_pixels": 0,
+      "result": "PASS",
+      "png_sha256": "6292ed5359c9deed557f59b101e38d8d27556661698aa27b8865e879d4c67ffe",
+      "complete_rows": 320
+    }
+  ]
+}

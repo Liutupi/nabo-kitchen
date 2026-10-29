@@ -31,9 +31,17 @@ python tools/check_recipes.py
 
 ## 资源候选与复现
 
-[resource-candidate/](resource-candidate/README.md) 包含可独立核对的六个 payload、KAB 包及许可。仅菜图包变化，菜谱、字体、食材/界面、NABO 动画五个 payload 与已接受固件资源逐字节一致。**本批没有构建、替换或刷写应用，工牌仍使用原 17 张图资源。**
+[resource-candidate/](resource-candidate/README.md) 包含可独立核对的六个 payload、KAB 包及许可。仅菜图包变化，菜谱、字体、食材/界面、NABO 动画五个 payload 与已接受固件资源逐字节一致。**出图阶段未刷机；随后用户明确要求刷机验证，2026-10-29 已仅更新工牌资源区到本包。已接受的应用没有构建、替换或重刷。**
 
-最终 `kitchen_dish.bin` 为 **1,596,273 B**，超过旧工具的 200,000 B 菜图预算；没有修改预算/规格来使其显示通过。实际整包 **3,756,062 B**，SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`，在实际 5 MiB 分区内还剩 **1,486,818 B**。实机启动时长、堆内存、显示及长期使用仍待设备验收。
+最终 `kitchen_dish.bin` 为 **1,596,273 B**，超过旧工具的 200,000 B 菜图预算；没有修改预算/规格来使其显示通过。实际整包 **3,756,062 B**，SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`，在实际 5 MiB 分区内还剩 **1,486,818 B**。有限设备验证见下节；全部菜谱和长期使用仍待验收。
+
+## 2026-10-29 后续资源刷写验证
+
+[设备验证报告](device-validation.json) 和 [六张设备画面](device-captures/README.md)：仅从 `0x200000` 写本资源包，完整读回 SHA256 一致；应用、分区表、bootloader、NVS/PHY、files 均核对保留。3 次受控启动匹配原 ELF，资源校验均在约 2,278 ms 完成，未见看门狗或崩溃。最后空闲堆 198,336 B、最大块 114,688 B，UI 栈最低余 6,968 B。
+
+蒸水蛋、玉米排骨汤、白菜炖豆腐、番茄炒蛋、青椒蛏子汤、清蒸鲈鱼取得完整 320 行画面；实际菜图区合计 100,800 个 RGB565 像素与生产 C 预期一致。11 次截图请求中，1 张跳错页画面和 4 次不完整/未完整结束的传输均排除；鸡蛋炒饭的完整 USB 截图没有取得，未计入通过项。原有 USB 截图分帧/流控仍需改进。
+
+已经退出 TEST 并关闭串口，恢复原 1 个暂停计时器、声音开启/70% 音量；存档序号从 151 到 151。当前实际屏幕与扬声器表现仍待用户确认，逐菜审美/实厨保持 `review`。旧 `runtime-validation.json` 是出图结束时的本机阶段记录，新的设备结果以 `device-validation.json` 为准。
 
 在旁边准备固件仓库 `codex/runtime-fixes-20261029`（上述提交）、本机 C 编译器以及 `CJSON_DIR` 指向 cJSON 源码后执行；不需要 ESP32 固件编译或连接设备：
 
@@ -45,4 +53,4 @@ python game-art/kitchen/dish-hero/batches/2026-10-29/build_candidate.py --firmwa
 python game-art/kitchen/dish-hero/batches/2026-10-29/verify_runtime.py --firmware-root ../nabo-kitchen-runtime --assets game-art/kitchen/dish-hero/batches/2026-10-29/resource-candidate --out game-art/kitchen/dish-hero/batches/2026-10-29
 ```
 
-下一步按 11 页预览逐菜审美和实厨审核，尤其检查精确盘心、描边、全套风格及配方形态；通过后再将对应 CSV 行和元数据一起改为 `done`。需要返修时先保留当前版本及哈希。新资源的实机验收另行记录，不能把本机 C 测试写成刷机完成。
+下一步按 11 页预览逐菜审美和实厨审核，尤其检查精确盘心、描边、全套风格及配方形态；通过后再将对应 CSV 行和元数据一起改为 `done`。需要返修时先保留当前版本及哈希。已完成的有限设备检查不替代全部菜谱、实物屏幕/声音和长期使用验收。
