@@ -1,0 +1,24 @@
+{
+  "id": "hero_chizhi-zheng-paigu",
+  "recipe_id": "chizhi-zheng-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_chizhi-zheng-paigu-source.png",
+  "original_sha256": "c94e447e27ef9b4820b1246ab7286d937867d2690edfa24fee37dcc0a9c1412f",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "1a28f309985a530563f8867627e766ba86bfbd872a9d403c46d81cca1186e7dc",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_chizhi-zheng-paigu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 豉汁蒸排骨. Actual recipe ingredients: 排骨 (main), 蒜. Preparation reference: 排骨切成3厘米块，擦干；蒜和豆豉切碎。 排骨拌入全部调料和蒜末，腌15分钟。 排骨平铺入深盘，水开后放入蒸锅。 保持大火蒸30分钟。 确认骨边肉熟透，中心达63℃，静置3分钟。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "39a5bc3d7608fcec6baf444d905a1d41da657f82229b76f3f2a81a7cefda94c8",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
