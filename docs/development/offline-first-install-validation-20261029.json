@@ -1,0 +1,142 @@
+{
+  "task": 2,
+  "branch": "firmware",
+  "release_tested": "v0.1.0",
+  "verified_at": "2026-10-29T21:17:01.45005+08:00",
+  "build": "NOT RUN; reused the exact accepted release artifacts",
+  "host_tests": "PASS for the full static/host gate, archive/layout verification and component SHA256 comparison",
+  "static_gate": {
+    "command": "./tools/validate.sh --static",
+    "exit_code": 0,
+    "capability_dependent_tests_skipped": 21,
+    "skip_reason": "Existing Windows symbolic-link capability limitations"
+  },
+  "device_tests": "PASS for the bounded first-install and user-operated workflow below",
+  "full_backup": {
+    "bytes": 8388608,
+    "verified": true,
+    "storage": "ignored local directory only; no dump, device identifiers or raw serial logs committed"
+  },
+  "target": {
+    "chip": "ESP32-C3",
+    "flash_bytes": 8388608,
+    "identity_rechecked": true,
+    "secure_boot": false,
+    "flash_encryption": false
+  },
+  "community_install": {
+    "project_id": 1755,
+    "revision_id": 4068,
+    "page": "https://ai-passport.folotoy.cn/plays/1755/?v=4068-2",
+    "button": "Install latest",
+    "browser": "Edge",
+    "interaction": "User clicked the official page button and selected the approved test badge; page showed installation success and user confirmed restart",
+    "automatic_click_attempts": "Device selection cancelled before writing; resolved by manual page-button click",
+    "full_image_bytes": 5853214,
+    "full_image_sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+    "offset": "0x0",
+    "whole_chip_erase_requested_by_agent": false,
+    "proof": "../../assets/community/v0.1.0/first-install-success.jpg"
+  },
+  "component_readback": {
+    "bootloader": {
+      "offset": "0x0",
+      "bytes": 21024,
+      "expected_sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+      "installed_sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+      "exact_match": true,
+      "different_bytes": 0,
+      "first_difference_offsets": []
+    },
+    "partition_table": {
+      "offset": "0x8000",
+      "bytes": 3072,
+      "expected_sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+      "installed_sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+      "exact_match": true,
+      "different_bytes": 0,
+      "first_difference_offsets": []
+    },
+    "application": {
+      "offset": "0x10000",
+      "bytes": 514704,
+      "expected_sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+      "installed_sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+      "exact_match": true,
+      "different_bytes": 0,
+      "first_difference_offsets": []
+    },
+    "resources": {
+      "offset": "0x200000",
+      "bytes": 3756062,
+      "expected_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+      "installed_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+      "exact_match": true,
+      "different_bytes": 0,
+      "first_difference_offsets": []
+    }
+  },
+  "controlled_boot": {
+    "count": 1,
+    "observation_seconds": 28,
+    "bundle_validated_ms": 2277,
+    "watchdog_panic_reboot_lines": 0,
+    "status_samples": 3,
+    "last_status": {
+      "running": 1,
+      "page": 0,
+      "test": 0,
+      "heap": 198924,
+      "largest": 114688,
+      "stack_free_min": 8668,
+      "recipes": 144,
+      "ingredients": 58,
+      "dirty": 0,
+      "clock_lost": 0,
+      "storage_fault": 0,
+      "save_sequence": 11,
+      "timers_running": 0,
+      "timers_paused": 0,
+      "timers_done": 0,
+      "sound": 1,
+      "volume": 50,
+      "audio_gain": 50,
+      "audio_ready": 1,
+      "audio_available": 1,
+      "boot_voice_pending": 0,
+      "voice_requests": 1,
+      "voice_starts": 1,
+      "voice_samples": 31200,
+      "voice_nonzero_samples": 27072,
+      "audio_writes": 1158,
+      "audio_write_errors": 0,
+      "audio_last_error": 0
+    },
+    "serial_closed": true,
+    "observed_elf_sha256_prefix": "698af7057",
+    "reference_elf_sha256": "698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f"
+  },
+  "user_observation": {
+    "source": "Direct user replies in this chat after the community installation",
+    "normal_screen_and_kitchen_entry": true,
+    "one_recipe_ingredient_and_step_workflow_completed": true,
+    "physical_timer_pause_and_cancel": "User confirmed normal after explaining long OK and long DOWN on the timer page",
+    "completion_page_reached": true,
+    "greeting_audible": "NOT OBSERVED; user did not separately confirm listening",
+    "actual_cooking": "NOT RUN; this was a device workflow check"
+  },
+  "follow_up": {
+    "bootloader_repack_required": false,
+    "v0_1_1_published_for_task_2": false,
+    "reason": "Packaged bootloader, application and resources matched independently read bytes and booted successfully",
+    "timer_controls_discoverability": "User could not initially find pause; suggest clearer on-screen help without changing the agreed controls",
+    "next_task": 3
+  },
+  "unverified": [
+    "All-recipe real cooking and art acceptance",
+    "Long-term use",
+    "Physical power-loss/full-storage behavior",
+    "Updated audible greeting observation",
+    "D2 assets and v0.2 have not been installed by this validation"
+  ]
+}

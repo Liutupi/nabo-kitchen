@@ -2,6 +2,16 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Task 2 passed: community first installation
+
+Work now follows only `main` for content and `firmware` for firmware, in the order specified by [the main handoff](https://github.com/Liutupi/nabo-kitchen/blob/main/HANDOFF.md). The earlier branch names below are historical.
+
+After a verified private 8 MiB backup, the user installed the exact v0.1.0 full image through the community page's Install latest button in Edge. The page showed installation success. Independent readback matched the bootloader, partition table, application and resources byte for byte. A subsequent 28-second controlled boot matched the accepted ELF prefix, validated the resource bundle at 2,277 ms and showed no watchdog, panic or storage fault. The serial observer is closed.
+
+The user confirmed kitchen entry, a recipe workflow through completion, and physical timer pause/cancel after receiving the long-press instructions. This is a workflow check, not real cooking or separate listening acceptance. The packaged bootloader works in this test, so task 2 does not require a bootloader replacement or v0.1.1 repack. See the [sanitized report](offline-first-install-validation-20261029.json) and [community success proof](../../assets/community/v0.1.0/first-install-success.jpg).
+
+Next is task 3, clean promotional captures. Record clearer timer-control help as a usability follow-up; the agreed controls remain unchanged. D2 resources and v0.2 are not installed by this test, and the original v0.1.0 tag and Release assets remain unchanged.
+
 ## Community publication verified: project 1755, revision 4068
 
 The server approved revision 4068 at `2026-10-29T09:26:31Z`. The creator workbench now says published and its actual copied public URL is [the community page](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2). The public page exposes the Install latest button, five images, the introduction and source link. Anonymous page and public API requests return HTTP 200, with project 1755 / revision 4068 / published. The earlier pending sections below are historical.
