@@ -2,6 +2,8 @@
 
 **v0.1.0 首版体验固件已发布：**[下载固件和分段包](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [安装与按键说明](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/installation.zh_CN.md) · [发布验证记录](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/publication-verification.json)。
 
+社区已提交审核，项目 **1755**、版本 **4068**，目前尚未公开；[提交凭证和核验](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/community-verification.json)。
+
 <img src="https://raw.githubusercontent.com/Liutupi/nabo-kitchen/v0.1.0/assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
 
 首版是独立离线厨房，包含 144 道菜谱和完整菜图草案、58 种食材（含 13 种海鲜）、抽菜、冰箱推荐、采购、步骤跟做、收藏与三个可暂停计时器，不包含小智云对话或语音识别。菜谱和美术仍在审校，更新后实际面板/听感与长期使用仍待验收；详细边界以发布页为准。下文保留产品设计方向，未来功能不代表已在首版实现。

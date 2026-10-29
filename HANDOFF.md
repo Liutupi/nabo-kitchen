@@ -4,6 +4,17 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 社区首版已提交，项目 1755 / 版本 4068 审核中
+
+用户已明确选择“同意并提交”，网页权利/社区规则确认已完成，**下方旧“等待确认”不再适用**。通过官方 `folotoy-ai-passport-publisher` 1.13.0 获取仅新建一次的授权，核对未有回执后，只提交了一次；返回 **project `1755`、revision `4068`、slug `nabo-6`、status `pending`**。创作者后台也显示“审核中”，没有已发布 revision 或已确认的公开社区链接。不要重复新建、授权或提交，也不要写成社区已经公开。
+
+- **已保存材料**：中英标题、介绍、操作方法、更新日志共八项逐字读回一致；封面及四张介绍图完整保留，均为 900×1200。五张服务端图片已经逐张回下载查看，次序、版面和文字正确；网站有重新压缩，保存后的哈希与上传原图不同，已分别记录，不能写成图片字节相同。原封面、提示词、SVG 和上传文件均保留。
+- **固件回下载**：从后台实际保存的 `/api/me/revisions/4068/firmware` 经已登录浏览器下载，5,853,214 B，SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`，与已验证 GitHub v0.1.0 完整镜像逐字节相同。匿名访问此私有版本端点返回 401；CDN 重定向链未单独观察。GitHub 公开下载正常；以上不代表社区审核通过。
+- **接手入口**：[提交状态](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/submission-status.json)、[社区核验](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/community-verification.json)、[审核凭证](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/assets/community/v0.1.0/submission-review-status.jpg)。作者后台入口为 `https://ai-passport.folotoy.cn/account/?project=1755`，需要作者登录。发布源码及材料仍在 `codex/release-v0.1.0`，main 只做入口。一次性码已消费且临时码文件删除，发布令牌仅存仓库外私有配置，没有写入 GitHub。
+- **下一步**：等待社区审核，仅在真实审核结果、失败或需要决定时通知；审核通过后，再核对实际公共详情和匿名下载并记录 URL。原有每 30 分钟跟进继续，不重复提醒 pending，不替换 v0.1.0 附件。本轮没有新构建或刷机，144 张菜图仍为 `review`，先前记录的面板/听感、实厨与长期验收边界不变。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 首版固件 v0.1.0 已公开，社区材料就绪
 
 用户明确要求发布首版固件及社区，并制作封面/图片。**[GitHub v0.1.0 首版体验版已公开](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)**，不是草稿；标记为 prerelease，避免将仍待审的菜谱/美术写成正式全量验收。tag 精确指向 `77ef2a926281ef7e5c4376ecd7158af1e915b06a`。固件、发布工具、中英说明、原始封面、可编辑 SVG 和全部最终图片在 `codex/release-v0.1.0`；本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-release-v010`。main 只更新入口，不混入固件根目录。内容/美术与旧运行时基线保持原分支。
