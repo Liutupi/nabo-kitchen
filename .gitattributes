@@ -1,2 +1,10 @@
 # Preserve upstream license text byte-for-byte, including its line-end spaces.
 assets/kitchen/licenses/*.txt whitespace=-blank-at-eol
+
+# Release provenance and editable media have reproducible cross-platform bytes.
+assets/community/**/*.json text eol=lf
+assets/community/**/*.svg text eol=lf
+assets/community/**/*.cjs text eol=lf
+docs/community/**/* text eol=lf
+tools/prepare_kitchen_release.py text eol=lf
+tools/render_kitchen_release_media.py text eol=lf

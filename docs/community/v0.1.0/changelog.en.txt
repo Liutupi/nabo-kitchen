@@ -1,0 +1,6 @@
+v0.1.0 — first experience release
+- Independent offline kitchen: opening animation and local greeting, dinner draws by people and time, unlimited rerolls, ingredients and step-by-step guidance.
+- 144 home-style recipe drafts with complete dish illustrations; 58 pantry ingredients including 13 seafood types.
+- Shopping, favorites, cooking records and up to three pausable timers; interrupted timers recover paused.
+- Reuses the installed application with the verified complete-art resource bundle, checksums and data-preserving upgrade instructions.
+- Recipe/art review, all-recipe cooking, updated physical panel/audio observation and long-term use remain pending.

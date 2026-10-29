@@ -1,0 +1,190 @@
+{
+  "release": "v0.1.0",
+  "prepared_date": "2026-10-29",
+  "source_ref": "refs/tags/v0.1.0",
+  "build": {
+    "status": "PASS",
+    "environment": "Windows; ESP-IDF 5.5.3; riscv32-esp-elf esp-14.2.0_20251107",
+    "gate": "./tools/validate.sh --all",
+    "fresh_validation_app_sha256": "e455f718664c395fc765b9b7335a35ba69f74b9bee6f0f1add000da26715cf7e",
+    "fresh_validation_elf_sha256": "2221cb79f6ddc8de4aac54d75bae9c83b111ca371630d80b12f0956b2996ddfe",
+    "fresh_validation_full_sha256": "fa769618a6c29420ca91cb3cbd58271dd434f1777e9f3338d2d353e48ba253c8",
+    "substituted_for_accepted_app": false,
+    "environment_note": "A shorter local SDK junction avoids Windows compiler path-length failure; no compiler files or global settings changed."
+  },
+  "host_tests": {
+    "status": "PASS",
+    "real_catalog_heroes": 144,
+    "public_package_audit": "PASS",
+    "all_merged_gaps_ff": true,
+    "zip_allowlist_and_all_member_bytes": "PASS"
+  },
+  "device_tests": {
+    "status": "PASS for limited app/resource checks",
+    "scope": "Resource-only write/readback, three controlled boots, six complete frames; existing compatible bootloader retained",
+    "resource_readback_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+    "matching_rgb565_dish_pixels": 100800,
+    "audio_write_errors": 0,
+    "new_flashing_for_publication": false
+  },
+  "unverified": {
+    "merged_structure_and_archive": "PASS",
+    "segmented_package_and_erased_gaps": "PASS",
+    "device_resource_readback": "PASS",
+    "device_controlled_boots": 3,
+    "device_complete_frames": 6,
+    "matching_dish_pixels": 100800,
+    "physical_panel_and_speaker_observation": "NOT OBSERVED",
+    "full_image_first_install": "NOT RUN",
+    "bootloader_limit": "Packaged build bootloader differs from the retained compatible bootloader used for app/resource device checks.",
+    "all_recipe_cooking_and_art_acceptance": "PENDING REVIEW",
+    "long_term_use": "NOT RUN"
+  },
+  "public_files": [
+    {
+      "file": "manifest.json",
+      "bytes": 3574,
+      "sha256": "75d8882d9be5be010be93104d9016540f37aa3dd08b18edf3492618bdef37ece"
+    },
+    {
+      "file": "nabo-kitchen-v0.1.0-full.bin",
+      "bytes": 5853214,
+      "sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c"
+    },
+    {
+      "file": "nabo-kitchen-v0.1.0.zip",
+      "bytes": 2746415,
+      "sha256": "0a00367f78fc84f9ea609df32f921f453b3f199a5a7c868ceb829cf4f3e18aa6"
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 265,
+      "sha256": "bcee121c160d1f8b04cdfbea0b9a93a33f650f0f5b8d9b1d13a5220b00168207"
+    }
+  ],
+  "zip_entries": [
+    "KITCHEN-CODE-LICENSE",
+    "LICENSE",
+    "NOTICE.md",
+    "NOTICE.zh_CN.md",
+    "SHA256SUMS.txt",
+    "app.bin",
+    "bootloader.bin",
+    "installation.md",
+    "installation.zh_CN.md",
+    "kitchen_bundle.bin",
+    "licenses/OFL.ArchivoBlack.txt",
+    "licenses/OFL.SourceHanSans.txt",
+    "licenses/font-sources.json",
+    "manifest.json",
+    "partition-table.bin",
+    "segments.json"
+  ],
+  "artifact_provenance": {
+    "schema_version": 1,
+    "release": "v0.1.0",
+    "channel": "experience-prerelease",
+    "source_ref": "refs/tags/v0.1.0",
+    "repository": "https://github.com/Liutupi/nabo-kitchen",
+    "runtime_source_commit": "c7cdc0b94a6009672333dc1736b4f1c33f0a0537",
+    "content_source_commit": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+    "accepted_original_full_image_sha256": "ea2bae8053a427827bc912aff570aa2fa9b84ce1da8e95ca2e19dd3d421c2f4b",
+    "application_embedded_build_version": "f799a2f-dirty",
+    "application_sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+    "application_bytes": 514704,
+    "application_elf_sha256": "698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f",
+    "resource_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+    "resource_bytes": 3756062,
+    "full_image": {
+      "file": "nabo-kitchen-v0.1.0-full.bin",
+      "bytes": 5853214,
+      "sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+      "offset": 0
+    },
+    "segments": [
+      {
+        "file": "bootloader.bin",
+        "offset": 0,
+        "size": 21024,
+        "end_exclusive": 21024,
+        "erase_end_exclusive": 24576,
+        "sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3"
+      },
+      {
+        "file": "partition-table.bin",
+        "offset": 32768,
+        "size": 3072,
+        "end_exclusive": 35840,
+        "erase_end_exclusive": 36864,
+        "sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499"
+      },
+      {
+        "file": "app.bin",
+        "offset": 65536,
+        "size": 514704,
+        "end_exclusive": 580240,
+        "erase_end_exclusive": 581632,
+        "sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202"
+      },
+      {
+        "file": "kitchen_bundle.bin",
+        "offset": 2097152,
+        "size": 3756062,
+        "end_exclusive": 5853214,
+        "erase_end_exclusive": 5857280,
+        "sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931"
+      }
+    ],
+    "protected_ranges_for_segmented_upgrade": [
+      {
+        "name": "nvs-and-phy",
+        "start": 36864,
+        "end_exclusive": 65536
+      },
+      {
+        "name": "files",
+        "start": 7340032,
+        "end_exclusive": 8388608
+      }
+    ],
+    "first_install_warning": "Merged 0x0 installation replaces firmware and overwrites NVS/PHY gaps. It may reset settings and records.",
+    "upgrade": {
+      "requires_exact_compatible_layout": true,
+      "write_only": [
+        "app.bin",
+        "kitchen_bundle.bin"
+      ],
+      "offsets": [
+        65536,
+        2097152
+      ]
+    },
+    "provenance": "All segments are build outputs; app and bundle are unchanged accepted prebuilt files. No device Flash dumps, NVS, credentials or logs are included. All merged gaps are 0xFF.",
+    "validation": {
+      "merged_structure_and_archive": "PASS",
+      "segmented_package_and_erased_gaps": "PASS",
+      "device_resource_readback": "PASS",
+      "device_controlled_boots": 3,
+      "device_complete_frames": 6,
+      "matching_dish_pixels": 100800,
+      "physical_panel_and_speaker_observation": "NOT OBSERVED",
+      "full_image_first_install": "NOT RUN",
+      "bootloader_limit": "Packaged build bootloader differs from the retained compatible bootloader used for app/resource device checks.",
+      "all_recipe_cooking_and_art_acceptance": "PENDING REVIEW",
+      "long_term_use": "NOT RUN"
+    },
+    "licenses": "Code follows bundled MIT notices; NABO art, character, voice, animation and recipe text are excluded. Font notices apply."
+  },
+  "github_public_download_verification": "PENDING publication; see publication-verification.json after publication",
+  "community": {
+    "status": "prepared_not_submitted",
+    "reason": "Awaiting action-time confirmation of the website rights/rules declaration before authorizing publication."
+  },
+  "art_status": "144 of 144 complete images; all review, not done",
+  "dish_payload_bytes": 1596273,
+  "historic_dish_subbudget_bytes": 204800,
+  "historic_subbudget_exceeded": true,
+  "resource_partition_free_bytes": 1486818,
+  "device_evidence": "../../development/offline-art-device-validation-20261029.json",
+  "media": "../../../assets/community/v0.1.0/media-manifest.json"
+}

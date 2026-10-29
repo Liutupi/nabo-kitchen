@@ -1,0 +1,16 @@
+After the opening animation, briefly press OK to enter the kitchen. A pending timer notice may need acknowledgement first.
+
+DINNER: Choose the number of people, available time and meal combination. Draw a menu, press DOWN to reroll without a quota, and OK to check ingredients and follow the steps. Long OK on a result toggles its favorite.
+COOKING: DOWN on the ingredient page adds the dish to shopping; long DOWN scrolls the ingredient paper. In the steps, OK advances, UP goes back one step and long DOWN returns to ingredients. Adjust heat and doneness to your actual ingredients and equipment.
+FRIDGE: Choose a category with UP/DOWN, enter and toggle ingredients with OK, then long OK for recommendations. Find shopping, favorites and cooking records in the kitchen menu.
+TIMERS: On the timer page, UP/DOWN selects, long OK pauses/resumes and long DOWN cancels. Up to three independent timers are supported. Timers interrupted by power loss recover paused and need manual continuation.
+NAVIGATION: UP/DOWN moves and OK selects. Double UP goes back. Long UP returns to the opening area; a normal press reopens the kitchen. Sound and volume are in settings.
+DATE: Confirm the manually maintained date after restart and when the day changes. Recent dishes get a lower weight and can still reappear within seven days.
+
+This offline first experience release includes 144 recipe and dish-art drafts and 58 pantry ingredients, including 13 seafood types. It has no cloud conversation or speech recognition. All recipes and illustrations remain under review and have not all been tested by cooking. Ingredient exclusions are not an allergen filter and do not cover seasonings or cross-contact; check ingredients yourself.
+
+Resource readback, three boots, six complete device frame captures and dish-pixel comparisons passed. Observation of the updated physical panel and speaker remains pending, as do long-term use and all-recipe cooking acceptance.
+
+Installation replaces existing firmware; a full first installation may reset records. For existing compatible kitchen data, read the segmented-upgrade instructions first. Downloads, checksums, installation and validation scope: https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0
+
+The cover is promotional art. Gallery captions identify code-rendered interfaces and device captures; they are not photographs of a screen. NABO character, art, voice and recipe text are excluded from the source-code MIT license.

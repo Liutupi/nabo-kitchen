@@ -157,12 +157,11 @@ class RealCatalogViews(unittest.TestCase):
             i = self.ids.index(ident)
             self.assertEqual(self.dll.view_dish_hero_required(i), 1, ident)
             self.assertEqual(self.dll.view_compare_hero_required(i, 1), 1, ident)
-        existing = self.ids.index("huanggua-chaodan")
-        self.assertEqual(self.dll.view_has_hero(existing), 1)
-        self.assertEqual(self.dll.view_compare_hero_required(existing, 1), 1)
-        fallback = self.ids.index("baicai-doufu")
-        self.assertEqual(self.dll.view_has_hero(fallback), 0)
-        self.assertEqual(self.dll.view_compare_hero_required(fallback, 0), 1)
+        # The release fixture has a complete illustration for every real recipe.
+        # Placeholder/layer fallback remains covered by the synthetic view tests.
+        for index, ident in enumerate(self.ids):
+            self.assertEqual(self.dll.view_has_hero(index), 1, ident)
+            self.assertEqual(self.dll.view_compare_hero_required(index, 1), 1, ident)
 
 
 if __name__ == "__main__":

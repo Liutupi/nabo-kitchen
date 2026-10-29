@@ -2,11 +2,15 @@
 
 # NABO Kitchen for AI Passport
 
+**v0.1.0 — first experience release:** [downloads and checksums](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [installation and controls](docs/community/v0.1.0/installation.md) · [release provenance](docs/community/v0.1.0/release-validation.json).
+
+<img src="assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO Midnight Kitchen promotional illustration">
+
 For the saved state, installed device version and remaining work, read the [offline kitchen handoff](docs/development/offline-kitchen-handoff.md).
 
 A standalone offline kitchen companion for the FoloToy AI Passport (ESP32-C3, 8 MiB flash, no PSRAM). It starts with a NABO animation and a locally stored greeting, then stays on the opening screen until a short press of OK opens the kitchen. Network access, cloud conversation and voice recognition are not part of this variant.
 
-The current candidate contains 144 family-style recipe drafts, complete dish illustration drafts, layered dish illustrations, an animated character, a pantry and shopping list, favorites, cooking progress and up to three independent timers. Recipe instructions remain pending actual household cooking review. Some dishes reuse approximate illustrations; newly added dishes without complete art display a placeholder. The new icons, dish art and animation variants remain visual-review candidates.
+The release contains 144 family-style recipe drafts, each with a complete dish illustration, plus layered illustrations, an animated character, 58 pantry ingredients including 13 seafood types, shopping, favorites, cooking progress and up to three independent timers. The release fixture includes all 144 heroes. Recipe instructions remain pending actual household cooking review; art remains under visual review. The shipped application and resources are the unchanged prebuilt files used in the documented device session.
 
 The model supports up to 192 recipes. For catalogs over 64 recipes, multi-dish draws use a seeded, bounded candidate pool for responsiveness; their weighting and soft-constraint relaxation may differ from an exhaustive search. Ingredient exclusions do not screen seasonings, allergens or cross-contact. Full 192-recipe records pass repeated saves and simulated power cuts using ESP-IDF's NVS engine in 24 KiB, alongside 2 KiB of unrelated settings. Actual device persistence and occupied-partition limits still need measurement; storage exhaustion reports an error while preserving the active save and other namespaces.
 

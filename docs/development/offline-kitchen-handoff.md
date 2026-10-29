@@ -2,6 +2,10 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Release preparation: v0.1.0 experience release
+
+The first release reuses the accepted app and installed 144-hero resource bundle. The new merged image is `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`, 5,853,214 bytes. The full build/host gate and strict archive, segmented-package and erased-gap checks passed. The fresh validation build was retained separately; it is not the shipped application. See the [release record](../community/v0.1.0/release-validation.json), [installation](../community/v0.1.0/installation.md) and [community media](../../assets/community/README.md). The release branch includes all 144 heroes; the older runtime branch and its accepted 17-hero archive are unchanged. Tag-triggered automatic publication is disabled to protect the accepted binaries. GitHub upload verification and the community receipt will be added after their actual outcomes. Community authorization requires confirming the live website rights/rules declaration; no submission or public community availability is claimed yet. No new hardware writes are part of publishing.
+
 ## Latest device session: 144 complete dish illustrations installed
 
 The user explicitly requested flashing and validation of the completed art. After verifying the same previously approved board, its 8 MiB Flash/security state, installed application, partition table and old assets, only the resource bundle was written at `0x200000`. The 3,756,062-byte bundle and its complete device readback both have SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`. The application remains the accepted `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202` image; no new application build, whole-chip erase or Release was performed. Application, partition table, bootloader, NVS/PHY and files preservation was verified.

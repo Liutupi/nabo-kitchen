@@ -1,0 +1,124 @@
+{
+  "version": "v0.1.0",
+  "cover": "built-in OpenAI imagegen; promotional illustration",
+  "gallery": "native SVG layout; exact project dish PNGs, production C rendering and unmodified device captures",
+  "font_source_sha256": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6",
+  "files": {
+    "01-cover.webp": {
+      "bytes": 302270,
+      "sha256": "4f8d9bc38cd018e7c14ee463c027b0163ec25c3c8fcdac139479f4604c34d581"
+    },
+    "02-dish-collection.svg": {
+      "bytes": 3074995,
+      "sha256": "3ff927256534bfcdd5919cc9e047a6c7e83e513d11b3e868ee9ff39b4051b734"
+    },
+    "02-dish-collection.webp": {
+      "bytes": 135018,
+      "sha256": "bd7034bd924f51509ba754904cb59606293fa40acf7d2889269cc0c67e3a3379"
+    },
+    "03-tonights-menu.svg": {
+      "bytes": 100972,
+      "sha256": "ef55daae2ed0f9b5b3e4f3d55b82968048b4dd8a82341646c9dbf0f395e4628c"
+    },
+    "03-tonights-menu.webp": {
+      "bytes": 115094,
+      "sha256": "65b24e7f059019160d41815bab0a7c6ad8b175f9ac9d52b96969f79bfdccd556"
+    },
+    "04-cook-together.svg": {
+      "bytes": 72131,
+      "sha256": "3160b1eebd7b01d4bd81a6e68001dc52b7c05fd597648cdecae93425b13ff162"
+    },
+    "04-cook-together.webp": {
+      "bytes": 100276,
+      "sha256": "5be6f5126c35c7b1579f6fce47ff35268a0188a68a39b99eb05768a945c2c3ae"
+    },
+    "05-device-captures.svg": {
+      "bytes": 275199,
+      "sha256": "688923f66698cbeaa2b3ab9102f11024cb5e8c376b44f68641f2d08e1d282c3c"
+    },
+    "05-device-captures.webp": {
+      "bytes": 184834,
+      "sha256": "55a0ed835a514a62d6bea6da2be8c66a346928de156345d09a47c3618625fbd9"
+    },
+    "cover-generation.json": {
+      "bytes": 3073,
+      "sha256": "9ceab41c9c004a47f1be49364c6797df7bcc94d21c4edfdf888e0d4a5265aa13"
+    },
+    "originals/cover-source.png": {
+      "bytes": 2202641,
+      "sha256": "8bc481a0a52f6971b5864e98d6b8960bf2149ac42e97a819749a664b00e2e184"
+    },
+    "render-svg.cjs": {
+      "bytes": 287,
+      "sha256": "5e1321cc02695802c670cd1d546fced4ca15b5988f88942ae013f8c46bec6c54"
+    },
+    "source-art/hero_baiqie-ji.png": {
+      "bytes": 370847,
+      "sha256": "5afdd3b9c2c9cde1de052efe28ff956b6ee7a4322ff50f4b196a9e1c9380f884"
+    },
+    "source-art/hero_fanqie-chaodan.png": {
+      "bytes": 394884,
+      "sha256": "97b3966d31afd72b607108d6e7326c1b27d8ca3a4d995d8e9af822c76db720c0"
+    },
+    "source-art/hero_jidan-chaofan.png": {
+      "bytes": 417977,
+      "sha256": "faabc247a06639b7070b5968e12c1d9480ad1c816cb653f8c4e856ffc8eb39fa"
+    },
+    "source-art/hero_pai-huanggua.png": {
+      "bytes": 392155,
+      "sha256": "c2d323eced195ac9812353b12abde61a9cea81315302a06c42b03ea3d45c4cc3"
+    },
+    "source-art/hero_qingzheng-luyu.png": {
+      "bytes": 307940,
+      "sha256": "3b3898af9de9cf75b400522b4d970a2ed8d8b85ed7fc9d191f4f7f60176d44ad"
+    },
+    "source-art/hero_yumi-paigu-tang.png": {
+      "bytes": 385727,
+      "sha256": "325e27673df34b725e4161fbaf06b3f6bf78066eaa1857abc89896194d58ec73"
+    },
+    "source-ui/conditions.png": {
+      "bytes": 6521,
+      "sha256": "81557d0620b58dec462837f95498d95ac788e3cb912c6695895aa1aa756141f7"
+    },
+    "source-ui/device-01.png": {
+      "bytes": 27410,
+      "sha256": "572c67c135fb826a1ea4619b1f0e9614a8f507027f824dba8acf99d0321ceca9"
+    },
+    "source-ui/device-02.png": {
+      "bytes": 30270,
+      "sha256": "fb9f1634a1ab4e0bc1c162a1a6df6c8c5cc6eeba44909025c2eecde405a6621d"
+    },
+    "source-ui/device-03.png": {
+      "bytes": 30552,
+      "sha256": "7527920a85f8fc5bfb8ac6ab8b989e9b6ac6be87a0984ccc0aed2b3355b88cfd"
+    },
+    "source-ui/device-04.png": {
+      "bytes": 31306,
+      "sha256": "311e027cbae9ece244c526adadae682b0b321351e289554ed6d3cd1d03407fb8"
+    },
+    "source-ui/device-05.png": {
+      "bytes": 29781,
+      "sha256": "cc2b2e5462df8cf1b61a2bc2c3215473aef9aad2acaac48a2bc321522a4940cc"
+    },
+    "source-ui/device-06.png": {
+      "bytes": 27334,
+      "sha256": "6292ed5359c9deed557f59b101e38d8d27556661698aa27b8865e879d4c67ffe"
+    },
+    "source-ui/home.png": {
+      "bytes": 15450,
+      "sha256": "1e65eca1821ca193426df6e8970ae4466cfebf8d70c2cc36d0392c5b93dd9dfd"
+    },
+    "source-ui/ingredients.png": {
+      "bytes": 8909,
+      "sha256": "5fbbf9369c310cb23e33bd2104df36c7d0aaaf2173cc019a52473ff384e6f33f"
+    },
+    "source-ui/steps.png": {
+      "bytes": 10071,
+      "sha256": "945aca4cb4bc322e352bd3e3e9633a5a6dc3bcb119ee377c069704c320adb22e"
+    },
+    "source-ui/timer.png": {
+      "bytes": 13008,
+      "sha256": "83b3162a8f86ebc736c0f3f13b1ee6cb319420409c75406708f6bf0450e2f015"
+    }
+  }
+}

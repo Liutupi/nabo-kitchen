@@ -1,0 +1,27 @@
+{
+  "tool": "built-in imagegen",
+  "generated_utc_date": "2026-10-29",
+  "purpose": "Promotional illustration; not a screenshot or physical-device photograph",
+  "prompt": "Use case: stylized-concept. Asset: premium portrait 3:4 community release cover, exactly 1152x1536 composition, for the original offline home-cooking companion NABO 深夜厨房. This is a promotional illustration, NOT a device photo or screenshot. IMAGE 1 is the approved FINAL C kitchen character; preserve this exact boy's identity, face, short fluffy brown hair, black round glasses, calm warm expression, white baseball cap with readable unmirrored blue NABO lettering and heartbeat mark. Preserve navy Chinese stand-collar frog-button shirt, dark brown apron and white towel on the same shoulder. IMAGE 2 is the project identity reference; match identity, do NOT copy the doctor coat outfit. IMAGE 3 is the actual tomato-and-egg dish art; preserve its appetizing rounded shapes and warm outline family. Create a beautiful editorial key visual: cozy small midnight kitchen, midnight navy #19162F and cream #FBF1E3 with amber light and a restrained coral accent, small lantern and crescent outside a rounded window. The welcoming waist-up NABO is centered in the middle/lower 60%, behind a clean counter presenting a steaming white plate of tomato and scrambled eggs, with a few charming ingredient shapes. Rich but clean 2D anime/cartoon illustration, crisp dark brown contour lines, flat color planes and two-step cel shading, very fine line accents, no plastic 3D, no photorealism, no green-screen color. Spacious professional poster hierarchy: top-left tiny text 'NABO KITCHEN'; large immaculate cream Chinese title exactly 'NABO 深夜厨房' split elegantly on two lines near top, subtitle exactly '今晚，NABO 陪你做饭'; bottom restrained pill text exactly '离线家常菜助手'. Text must be readable, correctly spelled, polished Chinese typography. No extra words, no QR codes, no fake device or UI, no brands or anime/IP references. Keep the cap logo orientation exactly correct. Warm, charming, refined and appetizing; no busy props; full composition fits 3:4 canvas. Footer very small text '宣传插画'.",
+  "references": [
+    {
+      "repository": "Liutupi/nabo-kitchen",
+      "commit": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+      "path": "game-art/kitchen/costume/costume_final.png"
+    },
+    {
+      "repository": "Liutupi/nabo-kitchen",
+      "commit": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+      "path": "game-art/kitchen/reference/nabo-idle.png"
+    },
+    {
+      "repository": "Liutupi/nabo-kitchen",
+      "commit": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+      "path": "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+    }
+  ],
+  "original": "originals/cover-source.png",
+  "delivery": "01-cover.webp",
+  "conversion": "Uniform whole-canvas resize to 900x1200; WebP quality 95; no crop or mirror",
+  "visual_review": "Final upload file viewed after conversion: finished composition, original C identity and unmirrored cap mark confirmed"
+}

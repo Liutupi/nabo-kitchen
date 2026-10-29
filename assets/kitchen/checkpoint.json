@@ -1,43 +1,45 @@
 {
   "checkpoint_date": "2026-10-29",
-  "status": "complete firmware gate passed; device acceptance failed (startup watchdog and inaudible greeting)",
+  "status": "v0.1.0 release fixture; exact installed resources; limited device checks passed; human visual/audio and cooking acceptance pending",
   "recipes": 144,
   "ingredients": 58,
   "seafood_types": 13,
-  "complete_dish_illustrations": 17,
+  "complete_dish_illustrations": 144,
   "model_recipe_capacity": 192,
   "asset_partition_bytes": 5242880,
-  "asset_partition_free_bytes": 2762686,
+  "asset_partition_free_bytes": 1486818,
   "source_repository": "https://github.com/Liutupi/nabo-kitchen",
   "source_branch": "codex/kitchen-model",
   "files": {
-    "kitchen_bundle.bin": {
-      "bytes": 2480194,
-      "sha256": "7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec"
-    },
-    "kitchen_dish.bin": {
-      "bytes": 320406,
-      "sha256": "5c50eb646dd8a8c9bfbbd36c2af076fa8d08588ebf5b0018eb89d6c66ee39da0"
+    "kitchen_recipes.krc": {
+      "bytes": 108561,
+      "sha256": "fc39b3796c22854762ca3b31a1ce1625d319d873d9800ab7bb2d094e31d0ba5c"
     },
     "kitchen_fonts.bin": {
       "bytes": 966933,
       "sha256": "453c84e25dff2a2189b4da6c9e724ba822e0196cf1ae7399225ece53fc8f137b"
     },
+    "kitchen_dish.bin": {
+      "bytes": 1596273,
+      "sha256": "36e0d21b5998e6f1656b55c84e7121acf689707aed071f78198ce5e0032968c2"
+    },
     "kitchen_icons.bin": {
       "bytes": 60871,
       "sha256": "ab84384d378d2125dad44d532ae2d65631fa489b272da815792ec0283051739c"
+    },
+    "kitchen_ui.bin": {
+      "bytes": 3779,
+      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"
     },
     "kitchen_nabo.bin": {
       "bytes": 1019522,
       "sha256": "c2764800befdb1ff28a0c5b88eaf725c82e59d7c738ac9445e4b9d89d064b368"
     },
-    "kitchen_recipes.krc": {
-      "bytes": 108561,
-      "sha256": "fc39b3796c22854762ca3b31a1ce1625d319d873d9800ab7bb2d094e31d0ba5c"
-    },
-    "kitchen_ui.bin": {
-      "bytes": 3779,
-      "sha256": "e41d2bfc4d7be0871790e503dbc55aa294220356f819e885ee09e229833241b5"
+    "kitchen_bundle.bin": {
+      "bytes": 3756062,
+      "sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931"
     }
-  }
+  },
+  "source_commit": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+  "device_validation": "https://github.com/Liutupi/nabo-kitchen/blob/c99d979b630286ef3ec385c2e6f1485940ecb5a3/game-art/kitchen/dish-hero/batches/2026-10-29/device-validation.json"
 }

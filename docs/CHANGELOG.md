@@ -10,6 +10,13 @@
 > with `CHANGELOG.zh_CN.md`. The entries currently under `Unreleased` are pending
 > review for the next release; they are not a finalized release history.
 
+## v0.1.0 - NABO Midnight Kitchen - 2026-10-29
+
+- First standalone offline kitchen experience: dinner draws, fridge recommendations, shopping, ingredients, guided steps, favorites, cooking records and three pausable timers.
+- Ships the unchanged accepted application with 144 complete dish illustrations and 58 pantry ingredients, including 13 seafood types.
+- Adds verified full/segmented downloads, bilingual installation and community copy, a promotional cover, four source-labeled galleries, exact hashes and validation limits. Tag pushes no longer automatically replace accepted binaries with a fresh build.
+- Recipe, art, full-image first-install and long-term acceptance remain pending. Limited device resource/boot/frame checks are recorded separately from physical panel/audio observation.
+
 ## Unreleased
 
 - Added the supplied 80-byte CW2017 profile for the specified 520 mAh cell, including content/update-flag checks, verified writes, the required restart sequence, and bounded SOC-readiness polling.
