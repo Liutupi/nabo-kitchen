@@ -55,16 +55,25 @@ test('fridge toggles, shopping merges, favorites and two clear confirmations per
   await call('reset',{history:[{id:'fanqie-chaodan',day:'2026-10-28'}],cooked:{'fanqie-chaodan':{count:1,lastDay:'2026-10-28'}}});await call('visit',9);await call('dispatch','OK');await call('dispatch','OK','long');assert.equal((await snap()).ui.page,10);
   await call('visit',5,'fanqie-chaodan');await call('dispatch','DOWN');await call('dispatch','DOWN');let s=await snap();assert.equal(s.state.shopping.find(x=>x.id==='egg').qty,6);
   await call('visit',12);await call('dispatch','DOWN');await call('dispatch','OK','long');assert.equal((await snap()).state.favorites.length,1);
-  await call('visit',13);for(let i=0;i<7;i++)await call('dispatch','DOWN');await call('dispatch','OK');await call('dispatch','OK');assert.equal((await snap()).state.history.length,1);
+  await call('visit',13);for(let i=0;i<6;i++)await call('dispatch','DOWN');await call('dispatch','OK');await call('dispatch','OK');assert.equal((await snap()).state.history.length,1);
   await call('dispatch','OK');assert.equal((await snap()).state.history.length,0);assert.equal((await snap()).state.favorites.length,1);
   await page.reload();await page.waitForFunction(()=>window.kitchenTest?.ready);assert.equal((await snap()).state.shopping.find(x=>x.id==='egg').qty,6);
 });
-test('day cache survives reopening and reroll allowance cannot be bypassed by changing conditions',async()=>{
+test('menu survives calendar changes and rerolls remain unlimited',async()=>{
   await call('reset');await call('dispatch','OK','long');await page.waitForTimeout(60);const first=await snap();assert.equal(first.ui.page,4);
   await call('visit',1);await call('dispatch','OK','long');assert.deepEqual((await snap()).ui.result,first.ui.result);assert.equal((await snap()).state.daily.rerollsUsed,0);
-  for(let i=0;i<3;i++){await call('dispatch','DOWN');await page.waitForTimeout(50);}
-  assert.equal((await snap()).state.daily.rerollsUsed,3);await call('visit',2);await page.locator('[data-action=condition][data-index="0"]').click();await page.locator('[data-action=draw]').click();assert.equal((await snap()).state.daily.rerollsUsed,3);
-  assert.ok((await snap()).ui.message.includes('用完'));
+  await call('advanceTime',86400000*30);await page.reload();await page.waitForFunction(()=>window.kitchenTest?.ready);await call('visit',1);await call('dispatch','OK','long');assert.deepEqual((await snap()).ui.result,first.ui.result);
+  for(let i=0;i<12;i++){await call('dispatch','DOWN');await page.waitForTimeout(50);}
+  assert.equal((await snap()).state.daily.rerollsUsed,12);assert.equal((await snap()).state.drawCounter,13);assert.equal((await snap()).state.history.length,0);
+  const latest=(await snap()).ui.result;await call('visit',2);await page.locator('[data-action=condition][data-index="0"]').click();await page.locator('[data-action=draw]').click();assert.deepEqual((await snap()).ui.result,latest);
+});
+test('focus changes the whole card fill with dark high-contrast labels',async()=>{
+  await call('reset');
+  for(const p of [1,2,9,12,13]){
+    await call('visit',p);
+    const colors=await page.evaluate(()=>{const e=document.querySelector('#screen button.selected');return {bg:getComputedStyle(e).backgroundColor,fg:getComputedStyle(e).color};});
+    assert.deepEqual(colors,{bg:'rgb(255, 180, 94)',fg:'rgb(21, 18, 42)'},`P${p}`);
+  }
 });
 test('four-dish result keeps all four unique recipes and scrolls a three-card viewport',async()=>{
   const data=await (await fetch(base+'/api/recipes')).json();assert.ok(data.length>=4,'approved30 menu data must be loaded');

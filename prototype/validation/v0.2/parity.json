@@ -1,0 +1,3859 @@
+{
+  "schema": "kitchen-v02-parity",
+  "source_sha256": {
+    "prototype/model.mjs": "da82822bb44a0c5c06506f5aa65a906940c37fb85e177face1419b4eb6bccc89",
+    "prototype/state.mjs": "63b497c01b3003a894251cc9fc3cd58236faa5467ca25ee8d02f0fe8769706d4"
+  },
+  "weights": [
+    {
+      "age": 0,
+      "flags": 0,
+      "value": 10
+    },
+    {
+      "age": 0,
+      "flags": 1,
+      "value": 15
+    },
+    {
+      "age": 0,
+      "flags": 2,
+      "value": 10
+    },
+    {
+      "age": 0,
+      "flags": 3,
+      "value": 15
+    },
+    {
+      "age": 0,
+      "flags": 4,
+      "value": 12
+    },
+    {
+      "age": 0,
+      "flags": 5,
+      "value": 18
+    },
+    {
+      "age": 0,
+      "flags": 6,
+      "value": 12
+    },
+    {
+      "age": 0,
+      "flags": 7,
+      "value": 18
+    },
+    {
+      "age": 0,
+      "flags": 8,
+      "value": 5
+    },
+    {
+      "age": 0,
+      "flags": 9,
+      "value": 7
+    },
+    {
+      "age": 0,
+      "flags": 10,
+      "value": 5
+    },
+    {
+      "age": 0,
+      "flags": 11,
+      "value": 7
+    },
+    {
+      "age": 0,
+      "flags": 12,
+      "value": 6
+    },
+    {
+      "age": 0,
+      "flags": 13,
+      "value": 9
+    },
+    {
+      "age": 0,
+      "flags": 14,
+      "value": 6
+    },
+    {
+      "age": 0,
+      "flags": 15,
+      "value": 9
+    },
+    {
+      "age": 1,
+      "flags": 0,
+      "value": 10
+    },
+    {
+      "age": 1,
+      "flags": 1,
+      "value": 15
+    },
+    {
+      "age": 1,
+      "flags": 2,
+      "value": 10
+    },
+    {
+      "age": 1,
+      "flags": 3,
+      "value": 15
+    },
+    {
+      "age": 1,
+      "flags": 4,
+      "value": 12
+    },
+    {
+      "age": 1,
+      "flags": 5,
+      "value": 18
+    },
+    {
+      "age": 1,
+      "flags": 6,
+      "value": 12
+    },
+    {
+      "age": 1,
+      "flags": 7,
+      "value": 18
+    },
+    {
+      "age": 1,
+      "flags": 8,
+      "value": 5
+    },
+    {
+      "age": 1,
+      "flags": 9,
+      "value": 7
+    },
+    {
+      "age": 1,
+      "flags": 10,
+      "value": 5
+    },
+    {
+      "age": 1,
+      "flags": 11,
+      "value": 7
+    },
+    {
+      "age": 1,
+      "flags": 12,
+      "value": 6
+    },
+    {
+      "age": 1,
+      "flags": 13,
+      "value": 9
+    },
+    {
+      "age": 1,
+      "flags": 14,
+      "value": 6
+    },
+    {
+      "age": 1,
+      "flags": 15,
+      "value": 9
+    },
+    {
+      "age": 2,
+      "flags": 0,
+      "value": 10
+    },
+    {
+      "age": 2,
+      "flags": 1,
+      "value": 15
+    },
+    {
+      "age": 2,
+      "flags": 2,
+      "value": 10
+    },
+    {
+      "age": 2,
+      "flags": 3,
+      "value": 15
+    },
+    {
+      "age": 2,
+      "flags": 4,
+      "value": 12
+    },
+    {
+      "age": 2,
+      "flags": 5,
+      "value": 18
+    },
+    {
+      "age": 2,
+      "flags": 6,
+      "value": 12
+    },
+    {
+      "age": 2,
+      "flags": 7,
+      "value": 18
+    },
+    {
+      "age": 2,
+      "flags": 8,
+      "value": 5
+    },
+    {
+      "age": 2,
+      "flags": 9,
+      "value": 7
+    },
+    {
+      "age": 2,
+      "flags": 10,
+      "value": 5
+    },
+    {
+      "age": 2,
+      "flags": 11,
+      "value": 7
+    },
+    {
+      "age": 2,
+      "flags": 12,
+      "value": 6
+    },
+    {
+      "age": 2,
+      "flags": 13,
+      "value": 9
+    },
+    {
+      "age": 2,
+      "flags": 14,
+      "value": 6
+    },
+    {
+      "age": 2,
+      "flags": 15,
+      "value": 9
+    },
+    {
+      "age": 3,
+      "flags": 0,
+      "value": 40
+    },
+    {
+      "age": 3,
+      "flags": 1,
+      "value": 60
+    },
+    {
+      "age": 3,
+      "flags": 2,
+      "value": 40
+    },
+    {
+      "age": 3,
+      "flags": 3,
+      "value": 60
+    },
+    {
+      "age": 3,
+      "flags": 4,
+      "value": 48
+    },
+    {
+      "age": 3,
+      "flags": 5,
+      "value": 72
+    },
+    {
+      "age": 3,
+      "flags": 6,
+      "value": 48
+    },
+    {
+      "age": 3,
+      "flags": 7,
+      "value": 72
+    },
+    {
+      "age": 3,
+      "flags": 8,
+      "value": 20
+    },
+    {
+      "age": 3,
+      "flags": 9,
+      "value": 30
+    },
+    {
+      "age": 3,
+      "flags": 10,
+      "value": 20
+    },
+    {
+      "age": 3,
+      "flags": 11,
+      "value": 30
+    },
+    {
+      "age": 3,
+      "flags": 12,
+      "value": 24
+    },
+    {
+      "age": 3,
+      "flags": 13,
+      "value": 36
+    },
+    {
+      "age": 3,
+      "flags": 14,
+      "value": 24
+    },
+    {
+      "age": 3,
+      "flags": 15,
+      "value": 36
+    },
+    {
+      "age": 6,
+      "flags": 0,
+      "value": 40
+    },
+    {
+      "age": 6,
+      "flags": 1,
+      "value": 60
+    },
+    {
+      "age": 6,
+      "flags": 2,
+      "value": 40
+    },
+    {
+      "age": 6,
+      "flags": 3,
+      "value": 60
+    },
+    {
+      "age": 6,
+      "flags": 4,
+      "value": 48
+    },
+    {
+      "age": 6,
+      "flags": 5,
+      "value": 72
+    },
+    {
+      "age": 6,
+      "flags": 6,
+      "value": 48
+    },
+    {
+      "age": 6,
+      "flags": 7,
+      "value": 72
+    },
+    {
+      "age": 6,
+      "flags": 8,
+      "value": 20
+    },
+    {
+      "age": 6,
+      "flags": 9,
+      "value": 30
+    },
+    {
+      "age": 6,
+      "flags": 10,
+      "value": 20
+    },
+    {
+      "age": 6,
+      "flags": 11,
+      "value": 30
+    },
+    {
+      "age": 6,
+      "flags": 12,
+      "value": 24
+    },
+    {
+      "age": 6,
+      "flags": 13,
+      "value": 36
+    },
+    {
+      "age": 6,
+      "flags": 14,
+      "value": 24
+    },
+    {
+      "age": 6,
+      "flags": 15,
+      "value": 36
+    },
+    {
+      "age": 7,
+      "flags": 0,
+      "value": 80
+    },
+    {
+      "age": 7,
+      "flags": 1,
+      "value": 120
+    },
+    {
+      "age": 7,
+      "flags": 2,
+      "value": 80
+    },
+    {
+      "age": 7,
+      "flags": 3,
+      "value": 120
+    },
+    {
+      "age": 7,
+      "flags": 4,
+      "value": 96
+    },
+    {
+      "age": 7,
+      "flags": 5,
+      "value": 144
+    },
+    {
+      "age": 7,
+      "flags": 6,
+      "value": 96
+    },
+    {
+      "age": 7,
+      "flags": 7,
+      "value": 144
+    },
+    {
+      "age": 7,
+      "flags": 8,
+      "value": 40
+    },
+    {
+      "age": 7,
+      "flags": 9,
+      "value": 60
+    },
+    {
+      "age": 7,
+      "flags": 10,
+      "value": 40
+    },
+    {
+      "age": 7,
+      "flags": 11,
+      "value": 60
+    },
+    {
+      "age": 7,
+      "flags": 12,
+      "value": 48
+    },
+    {
+      "age": 7,
+      "flags": 13,
+      "value": 72
+    },
+    {
+      "age": 7,
+      "flags": 14,
+      "value": 48
+    },
+    {
+      "age": 7,
+      "flags": 15,
+      "value": 72
+    },
+    {
+      "age": 13,
+      "flags": 0,
+      "value": 80
+    },
+    {
+      "age": 13,
+      "flags": 1,
+      "value": 120
+    },
+    {
+      "age": 13,
+      "flags": 2,
+      "value": 80
+    },
+    {
+      "age": 13,
+      "flags": 3,
+      "value": 120
+    },
+    {
+      "age": 13,
+      "flags": 4,
+      "value": 96
+    },
+    {
+      "age": 13,
+      "flags": 5,
+      "value": 144
+    },
+    {
+      "age": 13,
+      "flags": 6,
+      "value": 96
+    },
+    {
+      "age": 13,
+      "flags": 7,
+      "value": 144
+    },
+    {
+      "age": 13,
+      "flags": 8,
+      "value": 40
+    },
+    {
+      "age": 13,
+      "flags": 9,
+      "value": 60
+    },
+    {
+      "age": 13,
+      "flags": 10,
+      "value": 40
+    },
+    {
+      "age": 13,
+      "flags": 11,
+      "value": 60
+    },
+    {
+      "age": 13,
+      "flags": 12,
+      "value": 48
+    },
+    {
+      "age": 13,
+      "flags": 13,
+      "value": 72
+    },
+    {
+      "age": 13,
+      "flags": 14,
+      "value": 48
+    },
+    {
+      "age": 13,
+      "flags": 15,
+      "value": 72
+    },
+    {
+      "age": 14,
+      "flags": 0,
+      "value": 100
+    },
+    {
+      "age": 14,
+      "flags": 1,
+      "value": 150
+    },
+    {
+      "age": 14,
+      "flags": 2,
+      "value": 100
+    },
+    {
+      "age": 14,
+      "flags": 3,
+      "value": 150
+    },
+    {
+      "age": 14,
+      "flags": 4,
+      "value": 120
+    },
+    {
+      "age": 14,
+      "flags": 5,
+      "value": 180
+    },
+    {
+      "age": 14,
+      "flags": 6,
+      "value": 120
+    },
+    {
+      "age": 14,
+      "flags": 7,
+      "value": 180
+    },
+    {
+      "age": 14,
+      "flags": 8,
+      "value": 50
+    },
+    {
+      "age": 14,
+      "flags": 9,
+      "value": 75
+    },
+    {
+      "age": 14,
+      "flags": 10,
+      "value": 50
+    },
+    {
+      "age": 14,
+      "flags": 11,
+      "value": 75
+    },
+    {
+      "age": 14,
+      "flags": 12,
+      "value": 60
+    },
+    {
+      "age": 14,
+      "flags": 13,
+      "value": 90
+    },
+    {
+      "age": 14,
+      "flags": 14,
+      "value": 60
+    },
+    {
+      "age": 14,
+      "flags": 15,
+      "value": 90
+    },
+    {
+      "age": 15,
+      "flags": 0,
+      "value": 100
+    },
+    {
+      "age": 15,
+      "flags": 1,
+      "value": 150
+    },
+    {
+      "age": 15,
+      "flags": 2,
+      "value": 100
+    },
+    {
+      "age": 15,
+      "flags": 3,
+      "value": 150
+    },
+    {
+      "age": 15,
+      "flags": 4,
+      "value": 120
+    },
+    {
+      "age": 15,
+      "flags": 5,
+      "value": 180
+    },
+    {
+      "age": 15,
+      "flags": 6,
+      "value": 120
+    },
+    {
+      "age": 15,
+      "flags": 7,
+      "value": 180
+    },
+    {
+      "age": 15,
+      "flags": 8,
+      "value": 50
+    },
+    {
+      "age": 15,
+      "flags": 9,
+      "value": 75
+    },
+    {
+      "age": 15,
+      "flags": 10,
+      "value": 50
+    },
+    {
+      "age": 15,
+      "flags": 11,
+      "value": 75
+    },
+    {
+      "age": 15,
+      "flags": 12,
+      "value": 60
+    },
+    {
+      "age": 15,
+      "flags": 13,
+      "value": 90
+    },
+    {
+      "age": 15,
+      "flags": 14,
+      "value": 60
+    },
+    {
+      "age": 15,
+      "flags": 15,
+      "value": 90
+    },
+    {
+      "age": 99999,
+      "flags": 0,
+      "value": 100
+    },
+    {
+      "age": 99999,
+      "flags": 1,
+      "value": 150
+    },
+    {
+      "age": 99999,
+      "flags": 2,
+      "value": 100
+    },
+    {
+      "age": 99999,
+      "flags": 3,
+      "value": 150
+    },
+    {
+      "age": 99999,
+      "flags": 4,
+      "value": 120
+    },
+    {
+      "age": 99999,
+      "flags": 5,
+      "value": 180
+    },
+    {
+      "age": 99999,
+      "flags": 6,
+      "value": 120
+    },
+    {
+      "age": 99999,
+      "flags": 7,
+      "value": 180
+    },
+    {
+      "age": 99999,
+      "flags": 8,
+      "value": 50
+    },
+    {
+      "age": 99999,
+      "flags": 9,
+      "value": 75
+    },
+    {
+      "age": 99999,
+      "flags": 10,
+      "value": 50
+    },
+    {
+      "age": 99999,
+      "flags": 11,
+      "value": 75
+    },
+    {
+      "age": 99999,
+      "flags": 12,
+      "value": 60
+    },
+    {
+      "age": 99999,
+      "flags": 13,
+      "value": 90
+    },
+    {
+      "age": 99999,
+      "flags": 14,
+      "value": 60
+    },
+    {
+      "age": 99999,
+      "flags": 15,
+      "value": 90
+    }
+  ],
+  "recipes": [
+    {
+      "id": "baicai-danhua-tang",
+      "ingredients": [
+        "napa_cabbage",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "napa_cabbage",
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 20,
+      "weight": 40,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "baicai-doufu",
+      "ingredients": [
+        "napa_cabbage",
+        "tofu",
+        "ginger"
+      ],
+      "main": [
+        "napa_cabbage",
+        "tofu"
+      ],
+      "method": "stew",
+      "minutes": 25,
+      "weight": 40,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "baicai-huajia-tang",
+      "ingredients": [
+        "clam",
+        "napa_cabbage",
+        "ginger"
+      ],
+      "main": [
+        "clam",
+        "napa_cabbage"
+      ],
+      "method": "boil",
+      "minutes": 30,
+      "weight": 10,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "baicai-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "napa_cabbage",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "napa_cabbage"
+      ],
+      "method": "stew",
+      "minutes": 65,
+      "weight": 10,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "baicai-yupian-tang",
+      "ingredients": [
+        "fish_fillet",
+        "napa_cabbage",
+        "ginger"
+      ],
+      "main": [
+        "fish_fillet",
+        "napa_cabbage"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 15,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "baiqie-ji",
+      "ingredients": [
+        "chicken_whole",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "chicken_whole"
+      ],
+      "method": "boil",
+      "minutes": 60,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "baizhuo-caixin",
+      "ingredients": [
+        "choy_sum",
+        "garlic"
+      ],
+      "main": [
+        "choy_sum"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "baizhuo-xia",
+      "ingredients": [
+        "shrimp",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "shrimp"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "baizhuo-zhangyu",
+      "ingredients": [
+        "octopus",
+        "ginger",
+        "garlic"
+      ],
+      "main": [
+        "octopus"
+      ],
+      "method": "mix",
+      "minutes": 20,
+      "weight": 120,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "chao-xilanhua",
+      "ingredients": [
+        "broccoli",
+        "garlic"
+      ],
+      "main": [
+        "broccoli"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "chengzi-doufu-tang",
+      "ingredients": [
+        "razor_clam",
+        "tofu",
+        "ginger"
+      ],
+      "main": [
+        "razor_clam",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "chijiao-chao-huajia",
+      "ingredients": [
+        "clam",
+        "green_pepper",
+        "chili",
+        "garlic"
+      ],
+      "main": [
+        "clam"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "chizhi-zheng-paigu",
+      "ingredients": [
+        "pork_rib",
+        "garlic"
+      ],
+      "main": [
+        "pork_rib"
+      ],
+      "method": "steam",
+      "minutes": 50,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "congjiang-zheng-jitui",
+      "ingredients": [
+        "chicken_thigh",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "chicken_thigh"
+      ],
+      "method": "steam",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "congshao-doufu",
+      "ingredients": [
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "tofu"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "congyou-banmian",
+      "ingredients": [
+        "noodle",
+        "scallion"
+      ],
+      "main": [
+        "noodle",
+        "scallion"
+      ],
+      "method": "boil",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "culiu-baicai",
+      "ingredients": [
+        "napa_cabbage",
+        "garlic"
+      ],
+      "main": [
+        "napa_cabbage"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "di-san-xian",
+      "ingredients": [
+        "potato",
+        "eggplant",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "potato",
+        "eggplant",
+        "green_pepper"
+      ],
+      "method": "fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "donggua-doufu-tang",
+      "ingredients": [
+        "winter_melon",
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "winter_melon",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "donggua-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "winter_melon",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "winter_melon"
+      ],
+      "method": "stew",
+      "minutes": 75,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "donggua-yupian-tang",
+      "ingredients": [
+        "fish_fillet",
+        "winter_melon",
+        "ginger"
+      ],
+      "main": [
+        "fish_fillet",
+        "winter_melon"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "douya-chaodan",
+      "ingredients": [
+        "bean_sprout",
+        "egg"
+      ],
+      "main": [
+        "bean_sprout",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "fanqie-chao-youyu",
+      "ingredients": [
+        "squid",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "squid",
+        "tomato"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-chaodan",
+      "ingredients": [
+        "egg",
+        "tomato",
+        "scallion"
+      ],
+      "main": [
+        "egg",
+        "tomato"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "meat",
+        "veg"
+      ]
+    },
+    {
+      "id": "fanqie-dantang",
+      "ingredients": [
+        "tomato",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "tomato",
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "fanqie-doufu-tang",
+      "ingredients": [
+        "tomato",
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "tomato",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "fanqie-dun-niunan",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "onion",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "tomato"
+      ],
+      "method": "stew",
+      "minutes": 120,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-huajia-tang",
+      "ingredients": [
+        "clam",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "clam",
+        "tomato"
+      ],
+      "method": "boil",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "fanqie-jidan-mian",
+      "ingredients": [
+        "noodle",
+        "tomato",
+        "egg"
+      ],
+      "main": [
+        "noodle",
+        "tomato",
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "fanqie-jitui",
+      "ingredients": [
+        "chicken_thigh",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh",
+        "tomato"
+      ],
+      "method": "braise",
+      "minutes": 40,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-paigu",
+      "ingredients": [
+        "pork_rib",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "tomato"
+      ],
+      "method": "braise",
+      "minutes": 55,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-roumo-doufu",
+      "ingredients": [
+        "pork_mince",
+        "tofu",
+        "tomato"
+      ],
+      "main": [
+        "pork_mince",
+        "tofu",
+        "tomato"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-shao-niurou",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "tomato"
+      ],
+      "method": "stew",
+      "minutes": 75,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-shaoyu",
+      "ingredients": [
+        "fish_whole",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "fish_whole",
+        "tomato"
+      ],
+      "method": "braise",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-tudou-niurou-tang",
+      "ingredients": [
+        "beef",
+        "tomato",
+        "potato",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "tomato",
+        "potato"
+      ],
+      "method": "stew",
+      "minutes": 95,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "fanqie-xiaren",
+      "ingredients": [
+        "shrimp",
+        "tomato",
+        "scallion"
+      ],
+      "main": [
+        "shrimp",
+        "tomato"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "fanqie-yupian-tang",
+      "ingredients": [
+        "fish_fillet",
+        "tomato",
+        "ginger"
+      ],
+      "main": [
+        "fish_fillet",
+        "tomato"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "ganbian-doujiao",
+      "ingredients": [
+        "green_bean",
+        "garlic"
+      ],
+      "main": [
+        "green_bean"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "gongbao-jiding",
+      "ingredients": [
+        "chicken_thigh",
+        "cucumber",
+        "scallion",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "haoyou-shengcai",
+      "ingredients": [
+        "lettuce",
+        "garlic"
+      ],
+      "main": [
+        "lettuce"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "haoyou-xianggu",
+      "ingredients": [
+        "shiitake",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "shiitake"
+      ],
+      "method": "braise",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "hongshao-paigu",
+      "ingredients": [
+        "pork_rib",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "pork_rib"
+      ],
+      "method": "braise",
+      "minutes": 65,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "hongshao-qiezi",
+      "ingredients": [
+        "eggplant",
+        "garlic"
+      ],
+      "main": [
+        "eggplant"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "hongshao-rou",
+      "ingredients": [
+        "pork_belly",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "pork_belly"
+      ],
+      "method": "braise",
+      "minutes": 80,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "hongshao-yu",
+      "ingredients": [
+        "fish_whole",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "fish_whole"
+      ],
+      "method": "braise",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "huanggua-chaodan",
+      "ingredients": [
+        "cucumber",
+        "egg"
+      ],
+      "main": [
+        "cucumber",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "huangmen-ji",
+      "ingredients": [
+        "chicken_thigh",
+        "shiitake",
+        "potato",
+        "green_pepper",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh"
+      ],
+      "method": "braise",
+      "minutes": 40,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "huiguo-rou",
+      "ingredients": [
+        "pork_belly",
+        "green_pepper",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "pork_belly"
+      ],
+      "method": "stir_fry",
+      "minutes": 50,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "huluobo-chaodan",
+      "ingredients": [
+        "carrot",
+        "egg"
+      ],
+      "main": [
+        "carrot",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "hupi-qingjiao",
+      "ingredients": [
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "green_pepper"
+      ],
+      "method": "braise",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "jiachang-doufu",
+      "ingredients": [
+        "tofu",
+        "green_pepper",
+        "carrot",
+        "garlic"
+      ],
+      "main": [
+        "tofu",
+        "green_pepper",
+        "carrot"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "jiangcong-chaoxie",
+      "ingredients": [
+        "crab",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "crab"
+      ],
+      "method": "stir_fry",
+      "minutes": 35,
+      "weight": 50,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "jiangcong-jianyu",
+      "ingredients": [
+        "fish_whole",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "fish_whole"
+      ],
+      "method": "braise",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "jiangcong-menji",
+      "ingredients": [
+        "chicken_thigh",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "chicken_thigh"
+      ],
+      "method": "braise",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "jidan-chaofan",
+      "ingredients": [
+        "rice",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "rice",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "jielan-chao-niurou",
+      "ingredients": [
+        "beef",
+        "gai_lan",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "gai_lan"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "jinzhengu-feiniu",
+      "ingredients": [
+        "beef",
+        "enoki",
+        "garlic",
+        "chili"
+      ],
+      "main": [
+        "beef",
+        "enoki"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "jiyu-doufu-tang",
+      "ingredients": [
+        "fish_whole",
+        "tofu",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "fish_whole",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 40,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "kele-jichi",
+      "ingredients": [
+        "chicken_wing",
+        "ginger"
+      ],
+      "main": [
+        "chicken_wing"
+      ],
+      "method": "braise",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "kugua-chaodan",
+      "ingredients": [
+        "bitter_melon",
+        "egg"
+      ],
+      "main": [
+        "bitter_melon",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "lachang-menfan",
+      "ingredients": [
+        "rice",
+        "lap_cheong",
+        "scallion"
+      ],
+      "main": [
+        "rice",
+        "lap_cheong"
+      ],
+      "method": "boil",
+      "minutes": 50,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "liangban-xilanhua",
+      "ingredients": [
+        "broccoli",
+        "garlic"
+      ],
+      "main": [
+        "broccoli"
+      ],
+      "method": "mix",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "lianou-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "lotus_root",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "lotus_root"
+      ],
+      "method": "stew",
+      "minutes": 120,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "lu-zhujiao",
+      "ingredients": [
+        "pork_trotter",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "pork_trotter"
+      ],
+      "method": "stew",
+      "minutes": 120,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "mapo-doufu",
+      "ingredients": [
+        "tofu",
+        "pork_mince",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "tofu",
+        "pork_mince"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "muli-chaodan",
+      "ingredients": [
+        "oyster_meat",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "oyster_meat",
+        "egg"
+      ],
+      "method": "fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "muli-doufu-tang",
+      "ingredients": [
+        "oyster_meat",
+        "tofu",
+        "ginger"
+      ],
+      "main": [
+        "oyster_meat",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "nangua-zheng-paigu",
+      "ingredients": [
+        "pork_rib",
+        "pumpkin",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "pumpkin"
+      ],
+      "method": "steam",
+      "minutes": 50,
+      "weight": 100,
+      "courses": [
+        "meat",
+        "veg"
+      ]
+    },
+    {
+      "id": "nangua-zhengdan",
+      "ingredients": [
+        "pumpkin",
+        "egg"
+      ],
+      "main": [
+        "pumpkin",
+        "egg"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "pai-huanggua",
+      "ingredients": [
+        "cucumber",
+        "garlic"
+      ],
+      "main": [
+        "cucumber"
+      ],
+      "method": "mix",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qiezi-roumo",
+      "ingredients": [
+        "pork_mince",
+        "eggplant",
+        "garlic"
+      ],
+      "main": [
+        "pork_mince",
+        "eggplant"
+      ],
+      "method": "braise",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingcai-doufu-tang",
+      "ingredients": [
+        "choy_sum",
+        "tofu"
+      ],
+      "main": [
+        "choy_sum",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "qingcai-roupian",
+      "ingredients": [
+        "pork_lean",
+        "choy_sum",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "choy_sum"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingchao-bocai",
+      "ingredients": [
+        "spinach",
+        "garlic"
+      ],
+      "main": [
+        "spinach"
+      ],
+      "method": "stir_fry",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingchao-jielan",
+      "ingredients": [
+        "gai_lan",
+        "garlic"
+      ],
+      "main": [
+        "gai_lan"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingchao-sigua",
+      "ingredients": [
+        "loofah",
+        "garlic"
+      ],
+      "main": [
+        "loofah"
+      ],
+      "method": "stir_fry",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingjiao-chao-huajia",
+      "ingredients": [
+        "clam",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "clam",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingjiao-chao-youyu",
+      "ingredients": [
+        "squid",
+        "green_pepper",
+        "ginger"
+      ],
+      "main": [
+        "squid",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingjiao-chaodan",
+      "ingredients": [
+        "green_pepper",
+        "egg"
+      ],
+      "main": [
+        "green_pepper",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingjiao-chaodougan",
+      "ingredients": [
+        "tofu_dried",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "tofu_dried",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingjiao-chaoniurou",
+      "ingredients": [
+        "beef",
+        "green_pepper",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingjiao-chengzi-tang",
+      "ingredients": [
+        "razor_clam",
+        "green_pepper",
+        "ginger"
+      ],
+      "main": [
+        "razor_clam",
+        "green_pepper"
+      ],
+      "method": "boil",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "qingjiao-rousi",
+      "ingredients": [
+        "pork_lean",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "pork_lean",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingjiao-tudoupian",
+      "ingredients": [
+        "potato",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "potato",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "qingjiao-xiaren",
+      "ingredients": [
+        "shrimp",
+        "green_pepper",
+        "ginger"
+      ],
+      "main": [
+        "shrimp",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "qingzheng-luyu",
+      "ingredients": [
+        "fish_whole",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "fish_whole"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "roubing-zhengdan",
+      "ingredients": [
+        "pork_mince",
+        "egg",
+        "ginger"
+      ],
+      "main": [
+        "pork_mince",
+        "egg"
+      ],
+      "method": "steam",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "roumo-doufu-tang",
+      "ingredients": [
+        "pork_mince",
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "pork_mince",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "roumo-jinzhengu",
+      "ingredients": [
+        "pork_mince",
+        "enoki",
+        "garlic"
+      ],
+      "main": [
+        "pork_mince",
+        "enoki"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "roupian-donggua-tang",
+      "ingredients": [
+        "pork_lean",
+        "winter_melon",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "winter_melon"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "shijin-zhengdan",
+      "ingredients": [
+        "egg",
+        "carrot",
+        "shiitake"
+      ],
+      "main": [
+        "egg",
+        "carrot",
+        "shiitake"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "shourou-zhou",
+      "ingredients": [
+        "rice",
+        "pork_lean",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "rice",
+        "pork_lean"
+      ],
+      "method": "boil",
+      "minutes": 50,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "shousi-baocai",
+      "ingredients": [
+        "cabbage",
+        "garlic"
+      ],
+      "main": [
+        "cabbage"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "sigua-dan-tang",
+      "ingredients": [
+        "loofah",
+        "egg",
+        "ginger"
+      ],
+      "main": [
+        "loofah",
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "suanla-tudousi",
+      "ingredients": [
+        "potato",
+        "garlic"
+      ],
+      "main": [
+        "potato"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "suanrong-caixin",
+      "ingredients": [
+        "choy_sum",
+        "garlic"
+      ],
+      "main": [
+        "choy_sum"
+      ],
+      "method": "stir_fry",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "suanrong-douya",
+      "ingredients": [
+        "bean_sprout",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "bean_sprout"
+      ],
+      "method": "stir_fry",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "suanrong-shengcai",
+      "ingredients": [
+        "lettuce",
+        "garlic"
+      ],
+      "main": [
+        "lettuce"
+      ],
+      "method": "stir_fry",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "suanrong-zheng-baoyu",
+      "ingredients": [
+        "abalone",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "abalone"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "suanrong-zheng-qingkou",
+      "ingredients": [
+        "mussel",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "mussel"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "suanrong-zheng-shanbei",
+      "ingredients": [
+        "scallop",
+        "garlic",
+        "scallion"
+      ],
+      "main": [
+        "scallop"
+      ],
+      "method": "steam",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "suanxiang-jichi",
+      "ingredients": [
+        "chicken_wing",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "chicken_wing"
+      ],
+      "method": "braise",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "suanxiang-paigu",
+      "ingredients": [
+        "pork_rib",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib"
+      ],
+      "method": "steam",
+      "minutes": 45,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "suanxiang-qiezi",
+      "ingredients": [
+        "eggplant",
+        "garlic"
+      ],
+      "main": [
+        "eggplant"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "suanxiang-xiaren",
+      "ingredients": [
+        "shrimp",
+        "garlic"
+      ],
+      "main": [
+        "shrimp"
+      ],
+      "method": "stir_fry",
+      "minutes": 15,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tangcu-paigu",
+      "ingredients": [
+        "pork_rib",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib"
+      ],
+      "method": "braise",
+      "minutes": 60,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tangcu-yu",
+      "ingredients": [
+        "fish_whole",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "fish_whole"
+      ],
+      "method": "braise",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tudou-chaoroupian",
+      "ingredients": [
+        "pork_lean",
+        "potato",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "potato"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tudou-dun-jitui",
+      "ingredients": [
+        "chicken_thigh",
+        "potato",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh",
+        "potato"
+      ],
+      "method": "stew",
+      "minutes": 45,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tudou-jichi",
+      "ingredients": [
+        "chicken_wing",
+        "potato",
+        "ginger"
+      ],
+      "main": [
+        "chicken_wing",
+        "potato"
+      ],
+      "method": "braise",
+      "minutes": 40,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "tudou-men-paigu",
+      "ingredients": [
+        "pork_rib",
+        "potato",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "potato"
+      ],
+      "method": "braise",
+      "minutes": 65,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xiandan-zheng-roubing",
+      "ingredients": [
+        "pork_mince",
+        "salted_egg",
+        "ginger"
+      ],
+      "main": [
+        "pork_mince",
+        "salted_egg"
+      ],
+      "method": "steam",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xianggu-baicai",
+      "ingredients": [
+        "napa_cabbage",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "napa_cabbage",
+        "shiitake"
+      ],
+      "method": "braise",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "xianggu-chaocaixin",
+      "ingredients": [
+        "shiitake",
+        "choy_sum",
+        "garlic"
+      ],
+      "main": [
+        "shiitake",
+        "choy_sum"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "xianggu-chaorou",
+      "ingredients": [
+        "pork_lean",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "shiitake"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xianggu-danhua-tang",
+      "ingredients": [
+        "shiitake",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "shiitake",
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "xianggu-doufu-tang",
+      "ingredients": [
+        "shiitake",
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "shiitake",
+        "tofu"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "xianggu-jirou-zhou",
+      "ingredients": [
+        "rice",
+        "chicken_thigh",
+        "shiitake",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "rice",
+        "chicken_thigh"
+      ],
+      "method": "boil",
+      "minutes": 60,
+      "weight": 100,
+      "courses": [
+        "staple"
+      ]
+    },
+    {
+      "id": "xianggu-jitui-tang",
+      "ingredients": [
+        "chicken_thigh",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh",
+        "shiitake"
+      ],
+      "method": "stew",
+      "minutes": 45,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "xianggu-menji",
+      "ingredients": [
+        "chicken_thigh",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh",
+        "shiitake"
+      ],
+      "method": "braise",
+      "minutes": 40,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xianggu-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "shiitake"
+      ],
+      "method": "stew",
+      "minutes": 65,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "xianggu-paigu",
+      "ingredients": [
+        "pork_rib",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "shiitake"
+      ],
+      "method": "braise",
+      "minutes": 55,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xianggu-roubing",
+      "ingredients": [
+        "pork_mince",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "pork_mince",
+        "shiitake"
+      ],
+      "method": "steam",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xianggu-xilanhua",
+      "ingredients": [
+        "shiitake",
+        "broccoli",
+        "garlic"
+      ],
+      "main": [
+        "shiitake",
+        "broccoli"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "xianggu-zhengji",
+      "ingredients": [
+        "chicken_thigh",
+        "shiitake",
+        "ginger"
+      ],
+      "main": [
+        "chicken_thigh",
+        "shiitake"
+      ],
+      "method": "steam",
+      "minutes": 35,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xiangjian-doufu",
+      "ingredients": [
+        "tofu",
+        "scallion"
+      ],
+      "main": [
+        "tofu"
+      ],
+      "method": "fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "xiangjian-sanwenyu",
+      "ingredients": [
+        "salmon"
+      ],
+      "main": [
+        "salmon"
+      ],
+      "method": "fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xiaochao-rou",
+      "ingredients": [
+        "pork_belly",
+        "green_pepper",
+        "garlic"
+      ],
+      "main": [
+        "pork_belly",
+        "green_pepper"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xiaren-chaodan",
+      "ingredients": [
+        "shrimp",
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "shrimp",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xiaren-donggua-tang",
+      "ingredients": [
+        "shrimp",
+        "winter_melon",
+        "ginger"
+      ],
+      "main": [
+        "shrimp",
+        "winter_melon"
+      ],
+      "method": "boil",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "xilanhua-chaodan",
+      "ingredients": [
+        "broccoli",
+        "egg"
+      ],
+      "main": [
+        "broccoli",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "xilanhua-chaoniurou",
+      "ingredients": [
+        "beef",
+        "broccoli",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "broccoli"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xilanhua-chaorou",
+      "ingredients": [
+        "pork_lean",
+        "broccoli",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "broccoli"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "xilanhua-xiaren",
+      "ingredients": [
+        "shrimp",
+        "broccoli",
+        "garlic"
+      ],
+      "main": [
+        "shrimp",
+        "broccoli"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "yangcong-chao-niurou",
+      "ingredients": [
+        "beef",
+        "onion",
+        "ginger"
+      ],
+      "main": [
+        "beef",
+        "onion"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "yangcong-chaodan",
+      "ingredients": [
+        "onion",
+        "egg"
+      ],
+      "main": [
+        "onion",
+        "egg"
+      ],
+      "method": "stir_fry",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "yangcong-chaorou",
+      "ingredients": [
+        "pork_lean",
+        "onion",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean",
+        "onion"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "yangcong-paigu",
+      "ingredients": [
+        "pork_rib",
+        "onion",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "onion"
+      ],
+      "method": "braise",
+      "minutes": 55,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "youmen-daxia",
+      "ingredients": [
+        "shrimp",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "shrimp"
+      ],
+      "method": "braise",
+      "minutes": 20,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "yumi-huluobo-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "corn",
+        "carrot",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib"
+      ],
+      "method": "stew",
+      "minutes": 90,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "yumi-paigu-tang",
+      "ingredients": [
+        "pork_rib",
+        "corn",
+        "ginger"
+      ],
+      "main": [
+        "pork_rib",
+        "corn"
+      ],
+      "method": "stew",
+      "minutes": 90,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    },
+    {
+      "id": "yuxiang-qiezi",
+      "ingredients": [
+        "eggplant",
+        "garlic",
+        "ginger",
+        "scallion"
+      ],
+      "main": [
+        "eggplant"
+      ],
+      "method": "stir_fry",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "yuxiang-rousi",
+      "ingredients": [
+        "pork_lean",
+        "carrot",
+        "green_pepper",
+        "garlic",
+        "ginger"
+      ],
+      "main": [
+        "pork_lean"
+      ],
+      "method": "stir_fry",
+      "minutes": 30,
+      "weight": 100,
+      "courses": [
+        "meat"
+      ]
+    },
+    {
+      "id": "zheng-shuidan",
+      "ingredients": [
+        "egg"
+      ],
+      "main": [
+        "egg"
+      ],
+      "method": "steam",
+      "minutes": 25,
+      "weight": 100,
+      "courses": [
+        "veg"
+      ]
+    },
+    {
+      "id": "zicai-danhua-tang",
+      "ingredients": [
+        "egg",
+        "scallion"
+      ],
+      "main": [
+        "egg"
+      ],
+      "method": "boil",
+      "minutes": 10,
+      "weight": 100,
+      "courses": [
+        "soup"
+      ]
+    }
+  ],
+  "draws": [
+    {
+      "combo": 0,
+      "seed": 0,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "baizhuo-zhangyu"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "fanqie-xiaren"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 0,
+      "seed": 1,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "mapo-doufu"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "xiangjian-doufu"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 0,
+      "seed": 42,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "baizhuo-caixin"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "suanrong-shengcai"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 0,
+      "seed": 321,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "fanqie-huajia-tang"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "xilanhua-chaodan"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 0,
+      "seed": 4294967295,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "jidan-chaofan"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "fanqie-chaodan"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 1,
+      "seed": 0,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "baizhuo-xia",
+          "hupi-qingjiao"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "xianggu-zhengji",
+          "baizhuo-caixin"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 1,
+      "seed": 1,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "roubing-zhengdan",
+          "xianggu-xilanhua"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "tudou-jichi",
+          "kugua-chaodan"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 1,
+      "seed": 42,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "suanrong-zheng-shanbei",
+          "congshao-doufu"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "tudou-chaoroupian",
+          "suanxiang-qiezi"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 1,
+      "seed": 321,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "xianggu-menji",
+          "fanqie-chaodan"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "xilanhua-chaoniurou",
+          "zheng-shuidan"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 1,
+      "seed": 4294967295,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "xianggu-chaorou",
+          "baizhuo-caixin"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "suanrong-zheng-qingkou",
+          "pai-huanggua"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 2,
+      "seed": 0,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "qingjiao-rousi",
+          "qingchao-sigua",
+          "donggua-doufu-tang"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "xiandan-zheng-roubing",
+          "qingchao-jielan",
+          "qingcai-doufu-tang"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 2,
+      "seed": 1,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "qingjiao-chao-huajia",
+          "shousi-baocai",
+          "zicai-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "chijiao-chao-huajia",
+          "qingchao-jielan",
+          "baicai-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 1,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 2,
+      "seed": 42,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "qingjiao-xiaren",
+          "suanrong-shengcai",
+          "fanqie-yupian-tang"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "youmen-daxia",
+          "suanrong-shengcai",
+          "fanqie-dantang"
+        ],
+        "notes": [],
+        "seed": 42,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 2,
+      "seed": 321,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "suanrong-zheng-baoyu",
+          "qingchao-bocai",
+          "xianggu-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "qingjiao-chaoniurou",
+          "suanrong-shengcai",
+          "sigua-dan-tang"
+        ],
+        "notes": [],
+        "seed": 321,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 2,
+      "seed": 4294967295,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "xiaochao-rou",
+          "suanrong-shengcai",
+          "roupian-donggua-tang"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "tudou-chaoroupian",
+          "shousi-baocai",
+          "zicai-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 4294967295,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 3,
+      "seed": 0,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "baizhuo-xia",
+          "jielan-chao-niurou",
+          "qingchao-sigua",
+          "zicai-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "baizhuo-xia",
+          "fanqie-chao-youyu",
+          "qingchao-sigua",
+          "zicai-danhua-tang"
+        ],
+        "notes": [],
+        "seed": 0,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 3,
+      "seed": 1,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "qingjiao-chao-huajia",
+          "tudou-jichi",
+          "suanxiang-qiezi",
+          "xianggu-paigu-tang"
+        ],
+        "notes": [
+          "已放宽：总用时"
+        ],
+        "seed": 1,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "qingjiao-chaoniurou",
+          "suanrong-zheng-qingkou",
+          "xianggu-xilanhua",
+          "fanqie-yupian-tang"
+        ],
+        "notes": [
+          "已放宽：总用时"
+        ],
+        "seed": 1,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 3,
+      "seed": 42,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "qingjiao-xiaren",
+          "youmen-daxia",
+          "suanxiang-qiezi",
+          "baicai-huajia-tang"
+        ],
+        "notes": [
+          "已放宽：主料重复",
+          "已放宽：总用时"
+        ],
+        "seed": 42,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "roumo-jinzhengu",
+          "tudou-dun-jitui",
+          "suanrong-shengcai",
+          "jiyu-doufu-tang"
+        ],
+        "notes": [
+          "已放宽：总用时"
+        ],
+        "seed": 42,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 3,
+      "seed": 321,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "chijiao-chao-huajia",
+          "xiaren-chaodan",
+          "suanrong-shengcai",
+          "zicai-danhua-tang"
+        ],
+        "notes": [
+          "已放宽：主料重复"
+        ],
+        "seed": 321,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "chijiao-chao-huajia",
+          "xiaren-chaodan",
+          "qingchao-bocai",
+          "zicai-danhua-tang"
+        ],
+        "notes": [
+          "已放宽：主料重复"
+        ],
+        "seed": 321,
+        "reason": ""
+      }
+    },
+    {
+      "combo": 3,
+      "seed": 4294967295,
+      "minutes": 60,
+      "result": {
+        "ids": [
+          "fanqie-jitui",
+          "jielan-chao-niurou",
+          "haoyou-xianggu",
+          "fanqie-yupian-tang"
+        ],
+        "notes": [
+          "已放宽：主料重复",
+          "已放宽：总用时"
+        ],
+        "seed": 4294967295,
+        "reason": ""
+      },
+      "reroll": {
+        "ids": [
+          "fanqie-shao-niurou",
+          "fanqie-shaoyu",
+          "yuxiang-qiezi",
+          "roumo-doufu-tang"
+        ],
+        "notes": [
+          "已放宽：主料重复",
+          "已放宽：总用时"
+        ],
+        "seed": 4294967295,
+        "reason": ""
+      }
+    }
+  ]
+}

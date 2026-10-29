@@ -1,5 +1,5 @@
-import * as s from '../../prototype/state.mjs';
-import {dayNumber} from '../../prototype/model.mjs';
+import * as s from './fixtures/prototype-v0.1/state.mjs';
+import {dayNumber} from './fixtures/prototype-v0.1/model.mjs';
 const ids=['a','b','c'], recipes=ids.map(id=>({id,steps:[{},{},{}]}));
 const state=s.initialState('2026-10-28'); let current=0;
 const trace=[];

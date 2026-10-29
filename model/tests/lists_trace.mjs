@@ -1,6 +1,6 @@
 import {testRecipes,testIngredients} from './recipe_fixture.mjs';
-import {fridgeMatch} from '../../prototype/model.mjs';
-import {initialState,addShopping} from '../../prototype/state.mjs';
+import {fridgeMatch} from './fixtures/prototype-v0.1/model.mjs';
+import {initialState,addShopping} from './fixtures/prototype-v0.1/state.mjs';
 const recipes=await testRecipes();
 const ingredients=(await testIngredients()).ingredients.map(x=>x.id).sort();
 const mask=xs=>xs.reduce((n,x)=>{const i=ingredients.indexOf(x);if(i<0)throw Error(`Unknown ingredient ID: ${x}`);return n|(1n<<BigInt(i));},0n).toString();

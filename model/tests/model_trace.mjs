@@ -1,4 +1,4 @@
-import {mulberry32, recipeWeight} from '../../prototype/model.mjs';
+import {mulberry32, recipeWeight} from './fixtures/prototype-v0.1/model.mjs';
 const random = [];
 for (const seed of [0, 1, 42, 0x7fffffff, 0xffffffff]) {
   const next = mulberry32(seed);

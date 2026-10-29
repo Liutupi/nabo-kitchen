@@ -1,5 +1,5 @@
 // Generate expected states from the unchanged production prototype, with a test clock.
-import {Timers} from '../../prototype/timers.mjs';
+import {Timers} from './fixtures/prototype-v0.1/timers.mjs';
 let now = 1000, service = new Timers(() => now);
 const trace = [];
 function step(op, arg = 0) {

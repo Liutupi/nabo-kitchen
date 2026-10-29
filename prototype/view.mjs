@@ -48,16 +48,16 @@ export function render(v){
   const titles=['NABO 深夜厨房','NABO 深夜厨房','今晚怎么吃','今晚吃点啥','今天就吃它！','准备食材',recipe?.name||'跟做','计时','做好啦！','冰箱里有啥','冰箱推荐','买菜单','我的菜谱','设置'];
   const accents={2:'#FF6B5B',3:'#FF6B5B',4:'#FF6B5B',5:'#FFC93F',6:'#FFC93F',7:'#5DB7F2',8:'#4FC98A',9:'#5DB7F2',10:'#5DB7F2',11:'#4FC98A',12:'#FFC93F',13:'#C5C3D3'};
   const title=u.page===6?recipe.name:titles[u.page];
-  let right=timed?action('timers',`${clockIcon()} ${timeText(timers.remaining(timed))}`):`${moonIcon()} ${new Date(now).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false})}`;
+  let right=timed?action('timers',`${clockIcon()} ${timeText(timers.remaining(timed))}`):'<span class="battery" aria-label="电量">▰ 70%</span>';
   if(u.page===6)right=`${session(s,recipe).index+1} / ${recipe.steps.length}`;
   if(u.page===9)right=`已选 ${s.fridge.length}`;
   if(u.page===12)right=`${st.unique}/${recipes.length}`;
-  let body='',footer='双击 ↑ 返回 · 长 ↑ 回小智';
+  let body='',footer='双击 ↑ 返回 · 长 ↑ 回开场';
   if(u.page===0){
     const foods=['egg','tomato','choy_sum','fish_whole','tofu','pork_rib'].map((id,i)=>{const a=Math.PI*(1.07+i*.174);return at(Math.round(120+Math.cos(a)*94-14),Math.round(257+Math.sin(a)*84-14),28,28,image('ingredients/'+id,28,28));}).join('');
     body=`<div class="stars">${Array.from({length:24},(_,i)=>`<i style="left:${i*53%238}px;top:${i*37%150}px"></i>`).join('')}</div>${at(10,42,220,90,image('ui/logo_wordmark',220,90))}${at(10,148,26,26,icon('ui_lantern',26))}${at(204,148,26,26,icon('ui_lantern',26))}${at(24,136,192,20,'今晚吃什么，我来想','center dim small')}${foods}${at(74,177,94,143,portrait())}`;
   }else if(u.page===1){
-    body=at(0,38,240,70,face(now-u.lastActivity>30000?'sleepy':'happy',58)+`<div class="bubble"><b>${now-u.lastActivity>30000?'Zzz…':'今晚吃点啥？'}</b><small>${s.daily.result?'今天已经抽签':'今天还没抽签'} · 剩 ${left} 次</small></div>`,'welcome');
+    body=at(0,38,240,70,face(now-u.lastActivity>30000?'sleepy':'happy',58)+`<div class="bubble"><b>${now-u.lastActivity>30000?'Zzz…':'今晚吃点啥？'}</b><small>${s.daily.result?'上次菜单已保留':'随时颠勺选菜'} · 不限次</small></div>`,'welcome');
     body+=at(8,114,224,58,action('home',icon('method_stir_fry',36)+'<span><b>今天吃什么</b><small>颠一下锅，马上决定</small></span>','hero '+(u.focus===0?'selected':''),0));
     [['冰箱','有啥做啥','ui_lantern_dot','#5DB7F2'],['买菜单',`${s.shopping.filter(x=>!x.bought).length} 样待买`,'prop_bowl','#4FC98A'],['我的菜谱',`${st.unique} / ${recipes.length}`,'badge_1','#FFC93F'],['设置','口味 · 声音','ui_timer_icon','#C5C3D3']].forEach((r,i)=>{
       body+=at(8+(i%2)*116,180+Math.trunc(i/2)*50,108,44,action('home',`<img src="${ART+(r[2].startsWith('prop')?'props/':'icons/')+r[2]}.png" width="24" height="24"><span>${r[0]}<small>${r[1]}</small></span>`,'menu-card '+(u.focus===i+1?'selected':''),i+1),'',`--acc:${r[3]}`);
@@ -77,9 +77,9 @@ export function render(v){
       body+=keyRows([['↓','换一组','reroll'],['OK','开始做这道','recipe',true]],-1,246);footer='↑ 选菜 · ↓ 换一组 · OK 开做';
     }else{
       body=at(8,44,224,116,'<i class="glow one"></i><i class="glow two"></i>'+dish(recipe),'stage');
-      const age=lastAge(recipe.id,s.history,day),recent=age<7?(age===0?'今天做过':age===1?'昨天做过':age===2?'前天做过':`${age} 天前做过`):'';
+      const age=lastAge(recipe.id,s.history),recent=age<14?(age===0?'上次做过':`${age+1} 次前做过`):'';
       body+=at(12,164,220,26,esc(recipe.name),'dish-name')+at(12,192,220,20,`<span class="chip">${clockIcon()} ${recipe.minutes} 分钟</span><span class="chip">${esc(recent||recipe.tags?.[0]||recipe.cuisine)}</span>`);
-      body+=keyRows([['↑','回吧台','lobby'],['↓',`换一道 · ${left} 次`,'reroll'],['OK','开做！','recipe',true]]);
+      body+=keyRows([['↑','回吧台','lobby'],['↓','换一道 · 不限次','reroll'],['OK','开做！','recipe',true]]);
       body+=at(154,170,84,150,portrait())+at(150,148,82,22,'这道我拿手','bubble tiny');footer='双击 ↑ 返回 · 长 OK 收藏';
     }
     if(u.notes.length)body+=at(8,62,224,32,u.notes.map(esc).join(' · '),'relax-note small');
@@ -100,14 +100,14 @@ export function render(v){
     footer='↑↓ 切换 · 长 OK 暂停 / 继续';
   }else if(u.page===8){
     body=at(40,48,160,120,dish(recipe,160,120))+at(142,44,64,64,icon('ui_stamp_done',64)+'<b>完成</b>','stamp');
-    body+=at(12,176,220,26,`${esc(recipe.name)} <small>第 ${s.cooked[recipe.id]?.count||0} 次</small>`,'dish-name')+at(12,208,150,20,`我的菜谱 ${st.unique} / ${recipes.length}`,'dim small')+at(12,238,132,22,`连续 ${st.streak} 天 · 今日 ${st.today} 道`,'chip')+at(154,170,84,150,portrait())+at(110,148,82,26,'吃饭了！','bubble small');footer='OK 回吧台';
+    body+=at(12,176,220,26,`${esc(recipe.name)} <small>第 ${s.cooked[recipe.id]?.count||0} 次</small>`,'dish-name')+at(12,208,150,20,`我的菜谱 ${st.unique} / ${recipes.length}`,'dim small')+at(12,238,132,22,`累计做饭 ${st.total} 次`,'chip')+at(154,170,84,150,portrait())+at(110,148,82,26,'吃饭了！','bubble small');footer='OK 回吧台';
   }else if(u.page===9){
-    const catalog=ingredients.filter(i=>i.v===1),item=catalog[u.focus%catalog.length],cats=[['meat','肉'],['seafood','海鲜'],['egg_tofu','蛋豆'],['veg','蔬菜']];
-    body=at(8,44,224,22,cats.map(([id,name])=>action('category',name,'category '+(item.cat===id?'active':''),id)).join(''),'categories');
-    const category=catalog.filter(i=>i.cat===item.cat),position=category.indexOf(item),start=Math.trunc(position/8)*8;
-    category.slice(start,start+8).forEach((i,j)=>{const index=catalog.indexOf(i);body+=at(8+j%4*58,74+Math.trunc(j/4)*72,52,66,action('fridge',image('ingredients/'+i.id,40,40)+`<small>${esc(i.name.replace(/（.*?）/g,''))}</small>${s.fridge.includes(i.id)?'<b class="check"><i class="check-mark"></i></b>':''}`,'ingredient-card '+(index===u.focus?'selected ':'')+(s.fridge.includes(i.id)?'checked':''),index));});
+    const cats=[['meat','肉'],['seafood','海鲜'],['egg_tofu','蛋豆'],['veg','蔬菜'],['staple','主食']],cat=u.fridgeCategory||0;
+    body=at(8,44,224,22,cats.map(([id,name],i)=>action('category',name,'category '+(cat===i?'active ':'')+(!u.fridgeItems&&cat===i?'selected':''),id)).join(''),'categories');
+    const category=ingredients.filter(i=>i.cat===cats[cat][0]),start=u.fridgeItems?Math.trunc(u.focus/8)*8:0;
+    category.slice(start,start+8).forEach((i,j)=>body+=at(8+j%4*58,74+Math.trunc(j/4)*72,52,66,action('fridge',image('ingredients/'+i.id,40,40)+`<small>${esc(i.name.replace(/（.*?）/g,''))}</small>${s.fridge.includes(i.id)?'<b class="check"><i class="check-mark"></i></b>':''}`,'ingredient-card '+(u.fridgeItems&&start+j===u.focus?'selected ':'')+(s.fridge.includes(i.id)?'checked':''),start+j)));
     const matches=fridgeMatch(recipes,s.fridge,s.settings.excluded);
-    body+=at(10,224,40,40,face('focus'))+at(60,226,170,52,`这些能做 <b>${matches.filter(x=>!x.missing.length).length}</b> 道菜<br>长按 OK 看推荐`,'bubble small');footer='OK 勾选 · 长 OK 推荐 · 双 ↑ 返回';
+    body+=at(10,224,40,40,face('focus'))+at(60,226,170,52,`这些能做 <b>${matches.filter(x=>!x.missing.length).length}</b> 道菜<br>长按 OK 看推荐`,'bubble small');footer=u.fridgeItems?'↑↓ 选食材 · OK 勾选 · 双 ↑ 分类':'↑↓ 选分类 · OK 进入 · 双 ↑ 返回';
   }else if(u.page===10){
     const list=fridgeMatch(recipes,s.fridge,s.settings.excluded),start=Math.trunc(u.focus/4)*4;
     body=list.length?list.slice(start,start+4).map((x,i)=>at(8,46+i*57,224,52,action('recommendation',dish(x.recipe,48,36)+`<span>${esc(x.recipe.name)}<small>${x.missing.length?'缺 1 样：'+esc(byId[x.missing[0]]?.name):'齐了'}</small></span>`,'recipe-row '+(start+i===u.focus?'selected':''),start+i))).join(''):at(12,90,216,90,'没有只缺 1 样以内的菜<br>双击 ↑ 补选食材','center');footer='↑↓ 选择 · OK 看菜谱';
@@ -116,7 +116,7 @@ export function render(v){
     body=at(14,50,212,232,`<i class="tape"></i>${items.slice(start,start+5).map((i,j)=>action('shopping',`<span class="box">${i.bought?'<i class="check-mark"></i>':''}</span>${image('ingredients/'+i.id,30,30)}<span>${esc(byId[i.id]?.name||i.id)}</span><small>${i.qty} ${esc(i.unit)}</small>`,'shop-row '+(start+j===u.focus?'selected ':'')+(i.bought?'bought':''),i.uid)).join('')}${!items.length?'<p>买菜单是空的<br>从用料页加入食材</p>':''}${action('clear-bought','清空已买','clear-bought '+(u.focus===items.length?'selected':''))}`,'shopping-paper');footer='↑↓ 选择 · OK 打勾 / 清空';
   }else if(u.page===12){
     const filters=['全部','做过的','收藏','我存的'],list=recipes.filter(r=>u.bookFilter===0||u.bookFilter===1&&s.cooked[r.id]||u.bookFilter===2&&s.favorites.includes(r.id)||u.bookFilter===3&&r.source==='user');
-    body=at(8,44,224,52,icon('badge_'+st.level,40)+`<div><b>${['','夜宵学徒','深夜帮厨','夜班主厨','深夜厨神'][st.level]}</b><small>累计 ${st.total} 道 · 连续 ${st.streak} 天</small></div>`,'level-card');
+    body=at(8,44,224,52,icon('badge_'+st.level,40)+`<div><b>${['','夜宵学徒','深夜帮厨','夜班主厨','深夜厨神'][st.level]}</b><small>累计 ${st.total} 次 · 解锁 ${st.unique} 道</small></div>`,'level-card');
     body+=at(8,99,224,22,action('book-filter',`筛选：${filters[u.bookFilter]}`,'filter-row '+(u.focus===0?'selected':'')));
     const start=Math.trunc(Math.max(0,u.focus-1)/6)*6;
     body+=list.slice(start,start+6).map((r,i)=>at(8+i%3*76,125+Math.trunc(i/3)*83,72,80,action('book',dish(r,72,54,!s.cooked[r.id])+`<small>${esc(s.cooked[r.id]?r.name:'还没做过')}</small>${s.favorites.includes(r.id)?`<b class="favorite">${icon('ui_star',12)}</b>`:''}`,'book-card '+(u.focus===start+i+1?'selected':''),start+i))).join('');
@@ -126,7 +126,7 @@ export function render(v){
       const start=Math.trunc(u.focus/5)*5;
       body=ingredients.slice(start,start+5).map((i,j)=>at(8,46+j*46,224,42,action('exclude',`${image('ingredients/'+i.id,32,32)}<span>${esc(i.name)}</span><b>${s.settings.excluded.includes(i.id)?'不吃':'可吃'}</b>`,'setting-row '+(start+j===u.focus?'selected':''),start+j))).join('');footer='↑↓ 选择 · OK 切换 · 双 ↑ 返回';
     }else{
-      const list=[['声音',s.settings.sound?'开':'关'],['音量',s.settings.volume+'%'],['每天重抽',s.settings.rerolls+' 次'],['不吃的食材',s.settings.excluded.length+' 样'],['少辣',s.settings.lessSpicy?'开':'关'],['少油',s.settings.lessOil?'开':'关'],['难度',s.settings.difficulty],['清空记录',u.clearStage?`确认 ${u.clearStage}/2`:'需两次确认']];
+      const list=[['声音',s.settings.sound?'开':'关'],['音量',s.settings.volume+'%'],['不吃的食材',s.settings.excluded.length+' 样'],['少辣',s.settings.lessSpicy?'开':'关'],['少油',s.settings.lessOil?'开':'关'],['难度',s.settings.difficulty],['清空记录',u.clearStage?`确认 ${u.clearStage}/2`:'需两次确认']];
       const start=Math.trunc(u.focus/5)*5;
       body=list.slice(start,start+5).map((r,i)=>at(8,46+i*46,224,42,action('setting',`<span>${r[0]}</span><b>${r[1]}</b>`,'setting-row '+(start+i===u.focus?'selected':''),start+i))).join('');footer=u.clearStage?'OK 确认 · ↑↓ 取消':'↑↓ 选择 · OK 调整';
     }

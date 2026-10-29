@@ -1,21 +1,28 @@
-import {dailySeed,dayNumber,levelFor,scaleQty} from './model.mjs';
+import {drawSeed,levelFor,scaleQty} from './model.mjs';
 export const STORAGE_KEY='nabo-kitchen-prototype-v1';
 export function initialState(day='2026-10-28'){
-  return {version:1,conditions:{people:2,minutes:30,combo:0},settings:{sound:false,volume:50,rerolls:3,excluded:[],lessSpicy:false,lessOil:false,difficulty:2},fridge:[],favorites:[],wanted:[],history:[],cooked:{},streak:{lastDay:'',days:0},shopping:[],progress:{},daily:{day,seed:dailySeed(day),rerollsUsed:0,result:null},device:'browser-01'};
+  return {version:2,drawCounter:0,conditions:{people:2,minutes:30,combo:0},settings:{sound:false,volume:50,rerolls:3,excluded:[],lessSpicy:false,lessOil:false,difficulty:2},fridge:[],favorites:[],wanted:[],history:[],cooked:{},streak:{lastDay:'',days:0},shopping:[],progress:{},daily:{seed:drawSeed(0),rerollsUsed:0,result:null},device:'browser-01'};
 }
-export function restore(storage,key=STORAGE_KEY,day){
-  const base=initialState(day);try{const s=JSON.parse(storage.getItem(key));if(s?.version===1)return {...base,...s,settings:{...base.settings,...s.settings},conditions:{...base.conditions,...s.conditions}};}catch{}
-  return base;
+export function migrateState(value,ids){
+  const base=initialState(),s={...base,...value,version:2,settings:{...base.settings,...value?.settings},conditions:{...base.conditions,...value?.conditions}};
+  if(value?.version===1)s.history=[...(s.history||[])].sort((a,b)=>String(a.day||'').localeCompare(String(b.day||'')));
+  s.history=(s.history||[]).map(x=>({id:x.id}));
+  s.cooked=Object.fromEntries(Object.entries(s.cooked||{}).map(([id,x])=>[id,{count:x.count}]));
+  s.drawCounter=Number(value?.version===2&&Number.isInteger(value.drawCounter)?value.drawCounter:s.daily?.rerollsUsed||0)>>>0;
+  s.daily={...base.daily,...s.daily};delete s.daily.day;s.streak={lastDay:'',days:0};
+  if(ids){const valid=new Set(ids);s.history=s.history.filter(x=>valid.has(x.id));for(const k of ['cooked','progress'])s[k]=Object.fromEntries(Object.entries(s[k]).filter(([id])=>valid.has(id)));for(const k of ['favorites','wanted'])s[k]=s[k].filter(id=>valid.has(id));if(s.daily.result?.ids.some(id=>!valid.has(id)))s.daily.result=null;s.timerItems=(s.timerItems||[]).filter(t=>!t.source||valid.has(t.source.split(':')[0]));}
+  return s;
+}
+export function restore(storage,key=STORAGE_KEY,unused,ids){
+  try{const s=JSON.parse(storage.getItem(key));if(s?.version===1||s?.version===2)return migrateState(s,ids);}catch{}
+  return initialState();
 }
 export function save(storage,state,key=STORAGE_KEY){try{storage.setItem(key,JSON.stringify(state));return true;}catch{return false;}}
-export function ensureDay(s,day){if(s.daily.day!==day)s.daily={day,seed:dailySeed(day,s.device),rerollsUsed:0,result:null};}
-export function stats(s,day){
-  const dates=[...new Set(s.history.map(h=>h.day))].sort().reverse(),today=dayNumber(day);let streak=0,cursor=today;
-  if(dates.length&&dayNumber(dates[0])===today-1)cursor--;
-  for(const d of dates){if(dayNumber(d)===cursor){streak++;cursor--;}else if(dayNumber(d)<cursor)break;}
-  if(s.streak?.lastDay){const age=today-dayNumber(s.streak.lastDay);streak=age>=0&&age<=1?s.streak.days:0;}
+// Compatibility entry point: calendar changes never invalidate results or progress.
+export function ensureDay(){}
+export function stats(s){
   const unique=Object.keys(s.cooked).length,total=Object.values(s.cooked).reduce((n,x)=>n+x.count,0);
-  return {unique,total,streak,today:s.history.filter(h=>h.day===day).length,level:levelFor(unique,streak)};
+  return {unique,total,streak:0,today:0,level:levelFor(unique,total)};
 }
 export function session(s,recipe){
   return s.progress[recipe.id]??=( {index:0,visited:[],timerSteps:[],completed:false} );
@@ -25,10 +32,9 @@ export function completeStep(s,recipe,day){
   if(!p.visited.includes(p.index))p.visited.push(p.index);
   if(p.index<recipe.steps.length-1){p.index++;return {complete:false};}
   if(recipe.steps.some((_,i)=>!p.visited.includes(i)))return {complete:false,error:'还有步骤未完成'};
-  p.completed=true;s.history.push({id:recipe.id,day});s.history=s.history.slice(-60);
-  s.cooked[recipe.id]={count:(s.cooked[recipe.id]?.count||0)+1,lastDay:day};
-  const age=s.streak.lastDay?dayNumber(day)-dayNumber(s.streak.lastDay):99999;
-  s.streak={lastDay:day,days:age===0?s.streak.days:age===1?s.streak.days+1:1};
+  p.completed=true;s.history.push({id:recipe.id});s.history=s.history.slice(-60);
+  s.cooked[recipe.id]={count:(s.cooked[recipe.id]?.count||0)+1};
+  s.daily.result=null;
   return {complete:true,newCompletion:true};
 }
 export function addShopping(s,recipe,people){

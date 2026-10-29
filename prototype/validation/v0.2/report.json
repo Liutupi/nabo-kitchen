@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "tests": 31,
+  "source": "Browser prototype checks; not physical-device acceptance",
+  "source_lf_sha256": {
+    "prototype/model.mjs": "da82822bb44a0c5c06506f5aa65a906940c37fb85e177face1419b4eb6bccc89",
+    "prototype/state.mjs": "63b497c01b3003a894251cc9fc3cd58236faa5467ca25ee8d02f0fe8769706d4"
+  },
+  "C_parity": {
+    "weight_vectors": 160,
+    "draw_and_reroll_vectors": 40,
+    "recipes": 145,
+    "result": "PASS",
+    "fixture": "tests/fixtures/kitchen_v02_parity.json"
+  },
+  "screens": [
+    "P1.png",
+    "P2.png",
+    "P13.png",
+    "focus-preview.png"
+  ],
+  "firmware_validation": "https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-validation-20261029.json"
+}

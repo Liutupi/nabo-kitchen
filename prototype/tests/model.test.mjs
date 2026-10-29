@@ -14,13 +14,13 @@ test('mulberry32 stable uint32 vectors and date/device separation',()=>{
   assert.deepEqual(seq.slice(0,3),[2693262067,11749833,2265367787]);
   assert.notEqual(m.dailySeed(day,'a'),m.dailySeed(day,'b'));assert.notEqual(m.dailySeed(day),m.dailySeed('2026-10-29'));
 });
-test('recency weights use sequential integer percentages, never exclusion',()=>{
+test('recency weights use completion positions, ignore dates and never exclude',()=>{
   const r={...sample,season:[10]};
-  assert.equal(m.recipeWeight(r,{day,history:[{id:r.id,day:'2026-10-27'}]}),13);
-  assert.equal(m.recipeWeight(r,{day,history:[{id:r.id,day:'2026-10-25'}]}),52);
-  assert.equal(m.recipeWeight(r,{day,history:[{id:r.id,day:'2026-10-21'}]}),104);
-  assert.equal(m.recipeWeight(r,{day,history:[{id:r.id,day:'2026-10-14'}]}),130);
-  assert.equal(m.recipeWeight({...r,difficulty:3},{day,history:[{id:r.id,day}],favorites:[r.id],wanted:[r.id],difficulty:1}),11);
+  for(const [age,w] of [[0,10],[1,10],[2,10],[3,40],[6,40],[7,80],[13,80],[14,100]]){
+    const history=[{id:r.id,day:'1900-01-01'},...Array.from({length:age},()=>({id:'other'}))];
+    assert.equal(m.recipeWeight(r,{day:'2099-12-31',history}),w);
+  }
+  assert.equal(m.recipeWeight({...r,difficulty:3},{day,history:[{id:r.id,day}],favorites:[r.id],wanted:[r.id],difficulty:1}),9);
   const recent=fixture('recent','meat'),other=fixture('other','meat'),ctx={day,history:[{id:'recent',day}]};
   assert.equal(m.recipeWeight(recent,ctx),10);assert.equal(m.recipeWeight(other,ctx),100);
   assert.ok(Array.from({length:1000},(_,seed)=>m.recommend([recent,other],{combo:0,minutes:30},ctx,seed)).some(x=>x.ids[0]==='recent'));
@@ -58,7 +58,7 @@ test('full walk required for completion; repeated cooking increments lifetime bu
   st.progress={};for(let i=0;i<3;i++)s.completeStep(st,r,day);
   assert.equal(st.history.length,1);assert.equal(s.completeStep(st,r,day).newCompletion,false);
   delete st.progress[r.id];for(let i=0;i<3;i++)s.completeStep(st,r,'2026-10-29');
-  assert.deepEqual(s.stats(st,'2026-10-29'),{unique:1,total:2,streak:2,today:1,level:1});
+  assert.deepEqual(s.stats(st,'2026-10-29'),{unique:1,total:2,streak:0,today:0,level:1});
   st.history=[];assert.equal(s.stats(st,day).total,2);assert.equal(s.stats(st,day).unique,1);
 });
 test('persistence corruption recovery and date rollover do not erase sessions',()=>{
@@ -82,4 +82,18 @@ test('approved thirty-menu library can form real three/four-dish combinations',(
     assert.ok(selected.some(r=>r.course.includes('veg')));assert.ok(selected.some(r=>r.course.includes('soup')));
     assert.ok(selected.filter(r=>r.course.includes('meat')).length>=(combo===3?2:1));
   }
+});
+test('v2 levels use unique dishes and total completions',()=>{
+  for(const [unique,total,level] of [[0,0,1],[9,59,1],[10,10,2],[1,60,3],[40,40,3],[100,199,3],[99,200,3],[100,200,4]])assert.equal(m.levelFor(unique,total),level);
+});
+test('restored running timers pause with the last saved remaining duration',()=>{
+  let now=1000;const first=new Timers(()=>now);first.add(10,'恢复测试');now=6000;
+  const saved=first.serialize();now=86400000;
+  const restored=new Timers(()=>now,saved);assert.equal(restored.items[0].status,'paused');assert.equal(restored.remaining(restored.items[0]),5000);
+  restored.toggle(1);now+=2000;assert.equal(restored.remaining(restored.items[0]),3000);
+});
+test('legacy date history migrates once and retired references are filtered',()=>{
+  const old={...s.initialState(),version:1,history:[{id:'b',day:'2026-10-29'},{id:'a',day:'2026-10-27'},{id:'retired',day:'2026-10-28'}],cooked:{a:{count:4,lastDay:'2026-10-27'},retired:{count:1}},favorites:['a','retired'],progress:{a:{index:1},retired:{index:2}},daily:{day:'2026-10-29',result:{ids:['a','retired']},rerollsUsed:5}};
+  const st=s.migrateState(old,['a','b']);assert.deepEqual(st.history,[{id:'a'},{id:'b'}]);assert.deepEqual(st.cooked,{a:{count:4}});assert.deepEqual(st.favorites,['a']);assert.equal(st.progress.a.index,1);assert.equal(st.daily.result,null);assert.equal(st.drawCounter,5);assert.equal(st.version,2);
+  assert.equal(m.drawSeed(7,'unit-1'),m.drawSeed(7,'unit-1'));assert.notEqual(m.drawSeed(7,'unit-1'),m.drawSeed(8,'unit-1'));
 });

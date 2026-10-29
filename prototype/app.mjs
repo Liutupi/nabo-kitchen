@@ -9,13 +9,13 @@ const key=testMode?'nabo-kitchen-isolated-tests':store.STORAGE_KEY;
 const testEpoch=Date.UTC(2026,9,28,12),clockKey=key+'-clock';
 let testClock=testEpoch;
 if(testMode){try{testClock=Number(localStorage.getItem(clockKey))||testEpoch;}catch{}}
-const now=()=>testMode?testClock:Date.now(),day=()=>model.localDay(new Date(now()));
+const now=()=>testMode?testClock:Date.now(),day=()=>'';
 const [recipes,ingredientData,heroes]=await Promise.all([fetch('/api/recipes').then(r=>{if(!r.ok)throw Error('菜谱加载失败');return r.json();}),fetch('/data/ingredients.json').then(r=>r.json()),fetch('/api/dish-heroes').then(r=>r.ok?r.json():[]).catch(()=>[])]);
 setDishHeroes(heroes);
 const ingredients=ingredientData.ingredients;
-let state=store.restore(localStorage,key,day());
+let state=store.restore(localStorage,key,undefined,recipes.map(r=>r.id));
 const timers=new Timers(now,state.timerItems||[]);
-let ui={page:0,focus:0,stack:[],recipeId:recipes[0]?.id,result:[],notes:[],comboFocus:0,bookFilter:0,settingsMode:'',clearStage:0,lastActivity:now(),message:'',outside:false};
+let ui={page:0,focus:0,stack:[],recipeId:recipes[0]?.id,result:[],notes:[],comboFocus:0,bookFilter:0,settingsMode:'',fridgeCategory:0,fridgeItems:false,clearStage:0,lastActivity:now(),message:'',outside:false};
 let messageTimeout,transitionTimeout;
 const screen=document.querySelector('#screen');
 const recipe=()=>recipes.find(r=>r.id===ui.recipeId)||recipes[0];
@@ -37,24 +37,25 @@ function paint(){
 function toast(text){ui.message=text;clearTimeout(messageTimeout);messageTimeout=setTimeout(()=>{ui.message='';paint();},2400);paint();}
 function go(page,{push=true,focus=0}={}){
   if(push)ui.stack.push({page:ui.page,focus:ui.focus,recipeId:ui.recipeId});
-  ui.page=page;ui.focus=focus;ui.clearStage=0;ui.settingsMode='';paint();
+  ui.page=page;ui.focus=focus;ui.clearStage=0;ui.settingsMode='';if(page===9){ui.fridgeCategory=0;ui.fridgeItems=false;ui.focus=0;}paint();
 }
 function home(){ui.stack=[];ui.outside=false;go(1,{push:false});}
 function back(){
-  if(ui.page===13&&ui.settingsMode){ui.settingsMode='';ui.focus=3;paint();return;}
+  if(ui.page===9&&ui.fridgeItems){ui.fridgeItems=false;ui.focus=ui.fridgeCategory;paint();return;}
+  if(ui.page===13&&ui.settingsMode){ui.settingsMode='';ui.focus=2;paint();return;}
   const prev=ui.stack.pop();if(prev){Object.assign(ui,prev);ui.clearStage=0;paint();}else home();
 }
 function result(ids,notes=[]){ui.result=ids;ui.notes=notes;ui.comboFocus=0;ui.recipeId=ids[0];go(4,{push:ui.page!==3});}
 function draw(reroll=false){
   store.ensureDay(state,day());
-  if(!reroll&&state.daily.result&&state.daily.conditions===JSON.stringify(state.conditions)){
+  if(!reroll&&state.daily.result){
     result(state.daily.result.ids,state.daily.result.notes);return;
   }
   const replacing=reroll||Boolean(state.daily.result);
-  if(replacing&&state.daily.rerollsUsed>=state.settings.rerolls){toast('今天的重抽次数用完啦');return;}
-  const used=state.daily.rerollsUsed+(replacing?1:0),seed=(state.daily.seed+Math.imul(used,0x9E3779B9))>>>0;
+  const seed=model.drawSeed(state.drawCounter,state.device);
   const choice=model.recommend(recipes,state.conditions,context(),seed,replacing?(ui.result.length?ui.result:state.daily.result.ids):[]);
   if(!choice.ids.length){toast(choice.reason);return;}
+  state.drawCounter=(state.drawCounter+1)>>>0;state.daily.seed=seed;
   if(replacing)state.daily.rerollsUsed++;
   state.daily.result=choice;state.daily.conditions=JSON.stringify(state.conditions);persist();
   go(3,{push:ui.page!==4});clearTimeout(transitionTimeout);transitionTimeout=setTimeout(()=>{if(ui.page===3)result(choice.ids,choice.notes);},testMode?20:1600);
@@ -73,22 +74,22 @@ function nextStep(){
   if(outcome.complete)go(8);else if(outcome.error)toast(outcome.error);else paint();
 }
 const bookList=()=>recipes.filter(r=>ui.bookFilter===0||ui.bookFilter===1&&state.cooked[r.id]||ui.bookFilter===2&&state.favorites.includes(r.id)||ui.bookFilter===3&&r.source==='user');
-const fridgeCatalog=()=>ingredients.filter(i=>i.v===1);
+const fridgeCategories=['meat','seafood','egg_tofu','veg','staple'];
+const fridgeCatalog=()=>ingredients.filter(i=>i.cat===fridgeCategories[ui.fridgeCategory||0]);
 function focusCount(){
-  return ({1:5,2:4,4:Math.max(1,ui.result.length),9:fridgeCatalog().length,10:model.fridgeMatch(recipes,state.fridge,state.settings.excluded).length,11:state.shopping.length+1,12:bookList().length+1,13:ui.settingsMode==='exclude'?ingredients.length:8,7:Math.max(1,timers.items.length)})[ui.page]||1;
+  return ({1:5,2:4,4:Math.max(1,ui.result.length),9:ui.fridgeItems?Math.max(1,fridgeCatalog().length):5,10:model.fridgeMatch(recipes,state.fridge,state.settings.excluded).length,11:state.shopping.length+1,12:bookList().length+1,13:ui.settingsMode==='exclude'?ingredients.length:7,7:Math.max(1,timers.items.length)})[ui.page]||1;
 }
 function toggleFavorite(id){if(!id)return;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();toast(state.favorites.includes(id)?'已收藏':'已取消收藏');}
 function setting(index){
   ui.focus=index;
-  if(index!==7)ui.clearStage=0;
+  if(index!==6)ui.clearStage=0;
   if(index===0)state.settings.sound=!state.settings.sound;
   if(index===1)state.settings.volume=(state.settings.volume+10)%110;
-  if(index===2)state.settings.rerolls=state.settings.rerolls%5+1;
-  if(index===3){ui.settingsMode='exclude';ui.focus=0;}
-  if(index===4)state.settings.lessSpicy=!state.settings.lessSpicy;
-  if(index===5)state.settings.lessOil=!state.settings.lessOil;
-  if(index===6)state.settings.difficulty=state.settings.difficulty%3+1;
-  if(index===7){ui.clearStage++;if(ui.clearStage===3){store.clearRecords(state);ui.clearStage=0;toast('记录已清空');}else toast(ui.clearStage===1?'确认 1/2：清空做菜记录？':'确认 2/2：再按 OK 清空');}
+  if(index===2){ui.settingsMode='exclude';ui.focus=0;}
+  if(index===3)state.settings.lessSpicy=!state.settings.lessSpicy;
+  if(index===4)state.settings.lessOil=!state.settings.lessOil;
+  if(index===5)state.settings.difficulty=state.settings.difficulty%3+1;
+  if(index===6){ui.clearStage++;if(ui.clearStage===3){store.clearRecords(state);ui.clearStage=0;toast('记录已清空');}else toast(ui.clearStage===1?'确认 1/2：清空做菜记录？':'确认 2/2：再按 OK 清空');}
   persist();paint();
 }
 function activate(name,index){
@@ -103,8 +104,8 @@ function activate(name,index){
   else if(name==='combo'){ui.comboFocus=Number(index);ui.recipeId=ui.result[ui.comboFocus];paint();}
   else if(name==='timers'){const alarm=timers.alarm();go(7,{focus:alarm?timers.items.indexOf(alarm):0});}
   else if(name==='timer-select'){ui.focus=Number(index);paint();}
-  else if(name==='category'){const i=fridgeCatalog().findIndex(i=>i.cat===index);if(i>=0)ui.focus=i;paint();}
-  else if(name==='fridge'){ui.focus=Number(index);const id=fridgeCatalog()[ui.focus].id;state.fridge=state.fridge.includes(id)?state.fridge.filter(x=>x!==id):[...state.fridge,id];persist();paint();}
+  else if(name==='category'){ui.fridgeCategory=fridgeCategories.indexOf(index);ui.fridgeItems=false;ui.focus=ui.fridgeCategory;paint();}
+  else if(name==='fridge'){ui.fridgeItems=true;ui.focus=Number(index);const id=fridgeCatalog()[ui.focus]?.id;if(!id)return;state.fridge=state.fridge.includes(id)?state.fridge.filter(x=>x!==id):[...state.fridge,id];persist();paint();}
   else if(name==='recommendation'){const m=model.fridgeMatch(recipes,state.fridge,state.settings.excluded)[Number(index)];if(m)result([m.recipe.id]);}
   else if(name==='shopping'){const x=state.shopping.find(x=>x.uid===Number(index));if(x)x.bought=!x.bought;persist();paint();}
   else if(name==='clear-bought'){state.shopping=state.shopping.filter(x=>!x.bought);ui.focus=Math.min(ui.focus,state.shopping.length);persist();paint();}
@@ -141,6 +142,8 @@ function dispatch(key,kind='short'){
   if(ui.page===4&&key==='UP'){home();return;}
   if(ui.page===5){if(key==='UP')screen.querySelector('.paper.scroll')?.scrollBy(0,-120);if(key==='DOWN'){store.addShopping(state,recipe(),state.conditions.people);persist();toast('食材已加入买菜单');}if(key==='OK')start();return;}
   if(ui.page===8){if(key==='OK')home();return;}
+  if(ui.page===9&&!ui.fridgeItems&&(key==='UP'||key==='DOWN')){ui.fridgeCategory=(ui.fridgeCategory+(key==='UP'?-1:1)+5)%5;ui.focus=ui.fridgeCategory;paint();return;}
+  if(ui.page===9&&!ui.fridgeItems&&key==='OK'){ui.fridgeItems=true;ui.focus=0;paint();return;}
   if(key==='UP'||key==='DOWN'){ui.focus=(ui.focus+(key==='UP'?-1:1)+focusCount())%focusCount();ui.clearStage=0;paint();return;}
   if(key!=='OK')return;
   if(ui.page===1)activate('home',ui.focus);

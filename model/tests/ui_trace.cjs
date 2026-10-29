@@ -14,6 +14,13 @@ const root=path.resolve(__dirname,'../..');
     const ingredients=ingredientData.ingredients.map(x=>x.id).sort();
     const page=await browser.newPage();
     await page.route('**/data/ingredients.json',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(ingredientData)}));
+    // This suite validates the historical v0.1 C model, not the active firmware.
+    await page.route('**/prototype/*',async route=>{
+      const name=new URL(route.request().url()).pathname.split('/').at(-1);
+      if(!['model.mjs','state.mjs','timers.mjs','app.mjs','view.mjs','styles.css'].includes(name)){await route.continue();return;}
+      const body=require('node:fs').readFileSync(path.join(root,'model/tests/fixtures/prototype-v0.1',name));
+      await route.fulfill({status:200,contentType:name.endsWith('.css')?'text/css':'text/javascript',body});
+    });
     await page.goto(base+'/?test=1');await page.waitForFunction(()=>window.kitchenTest?.ready);
     const ids=(await (await fetch(base+'/api/recipes')).json()).map(x=>x.id);
     if(process.env.KITCHEN_TEST_RECIPE_IDS && JSON.stringify(ids)!==JSON.stringify(JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS)))throw Error('Browser recipe set differs from KRC');

@@ -8,6 +8,15 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-29 · Codex（Windows）· 任务 6 开发候选完成，待实机
+
+- 原型和实际固件已去日期依赖：按完成次数降权，菜单跨重启保留，计数器加设备种子抽签，等级只看不同菜数/累计次数。
+- 选中项整块暖橙、深色文字，覆盖主页、条件、列表和设置；[生产 C 主机绘制预览](https://github.com/Liutupi/nabo-kitchen/blob/firmware/assets/kitchen/validation/v0.2/focus-preview.png)，不是设备实拍。
+- 145 道算法对拍：160 组权重、40 组抽签/重抽通过；浏览器 31 项通过，旧 64 道设计模型明确冻结为 v0.1 参考。
+- KST2 增加抽签计数，旧 KST1 日期历史只在首次迁移时排序；新版本不再以日期参与业务，断电计时仍恢复暂停。
+- [候选与验证](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-validation-20261029.json)；任务 6 实机重启/按键验收尚未完成，未刷机、未发布。
+- 下一步仅待新候选应用+资源的具体刷写同意和实机验收；任务 7 发布按用户要求暂缓，仍需 v0.2 实厨至少 3 道。
+
 ### 2026-10-29 · Codex（Windows）· 任务 5 完成
 
 - 重建 145 道 D2 KRC、字库、145 完整菜图及资源包；“腩、煸、蘸、黏”覆盖，动画与身份未改。
@@ -72,7 +81,7 @@
 | 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | **145/145 道完整菜图，缺图 0**；36 张 D2 新图已交付，全部保持 `review`，退役图保留 |
-| 设备 | 用户工牌运行的还是 v0.1.0（144 道旧菜谱） |
+| 设备 | 测试工牌仍是此前验证的应用与 144 道旧资源；v0.2 候选待单独同意上机 |
 | 规格变更 | v0.2 去掉日期依赖，见 [DESIGN.md 第 8 节](game-art/kitchen/DESIGN.md) |
 | 评估 | [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |
 

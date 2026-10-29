@@ -1,4 +1,4 @@
-import {primaryMethod,recipeWeight,recommend} from '../../prototype/model.mjs';
+import {primaryMethod,recipeWeight,recommend} from './fixtures/prototype-v0.1/model.mjs';
 import {testRecipes} from './recipe_fixture.mjs';
 const actual=await testRecipes();
 const recipe=(id,course,ingredient,method,minutes=10)=>({id,course,minutes,difficulty:1,tags:[],

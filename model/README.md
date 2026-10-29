@@ -1,3 +1,7 @@
+> **历史 v0.1 参考**：本目录的 64 道 C 设计模型保持旧格式，宿主对拍显式使用 `tests/fixtures/prototype-v0.1/` 的冻结 JavaScript，来源和哈希在该目录 `provenance.json`。不能把这些历史测试当作当前固件验收。
+>
+> **当前 v0.2**：145 道的实际实现位于 `firmware/main/kitchen/`，以 `prototype/tests/v02-trace.mjs` 生成对拍向量，在固件的 `tests/test_kitchen_v02_parity.py` 与生产 C 比对；当前浏览器原型仍在 `prototype/`，不冻结其开发。
+
 # M2 宿主模型：计时器起步
 
 `kitchen_timer.c` 是独立于 UI、RTOS 和存储的三槽计时器核心。调用方提供同一时钟域的毫秒数；标签、来源、持久化、计时铃和设备重启后的时钟恢复仍由后续集成层实现。`kt_timer` 的二进制内存布局不是持久化格式。接口使用 32 位正整数秒、64 位毫秒，超出这些边界及 ID 耗尽时拒绝创建；这是 C 接口限制，尚未进行设备级 API 评审。

@@ -1,5 +1,5 @@
 export class Timers{
-  constructor(now=()=>Date.now(),saved=[]){this.now=now;this.items=saved.map(t=>({...t}));this.nextId=Math.max(0,...this.items.map(x=>x.id))+1;}
+  constructor(now=()=>Date.now(),saved=[]){this.now=now;this.items=saved.map(t=>({...t,status:t.status==='running'?'paused':t.status}));this.nextId=Math.max(0,...this.items.map(x=>x.id))+1;}
   add(seconds,label,source=''){
     if(!Number.isInteger(seconds)||seconds<1)return {error:'计时时间需为正整数秒'};
     if(this.items.length>=3)return {error:'已有 3 个计时，请先停止一个'};
@@ -12,6 +12,6 @@ export class Timers{
   alarm(){this.tick();return this.items.find(t=>t.status==='done'&&!t.acknowledged);}
   acknowledge(id){const t=this.items.find(t=>t.id===id);if(t)t.acknowledged=true;}
   snapshot(){return this.items.map(t=>({...t,remainingMs:this.remaining(t)}));}
-  serialize(){return this.items.map(t=>({...t}));}
+  serialize(){return this.items.map(t=>({...t,leftMs:this.remaining(t)}));}
 }
 export const timeText = ms => {const s=Math.ceil(Math.max(0,ms)/1000);return `${Math.trunc(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`;};

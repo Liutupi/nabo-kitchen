@@ -14,7 +14,7 @@ test.before(async()=>{
     child.stdout.on('data',d=>{const m=String(d).match(/http:\/\/127\.0\.0\.1:\d+/);if(m){clearTimeout(timeout);resolve(m[0]);}});
     child.on('error',reject);
   });
-  const edge=process.env.EDGE_PATH||'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge';
+  const edge=process.env.EDGE_PATH||(process.platform==='win32'?'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe':'/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge');
   browser=await chromium.launch({headless:true,...(fs.existsSync(edge)?{executablePath:edge}:{})});
   page=await browser.newPage();
   await page.goto(base+'/?test=1');
@@ -22,7 +22,7 @@ test.before(async()=>{
 });
 test.after(async()=>{await browser?.close();child?.kill();});
 
-test('registered hero is visible; recipes without a hero keep their original layers',async()=>{
+test('D2 dishes including the original sample use their complete hero',async()=>{
   await page.evaluate(()=>window.kitchenTest.showResult(['huanggua-chaodan']));
   const hero=page.locator('#screen .dish img[src*="dish-hero/hero_huanggua-chaodan.png"]');
   await hero.waitFor({state:'visible'});
@@ -32,15 +32,15 @@ test('registered hero is visible; recipes without a hero keep their original lay
   });
   assert.equal(await hero.evaluate(img=>img.previousElementSibling.hidden),true);
   await page.evaluate(()=>window.kitchenTest.showResult(['fanqie-chaodan']));
-  assert.equal(await page.locator('#screen .dish img[src*="dish-hero/"]').count(),0);
-  assert.ok(await page.locator('#screen .dish img[src*="dish-layers/"]').count()>0);
+  await page.waitForFunction(()=>document.querySelector('#screen .dish img[src*="hero_fanqie-chaodan"]')?.naturalWidth>0);
+  assert.equal(await page.locator('#screen .dish img[src*="dish-hero/"]').count(),1);
 });
 
 test('a hero that fails to load leaves the fallback layers visible',async()=>{
-  await page.route('**/dish-hero/hero_huanggua-chaodan.png',route=>route.abort());
+  await page.route('**/dish-hero/hero_fanqie-chaodan.png',route=>route.abort());
   await page.reload();
   await page.waitForFunction(()=>window.kitchenTest?.ready);
-  await page.evaluate(()=>window.kitchenTest.showResult(['huanggua-chaodan']));
+  await page.evaluate(()=>window.kitchenTest.showResult(['fanqie-chaodan']));
   await page.waitForFunction(()=>{
     const dish=document.querySelector('#screen .dish');
     return dish && !dish.querySelector('img[src*="dish-hero/"]');
@@ -52,6 +52,10 @@ test('a hero that fails to load leaves the fallback layers visible',async()=>{
 
 test('new required art prefers its image and missing art shows a placeholder',async()=>{
   await page.unrouteAll();
+  await page.route('**/api/dish-heroes',async route=>{
+    const response=await route.fetch(),ids=await response.json();
+    await route.fulfill({response,json:ids.filter(id=>!['baicai-huajia-tang','fanqie-chaodan','qingzheng-luyu'].includes(id))});
+  });
   await page.reload();
   await page.waitForFunction(()=>window.kitchenTest?.ready);
   await page.evaluate(()=>window.kitchenTest.showResult(['fanqie-huajia-tang']));

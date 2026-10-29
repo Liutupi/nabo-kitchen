@@ -1,0 +1,12 @@
+{
+  "scope": "Frozen v0.1 reference for the historical 64-recipe model only; active v0.2 parity runs against the firmware branch",
+  "commit": "ad23f61",
+  "files": {
+    "model.mjs": "7a205f006efc79ce50b1d3c9d51b813e5f871a572746f72f3c78814cef0ddb17",
+    "state.mjs": "c01e69080366342d31742943915d430f82befcdce4d4436827943aa4b932c42b",
+    "timers.mjs": "dd70d228a29961be9c346d955b81577a4a6fccb91343629d8485cf19e92b5684",
+    "app.mjs": "2573cd540cdae045e4c60cdccbc7167132536b8b495c8c637a651d02674e8869",
+    "view.mjs": "5dfc96218a44eb6ecfb6c1a1dcefddf1eda380ef635b5d0860739f80e0fb3a32",
+    "styles.css": "d1536f7b71ca2e80e5fbfd16ba01669bf3d23a21be3164547bbab46a7e7f7db4"
+  }
+}

@@ -96,7 +96,7 @@ footer{position:absolute;bottom:0;height:28px;width:240px;background:var(--ink);
 .stamp{transform:rotate(-14deg)}
 .stamp b{position:absolute;left:10px;right:10px;top:25px;text-align:center;font-size:15px;color:var(--red);background:var(--paper)}
 .categories{display:flex;gap:5px}
-.category{font-size:12px;color:#cfc9e6;background:var(--panel);padding:2px 10px;border-radius:8px}
+.category{font-size:12px;color:#cfc9e6;background:var(--panel);padding:2px 8px;border-radius:8px}
 .category.active{background:#5DB7F2;color:var(--ink)}
 .ingredient-card{position:relative;width:52px;height:66px;border-radius:10px;background:var(--paper);color:var(--ink);display:flex;flex-direction:column;align-items:center;padding:4px 0}
 .ingredient-card small{font-size:12px;margin-top:2px}
@@ -145,3 +145,9 @@ aside{max-width:350px;padding:0 8px}
 
 .program-icon{display:inline-block;vertical-align:middle;flex:none}.check-mark{display:inline-block;width:5px;height:9px;border-right:2px solid white;border-bottom:2px solid white;transform:rotate(40deg);margin-top:1px}.box:has(.check-mark){background:#4FC98A}.filter-row:after{content:"";display:inline-block;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid var(--paper);margin-left:8px}.outside:has(.alarm){opacity:1}
 #screen{font-family:Archivo,KitchenHan,sans-serif}
+
+/* Selected focus uses a full warm fill, with dark text on every selectable surface. */
+#screen button.selected{background:var(--gold);color:var(--ink);outline:2px solid var(--outline);outline-offset:0}
+#screen button.selected small,#screen button.selected b,#screen button.selected span{color:var(--ink)}
+#screen button.selected.bought{opacity:1}
+#screen button.primary:not(.selected){background:#FF6B5B;color:var(--ink)}
