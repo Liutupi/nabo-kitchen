@@ -1,0 +1,26 @@
+{
+  "id": "hero_suanxiang-qiezi",
+  "recipe_id": "suanxiang-qiezi",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanxiang-qiezi-source.png",
+  "original_sha256": "fa95055b909942d063a2585cdff93167177cbf139ef50f78c9749ab42bdf0c75",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "ff2d5b1eb1e0dea20f13cade2d7873177176fb6543c5b9d24211caf6a4398c7d",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanxiang-qiezi. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜香煎茄子. Actual recipe ingredients: 茄子 (main), 蒜. Preparation reference: 茄子切小条，蒜切末。 锅放油，中火煎茄子至表面微黄。 加入水盖锅，小火焖6分钟至软透。 加蒜末和盐翻炒1分钟后出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "736e15594cbe4275aa222030d3473a4f127b0be47ec46a78db2e53e2ddf401cd",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "e90170ee01283e47f3864c0e88ceccd3855f3097a58c32e1f82120ad4a9eebf5",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

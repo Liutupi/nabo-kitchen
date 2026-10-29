@@ -183,3 +183,124 @@ fish_whole__soup,dish-L2,dish-layers/fish_whole__soup.png,160x120,640x480,0.1,Co
 pork_mince__patty_egg_steamed,dish-L2,dish-layers/pork_mince__patty_egg_steamed.png,160x120,640x480,0.1,Codex,review,肉饼上蒸熟鸡蛋；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
 beef__chunks_stewed,dish-L2,dish-layers/beef__chunks_stewed.png,160x120,640x480,0.1,Codex,review,汤里炖熟牛肉块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
 potato__chunks_soup,dish-L2,dish-layers/potato__chunks_soup.png,160x120,640x480,0.1,Codex,review,汤里原色土豆块；已确认菜单所需新形态；2026-10-28 已交付透明PNG和同名JSON，待审图
+ui_fridge,icon,icons/ui_fridge.png,40x40,160x160,0.1,Codex,review,冰箱入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_shopping,icon,icons/ui_shopping.png,40x40,160x160,0.1,Codex,review,买菜单入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_recipe_book,icon,icons/ui_recipe_book.png,40x40,160x160,0.1,Codex,review,我的菜谱入口图标；程序几何绘制；待目标尺寸与实机审图
+ui_settings,icon,icons/ui_settings.png,40x40,160x160,0.1,Codex,review,设置入口图标；程序几何绘制；待目标尺寸与实机审图
+hero_huanggua-chaodan,hero,dish-hero/hero_huanggua-chaodan.png,160x120,640x480,0.1,Codex,review,黄瓜炒鸡蛋完整菜图样稿；待逐图审美及实机验收
+hero_congjiang-zheng-jitui,hero,dish-hero/hero_congjiang-zheng-jitui.png,160x120,640x480,0.1,Codex,review,葱姜蒸鸡腿完整菜图样稿；待逐图审美及实机验收
+hero_donggua-paigu-tang,hero,dish-hero/hero_donggua-paigu-tang.png,160x120,640x480,0.1,Codex,review,冬瓜排骨汤完整菜图样稿；待逐图审美及实机验收
+hero_suanxiang-paigu,hero,dish-hero/hero_suanxiang-paigu.png,160x120,640x480,0.1,Codex,review,蒜香蒸排骨完整菜图样稿；待逐图审美及实机验收
+hero_qingjiao-tudoupian,hero,dish-hero/hero_qingjiao-tudoupian.png,160x120,640x480,0.1,Codex,review,青椒土豆片完整菜图样稿；待逐图审美及实机验收
+hero_jiangcong-jianyu,hero,dish-hero/hero_jiangcong-jianyu.png,160x120,640x480,0.1,Codex,review,姜葱煎鱼完整菜图样稿；待逐图审美及实机验收
+hero_fanqie-huajia-tang,hero,dish-hero/hero_fanqie-huajia-tang.png,160x120,640x480,0.1,Codex,review,番茄花甲汤完整菜图样稿；待逐图审美及实机验收
+hero_fanqie-yupian-tang,hero,dish-hero/hero_fanqie-yupian-tang.png,160x120,640x480,0.1,Codex,review,番茄鱼片汤完整菜图样稿；待逐图审美及实机验收
+crab,ingredient,ingredients/crab.png,40x40,160x160,0.3,Codex,review,整蟹；原创图标，待审图及实机验收
+scallop,ingredient,ingredients/scallop.png,40x40,160x160,0.3,Codex,review,去壳扇贝肉；原创图标，待审图及实机验收
+oyster_meat,ingredient,ingredients/oyster_meat.png,40x40,160x160,0.3,Codex,review,去壳牡蛎肉；原创图标，待审图及实机验收
+mussel,ingredient,ingredients/mussel.png,40x40,160x160,0.3,Codex,review,带壳青口贝；原创图标，待审图及实机验收
+razor_clam,ingredient,ingredients/razor_clam.png,40x40,160x160,0.3,Codex,review,带壳蛏子；原创图标，待审图及实机验收
+abalone,ingredient,ingredients/abalone.png,40x40,160x160,0.3,Codex,review,去壳鲍鱼肉；原创图标，待审图及实机验收
+octopus,ingredient,ingredients/octopus.png,40x40,160x160,0.3,Codex,review,章鱼；原创图标，待审图及实机验收
+salmon,ingredient,ingredients/salmon.png,40x40,160x160,0.3,Codex,review,生三文鱼肉；原创图标，待审图及实机验收
+hero_muli-doufu-tang,hero,dish-hero/hero_muli-doufu-tang.png,160x120,640x480,0.1,Codex,review,牡蛎豆腐汤完整菜图样稿；待逐图审美及实机验收
+hero_chengzi-doufu-tang,hero,dish-hero/hero_chengzi-doufu-tang.png,160x120,640x480,0.1,Codex,review,蛏子豆腐汤完整菜图样稿；待逐图审美及实机验收
+hero_fanqie-chaodan,hero,dish-hero/hero_fanqie-chaodan.png,160x120,640x480,0.1,Codex,review,番茄炒蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanrong-caixin,hero,dish-hero/hero_suanrong-caixin.png,160x120,640x480,0.1,Codex,review,蒜蓉菜心完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-dantang,hero,dish-hero/hero_fanqie-dantang.png,160x120,640x480,0.1,Codex,review,番茄蛋汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baiqie-ji,hero,dish-hero/hero_baiqie-ji.png,160x120,640x480,0.1,Codex,review,白切鸡完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingzheng-luyu,hero,dish-hero/hero_qingzheng-luyu.png,160x120,640x480,0.1,Codex,review,清蒸鲈鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_hongshao-paigu,hero,dish-hero/hero_hongshao-paigu.png,160x120,640x480,0.1,Codex,review,红烧排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_kele-jichi,hero,dish-hero/hero_kele-jichi.png,160x120,640x480,0.1,Codex,review,可乐鸡翅完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-menji,hero,dish-hero/hero_xianggu-menji.png,160x120,640x480,0.1,Codex,review,香菇焖鸡完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_hongshao-rou,hero,dish-hero/hero_hongshao-rou.png,160x120,640x480,0.1,Codex,review,红烧肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-rousi,hero,dish-hero/hero_qingjiao-rousi.png,160x120,640x480,0.1,Codex,review,青椒肉丝完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_yangcong-chao-niurou,hero,dish-hero/hero_yangcong-chao-niurou.png,160x120,640x480,0.1,Codex,review,洋葱炒牛肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_hongshao-yu,hero,dish-hero/hero_hongshao-yu.png,160x120,640x480,0.1,Codex,review,红烧鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baizhuo-xia,hero,dish-hero/hero_baizhuo-xia.png,160x120,640x480,0.1,Codex,review,白灼虾完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_roubing-zhengdan,hero,dish-hero/hero_roubing-zhengdan.png,160x120,640x480,0.1,Codex,review,肉饼蒸蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xiaren-chaodan,hero,dish-hero/hero_xiaren-chaodan.png,160x120,640x480,0.1,Codex,review,虾仁炒蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanrong-shengcai,hero,dish-hero/hero_suanrong-shengcai.png,160x120,640x480,0.1,Codex,review,蒜蓉生菜完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_culiu-baicai,hero,dish-hero/hero_culiu-baicai.png,160x120,640x480,0.1,Codex,review,醋溜白菜完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_chao-xilanhua,hero,dish-hero/hero_chao-xilanhua.png,160x120,640x480,0.1,Codex,review,炒西兰花完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanla-tudousi,hero,dish-hero/hero_suanla-tudousi.png,160x120,640x480,0.1,Codex,review,酸辣土豆丝完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_jiyu-doufu-tang,hero,dish-hero/hero_jiyu-doufu-tang.png,160x120,640x480,0.1,Codex,review,鲫鱼豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_hongshao-qiezi,hero,dish-hero/hero_hongshao-qiezi.png,160x120,640x480,0.1,Codex,review,红烧茄子完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-tudou-niurou-tang,hero,dish-hero/hero_fanqie-tudou-niurou-tang.png,160x120,640x480,0.1,Codex,review,番茄土豆牛肉汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baicai-danhua-tang,hero,dish-hero/hero_baicai-danhua-tang.png,160x120,640x480,0.1,Codex,review,白菜蛋花汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_hupi-qingjiao,hero,dish-hero/hero_hupi-qingjiao.png,160x120,640x480,0.1,Codex,review,虎皮青椒完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baicai-doufu,hero,dish-hero/hero_baicai-doufu.png,160x120,640x480,0.1,Codex,review,白菜炖豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_jiachang-doufu,hero,dish-hero/hero_jiachang-doufu.png,160x120,640x480,0.1,Codex,review,家常豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baicai-huajia-tang,hero,dish-hero/hero_baicai-huajia-tang.png,160x120,640x480,0.1,Codex,review,白菜花甲汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xiangjian-doufu,hero,dish-hero/hero_xiangjian-doufu.png,160x120,640x480,0.1,Codex,review,香煎豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_zheng-shuidan,hero,dish-hero/hero_zheng-shuidan.png,160x120,640x480,0.1,Codex,review,蒸水蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baicai-paigu-tang,hero,dish-hero/hero_baicai-paigu-tang.png,160x120,640x480,0.1,Codex,review,白菜排骨汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_pai-huanggua,hero,dish-hero/hero_pai-huanggua.png,160x120,640x480,0.1,Codex,review,拍黄瓜完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingcai-doufu-tang,hero,dish-hero/hero_qingcai-doufu-tang.png,160x120,640x480,0.1,Codex,review,青菜豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baicai-yupian-tang,hero,dish-hero/hero_baicai-yupian-tang.png,160x120,640x480,0.1,Codex,review,白菜鱼片汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_baizhuo-caixin,hero,dish-hero/hero_baizhuo-caixin.png,160x120,640x480,0.1,Codex,review,白灼菜心完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_congshao-doufu,hero,dish-hero/hero_congshao-doufu.png,160x120,640x480,0.1,Codex,review,葱烧豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_chizhi-zheng-paigu,hero,dish-hero/hero_chizhi-zheng-paigu.png,160x120,640x480,0.1,Codex,review,豉汁蒸排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_donggua-yupian-tang,hero,dish-hero/hero_donggua-yupian-tang.png,160x120,640x480,0.1,Codex,review,冬瓜鱼片汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_douya-chaodan,hero,dish-hero/hero_douya-chaodan.png,160x120,640x480,0.1,Codex,review,豆芽炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_donggua-doufu-tang,hero,dish-hero/hero_donggua-doufu-tang.png,160x120,640x480,0.1,Codex,review,冬瓜豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-chao-youyu,hero,dish-hero/hero_fanqie-chao-youyu.png,160x120,640x480,0.1,Codex,review,番茄炒鱿鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-doufu-tang,hero,dish-hero/hero_fanqie-doufu-tang.png,160x120,640x480,0.1,Codex,review,番茄豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-jidan-mian,hero,dish-hero/hero_fanqie-jidan-mian.png,160x120,640x480,0.1,Codex,review,番茄鸡蛋面完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-jitui,hero,dish-hero/hero_fanqie-jitui.png,160x120,640x480,0.1,Codex,review,番茄焖鸡腿完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-paigu,hero,dish-hero/hero_fanqie-paigu.png,160x120,640x480,0.1,Codex,review,番茄焖排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-roumo-doufu,hero,dish-hero/hero_fanqie-roumo-doufu.png,160x120,640x480,0.1,Codex,review,番茄肉末豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-shao-niurou,hero,dish-hero/hero_fanqie-shao-niurou.png,160x120,640x480,0.1,Codex,review,番茄烧牛肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-shaoyu,hero,dish-hero/hero_fanqie-shaoyu.png,160x120,640x480,0.1,Codex,review,番茄烧鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_fanqie-xiaren,hero,dish-hero/hero_fanqie-xiaren.png,160x120,640x480,0.1,Codex,review,番茄虾仁完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_haoyou-shengcai,hero,dish-hero/hero_haoyou-shengcai.png,160x120,640x480,0.1,Codex,review,蚝油生菜完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_huluobo-chaodan,hero,dish-hero/hero_huluobo-chaodan.png,160x120,640x480,0.1,Codex,review,胡萝卜炒蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_jiangcong-menji,hero,dish-hero/hero_jiangcong-menji.png,160x120,640x480,0.1,Codex,review,姜葱焖鸡完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_jidan-chaofan,hero,dish-hero/hero_jidan-chaofan.png,160x120,640x480,0.1,Codex,review,鸡蛋炒饭完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_kugua-chaodan,hero,dish-hero/hero_kugua-chaodan.png,160x120,640x480,0.1,Codex,review,苦瓜炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_liangban-xilanhua,hero,dish-hero/hero_liangban-xilanhua.png,160x120,640x480,0.1,Codex,review,凉拌西兰花完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_mapo-doufu,hero,dish-hero/hero_mapo-doufu.png,160x120,640x480,0.1,Codex,review,麻婆豆腐完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_muli-chaodan,hero,dish-hero/hero_muli-chaodan.png,160x120,640x480,0.1,Codex,review,牡蛎炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_nangua-zhengdan,hero,dish-hero/hero_nangua-zhengdan.png,160x120,640x480,0.1,Codex,review,南瓜蒸鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qiezi-roumo,hero,dish-hero/hero_qiezi-roumo.png,160x120,640x480,0.1,Codex,review,肉末烧茄子完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingcai-roupian,hero,dish-hero/hero_qingcai-roupian.png,160x120,640x480,0.1,Codex,review,菜心炒肉片完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chao-huajia,hero,dish-hero/hero_qingjiao-chao-huajia.png,160x120,640x480,0.1,Codex,review,青椒炒花甲完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chao-youyu,hero,dish-hero/hero_qingjiao-chao-youyu.png,160x120,640x480,0.1,Codex,review,青椒炒鱿鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chaodan,hero,dish-hero/hero_qingjiao-chaodan.png,160x120,640x480,0.1,Codex,review,青椒炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chaodougan,hero,dish-hero/hero_qingjiao-chaodougan.png,160x120,640x480,0.1,Codex,review,青椒炒豆干完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chaoniurou,hero,dish-hero/hero_qingjiao-chaoniurou.png,160x120,640x480,0.1,Codex,review,青椒炒牛肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_qingjiao-chengzi-tang,hero,dish-hero/hero_qingjiao-chengzi-tang.png,160x120,640x480,0.1,Codex,review,青椒蛏子汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收；已按蛏子参考纠正细长壳形
+hero_qingjiao-xiaren,hero,dish-hero/hero_qingjiao-xiaren.png,160x120,640x480,0.1,Codex,review,青椒炒虾仁完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_roumo-doufu-tang,hero,dish-hero/hero_roumo-doufu-tang.png,160x120,640x480,0.1,Codex,review,肉末豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_roumo-jinzhengu,hero,dish-hero/hero_roumo-jinzhengu.png,160x120,640x480,0.1,Codex,review,肉末金针菇完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_roupian-donggua-tang,hero,dish-hero/hero_roupian-donggua-tang.png,160x120,640x480,0.1,Codex,review,冬瓜肉片汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_shijin-zhengdan,hero,dish-hero/hero_shijin-zhengdan.png,160x120,640x480,0.1,Codex,review,什锦蒸蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanxiang-jichi,hero,dish-hero/hero_suanxiang-jichi.png,160x120,640x480,0.1,Codex,review,蒜香焖鸡翅完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanxiang-qiezi,hero,dish-hero/hero_suanxiang-qiezi.png,160x120,640x480,0.1,Codex,review,蒜香煎茄子完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_suanxiang-xiaren,hero,dish-hero/hero_suanxiang-xiaren.png,160x120,640x480,0.1,Codex,review,蒜香虾仁完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_tangcu-yu,hero,dish-hero/hero_tangcu-yu.png,160x120,640x480,0.1,Codex,review,糖醋鱼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_tudou-chaoroupian,hero,dish-hero/hero_tudou-chaoroupian.png,160x120,640x480,0.1,Codex,review,土豆炒肉片完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_tudou-dun-jitui,hero,dish-hero/hero_tudou-dun-jitui.png,160x120,640x480,0.1,Codex,review,土豆炖鸡腿完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_tudou-jichi,hero,dish-hero/hero_tudou-jichi.png,160x120,640x480,0.1,Codex,review,土豆焖鸡翅完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_tudou-men-paigu,hero,dish-hero/hero_tudou-men-paigu.png,160x120,640x480,0.1,Codex,review,土豆焖排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-baicai,hero,dish-hero/hero_xianggu-baicai.png,160x120,640x480,0.1,Codex,review,香菇焖白菜完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-chaocaixin,hero,dish-hero/hero_xianggu-chaocaixin.png,160x120,640x480,0.1,Codex,review,香菇炒菜心完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-chaorou,hero,dish-hero/hero_xianggu-chaorou.png,160x120,640x480,0.1,Codex,review,香菇炒肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-danhua-tang,hero,dish-hero/hero_xianggu-danhua-tang.png,160x120,640x480,0.1,Codex,review,香菇蛋花汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-doufu-tang,hero,dish-hero/hero_xianggu-doufu-tang.png,160x120,640x480,0.1,Codex,review,香菇豆腐汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-jitui-tang,hero,dish-hero/hero_xianggu-jitui-tang.png,160x120,640x480,0.1,Codex,review,香菇鸡腿汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-paigu,hero,dish-hero/hero_xianggu-paigu.png,160x120,640x480,0.1,Codex,review,香菇焖排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-paigu-tang,hero,dish-hero/hero_xianggu-paigu-tang.png,160x120,640x480,0.1,Codex,review,香菇排骨汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-roubing,hero,dish-hero/hero_xianggu-roubing.png,160x120,640x480,0.1,Codex,review,香菇蒸肉饼完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-xilanhua,hero,dish-hero/hero_xianggu-xilanhua.png,160x120,640x480,0.1,Codex,review,香菇炒西兰花完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xianggu-zhengji,hero,dish-hero/hero_xianggu-zhengji.png,160x120,640x480,0.1,Codex,review,香菇蒸鸡完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xiaochao-rou,hero,dish-hero/hero_xiaochao-rou.png,160x120,640x480,0.1,Codex,review,小炒肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xiaren-donggua-tang,hero,dish-hero/hero_xiaren-donggua-tang.png,160x120,640x480,0.1,Codex,review,虾仁冬瓜汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xilanhua-chaodan,hero,dish-hero/hero_xilanhua-chaodan.png,160x120,640x480,0.1,Codex,review,西兰花炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xilanhua-chaorou,hero,dish-hero/hero_xilanhua-chaorou.png,160x120,640x480,0.1,Codex,review,西兰花炒肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xilanhua-chaoniurou,hero,dish-hero/hero_xilanhua-chaoniurou.png,160x120,640x480,0.1,Codex,review,西兰花炒牛肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_xilanhua-xiaren,hero,dish-hero/hero_xilanhua-xiaren.png,160x120,640x480,0.1,Codex,review,西兰花炒虾仁完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_yangcong-chaodan,hero,dish-hero/hero_yangcong-chaodan.png,160x120,640x480,0.1,Codex,review,洋葱炒鸡蛋完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_yangcong-chaorou,hero,dish-hero/hero_yangcong-chaorou.png,160x120,640x480,0.1,Codex,review,洋葱炒肉完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_yangcong-paigu,hero,dish-hero/hero_yangcong-paigu.png,160x120,640x480,0.1,Codex,review,洋葱焖排骨完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收
+hero_yumi-paigu-tang,hero,dish-hero/hero_yumi-paigu-tang.png,160x120,640x480,0.1,Codex,review,玉米排骨汤完整菜图；2026-10-29 补图批次，待逐图审美、准确度及实机验收

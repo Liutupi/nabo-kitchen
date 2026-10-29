@@ -1,0 +1,26 @@
+{
+  "id": "hero_suanxiang-xiaren",
+  "recipe_id": "suanxiang-xiaren",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanxiang-xiaren-source.png",
+  "original_sha256": "936f71373d943cd774cdbb19278c4af6d7574a7460dfd5e833c3ec6d1a04704b",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "8ff3a485c46b5d71ab9883596c7f593e21d207ad983af86d868f7398f9c06d83",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanxiang-xiaren. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜香虾仁. Actual recipe ingredients: 虾 (main), 蒜. Preparation reference: 蒜切末；另用刀板去虾壳和虾线，沥干后洗手洗具。 锅中放油，小火炒香蒜末，不要炒焦。 转中火放虾仁，翻炒至完全不透明。 加盐拌匀；检查最厚虾肉熟透后盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "a4e411a422ecd837ab94b6c9a01e4e795968c17ca59245a57cfd7324a8c9cd1a",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "4c134017a107e09d580ead8d93e5b98f110f3bc7d3a05d91e16597b8149f824b",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

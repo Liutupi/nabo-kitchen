@@ -1,0 +1,85 @@
+{
+ "id": "tudou-dun-jitui",
+ "name": "土豆炖鸡腿",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 45,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "potato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "350毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿切块，土豆去皮切块，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油炒香姜，加入鸡块炒到表面变色。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加土豆、生抽和水煮开，小火炖20分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 1200
+  },
+  {
+   "text": "土豆软透、鸡肉流出清汁即熟，收汁出锅。",
+   "method": "stew",
+   "heat": "mid",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "potato__chunks_braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

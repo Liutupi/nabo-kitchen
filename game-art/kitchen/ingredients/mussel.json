@@ -1,0 +1,16 @@
+{
+  "id": "mussel",
+  "subject": "带壳青口贝",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/mussel-source.png",
+  "original_sha256": "cb5ec58cba881857954f17ad8d1a13abe7aa591d0590fbb3e57415c4f38441ec",
+  "path": "ingredients/mussel.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "31fb903f4aaeeb5ac84ed79dd6be3fa44251baecfa6b6d01802172c823c9c76e",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

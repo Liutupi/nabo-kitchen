@@ -1,0 +1,82 @@
+{
+ "id": "qingjiao-chengzi-tang",
+ "name": "青椒蛏子汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "razor_clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "蛏子泡淡盐水吐沙30分钟，刷洗干净；青椒切片，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放700毫升水和姜煮开，加入青椒煮2分钟。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "放入蛏子，煮到全部张口后再煮1分钟。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 120,
+   "tip": "没开口的挑出"
+  },
+  {
+   "text": "加盐调味盛出。",
+   "method": "boil",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

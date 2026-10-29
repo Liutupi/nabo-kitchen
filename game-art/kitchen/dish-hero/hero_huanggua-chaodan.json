@@ -1,0 +1,23 @@
+{
+  "id": "hero_huanggua-chaodan",
+  "recipe_id": "huanggua-chaodan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_huanggua-chaodan-source.png",
+  "original_sha256": "176991cf1deead59f68371892db9621bd5dec855420c352636c2f87db3ed8aba",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "c7507f9c54b3af3763aa520b6c5f14994f5e647ebe96c0576f1c50783628e53d",
+  "references": [
+    "game-art/kitchen/dish-layers/tomato__wedge_cooked.png",
+    "Dreamina canvas 8d92b4a3-e66d-4919-8797-69e44644c343, node node_pqekjh1e27"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

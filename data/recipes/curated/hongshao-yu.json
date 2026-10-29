@@ -80,9 +80,9 @@
    "timer": 600
   },
   {
-   "text": "测最厚鱼肉达到63℃，鱼肉不透明且能轻松分离。",
+   "text": "筷子能轻松扎进鱼背最厚处，即可装盘。",
    "method": "braise",
-   "heat": "low"
+   "heat": "off"
   }
  ],
  "dish": {
@@ -98,5 +98,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

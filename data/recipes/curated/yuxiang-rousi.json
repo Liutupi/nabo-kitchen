@@ -1,0 +1,126 @@
+{
+ "id": "yuxiang-rousi",
+ "name": "鱼香肉丝",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "川",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_lean",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "carrot",
+   "qty": 50,
+   "unit": "克"
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个"
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "wood_ear",
+   "qty": "1小把"
+  },
+  {
+   "id": "chili_bean",
+   "qty": "1大勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "2大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "2小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "木耳提前泡发；肉、木耳、胡萝卜、青椒都切丝，姜蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "肉丝加少许生抽、1小勺淀粉和油抓匀，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "醋、糖、生抽、1小勺淀粉加3大勺水，调成鱼香汁。",
+   "method": "mix",
+   "heat": "off",
+   "tip": "糖醋一比一"
+  },
+  {
+   "text": "热锅放油，下肉丝快速划散，变白就盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "炒香姜蒜和豆瓣酱，下胡萝卜、木耳、青椒炒1分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "倒回肉丝和鱼香汁，大火翻匀到汁变亮，出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "chili",
+  "layers": [
+   "pork_lean__shreds_stirfried",
+   "carrot__slices",
+   "green_pepper__strips"
+  ],
+  "hero": false,
+  "garnish": [
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

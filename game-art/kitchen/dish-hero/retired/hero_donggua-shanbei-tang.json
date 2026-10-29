@@ -1,0 +1,26 @@
+{
+  "id": "hero_donggua-shanbei-tang",
+  "recipe_id": "donggua-shanbei-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_donggua-shanbei-tang-source.png",
+  "original_sha256": "19e3d26305bf2aaf613fd9c517a67186bed9a403d4fe4d7cc2fb365aa2d0dc5b",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "926bb95bfd053c3ecf34e820e68a609693b05669e6b1c8741c484be8d3347d9a",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_donggua-shanbei-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 冬瓜扇贝汤. Actual recipe ingredients: 扇贝肉 (main), 冬瓜 (main), 姜. Preparation reference: 冬瓜去皮切薄片、姜切片；扇贝肉另用生食器具处理。 处理生扇贝后洗手并清洗刀板、台面。 700毫升水加姜煮开，放冬瓜煮至软。 加入扇贝肉煮熟；肉不透明、扎实且最厚处达63℃。 加盐调味盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4626745ae5a1be151772544fc8c6a4012a6484248959f147c028d7fbf705f434",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "8f749f91531dfbea9e8c70dbbf36cb9ba83577ac87a293152235b2b080c9273f",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

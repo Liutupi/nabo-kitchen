@@ -1,0 +1,89 @@
+{
+ "id": "suanrong-zheng-baoyu",
+ "name": "蒜蓉蒸鲍鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "宴客"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "abalone",
+   "qty": 6,
+   "unit": "只",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 6,
+   "unit": "瓣"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "steam_soy",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鲍鱼刷洗干净，挖出鲍鱼肉，去掉内脏和嘴。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "用勺子贴壳挖"
+  },
+  {
+   "text": "鲍鱼肉切十字花刀，放回壳里摆盘；蒜剁末，葱切花。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "一半蒜末用油小火炒到微黄，和生蒜末拌匀。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 60,
+   "tip": "金银蒜更香"
+  },
+  {
+   "text": "蒜蓉铺在鲍鱼上，水开后大火蒸6分钟。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 360,
+   "tip": "蒸久了会变硬"
+  },
+  {
+   "text": "淋蒸鱼豉油，撒葱花上桌。",
+   "method": "steam",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "soy_steam",
+  "layers": [
+   "shiitake__braised"
+  ],
+  "hero": false,
+  "garnish": [
+   "garlic",
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

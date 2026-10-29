@@ -1,0 +1,82 @@
+{
+ "id": "xiaren-donggua-tang",
+ "name": "虾仁冬瓜汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "winter_melon",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "冬瓜去皮切片，姜切丝；虾去壳、挑出虾线。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "水和姜煮开，放冬瓜煮至透明变软。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 480
+  },
+  {
+   "text": "放虾仁煮至肉完全不透明、熟透。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐调味，关火盛出。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "shrimp__peeled_stirfried",
+   "winter_melon__soup_chunks"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

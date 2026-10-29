@@ -1,0 +1,83 @@
+{
+ "id": "lachang-menfan",
+ "name": "腊肠焖饭",
+ "course": [
+  "staple"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "一锅出"
+ ],
+ "minutes": 50,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "rice",
+   "qty": 300,
+   "unit": "克",
+   "main": true,
+   "note": "大米"
+  },
+  {
+   "id": "lap_cheong",
+   "qty": 2,
+   "unit": "根",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "大米淘洗干净，按平常煮饭的水量加水，浸泡20分钟。",
+   "method": "boil",
+   "heat": "off",
+   "timer": 1200
+  },
+  {
+   "text": "腊肠斜切成片，铺在米上。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "按煮饭键煮熟，跳键后再焖10分钟。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 600,
+   "tip": "电饭锅最省事"
+  },
+  {
+   "text": "淋上生抽和几滴油，撒葱花拌匀。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "claypot",
+  "sauce": null,
+  "layers": [
+   "lap_cheong__slices"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

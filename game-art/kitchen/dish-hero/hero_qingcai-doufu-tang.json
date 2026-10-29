@@ -1,0 +1,26 @@
+{
+  "id": "hero_qingcai-doufu-tang",
+  "recipe_id": "qingcai-doufu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingcai-doufu-tang-source.png",
+  "original_sha256": "e57f914d029d6a4a4ca77ca4f449b30d140834855efb6da4852594e4f2e37451",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "7f2076a5e314ff2b5650752ca3c0ce7a901aa88b2137734764273e5603eece56",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingcai-doufu-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青菜豆腐汤. Actual recipe ingredients: 菜心 (main), 豆腐 (main). Preparation reference: 菜心洗净切4厘米段，豆腐切2厘米块。 锅内加1000毫升水和食用油，煮开。 加入豆腐，小火煮5分钟。 加入菜心，中火煮2分钟至菜梗熟透。 加盐和香油，关火后盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "1bd99ca375945b2a8a2839cb551ebe5a9b2d381f4153368a77c06d672ade1c98",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "8edd5cda8d8aba692d4cf6aba3bad49d8fdb27884688d023f858a0b4fa296fbc",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

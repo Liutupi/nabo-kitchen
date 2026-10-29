@@ -1,0 +1,108 @@
+{
+ "id": "mapo-doufu",
+ "name": "麻婆豆腐",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "川",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "pork_mince",
+   "qty": 100,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "chili_bean",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "200毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆腐切块，用淡盐水泡5分钟；蒜和葱切末。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "泡过不容易碎"
+  },
+  {
+   "text": "锅中放油，中火把肉末炒散、炒到出油。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加入蒜末、豆瓣酱和生抽，小火炒出红油。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 60
+  },
+  {
+   "text": "加入豆腐和180毫升水，煮开后小火煮4分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 240,
+   "tip": "推着翻，别用铲子炒"
+  },
+  {
+   "text": "淀粉和20毫升水调匀，分两次倒入，撒葱后关火。",
+   "method": "braise",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "chili",
+  "layers": [
+   "tofu__cubes_braised",
+   "pork_mince__crumbs"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

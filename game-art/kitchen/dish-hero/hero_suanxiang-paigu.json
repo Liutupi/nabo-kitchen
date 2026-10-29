@@ -1,0 +1,19 @@
+{
+  "id": "hero_suanxiang-paigu",
+  "recipe_id": "suanxiang-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanxiang-paigu-source.png",
+  "original_sha256": "2d6f36f69f0e662b3c5c982130476eaae7d40f261cf79d14ac85696d9052778a",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "233855318af09c67a08425b09afd3659b99336a1bddae7f4e4deb8646e676980",
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

@@ -1,0 +1,87 @@
+{
+ "id": "fanqie-chao-youyu",
+ "name": "番茄炒鱿鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "squid",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "30毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鱿鱼去内脏和软骨，切圈；番茄切块，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，鱿鱼下锅焯10秒，卷起就捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 10,
+   "tip": "焯久了会老"
+  },
+  {
+   "text": "锅加油炒香姜丝，下番茄炒出红汁。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "倒回鱿鱼，加生抽大火翻炒30秒，出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

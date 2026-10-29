@@ -1,0 +1,87 @@
+{
+ "id": "ganbian-doujiao",
+ "name": "干煸豆角",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "川",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "green_bean",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "dried_chili",
+   "qty": "4个"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "3大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "豆角撕掉两头和筋，掰成段，洗净擦干。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中小火把豆角煸到表皮起皱，约8分钟。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 480
+  },
+  {
+   "text": "倒出多余的油，炒香蒜末和干辣椒。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 30
+  },
+  {
+   "text": "加生抽和盐翻匀；豆角里外熟透、没有生味再出锅。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60,
+   "tip": "豆角一定要熟透"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "green_pepper__blistered"
+  ],
+  "hero": false,
+  "garnish": [
+   "chili_ring",
+   "garlic"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

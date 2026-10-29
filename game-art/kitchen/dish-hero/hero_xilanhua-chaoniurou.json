@@ -1,0 +1,26 @@
+{
+  "id": "hero_xilanhua-chaoniurou",
+  "recipe_id": "xilanhua-chaoniurou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xilanhua-chaoniurou-source.png",
+  "original_sha256": "7770103c5e82e12a58ab26489f8c4eb5fc874356ce9b08a486267880d998ca71",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "73286d87ebe71561b6dd1df99c25d52fc907a70e67f28abb77f707c954c90d4d",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xilanhua-chaoniurou. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 西兰花炒牛肉. Actual recipe ingredients: 牛肉 (main), 西兰花 (main), 姜. Preparation reference: 西兰花洗净切小朵。 另备适量水烧开，放入西兰花焯1分钟，捞出沥水。 用生肉专用刀板将牛肉切薄片，洗净手和器具。 锅加油，放姜片及牛肉炒至变色。 加入西兰花及水，加盖煮5分钟至蔬菜熟软。 测肉最厚处中心至少63℃，不足继续加热。 加生抽和盐翻匀，离火静置3分钟再吃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "2a3f59db5f633ee42e617c5d2473c50b78a045667a44bc4e833eef21d294c610",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "7d2a0fef2cb0f3a420922de25234558198a22c296dfe9d1e256bddde7a6b7708",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

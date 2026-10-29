@@ -1,0 +1,85 @@
+{
+ "id": "suanxiang-jichi",
+ "name": "蒜香焖鸡翅",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 35,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_wing",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 4,
+   "unit": "瓣"
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "150毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡翅两面划刀，蒜和姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中火把鸡翅两面煎到微黄。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "放蒜姜、生抽和水，盖盖小火焖15分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "开盖收汁，筷子扎鸡翅流出清汁即熟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "chicken_wing__braised"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

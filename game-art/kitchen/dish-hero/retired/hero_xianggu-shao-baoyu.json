@@ -1,0 +1,22 @@
+{
+  "id": "hero_xianggu-shao-baoyu",
+  "recipe_id": "xianggu-shao-baoyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-shao-baoyu-source.png",
+  "original_sha256": "76041d43321ca85f1e1f5fa9f6a6d8fca0f82e083cf5bbcd3e48c90c5bde9ddc",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "630fd6e795372afa0a685c17e317872b487ce703ca8280b05463b9bd3a9e2f54",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

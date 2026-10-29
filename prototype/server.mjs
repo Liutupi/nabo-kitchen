@@ -2,14 +2,25 @@ import http from 'node:http';
 import {readFile,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {heroRecipeIds} from './dish-heroes.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const selectedIds=process.env.KITCHEN_TEST_RECIPE_IDS ? JSON.parse(process.env.KITCHEN_TEST_RECIPE_IDS) : null;
+if(selectedIds && (!Array.isArray(selectedIds) || selectedIds.some(x=>typeof x!=='string') || new Set(selectedIds).size!==selectedIds.length)) throw Error('Invalid test recipe IDs');
 const mime={'.html':'text/html; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2','.mp4':'video/mp4'};
 const server=http.createServer(async(req,res)=>{
   try{
     const url=new URL(req.url,'http://localhost');
+    if(url.pathname==='/api/dish-heroes'){
+      const base=path.join(root,'game-art/kitchen');
+      const csv=await readFile(path.join(base,'ASSET_LIST.csv'),'utf8');
+      const files=await readdir(path.join(base,'dish-hero')).catch(e=>{if(e.code==='ENOENT')return [];throw e;});
+      res.writeHead(200,{'Content-Type':mime['.json'],'Cache-Control':'no-store'});
+      res.end(JSON.stringify(heroRecipeIds(csv,files)));return;
+    }
     if(url.pathname==='/api/recipes'){
       const dir=path.join(root,'data/recipes/curated');const files=(await readdir(dir)).filter(x=>x.endsWith('.json')).sort();
-      const recipes=await Promise.all(files.map(async x=>JSON.parse(await readFile(path.join(dir,x),'utf8'))));
+      let recipes=await Promise.all(files.map(async x=>JSON.parse(await readFile(path.join(dir,x),'utf8'))));
+      if(selectedIds){const byId=new Map(recipes.map(x=>[x.id,x]));if(selectedIds.some(x=>!byId.has(x)))throw Error('Missing test recipe');recipes=selectedIds.map(x=>byId.get(x));}
       res.writeHead(200,{'Content-Type':mime['.json'],'Cache-Control':'no-store'});res.end(JSON.stringify(recipes));return;
     }
     const pathname=decodeURIComponent(url.pathname==='/'?'/prototype/index.html':url.pathname);

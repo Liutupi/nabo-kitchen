@@ -1,0 +1,93 @@
+{
+ "id": "fanqie-shaoyu",
+ "name": "番茄烧鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "tomato",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "100毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鱼处理干净擦干，两面划刀；番茄切块，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油，中火把鱼两面煎到定型。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "另用1小勺油炒番茄，加水煮软。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "放鱼和姜焖7分钟，筷子能扎进鱼背最厚处即熟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 420
+  },
+  {
+   "text": "加盐调味后装盘。",
+   "method": "braise",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "oval",
+  "sauce": "tomato",
+  "layers": [
+   "fish_whole__braised",
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

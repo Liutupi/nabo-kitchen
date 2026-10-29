@@ -1,0 +1,74 @@
+{
+ "id": "nangua-zhengdan",
+ "name": "南瓜蒸鸡蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pumpkin",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "150毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "南瓜去皮切薄片，鸡蛋打入碗中打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "南瓜置蒸锅蒸熟至软，用叉压成泥。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 600
+  },
+  {
+   "text": "蛋液混合南瓜泥、150毫升水和盐，倒入耐热碗。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "水开后中火蒸10分钟，轻晃碗中心不流动即熟。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 600
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": null,
+  "layers": [
+   "egg__steamed_custard"
+  ],
+  "garnish": [],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

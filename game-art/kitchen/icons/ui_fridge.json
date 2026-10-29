@@ -1,0 +1,16 @@
+{
+  "id": "ui_fridge",
+  "status": "review",
+  "generator": "original repository-native geometry, tools/generate_kitchen_menu_icons.py",
+  "size": [
+    160,
+    160
+  ],
+  "palette": [
+    "#3B2730",
+    "#FBF1E3",
+    "one feature accent"
+  ],
+  "sha256": "49a12a85cf54be148690c777aabdc3c260d516d5867ade69652a03db4d7188c5",
+  "notes": "Unaccepted candidate; target-size and light/dark backgrounds require visual review."
+}

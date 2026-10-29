@@ -6,7 +6,8 @@
  ],
  "cuisine": "粤",
  "tags": [
-  "适合新手"
+  "宴客",
+  "清淡"
  ],
  "minutes": 60,
  "difficulty": 2,
@@ -46,38 +47,44 @@
  ],
  "steps": [
   {
-   "text": "处理整鸡并擦干，生熟砧板分开；姜切片，葱打结。",
+   "text": "整鸡洗净擦干；姜切片，葱打结。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅内加3000毫升水和姜葱，烧开后放入整鸡。",
+   "text": "3升水加姜葱烧开，提着鸡浸入再提起，重复3次。",
    "method": "boil",
-   "heat": "high"
+   "heat": "high",
+   "tip": "让鸡腔里外受热均匀"
   },
   {
-   "text": "保持微沸煮25分钟，中途翻面1次。",
-   "method": "boil",
-   "heat": "low",
-   "timer": 1500
-  },
-  {
-   "text": "测鸡腿最厚处达到74℃；不足继续煮至达到。",
+   "text": "整鸡放入，水再开后转最小火，盖盖浸煮20分钟。",
    "method": "boil",
    "heat": "low",
-   "tip": "测温避开骨头"
+   "timer": 1200
   },
   {
-   "text": "关火浸5分钟。",
+   "text": "关火不开盖，再焖15分钟。",
+   "method": "boil",
+   "heat": "off",
+   "timer": 900
+  },
+  {
+   "text": "筷子扎鸡腿最厚处，流出清汁、不带血丝即熟。",
+   "method": "boil",
+   "heat": "off",
+   "tip": "有血水再焖5分钟"
+  },
+  {
+   "text": "捞出放进冰水浸5分钟，鸡皮更爽脆。",
    "method": "boil",
    "heat": "off",
    "timer": 300
   },
   {
-   "text": "取出静置10分钟，切块后配生抽。",
+   "text": "沥干斩件，配生抽或姜葱蘸着吃。",
    "method": "cut",
-   "heat": "off",
-   "timer": 600
+   "heat": "off"
   }
  ],
  "dish": {
@@ -93,5 +100,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

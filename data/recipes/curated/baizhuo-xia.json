@@ -46,7 +46,7 @@
  ],
  "steps": [
   {
-   "text": "虾剪去长须并去虾线，沥干；姜切片，葱打结。",
+   "text": "虾剪去长须并挑出虾线，沥干；姜切片，葱打结。",
    "method": "cut",
    "heat": "off"
   },
@@ -56,20 +56,16 @@
    "heat": "high"
   },
   {
-   "text": "倒入虾，再次煮开后煮2分钟。",
+   "text": "倒入虾，水再开后煮1分钟。",
    "method": "boil",
    "heat": "high",
-   "timer": 120
+   "timer": 60
   },
   {
-   "text": "确认虾肉呈珠白色且中心不透明，未熟继续煮。",
+   "text": "虾身全红、弯成C形就捞出，沥干装盘。",
    "method": "boil",
-   "heat": "high"
-  },
-  {
-   "text": "捞出沥干，趁热装盘。",
-   "method": "mix",
-   "heat": "off"
+   "heat": "off",
+   "tip": "煮久了虾肉会老"
   }
  ],
  "dish": {
@@ -83,5 +79,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

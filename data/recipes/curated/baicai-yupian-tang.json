@@ -1,0 +1,82 @@
+{
+ "id": "baicai-yupian-tang",
+ "name": "白菜鱼片汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_fillet",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "napa_cabbage",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜切段，姜切片；鱼片用厨房纸吸干。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中加700毫升水和姜煮开，放白菜煮软。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 360
+  },
+  {
+   "text": "放入鱼片轻轻推散，煮到鱼片变白卷起。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 120,
+   "tip": "别多搅，鱼片会碎"
+  },
+  {
+   "text": "加盐调味，关火盛出。",
+   "method": "boil",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

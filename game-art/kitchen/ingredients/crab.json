@@ -1,0 +1,16 @@
+{
+  "id": "crab",
+  "subject": "整蟹",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/crab-source.png",
+  "original_sha256": "6a9ba1209200bfbc720c27e3368be3ea9b45c2851b22d97ec5a4d6a42cddb4e9",
+  "path": "ingredients/crab.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "e23bf231d7fc101ed9441e9b27feabf7f575dbb72236ec978d5ac00648870e8c",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

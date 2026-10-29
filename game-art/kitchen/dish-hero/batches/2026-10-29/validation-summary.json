@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "art delivery and host checks; NOT FLASHED; human acceptance pending",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tools/tests -p test_kitchen_heroes.py",
+      "tests": 5,
+      "result": "PASS"
+    },
+    {
+      "command": "python tools/check_recipes.py",
+      "recipes": 144,
+      "result": "PASS"
+    },
+    {
+      "command": "node --test prototype/tests/dish-heroes.test.mjs",
+      "tests": 3,
+      "result": "PASS"
+    },
+    {
+      "command": "python tools/pack_assets.py pack --out build/kitchen-art-review",
+      "static_pngs": 328,
+      "dish_sprites": 226,
+      "roundtrip": true,
+      "result": "PASS"
+    },
+    {
+      "command": "python game-art/kitchen/dish-hero/batches/2026-10-29/verify_runtime.py --firmware-root FIRMWARE --assets game-art/kitchen/dish-hero/batches/2026-10-29/resource-candidate --out game-art/kitchen/dish-hero/batches/2026-10-29",
+      "tests": 11,
+      "result": "PASS"
+    }
+  ],
+  "visual_technical_review": {
+    "decoded_sheets_viewed": 11,
+    "new_heroes_viewed": 127,
+    "backgrounds": [
+      "#2C2845",
+      "#FBF1E3"
+    ],
+    "actual_indexed_and_rgb565": true,
+    "c_render_gallery_viewed": true,
+    "known_unresolved_crop_or_alpha_defects": [],
+    "human_acceptance": "pending; exact anchors, outlines, consistency and recipe accuracy"
+  },
+  "dish_legacy_budget_bytes": 200000,
+  "dish_bytes": 1596273,
+  "within_legacy_dish_budget": false,
+  "actual_bundle_partition_fit": true,
+  "bundle_bytes": 3756062,
+  "remaining_bytes": 1486818
+}

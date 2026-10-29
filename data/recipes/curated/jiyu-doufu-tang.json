@@ -60,7 +60,7 @@
  ],
  "steps": [
   {
-   "text": "鲫鱼处理干净并擦干，豆腐切块，姜切片，葱打结。",
+   "text": "鲫鱼处理干净擦干，豆腐切块，姜切片，葱打结。",
    "method": "cut",
    "heat": "off"
   },
@@ -68,29 +68,25 @@
    "text": "锅内放油，下鱼中火两面各煎3分钟。",
    "method": "fry",
    "heat": "mid",
-   "timer": 360
+   "timer": 360,
+   "tip": "煎透汤才会奶白"
   },
   {
-   "text": "加入1200毫升热水、姜葱和料酒，大火煮开。",
+   "text": "加入1200毫升开水、姜葱和料酒，大火煮开。",
    "method": "boil",
    "heat": "high"
   },
   {
-   "text": "转中火煮15分钟。",
-   "method": "stew",
-   "heat": "mid",
+   "text": "保持大火煮15分钟，汤变成奶白色。",
+   "method": "boil",
+   "heat": "high",
    "timer": 900
   },
   {
-   "text": "加入豆腐，再煮5分钟；鱼肉最厚处应达到63℃。",
-   "method": "stew",
+   "text": "加入豆腐再煮5分钟，加盐和白胡椒粉。",
+   "method": "boil",
    "heat": "mid",
-   "timer": 300
-  },
-  {
-   "text": "确认鱼肉不透明且易分离，加盐和白胡椒粉，盛出。",
-   "method": "mix",
-   "heat": "off",
+   "timer": 300,
    "tip": "吃鱼时留意细刺"
   }
  ],
@@ -106,5 +102,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

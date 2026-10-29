@@ -71,10 +71,9 @@
    "tip": "排骨不要堆太厚"
   },
   {
-   "text": "确认骨边肉熟透，中心达63℃，静置3分钟。",
+   "text": "筷子能轻松扎透排骨即熟，撒葱花上桌。",
    "method": "steam",
-   "heat": "off",
-   "timer": 180
+   "heat": "off"
   }
  ],
  "dish": {
@@ -90,5 +89,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

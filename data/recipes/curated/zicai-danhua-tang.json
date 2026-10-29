@@ -1,0 +1,84 @@
+{
+ "id": "zicai-danhua-tang",
+ "name": "紫菜蛋花汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 10,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "laver",
+   "qty": "1小片"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "几滴"
+  },
+  {
+   "id": "water",
+   "qty": "800毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "紫菜撕成小块，鸡蛋打散，葱切花。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "800毫升水煮开，放入紫菜煮1分钟。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "缓慢淋入蛋液，等蛋花浮起再轻推。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 30
+  },
+  {
+   "text": "加盐、香油和葱花，关火盛出。",
+   "method": "boil",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "egg__ribbon"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

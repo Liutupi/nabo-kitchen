@@ -1,0 +1,26 @@
+{
+  "id": "hero_fanqie-roumo-doufu",
+  "recipe_id": "fanqie-roumo-doufu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-roumo-doufu-source.png",
+  "original_sha256": "d93172f003395c352b6d907e4c83c89b58c23393a6389f529b633237080654d0",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "aad9b5f2a8221c75018e70381109220cf6da28f8afcfa9390d73fe583411273b",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-roumo-doufu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄肉末豆腐. Actual recipe ingredients: 肉末 (main), 豆腐 (main), 番茄 (main). Preparation reference: 豆腐切块，番茄切块；肉末与蔬菜分开。 锅放1小勺油炒肉末至散开变色，盛出。 另加1小勺油炒番茄，加水和豆腐煮软。 倒回肉末煮透至中心至少71℃，加盐调味。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "6e082211204660c0fd00b6916915a24d942f927b29a0fa9fbc84955e25b3eefd",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "58cda916a6bcdadd899f5ce7301809707d80ca0b8ce34782cb1f53ed5d282122",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

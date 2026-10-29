@@ -1,0 +1,26 @@
+{
+  "id": "hero_kele-jichi",
+  "recipe_id": "kele-jichi",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_kele-jichi-source.png",
+  "original_sha256": "a9b1348f66870adf85c2cac1b480385579e06e47c336423533471f55ce0dfc08",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "f11851cae4068d2e30c800ea20bed8fa7731001415b297eeafd897f190e2a26e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_kele-jichi. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 可乐鸡翅. Actual recipe ingredients: 鸡翅 (main), 姜. Preparation reference: 鸡翅擦干，两面各划2刀；姜切片。 锅内放油，鸡翅中火两面各煎2分钟。 加入姜、可乐、生抽、老抽和料酒，煮开。 盖盖小火焖15分钟，中途翻面1次。 测最厚处达到74℃；不足继续煮至达到。 开盖中火收汁3分钟，翻动鸡翅防止糖汁烧糊。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "d939063e556442bb1800cfa36b153707c184a8fd07422d59ba211a929b9312bc",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "78bc60e3d4dd125601f21386a2b8b7620531ee05137895e53a2b38d3c45c499d",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "octopus",
+  "subject": "章鱼",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/octopus-source.png",
+  "original_sha256": "edec4a977bce85c912c90fc870a872ac1882949e5279d5f82789d0ab6485a8cf",
+  "path": "ingredients/octopus.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "3d878626e0c6933210b0eee4354ab6dbe08340a0ed080621ba892894ea4612fa",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

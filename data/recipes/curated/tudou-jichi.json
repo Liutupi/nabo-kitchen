@@ -1,0 +1,84 @@
+{
+ "id": "tudou-jichi",
+ "name": "土豆焖鸡翅",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 40,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_wing",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "potato",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "water",
+   "qty": "250毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡翅两面划刀，土豆去皮切块，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中火把鸡翅两面煎到微黄。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "加入姜、土豆、生抽和水，煮开后转小火。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "盖盖焖20分钟，土豆变软、鸡翅流出清汁即熟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 1200
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "chicken_wing__braised",
+   "potato__chunks_braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

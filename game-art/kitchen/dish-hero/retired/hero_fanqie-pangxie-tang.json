@@ -1,0 +1,22 @@
+{
+  "id": "hero_fanqie-pangxie-tang",
+  "recipe_id": "fanqie-pangxie-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-pangxie-tang-source.png",
+  "original_sha256": "86af15d203b60842eb3668b8714706cae2da77695f12bee53fed2b5cd6f20ec7",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "c1d8def5c6eea33f3bd8821c26913d5cbdf3ab3feff17ef4b25d8e91dcc22747",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

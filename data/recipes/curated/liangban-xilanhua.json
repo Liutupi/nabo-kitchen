@@ -1,0 +1,82 @@
+{
+ "id": "liangban-xilanhua",
+ "name": "凉拌西兰花",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "broccoli",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "sesame_oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "600毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "西兰花切小朵洗净，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "水煮开放西兰花，焯至茎熟透约3分钟。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "捞出沥水放凉；生抽、醋和香油拌匀。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "西兰花与蒜末、调味汁拌匀后装盘。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "broccoli__florets"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

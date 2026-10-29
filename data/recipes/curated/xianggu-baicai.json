@@ -1,0 +1,85 @@
+{
+ "id": "xianggu-baicai",
+ "name": "香菇焖白菜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "napa_cabbage",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 120,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "80毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜洗净切段，菜梗和叶分开；香菇切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香姜丝和香菇，放白菜梗翻炒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加水盖盖煮3分钟，再放白菜叶。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "煮至白菜和香菇熟透，加入生抽拌匀。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "napa_cabbage__stirfried",
+   "shiitake__braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

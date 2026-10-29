@@ -1,0 +1,96 @@
+{
+ "id": "qingcai-roupian",
+ "name": "菜心炒肉片",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_lean",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "choy_sum",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "瘦肉切薄片，加生抽、淀粉和1小勺油抓匀，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "菜心切段，梗叶分开；姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅放油，下肉片快速划散，全部变白就盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "原锅炒香姜丝，先下菜梗炒1分钟，再下菜叶。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "倒回肉片，加盐大火翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": null,
+  "layers": [
+   "pork_lean__slices",
+   "choy_sum__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

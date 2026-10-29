@@ -1,0 +1,92 @@
+{
+ "id": "muli-chaodan",
+ "name": "牡蛎炒鸡蛋",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "oyster_meat",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "500毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牡蛎肉用清水轻轻搓洗，沥干；葱切花，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，下牡蛎煮2分钟到边缘卷起，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 120,
+   "tip": "焯过炒时不出水"
+  },
+  {
+   "text": "蛋液加入牡蛎、葱花和盐拌匀。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "锅放全部油，倒入蛋液，中火煎到底部定型。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "翻炒到蛋液全部凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "egg__scrambled"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

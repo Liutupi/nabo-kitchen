@@ -1,0 +1,26 @@
+{
+  "id": "hero_xianggu-baicai",
+  "recipe_id": "xianggu-baicai",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-baicai-source.png",
+  "original_sha256": "415d7cabe386e7484ab3b8ca067ac41d7abe49f7c5549a9c671f6fc3d3af6f38",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "1a368e189a0e332693d18fb704fc3d8028303ee27889fe3a75a8f5b0e748ad50",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-baicai. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇焖白菜. Actual recipe ingredients: 大白菜 (main), 香菇 (main), 姜. Preparation reference: 白菜洗净切段，菜梗和叶分开；香菇切片。 锅放油炒香姜丝和香菇，放白菜梗翻炒。 加水盖盖煮3分钟，再放白菜叶。 煮至白菜和香菇熟透，加入生抽拌匀。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "45d8221f049e729f9be02a2ec78345e28c0e05fe6ab796ea39d793012b3229c1",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "e7dee580b65fe835489a17ed63d2617f0bd50b0f7ea2d6d9d79a96d29a6f6060",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

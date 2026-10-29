@@ -1,0 +1,26 @@
+{
+  "id": "hero_fanqie-shao-niurou",
+  "recipe_id": "fanqie-shao-niurou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-shao-niurou-source.png",
+  "original_sha256": "d48611c94b1b39a7982d76e7f0c37dda03b35e5f7ca20df0ea90ad56a37b0a18",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "1ce50d7600ee901fc8d1441889ca66a031cb717c42a4ff8cb25b26cc69975aa4",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-shao-niurou. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄烧牛肉. Actual recipe ingredients: 牛肉 (main), 番茄 (main), 姜. Preparation reference: 牛肉切小块，番茄切块；生肉器具单独清洗。 锅放油炒香姜片及番茄，加入牛肉炒变色。 倒水煮开，撇沫后加生抽，小火炖50分钟。 牛肉中心至少63℃，不足继续炖至软。 加盐调味，离火静置3分钟再吃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "0e65bccec85367008d5e24e2ffd2c63f53c0c96280b05fb81ba87992763cf14a",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "ce8d19cca13334dbe9b2f146d369466737e92ef4ffa7fd67a37a588fbd042e3b",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

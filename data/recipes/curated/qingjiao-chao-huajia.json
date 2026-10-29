@@ -1,0 +1,85 @@
+{
+ "id": "qingjiao-chao-huajia",
+ "name": "青椒炒花甲",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "100毫升"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "花甲泡淡盐水吐沙，搓洗干净；青椒切片，蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅加油，炒香蒜片，下青椒炒1分钟。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "加入花甲、生抽和2大勺水，盖盖大火焖到张口。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "开盖翻匀，没开口的挑出，盛出。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "green_pepper__strips"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

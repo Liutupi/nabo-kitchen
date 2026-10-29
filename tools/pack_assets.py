@@ -11,10 +11,22 @@ from asset_codec import index_image, pack_sprites, prepare_image, unpack_sprites
 from check_recipes import ROOT, asset_rows, dish_asset_ids, load_recipes
 
 BUDGETS = {'dish': 200000, 'icons': 120000, 'ui': 40000}
+SEAFOOD_EXTRA = frozenset(('crab', 'scallop', 'oyster_meat', 'mussel',
+                           'razor_clam', 'abalone', 'octopus', 'salmon'))
 
 
 def profile(row):
     ident, category = row['id'], row['category']
+    # A full dish illustration deliberately uses a separate category from
+    # dish-L*: recipe_codec includes every `dish-` asset in the KRC dictionary.
+    # Adding an optional hero must not renumber existing recipe layer IDs.
+    if category == 'hero':
+        if len(ident) > 45 or not re.fullmatch(r'hero_[a-z0-9]+(?:-[a-z0-9]+)*', ident):
+            raise ValueError(f'invalid hero asset ID: {ident}')
+        if row['path'] != f'dish-hero/{ident}.png':
+            raise ValueError(f'invalid hero asset path: {ident}')
+        # A dedicated palette avoids forcing unrelated dishes into 64 colours.
+        return 'dish', ident, (160, 120), False, False
     if category.startswith('dish-'):
         return 'dish', category, (160, 120), False, False
     if category in ('costume', 'style', 'grok-start'):
@@ -24,6 +36,9 @@ def profile(row):
         return 'ui', 'startup', (220, 90), False, False
     if ident == 'ui_lantern':
         return 'ui', 'startup', (26, 26), False, False
+    if category == 'ingredient' and ident in SEAFOOD_EXTRA:
+        # Keep the original ingredient palette unchanged when adding seafood.
+        return 'icons', 'seafood-' + ident, (40, 40), False, False
     if category in ('ingredient', 'face'):
         return 'icons', category, (40, 40), category == 'face', False
     if category == 'prop':
@@ -34,6 +49,8 @@ def profile(row):
         return 'icons', 'ui-glyph', dimensions[ident], False, False
     if ident.startswith('badge_'):
         return 'icons', 'badge', (40, 40), False, False
+    if ident in ('ui_fridge', 'ui_shopping', 'ui_recipe_book', 'ui_settings'):
+        return 'icons', 'menu-icon', (40, 40), False, False
     if ident.startswith(('heat_', 'method_')):
         return 'icons', 'method-heat', (24, 24), False, False
     raise ValueError(f'no explicit packing profile for {ident}')
@@ -56,11 +73,15 @@ def build(root=ROOT, out=None, decode_pngs=True):
         pools.setdefault(pool, []).append({'id': row['id'], 'group': group, 'prepared': prepared})
         with Image.open(source) as image:
             source_size = list(image.size)
+            if row['category'] == 'hero' and image.size != (640, 480):
+                raise ValueError(f"{row['id']}: hero source must be 640x480")
             expected_source = re.fullmatch(r'(\d+)x(\d+)', row['source'])
             if expected_source and image.size != tuple(map(int, expected_source.groups())):
                 raise ValueError(f"{row['id']}: source dimensions differ from ASSET_LIST.csv")
             if pool != 'audit' and ('A' not in image.getbands() or image.getchannel('A').getextrema()[0] != 0):
                 raise ValueError(f"{row['id']}: runtime source needs real transparent alpha")
+            if row['category'] == 'hero' and image.getchannel('A').getextrema()[1] == 0:
+                raise ValueError(f"{row['id']}: hero source is fully transparent")
         sources[row['id']] = {'path': row['path'], 'source_size': source_size,
                               'display_frame': list(size), 'pool': pool, 'palette_group': group,
                               'source_sha256': source_hash, **prepared.stats}
@@ -100,7 +121,7 @@ def build(root=ROOT, out=None, decode_pngs=True):
               'audit_note': 'costume A/B/C, style board and K1/K2 are review previews; no fabricated animation frames',
               'other_budget_inputs': {'kitchen_nabo.bin': 'separate animation pipeline',
                                       'fonts': 'separate subset pipeline',
-                                      'kitchen_hero.bin': 'not supplied; recipe hero flags use layer fallback'},
+                                      'hero_art': 'optional registered hero sprites share the dish pool; absent heroes use layers'},
               'firmware_total_complete': False, 'assets': sources}
     (out / 'static_report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     return report, decoded
@@ -123,7 +144,8 @@ def composite_recipes(pack, recipes, out):
     records = []
     for number, recipe in enumerate(recipes):
         image = Image.new('RGBA', (160, 120))
-        layers = dish_asset_ids(recipe['dish'])
+        hero = 'hero_' + recipe['id']
+        layers = [hero] if hero in pack.assets else dish_asset_ids(recipe['dish'])
         for ident in layers:
             if ident not in pack.assets or pack.assets[ident]['frame'] != (160, 120):
                 raise ValueError(f'missing/invalid packed recipe layer: {ident}')

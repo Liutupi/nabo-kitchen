@@ -56,9 +56,9 @@
    "timer": 720
   },
   {
-   "text": "确认蛋液完全凝固，中心达到71℃；未熟继续蒸。",
+   "text": "轻晃碗，蛋羹中心不再流动即熟。",
    "method": "steam",
-   "heat": "low"
+   "heat": "off"
   },
   {
    "text": "关火焖2分钟，取出淋生抽和香油。",
@@ -80,5 +80,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

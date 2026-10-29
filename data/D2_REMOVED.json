@@ -1,0 +1,145 @@
+{
+ "note": "D2 删除或改名的旧菜谱 ID。对应 hero 图已不再被菜谱引用，打包时应排除。",
+ "removed": [
+  {
+   "id": "baicai-jitui-tang",
+   "name": "白菜鸡腿汤"
+  },
+  {
+   "id": "baicai-pangxie-tang",
+   "name": "白菜螃蟹汤"
+  },
+  {
+   "id": "baicai-yu-tang",
+   "name": "白菜鱼汤"
+  },
+  {
+   "id": "donggua-doufu",
+   "name": "冬瓜炖豆腐"
+  },
+  {
+   "id": "donggua-huajia-tang",
+   "name": "冬瓜花甲汤"
+  },
+  {
+   "id": "donggua-ji-tang",
+   "name": "冬瓜鸡腿汤"
+  },
+  {
+   "id": "donggua-shanbei-tang",
+   "name": "冬瓜扇贝汤"
+  },
+  {
+   "id": "donggua-shao-baoyu",
+   "name": "冬瓜焖鲍鱼"
+  },
+  {
+   "id": "fanqie-donggua-tang",
+   "name": "番茄冬瓜汤"
+  },
+  {
+   "id": "fanqie-jiandan",
+   "name": "番茄煎蛋"
+  },
+  {
+   "id": "fanqie-pangxie-tang",
+   "name": "番茄螃蟹汤"
+  },
+  {
+   "id": "fanqie-qingkou-tang",
+   "name": "番茄青口汤"
+  },
+  {
+   "id": "fanqie-sanwenyu-tang",
+   "name": "番茄三文鱼汤"
+  },
+  {
+   "id": "fanqie-shao-doufu",
+   "name": "番茄烧豆腐"
+  },
+  {
+   "id": "fanqie-yu-tang",
+   "name": "番茄鱼汤"
+  },
+  {
+   "id": "fanqie-zhengdan",
+   "name": "番茄蒸蛋"
+  },
+  {
+   "id": "heijiao-jianyu",
+   "name": "煎鱼配洋葱"
+  },
+  {
+   "id": "huluobo-chao-youyu",
+   "name": "胡萝卜炒鱿鱼"
+  },
+  {
+   "id": "qingjiao-chao-yupian",
+   "name": "青椒炒鱼片"
+  },
+  {
+   "id": "qingjiao-chao-zhangyu",
+   "name": "青椒炒章鱼"
+  },
+  {
+   "id": "qingjiao-doufu",
+   "name": "青椒炒豆腐"
+  },
+  {
+   "id": "xianggu-chaodougan",
+   "name": "香菇炒豆干"
+  },
+  {
+   "id": "xianggu-doufu",
+   "name": "香菇焖豆腐"
+  },
+  {
+   "id": "xianggu-shao-baoyu",
+   "name": "香菇焖鲍鱼"
+  },
+  {
+   "id": "xianggu-zhengdan",
+   "name": "香菇蒸蛋"
+  },
+  {
+   "id": "xilanhua-chao-sanwenyu",
+   "name": "西兰花炒三文鱼"
+  },
+  {
+   "id": "xilanhua-chao-youyu",
+   "name": "西兰花炒鱿鱼"
+  },
+  {
+   "id": "xilanhua-chao-yupian",
+   "name": "西兰花炒鱼片"
+  },
+  {
+   "id": "xilanhua-chaoshanbei",
+   "name": "西兰花炒扇贝"
+  },
+  {
+   "id": "xilanhua-doufu",
+   "name": "西兰花炒豆腐"
+  },
+  {
+   "id": "yangcong-chao-huajia",
+   "name": "洋葱炒花甲"
+  },
+  {
+   "id": "yangcong-chao-youyu",
+   "name": "洋葱炒鱿鱼"
+  },
+  {
+   "id": "yangcong-chao-zhangyu",
+   "name": "洋葱炒章鱼"
+  },
+  {
+   "id": "yangcong-qingkou-tang",
+   "name": "洋葱青口汤"
+  },
+  {
+   "id": "yangcong-tudou",
+   "name": "洋葱炒土豆"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "chijiao-chao-huajia",
+ "name": "豉椒炒花甲",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个"
+  },
+  {
+   "id": "chili",
+   "qty": 1,
+   "unit": "个"
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "black_bean",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "花甲泡淡盐水吐沙，搓洗干净；青椒和辣椒切块，蒜和豆豉剁碎。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，下花甲，刚张口就捞出，没开口的挑出。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60,
+   "tip": "开口就捞，肉才嫩"
+  },
+  {
+   "text": "热锅放油，炒香蒜末和豆豉，下青椒和辣椒。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "倒入花甲，加料酒和生抽，大火翻炒30秒出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "black_bean",
+  "layers": [
+   "green_pepper__strips"
+  ],
+  "hero": false,
+  "garnish": [
+   "chili_ring"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

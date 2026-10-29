@@ -1,0 +1,26 @@
+{
+  "id": "hero_fanqie-doufu-tang",
+  "recipe_id": "fanqie-doufu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-doufu-tang-source.png",
+  "original_sha256": "b80c6de58e1cc0600057bee9d0a3699c586d7923df6f5697ad7cf540dd3c2760",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "647cc8f9bd1a1d6c823950cff4a70abe3a6e7e2d366a8f56853dbddaf1506ff0",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-doufu-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄豆腐汤. Actual recipe ingredients: 番茄 (main), 豆腐 (main), 葱. Preparation reference: 番茄切块，豆腐切块，葱切碎。 锅加油炒香番茄，加入水煮开。 加入豆腐，小火煮10分钟至食材熟透。 加盐及葱花，煮开后出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "6ea047b4577b6dc740b4945645d25f2f0f25a07c370aedb487e527eb63e27975",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "6e5b31aac673b17ee24c1ddcde807468783f40a76e1aa3121d06c6fd56a01cb4",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

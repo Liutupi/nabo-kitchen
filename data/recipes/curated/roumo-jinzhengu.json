@@ -1,0 +1,85 @@
+{
+ "id": "roumo-jinzhengu",
+ "name": "肉末金针菇",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "pork_mince",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "enoki",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "金针菇去根洗净，蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅放油，炒香蒜片，加入肉末炒散。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加金针菇、清水和生抽，盖盖煮3分钟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "金针菇变软、肉末全部变色即可盛出。",
+   "method": "braise",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "pork_mince__crumbs"
+  ],
+  "garnish": [
+   "garlic"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

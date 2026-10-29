@@ -1,0 +1,87 @@
+{
+ "id": "shijin-zhengdan",
+ "name": "什锦蒸蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "carrot",
+   "qty": 50,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 50,
+   "unit": "克",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "650毫升"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "胡萝卜和香菇切丁；鸡蛋打散，加150毫升温水。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "蔬菜丁放进沸水煮2分钟，捞出沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "蛋液过筛倒入碗，加入蔬菜丁，盖上盘子。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "水开后中小火蒸12分钟，轻晃碗中心不流动即熟。",
+   "method": "steam",
+   "heat": "mid",
+   "timer": 720
+  },
+  {
+   "text": "出锅淋少许生抽。",
+   "method": "steam",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": null,
+  "layers": [
+   "egg__steamed_custard",
+   "carrot__slices",
+   "shiitake__braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

@@ -1,0 +1,26 @@
+{
+  "id": "hero_roumo-jinzhengu",
+  "recipe_id": "roumo-jinzhengu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_roumo-jinzhengu-source.png",
+  "original_sha256": "c48c3eb28c54fbf6cf9b8fdaf3fda1a4c04be425407a86b5e382eb2cc007e621",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "7e0d56c8f6a767a7e5c86a4790d91aa960d66a93e4b04ab96707b18e481a98da",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_roumo-jinzhengu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 肉末金针菇. Actual recipe ingredients: 肉末 (main), 金针菇 (main), 蒜. Preparation reference: 金针菇去根洗净，蒜切片；生肉末单独处理，洗手洗具。 热锅放油，炒香蒜片，加入肉末炒散。 加金针菇、清水和生抽，加盖煮熟。 肉末测温至少71℃，金针菇熟透后盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "14664c73eedb319fd995b755807456a367aaa2af13abdc591eb51f9cfd5ce7e2",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "d42bc5f651d4263018c62e227307b08aa45cfca72be9139cdd242642abaf9fbc",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

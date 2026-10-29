@@ -6,11 +6,11 @@ This documents the implemented T1 codec. It does not alter the finalized art or 
 
 - Native `game-art/kitchen/grok-clips/{idle,toss,serve,tend}.mp4` remain byte-for-byte unchanged.
 - FFprobe chooses the single real video stream and excludes attached JPEG poster streams. FFmpeg explicitly maps that video and uses `-an -sn -dn`. No audio is played or encoded in KAN1.
-- Sources are decoded onto a genuine 12 fps source timeline. Target source-frame indices are selected by integer half-up rounding, or explicit `--select ID=i,j,...`. Selection is from actual decoded frames, including source start/end; no generated or interpolated frames.
-- Output is 192×192 at 12 fps, bottom-center anchor (96,191), using a uniform full-canvas resize. No per-frame crop, mirror or movement correction is applied to these masters. Their waist remains cut by the source bottom edge.
+- Sources are decoded onto a genuine 12 fps source timeline by default, or a 24 fps source timeline with `--fps 24`. Target source-frame indices are selected by integer half-up rounding, or explicit `--select ID=i,j,...` measured on the selected source timeline. Selection is from actual decoded frames, including source start/end; no generated or interpolated frames.
+- Output is 192×192 at the selected 12 or 24 fps, bottom-center anchor (96,191), using a uniform full-canvas resize. No per-frame crop, mirror or movement correction is applied to these masters. Their waist remains cut by the source bottom edge.
 - Green key: G>80, G−max(R,B)>28, and G>1.25×R/B. Remaining green chroma on a one-source-pixel adjacent edge is clamped to max(R,B). Shared `asset_codec.prepare_pil` then resizes, thresholds alpha at16 and mattes partial coverage to the dark outline. Character face/hair/garment pigments are not automatically recolored.
 - One RGB565 palette is shared by all four actions, at most64 entries including transparent index0. Index1 reserves RGB565(#3B2730). Palette reduction is lossy and assessed separately from the lossless binary round trip.
-- Exact target frame counts: idle10 loop, toss14 nonloop, serve8 nonloop, tend10 loop. At12 fps these run0.8333/1.1667/0.6667/0.8333 seconds. The3–5second masters are temporally retimed to those explicitly specified game-frame counts; their native duration is not claimed preserved.
+- Default 12 fps target frame counts: idle10 loop, toss14 nonloop, serve8 nonloop, tend10 loop. At12 fps these run0.8333/1.1667/0.6667/0.8333 seconds. The optional 24 fps profile doubles each frame count while preserving each output duration. The3–5second masters are temporally retimed to those explicitly specified game-frame counts; their native duration is not claimed preserved.
 - `--close-loop-endpoints` is optional and requires a SHA-bound visual review confirming the actual source returns to its starting pose. It selects the actual first source frame for the final loop slot, giving an exact pixel seam after quantization. The nominal end index, actual reused source index, original return-pose review and all timestamps remain in the report. It never repairs an invalid action or rewrites an MP4.
 - The inspected idle selection retains its actual blink frame; serve retains the isolated wink at source12fps zero-based index33. Explicit indices are recorded for reproduction.
 
@@ -28,7 +28,7 @@ Little endian. All fields and offsets are integers; the future target decoder ne
 | total_size | uint32 | Exact file bytes |
 | width, height | uint32 each | Full indexed frame dimensions |
 | anchor_x, anchor_y | uint32 each | Bottom anchor inside frame |
-| fps | uint32 | Output12 |
+| fps | uint32 | Output fps (12 or 24) |
 | palette_count | uint32 | 2–64 |
 | action_count | uint32 | 1–256 |
 | index_offset | uint32 | Immediately after RGB565 palette |
@@ -71,10 +71,13 @@ Requires Python with Pillow/NumPy and existing FFmpeg/FFprobe executables. Tools
 
 ```powershell
 python tools/pack_animations.py --ffmpeg <existing-ffmpeg.exe> --ffprobe <existing-ffprobe.exe> --qa-review <SHA-bound-visual-review.json> --close-loop-endpoints --select idle=0,5,11,16,21,27,34,38,43,48 --select serve=0,8,14,21,27,33,41,48
+# Optional smoother candidate: 84 frames, same action durations, source-bound QA and
+# the observed wink on serve source frame 66 at 24 fps. Use a separate output folder.
+python tools/pack_animations.py --fps 24 --output-dir <new-output-directory> --qa-review tools/validation/animation-source-review.json --close-loop-endpoints --select serve=0,6,13,19,26,32,38,45,51,58,66,70,77,83,90,96
 python -m unittest discover -s tools/tests -p test_kitchen_animations.py -v
 ```
 
-Default output is ignored `private/t1/animations/`: `kitchen_nabo.bin`, `animations-report.json`, decoded PNGs and dark/paper contact sheets. Source extraction cache is keyed by sourceSHA and12fps.
+Default output is ignored `private/t1/animations/`: `kitchen_nabo.bin`, `animations-report.json`, decoded PNGs and dark/paper contact sheets. Source extraction cache is keyed by source SHA and selected fps. The report records FFmpeg, FFprobe, Python, Pillow and NumPy versions: different decoder versions may produce slightly different source pixels and package hashes, so compare recorded hashes instead of assuming cross-version byte identity. The higher-fidelity pack exceeds the original 700 KiB budget and is an optional review candidate; success decoding on a host does not establish achievable C3 frame rate or device/user acceptance.
 
 The report separates source visual review from codec success, records source AAC presence and exclusion, sourceSHA before/after, source/output timing, all frame selections, key/despill statistics, RGB565 palette, quantization errors, every frame mode/rectangle, first/last metrics, exact roundtrip, bytes and700KiB budget result. Source visual review can be `engineering_visual_pass`, `review` or `blocked`; blocked sources are refused and review is SHA-bound. No user or device acceptance is inferred.
 

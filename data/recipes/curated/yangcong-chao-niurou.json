@@ -74,10 +74,9 @@
    "timer": 120
   },
   {
-   "text": "确认牛肉熟透，关火静置3分钟后盛出。",
+   "text": "牛肉一变色就关火，炒久会老。",
    "method": "stir_fry",
-   "heat": "off",
-   "timer": 180
+   "heat": "off"
   }
  ],
  "dish": {
@@ -94,5 +93,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

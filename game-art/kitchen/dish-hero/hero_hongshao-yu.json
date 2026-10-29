@@ -1,0 +1,26 @@
+{
+  "id": "hero_hongshao-yu",
+  "recipe_id": "hongshao-yu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_hongshao-yu-source.png",
+  "original_sha256": "b4ce9c604e46ab094d5b6c77a8605d2839024fd88a49cb239039670f1dbe5e0a",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "425dbab96590b0a11d85d6adfee68995d6d48231142cc1e9aaedaefe8a09b37e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_hongshao-yu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 红烧鱼. Actual recipe ingredients: 鱼（鲈鱼等） (main), 姜, 葱. Preparation reference: 鱼处理干净并擦干，两面各划2刀；姜切片，葱切段。 锅内放油，下鱼中火煎4分钟，翻面再煎3分钟。 加姜葱、生抽、老抽、料酒、糖和250毫升热水。 煮开后小火焖10分钟，中途把汤汁浇在鱼身上。 测最厚鱼肉达到63℃，鱼肉不透明且能轻松分离。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white oval fish platter. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "0eebe7fca7bb58519f9ab3f7d8c447e6751ac29b848fe682c169e6e978968bd1",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "97c0b9a5633ba62bc9471549f9e53ada957b530e278ea5438eb59d1150fcfc73",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

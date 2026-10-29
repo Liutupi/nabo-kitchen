@@ -1,0 +1,106 @@
+{
+ "id": "lu-zhujiao",
+ "name": "卤猪脚",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭",
+  "下酒"
+ ],
+ "minutes": 120,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "pork_trotter",
+   "qty": 1000,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "rock_sugar",
+   "qty": "30克"
+  },
+  {
+   "id": "soy_light",
+   "qty": "3大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "2大勺"
+  },
+  {
+   "id": "star_anise",
+   "qty": "2颗"
+  },
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "猪脚斩块，冷水下锅加料酒煮5分钟，捞出洗净。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 300
+  },
+  {
+   "text": "锅放油和冰糖，小火炒化，下猪脚翻炒上色。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 180
+  },
+  {
+   "text": "加姜葱、八角、生抽、老抽，加热水没过猪脚。",
+   "method": "stew",
+   "heat": "high"
+  },
+  {
+   "text": "煮开后小火卤90分钟，筷子能轻松扎透猪皮。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 5400
+  },
+  {
+   "text": "开盖大火收汁到黏稠，翻匀出锅。",
+   "method": "stew",
+   "heat": "high",
+   "timer": 300,
+   "tip": "勤翻动防粘锅"
+  }
+ ],
+ "dish": {
+  "vessel": "claypot",
+  "sauce": "braise",
+  "layers": [
+   "pork_belly__braised"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion",
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

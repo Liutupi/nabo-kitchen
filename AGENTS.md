@@ -8,10 +8,10 @@ FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按�
 
 | 分支 | 内容 | 状态 |
 |---|---|---|
-| `main` | 规格、评估、交接入口 | 规格以这里为准 |
-| `codex/kitchen-model` | **最新**菜谱、美术、原型、打包工具（从 main 分出，内容最全） | 开发中；建议合并回 main，见 `docs/REVIEW-2026-10-29.md` 第 4 节 |
-| `codex/release-v0.1.0` | **最新**固件源码和 v0.1.0 发布材料（和 main 没有共同历史） | 已发布 |
-| 其他 4 个 `codex/*` | 已完全包含在上面两个分支里 | 待删除 |
+| `main` | 规格、菜谱、美术、原型、打包工具、交接 | 所有内容工作都在这里 |
+| `firmware` | 固件源码和发布材料（基于 FoloToy 模板，和 main 没有共同历史） | 所有固件工作都在这里 |
+
+只有这两个长期分支。临时分支用完就合并删除。2026-10-29 删除的旧分支都保留了 `archive/<原分支名>` 标签。v0.1.0 的源码以标签 `v0.1.0` 为准。
 
 **开工前必读**：`HANDOFF.md`（当前状态）→ `docs/WORKFLOW.md`（同步规矩）→ 和你任务相关的规格文档。
 
@@ -39,7 +39,8 @@ FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按�
 | `game-art/kitchen/reference/` | 只读 | `nabo-idle.png` 是 NABO 身份的基准 |
 | `data/recipes/` | Claude 整理，刘东坡审核 | 菜谱 JSON |
 | `prototype/`、`tools/` | Codex（`tools/lint_recipes.py` 归 Claude） | 原型和打包工具 |
-| `HANDOFF.md` | 所有人 | 只在顶部“最新状态”段落和决定记录里追加 |
+| `checkpoints/` | 只读 | 10-28 冻结的检查点 |
+| `HANDOFF.md` | 所有人 | 新状态插在“当前状态”下面，每块不超过 15 行 |
 | `private/` | 本机 | 被 Git 忽略。放设备备份、串口日志、草稿 |
 
 ## 规则

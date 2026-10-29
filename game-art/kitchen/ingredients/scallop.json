@@ -1,0 +1,16 @@
+{
+  "id": "scallop",
+  "subject": "去壳扇贝肉",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/scallop-source.png",
+  "original_sha256": "f5fca7a2b9474cb321e9986fcde01bfcd34af65a5f7785a3483d2697fecb4392",
+  "path": "ingredients/scallop.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "08af2cdc603d802213e6b8fc3e4d462463e67ee83e5d70acdc39397f949950a7",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

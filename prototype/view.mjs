@@ -14,11 +14,29 @@ const face=(id='happy',size=40)=>`<span class="face" style="width:${size}px;heig
 const portrait=(pose='C')=>`<img class="portrait" src="/prototype/assets/${pose}.png" alt="NABO">`;
 const seasoningNames={oil:'食用油',salt:'盐',sugar:'糖',rock_sugar:'冰糖',steam_soy:'蒸鱼豉油',cooking_wine:'料酒',light_soy:'生抽',soy_light:'生抽',dark_soy:'老抽',soy_dark:'老抽',soy_sauce:'生抽',vinegar:'醋',starch:'淀粉',oyster_sauce:'蚝油',oyster:'蚝油',pepper:'胡椒粉',white_pepper:'白胡椒粉',sesame_oil:'香油',water:'水',black_bean:'豆豉',cola:'可乐',dried_chili:'干辣椒',star_anise:'八角'};
 const seasoningQty=(r,x,p)=>String(x.qty).replace(/^(\d+(?:\.\d+)?)/,n=>scaleQty(Number(n),r.servings,p));
+let dishHeroes=new Set();
+export function setDishHeroes(ids){
+  if(!Array.isArray(ids)||ids.some(id=>typeof id!=='string'||id.length>40||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)))throw Error('Invalid dish hero IDs');
+  dishHeroes=new Set(ids);
+}
 export function dish(recipe,w=150,h=112,hidden=false){
   if(!recipe)return '';
   const d=recipe.dish,group=['bowl','claypot'].includes(d.vessel)?d.vessel:'plate';
   const layers=[`vessel_${d.vessel}_shadow`,`vessel_${d.vessel}`,d.sauce&&`sauce_${d.sauce}__${group}`,...d.layers,...(d.garnish||[]).map(x=>'garnish_'+x)].filter(Boolean);
-  return `<div class="dish ${hidden?'unknown':''}" style="width:${w}px;height:${h}px">${layers.map(id=>image('dish-layers/'+id,w,h)).join('')}${hidden?'<b>?</b>':''}</div>`;
+  // These two original recipes used hero=true as a future art request, yet
+  // shipped with layered artwork. New hero-required dishes show an honest
+  // placeholder until the matching complete illustration is available.
+  const legacyLayers=recipe.id==='fanqie-chaodan'||recipe.id==='qingzheng-luyu';
+  const pending=d.hero===true&&!legacyLayers;
+  const fallback=pending
+    ? `<span class="dish-pending">${w>=70?'菜图制作中':'待配图'}</span>`
+    : layers.map(id=>image('dish-layers/'+id,w,h)).join('');
+  // Keep the appropriate fallback until a complete illustration loads. If a
+  // requested hero fails to load, never substitute an incomplete layer image.
+  const hero=dishHeroes.has(recipe.id)
+    ? `<span>${fallback}</span><img src="${ART}dish-hero/hero_${recipe.id}.png" width="${w}" height="${h}" alt="" onload="this.previousElementSibling.hidden=true" onerror="this.remove()">`
+    : fallback;
+  return `<div class="dish ${hidden?'unknown':''}" style="width:${w}px;height:${h}px">${hero}${hidden?'<b>?</b>':''}</div>`;
 }
 const keyRows=(rows,focus=-1,y=216)=>rows.map((r,i)=>at(8,y+i*34,138,31,action(r[2],`<i>${r[0]}</i><span>${r[1]}</span>`,'key '+(i===focus?'selected ':'')+(r[3]?'hot':'')), 'key-wrap')).join('');
 export function render(v){

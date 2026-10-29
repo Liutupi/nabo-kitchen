@@ -1,0 +1,2 @@
+# Preserve the bundled OFL text, including its original trailing space.
+resource-candidate/licenses/OFL.ArchivoBlack.txt -whitespace

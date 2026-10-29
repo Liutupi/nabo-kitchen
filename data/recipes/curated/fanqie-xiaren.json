@@ -1,0 +1,88 @@
+{
+ "id": "fanqie-xiaren",
+ "name": "番茄虾仁",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块，葱切末；虾去壳、挑出虾线。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放1小勺油，中火炒虾仁到变色，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 90
+  },
+  {
+   "text": "另放1小勺油炒番茄，加水煮软。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "倒回虾仁煮30秒，加盐撒葱出锅。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 30,
+   "tip": "虾仁久煮会老"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "tomato",
+  "layers": [
+   "shrimp__peeled_stirfried",
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

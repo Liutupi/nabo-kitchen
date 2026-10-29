@@ -78,10 +78,9 @@
    "timer": 120
   },
   {
-   "text": "确认肉丝熟透后关火，静置3分钟再盛出。",
+   "text": "肉丝全部变色即可出锅。",
    "method": "stir_fry",
-   "heat": "off",
-   "timer": 180
+   "heat": "off"
   }
  ],
  "dish": {
@@ -98,5 +97,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

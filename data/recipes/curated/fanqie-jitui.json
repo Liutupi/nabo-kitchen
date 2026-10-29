@@ -1,0 +1,90 @@
+{
+ "id": "fanqie-jitui",
+ "name": "番茄焖鸡腿",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 40,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 350,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tomato",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  },
+  {
+   "id": "water",
+   "qty": "150毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿切块，番茄切块，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中火煎鸡块到表面变色。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "加入姜和番茄炒软，再加水煮开。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "盖盖小火焖15分钟，筷子扎鸡肉流出清汁即熟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "加盐拌匀后出锅。",
+   "method": "braise",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "tomato",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "tomato__wedge_cooked"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

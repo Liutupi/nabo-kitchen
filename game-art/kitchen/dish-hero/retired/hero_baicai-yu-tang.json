@@ -1,0 +1,26 @@
+{
+  "id": "hero_baicai-yu-tang",
+  "recipe_id": "baicai-yu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_baicai-yu-tang-source.png",
+  "original_sha256": "c399e83c756bd027b278c018de05806a54ad15e0b70e9fd90e7168113eb1443e",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "533b70ab2bab8e29803a957a5812a900c157a955d0f152bd46d2db63ed4045f2",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baicai-yu-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白菜鱼汤. Actual recipe ingredients: 鱼（鲈鱼等） (main), 大白菜 (main), 姜. Preparation reference: 白菜切段、姜切片；另用刀板处理鱼并擦干，洗手洗具。 锅加油煎鱼两面定型，放姜和热水煮开。 转小火煮10分钟。 放入白菜，再煮5分钟至白菜熟透。 鱼最厚处中心达63℃且白菜熟透后加盐。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "bb39a15977e8c3780f797e5b53dae99cce39ed772699b4ae224d1d38063c1643",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "a86157f680ed5df5f9ef4f82ec7a2aebb608a0c83ceeb08e452c2f5126c0c4b5",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

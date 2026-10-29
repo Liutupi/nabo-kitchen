@@ -71,11 +71,6 @@
    "timer": 900
   },
   {
-   "text": "测最厚处达到74℃；不足继续煮至达到。",
-   "method": "braise",
-   "heat": "low"
-  },
-  {
    "text": "开盖中火收汁3分钟，翻动鸡翅防止糖汁烧糊。",
    "method": "braise",
    "heat": "mid",
@@ -95,5 +90,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

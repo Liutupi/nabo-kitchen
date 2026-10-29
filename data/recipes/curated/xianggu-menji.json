@@ -76,7 +76,7 @@
    "timer": 1080
   },
   {
-   "text": "测鸡块中心达到74℃，开盖中火收汁3分钟。",
+   "text": "开盖中火收汁3分钟，鸡块流出清汁即熟。",
    "method": "braise",
    "heat": "mid",
    "timer": 180
@@ -96,5 +96,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

@@ -1,0 +1,85 @@
+{
+ "id": "fanqie-doufu-tang",
+ "name": "番茄豆腐汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "tomato",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "700毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "番茄切块，豆腐切块，葱切碎。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅加油炒香番茄，加入水煮开。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "加入豆腐，小火煮10分钟至食材熟透。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "加盐及葱花，煮开后出锅。",
+   "method": "boil",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "tomato",
+  "layers": [
+   "tomato__wedge_soup",
+   "tofu__cubes_soup"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

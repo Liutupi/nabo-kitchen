@@ -1,0 +1,16 @@
+{
+  "id": "abalone",
+  "subject": "去壳鲍鱼肉",
+  "status": "review",
+  "generator": "original deterministic vector drawing via Pillow",
+  "source_script": "tools/generate_seafood_icons.py",
+  "original": "ingredients/originals/abalone-source.png",
+  "original_sha256": "3961cba7e6edcc6836ae60ee3c9dcd0283738f7e1f6eb315fc46c234444c95e3",
+  "path": "ingredients/abalone.png",
+  "size": [
+    160,
+    160
+  ],
+  "sha256": "5063163f3847cfad668292740f66e908c6462080a209076fd49adf99822824b3",
+  "note": "Pending visual and device acceptance; no photo or brand imagery."
+}

@@ -1,0 +1,100 @@
+{
+ "id": "xilanhua-chaoniurou",
+ "name": "西兰花炒牛肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "broccoli",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "西兰花切小朵，姜切丝；烧开水焯西兰花1分钟。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "热锅放油，大火滑炒牛肉到七成变色，盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60,
+   "tip": "火要大，动作要快"
+  },
+  {
+   "text": "原锅炒香姜丝，下西兰花大火炒1分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "倒回牛肉，加蚝油和盐翻匀，马上出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "beef__slices_stirfried",
+   "broccoli__florets"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

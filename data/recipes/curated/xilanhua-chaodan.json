@@ -1,0 +1,81 @@
+{
+ "id": "xilanhua-chaodan",
+ "name": "西兰花炒鸡蛋",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "broccoli",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 3,
+   "unit": "个",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "西兰花切小朵；鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开一锅水，下西兰花焯1分钟，捞出沥水。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "热锅加油，倒蛋液炒到凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 90
+  },
+  {
+   "text": "锅中放入西兰花，大火翻炒1分钟。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "倒回鸡蛋，加盐炒匀出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "broccoli__florets",
+   "egg__scrambled"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

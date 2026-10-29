@@ -1,0 +1,95 @@
+{
+ "id": "youmen-daxia",
+ "name": "油焖大虾",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "鲁",
+ "tags": [
+  "下饭",
+  "宴客"
+ ],
+ "minutes": 20,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shrimp",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  },
+  {
+   "id": "scallion",
+   "qty": 2,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "3大勺"
+  },
+  {
+   "id": "ketchup",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "虾剪去须和尖刺，挑出虾线，擦干；葱切段。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅里多放油，中火把虾两面煎红，用铲子压虾头出虾油。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 120,
+   "tip": "红油是虾头里的"
+  },
+  {
+   "text": "下姜葱，加料酒、生抽、番茄酱、糖和3大勺水。",
+   "method": "braise",
+   "heat": "mid"
+  },
+  {
+   "text": "盖盖焖2分钟，开盖大火收汁到红亮。",
+   "method": "braise",
+   "heat": "high",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "shrimp__boiled"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion",
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

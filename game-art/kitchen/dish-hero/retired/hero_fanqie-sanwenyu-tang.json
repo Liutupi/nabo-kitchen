@@ -1,0 +1,22 @@
+{
+  "id": "hero_fanqie-sanwenyu-tang",
+  "recipe_id": "fanqie-sanwenyu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-sanwenyu-tang-source.png",
+  "original_sha256": "f33d90efc140c7db8fb653ec9a4ed69412c4e56a116667030eba752e7f6e0cff",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "d0738bb6bcf76812dbf457dc83c3c366b4e565cdecf3c4a94c5d83163531c32c",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

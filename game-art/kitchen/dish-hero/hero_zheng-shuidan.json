@@ -1,0 +1,26 @@
+{
+  "id": "hero_zheng-shuidan",
+  "recipe_id": "zheng-shuidan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_zheng-shuidan-source.png",
+  "original_sha256": "c6bade41a8ca0fa0e052fe628a44ec9b617ed815683d705ceb50959fb86d86fd",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "db8b2277744c8fc0d40e578abbfcb4d2591cc5cfd9f0bebeab1cf7bd51c0e94e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_zheng-shuidan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒸水蛋. Actual recipe ingredients: 鸡蛋 (main). Preparation reference: 鸡蛋加盐打散，加入225毫升温水，搅匀后过筛。 倒入浅碗，盖耐热盖或盘子，防止水滴落入。 蒸锅水烧开后放入蛋碗，中小火蒸12分钟。 确认蛋液完全凝固，中心达到71℃；未熟继续蒸。 关火焖2分钟，取出淋生抽和香油。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "7d29dbcacc4d315555752734c6d0ccb1eab89a5fd56f00753d19b5746fd2ebae",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "b708342759726eb137cc1a55e3e3640d7bcd8f7ded9e618780820966ef7b35e7",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

@@ -1,0 +1,87 @@
+{
+ "id": "jiangcong-jianyu",
+ "name": "姜葱煎鱼",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "fish_whole",
+   "qty": 1,
+   "unit": "条",
+   "main": true,
+   "note": "约500克"
+  },
+  {
+   "id": "ginger",
+   "qty": 4,
+   "unit": "片"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "50毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鱼处理干净擦干，两面划刀；姜切丝，葱切段。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "热锅加油，中火把鱼两面煎到金黄定型。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360,
+   "tip": "锅和油都热了再下鱼"
+  },
+  {
+   "text": "放姜葱、生抽和小半碗水，盖盖小火焖5分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 300
+  },
+  {
+   "text": "筷子能扎进鱼背最厚处即熟，出锅。",
+   "method": "braise",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "oval",
+  "sauce": "braise",
+  "layers": [
+   "fish_whole__braised"
+  ],
+  "garnish": [
+   "ginger_shred",
+   "scallion"
+  ],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

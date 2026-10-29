@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "authorization": "User explicitly requested flashing and validation of the delivered 144-hero resource candidate.",
+  "result": {
+    "build": "NOT RUN: accepted application reused; archived build identity verified",
+    "host_tests": "PASS: unchanged-resource candidate checks and six device/C dish-pixel comparisons",
+    "device_tests": "PASS: limited flash/readback, three controlled boots, six complete captures and state restoration",
+    "physical_panel_audio_confirmation": "NOT OBSERVED: user has not yet seen the panel or heard the greeting"
+  },
+  "resource": {
+    "source_commit": "116ee8ea2ed72e5e5094805c397b8f1449d08b75",
+    "sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+    "readback_sha256": "f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931",
+    "bytes": 3756062,
+    "offset": "0x200000",
+    "alignment_padded_write_bytes": 3756064,
+    "erase_end_exclusive": "0x596000",
+    "partition_bytes": 5242880,
+    "partition_remaining_bytes": 1486818,
+    "all_144_have_heroes_in_host_reader": true
+  },
+  "application": {
+    "rewritten": false,
+    "sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+    "elf_sha256": "698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f",
+    "source_branch": "codex/runtime-fixes-20261029",
+    "source_commit": "c7cdc0b94a6009672333dc1736b4f1c33f0a0537",
+    "installed_digest_verified_before_and_after": true
+  },
+  "preservation": {
+    "partition_table_unchanged": true,
+    "bootloader": true,
+    "nvs-phy": true,
+    "files": true,
+    "persistent_store_sequence_before": 151,
+    "persistent_store_sequence_after": 151,
+    "paused_timers_before_after": 1,
+    "test_mode_exited": true,
+    "serial_port_closed": true,
+    "user_data_or_identity_uploaded": false,
+    "whole_chip_erase": false
+  },
+  "startup": {
+    "controlled_reboots": 3,
+    "matching_elf_prefixes": 3,
+    "bundle_validation_ms": [
+      2278,
+      2278,
+      2278
+    ],
+    "watchdog_or_panic_lines": 0,
+    "catalog_recipes": 144,
+    "ingredients": 58,
+    "final_free_heap_bytes": 198336,
+    "final_largest_block_bytes": 114688,
+    "minimum_ui_stack_headroom_bytes_after_update": 6968
+  },
+  "audio": {
+    "stored_sound_restored": 1,
+    "stored_volume_percent_restored": 70,
+    "voice_requests": 1,
+    "voice_starts": 1,
+    "voice_samples": 31200,
+    "voice_nonzero_samples": 27072,
+    "audio_write_errors": 0,
+    "current_human_listening": "not yet observed by user"
+  },
+  "captures": {
+    "accepted_frames": 6,
+    "all_rows": 320,
+    "dish_pixels_compared": 100800,
+    "mismatched_pixels": 0,
+    "catalog_indices": [
+      143,
+      142,
+      1,
+      27,
+      81,
+      86
+    ],
+    "detail": "device-captures/capture-validation.json",
+    "attempts": 11,
+    "excluded_complete_wrong_navigation_frame": 1,
+    "incomplete_or_unterminated_attempts_excluded": 4,
+    "jidan_chaofan_complete_usb_frame": "NOT OBTAINED; three transport failures, not counted as passed"
+  },
+  "unverified": [
+    "Actual panel appearance and audible greeting need current user observation",
+    "All 144 dishes are not individually accepted on hardware or in home cooking",
+    "USB capture framing and flow-control robustness; incomplete frames were rejected",
+    "Long-term use, physical abrupt power loss/full NVS and physical timer-button feel"
+  ],
+  "notes": [
+    "The first write-script attempt stopped before Flash writing because it tried to reload an overlapping RAM stub; corrected to reuse the identified loader.",
+    "Host simulator navigation timing was corrected; the complete wrong-page capture was excluded.",
+    "The older runtime-validation.json records the host-only stage; this report records the later authorized hardware session."
+  ],
+  "human_observation": {
+    "status": "not_observed_yet",
+    "accepted_as_pass": false,
+    "failure_reported": false
+  }
+}

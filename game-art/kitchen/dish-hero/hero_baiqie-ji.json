@@ -1,0 +1,26 @@
+{
+  "id": "hero_baiqie-ji",
+  "recipe_id": "baiqie-ji",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_baiqie-ji-source.png",
+  "original_sha256": "5bcfaa5f1c565937a3fa405053306f55011a5749faab054b1151430ad8ba557f",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "5afdd3b9c2c9cde1de052efe28ff956b6ee7a4322ff50f4b196a9e1c9380f884",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baiqie-ji. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白切鸡. Actual recipe ingredients: 整鸡 (main), 姜, 葱. Preparation reference: 处理整鸡并擦干，生熟砧板分开；姜切片，葱打结。 锅内加3000毫升水和姜葱，烧开后放入整鸡。 保持微沸煮25分钟，中途翻面1次。 测鸡腿最厚处达到74℃；不足继续煮至达到。 关火浸5分钟。 取出静置10分钟，切块后配生抽。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "9883a9e66d1cd7cabcf53788d92e635501aa58da8e73625571d65e078549b27e",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "818927d9e3b38e073ab7933463a1854a0c9d1bb828d2c19b0d78b38175ec58df",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

@@ -1,0 +1,83 @@
+{
+ "id": "xianggu-chaocaixin",
+ "name": "香菇炒菜心",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "choy_sum",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "2大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "香菇洗净切片，菜心洗净切段，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅中放油，炒香蒜末和香菇。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "放菜心和水，中火加盖煮3分钟至熟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐翻匀，菜梗变软后出锅。",
+   "method": "stir_fry",
+   "heat": "mid"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "shiitake__braised",
+   "choy_sum__stirfried"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

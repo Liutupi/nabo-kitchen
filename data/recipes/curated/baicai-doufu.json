@@ -1,0 +1,83 @@
+{
+ "id": "baicai-doufu",
+ "name": "白菜炖豆腐",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "napa_cabbage",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "tofu",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "250毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "白菜洗净切段，豆腐切块，姜切丝。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香姜丝，加入白菜炒软。",
+   "method": "stir_fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加豆腐和水煮开，小火炖8分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 480
+  },
+  {
+   "text": "确认白菜和豆腐热透，加盐出锅。",
+   "method": "stew",
+   "heat": "low"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "napa_cabbage__stirfried",
+   "tofu__cubes_soup"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

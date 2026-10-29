@@ -300,6 +300,54 @@
    "name": "面条",
    "cat": "staple",
    "v": 2
+  },
+  {
+   "id": "crab",
+   "name": "螃蟹",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "scallop",
+   "name": "扇贝肉",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "oyster_meat",
+   "name": "牡蛎肉",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "mussel",
+   "name": "青口贝",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "razor_clam",
+   "name": "蛏子",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "abalone",
+   "name": "鲍鱼肉",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "octopus",
+   "name": "章鱼",
+   "cat": "seafood",
+   "v": 2
+  },
+  {
+   "id": "salmon",
+   "name": "三文鱼",
+   "cat": "seafood",
+   "v": 2
   }
  ]
 }

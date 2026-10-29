@@ -1,0 +1,22 @@
+{
+  "id": "hero_congjiang-zheng-jitui",
+  "recipe_id": "congjiang-zheng-jitui",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_congjiang-zheng-jitui-source.png",
+  "original_sha256": "e4b96c4b5d1ec87d409673d14c13f75c706d6b98e8dcebc3ca6368aef196e475",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "01c0a5182df18f70696e72250bdeadab9da61ff88b42a12089ebc3ec5b47f4a1",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_huanggua-chaodan.png"
+  ],
+  "processing": "Resized original transparent RGBA uniformly to 640x480; no repaint.",
+  "review": "待审美、实机和真实菜品准确度验收。"
+}

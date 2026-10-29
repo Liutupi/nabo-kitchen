@@ -1,0 +1,107 @@
+{
+ "id": "jielan-chao-niurou",
+ "name": "芥兰炒牛肉",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "beef",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "gai_lan",
+   "qty": 300,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "芥兰削去粗梗的老皮，斜切成段；蒜和姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "热锅放油，大火滑炒牛肉到七成变色，盛出。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60,
+   "tip": "火要大，动作要快"
+  },
+  {
+   "text": "炒香蒜姜，下芥兰和牛肉，加蚝油大火翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "beef__slices_stirfried",
+   "choy_sum__stirfried"
+  ],
+  "hero": false,
+  "garnish": [
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

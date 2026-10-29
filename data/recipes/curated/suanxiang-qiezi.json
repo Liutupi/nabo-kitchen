@@ -1,0 +1,77 @@
+{
+ "id": "suanxiang-qiezi",
+ "name": "蒜香煎茄子",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 25,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "eggplant",
+   "qty": 350,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "3大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "茄子切小条，蒜切末。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中火煎茄子至表面微黄。",
+   "method": "fry",
+   "heat": "mid"
+  },
+  {
+   "text": "加入水盖锅，小火焖6分钟至软透。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 360
+  },
+  {
+   "text": "加蒜末和盐翻炒1分钟后出锅。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "eggplant__braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 1
+}

@@ -1,0 +1,83 @@
+{
+ "id": "jidan-chaofan",
+ "name": "鸡蛋炒饭",
+ "course": [
+  "staple"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "rice",
+   "qty": 350,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "用隔夜冷饭最好，先把结块打散；葱切花，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "剩饭冷藏别超1天"
+  },
+  {
+   "text": "热锅加1小勺油，炒鸡蛋到凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
+   "text": "加剩余油和米饭，大火翻炒到米粒松散发烫。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "倒回鸡蛋，加盐和葱花炒匀出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "egg__scrambled"
+  ],
+  "garnish": [
+   "scallion"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

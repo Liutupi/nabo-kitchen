@@ -1,0 +1,80 @@
+{
+ "id": "xianggu-jitui-tang",
+ "name": "香菇鸡腿汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 45,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "salt",
+   "qty": "1/3小勺"
+  },
+  {
+   "id": "water",
+   "qty": "800毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿切块，香菇切片，姜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "鸡块冷水下锅，煮开后撇去浮沫，加姜小火煮15分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 900
+  },
+  {
+   "text": "加入香菇，继续小火煮10分钟。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 600
+  },
+  {
+   "text": "加盐调味后出锅。",
+   "method": "stew",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "shiitake__braised"
+  ],
+  "garnish": [],
+  "hero": false
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}

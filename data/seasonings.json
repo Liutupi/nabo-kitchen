@@ -84,6 +84,18 @@
   {
    "id": "cola",
    "name": "可乐"
+  },
+  {
+   "id": "wood_ear",
+   "name": "木耳"
+  },
+  {
+   "id": "peanut",
+   "name": "花生"
+  },
+  {
+   "id": "laver",
+   "name": "紫菜"
   }
  ]
 }

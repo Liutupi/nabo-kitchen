@@ -37,7 +37,11 @@ def repertoires(root, recipes):
     chars_file = root / "tools/fonts/level1_3500.txt"
     level1 = set(chars_file.read_text(encoding="utf-8")) - set("\r\n")
     provenance = json.loads(chars_file.with_suffix(".source.json").read_text(encoding="utf-8"))
-    if len(level1) != 3500 or sha(chars_file) != provenance["output_sha256"]:
+    # The recorded source digest was produced from CRLF on Windows. Git may
+    # check the same text out as LF; canonicalize only line endings for this file.
+    raw = chars_file.read_bytes().replace(b"\r\n", b"\n")
+    source_hash = hashlib.sha256(raw.replace(b"\n", b"\r\n")).hexdigest()
+    if len(level1) != 3500 or source_hash != provenance["output_sha256"]:
         raise ValueError("3500-character source provenance mismatch")
     recipe_chars = set("".join(canonical(r).decode("utf-8") for r in recipes))
     labels = [r["name"] for r in recipes]
@@ -45,8 +49,9 @@ def repertoires(root, recipes):
         labels += list(strings(json.loads((root / path).read_text(encoding="utf-8"))))
     ui_source = "".join(p.read_text(encoding="utf-8") for pattern in ["*.mjs", "*.html"]
                         for p in (root / "prototype").glob(pattern))
+    ui_source += "".join(p.read_text(encoding="utf-8") for p in (root / "model").glob("kitchen_view*.c"))
     ui_chars = ASCII | set("".join(labels)) | set("↑↓←→℃°·×—…≥≤剩余")
-    ui_chars |= {ch for ch in ui_source if 0x3000 <= ord(ch) <= 0x9fff or ch in "↑↓←→℃°·×—…≥≤"}
+    ui_chars |= {ch for ch in ui_source if 0x3000 <= ord(ch) <= 0x9fff or 0xff00 <= ord(ch) <= 0xffef or ch in "↑↓←→℃°·×—…≥≤"}
     body = level1 | recipe_chars | ui_chars
     if any(ord(c) < 32 for c in body):
         raise ValueError("control character in font repertoire")
@@ -108,7 +113,7 @@ def browser_subset(source, chars, target):
 def proof(pack, target):
     result = Image.new("RGB", (800, 400))
     draw = ImageDraw.Draw(result)
-    caption = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 12)
+    caption = ImageFont.load_default()
     sample = "番茄炒蛋 鸡肉74℃ 鱼肉63℃ 剩余1:30"
     for side, (bg, ink) in enumerate([("#2C2845", "#FBF1E3"), ("#FBF1E3", "#15122A")]):
         x0 = side * 400

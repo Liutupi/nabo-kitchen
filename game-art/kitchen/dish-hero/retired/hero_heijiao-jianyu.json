@@ -1,0 +1,26 @@
+{
+  "id": "hero_heijiao-jianyu",
+  "recipe_id": "heijiao-jianyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_heijiao-jianyu-source.png",
+  "original_sha256": "fc22a2fb458c8589c3d702ad77cc2762f60079081bec337b5c9bbbe9a49d1247",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6bcf4325eef7554a387cdc96a0c26795a79c55c1049992852b236513e9b62ce8",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_heijiao-jianyu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 煎鱼配洋葱. Actual recipe ingredients: 鱼（鲈鱼等） (main), 洋葱 (main), 姜. Preparation reference: 洋葱切丝、姜切片；另用刀板处理鱼并擦干，洗手洗具。 锅加油，中火煎鱼至两面金黄定型。 放姜和洋葱炒香，加入生抽和水。 盖盖小火焖，鱼肉最厚处中心达63℃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white oval fish platter. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "fdf2e0ec6f7be0ea5a69dddda539a40a0693b1b58d04a4d10130412750e71cf6",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "3c0ba564cf980c223a4daaf4e2c5bd02763fd40c85b89aa43137765cc993fb58",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "hero_huluobo-chaodan",
+  "recipe_id": "huluobo-chaodan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_huluobo-chaodan-source.png",
+  "original_sha256": "5b41b61800d0603b063f2bcbe52e4d69e38fd72a208add329b4ceab433de8cdb",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "74c47025d7cf2c1dea485d7ddfd9e224096d2e15891c068d54c361caa9834690",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huluobo-chaodan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 胡萝卜炒蛋. Actual recipe ingredients: 胡萝卜 (main), 鸡蛋 (main). Preparation reference: 胡萝卜切薄片，鸡蛋打散。 锅放1小勺油炒蛋至完全凝固，盛出。 另放1小勺油炒胡萝卜，加水焖至变软。 倒回鸡蛋炒匀，加盐后出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "f50affe37ba891e0b48cc210cba421096c441e0853cdcdfaae43b19eaa27930c",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "0eed055b35084cd5a5b078106ecdb7553c573993090131af58bf91756a6c1789",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

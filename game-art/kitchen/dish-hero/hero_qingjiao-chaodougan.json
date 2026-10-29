@@ -1,0 +1,26 @@
+{
+  "id": "hero_qingjiao-chaodougan",
+  "recipe_id": "qingjiao-chaodougan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingjiao-chaodougan-source.png",
+  "original_sha256": "7612497c4550da38ac7e1fe19c1a9101531f434db6c7710cd40035bb5c397d04",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "3f961bb5ad5e311e66612a7761cc8b42c8dec5eed9ef7b1f21eb690d0847e4e2",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-chaodougan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒炒豆干. Actual recipe ingredients: 豆干 (main), 青椒 (main), 蒜. Preparation reference: 青椒去籽切条；豆干切条，蒜切片。 热锅放油，加入蒜片炒香。 加入青椒翻炒，倒水加盖煮熟。 加入豆干和生抽，炒热至豆干中心热透。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "5d63e789480657e58512248f155f779c56a933e83a109a7ace8264108c7ff1e7",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_lf_sha256": "bceb8586a49633b5d023b48fd8fe7973e86d90d655e2f98256d8473516322c50",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
+}

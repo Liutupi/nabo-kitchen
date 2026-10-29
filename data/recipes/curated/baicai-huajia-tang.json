@@ -1,0 +1,82 @@
+{
+ "id": "baicai-huajia-tang",
+ "name": "白菜花甲汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "适合新手"
+ ],
+ "minutes": 30,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "clam",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "napa_cabbage",
+   "qty": 250,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "water",
+   "qty": "700毫升"
+  },
+  {
+   "id": "salt",
+   "qty": "1克"
+  }
+ ],
+ "steps": [
+  {
+   "text": "花甲泡淡盐水吐沙，搓洗干净；白菜切段，姜切片。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "张口不闭的挑出"
+  },
+  {
+   "text": "锅中加700毫升水和姜片煮开，放入白菜煮软。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 360
+  },
+  {
+   "text": "加入花甲，煮到全部张口，没开口的挑出。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 240
+  },
+  {
+   "text": "加盐调味，关火盛出。",
+   "method": "boil",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "napa_cabbage__stirfried"
+  ],
+  "garnish": [
+   "ginger_shred"
+  ],
+  "hero": true
+ },
+ "source": "curated",
+ "author": "Codex（待厨房验收）",
+ "version": 2
+}
