@@ -12,8 +12,22 @@ run_static_checks() {
     local actionlint_bin
     local test_dir
     local section_gc="-Wl,--gc-sections"
+    local calendar_sources=(main/kitchen/kitchen_calendar.c main/kitchen/kitchen_calendar_view.c
+        main/kitchen/kitchen_view.c main/kitchen/kitchen_canvas.c main/kitchen/kitchen_kfn.c)
+    local calendar_includes=()
     if [[ "$(uname -s)" == "Darwin" ]]; then
         section_gc="-Wl,-dead_strip"
+    fi
+    if [[ "$(uname -s)" == MINGW* || "$(uname -s)" == MSYS* ]]; then
+        # COFF does not discard unresolved references from unused C functions
+        # like ELF/Mach-O do. Link the real dependencies, never ignore symbols.
+        local cjson_dir="${CJSON_DIR:-${IDF_PATH:-}/components/json/cJSON}"
+        if [[ ! -f "${cjson_dir}/cJSON.c" ]]; then
+            echo "Windows host tests need CJSON_DIR or the activated IDF_PATH." >&2
+            return 1
+        fi
+        calendar_sources=(main/kitchen/kitchen_*.c "${cjson_dir}/cJSON.c")
+        calendar_includes=(-I "${cjson_dir}")
     fi
 
     python3 tools/check_repo.py
@@ -97,11 +111,11 @@ run_static_checks() {
     "${test_dir}/test_kitchen_scale"
     "${CC:-cc}" -std=c11 -Wall -Wextra -Werror -ffunction-sections -fdata-sections \
         -Imain/kitchen tests/test_kitchen_calendar_view.c \
-        main/kitchen/kitchen_calendar.c main/kitchen/kitchen_calendar_view.c \
-        main/kitchen/kitchen_view.c main/kitchen/kitchen_canvas.c main/kitchen/kitchen_kfn.c \
+        "${calendar_sources[@]}" "${calendar_includes[@]}" \
         "${section_gc}" -o "${test_dir}/test_kitchen_calendar_view"
     "${test_dir}/test_kitchen_calendar_view"
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_bundle.py
+    PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_crc.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_mixer.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_ingredient_migration.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_deep_sleep_contract.py

@@ -5,6 +5,9 @@
 #include <setjmp.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef _WIN32
+#include "ui_unexpected.c"
+#endif
 
 struct test_task { TaskFunction_t entry; void *arg; bool deleted; uint32_t notification; };
 struct test_sem { bool available; bool deleted; };

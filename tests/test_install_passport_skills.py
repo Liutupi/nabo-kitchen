@@ -62,6 +62,13 @@ class InstallPassportSkillsTest(unittest.TestCase):
             self.symlink(destination / name, Path("..") / ".." / "skills" / name)
         return destination
 
+    def require_symlinks(self) -> None:
+        # These success/partial-success scenarios need real directory links,
+        # just like make_installation(). Do not require Windows elevation.
+        probe = self.root / 'symlink-capability-probe'
+        self.symlink(probe, self.root / 'skills')
+        probe.unlink()
+
     def test_missing_installation_and_default_check_do_not_write(self) -> None:
         for args in ((), ("--check",)):
             with self.subTest(args=args):
@@ -79,6 +86,7 @@ class InstallPassportSkillsTest(unittest.TestCase):
         self.assertIn("All 5 skill links", output)
 
     def test_install_creates_relative_links_and_is_idempotent(self) -> None:
+        self.require_symlinks()
         code, _, errors = self.run_installer("--install")
         self.assertEqual((code, errors), (0, ""))
         snapshots = {}
@@ -203,6 +211,7 @@ class InstallPassportSkillsTest(unittest.TestCase):
         self.assertEqual(parent.read_text(encoding="utf-8"), "preserve parent")
 
     def test_existing_other_skill_is_preserved(self) -> None:
+        self.require_symlinks()
         other = self.root / ".agents" / "skills" / "user-skill" / "SKILL.md"
         other.parent.mkdir(parents=True)
         other.write_text("user-owned skill", encoding="utf-8")
@@ -226,6 +235,7 @@ class InstallPassportSkillsTest(unittest.TestCase):
             self.assertFalse((self.root / ".agents").exists())
 
     def test_partial_installation_failure_reports_kept_links_and_manual_paths(self) -> None:
+        self.require_symlinks()
         original = Path.symlink_to
         failing = INSTALLER.SKILL_NAMES[2]
 
@@ -257,6 +267,7 @@ class InstallPassportSkillsTest(unittest.TestCase):
         self.assertIn("read the canonical files directly", errors)
 
     def test_cli_uses_script_repository_instead_of_working_directory(self) -> None:
+        self.require_symlinks()
         script = self.root / "tools" / "install_passport_skills.py"
         script.parent.mkdir()
         shutil.copyfile(SCRIPT, script)

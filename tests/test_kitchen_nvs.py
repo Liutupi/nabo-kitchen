@@ -1,6 +1,6 @@
 """Exercise the kitchen journal against ESP-IDF 5.5.3's real NVS engine.
 
-Only partition I/O, logging, attributes and ROM CRC are host shims. This uses a
+Partition I/O, logging, attributes, ROM CRC and missing host libc helpers are shims. This uses a
 synthetic 24 KiB NOR image, never a USB device or a user's stored data.
 """
 import os
@@ -43,6 +43,21 @@ static inline uint32_t esp_rom_crc32_le(uint32_t crc, const uint8_t *p, size_t n
         }
         for name, content in shims.items():
             (temp / name).write_text(content)
+        compatibility = []
+        if os.name == 'nt':
+            # MinGW's CRT lacks BSD strlcpy. Keep the IDF NVS sources unchanged;
+            # supply the same bounded-copy/complete-source-length semantics.
+            compat = temp / 'host_string.h'
+            compat.write_text('''#include <string.h>
+static inline size_t host_strlcpy(char *dst, const char *src, size_t cap) {
+    size_t n = strlen(src);
+    if (cap) { size_t take = n < cap - 1 ? n : cap - 1;
+        memcpy(dst, src, take); dst[take] = 0; }
+    return n;
+}
+#define strlcpy host_strlcpy
+''')
+            compatibility = ['-include', str(compat)]
         includes = [temp, ROOT / "main/kitchen", nvs / "include", nvs / "src",
                     nvs / "private_include", idf / "components/esp_common/include"]
         flags = [f"-I{p}" for p in includes]
@@ -62,7 +77,7 @@ static inline uint32_t esp_rom_crc32_le(uint32_t crc, const uint8_t *p, size_t n
         executable = temp / "test_nvs"
         subprocess.run([os.environ.get("CXX", "c++"), "-std=c++17", "-O2", "-Wall",
                         "-Wextra", "-Wno-unused-variable", "-Wno-unused-parameter",
-                        "-DNO_DEBUG_STORAGE", *flags, *map(str, engine),
+                        "-DNO_DEBUG_STORAGE", *compatibility, *flags, *map(str, engine),
                         str(ROOT / "tests/kitchen_nvs_host.cpp"), *map(str, objects),
                         "-o", str(executable)], check=True)
         subprocess.run([str(executable)], check=True, cwd=ROOT)
