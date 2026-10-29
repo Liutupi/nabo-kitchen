@@ -4,6 +4,8 @@
 
 ## 发布准备：v0.1.0 首版体验版
 
+GitHub 已完成公开发布：[v0.1.0](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，为 prerelease，tag 指向 `77ef2a926281ef7e5c4376ecd7158af1e915b06a`。四个公开附件（包括校验文件）均独立匿名回下载并核对字节数与哈希；ZIP 成员/内部校验和合并空隙全 FF 复核通过。见[公开验证](../community/v0.1.0/publication-verification.json)及[提交状态](../community/v0.1.0/submission-status.json)。社区材料及预览已经齐备，等待用户在实际授权动作前确认网页的权利/规则声明；有回执后不得重复授权或提交，审核中不能写成社区已公开。发布过程没有新增硬件写入。
+
 首版沿用已接受的应用和已上机的 144 张完整菜图资源，新完整镜像为 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`，5,853,214 字节。完整构建/主机门禁、严格归档、分段打包及所有空隙擦除值检查已通过；新构建单独保存，没有替换发布应用。见[发布记录](../community/v0.1.0/release-validation.json)、[安装说明](../community/v0.1.0/installation.zh_CN.md)及[社区图片](../../assets/community/README.zh_CN.md)。发布分支包含全部 144 张完整菜图，旧运行时分支和原 17 图归档保留。已关闭 tag 自动构建发布，避免覆盖验收二进制。GitHub 回下载验证和社区回执会按真实结果补记；社区授权按钮需先确认网页的权利及规则声明，目前未提交，也未声称社区公开可用。发布过程没有新增硬件写入。
 
 ## 最新设备验证：144 张完整菜图资源已安装

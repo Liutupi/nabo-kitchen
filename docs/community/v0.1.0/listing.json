@@ -13,5 +13,6 @@
     "assets/community/v0.1.0/04-cook-together.webp",
     "assets/community/v0.1.0/05-device-captures.webp"
   ],
-  "status": "prepared_not_submitted"
+  "status": "prepared_not_submitted",
+  "github_status": "published_prerelease_downloads_verified"
 }

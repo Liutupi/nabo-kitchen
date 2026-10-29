@@ -175,7 +175,7 @@
     },
     "licenses": "Code follows bundled MIT notices; NABO art, character, voice, animation and recipe text are excluded. Font notices apply."
   },
-  "github_public_download_verification": "PENDING publication; see publication-verification.json after publication",
+  "github_public_download_verification": "PASS: anonymous HTTP 200 and exact byte/SHA checks for all four assets, including SHA256SUMS.txt; ZIP members, all internal checksums and merged erased gaps rechecked",
   "community": {
     "status": "prepared_not_submitted",
     "reason": "Awaiting action-time confirmation of the website rights/rules declaration before authorizing publication."
@@ -186,5 +186,6 @@
   "historic_subbudget_exceeded": true,
   "resource_partition_free_bytes": 1486818,
   "device_evidence": "../../development/offline-art-device-validation-20261029.json",
-  "media": "../../../assets/community/v0.1.0/media-manifest.json"
+  "media": "../../../assets/community/v0.1.0/media-manifest.json",
+  "publication_verification": "publication-verification.json"
 }

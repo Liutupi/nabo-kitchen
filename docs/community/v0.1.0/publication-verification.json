@@ -1,0 +1,60 @@
+{
+  "release": "v0.1.0",
+  "verified_at": "2026-10-29T09:06:14.376756+00:00",
+  "url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0",
+  "visibility": "public",
+  "tag_target": "77ef2a926281ef7e5c4376ecd7158af1e915b06a",
+  "is_draft": false,
+  "is_prerelease": true,
+  "anonymous_release_html_status": 200,
+  "all_four_downloads_including_checksum_verified": true,
+  "assets": [
+    {
+      "file": "manifest.json",
+      "http_status": 200,
+      "bytes": 3574,
+      "sha256": "75d8882d9be5be010be93104d9016540f37aa3dd08b18edf3492618bdef37ece",
+      "url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.1.0/manifest.json",
+      "authentication": "none",
+      "matches_prepared_file": true,
+      "matches_github_digest": true
+    },
+    {
+      "file": "nabo-kitchen-v0.1.0-full.bin",
+      "http_status": 200,
+      "bytes": 5853214,
+      "sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+      "url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.1.0/nabo-kitchen-v0.1.0-full.bin",
+      "authentication": "none",
+      "matches_prepared_file": true,
+      "matches_github_digest": true
+    },
+    {
+      "file": "nabo-kitchen-v0.1.0.zip",
+      "http_status": 200,
+      "bytes": 2746415,
+      "sha256": "0a00367f78fc84f9ea609df32f921f453b3f199a5a7c868ceb829cf4f3e18aa6",
+      "url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.1.0/nabo-kitchen-v0.1.0.zip",
+      "authentication": "none",
+      "matches_prepared_file": true,
+      "matches_github_digest": true
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "http_status": 200,
+      "bytes": 265,
+      "sha256": "bcee121c160d1f8b04cdfbea0b9a93a33f650f0f5b8d9b1d13a5220b00168207",
+      "url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.1.0/SHA256SUMS.txt",
+      "authentication": "none",
+      "matches_prepared_file": true,
+      "matches_github_digest": true
+    }
+  ],
+  "zip_members_exact_allowlist": true,
+  "every_zip_checksum": "PASS",
+  "downloaded_merged_segments_exact": "PASS",
+  "downloaded_merged_gaps_all_ff": true,
+  "accepted_app_and_bundle_unchanged": true,
+  "private_data_in_package": false,
+  "community_status": "prepared_not_submitted"
+}
