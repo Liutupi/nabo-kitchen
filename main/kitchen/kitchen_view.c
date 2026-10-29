@@ -40,7 +40,7 @@ int kv_prepare(kv_scene* scene, ku_ui* u, const kv_assets* a, int64_t now, int b
     scene->battery = battery;
     scene->animation_frame = frame;
     snprintf(scene->clock, sizeof(scene->clock), "%s",
-             clock && strlen(clock) == 5 ? clock : "--:--");
+             clock && (!*clock || strlen(clock) == 5) ? clock : "--:--");
     if (u->page == 5 &&
         (!kc_read_ingredients(u->pack, u->recipe, scene->ingredients, 10,
                               &scene->ingredient_count) ||

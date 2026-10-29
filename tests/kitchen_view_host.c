@@ -39,6 +39,15 @@ int view_draw(uint16_t *pixels,int y,int height){kg_canvas c;kg_init(&c,pixels,2
     if (state.page == 1) kcal_view_hint(&c,&scene,state.date_unconfirmed);
     return !c.error;
 }
+int view_capture_clock(unsigned clean) {
+    return kv_prepare(&scene, &state, &assets, 1000, 80,
+                      clean ? "" : "--:--", frame);
+}
+int view_pause_timer(void) {
+    if (state.page != 7 || !state.timers.count) return 0;
+    kt_toggle(&state.timers, state.timers.items[0].id, 1000);
+    return kv_prepare(&scene, &state, &assets, 1000, 80, "", frame);
+}
 int view_step(unsigned step){state.page=6;state.sessions[state.recipe].index=(uint8_t)step;
     return kv_prepare(&scene,&state,&assets,1000,80,"20:30",frame);}
 int view_boot_at(unsigned elapsed){

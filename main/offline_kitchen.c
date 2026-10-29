@@ -69,6 +69,7 @@ typedef struct {
       voice_due, last_battery;
   int redraw, storage_fault, battery;
   bool storage_ready, audio_ready, boot_voice, test_mode, capture, clock_lost;
+  bool capture_clean;
   ku_ui *test_original;
   kcal_editor calendar;
   bool calendar_active;
@@ -346,8 +347,13 @@ static int next_animation(kitchen_state *s, int64_t now) {
   s->next_animation = now + 1000 / s->animation.fps;
   return result;
 }
-static bool render(kitchen_state *s, int64_t now, bool full, bool capture) {
-  if (!kv_prepare(&s->scene, &s->ui, &s->assets, now, s->battery, "--:--",
+static bool render(kitchen_state *s, int64_t now, bool full, bool capture,
+                   bool clean) {
+  /* Presentation applies to this captured frame only. It never exits the
+   * isolated test session or changes the user's saved state. */
+  clean = capture && clean;
+  if (!kv_prepare(&s->scene, &s->ui, &s->assets, now, s->battery,
+                  clean ? "" : "--:--",
                   s->frame))
     return false;
   int first = 0, last = HEIGHT;
@@ -375,7 +381,7 @@ static bool render(kitchen_state *s, int64_t now, bool full, bool capture) {
     }
     if (canvas.error)
       return false;
-    if (s->test_mode) {
+    if (s->test_mode && !clean) {
       kg_rect(&canvas, 0, 0, 48, 16, 0xf800);
       kg_text(&canvas, &s->fonts, &s->assets.latin12, 3, 0, 0, 0xffff, "TEST");
     }
@@ -523,6 +529,7 @@ static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
       s->test_mode = false;
       s->calendar_active = false;
       s->capture = false;
+      s->capture_clean = false;
       s->action_name[0] = 0;
       s->next_animation = 0;
       atomic_store(&voice_request, 0);
@@ -549,9 +556,11 @@ static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
       printf("\n@kitchen.seed ok\n");
     } else
       printf("\n@kitchen.seed test-mode-required-or-invalid\n");
-  } else if (!strcmp(line, ">kitchen.capture")) {
+  } else if (!strcmp(line, ">kitchen.capture") ||
+             !strcmp(line, ">kitchen.capture clean")) {
     if (s->test_mode) {
       s->capture = true;
+      s->capture_clean = !strcmp(line, ">kitchen.capture clean");
       s->redraw = 1;
       printf("\n@kitchen.capture queued\n");
     } else
@@ -733,9 +742,11 @@ static void worker(void *arg) {
       s->last_save = now;
     }
     bool capture = s->test_mode && s->capture;
+    bool clean = capture && s->capture_clean;
     s->capture = false;
+    s->capture_clean = false;
     if ((s->redraw || animated || capture) &&
-        !render(s, now, s->redraw || capture, capture)) {
+        !render(s, now, s->redraw || capture, capture, clean)) {
       ESP_LOGE(TAG, "screen rendering failed");
       break;
     }
@@ -743,7 +754,8 @@ static void worker(void *arg) {
       bsp_display_backlight(80);
       lit = true;
     }
-    s->redraw = 0;
+    /* Restore the visible isolation badge immediately after a clean capture. */
+    s->redraw = clean ? 1 : 0;
     vTaskDelay(pdMS_TO_TICKS(20));
   }
   save(s, esp_timer_get_time() / 1000);

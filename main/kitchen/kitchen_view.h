@@ -33,6 +33,8 @@ typedef struct {
 int kv_assets_init(kv_assets* out, const kc_catalog* catalog, const krc_pack* recipes,
                    const kfn_pack* fonts, const ksp_pack* dish, const ksp_pack* icons,
                    const ksp_pack* ui, const kan_pack* animation);
+/* An explicit empty clock hides it for presentation captures. NULL or invalid
+ * clock strings retain the normal unavailable-clock placeholder. */
 int kv_prepare(kv_scene* scene, ku_ui* state, const kv_assets* assets, int64_t now, int battery,
                const char* clock, const uint8_t* animation_frame);
 int kv_draw(kg_canvas* canvas, const kv_scene* scene);

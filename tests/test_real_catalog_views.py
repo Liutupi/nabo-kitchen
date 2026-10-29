@@ -109,6 +109,25 @@ class RealCatalogViews(unittest.TestCase):
         self.assertEqual(self.dll.view_page(7, 0), 1)
         self.check_render("timer page: cancel control and real glyphs")
 
+    def test_clean_capture_changes_only_the_clock_region(self):
+        pixels_type = ct.c_uint16 * (240 * 320)
+        self.dll.view_capture_clock.argtypes = [ct.c_uint]
+        self.assertEqual(self.dll.view_page(4, self.ids.index('fanqie-chaodan')), 1)
+        self.assertEqual(self.dll.view_capture_clock(0), 1)
+        normal, clean, restored = pixels_type(), pixels_type(), pixels_type()
+        self.assertEqual(self.dll.view_draw(normal, 0, 320), 1)
+        self.assertEqual(self.dll.view_capture_clock(1), 1)
+        self.assertEqual(self.dll.view_draw(clean, 0, 320), 1)
+        clock = {y * 240 + x for y in range(6, 26) for x in range(184, 234)}
+        changes = {i for i, (a, b) in enumerate(zip(normal, clean)) if a != b}
+        self.assertTrue(changes)
+        self.assertTrue(changes <= clock, 'Capture changed content outside the clock')
+        self.assertTrue(all(clean[i] == clean[7 * 240 + 235] for i in clock))
+        self.check_render('clean capture with the actual fonts and sprites')
+        self.assertEqual(self.dll.view_capture_clock(0), 1)
+        self.assertEqual(self.dll.view_draw(restored, 0, 320), 1)
+        self.assertEqual(list(normal), list(restored))
+
     def test_opening_scene_waits_for_ok(self):
         self.assertEqual(self.dll.view_page(0, 0), 1)
         for elapsed in (0, 3599, 3600, 60000):
