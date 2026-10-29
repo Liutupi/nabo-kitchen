@@ -17,12 +17,12 @@ FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手�
 | 痛点 | 功能 |
 |---|---|
 | 不知道吃什么 | **颠勺抽菜**：NABO 颠一下锅，抽出今天的菜或者一整套搭配（一荤一素一汤），最近吃过的菜降低权重，7 天内仍可抽到 |
-| 不知道怎么做 | **跟做模式**：一屏一步，有火候和做法图标；可以同时开 3 个计时器；按键或语音“下一步” |
+| 不知道怎么做 | **跟做模式**：一屏一步，有火候和做法图标；可以同时开 3 个计时器 |
 | 家里有什么做什么 | **冰箱模式**：勾选手头的食材，推荐能做的菜，并标出还缺几样 |
 | 买菜 | **买菜单**：把选好的菜合并成一张食材清单 |
 | 坚持做饭 | **图鉴和等级**：做完一道菜就点亮一格，从“夜宵学徒”升到“深夜厨神” |
 
-在线时，小智就是没有上限的扩展菜谱库：可以问调料怎么替代，也可以说“把这道菜存进菜谱”。
+v0.1 是**纯离线、只用三个按键**的版本，没有语音和联网功能。语音“下一步”、用小智扩展菜谱库等功能，留到以后评估是否做“小智加厨房”的版本。
 
 ## 仓库是什么
 
@@ -43,7 +43,7 @@ FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手�
 | 做界面 | [game-art/kitchen/UI_DESIGN.md](game-art/kitchen/UI_DESIGN.md)，样板图 `game-art/kitchen/reference/ui-mockup.png` |
 | 做美术 | [game-art/kitchen/ART_BRIEF.md](game-art/kitchen/ART_BRIEF.md)，再看 [CODEX_PROMPTS.md](game-art/kitchen/CODEX_PROMPTS.md) 或 [GROK_PROMPTS.md](game-art/kitchen/GROK_PROMPTS.md) |
 | 写或审菜谱 | [data/RECIPE_FORMAT.md](data/RECIPE_FORMAT.md) |
-| 想看进度 | [docs/ROADMAP.md](docs/ROADMAP.md) |
+| 想看进度 | [docs/ROADMAP.md](docs/ROADMAP.md)，最新评估见 [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |
 | 在多台电脑上协作 | [docs/WORKFLOW.md](docs/WORKFLOW.md) |
 
 ## 许可

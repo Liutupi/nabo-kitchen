@@ -1,6 +1,10 @@
 # NABO 深夜厨房 · 玩法与界面设计
 
-架构见 [../../docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md)，美术见 [ART_BRIEF.md](ART_BRIEF.md)。**视觉风格和每页的具体版式以 [UI_DESIGN.md](UI_DESIGN.md) 为准**，样板图是 `reference/ui-mockup.png`。本文只规定每页有什么、怎么操作。
+架构见 [../../docs/ARCHITECTURE.md](../../docs/ARCHITECTURE.md)，美术见 [ART_BRIEF.md](ART_BRIEF.md)。
+
+> **v0.1.0 实现和本文的差异**（2026-10-29）：没有语音；重抽不限次；最近吃过的菜只降权，不排除；没有时钟，日期由用户手动确认；NABO 只有 4 个动作。详见 `docs/ARCHITECTURE.md` 第 0 节。
+
+**视觉风格和每页的具体版式以 [UI_DESIGN.md](UI_DESIGN.md) 为准**，样板图是 `reference/ui-mockup.png`。本文只规定每页有什么、怎么操作。
 
 ## 1. 一句话
 

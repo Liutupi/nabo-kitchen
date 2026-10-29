@@ -1,6 +1,17 @@
 # AGENTS.md · nabo-kitchen（NABO 深夜厨房）
 
-FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按键）上的家常菜助手。整机只装**小智加上厨房**，不装其他游戏。
+FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按键）上的家常菜助手。
+
+**当前形态（v0.1.0 起）**：基于 FoloToy 官方模板的**独立离线固件**，ESP-IDF 5.5.3，没有小智、语音和联网。早期规格里“小智加厨房”的设计已经暂停，相关章节在 `docs/ARCHITECTURE.md` 中标为“未来”。
+
+## 分支地图（2026-10-29）
+
+| 分支 | 内容 | 状态 |
+|---|---|---|
+| `main` | 规格、评估、交接入口 | 规格以这里为准 |
+| `codex/kitchen-model` | **最新**菜谱、美术、原型、打包工具（从 main 分出，内容最全） | 开发中；建议合并回 main，见 `docs/REVIEW-2026-10-29.md` 第 4 节 |
+| `codex/release-v0.1.0` | **最新**固件源码和 v0.1.0 发布材料（和 main 没有共同历史） | 已发布 |
+| 其他 4 个 `codex/*` | 已完全包含在上面两个分支里 | 待删除 |
 
 **开工前必读**：`HANDOFF.md`（当前状态）→ `docs/WORKFLOW.md`（同步规矩）→ 和你任务相关的规格文档。
 
@@ -9,8 +20,8 @@ FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按�
 | 谁 | 负责 | 不负责 | 入口文档 |
 |---|---|---|---|
 | **刘东坡（产品负责人）** | 拍板（造型、配色、名称、菜谱取舍）；提供和审核家常菜谱；在厨房和真机上验收 | — | `HANDOFF.md` 里的“待你决定” |
-| **Claude（总架构师）** | 架构和接口；玩法和界面规格；美术规格和验收；菜谱格式和内容整理；浏览器原型；素材处理和打包工具（抽帧、限色、菜品分层合成）；审图 | 直接出美术图 | `docs/ARCHITECTURE.md`、`game-art/kitchen/DESIGN.md` |
-| **Codex** | 所有静态美术（起始图、造型、食材、菜品分层、招牌菜、图标、界面套件、背景）；M4 起分出固件仓库，完成 C 实现、测试和 GitHub 发布 | 改规格文档里已定稿的规则（需要改就在 HANDOFF 里提出） | `game-art/kitchen/ART_BRIEF.md`、`CODEX_PROMPTS.md` |
+| **Claude（总架构师）** | 架构和接口；玩法和界面规格；美术规格和审图；**菜谱内容质量**（写法规范、改写、lint）；项目评估 | 直接出美术图 | `docs/ARCHITECTURE.md`、`game-art/kitchen/DESIGN.md` |
+| **Codex** | 所有静态美术；浏览器原型和打包工具（实际由 Codex 完成，2026-10-28 起）；固件 C 实现、测试、刷机验证和发布 | 改规格文档里已定稿的规则（需要改就在 HANDOFF 里提出） | `game-art/kitchen/ART_BRIEF.md`、`CODEX_PROMPTS.md` |
 | **Grok** | NABO 半身表演视频（图生视频） | 静态图 | `game-art/kitchen/GROK_PROMPTS.md` |
 
 分工可以调整，但调整要写进 HANDOFF 的决定记录。
@@ -27,7 +38,7 @@ FoloToy AI Passport 工牌（ESP32-C3，无 PSRAM，240×320 竖屏，三个按�
 | `game-art/kitchen/grok-clips/` | Grok 交付，由人放进来 | 原视频，不转码 |
 | `game-art/kitchen/reference/` | 只读 | `nabo-idle.png` 是 NABO 身份的基准 |
 | `data/recipes/` | Claude 整理，刘东坡审核 | 菜谱 JSON |
-| `prototype/`、`tools/` | Claude | 原型和打包工具 |
+| `prototype/`、`tools/` | Codex（`tools/lint_recipes.py` 归 Claude） | 原型和打包工具 |
 | `HANDOFF.md` | 所有人 | 只在顶部“最新状态”段落和决定记录里追加 |
 | `private/` | 本机 | 被 Git 忽略。放设备备份、串口日志、草稿 |
 
