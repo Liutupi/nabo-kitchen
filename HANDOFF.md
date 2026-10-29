@@ -4,6 +4,20 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 127 张缺失菜图已补齐，待审图
+
+**当前 144 道菜全部有完整菜图（原有 17 + 新增 127，缺图 0），新增清单均为 `review`。** 本批使用内置 OpenAI imagegen 逐菜按真实配方生成，保留原图、640×480 真透明交付、提示词和哈希；未动原有 17 张图、82 分层、菜谱、食材 ID、NABO C 造型/帽标或定稿规格。蛏子汤首稿壳形已返修，清蒸鱼贴边首稿已拒收，记录见批次。菜谱额外保存统一 LF 的哈希，方便跨电脑核对。
+
+- **内容/美术继续入口**：`codex/kitchen-model`；本批另存 `codex/kitchen-dish-art-20261029`。本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-art`。先读 [批次交付与复现](game-art/kitchen/dish-hero/batches/2026-10-29/README.md)，再看 `manifest.json`（`complete_pending_review`）、11 页 `decoded-review-XX.png` 与 `VISUAL_REVIEW.md`；没有仍在生成的队列，不要重复补这 127 张。
+- **工程检查通过**：144 道 schema/引用和全部 PNG/原图哈希；菜图 5 项、原型 3 项测试；328 静态 PNG 的限色索引往返；使用未改的固件 `c7cdc0b` 生产 C 代码，11 项真实资源绘制测试，144 道均找到完整图。已查看全部 11 页解码图及六页 C 页面，工程验证与人工验收严格分开。
+- **资源候选**：[resource-candidate](game-art/kitchen/dish-hero/batches/2026-10-29/resource-candidate/README.md)。菜图 1,596,273 B，整包 3,756,062 B；整包 SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`。实际 5 MiB 区剩 1,486,818 B；五个非菜图 payload 与现有固件资源逐字节一致。确定性重打包、CRC、截断/损坏拒绝、协作回调通过。**旧菜图 200 KB 预算已超出**，只记录建议请架构师复核，不改已定稿预算来掩盖。
+- **设备保持原样**：本轮没有构建/替换应用或刷机，设备仍是 17 张完整图资源；用户此前确认欢迎语正常。固件继续从 `codex/runtime-fixes-20261029` 的 `c7cdc0b` 接手，勿混合两个分支根目录。新资源实机启动、内存、显示、按键流程、长期使用尚未验收。
+- **下一步**：人工逐菜检查精确盘心、描边、风格和实际食材形态，家庭实做验收；通过后同步更新 CSV/元数据到 `done`，返修保留版本与哈希。新资源设备测试另行确认具体候选和范围。GitHub 每 30 分钟跟进仍开启，只有实质变化、失败/冲突或需要决定时通知；同步前先 fetch/pull --rebase，禁止 force push。
+
+本轮没有发布 Release。源图、生成记录、候选包、许可、报告和复现命令均在 Git 中，接手不依赖聊天或本机 private 目录。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 全部缺失菜图补全进行中
 
 用户明确要求继续完成所有缺失菜图，并持续跟进 GitHub。当前在 `codex/kitchen-dish-art-20261029` 制作，从内容分支 `codex/kitchen-model` 的 `c31bae7` 继续；本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-art`。已核对 **144 道菜、17 张原有完整菜图、127 张待补**；按已通过风格逐菜对照实际配方出图，不修改既定规格或菜谱。完整交付、原图、提示词、哈希和状态在 [补图批次](game-art/kitchen/dish-hero/batches/2026-10-29/README.md) 及其 `manifest.json`；每个实际完成的 ID 才追加到清单并标 `review`，不是待办占位图。

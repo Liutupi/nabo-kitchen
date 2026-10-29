@@ -25,6 +25,30 @@ def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def verify():
+    """Check delivered files and cross-platform recipe provenance without edits."""
+    recipes = {p.stem: p for p in (ROOT / 'data/recipes/curated').glob('*.json')}
+    with (ART / 'ASSET_LIST.csv').open(encoding='utf-8', newline='') as stream:
+        rows = [row for row in csv.DictReader(stream) if row['category'] == 'hero']
+    assert len(rows) == len(recipes)
+    assert {row['id'] for row in rows} == {'hero_' + ident for ident in recipes}
+    for row in rows:
+        ident = row['id']
+        meta = json.loads((HERO / (ident + '.json')).read_text(encoding='utf-8'))
+        assert ident == 'hero_' + meta['recipe_id']
+        assert row['path'] == 'dish-hero/' + ident + '.png'
+        assert meta['status'] == row['status'] and row['status'] in ('review', 'done')
+        assert digest(HERO / (ident + '.png')) == meta['asset_sha256']
+        assert digest(HERO / meta['original']) == meta['original_sha256']
+        if 'recipe_lf_sha256' in meta:
+            raw = recipes[meta['recipe_id']].read_bytes().replace(b'\r\n', b'\n')
+            assert hashlib.sha256(raw).hexdigest() == meta['recipe_lf_sha256'], ident
+        with Image.open(HERO / (ident + '.png')) as image:
+            assert image.mode == 'RGBA' and image.size == (640, 480)
+            assert image.getchannel('A').getextrema() == (0, 255)
+    print('PASS: %d recipe heroes, PNG/original hashes, transparency, registration and LF recipe provenance' % len(rows))
+
+
 def save(value):
     value["updated_utc"] = datetime.now(timezone.utc).isoformat()
     QUEUE.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -128,11 +152,12 @@ def sheets(decoded=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["init", "ingest", "sheets"])
+    parser.add_argument("command", choices=["init", "ingest", "sheets", "verify"])
     parser.add_argument("id", nargs="?")
     parser.add_argument("original", nargs="?")
     parser.add_argument("--decoded", type=Path, help="Folder of actual unpacked KSP1 dish PNGs")
     args = parser.parse_args()
     if args.command == "init": init()
     elif args.command == "ingest": ingest(args.id, args.original)
+    elif args.command == "verify": verify()
     else: sheets(args.decoded)

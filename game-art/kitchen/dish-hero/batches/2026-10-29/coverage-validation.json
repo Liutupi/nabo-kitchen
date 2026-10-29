@@ -1,0 +1,1021 @@
+{
+  "status": "PASS",
+  "recipes": 144,
+  "heroes": 144,
+  "new_heroes": 127,
+  "missing_heroes": [],
+  "original_17_and_specifications_preserved": true,
+  "recipe_data_preserved": true,
+  "base_commit": "c31bae7d4d50c5e25a282696f787317bc3636b93",
+  "review_status": "human visual, exact anchors and cooking acceptance still pending",
+  "assets": [
+    {
+      "id": "hero_baicai-danhua-tang",
+      "recipe_sha256": "65929d659f6f26efb9799f0aa010526594b1b1fa4e9f0a037d52dbbeac7309a4",
+      "asset_sha256": "11b590fbf4881dc6d69a8f05dbb431fa814ddd77c2d1aa5475aea0b037292f96",
+      "original_sha256": "7abb4572e8e8e64fe5ce14fcd301dfb7c37a79dcd9178d43c9e916cfc46014ef",
+      "recipe_lf_sha256": "3c17afa169f04ce2d141d1b761224d16db4d052f63dad4c2cf9f6487de79e68d"
+    },
+    {
+      "id": "hero_baicai-doufu",
+      "recipe_sha256": "7fccf309abc64d5c73ee7c3fc4138401bc6c2ca92cf5ee1a195b585cb1e75814",
+      "asset_sha256": "43a57ed7f5081a0e54be444b54c6b99c359c13bcf464d58819deb07115006272",
+      "original_sha256": "e0c016fb0375dffc2648ff4fd32f8abaa58f4c74c78ddd071c0b4dd29d892b79",
+      "recipe_lf_sha256": "a7b14f75f20eedd30c7dc1643c40b3d89841eb92ac1152e6ad493dd6ce3bebb5"
+    },
+    {
+      "id": "hero_baicai-huajia-tang",
+      "recipe_sha256": "e0079019036d952214a3b8ea889c7af41355e21ae2c4ce14a5f0655edfa0a776",
+      "asset_sha256": "2f240d764416f2ebe70372b3fe3560fa69d36a7ef4d12360cb7ce2e5977cfe16",
+      "original_sha256": "541ecabd6cf3becbbbc262c0104a37ea47a53802b9649795245a8616654090bb",
+      "recipe_lf_sha256": "a04d03d948ca02db71c50fae84443750697faf36674408557396c74370ab1aaa"
+    },
+    {
+      "id": "hero_baicai-jitui-tang",
+      "recipe_sha256": "b6f6fac9e89dffdd55e9f086a84e4abd8c8aa88ca8ad2bd806ce5ca9e738bb80",
+      "asset_sha256": "ebc11c75d6ad7c757fb9a4472241156c2471972cffa7da76fec8a79a7e654545",
+      "original_sha256": "85e03c0bc1be701968304603980e4f5669ffb4b60933cb6889432be6012aba08",
+      "recipe_lf_sha256": "3b4bc2a9259061bf5752706d6b4bbc7cdfa1cd338eb8919e6e40ef76ca254864"
+    },
+    {
+      "id": "hero_baicai-paigu-tang",
+      "recipe_sha256": "60bfce5c0f2cf4fb78325141234322dd7f8805f66b422f6e6b39adaf087f9ef4",
+      "asset_sha256": "a571036738432cb7bd73df3218aec7e3f0b4fd7f18083f2174c5167540027d28",
+      "original_sha256": "96aaaaff771e0b0ab36eac2f6a7a17b7a7e92c12f130f7694a3714981767f32f",
+      "recipe_lf_sha256": "9cac93362ccd86228483d2c7b4ed17baffe932ae542db3b7f82ac93c09571b3b"
+    },
+    {
+      "id": "hero_baicai-pangxie-tang",
+      "recipe_sha256": "e8f07e7258708e03fbc78703e55d9eecf093d7122889b85b30bc71d713b2cc4e",
+      "asset_sha256": "1f9349fe6952f5fa765a2219976278197e242940c014c51442fbfdf9b4f91143",
+      "original_sha256": "d69ec4627f8bc6379add38f5e9f567429edfa86bd995e6f667f62f97cc825404",
+      "recipe_lf_sha256": "311417bf44b9fd081574d0f0c0dafc19eae7d9d25ce6907134b39457d29beee6"
+    },
+    {
+      "id": "hero_baicai-yu-tang",
+      "recipe_sha256": "bb39a15977e8c3780f797e5b53dae99cce39ed772699b4ae224d1d38063c1643",
+      "asset_sha256": "533b70ab2bab8e29803a957a5812a900c157a955d0f152bd46d2db63ed4045f2",
+      "original_sha256": "c399e83c756bd027b278c018de05806a54ad15e0b70e9fd90e7168113eb1443e",
+      "recipe_lf_sha256": "a86157f680ed5df5f9ef4f82ec7a2aebb608a0c83ceeb08e452c2f5126c0c4b5"
+    },
+    {
+      "id": "hero_baicai-yupian-tang",
+      "recipe_sha256": "d6249d28a78586cc25ad785d565bae917484aa3bd63e163842a371ae1b4a58f5",
+      "asset_sha256": "16c080199bf0d015bef5569e4bb37ff95415a2776f14ce7fb7dbf4aaa5edb3ab",
+      "original_sha256": "d0ca115ee3687e47cfdc1a138a251e1e05f6023995ef046016a613563544c664",
+      "recipe_lf_sha256": "70a3f36a73d7340eca947ce82f0b3fdd988546d13f0aba2f4d137a6269d1ebb0"
+    },
+    {
+      "id": "hero_baiqie-ji",
+      "recipe_sha256": "9883a9e66d1cd7cabcf53788d92e635501aa58da8e73625571d65e078549b27e",
+      "asset_sha256": "5afdd3b9c2c9cde1de052efe28ff956b6ee7a4322ff50f4b196a9e1c9380f884",
+      "original_sha256": "5bcfaa5f1c565937a3fa405053306f55011a5749faab054b1151430ad8ba557f",
+      "recipe_lf_sha256": "818927d9e3b38e073ab7933463a1854a0c9d1bb828d2c19b0d78b38175ec58df"
+    },
+    {
+      "id": "hero_baizhuo-caixin",
+      "recipe_sha256": "b16f872f630ac828ac795aeb3a3b82d3a551386e87990f5e8e58b9a1bf73d57d",
+      "asset_sha256": "853bece9065e6e03bec4c3aa3698e943ff6f1c693bfa5a6c8f25358a48bfb937",
+      "original_sha256": "076b98bb9e793fd1077d0530c97d0172f64cc03d00aaaad5a792e1a96ab9df59",
+      "recipe_lf_sha256": "d0c003cbe41beacd0b7f8e21a2d0b6ae69209be839d7595c4973472019434bcf"
+    },
+    {
+      "id": "hero_baizhuo-xia",
+      "recipe_sha256": "78ed72b28a8fc2c60401a9cb43fd281674828a50ba49738e03087791841d2282",
+      "asset_sha256": "2f57410f059b1dda030332f8ff5830a2a90f22bac5bb6b7631b2e06e90e39eb8",
+      "original_sha256": "74257a280a0d0c1177bdf06693a15dc38efb01869f47736bcb39f8a6e70efdf6",
+      "recipe_lf_sha256": "83eaad1cc6d2e1b61e5993ffe620e6674e9c589036617d1433fcb9e783687d40"
+    },
+    {
+      "id": "hero_chao-xilanhua",
+      "recipe_sha256": "4c24e8c59b17c60c47cd5df4bff7e4c75b3be94f8f2aa99b8dd8c8bb64905a88",
+      "asset_sha256": "688011bfb263b56c3b91774f9ccc840cd438b1f8a9e0a144228da99a8c39ffd4",
+      "original_sha256": "81964f52d6a514ef11b6518132b9e3431ea18c97e903bd8b4179263116d78e47",
+      "recipe_lf_sha256": "cf4ef60d2bc03f8dc7ae5a3739dc26ba486dfa57ce7e3612e5a7a0d430f0bcb1"
+    },
+    {
+      "id": "hero_chengzi-doufu-tang",
+      "recipe_sha256": "c511b428a144455d84f458b512e88c62eaefa33f51c85bc31d1061e9313da2b4",
+      "asset_sha256": "df41ae0deb70f480453b86c1ab78a6f84e6c96264ea908b732f142fdb41e1fd6",
+      "original_sha256": "fb77bf4cd00f9deede419287f43e3d210ea8215bfe783ab21dd586a83bf4fc32",
+      "recipe_lf_sha256": "3926af69e63ddfa68e00fbbdaa22a9ff4cf7303c9e0ffbb134abb29f400764de"
+    },
+    {
+      "id": "hero_chizhi-zheng-paigu",
+      "recipe_sha256": "39a5bc3d7608fcec6baf444d905a1d41da657f82229b76f3f2a81a7cefda94c8",
+      "asset_sha256": "1a28f309985a530563f8867627e766ba86bfbd872a9d403c46d81cca1186e7dc",
+      "original_sha256": "c94e447e27ef9b4820b1246ab7286d937867d2690edfa24fee37dcc0a9c1412f",
+      "recipe_lf_sha256": "7bd5f4e48e3099a1d424c1e55288c881208a96ce397655d10aa18e72859d2c54"
+    },
+    {
+      "id": "hero_congjiang-zheng-jitui",
+      "recipe_sha256": "514e5db5228b6ae46a5e278a2552ed61426cb95b1aa332d3b079e2c1daaf0eff",
+      "asset_sha256": "01c0a5182df18f70696e72250bdeadab9da61ff88b42a12089ebc3ec5b47f4a1",
+      "original_sha256": "e4b96c4b5d1ec87d409673d14c13f75c706d6b98e8dcebc3ca6368aef196e475",
+      "recipe_lf_sha256": "255a069a26c75b1fb7483f3df4c754657d04a4e22643755e8c484a60c5c1ae4b"
+    },
+    {
+      "id": "hero_congshao-doufu",
+      "recipe_sha256": "1de7e8ea001b94164ebfbefc859dad2403eec4ca4c2ba4447642ac961d35407a",
+      "asset_sha256": "5f0fa6b386d0f15378d1688043b5e417a00c881324c8f2856cb5decd5ef65e7d",
+      "original_sha256": "8fa0557f719b25a1cdba1ab9f0e5f62a9cf7b4422cd76b4a68b27b9c8727adf2",
+      "recipe_lf_sha256": "16c2c380553a21e1e2b26c1b1c66d8b923245176ae73e1b2d3bfd72ed32c3856"
+    },
+    {
+      "id": "hero_culiu-baicai",
+      "recipe_sha256": "cae9ee086fba35a6489d24ee67ede60d19cc9a1dba7284f4200b1d5bee83fd69",
+      "asset_sha256": "a75b9bcd3ec95885900510b9d84e79a3b57536e0055856bd87a18d9198772d0b",
+      "original_sha256": "3bbaf78099d4913059674072db441ed3756942273244487bb85b3833e5bdd27f",
+      "recipe_lf_sha256": "e8bd2d5976580f7f2108eda367229781f84cfc735fd70ace7d3dca335a4f95d6"
+    },
+    {
+      "id": "hero_donggua-doufu-tang",
+      "recipe_sha256": "7cd6dd50e04db8bbac3fdd2560ad5229a71a71b93169c74faefdd9c128f25c03",
+      "asset_sha256": "c630f051e65fdaf3709889c9a69d3c70d28f5ed15e0cb2792613087ab7738ef3",
+      "original_sha256": "a5a92c07b6629bbc32e364d80d46b67c499481e3fd157c27504275f0695e8128",
+      "recipe_lf_sha256": "10f66d3813eb1e2686af3c32516a6790135e2baee07cb060f2fd6718152244a6"
+    },
+    {
+      "id": "hero_donggua-doufu",
+      "recipe_sha256": "18ed00d365f89657a64fe6947e523fd79a3ff8bf461d402163a683af8b121a2b",
+      "asset_sha256": "95d47454a24c941fa631bbac867f2ff3f3faad69c338622eec4557f4f8a731fe",
+      "original_sha256": "02ae93190555883b710e28627ae73d8948468f9069f8c8953f15b3f4da48bee1",
+      "recipe_lf_sha256": "00e171c5b04e06e427d5747a30cc6bf0921ac0d52e4617c7c86a7dec0f599252"
+    },
+    {
+      "id": "hero_donggua-huajia-tang",
+      "recipe_sha256": "52ac69aa93dce2674f8809d0d44a1d568173d1c9491e28125783b320d3b30e76",
+      "asset_sha256": "182d98181d57a4c9aa9b11c8dcad100a586e47abb09cd7dd9087b014b349ffe0",
+      "original_sha256": "1d3b00424c777d98b99da30435c386a3d359390164ca4f47cec915b0060432f1",
+      "recipe_lf_sha256": "9178b8119c931d21f40409fa6e8ffac235fa8eba80055e99b6cc161b225ac288"
+    },
+    {
+      "id": "hero_donggua-ji-tang",
+      "recipe_sha256": "069df6acb0e69891c67195031e72a9ed2adaa141c378de20d620b3adfda42b90",
+      "asset_sha256": "9e8db10217d6e06b21fa38cce4f32df5f2fe71dcf7dbd42f1e803203d64c1049",
+      "original_sha256": "107a1467ce32860a5022fc95d1a01dcba14217cc8d146075dc3fa9f77ae87097",
+      "recipe_lf_sha256": "dc42a48b24db76aebdd812326bb2838a502ff1e519e68bed565d65b458535f24"
+    },
+    {
+      "id": "hero_donggua-paigu-tang",
+      "recipe_sha256": "9cec6f7ffa23dca788e34d07e68a35e34cca338451d12d34892a42ffea103716",
+      "asset_sha256": "2b61a1657b8ce09f7aad4ddee348ff5dc6f81d14da554d6a8fc6d2bac4725aad",
+      "original_sha256": "7cae45ec4cca28dd109ebac6112d01315fd49558ace5279284a5dc7ed756586f",
+      "recipe_lf_sha256": "ce69c2a2aa35dbde061c2ce9b69047e213afda5e3bff28d46fd9a5247ce0d325"
+    },
+    {
+      "id": "hero_donggua-shanbei-tang",
+      "recipe_sha256": "4626745ae5a1be151772544fc8c6a4012a6484248959f147c028d7fbf705f434",
+      "asset_sha256": "926bb95bfd053c3ecf34e820e68a609693b05669e6b1c8741c484be8d3347d9a",
+      "original_sha256": "19e3d26305bf2aaf613fd9c517a67186bed9a403d4fe4d7cc2fb365aa2d0dc5b",
+      "recipe_lf_sha256": "8f749f91531dfbea9e8c70dbbf36cb9ba83577ac87a293152235b2b080c9273f"
+    },
+    {
+      "id": "hero_donggua-shao-baoyu",
+      "recipe_sha256": "b1b3eee99e58ad0203cc3aeb9cce63f7c2daa1ea3a97e5c79842565903f1e649",
+      "asset_sha256": "b023702c72c2e411caca400ed7572c75f9a90b7f6aebb4d79b32bd1e0efd0957",
+      "original_sha256": "3d145692d4184f8fa99c6e11514a0060c0a0e909da13fbd45ebdbfde7af3eec8",
+      "recipe_lf_sha256": "70b3b2cdcdbacb3a61d24ca249675ec107256ecf110ed10d0200f25b027f7ba4"
+    },
+    {
+      "id": "hero_donggua-yupian-tang",
+      "recipe_sha256": "c027c1e9322f1026c57251ff9ad68f25861b9d24917dec614bee269722b250d8",
+      "asset_sha256": "dddf17019f4fbccdc24ae4848f5920b99902593af1f01c8c1fe3f41a4ebe7680",
+      "original_sha256": "8a7e37f8b66f6373820f6b0cc419815660d2e36bdccee31b4b3ffcefc7d83f56",
+      "recipe_lf_sha256": "bc29d173a2c55f03e069dc01ed1fcecf8632b56b11dec43b5fd0cde45dd3e856"
+    },
+    {
+      "id": "hero_douya-chaodan",
+      "recipe_sha256": "cfeae4713be584f8f7da29efa5d7c76c7ac6264038b932502737771c0d855208",
+      "asset_sha256": "00a3ecc7af166b2ae9928ab8fe817cefb0fd827cccf4d9b9d77d726782b36c2e",
+      "original_sha256": "87c2f7a646e73335f67991d0cb2c1b2c582bc69eaa7869e709e94e3cba2a92ed",
+      "recipe_lf_sha256": "e0e039a9cb3d19932caaddfa10df2dd1eddb8317e52703dcdebee5e7a9be941a"
+    },
+    {
+      "id": "hero_fanqie-chao-youyu",
+      "recipe_sha256": "e7dfca0221521074c4bc2e887e44a3454e2900ebacf1b6da767db9d8ddc0b25f",
+      "asset_sha256": "9a318b99ac0f1332541ecc07e46661de5e49190bcbff9db87f4e2192cf205fe1",
+      "original_sha256": "0236f6f46930616789f534675a28cd5a79440df34f9a1cb41a00bf8a4152f607",
+      "recipe_lf_sha256": "47147af58f45d432800ca638594fd6e7770e544e412f2ade3bb01a5a3c30b07f"
+    },
+    {
+      "id": "hero_fanqie-chaodan",
+      "recipe_sha256": "8f81e010b50a4feb4b42944ac20ea45aae05ea98e9be52b6001ba83e10137cac",
+      "asset_sha256": "97b3966d31afd72b607108d6e7326c1b27d8ca3a4d995d8e9af822c76db720c0",
+      "original_sha256": "55ed1e4dda296ddf2f782e91efbca0f2233031339f57277d99a2bac7954143de",
+      "recipe_lf_sha256": "c415c37239907ddab558beca73755f7745a05d3b49e1baa087e792896abece78"
+    },
+    {
+      "id": "hero_fanqie-dantang",
+      "recipe_sha256": "dfac2570204d1e0e5d4423d7f47a63235f032a57e33bded75f36028158995929",
+      "asset_sha256": "4be20eedaecf5bb0b5d7279b2fea897308ee562feed9e8d9e2d1edd2a2d3f5b4",
+      "original_sha256": "f92a23d273715d6ec66d3e44ac0e0a1840f66baadc731b86511c0c264b5a85cb",
+      "recipe_lf_sha256": "e3c6495effdda12ef5542257ffa641ab6040403718a1e4b2101b7857337acfe0"
+    },
+    {
+      "id": "hero_fanqie-donggua-tang",
+      "recipe_sha256": "78c834f09f01bc7952e960e0b9b15a62ac1b763b37d11a5768e231d407d00976",
+      "asset_sha256": "b9360b6861876587dcfe9ba800b4df5a8b6125ede76d24beae377753c9fbd9d5",
+      "original_sha256": "b10ef8091567b980cb0a665875121478c60d55a72b1e10dca18d122b1b154b58",
+      "recipe_lf_sha256": "b0acae2660d62a2d4371b18c555d7da486677cd0827d572a10bcd9f3aca98bab"
+    },
+    {
+      "id": "hero_fanqie-doufu-tang",
+      "recipe_sha256": "6ea047b4577b6dc740b4945645d25f2f0f25a07c370aedb487e527eb63e27975",
+      "asset_sha256": "647cc8f9bd1a1d6c823950cff4a70abe3a6e7e2d366a8f56853dbddaf1506ff0",
+      "original_sha256": "b80c6de58e1cc0600057bee9d0a3699c586d7923df6f5697ad7cf540dd3c2760",
+      "recipe_lf_sha256": "6e5b31aac673b17ee24c1ddcde807468783f40a76e1aa3121d06c6fd56a01cb4"
+    },
+    {
+      "id": "hero_fanqie-huajia-tang",
+      "recipe_sha256": "cd41d65623e561dd24e3a79c418732096509263b1e9cc19ef5436b2238c1629e",
+      "asset_sha256": "c0176036c51fdaaeb45f2e8211d1f824d6b2b863b140418ada8f01228616d0d1",
+      "original_sha256": "204038effb205f1f2fa8ab45615b45ec8a25de596c059488d0675c4d6b75071e",
+      "recipe_lf_sha256": "be4d13238ae8ed15ad287c2186c45b8b4914c2ad2d55095029753e906e56f4a7"
+    },
+    {
+      "id": "hero_fanqie-jiandan",
+      "recipe_sha256": "a40e191ab0d957b6db1d2cc1c156f284f35abb324447259277831e8a4c5cf81d",
+      "asset_sha256": "8836702099ad2bc334ce71c0364043925cc62172f15d9b15e21f70b85e48eb67",
+      "original_sha256": "a30037148ab9b35c3d2f6aabdc58fe5fbb45eb6c2f7371fbf100759aceb166c6",
+      "recipe_lf_sha256": "83203062da28bd1c5c8e001708d39595a8f58a3b3be59701c0818ffb8fc1f228"
+    },
+    {
+      "id": "hero_fanqie-jidan-mian",
+      "recipe_sha256": "1420888586d9156a62025096d808cb32eef0389de644fdc44123120ba916b437",
+      "asset_sha256": "0010944809cf6b93d72570c7aeb3c5fdebc4aaf49a435051b01fdaa4c5000f5c",
+      "original_sha256": "ce35ccf3170387572feccac095db2f47cc09137de29b3d19b3089bcd8d705550",
+      "recipe_lf_sha256": "275d40f82174c6c4dd752c45cb93099cca9a3a93af5809e54e1532f7076a5a92"
+    },
+    {
+      "id": "hero_fanqie-jitui",
+      "recipe_sha256": "0b1bc31e513f5f911a3df06b139bdf2f37d9cf65f4403d3087cbe3cf7e9a0479",
+      "asset_sha256": "497442b36febea63aafb1830421b7ec6b81401898b275cde830347b57911300f",
+      "original_sha256": "7480b97fae14a7c914af6e151b5aba46e19b9fdfd0347e60481e7a25517e70d8",
+      "recipe_lf_sha256": "68732f5247c10f0acf6237aac2400c77f468f780b85b856824144685a165a8c9"
+    },
+    {
+      "id": "hero_fanqie-paigu",
+      "recipe_sha256": "b6eea2067d2978e7dcd00279fb746e4b9284bb7842936c14527acba939efd212",
+      "asset_sha256": "87f07a93a64a5d92e6c9e5208efe60dd2babd3a0d09133a98697d2d357233eca",
+      "original_sha256": "8a4843043f49720b603d6b9634bd441a02c9e488bdc409dedeca3d07aae4d2e5",
+      "recipe_lf_sha256": "977187d1eb5edb42405aec8cdd078139787419c66eeb3cdf7bce7aa3cfecde1c"
+    },
+    {
+      "id": "hero_fanqie-pangxie-tang",
+      "recipe_sha256": "e79f67783ed0f43639536c89d7b5dc4236bf2964873211a7ab2433f556918874",
+      "asset_sha256": "c1d8def5c6eea33f3bd8821c26913d5cbdf3ab3feff17ef4b25d8e91dcc22747",
+      "original_sha256": "86af15d203b60842eb3668b8714706cae2da77695f12bee53fed2b5cd6f20ec7",
+      "recipe_lf_sha256": "56313ab015a881e377ab212e9e0b4f5bcadffbe129764333046963065b3ce649"
+    },
+    {
+      "id": "hero_fanqie-qingkou-tang",
+      "recipe_sha256": "fdf714996d41876c6c750c633ab79a4b35ef32f1ec8ab024e02a5f2780ded088",
+      "asset_sha256": "a8177c3c3acde6ed001b9f35a2807342f30d1aa7bc62f654c4600ba97f253672",
+      "original_sha256": "af7439d94367920d8d2ff329d70ad0fef99cd359f9aac3a85fffecd1ba1e61ed",
+      "recipe_lf_sha256": "8adc2af1b7a13994cdf2dd0a3b5e547c04955fece2f78139c6eae05ad95ee216"
+    },
+    {
+      "id": "hero_fanqie-roumo-doufu",
+      "recipe_sha256": "6e082211204660c0fd00b6916915a24d942f927b29a0fa9fbc84955e25b3eefd",
+      "asset_sha256": "aad9b5f2a8221c75018e70381109220cf6da28f8afcfa9390d73fe583411273b",
+      "original_sha256": "d93172f003395c352b6d907e4c83c89b58c23393a6389f529b633237080654d0",
+      "recipe_lf_sha256": "58cda916a6bcdadd899f5ce7301809707d80ca0b8ce34782cb1f53ed5d282122"
+    },
+    {
+      "id": "hero_fanqie-sanwenyu-tang",
+      "recipe_sha256": "1ecd3024c2fa0a9c5d65224a3a921003bbf4161c94744f616e71c925c3b82c7e",
+      "asset_sha256": "d0738bb6bcf76812dbf457dc83c3c366b4e565cdecf3c4a94c5d83163531c32c",
+      "original_sha256": "f33d90efc140c7db8fb653ec9a4ed69412c4e56a116667030eba752e7f6e0cff",
+      "recipe_lf_sha256": "44567cedde73376e69243e1cd1e3fd2717036bd7c10bf651221f05b8fdc7e1df"
+    },
+    {
+      "id": "hero_fanqie-shao-doufu",
+      "recipe_sha256": "4847043e0f493ad28c18634959ffb70613344a1d19e75542df705dff2e3083c0",
+      "asset_sha256": "dc9259ac37b6eca2761ef232c9c03c59330582c53587bac1523a40a2197c397c",
+      "original_sha256": "d49299522559003249d8bb65912a1514e84a8aa9fb13e4745f634c24177172d4",
+      "recipe_lf_sha256": "38fa71cf2564de205f870d4bcce3e48057cbb1475e37b09bbb4f67505e25a606"
+    },
+    {
+      "id": "hero_fanqie-shao-niurou",
+      "recipe_sha256": "0e65bccec85367008d5e24e2ffd2c63f53c0c96280b05fb81ba87992763cf14a",
+      "asset_sha256": "1ce50d7600ee901fc8d1441889ca66a031cb717c42a4ff8cb25b26cc69975aa4",
+      "original_sha256": "d48611c94b1b39a7982d76e7f0c37dda03b35e5f7ca20df0ea90ad56a37b0a18",
+      "recipe_lf_sha256": "ce8d19cca13334dbe9b2f146d369466737e92ef4ffa7fd67a37a588fbd042e3b"
+    },
+    {
+      "id": "hero_fanqie-shaoyu",
+      "recipe_sha256": "45a47ac6991d7d9aa2b96c93eceb732f9cafc706f9c9104362c761ac8800fd21",
+      "asset_sha256": "c0bec89e51b53066263b2b8c820f85cc3fe6e783da0b8c6baa1d8e4967013214",
+      "original_sha256": "fa0cdb992a866f7ce19b9cfd03202f6861c016f94d43ff21fcbb18e95f8b7282",
+      "recipe_lf_sha256": "140a2d9d1bbd8c884bb891ab9e87b0409305f1ac9342e04d5ce11e0d487843f0"
+    },
+    {
+      "id": "hero_fanqie-tudou-niurou-tang",
+      "recipe_sha256": "31c73cdd82783e869a01aba8f77dc03086ae4f20bc251f872a586d6a40174759",
+      "asset_sha256": "03c47ea93e8c5ac486dc5fac5ac270b060874e4e78ee33c7ba19063ede1194ef",
+      "original_sha256": "743f4c2e5014b64212f49a10d3058ecea4ba6913c902d4206aeb92332aac8243",
+      "recipe_lf_sha256": "aa8ca267d57890b595a48fdf4163f763282b55838716a28b35df8b41f00775aa"
+    },
+    {
+      "id": "hero_fanqie-xiaren",
+      "recipe_sha256": "0cc910c63a90e53165721df6d9c097c678898d09b91fe15a6b3a1fe90d00a8e7",
+      "asset_sha256": "3cf4327ff3473d2fa175bc3545cf8cb53d003279e682b6201bcdd14e0cfd2487",
+      "original_sha256": "718d6d1870c6f04ba6b1aa44487f90ada57887de9532833ca605c024fc5d5d7a",
+      "recipe_lf_sha256": "0d29dad4b783a98bd5b00fd08107a5c5eb890679331a857f30b6dd831b61d941"
+    },
+    {
+      "id": "hero_fanqie-yu-tang",
+      "recipe_sha256": "25e91950e161498a2deef8bcf8573d00b0a31b13d4586eb6c3964389995a2da1",
+      "asset_sha256": "49ff48b5aedb3d388886aae709dc70625c93325699ef8060792a6561fd66e7cb",
+      "original_sha256": "fbbd186beb92e6cb394957509a38398f9f9810e9dec5eefe8ea7036972d40af5",
+      "recipe_lf_sha256": "5f557621c72d98a90952d4059cea4647738332e12802d36d33b79fc08efa639a"
+    },
+    {
+      "id": "hero_fanqie-yupian-tang",
+      "recipe_sha256": "b32abeff7386535c7c9685f0db720329a21eb09e9622d3a21f97c1b4aad3e249",
+      "asset_sha256": "95c76b1c39f224596b5345ddc3f44559a88bfde622b77347fec15874ebf6498f",
+      "original_sha256": "9a3ea5c039751d7d923516651c6310a4b810483fcebed02464de4362995fb1fc",
+      "recipe_lf_sha256": "c2cbaea9c16144046e84d4cd72864671441debf6e99e31df65d4a014ffd4331d"
+    },
+    {
+      "id": "hero_fanqie-zhengdan",
+      "recipe_sha256": "37fb11f122a8aef65607eba5e660532bbdbad1e912daa1d3213b3c3c00596561",
+      "asset_sha256": "737ad013e738aa3d40b98ace09d51ace7583a0bae3bea847f6af28ba4db9eb1c",
+      "original_sha256": "029e4bd4acfa2f9d23a86706fd95672b4caf1f614ef1b6729a7961d4885a61d4",
+      "recipe_lf_sha256": "ec4f2d1e7c00e27a179d100c50d6882a0460800726618747b4a98f3643a11e20"
+    },
+    {
+      "id": "hero_haoyou-shengcai",
+      "recipe_sha256": "9247c7969712c6cce5a23cfc73462d991bccfcd79691ef2d188d46f851d9ada8",
+      "asset_sha256": "7cfdcc6b906d1e1e1da6699d03c13c1ccb1b643c00a78715e54b3c74c3b1aa24",
+      "original_sha256": "2a5254dfa398da3454c925a3523a07513a25c9188dda4d10337a2e72c10204cf",
+      "recipe_lf_sha256": "af1a6a2259ada4780eb022942dc2c3ec7d8921b24bdd00253dfe0dcc4010dd4c"
+    },
+    {
+      "id": "hero_heijiao-jianyu",
+      "recipe_sha256": "fdf2e0ec6f7be0ea5a69dddda539a40a0693b1b58d04a4d10130412750e71cf6",
+      "asset_sha256": "6bcf4325eef7554a387cdc96a0c26795a79c55c1049992852b236513e9b62ce8",
+      "original_sha256": "fc22a2fb458c8589c3d702ad77cc2762f60079081bec337b5c9bbbe9a49d1247",
+      "recipe_lf_sha256": "3c0ba564cf980c223a4daaf4e2c5bd02763fd40c85b89aa43137765cc993fb58"
+    },
+    {
+      "id": "hero_hongshao-paigu",
+      "recipe_sha256": "ee20023a217e2113d16746f706310284157e4ea353c8ee2f8c9ef697b2707526",
+      "asset_sha256": "40f9aea2302d5201c7276792deeb4b37176bb85f45de5df138ba3df961b306df",
+      "original_sha256": "471acdd9a0fc89d64ceefee02707637b8434da526ca17f3ad2e78c9f16d1ae28",
+      "recipe_lf_sha256": "2171d8e73dcc76caa56a535ca8c9da50edebd0ef1d8542df62426aa0d84a519a"
+    },
+    {
+      "id": "hero_hongshao-qiezi",
+      "recipe_sha256": "8cde0aafcacd76b8d402fe82cda2b5af3052e9214bf9c2dd324a9a77abe3b1ba",
+      "asset_sha256": "e2892cef45145f399f63f1296d91d25f4c89ffe8c00cc2a58202e8a0abddee79",
+      "original_sha256": "b716cfac263c455a4d3f6e246420625fbff95733a796355823ca811c69d7473e",
+      "recipe_lf_sha256": "0788a77fead650357772bbb867a4dfaa59f2201b18aa2b6b718ba4433a1496e7"
+    },
+    {
+      "id": "hero_hongshao-rou",
+      "recipe_sha256": "3e921a57cddabf846adfa7cd3e79abcbb328670ed752ef56f6546d6da27a94de",
+      "asset_sha256": "819c39e6e492052fa9190c24ec963ce04d49b6fb17d95c59874da030a7997edf",
+      "original_sha256": "c9927a6b673178737b9c35b16dfad4d5c5fde8c225c2c878ee50e418bc397c9a",
+      "recipe_lf_sha256": "2ec90d4197978752b278fdc7c8eba84b7238551df9345243e97be0f7aede92d7"
+    },
+    {
+      "id": "hero_hongshao-yu",
+      "recipe_sha256": "0eebe7fca7bb58519f9ab3f7d8c447e6751ac29b848fe682c169e6e978968bd1",
+      "asset_sha256": "425dbab96590b0a11d85d6adfee68995d6d48231142cc1e9aaedaefe8a09b37e",
+      "original_sha256": "b4ce9c604e46ab094d5b6c77a8605d2839024fd88a49cb239039670f1dbe5e0a",
+      "recipe_lf_sha256": "97c0b9a5633ba62bc9471549f9e53ada957b530e278ea5438eb59d1150fcfc73"
+    },
+    {
+      "id": "hero_huanggua-chaodan",
+      "recipe_sha256": "a5641b80edcb408d00e7be10a3a6a4a9cfa3978a1b30a5fbb16c7d3ea614b622",
+      "asset_sha256": "c7507f9c54b3af3763aa520b6c5f14994f5e647ebe96c0576f1c50783628e53d",
+      "original_sha256": "176991cf1deead59f68371892db9621bd5dec855420c352636c2f87db3ed8aba",
+      "recipe_lf_sha256": "532c7804aa02eac97a2ca8202fb9142653c3e80c1940e50d1aa3107c17576195"
+    },
+    {
+      "id": "hero_huluobo-chao-youyu",
+      "recipe_sha256": "a08a7b089818372bfc8791df787f904c7e8e507a810dcda0d76a49da5a70e776",
+      "asset_sha256": "e78c55ab7afcc3ea25f8f3c85b4702649891f3a7c9c5be828454b4a5a1630adc",
+      "original_sha256": "7d65e3a062e7b7470e6de0825bbfb559cbf953c2bc716885c1a8a14798643132",
+      "recipe_lf_sha256": "143a3b676971ac4af2e1f39b39bb3c64b0b7ef724bde6eb00dab391a306a44a0"
+    },
+    {
+      "id": "hero_huluobo-chaodan",
+      "recipe_sha256": "f50affe37ba891e0b48cc210cba421096c441e0853cdcdfaae43b19eaa27930c",
+      "asset_sha256": "74c47025d7cf2c1dea485d7ddfd9e224096d2e15891c068d54c361caa9834690",
+      "original_sha256": "5b41b61800d0603b063f2bcbe52e4d69e38fd72a208add329b4ceab433de8cdb",
+      "recipe_lf_sha256": "0eed055b35084cd5a5b078106ecdb7553c573993090131af58bf91756a6c1789"
+    },
+    {
+      "id": "hero_hupi-qingjiao",
+      "recipe_sha256": "e5c244cf635ace8101ee4376ef584d086e1740685ad6b2421170548fb3f54c52",
+      "asset_sha256": "9887decb6f8be836165f21a277b89015e5546df626e2c5209527888ba7eead5b",
+      "original_sha256": "bd8bb576ad279e5e4942b9a2f0f8538445908bf7506ee106cdb1b055cce16e0d",
+      "recipe_lf_sha256": "12acf77a39037fb0cedcb07bff08dc7a31d0982a59104a8d43c4f59753c0526e"
+    },
+    {
+      "id": "hero_jiachang-doufu",
+      "recipe_sha256": "fa0130dab9b0dd2d91f2a5631437ad3670a8935930a0b69e75140da8a42df8c9",
+      "asset_sha256": "3e27c2eab9992d146880e3fda32e95a37f361790e66498c07cc69c8da5a304a3",
+      "original_sha256": "947cc54d136ac6354f45352f5252d2c711021cb053241c8fe2db04dc032fd356",
+      "recipe_lf_sha256": "5d30266c4467a9032391e4ddbd22a8eef7ec82915fa3b423c86f6a27cb9a8c03"
+    },
+    {
+      "id": "hero_jiangcong-jianyu",
+      "recipe_sha256": "59ebea85591be2c90ed2d7b469ea0f919dc1d50d63b687b1bb55565863111cff",
+      "asset_sha256": "8cd20c12545b99f3faf34ac784719fd182451ce46a6bc593ed8b43eb2750a588",
+      "original_sha256": "90014b5550ce00f63ef9b757bb08d55cc24cd62ed5761c5b09382c95e356baa6",
+      "recipe_lf_sha256": "8e60368cbf43b876b6cd76d073a4bf616200bc3ccaf38807c7251760e03375dd"
+    },
+    {
+      "id": "hero_jiangcong-menji",
+      "recipe_sha256": "8d201930ddea88a1a5a445c17251005acc91402d4685283ef583cab45c039893",
+      "asset_sha256": "38d2f647eac473653e4a54dbe091846e9a40827fe7cd5b4f45840af50c3e5f05",
+      "original_sha256": "8109686e9970fd2cada22aa011d6a2a0c8010524e5c807e88569785976bcd140",
+      "recipe_lf_sha256": "e69c359c17fd75bb0438e11d2a6d00e9651e0549a881be7081593a31e4f6223d"
+    },
+    {
+      "id": "hero_jidan-chaofan",
+      "recipe_sha256": "d658d364a57175c128f961132c92c420bacd180dc705c8938783b423607ee63d",
+      "asset_sha256": "faabc247a06639b7070b5968e12c1d9480ad1c816cb653f8c4e856ffc8eb39fa",
+      "original_sha256": "9266ef5a5757ff631c1e14020c32b95b50765c7d96413bf1a809e011cc618b32",
+      "recipe_lf_sha256": "5ea6d62383b8dad92de36b7ad93bf31afd68202ae896d30e6d2a192c2230e0c1"
+    },
+    {
+      "id": "hero_jiyu-doufu-tang",
+      "recipe_sha256": "1320aee73bf80a7d955cb70c6fa277518dbc38dad7d4dd27335f066b12001b3b",
+      "asset_sha256": "2bd64ca788e78e4ca32a7b59447818ff445e817c1dcadbe45327c1d896523cc2",
+      "original_sha256": "81fd1c6bf76b61535c3841d1afc1f27448b2f2612e6f02f6570e0f5accb6d18f",
+      "recipe_lf_sha256": "fa923ee4600e5a16ac441fdad618144ab34ddf2944948302157d7af868386697"
+    },
+    {
+      "id": "hero_kele-jichi",
+      "recipe_sha256": "d939063e556442bb1800cfa36b153707c184a8fd07422d59ba211a929b9312bc",
+      "asset_sha256": "f11851cae4068d2e30c800ea20bed8fa7731001415b297eeafd897f190e2a26e",
+      "original_sha256": "a9b1348f66870adf85c2cac1b480385579e06e47c336423533471f55ce0dfc08",
+      "recipe_lf_sha256": "78bc60e3d4dd125601f21386a2b8b7620531ee05137895e53a2b38d3c45c499d"
+    },
+    {
+      "id": "hero_kugua-chaodan",
+      "recipe_sha256": "60745737f3acc8e0093b06e0268492ffb950313a92c7200086d6d41edce7a001",
+      "asset_sha256": "8754bf10d42152c1eceb91d8c9ffcbe1bd3bf45d93b3de97874cebd572b79b79",
+      "original_sha256": "f04013d41fcb0ccb3ecf34d1605a6eb007ebaa55549412164e35de03e1539ca7",
+      "recipe_lf_sha256": "8741d00c8e87c1dd812c519a5ccc21001e91e014e908f3ddb9fc1c2cb24011cf"
+    },
+    {
+      "id": "hero_liangban-xilanhua",
+      "recipe_sha256": "9c814955595627fa6bcb244070fb61fb02416fa969a8be75d2a7eab49f66282f",
+      "asset_sha256": "5db7e9a081e51d297a446c4e5eabdcbc5fe7d4b177240da9ad93cd4e0fec61a1",
+      "original_sha256": "28a9ee7d723650218b0a5c39f436c3ccddba200e6649dc67e9d8ecc2b1e4f00b",
+      "recipe_lf_sha256": "97fee58a31fc3b8a6bfc5f944450be880a892deafaa9d38f6174792195bdcda2"
+    },
+    {
+      "id": "hero_mapo-doufu",
+      "recipe_sha256": "1ed568d011cd21c0a9618c190beebecbb406aaab1f3ce66f76d491eddd064c0c",
+      "asset_sha256": "957c50908c52083adec63a166d90d5cc0e261d5e18c80945306b2061d8211dd0",
+      "original_sha256": "05d1e18f8de9d85aecc87fd8c317426358facf3fd9ef2b09549ecd412c28c55d",
+      "recipe_lf_sha256": "ca29742dec18809ad23b6f448a731863f2f80741699593cb9dd02350185e5ca0"
+    },
+    {
+      "id": "hero_muli-chaodan",
+      "recipe_sha256": "422d751a94fcb3a6751041488b7422f6727e98cd45627227c0c5fe01d9c44303",
+      "asset_sha256": "9df02294c5f2f1c8ebe4d8daf3f697e54e809ab672e502b24ed56e149f644880",
+      "original_sha256": "7710d8a195fa1303a68618d1b42bf63c8fa2f883447c1e67fec24023b034f909",
+      "recipe_lf_sha256": "7a37d11df61a9c07367413e5d6a82079a0761bd966af13181e02397332294095"
+    },
+    {
+      "id": "hero_muli-doufu-tang",
+      "recipe_sha256": "42732f16c31030f5759d317f692a0eb7fd12cd3e4be87a43fa0f0b36f8a3b3b0",
+      "asset_sha256": "107e73b9ba6b9f0d7677b0027a119cfdddeadc74224a181c58ec264366ba6211",
+      "original_sha256": "ca027d4e637a6979368da07d0dc680635fbbe2e84f921451e0d0050b49cecccc",
+      "recipe_lf_sha256": "9efc3b03f092b0a259bd7a33750707d1f7fd8e3e37d393f58f415388d4b31775"
+    },
+    {
+      "id": "hero_nangua-zhengdan",
+      "recipe_sha256": "5d23eaba7d77478757b74b9426172a4a63844eb5a29e59b2eb546dea57acde9e",
+      "asset_sha256": "e5f6978a0d683a8fa09cf44017c61701790d987034a847f4a643add6e453569a",
+      "original_sha256": "69ea8ca215a097fea055f9fe9a650da10a44b8d421abd53ffaf96d0c09ed77ce",
+      "recipe_lf_sha256": "e2926d29758918ed9f7de39c51b5611938334ea851a523f18322737ff8948600"
+    },
+    {
+      "id": "hero_pai-huanggua",
+      "recipe_sha256": "67f52d59b2e0e5a9fb3dd817b3bc6b50e8800c2742a00a482109f14d94fa6fc8",
+      "asset_sha256": "c2d323eced195ac9812353b12abde61a9cea81315302a06c42b03ea3d45c4cc3",
+      "original_sha256": "cda0066d91c4103176ef219fa0c47aaf46e92064d4a95d0ef68854a9748553c2",
+      "recipe_lf_sha256": "6adfdb1d63373ef40dcac0faf896a29ef1962c8ddf4c580dafe86e7297a4a9d7"
+    },
+    {
+      "id": "hero_qiezi-roumo",
+      "recipe_sha256": "6d0029a35b45e4e38da72b5d57183fbd60594c33240c5706f06f37643de17ecc",
+      "asset_sha256": "f723e34e65a75e98e8ebff5579d8c0d4a35ff3984f56b7b1300068c6ab211c99",
+      "original_sha256": "b236b9d55c54f90be7bb596cfcd597c70b88f4bbcf20c6ba6c788a5c669d3846",
+      "recipe_lf_sha256": "484039721dc25abde6312de99e0fe52b5aa3054660461bda7b439504c05a03de"
+    },
+    {
+      "id": "hero_qingcai-doufu-tang",
+      "recipe_sha256": "1bd99ca375945b2a8a2839cb551ebe5a9b2d381f4153368a77c06d672ade1c98",
+      "asset_sha256": "7f2076a5e314ff2b5650752ca3c0ce7a901aa88b2137734764273e5603eece56",
+      "original_sha256": "e57f914d029d6a4a4ca77ca4f449b30d140834855efb6da4852594e4f2e37451",
+      "recipe_lf_sha256": "8edd5cda8d8aba692d4cf6aba3bad49d8fdb27884688d023f858a0b4fa296fbc"
+    },
+    {
+      "id": "hero_qingcai-roupian",
+      "recipe_sha256": "949fcefeccdd334b7b8409099b8e822ca23a5c7487df84c5055c1ac0def5f3ec",
+      "asset_sha256": "b5b88f0209d0f8bc845b09dfbf22e793309f8ce28db06e2775dfeb620bc81376",
+      "original_sha256": "5ab67cf12db692e595af589a4f119ca4de453b6c77a70d4c23639f55aaaa4a28",
+      "recipe_lf_sha256": "09628d555e4b00d5b8995612daeb20ae6b92cd280c24490121105b4b505ca900"
+    },
+    {
+      "id": "hero_qingjiao-chao-huajia",
+      "recipe_sha256": "985898301457dff6377d9887ce525adb816976c691f9cc449800a7ef5438002a",
+      "asset_sha256": "badf53f5defb3f9dc7e509b3320fab6e06c89cc09fd5a113006e6fa57a75ce38",
+      "original_sha256": "def8e011671fdc1c02dad093e87f409ab6c88e2ae3fc2681400e2189f41e86e3",
+      "recipe_lf_sha256": "73449c046f5bc901e5fe2a40832e03b77a7ebe43d17f741e883a8e2d9f52d26d"
+    },
+    {
+      "id": "hero_qingjiao-chao-youyu",
+      "recipe_sha256": "bc39789648a5240b4927d0193e698be630f195773c71cce427308bc0102c6bc3",
+      "asset_sha256": "141fe5d191c882c1b3c1e7d3f9ef2fd5a8dc1b32b7fb4e92c86136c4a952cee6",
+      "original_sha256": "6dc49942f5c4379c66a47c799197d6cdf58c137139a25d48b68313621a333bd0",
+      "recipe_lf_sha256": "1e5bd9e0b0d7988b2814e238d185800eabf2429801c02c8d59b6b97bdf3a082e"
+    },
+    {
+      "id": "hero_qingjiao-chao-yupian",
+      "recipe_sha256": "c4aac59feac2c144ee1cc76aab91486b8707321fde47f0f4ade4fe6a00d8684a",
+      "asset_sha256": "1b3fdda2a95e6868eaa5e639f2390d76dd63d9156413b529b091c4bd4eeca75c",
+      "original_sha256": "d6f400136e595bfa69d2acc1aae55213a191d0bdb03d02716048b9db8ac5531c",
+      "recipe_lf_sha256": "0db952e54798f1076f8c3b2a4bac8f619df7d8d141b2464e4d1b6758bc6aa1c9"
+    },
+    {
+      "id": "hero_qingjiao-chao-zhangyu",
+      "recipe_sha256": "27f0396a79a2cb43a2e457c31d2497ad1e85f4aac32dc2a21fdf747d6d353108",
+      "asset_sha256": "ec2e5e722190e4ab558e51a550388dd30485c96a69f5f9af45682b3913459a0c",
+      "original_sha256": "4a5faaf0c04258427bf65ba5df3da98f0df26ae28b343965ebee49a227edaa26",
+      "recipe_lf_sha256": "88c0df1f2b04ad83f81364f902209224903fc853c5e4aa5a4682f43457b0f485"
+    },
+    {
+      "id": "hero_qingjiao-chaodan",
+      "recipe_sha256": "f47e656c6ecb852421b12b861434d6dc94252909e90b81f04b7527fd18d7257c",
+      "asset_sha256": "d1b04335e2bf7e35881b68d21c6fabf6cbd7d5ec8f8738735d2f6aa18c6d73af",
+      "original_sha256": "ba84fba16b5a230290c3e731bbd63648ea30d2d1100ffee7818e2953f49ce7cf",
+      "recipe_lf_sha256": "39edf3872f71c142705d8bd57fa12015fcfdd126934e2ac037c509c613d41a2e"
+    },
+    {
+      "id": "hero_qingjiao-chaodougan",
+      "recipe_sha256": "5d63e789480657e58512248f155f779c56a933e83a109a7ace8264108c7ff1e7",
+      "asset_sha256": "3f961bb5ad5e311e66612a7761cc8b42c8dec5eed9ef7b1f21eb690d0847e4e2",
+      "original_sha256": "7612497c4550da38ac7e1fe19c1a9101531f434db6c7710cd40035bb5c397d04",
+      "recipe_lf_sha256": "bceb8586a49633b5d023b48fd8fe7973e86d90d655e2f98256d8473516322c50"
+    },
+    {
+      "id": "hero_qingjiao-chaoniurou",
+      "recipe_sha256": "3523f75dd9af571c9e7aaef3d0669968c2303b003d91fcef8b9c7a46b429ad3d",
+      "asset_sha256": "7cded565626ed57ff3be747a10c3b76a4aa5c316ae342ffd2365727b4be0c0d9",
+      "original_sha256": "a381413504b7a63e68812503714854d0263d5a8efee5f3f5d61ba79301157085",
+      "recipe_lf_sha256": "9ff09967fdf7df514d40055a44046168cabe7fc14b18c60f702d390814ae3c66"
+    },
+    {
+      "id": "hero_qingjiao-chengzi-tang",
+      "recipe_sha256": "280e27ca5a27e3b49545d37019b441f7864a4a4b650d207757fe19dc18edd3b1",
+      "asset_sha256": "ad6442277f871fb452c8fa73c35286edc996c7a0a36f739e91cabd681a44e097",
+      "original_sha256": "b4a127ce71732dca26703a62c19e8060bad838dca95b9dea367beddd94b59fe8",
+      "recipe_lf_sha256": "11ba82bda819f73d6d4cc445a4bbff27bebcc9b7911ba1d5ece043ad44cd3320"
+    },
+    {
+      "id": "hero_qingjiao-doufu",
+      "recipe_sha256": "24a8417fe8686e63118a1055139afb478d41f5d8f449af24dda0aa8b3747f11d",
+      "asset_sha256": "dac2f420e117e6257ab8035be4cda748247c8b0760d6feef382326dc1862a0c4",
+      "original_sha256": "6132116ec9b6284bf954af4f64c1f6f0080800aeb7ae93a660dc0ffb6b423383",
+      "recipe_lf_sha256": "397160d279fbe5cc5a1c0875955d02bb62da80ea9832ee3d0ac4eed87d240f9d"
+    },
+    {
+      "id": "hero_qingjiao-rousi",
+      "recipe_sha256": "41ddc7bc9c4511108598c5f3d26d9b3d206d840d4d272fa383774b8eef88d974",
+      "asset_sha256": "37d8fcb4635019f1611df173556592db2690b93e53b9414e1623e76d9d797210",
+      "original_sha256": "3d096843f3965d0e2f4be3c83b6e715bd7e761ba8bb04365557438078c702acd",
+      "recipe_lf_sha256": "6056066689441a5a7412505d8fbd5dbfa08cda8577bc56718b1b06af2263ee30"
+    },
+    {
+      "id": "hero_qingjiao-tudoupian",
+      "recipe_sha256": "75e7d68e7980518751f9cdab0167c6ea1327b6ba0ec00289c3cc9fd70e2c33ee",
+      "asset_sha256": "a00e7b537321c374cedeefcd9b7afd3d244f29e763e016eff6036d5d881127af",
+      "original_sha256": "bd1528effa36830a8f9f7bb052961489a51b64730fd0d4bf248dabf0014e0cea",
+      "recipe_lf_sha256": "a7afe36f95fa8c6bdfd27e9d79bd030bf2c35163b2805c64f713f8516cca93b6"
+    },
+    {
+      "id": "hero_qingjiao-xiaren",
+      "recipe_sha256": "09e60ea88cc62dbe54b2856f3960eaaf77254e7c55acca25bd0fe5e99dc645e7",
+      "asset_sha256": "18cabfa1f8adede143695e8fec45b597772258419186b69c358717074c020184",
+      "original_sha256": "dbd64148b6a49d472b4b2eb404860a0c2e007aaf7a09c5c1997da5e430fca80b",
+      "recipe_lf_sha256": "06a80e4768bc5ffb4d3d3dea7c76afc57511cb89266eeac914b03b4359aa9367"
+    },
+    {
+      "id": "hero_qingzheng-luyu",
+      "recipe_sha256": "64e27a1b301bcfcd27e91af6138796d7c31fd958d70b4c6a4b2cbf8cb2b3d283",
+      "asset_sha256": "3b3898af9de9cf75b400522b4d970a2ed8d8b85ed7fc9d191f4f7f60176d44ad",
+      "original_sha256": "b3de9c5da62f1121e689791fba7adacf74d878405e1a4cfc02f1c5171a2f204a",
+      "recipe_lf_sha256": "8bbab075d7de4c2dadd909d0fe4556cebfad47403e790c13efd23813a3937401"
+    },
+    {
+      "id": "hero_roubing-zhengdan",
+      "recipe_sha256": "f422a89d32a21bcbfe671361fe9f5b3021ec7a2ea0cb4aa01a5b2204cbce9f43",
+      "asset_sha256": "945911c1e5ea512351b3121c4bca9288180c278e154149905187d418f474264e",
+      "original_sha256": "0728c782fcfef88ec40da4203a0e6e009a0a507274616aee14c7aa4c63b24595",
+      "recipe_lf_sha256": "c992073fd7e9cfd4206517437a0308c92341b2f02ca670debe31365aa890cc0c"
+    },
+    {
+      "id": "hero_roumo-doufu-tang",
+      "recipe_sha256": "3e566c780da828c66a1a0bed02be4bd230472f421083f95f1fec45bda831c18d",
+      "asset_sha256": "87c04ede06a2932a217a3f94336adc0b504e23914e8a18176268aa83b226af2d",
+      "original_sha256": "6fd9eff41b0b60d9533cb38ad393d634d03c2e8a5de55070a3b6382e40c285d1",
+      "recipe_lf_sha256": "a03365c3cb3c2ba0923d0040c21bdf4e16de2ac98adf975b7bfd53814bf31d3f"
+    },
+    {
+      "id": "hero_roumo-jinzhengu",
+      "recipe_sha256": "14664c73eedb319fd995b755807456a367aaa2af13abdc591eb51f9cfd5ce7e2",
+      "asset_sha256": "7e0d56c8f6a767a7e5c86a4790d91aa960d66a93e4b04ab96707b18e481a98da",
+      "original_sha256": "c48c3eb28c54fbf6cf9b8fdaf3fda1a4c04be425407a86b5e382eb2cc007e621",
+      "recipe_lf_sha256": "d42bc5f651d4263018c62e227307b08aa45cfca72be9139cdd242642abaf9fbc"
+    },
+    {
+      "id": "hero_roupian-donggua-tang",
+      "recipe_sha256": "18db7a5830ba15131f6d4b9c4b8d79decc903431b24f36d14f544e525aaf525f",
+      "asset_sha256": "b0578ed08a6a4455f95fa98305ead128fdfc8b676d3abfb77238b85c4952857b",
+      "original_sha256": "0f1a7634f4f8493251e22aa79135cf96b6a85aa8c0fd6e7ce01b74e0f56d35e4",
+      "recipe_lf_sha256": "08ae9be5c7771f95fd710135eba847f0adbf9bf1b782e56ec1d96891cc0a6a52"
+    },
+    {
+      "id": "hero_shijin-zhengdan",
+      "recipe_sha256": "b8e35a2c77b36fd9b1161168d6d82838897f67f811f65fbd71e7603580df29eb",
+      "asset_sha256": "ebd1df661ba4e38b8f18113500a15102cf53ac24890a337818f2177a0925e6ed",
+      "original_sha256": "3ca8fe5a37922347b68fc526b5a00644a1c73008e10ae65f4f1fd02cb8c7fba2",
+      "recipe_lf_sha256": "ad4fa7bb4dbc0b9b315c1b7e836a46d47e56471dd62218b7b1017feeecea56dc"
+    },
+    {
+      "id": "hero_suanla-tudousi",
+      "recipe_sha256": "982e41b05258f30050685dc48b3bb31de146ac9a2db83c6f0a8cceb3cf1787e9",
+      "asset_sha256": "073b6944e78bd459289351a33ef421ffe8db980c765704beadbf561edf94ce0f",
+      "original_sha256": "849714ad0f607beefd45e2f1bd5c656f169d3f195a17e0bfab09739efb9672ec",
+      "recipe_lf_sha256": "b558f2071710f68a1448ab00cd5d2f92ce52b69c719c5eacfb29b01db9ed9c9a"
+    },
+    {
+      "id": "hero_suanrong-caixin",
+      "recipe_sha256": "4f794a56840289ecc706896fd081abb2a9d369986043a43856f8d20b6c00f5d7",
+      "asset_sha256": "02ccaeff4ffdfffe08a13c085dc068b0805d0b30b8bd86468aaf78ce4462a21e",
+      "original_sha256": "d9532e7a3a6060c37fa5092d9ef9c456b48fa82ea3849ca82ce7b4867693eb3e",
+      "recipe_lf_sha256": "a1cfcbdadfc909adbcf7a3fe425e59101320c8e95d1c10dd142e9ea06e60c49d"
+    },
+    {
+      "id": "hero_suanrong-shengcai",
+      "recipe_sha256": "1b4d7454bf5770e842fc9209d46e594ef3c53fdf216a237fc2cff3ef655352cd",
+      "asset_sha256": "8d64fe177b031513ad18ffd9e29cf41b878728e225f6f02147a035a8e6df1636",
+      "original_sha256": "2dd207735a13cac0914010419f14868368aecd1897511de19529c0bc4cf373b9",
+      "recipe_lf_sha256": "26c6bb96c0f799c04d5405e4a9ab7e21470e8d2c054ed01d0f86d29932090794"
+    },
+    {
+      "id": "hero_suanxiang-jichi",
+      "recipe_sha256": "d54d27533009a7195654082990c4f499e1db1d8860f4d23b158aa8aafb9ac630",
+      "asset_sha256": "aeacdf7079f8ab7710ea96aa9696ac22cf59cf4cdaeb772e6acf2f56f971289c",
+      "original_sha256": "8736a3946a01847f6c7f03c1a1667942b445841ac05d9668d6af8af32857f526",
+      "recipe_lf_sha256": "dd522dfea88351f2441bd02c98a933dcd5e2227b9172b1bde9fcae72ed1546ed"
+    },
+    {
+      "id": "hero_suanxiang-paigu",
+      "recipe_sha256": "df519a558b30b21d7d927afb11ef4f5676dc10f8eb0603b8d9765e88e6173515",
+      "asset_sha256": "233855318af09c67a08425b09afd3659b99336a1bddae7f4e4deb8646e676980",
+      "original_sha256": "2d6f36f69f0e662b3c5c982130476eaae7d40f261cf79d14ac85696d9052778a",
+      "recipe_lf_sha256": "163d3b8193c02516045436e4d28a43ae1841d0c53c29fbc66c15e55cd48e024a"
+    },
+    {
+      "id": "hero_suanxiang-qiezi",
+      "recipe_sha256": "736e15594cbe4275aa222030d3473a4f127b0be47ec46a78db2e53e2ddf401cd",
+      "asset_sha256": "ff2d5b1eb1e0dea20f13cade2d7873177176fb6543c5b9d24211caf6a4398c7d",
+      "original_sha256": "fa95055b909942d063a2585cdff93167177cbf139ef50f78c9749ab42bdf0c75",
+      "recipe_lf_sha256": "e90170ee01283e47f3864c0e88ceccd3855f3097a58c32e1f82120ad4a9eebf5"
+    },
+    {
+      "id": "hero_suanxiang-xiaren",
+      "recipe_sha256": "a4e411a422ecd837ab94b6c9a01e4e795968c17ca59245a57cfd7324a8c9cd1a",
+      "asset_sha256": "8ff3a485c46b5d71ab9883596c7f593e21d207ad983af86d868f7398f9c06d83",
+      "original_sha256": "936f71373d943cd774cdbb19278c4af6d7574a7460dfd5e833c3ec6d1a04704b",
+      "recipe_lf_sha256": "4c134017a107e09d580ead8d93e5b98f110f3bc7d3a05d91e16597b8149f824b"
+    },
+    {
+      "id": "hero_tangcu-yu",
+      "recipe_sha256": "be59ff0f370737b4968683bcc556fc4105abef6cc5596f7eb75e4aac1202daee",
+      "asset_sha256": "25720c5107c30060f4df2b90ecfde6d30593890271f989f84d40fccb083bfccd",
+      "original_sha256": "8705400237a0f5b070f73d1b70987e18f77aca9b0f444eafde111ec3cbce645c",
+      "recipe_lf_sha256": "34f940bfbd266631fc2e2679d68b13916298a2d3e545c5ca554b6d08530ef5e0"
+    },
+    {
+      "id": "hero_tudou-chaoroupian",
+      "recipe_sha256": "c3b93045bc629b972b68ed809de2ab8b599a44a53911e4fbac903af867280c1e",
+      "asset_sha256": "e1e736c83cb29eec88cfc5678c083b7429052d671e4bf5c7f8b3182743853159",
+      "original_sha256": "7d9eedc19423ac02ff6127517fd24499448936b404a1460c94e7ecd3a1c9b013",
+      "recipe_lf_sha256": "0c89caf1add283080bf45ae74618c2de96f0437d1d68638eb3367c429a4db90c"
+    },
+    {
+      "id": "hero_tudou-dun-jitui",
+      "recipe_sha256": "d8a795d7d770fcb499c41c6bad7f5cff5a97d9d23e61842144ec3916f2206a92",
+      "asset_sha256": "b09752c547b3b3eecde07af329aec802d0497bef7f96fa40be12c98cab673b4a",
+      "original_sha256": "5bf587daa0615598770c5c2bf3d9f9deb6c3fbea87ab538c39c1fd2f59f566c5",
+      "recipe_lf_sha256": "fbba1bf5eafcc65e0aa6fae13a1fd10f438cffc33d8757211569e5787fadf6c8"
+    },
+    {
+      "id": "hero_tudou-jichi",
+      "recipe_sha256": "4887495214f6d20ab616855b047bb3dd4e6732cb082277658dc20b7806035559",
+      "asset_sha256": "555708935aab33a4df31fa9977572b243ebd2f6fee88d43f15525cb76ef37037",
+      "original_sha256": "73a220a2634e563b6f299d0d11dd68acea202926d8fe34c7c9867d26adf3d651",
+      "recipe_lf_sha256": "24aa70d7e5765a8fb06963b15a2617e47ea54a3e1959eb1cb23d130332984a3d"
+    },
+    {
+      "id": "hero_tudou-men-paigu",
+      "recipe_sha256": "21b7e309f03b2507e10f11fa41650b27146d418dbd0d86f4e9a8a2366c6179bf",
+      "asset_sha256": "73aee3cb76270b84c04a855c5091fe02c3bf38a9d7deb09a9cec0b4281c5226b",
+      "original_sha256": "d9280cd5bc8cd60f72b71f4bf5979136b6c53737293dc987de65815fc3a0eb69",
+      "recipe_lf_sha256": "002898479ebacad60a6ae928caeb603814b321234e392010fdb88948aedee6d3"
+    },
+    {
+      "id": "hero_xianggu-baicai",
+      "recipe_sha256": "45d8221f049e729f9be02a2ec78345e28c0e05fe6ab796ea39d793012b3229c1",
+      "asset_sha256": "1a368e189a0e332693d18fb704fc3d8028303ee27889fe3a75a8f5b0e748ad50",
+      "original_sha256": "415d7cabe386e7484ab3b8ca067ac41d7abe49f7c5549a9c671f6fc3d3af6f38",
+      "recipe_lf_sha256": "e7dee580b65fe835489a17ed63d2617f0bd50b0f7ea2d6d9d79a96d29a6f6060"
+    },
+    {
+      "id": "hero_xianggu-chaocaixin",
+      "recipe_sha256": "fd94164709536d75d6cf38e0d3faa20808bab45fc40f9bc8af9c01d1a40e2055",
+      "asset_sha256": "4e82e50ac6de52e194b271087238f8c3a9510eef018ee117c770c2fa19e95590",
+      "original_sha256": "cfb0e0842cfcc67b1cce339f9e4371960409deee8e13424b65d485da65c380fe",
+      "recipe_lf_sha256": "3723436ca893bc6ba38e5812378500d42550c6a042d0d8c6959af2f02b3f0034"
+    },
+    {
+      "id": "hero_xianggu-chaodougan",
+      "recipe_sha256": "4824d196778972521b16f6b8bc0385ef67669581731e74f3f6668f5b8c914eec",
+      "asset_sha256": "6aed0842b1575dd01b7abcd78fe153994eb53635508aa3b19f53918b9b8a8358",
+      "original_sha256": "6668b9d7af901a6a71674bf3fc7ae19ac72c4998f81bf752a1bf01cc99a8c4ff",
+      "recipe_lf_sha256": "072bf17d7e22f089aa4a1fba8415e503fb538b149327c147c80d03b2c9416c4b"
+    },
+    {
+      "id": "hero_xianggu-chaorou",
+      "recipe_sha256": "c384984f7de8062207e5b3ab3c5b1bd1e34b04ab27c62a62b36ed925a4c87783",
+      "asset_sha256": "6661de256bee07d78f1824e894dac73bc5bcc03741b1a4e456bed538505670f5",
+      "original_sha256": "1b124c351b97b77ad9ad141f6deb33dd6fc7539fa35091a4e527c7bb81943f48",
+      "recipe_lf_sha256": "2733d2ccbef9dea213ca6f8470744b1644979e38e7e4770a1326a94fefc944bc"
+    },
+    {
+      "id": "hero_xianggu-danhua-tang",
+      "recipe_sha256": "5c2ab073816c24e80a63a38b881eed07419768a4cdf1243a6db401fdcb28b87e",
+      "asset_sha256": "d21a7b2d082c30bcd81ea4ac3942f21c511dac4701556244a257781e37c712fd",
+      "original_sha256": "60e91168684ebdf5c01c1681a161ac9b2ca3bef36b9cab66e08d51d8f94f0645",
+      "recipe_lf_sha256": "c5b91c9995c76fdbe44091adb298ef879229f6f3975b7e88adc944a4c88c2bef"
+    },
+    {
+      "id": "hero_xianggu-doufu-tang",
+      "recipe_sha256": "8169d2e86abe7802af66d8da13146170408cb81f93f9652380e8bc3a9747639b",
+      "asset_sha256": "b6387e5586a0faf51c1c1805edf0365dccf28c6b31f15b410dfd32eeb5f8aee2",
+      "original_sha256": "74e06270868c6a20fa25e0045759eaac74b16e9991404e876b1d96b86a5db6bb",
+      "recipe_lf_sha256": "ef3f5ea1daead65fbfbdfc223204fbcdc6e74c181e1cd89d9a877160a366b571"
+    },
+    {
+      "id": "hero_xianggu-doufu",
+      "recipe_sha256": "5df856b3b695a9fd792ae0e742b0e847329ac5bec14f44f17351f659e9faecc8",
+      "asset_sha256": "af7e3d0ba9a1be9f9036b9e38227e26e0c06b078471479b809885026a6646f8e",
+      "original_sha256": "74cb5e24586c15fb157dd3386dc19ccd7172d1f6d73d302659bb098a6dec0040",
+      "recipe_lf_sha256": "93dcb0e7334a30e985cb97955a63e7ea10159dbb5e050332b5fde4d536a893ec"
+    },
+    {
+      "id": "hero_xianggu-jitui-tang",
+      "recipe_sha256": "cfc390740e1e5979b6bb8ce344f08e4da32c87fde7eff1d6d094cab4c84c029e",
+      "asset_sha256": "0f8c5e65838b66f74fdfdd4ae9747ca59476d09807178f0b81f812ba82488592",
+      "original_sha256": "63375194dd59dcbf44b5ed399d7d86e9134878dc9399c8343fb9ed594373de97",
+      "recipe_lf_sha256": "064b8943e9b8633d7810c2af64cf0ac696d6baf8312cb3b77a1899c64b164238"
+    },
+    {
+      "id": "hero_xianggu-menji",
+      "recipe_sha256": "17c1032ce5d7448b4f16f7d9f3efcaaa058706fd05f557a2794c03c33c5bd77b",
+      "asset_sha256": "173a88530726c2fd0e7543027ba884776b5b0281faacf9ade0dd399d9fd4fff1",
+      "original_sha256": "f22eb7482a01be13dead257e31e7fc7547f56a868f2193db3adca7765e0c77c6",
+      "recipe_lf_sha256": "1fbb3700ff4d625a44f4df8173237eb5272c117a94cdcec9292c8d9a6df04403"
+    },
+    {
+      "id": "hero_xianggu-paigu-tang",
+      "recipe_sha256": "50b617ba78fba949e2ae9c61ec834695284141a796f4bf473053179f665655b1",
+      "asset_sha256": "c56df7c6eaee8400d1c6e17a63f9316a44f9c0a6ba180f3be1bef30644844430",
+      "original_sha256": "027fc63b773106c9742dabf37cb0c9ddecdd3ab847e94aff292ea5f5fd267d27",
+      "recipe_lf_sha256": "cd04227b115a3be9083577a1b6c445fa14d39ac2c94d1ad6a7ce47a0c85e5e8a"
+    },
+    {
+      "id": "hero_xianggu-paigu",
+      "recipe_sha256": "e0bd94bb6bbc06704a4b497407aed8601708ae273e2e5acaf2fdfba32e321fb4",
+      "asset_sha256": "1a68a1664945240e315c07cbebd3637a48dcb17a33ce7afffbcb6bc903343922",
+      "original_sha256": "f14d764f2f6fa94395012bbcaa6bab93cc09a57e580cace6acc575d7f59f3e28",
+      "recipe_lf_sha256": "c578630f1b996903afc92b86d5de93791cecfd7b3b69e14df3e32ac6461afa15"
+    },
+    {
+      "id": "hero_xianggu-roubing",
+      "recipe_sha256": "171aecee464d54a7149bdfa241fa995f0f3f9a2c3c8c45e73552ca552c50f53e",
+      "asset_sha256": "3e6f03638fbfd4130865163b4dcb92768c6909484626c0542dfdac6328dcce5d",
+      "original_sha256": "e0773e8cb110735b37f6d3ac7da6856bee883fe0022cccb1048ee5be55a3a84e",
+      "recipe_lf_sha256": "fa6d2742c4db9a433d10468b018b8688bcd0aa7d5571f0c097d5572f4a58b2a0"
+    },
+    {
+      "id": "hero_xianggu-shao-baoyu",
+      "recipe_sha256": "2439b83824ac0b98e1dd5c10b49778dd8f02083d3a461beaba66bfc544c08f76",
+      "asset_sha256": "630fd6e795372afa0a685c17e317872b487ce703ca8280b05463b9bd3a9e2f54",
+      "original_sha256": "76041d43321ca85f1e1f5fa9f6a6d8fca0f82e083cf5bbcd3e48c90c5bde9ddc",
+      "recipe_lf_sha256": "8550def9e5585006514832ed4ff326b181fe64ecc2633e0eb5fb7519c41426ca"
+    },
+    {
+      "id": "hero_xianggu-xilanhua",
+      "recipe_sha256": "c690d4489f17c52241d87346b8bb866423eb4db60d89872e42af3d3fc794dfa2",
+      "asset_sha256": "35639d4f115b1f823e0dbc28221606c2537d65400768cf31e0b5ecc8e2ad8074",
+      "original_sha256": "062c5655bee65b628ff2d71c142b3f10c08ed1fa59ac16859c05218afb7ac2ab",
+      "recipe_lf_sha256": "3b336b264a09595435a855e766185208b581a3b5320cdef4d01f4fa8feb82f5f"
+    },
+    {
+      "id": "hero_xianggu-zhengdan",
+      "recipe_sha256": "98df3e585596e7b2f36a1b35c10b7ee84323f8f29151eec611ee55f6dae94cce",
+      "asset_sha256": "b6d975cc28643b7edeaed38327ab4cdab997af50eec1f965d39de5c37a43c4d4",
+      "original_sha256": "3c880cda64478fca8be085efcfcfa3835e8144fab79dc51a7b071a5ea93cad7b",
+      "recipe_lf_sha256": "30590e0c8406086d257416c7c7434fd4001fe6d66a093755fe10c0f66a6f73f5"
+    },
+    {
+      "id": "hero_xianggu-zhengji",
+      "recipe_sha256": "d6933e48f6ce7bd3998a98b316c88aa0415098e91cfd67ab01f72efd781affba",
+      "asset_sha256": "c446b67f1ef22aea73713d301410e0a4ecfb8906cd6ac0f326cd6cedb2f018c3",
+      "original_sha256": "4164501f0d9b2aacfacf4c2fdeb2c5b0af7ae9854ee6be7249d9d9185290e0ec",
+      "recipe_lf_sha256": "cc4ebdcbbfd02ae3d250c8683788e50f966936cb0d4778505f1246138d245de4"
+    },
+    {
+      "id": "hero_xiangjian-doufu",
+      "recipe_sha256": "b69120496f77de3f710ae28beab8d9fb5d226d254d4e6ea485e5765c1321b892",
+      "asset_sha256": "538b2b424239775a3c467923a0dbb329749f47bcb0f6e7a8d189b8e71bb04d98",
+      "original_sha256": "cd4169b8c58e0d53d30dde37e1e29a50f9320ed41795707a396bc62b83386509",
+      "recipe_lf_sha256": "c9593e55ec7b0e1fa74993922e5207923d19a8e50cfb7c27627a18b36c10f230"
+    },
+    {
+      "id": "hero_xiaochao-rou",
+      "recipe_sha256": "f479dc4fe66742e7c03896dbf0f989e56cbae98513e5cba887f175fb46421491",
+      "asset_sha256": "41f00f64af351e4fd95cf64356a76687078847770b2ea9cd4a3492f8ea87a8cf",
+      "original_sha256": "e23ba11f90d3f919caffbbae06eb4ca413e189e825fb1d1f71dfabbe2c0ff4c2",
+      "recipe_lf_sha256": "62e661b312566467c4b57d1b89f9562d8bcd93657a3f6accae27ff676a5a6778"
+    },
+    {
+      "id": "hero_xiaren-chaodan",
+      "recipe_sha256": "49cb9891658f3ffcbef73696f46e9bd822ecad66e5cd8c14366f978a79380519",
+      "asset_sha256": "3fa0072f6a585860c706b475705d828ace9166b209639ef89956aa1a46821640",
+      "original_sha256": "e6a8b2a21f69008c8764f8b016052f55af44f10b43902305ab22267695d53197",
+      "recipe_lf_sha256": "eaae8434d141d8c16de0695686030b29f29690acf44e86f0ebbbc70b96bf9c85"
+    },
+    {
+      "id": "hero_xiaren-donggua-tang",
+      "recipe_sha256": "fbde1d981b39bffc85d5011872bf25b8bc6136659a9506610a3f2e60293477c9",
+      "asset_sha256": "fac2d9b28abd5e3a25d92e9388128abdf3ffd6194e06008b6d8901f0e3f3b3c7",
+      "original_sha256": "c863f80d5ac71a697e09258ff0db1ecc171c69b6941dd6d9b2e1506a577eaddf",
+      "recipe_lf_sha256": "b66a6698d3f3b900797ffca1d046b62d79a7d8df32ffd4b9e64f30fa4e1795e1"
+    },
+    {
+      "id": "hero_xilanhua-chao-sanwenyu",
+      "recipe_sha256": "c5726cc354fbdbe36f308f6137db6baa60d4bcc110563972b20bc279bacb178d",
+      "asset_sha256": "57288b3e5cbd582c3bd721b60a71ae10d26ece3a6c5b00196e63056293e67588",
+      "original_sha256": "851fe72d77d23e3e8785375003d5186612684a485b01e459906c63a2b0ca62f2",
+      "recipe_lf_sha256": "f6eec5550e02dcc7de9a6d9570655b74c47e0d79d853779c5f121d47942c21af"
+    },
+    {
+      "id": "hero_xilanhua-chao-youyu",
+      "recipe_sha256": "53b1a6c0bb68e043758539ec06032c8e97e1b36c236329718dd93251e13a5ef3",
+      "asset_sha256": "84c6bb2816254a658c6f12754ffe355bba4c85b6cf990093bfd62d33e236af95",
+      "original_sha256": "2daa902ba71dcbeb9f8ab67577cbf00a135f6fb974757d0202c18537669e0f6a",
+      "recipe_lf_sha256": "abf193d80b2d4f7796cbd7e57557d01c1fd3300a8d606a3d165d9b15d5d8b241"
+    },
+    {
+      "id": "hero_xilanhua-chao-yupian",
+      "recipe_sha256": "80553319497c72f38285e37baa6916274f1d4c1e45284850a915e3cd4185b5f1",
+      "asset_sha256": "5c63ebd03611d6c1c21683f5088d6c597ae7f5e4dbf04991082cfdea260625be",
+      "original_sha256": "a1ee181f805cc5de5e81cc7c36393d16b415478e839d982b9026133bfd4902da",
+      "recipe_lf_sha256": "ade2141e5be897961c9dbd322e1d38addedb011a149c839edb2fa6dccf46ca66"
+    },
+    {
+      "id": "hero_xilanhua-chaodan",
+      "recipe_sha256": "5efc432d8fea4fca6f9c50d12267b4a27aed53e04182d20ad89d21a2df63f424",
+      "asset_sha256": "f74fdb5153e64d8c5c5675e2a07cdc7e361d1c8e0e79e00bbd4075a4e86994fe",
+      "original_sha256": "8ecca296e368f5ca7af2c2079b257100d15e7995daca4519a0cd79433d6d1adb",
+      "recipe_lf_sha256": "09a2d3310c55a641f61be0949a1037388ba9434ec8e7bdb66bc104c04d6b4088"
+    },
+    {
+      "id": "hero_xilanhua-chaoniurou",
+      "recipe_sha256": "2a3f59db5f633ee42e617c5d2473c50b78a045667a44bc4e833eef21d294c610",
+      "asset_sha256": "73286d87ebe71561b6dd1df99c25d52fc907a70e67f28abb77f707c954c90d4d",
+      "original_sha256": "7770103c5e82e12a58ab26489f8c4eb5fc874356ce9b08a486267880d998ca71",
+      "recipe_lf_sha256": "7d2a0fef2cb0f3a420922de25234558198a22c296dfe9d1e256bddde7a6b7708"
+    },
+    {
+      "id": "hero_xilanhua-chaorou",
+      "recipe_sha256": "027567bb0cce8589671dd9f077fc8bb7064deeaed3ab1a77468a6097a04114f8",
+      "asset_sha256": "1a1eb1248befe28f7270f1385cddd79bf24b1e3832b79e5fcca12c57c3c3cbd3",
+      "original_sha256": "9275c6733640954f55f5abae0e6c6f38057d795120abbc47f0c41d9299f2fcce",
+      "recipe_lf_sha256": "30db745023fbcc579e793a1cf8c0bfb5e7fff7a4fff2deed11f06e4260da6920"
+    },
+    {
+      "id": "hero_xilanhua-chaoshanbei",
+      "recipe_sha256": "5f6c782236c0c0a38cc710a182dad661cb950f096d6b9a737a9b9b1bed1dba05",
+      "asset_sha256": "ea1c7a71791d21360a004b4bfaf8bc765d6a127f21c8e98a4012b837e3505aa1",
+      "original_sha256": "3d38b9d4d3afa02c7ad2b4c6e0d188bdec888ce18bcbf4356790363cdbfad7d1",
+      "recipe_lf_sha256": "f2d05218475fdf6c407fed7dda88c11acb696454a235b182bcc44ad188d377d1"
+    },
+    {
+      "id": "hero_xilanhua-doufu",
+      "recipe_sha256": "d881727babaa02f708e34e25b6452f4943523164e46365bbe16eb17523a1a97b",
+      "asset_sha256": "757aeb302501dd8719f5cef0689546430c21468f52c669c6058c2ab215bae007",
+      "original_sha256": "41122ed29c979f7dc868038c928f8fab1461c57ecdfd48d8ebdc61c1dd27f951",
+      "recipe_lf_sha256": "445a5d5c0adb9eb5cfdbb07847668dd3daac971e497a1dd8d60796b7cc53fb37"
+    },
+    {
+      "id": "hero_xilanhua-xiaren",
+      "recipe_sha256": "73008781743245102f4300d872155a5b6fe7cb778572c92c1084738971ac831a",
+      "asset_sha256": "ba9b5b440966a6590517f31379c104badac11978d7713f33c555fc3d3986d838",
+      "original_sha256": "91b7900be8d307fcaf05b1d7ec0b2072790e731bd7d6630eac78f287b161bfa6",
+      "recipe_lf_sha256": "5f2b0722c711f588d42f491e127cd29e0785d3a9ee94c9277ad0e9ea6ae97272"
+    },
+    {
+      "id": "hero_yangcong-chao-huajia",
+      "recipe_sha256": "d55d69ffc5dfd4a21c37a8f1cbfe9d2ea960152801e79f440415876222fd2997",
+      "asset_sha256": "8d8297dc78ca4584a9b3831a6fec16b64f894b809874b10df15d7f4490160a55",
+      "original_sha256": "9fbd7efd107b5cf40bbb91303bf1774e4a5aec390dc92dbe6743bf86dc175fbf",
+      "recipe_lf_sha256": "9ed8baca7611a0b5d5579271c99901756e044bd352aab4eba0339328d2538c9d"
+    },
+    {
+      "id": "hero_yangcong-chao-niurou",
+      "recipe_sha256": "5848d5ba8f0d97b4a0175e8dd8b6ecdc03d4979322cb61e4da806047bb17ab5c",
+      "asset_sha256": "483acfc39b4f1289435b7f8bcf78a7ca9b4a1db987f83e3e2adfe3c2ae1b7428",
+      "original_sha256": "1c6bf34d3df036c36361a895330943f43fe6ccc25c975cab939547ac695de0f4",
+      "recipe_lf_sha256": "c90875d76d0deee0fb4e7a65b1a7bb058c9bb353b48a4ef1db4f9fe79bae343b"
+    },
+    {
+      "id": "hero_yangcong-chao-youyu",
+      "recipe_sha256": "8de06d91a52279b7cdd6ba1003d7de942af0579108d381f3c19e6b939b49af9f",
+      "asset_sha256": "0afb9cbaa9aa2557a2e07addeed92c84ae74fd6c89251f0427f92f073ccd10a6",
+      "original_sha256": "c8fa57db95596d9bac28ed3fd86aa91b5fc2153c0600d1dddc63ebab8034121a",
+      "recipe_lf_sha256": "e99310f0d73fe5090b79df4a562bb7eeea4a8e7660d97e2d2c37295bb8948efc"
+    },
+    {
+      "id": "hero_yangcong-chao-zhangyu",
+      "recipe_sha256": "aab94a07291b0d9d9657557d5a882e8e9752e1e45302ec4f9e84d812a86319c6",
+      "asset_sha256": "760bf52860fb20f016bd2f1c7c3e168b74c39c634e530b288ca58194a52fafcf",
+      "original_sha256": "8fa579408e9a5dcb201cd43502107e9f83395394aeee0eed1125a537f13c86bf",
+      "recipe_lf_sha256": "529bf1ee58d5a63457b8bd494ef14900c791b2ab4d0256e6e7bb8d28e921010f"
+    },
+    {
+      "id": "hero_yangcong-chaodan",
+      "recipe_sha256": "efa4b629b0783c0f14c3bd46020dc2b33ae3ad429b541dd85d3d98806e69ea68",
+      "asset_sha256": "8674cb37e02e699a33777e514c39b9f3dd3a9edc7242af0759ef6777ea3dc640",
+      "original_sha256": "bdcba8d0fb399781b24933b50b7ecb1b98bb8bdc148bb8bf894bdda3c078fe3f",
+      "recipe_lf_sha256": "e796f6417be591cc834594d36eed225165e73e080786a1bfbd38a8741c49ecbe"
+    },
+    {
+      "id": "hero_yangcong-chaorou",
+      "recipe_sha256": "f902c8ee4b0172415afc5f5dac78f4a42693cee0ffd6735510ff7a94b028b222",
+      "asset_sha256": "fd91f8f9274810bc109d669b60ac168bab34309a8f48fc10573e9ebdcb4a4bf0",
+      "original_sha256": "03a1f0cf636357a80f3150e70aff8b1a9da62430f91b24405358ffdc5b7ec7b8",
+      "recipe_lf_sha256": "0a6c18c5d7038971945027bfe3406b2ef4d2475a5f57adda2e690c63c136546c"
+    },
+    {
+      "id": "hero_yangcong-paigu",
+      "recipe_sha256": "1e0351d8b28bbfb67520314e64fd9abb3841fb5a4e508f0981acea936ae1a625",
+      "asset_sha256": "830c086d4482306153cb7bef9fd780cc77972e8ec1b13ad5162ec9b3031535e9",
+      "original_sha256": "4b34f77b1572004bf6bf1cceb80602f33e0dc957d827dfa365e52f4d553acfd3",
+      "recipe_lf_sha256": "20f7fbf5cb832a221357e09785be8cec17b6e737e46255c07c977ce0e99374e4"
+    },
+    {
+      "id": "hero_yangcong-qingkou-tang",
+      "recipe_sha256": "4e7b2bf19be2ad7b5ff8ad6648093e90f74c630e2b80bb84d3ccf726c54325cb",
+      "asset_sha256": "c4669f6c91c3281e596a225a4faef74f6ae26ac6e588025519c1eeff683a979c",
+      "original_sha256": "b6b55921fd66e836a5dbfa1eab843bd780ceeb4b84737341c1e15908e9116318",
+      "recipe_lf_sha256": "95b77a882a80289536fa1fbbdc637bf4e19eeaa97b36904cb269c3ae961ce359"
+    },
+    {
+      "id": "hero_yangcong-tudou",
+      "recipe_sha256": "3ce75c41cd4f7778b3b35af6d670c97ed893e5368b74ed1ec33eeee30c20aa72",
+      "asset_sha256": "3833cf1b27501e0f901db0a5f766b426b9a13b2fd8b19d7691189bba866e5343",
+      "original_sha256": "3bc3372829af9e6558efc85f94dd8549fa553b8db93f8ffaa931c83d3f9eb799",
+      "recipe_lf_sha256": "4a8a039545bd84f06a7e9cdad8b964e273e6c08d481d849aec3306dd394a1686"
+    },
+    {
+      "id": "hero_yumi-paigu-tang",
+      "recipe_sha256": "748b512ff26f3dca97d61e55f3836f3ed7f49ae2fa7a5ecb788a887220a8a780",
+      "asset_sha256": "325e27673df34b725e4161fbaf06b3f6bf78066eaa1857abc89896194d58ec73",
+      "original_sha256": "2f69e748302ffd78fac970ae203244fdaa92990c8bf8fca83cc28f5db1a6c88f",
+      "recipe_lf_sha256": "2a634ebbe1ae231f1837e2fe4f27f1aeadaec47366a455673b41c2997d27200a"
+    },
+    {
+      "id": "hero_zheng-shuidan",
+      "recipe_sha256": "7d29dbcacc4d315555752734c6d0ccb1eab89a5fd56f00753d19b5746fd2ebae",
+      "asset_sha256": "db8b2277744c8fc0d40e578abbfcb4d2591cc5cfd9f0bebeab1cf7bd51c0e94e",
+      "original_sha256": "c6bade41a8ca0fa0e052fe628a44ec9b617ed815683d705ceb50959fb86d86fd",
+      "recipe_lf_sha256": "b708342759726eb137cc1a55e3e3640d7bcd8f7ded9e618780820966ef7b35e7"
+    }
+  ]
+}

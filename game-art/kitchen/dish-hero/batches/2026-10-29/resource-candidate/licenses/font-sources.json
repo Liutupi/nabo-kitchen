@@ -1,0 +1,29 @@
+{
+  "source_han_commit": "a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2",
+  "records": [
+    {
+      "name": "SourceHanSansSC-Medium.otf",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/OTF/SimplifiedChinese/SourceHanSansSC-Medium.otf",
+      "bytes": 16546328,
+      "sha256": "1df61d31687d04fd2f928a3bb6ca6cd61f0e988cc267cf317f32406edbb49f70"
+    },
+    {
+      "name": "OFL.SourceHanSans.txt",
+      "url": "https://raw.githubusercontent.com/adobe-fonts/source-han-sans/a4f7cf94edfb9d7ffbdfc4841de276358bd7e0f2/LICENSE.txt",
+      "bytes": 4463,
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2"
+    },
+    {
+      "name": "OFL.ArchivoBlack.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivoblack/OFL.txt",
+      "bytes": 4492,
+      "sha256": "3173acd82f8c6159b5b1037b539fcbd4edff68e65c2ea8b9412b5a5ca97b08ff"
+    },
+    {
+      "name": "standard-gf0023-2020.pdf",
+      "url": "https://jw.beijing.gov.cn/language/bzgf/202105/P020210512414220837538.pdf",
+      "bytes": 51412684,
+      "sha256": "0ff0890afc34c5e486edeebafb05350dec69a7bf0d1d75044d7d3f7b722ec3d0"
+    }
+  ]
+}

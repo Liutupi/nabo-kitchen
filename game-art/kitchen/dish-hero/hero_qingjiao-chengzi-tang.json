@@ -4,7 +4,7 @@
   "status": "review",
   "generator": "OpenAI imagegen built-in tool",
   "original": "originals/hero_qingjiao-chengzi-tang-source.png",
-  "original_sha256": "62c858c4c874476f6ed699f7ffdc500a30cd1eb43f33875a5c47f7e26801d63a",
+  "original_sha256": "b4a127ce71732dca26703a62c19e8060bad838dca95b9dea367beddd94b59fe8",
   "original_dimensions": [
     1448,
     1086
@@ -13,12 +13,28 @@
     640,
     480
   ],
-  "asset_sha256": "2e0ed89fe78ffb7d2c1438baa7491b395973ff0b0a0bcaf275d20ae1743ce231",
+  "asset_sha256": "ad6442277f871fb452c8fa73c35286edc996c7a0a36f739e91cabd681a44e097",
   "references": [
-    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+    "game-art/kitchen/dish-hero/hero_qingjiao-chengzi-tang.png (previous revision)",
+    "game-art/kitchen/ingredients/razor_clam.png"
   ],
-  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-chengzi-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒蛏子汤. Actual recipe ingredients: 蛏子 (main), 青椒 (main), 姜. Preparation reference: 青椒去籽切片，姜切片；另用器具刷洗鲜活贝壳。 破壳、敲壳仍不闭合的活贝丢弃；处理后洗手洗具。 锅中放700毫升水和姜煮开，加入青椒煮熟。 放入贝类煮至开口；未开口的丢弃。 开口后的贝类继续煮3分钟，至贝肉熟透。 加盐调味盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "prompt": "Edit IMAGE 1, the complete dish target, to correct ONLY the shellfish species. This is 青椒蛏子汤, green pepper and RAZOR CLAM soup with ginger. The current shellfish incorrectly look like wide oval clams: replace every one with recognizable razor clams. IMAGE 2 is the project-owned RAW INGREDIENT SHAPE reference: long straight narrow bamboo-like beige razor-clam shells with parallel sides and rounded rectangular ends, length at least FIVE times width. Open long narrow shell halves lengthwise, showing slender ivory strips of cooked clam meat. NO wide oval clam shells, NO round scallops, NO mussels. Preserve the white soup bowl, green pepper pieces, ginger, broth, warm cute 2D food art style, dark brown outlines, upper-left lighting, 4:3 landscape composition with whole bowl inside frame and genuine transparent RGBA background. The raw ingredient icon's smile must NOT be copied: cooked food has NO faces. No text, no labels, no background or extra props. Make the razor-clam silhouette anatomically distinct even at 160x120. Deliver one corrected transparent complete-dish image.",
   "recipe_sha256": "280e27ca5a27e3b49545d37019b441f7864a4a4b650d207757fe19dc18edd3b1",
   "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
-  "review": "待逐图审美、真实菜品准确度及实机验收。"
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "revision_history": [
+    {
+      "original_sha256": "62c858c4c874476f6ed699f7ffdc500a30cd1eb43f33875a5c47f7e26801d63a",
+      "asset_sha256": "2e0ed89fe78ffb7d2c1438baa7491b395973ff0b0a0bcaf275d20ae1743ce231",
+      "references": [
+        "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-chengzi-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒蛏子汤. Actual recipe ingredients: 蛏子 (main), 青椒 (main), 姜. Preparation reference: 青椒去籽切片，姜切片；另用器具刷洗鲜活贝壳。 破壳、敲壳仍不闭合的活贝丢弃；处理后洗手洗具。 锅中放700毫升水和姜煮开，加入青椒煮熟。 放入贝类煮至开口；未开口的丢弃。 开口后的贝类继续煮3分钟，至贝肉熟透。 加盐调味盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "source_commit": "f06c1b3d315a3e4027f0a39cdc617a57a0a4e5b2",
+      "reason": "Correct wide oval clam shells to long narrow razor-clam shells"
+    }
+  ],
+  "correction": "Razor-clam morphology corrected by imagegen edit; ingredient icon used for shape only, without its face.",
+  "recipe_lf_sha256": "11ba82bda819f73d6d4cc445a4bbff27bebcc9b7911ba1d5ece043ad44cd3320",
+  "recipe_hash_note": "recipe_sha256 preserves the raw generation-time file; recipe_lf_sha256 normalizes CRLF to LF for cross-platform verification."
 }
