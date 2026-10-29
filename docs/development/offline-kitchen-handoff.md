@@ -2,6 +2,12 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## v0.2 implementation validated; device acceptance pending
+
+The date-free 0.2.0-dev candidate and whole-card focus colors are implemented. The JavaScript prototype and production C agree on 160 weight vectors and 40 draw/reroll vectors over 145 recipes. The prototype passed 31 checks; the complete firmware gate, 12 real-resource rendering checks, legacy migration and strict archive verification passed. NVS passed 100 maximum-state saves and 484 simulated power-cut boundaries. See [validation](offline-v02-validation-20261029.json) and [host-rendered screens](../../assets/kitchen/validation/v0.2/focus-preview.png).
+
+KST1 dates are sorted only on first migration; KST2 thereafter persists a full draw counter and ordered completion history. Old v0.1 applications cannot directly read KST2. Read-only enumeration still finds the previously confirmed COM11 badge. No port was opened or firmware flashed. The concrete proposal writes only the validated application and D2 resources, preserving the installed bootloader, table and unrelated partitions; it awaits explicit consent. Task 6 is not marked accepted until the device reboots without asking for a date and physical controls are checked. Publishing remains deferred; task 7 still requires at least three real cooking sessions on v0.2.
+
 ## D2 resources rebuilt; task 5 complete
 
 The 145-recipe D2 resources, fonts and all hero sprites have been rebuilt. The 3,768,770-byte bundle leaves 1,474,110 bytes in its 5 MiB partition. The complete build/host gate and strict archive check passed; 21 capability-dependent tests were skipped. Known retired recipes are filtered from legacy saves while compatible records/settings survive; unknown hashes still reject atomically. See [validation](offline-d2-validation-20261029.json). No device was flashed and nothing was released. Continue main task 6 for the date-free workflow and whole-card focus colors, synchronizing the prototype first.

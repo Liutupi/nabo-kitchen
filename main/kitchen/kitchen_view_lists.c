@@ -115,7 +115,7 @@ void kv_lists_draw(kg_canvas* c, const kv_scene* s) {
             const ku_shopping* item = &u->shopping[s->shopping[start + i]];
             int y = 60 + (int)i * 37;
             if (start + i == u->focus)
-                kg_round_rect(c, 19, y, 202, 35, 5, PAPER2);
+                kg_round_rect(c, 19, y, 202, 35, 5, GOLD);
             kg_rect(c, 23, y + 10, 12, 12, item->bought ? GREEN : INK);
             kv_icon(c, s, km_ingredients[item->id].id, 38, y + 2, 30, 30);
             kv_label(c, s, &a->han12, 70, y + 5, 75, 23, INK, km_ingredients[item->id].name);
@@ -126,6 +126,7 @@ void kv_lists_draw(kg_canvas* c, const kv_scene* s) {
         }
         if (!s->shopping_count)
             kv_label(c, s, &a->han16, 40, 104, 180, 70, INK, "买菜单是空的\n从用料页加入食材");
+        if (u->focus == s->shopping_count) kg_round_rect(c, 22, 249, 196, 24, 6, GOLD);
         kv_label(c, s, &a->han12, 76, 251, 120, 20, INK, "清空已买");
         kv_footer(c, s, "↑↓ 选择 · OK 打勾 / 清空");
         return;
@@ -138,15 +139,12 @@ void kv_lists_draw(kg_canvas* c, const kv_scene* s) {
         kv_icon(c, s, text, 14, 50, 40, 40);
         static const char* levels[] = {"", "夜宵学徒", "深夜帮厨", "夜班主厨", "深夜厨神"};
         kv_label(c, s, &a->han16, 62, 46, 160, 26, INK, levels[stats.level]);
-        if (u->date_unconfirmed)
-            snprintf(text, sizeof(text), "累计 %u 道 · 日期未确认", (unsigned)stats.total);
-        else
-            snprintf(text, sizeof(text), "累计 %u 道 · 连续 %u 天", (unsigned)stats.total,
-                     (unsigned)stats.streak);
+        snprintf(text, sizeof(text), "累计 %u 次 · 解锁 %u 道", (unsigned)stats.total, (unsigned)stats.unique);
         kv_label(c, s, &a->han12, 62, 73, 160, 20, INK, text);
         static const char* filters[] = {"全部", "做过的", "收藏", "我存的"};
         snprintf(text, sizeof(text), "筛选: %s", filters[u->book_filter]);
-        kv_label(c, s, &a->han12, 10, 100, 220, 22, PAPER, text);
+        if (!u->focus) kg_round_rect(c, 8, 99, 224, 23, 5, GOLD);
+        kv_label(c, s, &a->han12, 10, 100, 220, 22, u->focus ? PAPER : INK, text);
         unsigned start = u->focus ? ((u->focus - 1) / 6) * 6 : 0;
         for (unsigned i = 0; i < 6 && start + i < s->book_count; ++i) {
             unsigned recipe = s->book[start + i];

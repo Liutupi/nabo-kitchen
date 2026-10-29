@@ -79,20 +79,8 @@ static void back(ku_ui* u) {
     } else
         home(u);
 }
-static int conditions_equal(ku_conditions a, ku_conditions b) {
-    return a.people == b.people && a.minutes == b.minutes && a.combo == b.combo;
-}
 static unsigned recent_age(const ku_ui* u, unsigned recipe) {
-    if (u->date_unconfirmed)
-        return 99999;
-    int64_t age = 99999;
-    for (unsigned i = 0; i < u->store.history_count; ++i)
-        if (u->store.history[i].recipe == recipe && u->store.history[i].day != INT32_MIN) {
-            int64_t a = (int64_t)u->day - u->store.history[i].day;
-            if (a >= 0 && a < age)
-                age = a;
-        }
-    return (unsigned)age;
+    return ks_recent_age(&u->store, recipe);
 }
 static void show_result(ku_ui* u, int push) {
     u->result_focus = 0;
@@ -100,7 +88,7 @@ static void show_result(ku_ui* u, int push) {
     go(u, 4, push, 0);
 }
 static void draw(ku_ui* u, int reroll, int64_t now) {
-    if (!reroll && u->has_saved && conditions_equal(u->conditions, u->saved_conditions)) {
+    if (!reroll && u->has_saved) {
         u->result_count = u->saved_count;
         u->notes = u->saved_notes;
         memcpy(u->result, u->saved_result, sizeof(u->result));
@@ -114,13 +102,11 @@ static void draw(ku_ui* u, int reroll, int64_t now) {
         recipes[i] = item->recipe;
         recipes[i].weight =
             (uint16_t)kitchen_recipe_weight(recent_age(u, i), ku_recipe_bit(u->favorites, i),
-                                            !u->date_unconfirmed &&
-                                                !!(item->season_mask & (1u << (u->month - 1))),
+                                            0,
                                             ku_recipe_bit(u->wanted, i) || !!(item->tags & (1u << 12)),
                                             item->difficulty > u->difficulty);
     }
-    unsigned used = u->rerolls_used + (replacing ? 1 : 0);
-    uint32_t seed = u->daily_seed + used * UINT32_C(0x9e3779b9);
+    uint32_t seed = u->daily_seed + u->draw_count * UINT32_C(0x9e3779b9);
     const uint16_t* avoid = u->result_count ? u->result : u->saved_result;
     unsigned avoid_count = replacing ? (u->result_count ? u->result_count : u->saved_count) : 0;
     kr_result r = kitchen_recommend(recipes, u->catalog->count, u->excluded, u->conditions.combo,
@@ -131,14 +117,8 @@ static void draw(ku_ui* u, int reroll, int64_t now) {
                                                      : KU_DATA_ERROR;
         return;
     }
-    if (replacing) {
-        /* KST1 stores an 8-bit count. Keep it saturated while advancing the
-         * persisted seed beyond 255 draws so rerolls remain unbounded. */
-        if (u->rerolls_used < UINT8_MAX)
-            ++u->rerolls_used;
-        else
-            u->daily_seed += UINT32_C(0x9e3779b9);
-    }
+    ++u->draw_count;
+    if (replacing && u->rerolls_used < UINT8_MAX) ++u->rerolls_used;
     u->saved_count = r.count;
     u->saved_notes = r.notes;
     memcpy(u->saved_result, r.indices, sizeof(u->saved_result));
@@ -189,16 +169,8 @@ int ku_init(ku_ui* u, const kc_catalog* catalog, const krc_pack* pack, int32_t d
     return 1;
 }
 void ku_set_day(ku_ui* u, int32_t day, unsigned month, uint32_t seed) {
-    if (!u || month < 1 || month > 12)
-        return;
-    if (day != u->day) {
-        u->day = day;
-        u->daily_seed = seed;
-        u->rerolls_used = 0;
-        u->has_saved = 0;
-        u->dirty = 1;
-    }
-    u->month = (uint8_t)month;
+    /* Kept for old host callers; dates never alter a v2 menu or seed. */
+    (void)u; (void)day; (void)month; (void)seed;
 }
 void ku_scroll_extents(ku_ui* u, unsigned step_max, unsigned paper_max) {
     if (!u)
@@ -281,9 +253,11 @@ static void step_next(ku_ui* u, int64_t now) {
     ks_result result = ks_complete_step(&u->store, s, u->recipe, count,
                                         u->date_unconfirmed ? INT32_MIN : u->day);
     u->dirty = 1;
-    if (result == KS_COMPLETE || result == KS_ALREADY_COMPLETE)
+    if (result == KS_COMPLETE || result == KS_ALREADY_COMPLETE) {
+        u->has_saved = 0;
+        u->saved_count = 0;
         go(u, 8, 1, 0);
-    else if (result == KS_INCOMPLETE)
+    } else if (result == KS_INCOMPLETE)
         u->message = KU_STEP_INCOMPLETE;
     else if (result == KS_FULL)
         u->message = KU_CAPACITY_ERROR;

@@ -12,8 +12,7 @@ unsigned kitchen_recipe_weight(unsigned age, int favorite, int in_season, int wa
     w = w * (age < 3 ? 10 : age < 7 ? 40 : age < 14 ? 80 : 100) / 100;
     if (favorite)
         w = w * 150 / 100;
-    if (in_season)
-        w = w * 130 / 100;
+    (void)in_season; /* No calendar-dependent weighting in v0.2. */
     if (wanted)
         w = w * 120 / 100;
     if (above_difficulty)

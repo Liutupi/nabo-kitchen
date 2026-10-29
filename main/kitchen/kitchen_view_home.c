@@ -4,7 +4,7 @@
 
 static void card(kg_canvas* c, int x, int y, int w, int h, uint16_t fill, int selected) {
     kg_round_rect(c, x, y, w, h, 10, selected ? GOLD : INK);
-    kg_round_rect(c, x + 2, y + 2, w - 4, h - 4, 8, fill);
+    kg_round_rect(c, x + 2, y + 2, w - 4, h - 4, 8, selected ? GOLD : fill);
 }
 static void keyrow(kg_canvas* c, const kv_scene* s, int y, const char* key, const char* text,
                    int hot) {
@@ -76,8 +76,7 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
         /* The hero and controls have separate space; the date hint is drawn
          * inside the hero by kcal_view_hint, never over a menu or portrait. */
         kg_rect(c, 0, 0, 240, 320, BG);
-        kv_label(c, s, &s->assets->han16, 12, 5, 150, 24, PAPER, "深夜厨房");
-        kv_label(c, s, &s->assets->latin12, 177, 7, 55, 18, GOLD, "NABO");
+        kv_header(c, s, "深夜厨房", TOMATO);
         kg_rect(c, 12, 32, 216, 1, RGB(78, 66, 90));
         kg_round_rect(c, 8, 40, 224, 91, 12, PANEL);
         kv_label(c, s, &s->assets->han18, 18, 52, 126, 26, PAPER, "今晚吃点啥？");
@@ -116,7 +115,7 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
             kv_label(c, s, &s->assets->han15, 122, y + 8, 105, 30, INK, text);
         }
         card(c, 8, 224, 224, 42, TOMATO, u->focus == 3);
-        kv_label(c, s, &s->assets->han18, 80, 229, 100, 32, WHITE, "颠勺！");
+        kv_label(c, s, &s->assets->han18, 80, 229, 100, 32, u->focus == 3 ? INK : WHITE, "颠勺！");
         kv_footer(c, s, "↑↓ 选行 · OK 切换 · 颠勺出菜");
         return;
     }
@@ -144,7 +143,12 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
             }
             kv_icon(c, s, "face_happy", 10, 185, 40, 40);
             card(c, 60, 186, 170, 52, PAPER, 0);
-            kv_label(c, s, &s->assets->han12, 66, 192, 158, 40, INK, "先准备食材，再开始做菜");
+            unsigned age = ks_recent_age(&u->store,u->recipe);
+            if (age < 14) {
+                if (!age) snprintf(text,sizeof(text),"上次做过");
+                else snprintf(text,sizeof(text),"%u 次前做过",age+1);
+            } else snprintf(text,sizeof(text),"先准备食材，再开始做菜");
+            kv_label(c,s,&s->assets->han12,66,192,158,40,INK,text);
             keyrow(c, s, 246, "↓", "换一组", 0);
             keyrow(c, s, 280, "OK", "开始做这道", 1);
         } else if (u->result_count) {
@@ -160,13 +164,16 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
             kv_food(c, s, u->recipe, 45, 46, 150, 112);
             kv_label(c, s, &s->assets->han20, 12, 164, 220, 30, PAPER,
                      u->catalog->items[u->recipe].name);
-            kg_round_rect(c, 12, 192, 75, 20, 6, PANEL);
-            kv_icon(c, s, "ui_timer_icon", 17, 194, 14, 14);
-            snprintf(text, sizeof(text), "%u 分钟", u->catalog->items[u->recipe].recipe.minutes);
-            kv_label(c, s, &s->assets->han12, 34, 193, 53, 18, PAPER, text);
-            kg_round_rect(c, 91, 192, 53, 20, 6, PANEL);
-            snprintf(text, sizeof(text), "难度 %u", u->catalog->items[u->recipe].difficulty);
-            kv_label(c, s, &s->assets->han12, 95, 193, 48, 18, PAPER, text);
+            unsigned age = ks_recent_age(&u->store, u->recipe);
+            kg_round_rect(c, 12, 192, 80, 20, 6, PANEL);
+            if (age < 14) {
+                if (!age) snprintf(text,sizeof(text),"上次做过");
+                else snprintf(text,sizeof(text),"%u 次前做过",age+1);
+            } else snprintf(text,sizeof(text),"难度 %u",u->catalog->items[u->recipe].difficulty);
+            kv_label(c,s,&s->assets->han12,17,193,75,18,PAPER,text);
+            kg_round_rect(c,96,192,49,20,6,PANEL);
+            snprintf(text,sizeof(text),"%u 分钟",u->catalog->items[u->recipe].recipe.minutes);
+            kv_label(c,s,&s->assets->han12,98,193,47,18,PAPER,text);
             keyrow(c, s, 216, "↑", "回吧台", 0);
             keyrow(c, s, 250, "↓", "换一道", 0);
             keyrow(c, s, 284, "OK", "开做！", 1);

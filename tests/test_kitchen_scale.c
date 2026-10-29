@@ -35,7 +35,8 @@ static void legacy_128(void) {
     size_t n = ku_save_encode(&src, encoded, sizeof(encoded), 77, 0, -1);
     FILE* f = fopen("tests/fixtures/kitchen_state_128.kst", "rb"); assert(f);
     uint8_t prior[KU_SAVE_MAX]; size_t old_n = fread(prior, 1, sizeof prior, f); fclose(f);
-    assert(n == old_n && !memcmp(encoded, prior, n));
+    assert(n == old_n + 4 && encoded[4] == 2 && prior[4] == 1);
+    n = old_n;
     kc_item temp = items[127]; items[127] = items[128]; items[128] = temp;
     uint32_t seq; int lost;
     assert(ku_save_decode(&dst, &scratch, prior, n, &seq, 0, -1, &lost));

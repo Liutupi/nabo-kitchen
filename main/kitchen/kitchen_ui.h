@@ -51,11 +51,11 @@ typedef struct {
     ku_conditions conditions, saved_conditions;
     uint16_t result[4], saved_result[4];
     uint8_t page, focus, result_count, result_focus, saved_count, notes, saved_notes;
-    /* KST1 retains the old limit for compatibility; it no longer gates draws.
-     * The count saturates at 255 and later draws advance daily_seed instead. */
+    /* Legacy compatibility bytes never gate draws. KST2 stores the independent
+     * 32-bit draw_count; daily_seed is the stable device seed. */
     uint8_t difficulty, reroll_limit, rerolls_used, sound, volume;
     uint8_t outside, dirty, has_saved, stack_count, ingredient_count, fridge_count;
-    /* Runtime only: the supplied day/month are provisional until explicitly confirmed. */
+    /* Legacy layout flag: always zero in v0.2; no date-confirmation UI. */
     uint8_t date_unconfirmed;
     /* Navigation only; the fridge's selected ingredient bits remain persisted. */
     uint8_t fridge_category, fridge_selecting_items;
@@ -66,7 +66,7 @@ typedef struct {
     uint16_t recipe;
     int32_t day;
     uint8_t month;
-    uint32_t daily_seed;
+    uint32_t daily_seed, draw_count;
     int64_t transition_due, message_due;
     ku_message message;
 } ku_ui;

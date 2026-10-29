@@ -133,7 +133,7 @@ size_t ku_save_encode(const ku_ui* u, uint8_t* buffer, size_t cap, uint32_t sequ
         return 0;
     writer w = {buffer, cap, 0, 1};
     put(&w, 0x3154534bu, 4);
-    put(&w, 1, 2);
+    put(&w, 2, 2);
     put(&w, 0, 2);
     put(&w, 0, 4);
     put(&w, 0, 4);
@@ -230,6 +230,7 @@ size_t ku_save_encode(const ku_ui* u, uint8_t* buffer, size_t cap, uint32_t sequ
         put(&w, have_wall, 1);
         put(&w, have_wall ? (uint64_t)(wall + left) : 0, 8);
     }
+    put(&w, u->draw_count, 4);
     if (!w.ok || w.pos > UINT32_MAX)
         return 0;
     uint32_t length = (uint32_t)w.pos, crc = crc32(buffer + 20, w.pos - 20);
@@ -269,8 +270,10 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
     if (!u || !scratch || u == scratch || !u->catalog || !buffer || length < 20 ||
         length > KU_SAVE_MAX || mono < 0)
         return 0;
+    uint16_t version = 0;
+    if (!ku_save_header(buffer, length, &version, NULL, NULL) || version < 1 || version > 2) return 0;
     reader r = {buffer, length, 0, 1};
-    if (get(&r, 4) != 0x3154534bu || get(&r, 2) != 1 || get(&r, 2) != 0 || get(&r, 4) != length)
+    if (get(&r, 4) != 0x3154534bu || get(&r, 2) != version || get(&r, 2) != 0 || get(&r, 4) != length)
         return 0;
     uint32_t expected = (uint32_t)get(&r, 4), seq = (uint32_t)get(&r, 4);
     if (crc32(buffer + 20, length - 20) != expected)
@@ -425,6 +428,22 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
         tmp->timer_recipe[target] = (uint16_t)recipe;
         tmp->timer_step[target] = (uint8_t)step;
     }
+    tmp->draw_count = version == 2 ? (uint32_t)get(&r, 4) : tmp->rerolls_used;
+    if (version == 1) {
+        /* Stable ascending legacy date order; ties retain their original order. */
+        for (unsigned i = 1; i < tmp->store.history_count; ++i) {
+            ks_record entry = tmp->store.history[i]; unsigned j = i;
+            while (j && tmp->store.history[j-1].day > entry.day) {
+                tmp->store.history[j] = tmp->store.history[j-1]; --j;
+            }
+            tmp->store.history[j] = entry;
+        }
+        tmp->daily_seed = u->daily_seed;
+    }
+    for (unsigned i = 0; i < tmp->store.history_count; ++i) tmp->store.history[i].day = 0;
+    for (unsigned i = 0; i < tmp->store.cooked_count; ++i) tmp->store.cooked[i].last_day = 0;
+    tmp->store.has_streak = 0; tmp->store.streak_days = 0; tmp->store.streak_last_day = 0;
+    tmp->day = 0; tmp->month = 1; tmp->date_unconfirmed = 0;
     if (!r.ok || r.pos != length)
         return 0;
     tmp->page = 1;
@@ -432,7 +451,7 @@ int ku_save_decode(ku_ui* u, ku_ui* scratch, const uint8_t* buffer, size_t lengt
     tmp->stack_count = 0;
     tmp->outside = 0;
     tmp->result_count = 0;
-    tmp->dirty = removed;
+    tmp->dirty = removed || version == 1;
     *u = *tmp;
     if (sequence)
         *sequence = seq;

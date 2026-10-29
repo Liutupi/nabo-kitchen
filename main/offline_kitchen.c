@@ -12,6 +12,7 @@
 #include "esp_log.h"
 #include "esp_partition.h"
 #include "esp_random.h"
+#include "esp_mac.h"
 #include "esp_sleep.h"
 #include "esp_timer.h"
 #include "freertos/FreeRTOS.h"
@@ -19,8 +20,6 @@
 #include "freertos/task.h"
 #include "key_guard.h"
 #include "kitchen/kitchen_bundle.h"
-#include "kitchen/kitchen_calendar.h"
-#include "kitchen/kitchen_calendar_view.h"
 #include "kitchen/kitchen_metadata.h"
 #include "kitchen/kitchen_view.h"
 #include "kitchen/nabo_kitchen_mixer.h"
@@ -71,8 +70,6 @@ typedef struct {
   bool storage_ready, audio_ready, boot_voice, test_mode, capture, clock_lost;
   bool capture_clean;
   ku_ui *test_original;
-  kcal_editor calendar;
-  bool calendar_active;
 } kitchen_state;
 #define KEY_GUARD_MAX_US (10LL * 1000 * 1000)
 static key_guard_t wake_guard;
@@ -162,9 +159,15 @@ static bool load_resources(kitchen_state *s) {
                       &s->icons, &s->ui_art, &s->animation))
     return false;
   initialization_pause(NULL);
-  /* There is no trusted clock. Preserve an existing saved day; never advance it
-   * on reboot. */
-  if (!ku_init(&s->ui, &s->catalog, &s->recipes, 0, 1, esp_random(),
+  /* Stable device identity plus persisted draw_count, without a calendar. */
+  uint8_t device_id[6];
+  uint32_t device_seed = UINT32_C(0x4e41424f);
+  if (esp_efuse_mac_get_default(device_id) == ESP_OK) {
+    device_seed = UINT32_C(2166136261);
+    for (unsigned i = 0; i < sizeof(device_id); ++i)
+      device_seed = (device_seed ^ device_id[i]) * UINT32_C(16777619);
+  }
+  if (!ku_init(&s->ui, &s->catalog, &s->recipes, 0, 1, device_seed,
                km_ingredient_order, km_ingredient_order_count, km_fridge_order,
                km_fridge_order_count))
     return false;
@@ -200,9 +203,9 @@ static bool load_resources(kitchen_state *s) {
     s->storage_fault = 1;
     s->ui.message = KU_STORE_ERROR;
   }
-  /* The last saved date is only a suggestion after a reboot, never a trusted
-   * clock. */
-  s->ui.date_unconfirmed = 1;
+  /* Legacy calendar fields remain placeholders; no date confirmation is
+   * presented after a reboot. */
+  s->ui.date_unconfirmed = 0;
   s->frame =
       heap_caps_malloc(FRAME_BYTES, MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
   s->strip = heap_caps_malloc(WIDTH * STRIP * sizeof(uint16_t),
@@ -247,41 +250,6 @@ static void dispatch(void *context, ki_key key, ki_kind kind) {
     /* Dispatch runs in the UI worker, never in the button callback. Commit the
      * acknowledgement now rather than leaving a 1.5 second reset window. */
     save(s, esp_timer_get_time() / 1000);
-    s->redraw = 1;
-    return;
-  }
-  if (s->calendar_active) {
-    kcal_key action;
-    if (key == KI_UP && (kind == KI_DOUBLE || kind == KI_LONG))
-      action = KCAL_CANCEL;
-    else if (kind == KI_SHORT && key == KI_UP)
-      action = KCAL_UP;
-    else if (kind == KI_SHORT && key == KI_DOWN)
-      action = KCAL_DOWN;
-    else if (kind == KI_SHORT && key == KI_OK)
-      action = KCAL_OK;
-    else
-      return;
-    kcal_status status = kcal_editor_key(&s->calendar, action);
-    if (status == KCAL_CONFIRMED) {
-      int32_t day;
-      unsigned month;
-      if (kcal_editor_result(&s->calendar, &day, &month)) {
-        uint32_t seed =
-            (uint32_t)day * UINT32_C(2654435761) + UINT32_C(0x4e41424f);
-        ku_set_day(&s->ui, day, month, seed);
-        s->ui.date_unconfirmed = 0;
-        s->ui.dirty = 1;
-      }
-      s->calendar_active = false;
-    } else if (status == KCAL_CANCELED || status == KCAL_ERROR)
-      s->calendar_active = false;
-    s->redraw = 1;
-    return;
-  }
-  if (!s->clock_lost && s->ui.page == 1 && key == KI_DOWN && kind == KI_LONG) {
-    kcal_editor_begin(&s->calendar, s->ui.day);
-    s->calendar_active = true;
     s->redraw = 1;
     return;
   }
@@ -371,14 +339,8 @@ static bool render(kitchen_state *s, int64_t now, bool full, bool capture,
   for (int y = first; y < last; y += STRIP) {
     kg_canvas canvas;
     kg_init(&canvas, s->strip, WIDTH, y, STRIP, 0x18c6);
-    if (s->calendar_active)
-      kcal_view_draw(&canvas, &s->scene, &s->calendar);
-    else {
-      if (!kv_draw(&canvas, &s->scene))
-        return false;
-      if (s->ui.page == 1)
-        kcal_view_hint(&canvas, &s->scene, s->ui.date_unconfirmed);
-    }
+    if (!kv_draw(&canvas, &s->scene))
+      return false;
     if (canvas.error)
       return false;
     if (s->test_mode && !clean) {
@@ -473,10 +435,6 @@ static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
         atomic_load(&voice_samples), atomic_load(&voice_nonzero), atomic_load(&audio_writes),
         atomic_load(&audio_write_errors), atomic_load(&audio_last_error));
   } else if (!strcmp(line, ">kitchen.test=on")) {
-    if (s->calendar_active) {
-      printf("\n@kitchen.test date-editor-active\n");
-      return;
-    }
     if (s->test_mode) {
       printf("\n@kitchen.test on\n");
       return;
@@ -527,7 +485,6 @@ static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
       heap_caps_free(s->test_original);
       s->test_original = NULL;
       s->test_mode = false;
-      s->calendar_active = false;
       s->capture = false;
       s->capture_clean = false;
       s->action_name[0] = 0;
@@ -694,8 +651,7 @@ static void worker(void *arg) {
         new_alarm = true;
     }
     if (new_alarm) {
-      /* An alarm must not be hidden behind the date editor. */
-      s->calendar_active = false;
+      /* Timer alarms redraw immediately on every page. */
       s->redraw = 1;
       if (s->ui.sound && s->ui.volume && s->audio_ready) {
         atomic_store(&audio_volume, s->ui.volume);

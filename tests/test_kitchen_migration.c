@@ -38,12 +38,13 @@ int main(void) {
     uint8_t buffer[KU_SAVE_MAX];size_t length=ku_save_encode(&source,buffer,sizeof(buffer),42,1000,-1);assert(length);
     FILE* fixture=fopen("tests/fixtures/kitchen_state_v0.kst","rb");assert(fixture);
     uint8_t old_bytes[KU_SAVE_MAX];size_t old_length=fread(old_bytes,1,sizeof old_bytes,fixture);fclose(fixture);
-    assert(old_length==length && memcmp(buffer,old_bytes,length)==0);
+    assert(length==old_length+4 && old_bytes[4]==1 && buffer[4]==2);
+    length=old_length;
     memcpy(buffer,old_bytes,length);
     restored.date_unconfirmed=1;uint32_t sequence=0;int lost=0;
     assert(ku_save_decode(&restored,&scratch,buffer,length,&sequence,2000,-1,&lost));
     unsigned first=find(&now,old.items[0].hash), last=find(&now,old.items[29].hash);
-    assert(sequence==42 && lost && restored.date_unconfirmed==1);
+    assert(sequence==42 && lost && restored.date_unconfirmed==0);
     assert(restored.saved_result[0]==first && restored.saved_result[1]==last);
     assert(ku_recipe_bit(restored.favorites,first) && ku_recipe_bit(restored.favorites,last));
     assert(restored.store.history[0].recipe==last && restored.store.cooked[0].recipe==first);

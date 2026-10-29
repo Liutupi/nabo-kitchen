@@ -2,7 +2,7 @@
 #define KITCHEN_SESSION_H
 #include <stdint.h>
 
-/* Days are UTC epoch-day integers, provided by the caller after date validation. */
+/* Legacy date fields retain layout only; v2 completion order is the history array. */
 #define KS_MAX_STEPS 12
 #define KS_MAX_RECIPES 192
 #define KS_HISTORY_SIZE 60
@@ -38,6 +38,7 @@ typedef struct {
     uint32_t unique, total, streak, today, level;
 } ks_stats;
 
+unsigned ks_recent_age(const ks_store* store, unsigned recipe);
 void ks_init(ks_store* store);
 void ks_reset_session(ks_session* session);
 ks_result ks_complete_step(ks_store* store, ks_session* session, uint16_t recipe,

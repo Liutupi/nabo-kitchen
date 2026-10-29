@@ -123,6 +123,7 @@ run_static_checks() {
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_crc.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_mixer.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_ingredient_migration.py
+    PYTHONDONTWRITEBYTECODE=1 python3 tests/test_kitchen_v02_parity.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_deep_sleep_contract.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_key_wake_contract.py
     PYTHONDONTWRITEBYTECODE=1 python3 tests/test_check_repo.py

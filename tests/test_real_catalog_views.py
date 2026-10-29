@@ -109,7 +109,7 @@ class RealCatalogViews(unittest.TestCase):
         self.assertEqual(self.dll.view_page(7, 0), 1)
         self.check_render("timer page: cancel control and real glyphs")
 
-    def test_clean_capture_changes_only_the_clock_region(self):
+    def test_clock_inputs_never_render_in_v02(self):
         pixels_type = ct.c_uint16 * (240 * 320)
         self.dll.view_capture_clock.argtypes = [ct.c_uint]
         self.assertEqual(self.dll.view_page(4, self.ids.index('fanqie-chaodan')), 1)
@@ -120,13 +120,27 @@ class RealCatalogViews(unittest.TestCase):
         self.assertEqual(self.dll.view_draw(clean, 0, 320), 1)
         clock = {y * 240 + x for y in range(6, 26) for x in range(184, 234)}
         changes = {i for i, (a, b) in enumerate(zip(normal, clean)) if a != b}
-        self.assertTrue(changes)
+        self.assertFalse(changes, 'Calendar placeholders must stay hidden in normal and clean modes')
         self.assertTrue(changes <= clock, 'Capture changed content outside the clock')
-        self.assertTrue(all(clean[i] == clean[7 * 240 + 235] for i in clock))
         self.check_render('clean capture with the actual fonts and sprites')
         self.assertEqual(self.dll.view_capture_clock(0), 1)
         self.assertEqual(self.dll.view_draw(restored, 0, 320), 1)
         self.assertEqual(list(normal), list(restored))
+
+    def test_focus_changes_card_interiors_not_only_the_border(self):
+        self.dll.view_focus.argtypes = [ct.c_uint]
+        self.assertEqual(self.dll.view_page(1, 0), 1)
+        pixels_type = ct.c_uint16 * (240 * 320)
+        first, second = pixels_type(), pixels_type()
+        self.assertEqual(self.dll.view_focus(1), 1)
+        self.assertEqual(self.dll.view_draw(first, 0, 320), 1)
+        self.assertEqual(self.dll.view_focus(2), 1)
+        self.assertEqual(self.dll.view_draw(second, 0, 320), 1)
+        gold = ((255 >> 3) << 11) | ((180 >> 2) << 5) | (94 >> 3)
+        self.assertEqual(first[200 * 240 + 60], gold)
+        self.assertNotEqual(second[200 * 240 + 60], gold)
+        self.assertEqual(second[200 * 240 + 176], gold)
+        self.assertGreater(sum(a != b for a, b in zip(first, second)), 3000)
 
     def test_opening_scene_waits_for_ok(self):
         self.assertEqual(self.dll.view_page(0, 0), 1)

@@ -39,8 +39,8 @@ int kv_prepare(kv_scene* scene, ku_ui* u, const kv_assets* a, int64_t now, int b
     scene->now = now;
     scene->battery = battery;
     scene->animation_frame = frame;
-    snprintf(scene->clock, sizeof(scene->clock), "%s",
-             clock && (!*clock || strlen(clock) == 5) ? clock : "--:--");
+    (void)clock; /* v0.2 never shows calendar time, including placeholders. */
+    scene->clock[0] = 0;
     if (u->page == 5 &&
         (!kc_read_ingredients(u->pack, u->recipe, scene->ingredients, 10,
                               &scene->ingredient_count) ||
@@ -178,11 +178,23 @@ void kv_portrait(kg_canvas* c, const kv_scene* s, int x, int y, unsigned size) {
 void kv_header(kg_canvas* c, const kv_scene* s, const char* title, uint16_t accent) {
     kg_rect(c, 0, 0, 240, 32, INK);
     kv_label(c, s, &s->assets->han16, 8, 2, 162, 28, PAPER, title);
-    kv_label(c, s, &s->assets->latin12, 184, 6, 50, 20, GOLD, s->clock);
+    int64_t remaining = INT64_MAX;
+    for (unsigned i = 0; i < s->state->timers.count; ++i)
+        if (s->state->timers.items[i].status == KT_RUNNING) {
+            int64_t left = kt_remaining(&s->state->timers.items[i], s->now);
+            if (left < remaining) remaining = left;
+        }
+    if (remaining != INT64_MAX) {
+        char timer[24];
+        uint64_t rounded = (uint64_t)(remaining / 1000) + (remaining % 1000 != 0);
+        unsigned seconds = rounded > UINT_MAX ? UINT_MAX : (unsigned)rounded;
+        snprintf(timer, sizeof(timer), "%u:%02u", seconds/60, seconds%60);
+        kv_label(c, s, &s->assets->latin12, 184, 6, 50, 20, GOLD, timer);
+    }
     if (s->battery >= 0) {
         char b[16];
         snprintf(b, sizeof(b), "%d%%", s->battery > 100 ? 100 : s->battery);
-        kv_label(c, s, &s->assets->latin12, 149, 6, 34, 20, DIM, b);
+        kv_label(c, s, &s->assets->latin12, remaining == INT64_MAX ? 192 : 149, 6, 40, 20, DIM, b);
     }
     kg_rect(c, 0, 32, 240, 6, accent);
     for (int y = 0; y < 2; ++y)

@@ -36,12 +36,15 @@ int view_page(unsigned page,unsigned recipe){
 }
 int view_draw(uint16_t *pixels,int y,int height){kg_canvas c;kg_init(&c,pixels,240,y,height,0x18c6);
     if (!kv_draw(&c,&scene)) return 0;
-    if (state.page == 1) kcal_view_hint(&c,&scene,state.date_unconfirmed);
     return !c.error;
 }
 int view_capture_clock(unsigned clean) {
     return kv_prepare(&scene, &state, &assets, 1000, 80,
                       clean ? "" : "--:--", frame);
+}
+int view_focus(unsigned focus) {
+    state.focus=(uint8_t)focus;
+    return kv_prepare(&scene,&state,&assets,1000,80,"",frame);
 }
 int view_pause_timer(void) {
     if (state.page != 7 || !state.timers.count) return 0;

@@ -1,0 +1,12 @@
+{
+  "source": "Actual production C host rendering, not a physical-device capture",
+  "version": "0.2.0-dev",
+  "device_tests": "NOT RUN",
+  "archive_full_sha256": "6addea4cafabd652f29687d4770e796c7183c73f2cf6577b240e3e2b325bd623",
+  "images": {
+    "focus-preview.png": "4ccf36b75f4225142a39cca256b22942c25fa724203f1998ca43cac8003b09f4",
+    "P1.png": "0443e8380e322373baeb0ce06d41417e811270f3650c958b14e23077a8412bd2",
+    "P13.png": "d48bd37a18508be7c7390b3d119a76c3a5e6f3ae2e5d1d492debaf04ab65d4a0",
+    "P2.png": "2434ce032e84be2861100dc61286f7c36f5a6acb6f3582e65acfa3bbfa0ba4fe"
+  }
+}

@@ -30,7 +30,7 @@ kj_result kj_load(kj_journal* j, const kj_io* io, ku_ui* ui, ku_ui* scratch, uin
     unsigned slot = good[0] && good[1] ? ((int32_t)(sequences[1] - sequences[0]) > 0 ? 1 : 0)
                     : good[1]          ? 1
                                        : 0;
-    if (versions[slot] != 1)
+    if (versions[slot] != 1 && versions[slot] != 2)
         return KJ_INCOMPATIBLE;
     size_t length = 0;
     if (io->read(io->context, slot, buffer, KU_SAVE_MAX, &length) != 1)
@@ -63,7 +63,7 @@ kj_result kj_store(kj_journal* j, const kj_io* io, const ku_ui* ui, uint8_t* buf
     uint32_t actual_seq, actual_crc;
     if (io->read(io->context, slot, buffer, KU_SAVE_MAX, &read_length) != 1 ||
         read_length != length ||
-        !ku_save_header(buffer, read_length, &version, &actual_seq, &actual_crc) || version != 1 ||
+        !ku_save_header(buffer, read_length, &version, &actual_seq, &actual_crc) || version != 2 ||
         actual_seq != seq || actual_crc != expected)
         return KJ_IO_ERROR;
     j->active = (int)slot;

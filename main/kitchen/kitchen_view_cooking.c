@@ -264,9 +264,9 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
                    : "还没有计时器");
         for (unsigned i = 0; i < u->timers.count; ++i) {
             int y = 202 + (int)i * 27;
-            kg_round_rect(c, 8, y, 138, 24, 6, i == u->focus ? BLUE : PANEL);
+            kg_round_rect(c, 8, y, 138, 24, 6, i == u->focus ? GOLD : PANEL);
             time_text(text, sizeof(text), kt_remaining(&u->timers.items[i], s->now));
-            kv_label(c, s, &a->han12, 17, y + 2, 120, 21, PAPER, text);
+            kv_label(c, s, &a->han12, 17, y + 2, 120, 21, i == u->focus ? INK : PAPER, text);
         }
         kv_portrait(c, s, 112, 192, 128);
         kv_footer(c, s, "↑↓切换 · 长OK暂停/继续 · 长↓取消");
@@ -300,16 +300,10 @@ void kv_cooking_draw(kg_canvas* c, const kv_scene* s) {
             fill = 113;
         if (fill)
             kg_round_rect(c, 12, 230, (int)fill, 5, 2, GREEN);
-        if (u->date_unconfirmed) {
-            kv_label(c, s, &a->han12, 12, 241, 114, 20, PAPER, "日期未确认");
-            snprintf(text, sizeof(text), "累计 %u 道", (unsigned)stats.total);
-            kv_label(c, s, &a->han12, 12, 262, 114, 20, PAPER, text);
-        } else {
-            snprintf(text, sizeof(text), "连续 %u 天", (unsigned)stats.streak);
-            kv_label(c, s, &a->han12, 12, 241, 114, 20, PAPER, text);
-            snprintf(text, sizeof(text), "今日 %u 道", (unsigned)stats.today);
-            kv_label(c, s, &a->han12, 12, 262, 114, 20, PAPER, text);
-        }
+        snprintf(text, sizeof(text), "累计做饭 %u 次", (unsigned)stats.total);
+        kv_label(c, s, &a->han12, 12, 241, 120, 20, PAPER, text);
+        snprintf(text, sizeof(text), "已解锁 %u / %u", (unsigned)stats.unique, u->catalog->count);
+        kv_label(c, s, &a->han12, 12, 262, 120, 20, PAPER, text);
         kv_portrait(c, s, 126, 192, 128);
         kv_footer(c, s, "OK 回吧台");
     }

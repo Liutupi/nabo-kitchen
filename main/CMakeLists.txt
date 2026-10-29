@@ -1,7 +1,5 @@
 set(KITCHEN_SOURCES
     "kitchen/kitchen_bundle.c"
-    "kitchen/kitchen_calendar.c"
-    "kitchen/kitchen_calendar_view.c"
     "kitchen/kitchen_canvas.c"
     "kitchen/kitchen_catalog.c"
     "kitchen/kitchen_input.c"
@@ -28,7 +26,7 @@ set(KITCHEN_SOURCES
 idf_component_register(
     SRCS "main.c" "offline_kitchen.c" ${KITCHEN_SOURCES}
     INCLUDE_DIRS "." "kitchen"
-    REQUIRES bsp esp_lcd esp_timer nvs_flash esp_partition spi_flash json esp_driver_usb_serial_jtag vfs
+    REQUIRES bsp esp_lcd esp_timer nvs_flash esp_partition spi_flash json esp_driver_usb_serial_jtag vfs esp_hw_support
 )
 target_add_binary_data(${COMPONENT_LIB} "${CMAKE_CURRENT_LIST_DIR}/kitchen/nabo_kitchen_startup.pcm" BINARY)
 set_source_files_properties(${KITCHEN_SOURCES} PROPERTIES COMPILE_OPTIONS "-O2")

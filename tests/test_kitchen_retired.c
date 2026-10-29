@@ -4,7 +4,26 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
+static void legacy_date_order(void) {
+    kc_item items[3]={{0}};
+    for(unsigned i=0;i<3;++i) items[i].hash=123+i;
+    kc_catalog cat={items,3,3};ku_ui dest={0},scratch={0};dest.catalog=&cat;dest.daily_seed=42;
+    uint8_t bytes[KU_SAVE_MAX];FILE* file=fopen("tests/fixtures/kitchen_v1_unsorted.kst","rb");assert(file);
+    size_t length=fread(bytes,1,sizeof bytes,file);fclose(file);assert(length);
+    uint32_t sequence;assert(ku_save_decode(&dest,&scratch,bytes,length,&sequence,0,-1,NULL));
+    const unsigned expected[]={1,0,0,2};
+    for(unsigned i=0;i<4;++i) assert(dest.store.history[i].recipe==expected[i] && dest.store.history[i].day==0);
+    assert(sequence==88 && dest.draw_count==9 && dest.daily_seed==42 && !dest.store.has_streak && !dest.date_unconfirmed);
+    assert(ks_get_stats(&dest.store,0).total==4 && ks_recent_age(&dest.store,2)==0);
+    length=ku_save_encode(&dest,bytes,sizeof bytes,89,0,-1);assert(length && bytes[4]==2);
+    assert(ku_save_decode(&dest,&scratch,bytes,length,&sequence,0,-1,NULL));
+    assert(!dest.dirty && dest.draw_count==9);
+    ku_ui before=dest;bytes[4]=3; /* Future format cannot be mistaken for KST2. */
+    assert(!ku_save_decode(&dest,&scratch,bytes,length,NULL,0,-1,NULL));
+    assert(!memcmp(&before,&dest,sizeof dest));
+}
 int main(void) {
+    legacy_date_order();
     kc_item old_items[2]={{0}}, new_item={0};
     old_items[0].hash=123; old_items[1].hash=0x9759ba75u; /* baicai-jitui-tang */
     assert(kitchen_recipe_retired(old_items[1].hash));
