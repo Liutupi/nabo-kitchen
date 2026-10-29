@@ -1,130 +1,130 @@
 {
- "id": "gongbao-jiding",
- "name": "宫保鸡丁",
- "course": [
-  "meat"
- ],
- "cuisine": "川",
- "tags": [
-  "下饭",
-  "微辣"
- ],
- "minutes": 30,
- "difficulty": 2,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "chicken_thigh",
-   "qty": 300,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "cucumber",
-   "qty": 1,
-   "unit": "根"
-  },
-  {
-   "id": "scallion",
-   "qty": 2,
-   "unit": "根"
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  },
-  {
-   "id": "ginger",
-   "qty": 2,
-   "unit": "片"
-  }
- ],
- "seasonings": [
-  {
-   "id": "peanut",
-   "qty": "1小把"
-  },
-  {
-   "id": "dried_chili",
-   "qty": "6个"
-  },
-  {
-   "id": "sichuan_pepper",
-   "qty": "1小勺"
-  },
-  {
-   "id": "vinegar",
-   "qty": "1大勺"
-  },
-  {
-   "id": "sugar",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1大勺"
-  },
-  {
-   "id": "starch",
-   "qty": "2小勺"
-  },
-  {
-   "id": "oil",
-   "qty": "2大勺"
-  }
- ],
- "steps": [
-  {
-   "text": "鸡腿肉切丁，加少许生抽、料酒和1小勺淀粉腌10分钟。",
-   "method": "marinate",
-   "heat": "off",
-   "timer": 600
-  },
-  {
-   "text": "黄瓜和葱白切丁；醋、糖、生抽、1小勺淀粉加水调成碗汁。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "冷锅冷油下花生，小火炒到微黄，盛出放凉。",
-   "method": "fry",
-   "heat": "low",
-   "timer": 180,
-   "tip": "放凉才会脆"
-  },
-  {
-   "text": "小火炒香干辣椒和花椒，下鸡丁大火炒散到变白。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 120
-  },
-  {
-   "text": "下葱姜蒜和黄瓜丁，倒入碗汁大火翻匀。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 30
-  },
-  {
-   "text": "关火拌入花生，出锅。",
-   "method": "stir_fry",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "chili",
-  "layers": [
-   "chicken_thigh__pieces_braised",
-   "cucumber__smashed"
+  "id": "gongbao-jiding",
+  "name": "宫保鸡丁",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "chili_ring",
-   "shine"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "川",
+  "tags": [
+    "下饭",
+    "微辣"
+  ],
+  "minutes": 30,
+  "difficulty": 2,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "chicken_thigh",
+      "qty": 300,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "cucumber",
+      "qty": 1,
+      "unit": "根"
+    },
+    {
+      "id": "scallion",
+      "qty": 2,
+      "unit": "根"
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    },
+    {
+      "id": "ginger",
+      "qty": 2,
+      "unit": "片"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "peanut",
+      "qty": "1小把"
+    },
+    {
+      "id": "dried_chili",
+      "qty": "6个"
+    },
+    {
+      "id": "sichuan_pepper",
+      "qty": "1小勺"
+    },
+    {
+      "id": "vinegar",
+      "qty": "1大勺"
+    },
+    {
+      "id": "sugar",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1大勺"
+    },
+    {
+      "id": "starch",
+      "qty": "2小勺"
+    },
+    {
+      "id": "oil",
+      "qty": "2大勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "鸡腿肉切丁，加少许生抽、料酒和1小勺淀粉腌10分钟。",
+      "method": "marinate",
+      "heat": "off",
+      "timer": 600
+    },
+    {
+      "text": "黄瓜和葱白切丁；醋、糖、生抽、1小勺淀粉加水调成碗汁。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "冷锅冷油下花生，小火炒到微黄，盛出放凉。",
+      "method": "fry",
+      "heat": "low",
+      "timer": 180,
+      "tip": "放凉才会脆"
+    },
+    {
+      "text": "小火炒香干辣椒和花椒，下鸡丁大火炒散到变白。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 120
+    },
+    {
+      "text": "下葱姜蒜和黄瓜丁，倒入碗汁大火翻匀。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 30
+    },
+    {
+      "text": "关火拌入花生，出锅。",
+      "method": "stir_fry",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "chili",
+    "layers": [
+      "chicken_thigh__pieces_braised",
+      "cucumber__smashed"
+    ],
+    "hero": true,
+    "garnish": [
+      "chili_ring",
+      "shine"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

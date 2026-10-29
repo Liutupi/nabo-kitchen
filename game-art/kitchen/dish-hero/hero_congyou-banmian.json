@@ -1,0 +1,27 @@
+{
+  "id": "hero_congyou-banmian",
+  "recipe_id": "congyou-banmian",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_congyou-banmian-source.png",
+  "original_sha256": "68d91086f9dfd4dd4398ade6f8c51c47bfbc66962fd9eef36b69ae9c9069705c",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6434f5676ab37712f5600226eb713d88ac2b5b26d1d850712361f81dc955bbb0",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_congyou-banmian. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 葱油拌面. Actual recipe ingredients: 面条 (main), 葱 (main). Seasonings: 食用油, 生抽, 老抽, 白糖. Preparation reference: 葱切段，葱白和葱绿分开。 冷油下葱白小火炸，再下葱绿，炸到焦黄，约8分钟。 捞出葱，关火倒入生抽、老抽和糖搅匀，做成葱油汁。 面条按包装说明煮熟，捞出沥干。 拌入葱油汁和炸葱，趁热吃。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "06fa17955fd7f14b488a67feda43b41f4bca6ed658aeb15b83a40882703de17a",
+  "recipe_lf_sha256": "75b4d1a7cfbd49b2a17a9aa74942b5f3dab995680e0cf196780c639787562cab",
+  "generation_recipe_lf_sha256": "02fb1099d4d58ec4ae089b0098cf2686bdf08572c3dce08459e45c27edabc331",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

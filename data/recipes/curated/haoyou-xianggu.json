@@ -1,86 +1,86 @@
 {
- "id": "haoyou-xianggu",
- "name": "蚝油香菇",
- "course": [
-  "veg"
- ],
- "cuisine": "粤",
- "tags": [
-  "下饭"
- ],
- "minutes": 15,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "shiitake",
-   "qty": 12,
-   "unit": "朵",
-   "main": true
-  },
-  {
-   "id": "garlic",
-   "qty": 2,
-   "unit": "瓣"
-  },
-  {
-   "id": "scallion",
-   "qty": 1,
-   "unit": "根"
-  }
- ],
- "seasonings": [
-  {
-   "id": "oyster",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1小勺"
-  },
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  }
- ],
- "steps": [
-  {
-   "text": "鲜香菇去蒂，表面刻十字；蒜切末，葱切花。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "烧开水，香菇焯1分钟，捞出挤干水。",
-   "method": "blanch",
-   "heat": "high",
-   "timer": 60
-  },
-  {
-   "text": "热锅放油，炒香蒜末，下香菇中火煎2分钟。",
-   "method": "fry",
-   "heat": "mid",
-   "timer": 120
-  },
-  {
-   "text": "加蚝油、生抽和2大勺水，焖2分钟收汁，撒葱花。",
-   "method": "braise",
-   "heat": "mid",
-   "timer": 120
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "braise",
-  "layers": [
-   "shiitake__braised"
+  "id": "haoyou-xianggu",
+  "name": "蚝油香菇",
+  "course": [
+    "veg"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion",
-   "shine"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "粤",
+  "tags": [
+    "下饭"
+  ],
+  "minutes": 15,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "shiitake",
+      "qty": 12,
+      "unit": "朵",
+      "main": true
+    },
+    {
+      "id": "garlic",
+      "qty": 2,
+      "unit": "瓣"
+    },
+    {
+      "id": "scallion",
+      "qty": 1,
+      "unit": "根"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "oyster",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1小勺"
+    },
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "鲜香菇去蒂，表面刻十字；蒜切末，葱切花。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "烧开水，香菇焯1分钟，捞出挤干水。",
+      "method": "blanch",
+      "heat": "high",
+      "timer": 60
+    },
+    {
+      "text": "热锅放油，炒香蒜末，下香菇中火煎2分钟。",
+      "method": "fry",
+      "heat": "mid",
+      "timer": 120
+    },
+    {
+      "text": "加蚝油、生抽和2大勺水，焖2分钟收汁，撒葱花。",
+      "method": "braise",
+      "heat": "mid",
+      "timer": 120
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "braise",
+    "layers": [
+      "shiitake__braised"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion",
+      "shine"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

@@ -1,108 +1,108 @@
 {
- "id": "fanqie-dun-niunan",
- "name": "番茄炖牛腩",
- "course": [
-  "meat"
- ],
- "cuisine": "家常",
- "tags": [
-  "下饭",
-  "一锅出"
- ],
- "minutes": 120,
- "difficulty": 2,
- "servings": 3,
- "ingredients": [
-  {
-   "id": "beef",
-   "qty": 500,
-   "unit": "克",
-   "main": true,
-   "note": "牛腩"
-  },
-  {
-   "id": "tomato",
-   "qty": 3,
-   "unit": "个",
-   "main": true
-  },
-  {
-   "id": "onion",
-   "qty": 1,
-   "unit": "个"
-  },
-  {
-   "id": "ginger",
-   "qty": 3,
-   "unit": "片"
-  }
- ],
- "seasonings": [
-  {
-   "id": "ketchup",
-   "qty": "2大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1大勺"
-  },
-  {
-   "id": "cooking_wine",
-   "qty": "1大勺"
-  },
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  },
-  {
-   "id": "salt",
-   "qty": "适量"
-  }
- ],
- "steps": [
-  {
-   "text": "牛腩切块，冷水下锅煮5分钟，捞出洗净；番茄和洋葱切块。",
-   "method": "blanch",
-   "heat": "high",
-   "timer": 300
-  },
-  {
-   "text": "锅放油炒软洋葱和一半番茄，加番茄酱炒出红油。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 180
-  },
-  {
-   "text": "放牛腩、姜、料酒、生抽，加热水没过牛腩。",
-   "method": "stew",
-   "heat": "high"
-  },
-  {
-   "text": "煮开后盖盖小火炖80分钟。",
-   "method": "stew",
-   "heat": "low",
-   "timer": 4800
-  },
-  {
-   "text": "加剩下的番茄再炖10分钟，筷子能扎透牛腩，加盐。",
-   "method": "stew",
-   "heat": "low",
-   "timer": 600
-  }
- ],
- "dish": {
-  "vessel": "claypot",
-  "sauce": "tomato",
-  "layers": [
-   "beef__chunks_stewed",
-   "tomato__wedge_cooked"
+  "id": "fanqie-dun-niunan",
+  "name": "番茄炖牛腩",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "家常",
+  "tags": [
+    "下饭",
+    "一锅出"
+  ],
+  "minutes": 120,
+  "difficulty": 2,
+  "servings": 3,
+  "ingredients": [
+    {
+      "id": "beef",
+      "qty": 500,
+      "unit": "克",
+      "main": true,
+      "note": "牛腩"
+    },
+    {
+      "id": "tomato",
+      "qty": 3,
+      "unit": "个",
+      "main": true
+    },
+    {
+      "id": "onion",
+      "qty": 1,
+      "unit": "个"
+    },
+    {
+      "id": "ginger",
+      "qty": 3,
+      "unit": "片"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "ketchup",
+      "qty": "2大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1大勺"
+    },
+    {
+      "id": "cooking_wine",
+      "qty": "1大勺"
+    },
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    },
+    {
+      "id": "salt",
+      "qty": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "text": "牛腩切块，冷水下锅煮5分钟，捞出洗净；番茄和洋葱切块。",
+      "method": "blanch",
+      "heat": "high",
+      "timer": 300
+    },
+    {
+      "text": "锅放油炒软洋葱和一半番茄，加番茄酱炒出红油。",
+      "method": "stir_fry",
+      "heat": "mid",
+      "timer": 180
+    },
+    {
+      "text": "放牛腩、姜、料酒、生抽，加热水没过牛腩。",
+      "method": "stew",
+      "heat": "high"
+    },
+    {
+      "text": "煮开后盖盖小火炖80分钟。",
+      "method": "stew",
+      "heat": "low",
+      "timer": 4800
+    },
+    {
+      "text": "加剩下的番茄再炖10分钟，筷子能扎透牛腩，加盐。",
+      "method": "stew",
+      "heat": "low",
+      "timer": 600
+    }
+  ],
+  "dish": {
+    "vessel": "claypot",
+    "sauce": "tomato",
+    "layers": [
+      "beef__chunks_stewed",
+      "tomato__wedge_cooked"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

@@ -1,107 +1,107 @@
 {
- "id": "huiguo-rou",
- "name": "回锅肉",
- "course": [
-  "meat"
- ],
- "cuisine": "川",
- "tags": [
-  "下饭",
-  "微辣"
- ],
- "minutes": 50,
- "difficulty": 2,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "pork_belly",
-   "qty": 300,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "green_pepper",
-   "qty": 2,
-   "unit": "个"
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  },
-  {
-   "id": "ginger",
-   "qty": 3,
-   "unit": "片"
-  }
- ],
- "seasonings": [
-  {
-   "id": "chili_bean",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1小勺"
-  },
-  {
-   "id": "sugar",
-   "qty": "半小勺"
-  },
-  {
-   "id": "cooking_wine",
-   "qty": "1大勺"
-  },
-  {
-   "id": "oil",
-   "qty": "1小勺"
-  }
- ],
- "steps": [
-  {
-   "text": "整块五花肉冷水下锅，加姜片和料酒煮20分钟。",
-   "method": "boil",
-   "heat": "mid",
-   "timer": 1200
-  },
-  {
-   "text": "筷子能扎透就捞出放凉，切成薄片。",
-   "method": "cut",
-   "heat": "off",
-   "tip": "凉透了才好切薄"
-  },
-  {
-   "text": "锅里少放油，中火把肉片煸到卷成灯盏窝、出油。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 240
-  },
-  {
-   "text": "把肉拨到一边，下豆瓣酱炒出红油。",
-   "method": "stir_fry",
-   "heat": "low",
-   "timer": 30
-  },
-  {
-   "text": "下青椒和蒜片，加生抽和糖，大火翻炒1分钟出锅。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 60
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "chili",
-  "layers": [
-   "pork_belly__slices_stirfried",
-   "green_pepper__strips"
+  "id": "huiguo-rou",
+  "name": "回锅肉",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "shine"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "川",
+  "tags": [
+    "下饭",
+    "微辣"
+  ],
+  "minutes": 50,
+  "difficulty": 2,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "pork_belly",
+      "qty": 300,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "green_pepper",
+      "qty": 2,
+      "unit": "个"
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    },
+    {
+      "id": "ginger",
+      "qty": 3,
+      "unit": "片"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "chili_bean",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1小勺"
+    },
+    {
+      "id": "sugar",
+      "qty": "半小勺"
+    },
+    {
+      "id": "cooking_wine",
+      "qty": "1大勺"
+    },
+    {
+      "id": "oil",
+      "qty": "1小勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "整块五花肉冷水下锅，加姜片和料酒煮20分钟。",
+      "method": "boil",
+      "heat": "mid",
+      "timer": 1200
+    },
+    {
+      "text": "筷子能扎透就捞出放凉，切成薄片。",
+      "method": "cut",
+      "heat": "off",
+      "tip": "凉透了才好切薄"
+    },
+    {
+      "text": "锅里少放油，中火把肉片煸到卷成灯盏窝、出油。",
+      "method": "stir_fry",
+      "heat": "mid",
+      "timer": 240
+    },
+    {
+      "text": "把肉拨到一边，下豆瓣酱炒出红油。",
+      "method": "stir_fry",
+      "heat": "low",
+      "timer": 30
+    },
+    {
+      "text": "下青椒和蒜片，加生抽和糖，大火翻炒1分钟出锅。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 60
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "chili",
+    "layers": [
+      "pork_belly__slices_stirfried",
+      "green_pepper__strips"
+    ],
+    "hero": true,
+    "garnish": [
+      "shine"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

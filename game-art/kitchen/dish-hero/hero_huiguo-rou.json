@@ -1,0 +1,27 @@
+{
+  "id": "hero_huiguo-rou",
+  "recipe_id": "huiguo-rou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_huiguo-rou-source.png",
+  "original_sha256": "93351709d6983994c1d380a83a0f296347e20b39eeef5d93e26aa0dc5915b569",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "8f12ea3902cc4690a2635c14edd01bc893f6b248ad7cf2d74eac0b207a6a8750",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huiguo-rou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 回锅肉. Actual recipe ingredients: 五花肉 (main), 青椒, 蒜, 姜. Seasonings: 豆瓣酱, 生抽, 白糖, 料酒, 食用油. Preparation reference: 整块五花肉冷水下锅，加姜片和料酒煮20分钟。 筷子能扎透就捞出放凉，切成薄片。 锅里少放油，中火把肉片煸到卷成灯盏窝、出油。 把肉拨到一边，下豆瓣酱炒出红油。 下青椒和蒜片，加生抽和糖，大火翻炒1分钟出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "58bfd0d71f0d970dc35c7ea3cdb1b9a768b954dc28f2da9be0cab49016fec093",
+  "recipe_lf_sha256": "5b79e70f89d334b580d037aecfd2efaf58ebdca4fff055d9a4ccd0905bc07e6f",
+  "generation_recipe_lf_sha256": "ff6b2e63c1f15d74ac9f03e4eb6156d70d1d14eaa7a736f864877dfe04ffa6fd",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

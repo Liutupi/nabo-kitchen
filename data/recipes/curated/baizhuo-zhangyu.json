@@ -1,86 +1,86 @@
 {
- "id": "baizhuo-zhangyu",
- "name": "白灼章鱼",
- "course": [
-  "meat"
- ],
- "cuisine": "粤",
- "tags": [
-  "清淡",
-  "下酒"
- ],
- "minutes": 20,
- "difficulty": 2,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "octopus",
-   "qty": 400,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "ginger",
-   "qty": 4,
-   "unit": "片"
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  }
- ],
- "seasonings": [
-  {
-   "id": "cooking_wine",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "2大勺"
-  },
-  {
-   "id": "sesame_oil",
-   "qty": "几滴"
-  }
- ],
- "steps": [
-  {
-   "text": "章鱼去掉内脏、眼和嘴，用面粉或盐搓洗干净。",
-   "method": "cut",
-   "heat": "off",
-   "tip": "搓到不黏手"
-  },
-  {
-   "text": "水加姜片和料酒烧开，下章鱼。",
-   "method": "blanch",
-   "heat": "high"
-  },
-  {
-   "text": "烫到触须全部卷起，约1分钟就捞出。",
-   "method": "blanch",
-   "heat": "high",
-   "timer": 60,
-   "tip": "烫久了会嚼不动"
-  },
-  {
-   "text": "沥干切段装盘；蒜末加生抽和香油调成蘸汁。",
-   "method": "mix",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "clear",
-  "layers": [
-   "shrimp__boiled"
+  "id": "baizhuo-zhangyu",
+  "name": "白灼章鱼",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "粤",
+  "tags": [
+    "清淡",
+    "下酒"
+  ],
+  "minutes": 20,
+  "difficulty": 2,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "octopus",
+      "qty": 400,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "ginger",
+      "qty": 4,
+      "unit": "片"
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "cooking_wine",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "2大勺"
+    },
+    {
+      "id": "sesame_oil",
+      "qty": "几滴"
+    }
+  ],
+  "steps": [
+    {
+      "text": "章鱼去掉内脏、眼和嘴，用面粉或盐搓洗干净。",
+      "method": "cut",
+      "heat": "off",
+      "tip": "搓到不黏手"
+    },
+    {
+      "text": "水加姜片和料酒烧开，下章鱼。",
+      "method": "blanch",
+      "heat": "high"
+    },
+    {
+      "text": "烫到触须全部卷起，约1分钟就捞出。",
+      "method": "blanch",
+      "heat": "high",
+      "timer": 60,
+      "tip": "烫久了会嚼不动"
+    },
+    {
+      "text": "沥干切段装盘；蒜末加生抽和香油调成蘸汁。",
+      "method": "mix",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "clear",
+    "layers": [
+      "shrimp__boiled"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

@@ -14,133 +14,265 @@
       "id": "hero_baizhuo-zhangyu",
       "recipe_id": "baizhuo-zhangyu",
       "name": "白灼章鱼",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "afa94da86a7b78745b048f999f06030aede853a2cf562edeaaed4245f22c5dd4",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baizhuo-zhangyu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白灼章鱼. Actual recipe ingredients: 章鱼 (main), 姜, 蒜. Seasonings: 料酒, 生抽, 香油. Preparation reference: 章鱼去掉内脏、眼和嘴，用面粉或盐搓洗干净。 水加姜片和料酒烧开，下章鱼。 烫到触须全部卷起，约1分钟就捞出。 沥干切段装盘；蒜末加生抽和香油调成蘸汁。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baizhuo-zhangyu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白灼章鱼. Actual recipe ingredients: 章鱼 (main), 姜, 蒜. Seasonings: 料酒, 生抽, 香油. Preparation reference: 章鱼去掉内脏、眼和嘴，用面粉或盐搓洗干净。 水加姜片和料酒烧开，下章鱼。 烫到触须全部卷起，约1分钟就捞出。 沥干切段装盘；蒜末加生抽和香油调成蘸汁。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_baizhuo-zhangyu-source.png",
+      "original_sha256": "7c5790da57b77a75d3e25aa66bfec4f84dd5903f5690d3c332a6b4abc9b515bb",
+      "asset_sha256": "e816d9ce933e0cb33d66139e91b3bb165f5515ee98640252fb375059d174f6fe",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_chijiao-chao-huajia",
       "recipe_id": "chijiao-chao-huajia",
       "name": "豉椒炒花甲",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "a8a9b469b1a74a44ed7e4f59e1f241767308c90256af5e901a9368648cfdb1fe",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_chijiao-chao-huajia. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 豉椒炒花甲. Actual recipe ingredients: 花甲 (main), 青椒, 辣椒, 蒜. Seasonings: 豆豉, 生抽, 料酒, 食用油. Preparation reference: 花甲泡淡盐水吐沙，搓洗干净；青椒和辣椒切块，蒜和豆豉剁碎。 烧开水，下花甲，刚张口就捞出，没开口的挑出。 热锅放油，炒香蒜末和豆豉，下青椒和辣椒。 倒入花甲，加料酒和生抽，大火翻炒30秒出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_chijiao-chao-huajia. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 豉椒炒花甲. Actual recipe ingredients: 花甲 (main), 青椒, 辣椒, 蒜. Seasonings: 豆豉, 生抽, 料酒, 食用油. Preparation reference: 花甲泡淡盐水吐沙，搓洗干净；青椒和辣椒切块，蒜和豆豉剁碎。 烧开水，下花甲，刚张口就捞出，没开口的挑出。 热锅放油，炒香蒜末和豆豉，下青椒和辣椒。 倒入花甲，加料酒和生抽，大火翻炒30秒出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_chijiao-chao-huajia-source.png",
+      "original_sha256": "0f6d3508eeacdd28d1f2381aa561eb95ecad1f9e5516c94a8c341f26eeb3d34d",
+      "asset_sha256": "76e543eea716655583af0d261892e54fff229bc903cf2d3320713325c52fd067",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_congyou-banmian",
       "recipe_id": "congyou-banmian",
       "name": "葱油拌面",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "02fb1099d4d58ec4ae089b0098cf2686bdf08572c3dce08459e45c27edabc331",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_congyou-banmian. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 葱油拌面. Actual recipe ingredients: 面条 (main), 葱 (main). Seasonings: 食用油, 生抽, 老抽, 白糖. Preparation reference: 葱切段，葱白和葱绿分开。 冷油下葱白小火炸，再下葱绿，炸到焦黄，约8分钟。 捞出葱，关火倒入生抽、老抽和糖搅匀，做成葱油汁。 面条按包装说明煮熟，捞出沥干。 拌入葱油汁和炸葱，趁热吃。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_congyou-banmian. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 葱油拌面. Actual recipe ingredients: 面条 (main), 葱 (main). Seasonings: 食用油, 生抽, 老抽, 白糖. Preparation reference: 葱切段，葱白和葱绿分开。 冷油下葱白小火炸，再下葱绿，炸到焦黄，约8分钟。 捞出葱，关火倒入生抽、老抽和糖搅匀，做成葱油汁。 面条按包装说明煮熟，捞出沥干。 拌入葱油汁和炸葱，趁热吃。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_congyou-banmian-source.png",
+      "original_sha256": "68d91086f9dfd4dd4398ade6f8c51c47bfbc66962fd9eef36b69ae9c9069705c",
+      "asset_sha256": "6434f5676ab37712f5600226eb713d88ac2b5b26d1d850712361f81dc955bbb0",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_di-san-xian",
       "recipe_id": "di-san-xian",
       "name": "地三鲜",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "d6b4e123ce71bb6ef46caac0d5d080c2b67700eabe6e86d23c34d474454c7471",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_di-san-xian. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 地三鲜. Actual recipe ingredients: 土豆 (main), 茄子 (main), 青椒 (main), 蒜. Seasonings: 生抽, 蚝油, 白糖, 淀粉, 食用油. Preparation reference: 土豆和茄子切滚刀块，青椒切块；生抽、蚝油、糖和淀粉加水调匀。 锅放油，中火把土豆块煎到金黄、筷子能扎透，盛出。 再加油把茄子煎软，下青椒炒1分钟。 倒回土豆，加蒜末和调好的汁，大火翻匀收汁。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_di-san-xian. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 地三鲜. Actual recipe ingredients: 土豆 (main), 茄子 (main), 青椒 (main), 蒜. Seasonings: 生抽, 蚝油, 白糖, 淀粉, 食用油. Preparation reference: 土豆和茄子切滚刀块，青椒切块；生抽、蚝油、糖和淀粉加水调匀。 锅放油，中火把土豆块煎到金黄、筷子能扎透，盛出。 再加油把茄子煎软，下青椒炒1分钟。 倒回土豆，加蒜末和调好的汁，大火翻匀收汁。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_di-san-xian-source.png",
+      "original_sha256": "269e6262813f3d85cf24a058501596a2703d13534b4816ba2823e2bccc2646e4",
+      "asset_sha256": "3e7e3c00c6767b6c6def3c9836533dc1aedeb3dad6a9669b0958649794f211f3",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_fanqie-dun-niunan",
       "recipe_id": "fanqie-dun-niunan",
       "name": "番茄炖牛腩",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "73e066872e71da1c6ebf2d36ca289ef1939f0c23fdf8799ae24f3937f895c449",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-dun-niunan. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄炖牛腩. Actual recipe ingredients: 牛肉 (main), 番茄 (main), 洋葱, 姜. Seasonings: 番茄酱, 生抽, 料酒, 食用油, 盐. Preparation reference: 牛腩切块，冷水下锅煮5分钟，捞出洗净；番茄和洋葱切块。 锅放油炒软洋葱和一半番茄，加番茄酱炒出红油。 放牛腩、姜、料酒、生抽，加热水没过牛腩。 煮开后盖盖小火炖80分钟。 加剩下的番茄再炖10分钟，筷子能扎透牛腩，加盐。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-dun-niunan. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄炖牛腩. Actual recipe ingredients: 牛肉 (main), 番茄 (main), 洋葱, 姜. Seasonings: 番茄酱, 生抽, 料酒, 食用油, 盐. Preparation reference: 牛腩切块，冷水下锅煮5分钟，捞出洗净；番茄和洋葱切块。 锅放油炒软洋葱和一半番茄，加番茄酱炒出红油。 放牛腩、姜、料酒、生抽，加热水没过牛腩。 煮开后盖盖小火炖80分钟。 加剩下的番茄再炖10分钟，筷子能扎透牛腩，加盐。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_fanqie-dun-niunan-source.png",
+      "original_sha256": "a7cd4f2dfe5d613e7ae5031e817725e73c2b28089400533c16e1d745199e4a71",
+      "asset_sha256": "2deb688b4fa80444d6968bdbe74d96dc684e74df20d86a71b04caefdca3c5a51",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_ganbian-doujiao",
       "recipe_id": "ganbian-doujiao",
       "name": "干煸豆角",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "580387ca697369f4fae5a05142244e08017f6c641b7e3bdc8b5d10e854f0913d",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_ganbian-doujiao. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 干煸豆角. Actual recipe ingredients: 豆角 (main), 蒜. Seasonings: 干辣椒, 生抽, 食用油, 盐. Preparation reference: 豆角撕掉两头和筋，掰成段，洗净擦干。 锅放油，中小火把豆角煸到表皮起皱，约8分钟。 倒出多余的油，炒香蒜末和干辣椒。 加生抽和盐翻匀；豆角里外熟透、没有生味再出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_ganbian-doujiao. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 干煸豆角. Actual recipe ingredients: 豆角 (main), 蒜. Seasonings: 干辣椒, 生抽, 食用油, 盐. Preparation reference: 豆角撕掉两头和筋，掰成段，洗净擦干。 锅放油，中小火把豆角煸到表皮起皱，约8分钟。 倒出多余的油，炒香蒜末和干辣椒。 加生抽和盐翻匀；豆角里外熟透、没有生味再出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_ganbian-doujiao-source.png",
+      "original_sha256": "2d104b864211c7f7fe54f65d7186feeeef8fc63276f2842c23d3a68a22926e2c",
+      "asset_sha256": "9c0e02186207e8cd9e1d27fed3b37ceece075f1e05a0fc731a53db066ebe8272",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_gongbao-jiding",
       "recipe_id": "gongbao-jiding",
       "name": "宫保鸡丁",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "91d3e86a642d10c08d66c1afb19baaf9d4e5b931c948b4ac5b0a364deaf02d23",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_gongbao-jiding. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 宫保鸡丁. Actual recipe ingredients: 鸡腿 (main), 黄瓜, 葱, 蒜, 姜. Seasonings: 花生, 干辣椒, 花椒, 醋, 白糖, 生抽, 淀粉, 食用油. Preparation reference: 鸡腿肉切丁，加少许生抽、料酒和1小勺淀粉腌10分钟。 黄瓜和葱白切丁；醋、糖、生抽、1小勺淀粉加水调成碗汁。 冷锅冷油下花生，小火炒到微黄，盛出放凉。 小火炒香干辣椒和花椒，下鸡丁大火炒散到变白。 下葱姜蒜和黄瓜丁，倒入碗汁大火翻匀。 关火拌入花生，出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_gongbao-jiding. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 宫保鸡丁. Actual recipe ingredients: 鸡腿 (main), 黄瓜, 葱, 蒜, 姜. Seasonings: 花生, 干辣椒, 花椒, 醋, 白糖, 生抽, 淀粉, 食用油. Preparation reference: 鸡腿肉切丁，加少许生抽、料酒和1小勺淀粉腌10分钟。 黄瓜和葱白切丁；醋、糖、生抽、1小勺淀粉加水调成碗汁。 冷锅冷油下花生，小火炒到微黄，盛出放凉。 小火炒香干辣椒和花椒，下鸡丁大火炒散到变白。 下葱姜蒜和黄瓜丁，倒入碗汁大火翻匀。 关火拌入花生，出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_gongbao-jiding-source.png",
+      "original_sha256": "2ec777b523507d7dc4b509b0f2d536a6fb25b9c169370322e153afe8d20f8e1a",
+      "asset_sha256": "11cacecc9ae772bd290ede6e7a3a7f2787e5b43d8c97930aa214d1bd7a9f3c1b",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_haoyou-xianggu",
       "recipe_id": "haoyou-xianggu",
       "name": "蚝油香菇",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "f7b594f465e5aed618a12eb124eb2171b2514cb0e884bea1ad16977166f65415",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_haoyou-xianggu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蚝油香菇. Actual recipe ingredients: 香菇 (main), 蒜, 葱. Seasonings: 蚝油, 生抽, 食用油. Preparation reference: 鲜香菇去蒂，表面刻十字；蒜切末，葱切花。 烧开水，香菇焯1分钟，捞出挤干水。 热锅放油，炒香蒜末，下香菇中火煎2分钟。 加蚝油、生抽和2大勺水，焖2分钟收汁，撒葱花。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_haoyou-xianggu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蚝油香菇. Actual recipe ingredients: 香菇 (main), 蒜, 葱. Seasonings: 蚝油, 生抽, 食用油. Preparation reference: 鲜香菇去蒂，表面刻十字；蒜切末，葱切花。 烧开水，香菇焯1分钟，捞出挤干水。 热锅放油，炒香蒜末，下香菇中火煎2分钟。 加蚝油、生抽和2大勺水，焖2分钟收汁，撒葱花。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_haoyou-xianggu-source.png",
+      "original_sha256": "e06eef1393462599f289bdfe99a4ee50418e39f803f7f0ec8ad19d56b60ff26b",
+      "asset_sha256": "eb05aa0989ba32e582c5232a426170c56c025205ea2360c7cd308fbba4d03ef6",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_huangmen-ji",
       "recipe_id": "huangmen-ji",
       "name": "黄焖鸡",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "6c2f8eb2e55010d3c5506b1295754de919eba650efcdf83b80551359ff544075",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huangmen-ji. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 黄焖鸡. Actual recipe ingredients: 鸡腿 (main), 香菇, 土豆, 青椒, 姜. Seasonings: 冰糖, 生抽, 老抽, 蚝油, 料酒, 食用油. Preparation reference: 鸡腿切块，香菇切半，土豆切块，青椒切块。 锅放油和冰糖，小火炒到糖化开，下鸡块炒到上色。 加姜、生抽、老抽、蚝油、料酒和香菇翻匀。 加热水没过鸡块，放土豆，盖盖小火焖20分钟。 放青椒，大火收汁2分钟，鸡块流出清汁即熟。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huangmen-ji. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 黄焖鸡. Actual recipe ingredients: 鸡腿 (main), 香菇, 土豆, 青椒, 姜. Seasonings: 冰糖, 生抽, 老抽, 蚝油, 料酒, 食用油. Preparation reference: 鸡腿切块，香菇切半，土豆切块，青椒切块。 锅放油和冰糖，小火炒到糖化开，下鸡块炒到上色。 加姜、生抽、老抽、蚝油、料酒和香菇翻匀。 加热水没过鸡块，放土豆，盖盖小火焖20分钟。 放青椒，大火收汁2分钟，鸡块流出清汁即熟。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_huangmen-ji-source.png",
+      "original_sha256": "a4d3a8b4bc41301732465614b8cabe6fa76ed4ecc33bd5f56c1d68eb32b2546c",
+      "asset_sha256": "6dbbbcf99aaaf147e1f4029161563ad9f6640d074aa3adf3eaada96a3a63878c",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_huiguo-rou",
       "recipe_id": "huiguo-rou",
       "name": "回锅肉",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "ff6b2e63c1f15d74ac9f03e4eb6156d70d1d14eaa7a736f864877dfe04ffa6fd",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huiguo-rou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 回锅肉. Actual recipe ingredients: 五花肉 (main), 青椒, 蒜, 姜. Seasonings: 豆瓣酱, 生抽, 白糖, 料酒, 食用油. Preparation reference: 整块五花肉冷水下锅，加姜片和料酒煮20分钟。 筷子能扎透就捞出放凉，切成薄片。 锅里少放油，中火把肉片煸到卷成灯盏窝、出油。 把肉拨到一边，下豆瓣酱炒出红油。 下青椒和蒜片，加生抽和糖，大火翻炒1分钟出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huiguo-rou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 回锅肉. Actual recipe ingredients: 五花肉 (main), 青椒, 蒜, 姜. Seasonings: 豆瓣酱, 生抽, 白糖, 料酒, 食用油. Preparation reference: 整块五花肉冷水下锅，加姜片和料酒煮20分钟。 筷子能扎透就捞出放凉，切成薄片。 锅里少放油，中火把肉片煸到卷成灯盏窝、出油。 把肉拨到一边，下豆瓣酱炒出红油。 下青椒和蒜片，加生抽和糖，大火翻炒1分钟出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_huiguo-rou-source.png",
+      "original_sha256": "93351709d6983994c1d380a83a0f296347e20b39eeef5d93e26aa0dc5915b569",
+      "asset_sha256": "8f12ea3902cc4690a2635c14edd01bc893f6b248ad7cf2d74eac0b207a6a8750",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_jiangcong-chaoxie",
       "recipe_id": "jiangcong-chaoxie",
       "name": "姜葱炒蟹",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "7975d6e3ef728d1b1d4921456049c1a3425344aaa5ec390ff7445f453a8dc15a",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jiangcong-chaoxie. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 姜葱炒蟹. Actual recipe ingredients: 螃蟹 (main), 姜, 葱. Seasonings: 食用油, 淀粉, 料酒, 生抽, 白糖, 清水. Preparation reference: 活蟹放冰箱冷冻20分钟，刷洗干净。 去蟹盖和蟹腮，斩成4块，蟹钳拍裂；姜切片，葱切段。 蟹块切口蘸一层淀粉，下油锅中火煎到变红，盛出。 原锅爆香姜片和葱白，倒回蟹块和蟹盖。 加料酒、生抽、糖和水，盖盖焖5分钟。 蟹壳全红即熟，放葱叶翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jiangcong-chaoxie. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 姜葱炒蟹. Actual recipe ingredients: 螃蟹 (main), 姜, 葱. Seasonings: 食用油, 淀粉, 料酒, 生抽, 白糖, 清水. Preparation reference: 活蟹放冰箱冷冻20分钟，刷洗干净。 去蟹盖和蟹腮，斩成4块，蟹钳拍裂；姜切片，葱切段。 蟹块切口蘸一层淀粉，下油锅中火煎到变红，盛出。 原锅爆香姜片和葱白，倒回蟹块和蟹盖。 加料酒、生抽、糖和水，盖盖焖5分钟。 蟹壳全红即熟，放葱叶翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_jiangcong-chaoxie-source.png",
+      "original_sha256": "b94319e54af5cde40b17187a2d2c5f99f9532a193964c519deffc869c32657c8",
+      "asset_sha256": "622ff666738bd161b778ad635e7f19d66bc432d2e09202cb1ec645b22931cdf0",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_jielan-chao-niurou",
       "recipe_id": "jielan-chao-niurou",
       "name": "芥兰炒牛肉",
-      "status": "todo",
+      "status": "review",
       "recipe_lf_sha256": "8fdfd90676991bae61a4030fdad615543c399cad34a2299f39a5be3b27ac28a3",
       "references": [
         "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
       ],
-      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jielan-chao-niurou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 芥兰炒牛肉. Actual recipe ingredients: 牛肉 (main), 芥兰 (main), 蒜, 姜. Seasonings: 生抽, 淀粉, 蚝油, 食用油, 盐. Preparation reference: 牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。 芥兰削去粗梗的老皮，斜切成段；蒜和姜切片。 烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。 热锅放油，大火滑炒牛肉到七成变色，盛出。 炒香蒜姜，下芥兰和牛肉，加蚝油大火翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
+      "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jielan-chao-niurou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 芥兰炒牛肉. Actual recipe ingredients: 牛肉 (main), 芥兰 (main), 蒜, 姜. Seasonings: 生抽, 淀粉, 蚝油, 食用油, 盐. Preparation reference: 牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。 芥兰削去粗梗的老皮，斜切成段；蒜和姜切片。 烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。 热锅放油，大火滑炒牛肉到七成变色，盛出。 炒香蒜姜，下芥兰和牛肉，加蚝油大火翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+      "original": "originals/hero_jielan-chao-niurou-source.png",
+      "original_sha256": "13486b209c19f08f55341bcdf54c8bd921700d5f86e4e7e2fab61c893ead1d83",
+      "asset_sha256": "70b10f08b9d79f78dd7b7e46243d24760b1381ef37491afd6301e1535a23828a",
+      "original_dimensions": [
+        1448,
+        1086
+      ],
+      "asset_dimensions": [
+        640,
+        480
+      ]
     },
     {
       "id": "hero_jinzhengu-feiniu",
@@ -406,5 +538,7 @@
       ],
       "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_zicai-danhua-tang. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 紫菜蛋花汤. Actual recipe ingredients: 鸡蛋 (main), 葱. Seasonings: 紫菜, 盐, 香油, 清水. Preparation reference: 紫菜撕成小块，鸡蛋打散，葱切花。 800毫升水煮开，放入紫菜煮1分钟。 缓慢淋入蛋液，等蛋花浮起再轻推。 加盐、香油和葱花，关火盛出。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120."
     }
-  ]
+  ],
+  "delivered_new_heroes": 12,
+  "remaining_new_heroes": 24
 }

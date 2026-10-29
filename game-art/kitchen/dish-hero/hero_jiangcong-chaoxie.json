@@ -1,0 +1,27 @@
+{
+  "id": "hero_jiangcong-chaoxie",
+  "recipe_id": "jiangcong-chaoxie",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_jiangcong-chaoxie-source.png",
+  "original_sha256": "b94319e54af5cde40b17187a2d2c5f99f9532a193964c519deffc869c32657c8",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "622ff666738bd161b778ad635e7f19d66bc432d2e09202cb1ec645b22931cdf0",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jiangcong-chaoxie. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 姜葱炒蟹. Actual recipe ingredients: 螃蟹 (main), 姜, 葱. Seasonings: 食用油, 淀粉, 料酒, 生抽, 白糖, 清水. Preparation reference: 活蟹放冰箱冷冻20分钟，刷洗干净。 去蟹盖和蟹腮，斩成4块，蟹钳拍裂；姜切片，葱切段。 蟹块切口蘸一层淀粉，下油锅中火煎到变红，盛出。 原锅爆香姜片和葱白，倒回蟹块和蟹盖。 加料酒、生抽、糖和水，盖盖焖5分钟。 蟹壳全红即熟，放葱叶翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "54e31f7dc389b0fce883c9c3959de9a592d35e956b2e7264ed1f2e7830b27c84",
+  "recipe_lf_sha256": "515fdb84c1ff31b811ced9ef71241435b6da2f27dd0fbf95c4660c72cb8ff68f",
+  "generation_recipe_lf_sha256": "7975d6e3ef728d1b1d4921456049c1a3425344aaa5ec390ff7445f453a8dc15a",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

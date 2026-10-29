@@ -1,0 +1,27 @@
+{
+  "id": "hero_jielan-chao-niurou",
+  "recipe_id": "jielan-chao-niurou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_jielan-chao-niurou-source.png",
+  "original_sha256": "13486b209c19f08f55341bcdf54c8bd921700d5f86e4e7e2fab61c893ead1d83",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "70b10f08b9d79f78dd7b7e46243d24760b1381ef37491afd6301e1535a23828a",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jielan-chao-niurou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 芥兰炒牛肉. Actual recipe ingredients: 牛肉 (main), 芥兰 (main), 蒜, 姜. Seasonings: 生抽, 淀粉, 蚝油, 食用油, 盐. Preparation reference: 牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。 芥兰削去粗梗的老皮，斜切成段；蒜和姜切片。 烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。 热锅放油，大火滑炒牛肉到七成变色，盛出。 炒香蒜姜，下芥兰和牛肉，加蚝油大火翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "7c70ee9a22b38e05341c6f81e32902857d387c295fe6c94021615e6c6bd458b9",
+  "recipe_lf_sha256": "a706389b748fb6e691492cd5c510e9ceec4a49067bf37b8565ce18c97c4df9c6",
+  "generation_recipe_lf_sha256": "8fdfd90676991bae61a4030fdad615543c399cad34a2299f39a5be3b27ac28a3",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

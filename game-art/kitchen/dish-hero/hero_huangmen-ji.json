@@ -1,0 +1,27 @@
+{
+  "id": "hero_huangmen-ji",
+  "recipe_id": "huangmen-ji",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_huangmen-ji-source.png",
+  "original_sha256": "a4d3a8b4bc41301732465614b8cabe6fa76ed4ecc33bd5f56c1d68eb32b2546c",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6dbbbcf99aaaf147e1f4029161563ad9f6640d074aa3adf3eaada96a3a63878c",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_huangmen-ji. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 黄焖鸡. Actual recipe ingredients: 鸡腿 (main), 香菇, 土豆, 青椒, 姜. Seasonings: 冰糖, 生抽, 老抽, 蚝油, 料酒, 食用油. Preparation reference: 鸡腿切块，香菇切半，土豆切块，青椒切块。 锅放油和冰糖，小火炒到糖化开，下鸡块炒到上色。 加姜、生抽、老抽、蚝油、料酒和香菇翻匀。 加热水没过鸡块，放土豆，盖盖小火焖20分钟。 放青椒，大火收汁2分钟，鸡块流出清汁即熟。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "a2d78adbc7a84eeac58754ba43f297aa2635eae8d500cc9ac6726a779e4ce29e",
+  "recipe_lf_sha256": "34624ce12507d23e16e9b515a6e60e7a0e552bb17f2f77e01808859975de1fd2",
+  "generation_recipe_lf_sha256": "6c2f8eb2e55010d3c5506b1295754de919eba650efcdf83b80551359ff544075",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}
