@@ -1,0 +1,24 @@
+{
+  "id": "hero_hongshao-paigu",
+  "recipe_id": "hongshao-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_hongshao-paigu-source.png",
+  "original_sha256": "471acdd9a0fc89d64ceefee02707637b8434da526ca17f3ad2e78c9f16d1ae28",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "40f9aea2302d5201c7276792deeb4b37176bb85f45de5df138ba3df961b306df",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_hongshao-paigu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 红烧排骨. Actual recipe ingredients: 排骨 (main), 姜, 葱. Preparation reference: 排骨切块，冷水入锅，煮开3分钟后捞出沥干。 锅内放油和冰糖，小火炒至糖融化呈浅琥珀色。 下排骨翻匀，加姜葱、生抽、老抽和料酒。 加600毫升热水，煮开后盖盖小火焖40分钟。 确认排骨熟软，开盖中火收汁5分钟，翻动防糊。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "ee20023a217e2113d16746f706310284157e4ea353c8ee2f8c9ef697b2707526",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
