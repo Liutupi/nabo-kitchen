@@ -1,0 +1,24 @@
+{
+  "id": "hero_suanrong-shengcai",
+  "recipe_id": "suanrong-shengcai",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanrong-shengcai-source.png",
+  "original_sha256": "2dd207735a13cac0914010419f14868368aecd1897511de19529c0bc4cf373b9",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "8d64fe177b031513ad18ffd9e29cf41b878728e225f6f02147a035a8e6df1636",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanrong-shengcai. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜蓉生菜. Actual recipe ingredients: 生菜 (main), 蒜. Preparation reference: 生菜洗净沥干，粗梗切开；蒜剁末。 锅内放油，小火炒香蒜末。 下生菜，加2大勺水，大火翻炒1分钟。 加盐，翻炒至菜叶全部软下，立刻盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "1b4d7454bf5770e842fc9209d46e594ef3c53fdf216a237fc2cff3ef655352cd",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

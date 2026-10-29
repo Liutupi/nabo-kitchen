@@ -94,21 +94,27 @@ def ingest(ident, original):
 def sheets():
     value = json.loads(QUEUE.read_text(encoding="utf-8"))
     items = [x for x in value["items"] if x["status"] == "review"]
-    font = ImageFont.truetype("C:/Windows/Fonts/msyh.ttc", 15)
+    font = None
+    for candidate in ["C:/Windows/Fonts/msyh.ttc", "/System/Library/Fonts/PingFang.ttc", "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"]:
+        if Path(candidate).is_file():
+            font = ImageFont.truetype(candidate, 15)
+            break
+    if font is None:
+        font = ImageFont.load_default(size=13)
     for page in range((len(items) + 11) // 12):
         part = items[page * 12: (page + 1) * 12]
         sheet = Image.new("RGB", (1020, 660), "#15122A")
         draw = ImageDraw.Draw(sheet)
         for index, item in enumerate(part):
             x, y = (index % 3) * 340, (index // 3) * 165
-            draw.text((x + 8, y + 2), item["name"], fill="#FBF1E3", font=font)
+            draw.text((x + 8, y + 2), item["name"] if font.size == 15 else item["recipe_id"], fill="#FBF1E3", font=font)
             small = Image.open(HERO / (item["id"] + ".png")).resize((160, 120), Image.Resampling.LANCZOS)
             for side, bg in enumerate(["#2C2845", "#FBF1E3"]):
                 card = Image.new("RGBA", (160, 120), bg)
                 card.alpha_composite(small)
                 rgb = card.convert("RGB")
-                # True RGB565 rounding for preview, independently of delivery alpha.
-                rgb = Image.merge("RGB", [rgb.getchannel(c).point(lambda v, b=b: round(round(v * ((1 << b) - 1) / 255) * 255 / ((1 << b) - 1))) for c, b in [("R", 5), ("G", 6), ("B", 5)]])
+                # Match asset_codec.rgb565 bit truncation and expand565 exactly.
+                rgb = Image.merge("RGB", [rgb.getchannel(c).point(lambda v, b=b: ((v >> (8 - b)) * 255 + ((1 << b) - 1) // 2) // ((1 << b) - 1)) for c, b in [("R", 5), ("G", 6), ("B", 5)]])
                 sheet.paste(rgb, (x + 5 + side * 168, y + 27))
         sheet.save(BATCH / ("review-%02d.png" % (page + 1)))
     print(json.dumps({"delivered": len(items), "remaining": len(value["items"]) - len(items), "sheets": (len(items) + 11) // 12}))

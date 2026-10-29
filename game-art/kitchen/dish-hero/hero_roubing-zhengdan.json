@@ -1,0 +1,24 @@
+{
+  "id": "hero_roubing-zhengdan",
+  "recipe_id": "roubing-zhengdan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_roubing-zhengdan-source.png",
+  "original_sha256": "0728c782fcfef88ec40da4203a0e6e009a0a507274616aee14c7aa4c63b24595",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "945911c1e5ea512351b3121c4bca9288180c278e154149905187d418f474264e",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_roubing-zhengdan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 肉饼蒸蛋. Actual recipe ingredients: 肉末 (main), 鸡蛋 (main), 姜. Preparation reference: 姜剁末，肉末加入姜、生抽、淀粉和30毫升水拌匀。 浅盘刷油，肉末铺成不超过2厘米厚的肉饼，中间压窝。 把2个鸡蛋打在肉饼中间。 水开后放入蒸锅，中火蒸20分钟。 测肉饼中心达到71℃，蛋清蛋黄凝固；未熟继续蒸。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white deep porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "f422a89d32a21bcbfe671361fe9f5b3021ec7a2ea0cb4aa01a5b2204cbce9f43",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "hero_baizhuo-xia",
+  "recipe_id": "baizhuo-xia",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_baizhuo-xia-source.png",
+  "original_sha256": "74257a280a0d0c1177bdf06693a15dc38efb01869f47736bcb39f8a6e70efdf6",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "2f57410f059b1dda030332f8ff5830a2a90f22bac5bb6b7631b2e06e90e39eb8",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baizhuo-xia. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白灼虾. Actual recipe ingredients: 虾 (main), 姜, 葱. Preparation reference: 虾剪去长须并去虾线，沥干；姜切片，葱打结。 锅内加1500毫升水、姜葱、料酒和盐，烧开。 倒入虾，再次煮开后煮2分钟。 确认虾肉呈珠白色且中心不透明，未熟继续煮。 捞出沥干，趁热装盘。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "78ed72b28a8fc2c60401a9cb43fd281674828a50ba49738e03087791841d2282",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
