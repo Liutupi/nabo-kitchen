@@ -4,6 +4,19 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 全部缺失菜图已交付 GitHub
+
+**127 张缺失完整菜图已补齐，当前 144/144 道有图，缺图 0；新增行全部为 `review`，等待逐图审美、实厨与实机验收。** 已推送并快进到 [codex/kitchen-model](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)，交付提交 `116ee8ea2ed72e5e5094805c397b8f1449d08b75`；同一成果保存在 `codex/kitchen-dish-art-20261029`。main 保留接手入口，勿混合内容/固件两个分支根目录。
+
+- **接手美术**：本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-art`。先看 [完整批次与复现命令](https://github.com/Liutupi/nabo-kitchen/blob/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/README.md) 和该分支顶部 HANDOFF；原图、640×480 透明交付、提示词、原始/统一 LF 配方哈希均在 Git，manifest 为 `complete_pending_review`，不依赖本机缓存。原有 17 张、82 分层、菜谱、NABO C 造型和帽标、定稿规格未改。蛏子壳形已返修，清蒸鱼贴边首稿已拒收。
+- **本机验证**：144 道 schema/引用及全部 PNG/原图哈希通过；菜图 5 项、原型 3 项、未改生产 C 代码真实资源绘制 11 项通过。328 张静态 PNG 限色解码往返通过，144 道均被 C 程序读取到完整图；已查看 11 页双底色解码预览及六页实际 C 页面。[报告与预览](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29)。GitHub 当前无开放 PR，该提交未返回 commit status，不能将本机 PASS 当作 GitHub CI 通过。
+- **资源候选**：[候选包和许可](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model/game-art/kitchen/dish-hero/batches/2026-10-29/resource-candidate)。整包 **3,756,062 B**，SHA256 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`，实际 5 MiB 区剩 **1,486,818 B**。仅菜图包变化，五个其他 payload 与现有固件一致。菜图 1,596,273 B，**超出旧 200 KB 子预算**，已在交接提出，未修改既定预算；实际分区容量检查通过。
+- **下一步**：逐菜检查精确盘心、描边、全套风格与成菜准确度；通过后同步改 CSV/元数据为 `done`，返修保留版本与哈希。新资源在真实设备上的启动、内存、显示、按键流程和长期使用仍待验收。每 30 分钟 GitHub 跟进已开启，仅在实质变化、完成、失败/冲突或需要决定时通知。
+
+本轮**没有刷机、替换应用或发布 Release**。设备仍用原 17 张菜图资源，固件入口仍为下方 `codex/runtime-fixes-20261029` 的 `c7cdc0b`，用户已确认欢迎语声音正常。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 菜图补全进行中
 
 用户要求完成全部未完成菜图并持续关注 GitHub。**美术在 [codex/kitchen-dish-art-20261029](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-dish-art-20261029) 继续，从内容分支 `codex/kitchen-model` 的 `c31bae7` 创建。** 本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-art`。已核对 144 道菜、17 张原有完整菜图、127 张待补；逐菜实际交付进度、生成提示词、配方哈希与双底色小图见 [可恢复批次清单](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-dish-art-20261029/game-art/kitchen/dish-hero/batches/2026-10-29)。请其他电脑先核对该清单，避免重复出图。
