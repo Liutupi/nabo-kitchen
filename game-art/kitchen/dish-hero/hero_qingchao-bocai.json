@@ -4,7 +4,7 @@
   "status": "review",
   "generator": "OpenAI imagegen built-in tool",
   "original": "originals/hero_qingchao-bocai-source.png",
-  "original_sha256": "ff1f1c707d0a3b6fee49da7d1ba2baaeac2fff67e82e62853e502dff2c39cb4c",
+  "original_sha256": "1253dc3d6f3605ff25f41690e663dc1b9a1317f74a034a7282e220bf06694861",
   "original_dimensions": [
     1448,
     1086
@@ -13,7 +13,7 @@
     640,
     480
   ],
-  "asset_sha256": "6554c3203ec6cd1e706dd413c1851e72850dd34e2fbfe0ff4cd24413ece36c41",
+  "asset_sha256": "ba7526854faf79b37c444dd1b0fa319ba346be2fea8f4e3aafe346e61a93ac7e",
   "references": [
     "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
   ],
@@ -23,5 +23,13 @@
   "generation_recipe_lf_sha256": "04026bcdd8fc390fc69ecb4c2e25252c9cf5503803c0b227aa961d6ab15b65bb",
   "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
   "review": "待逐图审美、真实菜品准确度及实机验收。",
-  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged.",
+  "refinements": [
+    {
+      "input": "originals/hero_qingchao-bocai-source-v1.png",
+      "input_sha256": "ff1f1c707d0a3b6fee49da7d1ba2baaeac2fff67e82e62853e502dff2c39cb4c",
+      "prompt": "Edit target: supplied plate of stir-fried spinach. Correct ONLY the vegetable morphology to unmistakable cooked spinach: mostly broad wilted dark green triangular spinach leaves with narrow pointed tips and THIN slender green petioles; a few pinkish red root-end fragments. Remove every thick chunky tubular stem that resembles Chinese kale/asparagus. Keep small garlic pieces, same whole white porcelain plate, warm rounded 2D outlined cel-shaded illustration style, upper-left light and 4:3 composition with transparent margins. Finished stir-fried spinach, no sauce puddle or added ingredients. Genuine RGBA transparent background. No text, utensils, characters or scenery.",
+      "reason": "Distinguish slender spinach petioles and leaves from thick Chinese-kale stems"
+    }
+  ]
 }

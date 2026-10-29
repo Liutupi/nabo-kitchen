@@ -1,106 +1,106 @@
 {
- "id": "xianggu-jirou-zhou",
- "name": "香菇鸡肉粥",
- "course": [
-  "staple"
- ],
- "cuisine": "粤",
- "tags": [
-  "清淡"
- ],
- "minutes": 60,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "rice",
-   "qty": 100,
-   "unit": "克",
-   "main": true,
-   "note": "大米"
-  },
-  {
-   "id": "chicken_thigh",
-   "qty": 200,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "shiitake",
-   "qty": 4,
-   "unit": "朵"
-  },
-  {
-   "id": "ginger",
-   "qty": 2,
-   "unit": "片"
-  },
-  {
-   "id": "scallion",
-   "qty": 1,
-   "unit": "根"
-  }
- ],
- "seasonings": [
-  {
-   "id": "soy_light",
-   "qty": "1小勺"
-  },
-  {
-   "id": "starch",
-   "qty": "1小勺"
-  },
-  {
-   "id": "oil",
-   "qty": "1小勺"
-  },
-  {
-   "id": "salt",
-   "qty": "适量"
-  },
-  {
-   "id": "water",
-   "qty": "1500毫升"
-  }
- ],
- "steps": [
-  {
-   "text": "大米洗净，加几滴油拌匀；鸡腿肉切丁，加生抽和淀粉腌一下。",
-   "method": "marinate",
-   "heat": "off"
-  },
-  {
-   "text": "1500毫升水煮开，下米，再开后转小火煮30分钟。",
-   "method": "boil",
-   "heat": "low",
-   "timer": 1800,
-   "tip": "不时搅动防粘底"
-  },
-  {
-   "text": "香菇切丁，姜切丝，和鸡丁一起下锅。",
-   "method": "boil",
-   "heat": "mid"
-  },
-  {
-   "text": "煮10分钟到鸡丁全部变白，加盐，撒葱花。",
-   "method": "boil",
-   "heat": "low",
-   "timer": 600
-  }
- ],
- "dish": {
-  "vessel": "bowl",
-  "sauce": "white",
-  "layers": [
-   "chicken_thigh__pieces_braised",
-   "shiitake__braised"
+  "id": "xianggu-jirou-zhou",
+  "name": "香菇鸡肉粥",
+  "course": [
+    "staple"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "粤",
+  "tags": [
+    "清淡"
+  ],
+  "minutes": 60,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "rice",
+      "qty": 100,
+      "unit": "克",
+      "main": true,
+      "note": "大米"
+    },
+    {
+      "id": "chicken_thigh",
+      "qty": 200,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "shiitake",
+      "qty": 4,
+      "unit": "朵"
+    },
+    {
+      "id": "ginger",
+      "qty": 2,
+      "unit": "片"
+    },
+    {
+      "id": "scallion",
+      "qty": 1,
+      "unit": "根"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "soy_light",
+      "qty": "1小勺"
+    },
+    {
+      "id": "starch",
+      "qty": "1小勺"
+    },
+    {
+      "id": "oil",
+      "qty": "1小勺"
+    },
+    {
+      "id": "salt",
+      "qty": "适量"
+    },
+    {
+      "id": "water",
+      "qty": "1500毫升"
+    }
+  ],
+  "steps": [
+    {
+      "text": "大米洗净，加几滴油拌匀；鸡腿肉切丁，加生抽和淀粉腌一下。",
+      "method": "marinate",
+      "heat": "off"
+    },
+    {
+      "text": "1500毫升水煮开，下米，再开后转小火煮30分钟。",
+      "method": "boil",
+      "heat": "low",
+      "timer": 1800,
+      "tip": "不时搅动防粘底"
+    },
+    {
+      "text": "香菇切丁，姜切丝，和鸡丁一起下锅。",
+      "method": "boil",
+      "heat": "mid"
+    },
+    {
+      "text": "煮10分钟到鸡丁全部变白，加盐，撒葱花。",
+      "method": "boil",
+      "heat": "low",
+      "timer": 600
+    }
+  ],
+  "dish": {
+    "vessel": "bowl",
+    "sauce": "white",
+    "layers": [
+      "chicken_thigh__pieces_braised",
+      "shiitake__braised"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

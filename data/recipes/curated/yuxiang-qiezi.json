@@ -1,111 +1,111 @@
 {
- "id": "yuxiang-qiezi",
- "name": "鱼香茄子",
- "course": [
-  "veg"
- ],
- "cuisine": "川",
- "tags": [
-  "下饭",
-  "微辣"
- ],
- "minutes": 25,
- "difficulty": 2,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "eggplant",
-   "qty": 2,
-   "unit": "个",
-   "main": true
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  },
-  {
-   "id": "ginger",
-   "qty": 2,
-   "unit": "片"
-  },
-  {
-   "id": "scallion",
-   "qty": 1,
-   "unit": "根"
-  }
- ],
- "seasonings": [
-  {
-   "id": "chili_bean",
-   "qty": "1大勺"
-  },
-  {
-   "id": "vinegar",
-   "qty": "2大勺"
-  },
-  {
-   "id": "sugar",
-   "qty": "2大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1大勺"
-  },
-  {
-   "id": "starch",
-   "qty": "1小勺"
-  },
-  {
-   "id": "oil",
-   "qty": "3大勺"
-  }
- ],
- "steps": [
-  {
-   "text": "茄子切条，撒少许盐拌匀，静置10分钟后挤干水。",
-   "method": "cut",
-   "heat": "off",
-   "timer": 600,
-   "tip": "挤过水少吸油"
-  },
-  {
-   "text": "醋、糖、生抽、淀粉加3大勺水，调成鱼香汁。",
-   "method": "mix",
-   "heat": "off"
-  },
-  {
-   "text": "锅放油，中火把茄子煎软，盛出。",
-   "method": "fry",
-   "heat": "mid",
-   "timer": 300
-  },
-  {
-   "text": "炒香姜蒜末和豆瓣酱，倒回茄子。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 30
-  },
-  {
-   "text": "倒入鱼香汁，大火翻匀到汁变亮，撒葱花出锅。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 30
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "chili",
-  "layers": [
-   "eggplant__braised"
+  "id": "yuxiang-qiezi",
+  "name": "鱼香茄子",
+  "course": [
+    "veg"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion",
-   "shine"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "川",
+  "tags": [
+    "下饭",
+    "微辣"
+  ],
+  "minutes": 25,
+  "difficulty": 2,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "eggplant",
+      "qty": 2,
+      "unit": "个",
+      "main": true
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    },
+    {
+      "id": "ginger",
+      "qty": 2,
+      "unit": "片"
+    },
+    {
+      "id": "scallion",
+      "qty": 1,
+      "unit": "根"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "chili_bean",
+      "qty": "1大勺"
+    },
+    {
+      "id": "vinegar",
+      "qty": "2大勺"
+    },
+    {
+      "id": "sugar",
+      "qty": "2大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1大勺"
+    },
+    {
+      "id": "starch",
+      "qty": "1小勺"
+    },
+    {
+      "id": "oil",
+      "qty": "3大勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "茄子切条，撒少许盐拌匀，静置10分钟后挤干水。",
+      "method": "cut",
+      "heat": "off",
+      "timer": 600,
+      "tip": "挤过水少吸油"
+    },
+    {
+      "text": "醋、糖、生抽、淀粉加3大勺水，调成鱼香汁。",
+      "method": "mix",
+      "heat": "off"
+    },
+    {
+      "text": "锅放油，中火把茄子煎软，盛出。",
+      "method": "fry",
+      "heat": "mid",
+      "timer": 300
+    },
+    {
+      "text": "炒香姜蒜末和豆瓣酱，倒回茄子。",
+      "method": "stir_fry",
+      "heat": "mid",
+      "timer": 30
+    },
+    {
+      "text": "倒入鱼香汁，大火翻匀到汁变亮，撒葱花出锅。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 30
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "chili",
+    "layers": [
+      "eggplant__braised"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion",
+      "shine"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

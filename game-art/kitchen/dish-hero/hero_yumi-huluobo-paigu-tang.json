@@ -1,0 +1,27 @@
+{
+  "id": "hero_yumi-huluobo-paigu-tang",
+  "recipe_id": "yumi-huluobo-paigu-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_yumi-huluobo-paigu-tang-source.png",
+  "original_sha256": "1a6186e8ab2fd86f3cc42b119177679b8dec9fdbaf71a096e11790ae13fb9b35",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "3f164f629e5487d4001f2d70415b38e7d2c3782d1bd9cbd3756354a63563409c",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_yumi-huluobo-paigu-tang. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 玉米胡萝卜排骨汤. Actual recipe ingredients: 排骨 (main), 玉米, 胡萝卜, 姜. Seasonings: 盐, 清水. Preparation reference: 排骨切块，玉米切段，胡萝卜切滚刀块，姜切片。 排骨冷水下锅，煮开后再煮3分钟，捞出洗净。 汤锅加1500毫升水、姜和排骨，煮开后小火炖40分钟。 加入玉米和胡萝卜再炖30分钟。 加盐调味，盛出。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "0611175a9c7a162b5f85e0959352374d60d826f96762fb852604886af48f0553",
+  "recipe_lf_sha256": "21e13a9eea083b7523e8a58677ab48a6eca78c0b3f35a61b6041078975e19742",
+  "generation_recipe_lf_sha256": "a85cad7c64f3f833f67e717d704f3cc6c7df40de72dbbe556f226eda20c00d74",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

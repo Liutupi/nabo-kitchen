@@ -1,0 +1,27 @@
+{
+  "id": "hero_tangcu-paigu",
+  "recipe_id": "tangcu-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_tangcu-paigu-source.png",
+  "original_sha256": "f94dd23587ab74b8f61a6996ab953c55a8c091506d7074f47510ca829d073892",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "48ab909671e786c538ec0eb7e3bcfe90aa0b361ba059afc9be4389a0f8735a38",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_tangcu-paigu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 糖醋排骨. Actual recipe ingredients: 排骨 (main), 姜. Seasonings: 白糖, 醋, 生抽, 料酒, 食用油, 清水. Preparation reference: 排骨切段，冷水下锅，煮开后再煮3分钟，捞出洗净。 锅里放少许油，中火把排骨煎到两面微黄。 加姜、料酒、生抽、糖、一半醋，再加热水没过排骨。 煮开后盖盖小火焖35分钟。 开盖加入剩下的醋，大火收汁到浓稠发亮。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "dc6c6fcdc1f19b4c79a033d7fc938c4560c75ddbe718cbb938dc781857c959ae",
+  "recipe_lf_sha256": "e92dcb39aa5a66ae2e2614158f44f3016e5f1bfd53ee92b273499213ef0edcea",
+  "generation_recipe_lf_sha256": "70a2fc96933aca6e19030634c186f7054f1ac90dc31cada8c6abf5d2c9e25fc4",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

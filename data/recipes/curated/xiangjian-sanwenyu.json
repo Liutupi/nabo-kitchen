@@ -1,85 +1,85 @@
 {
- "id": "xiangjian-sanwenyu",
- "name": "香煎三文鱼",
- "course": [
-  "meat"
- ],
- "cuisine": "其他",
- "tags": [
-  "快手"
- ],
- "minutes": 20,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "salmon",
-   "qty": 300,
-   "unit": "克",
-   "main": true
-  }
- ],
- "seasonings": [
-  {
-   "id": "salt",
-   "qty": "适量"
-  },
-  {
-   "id": "white_pepper",
-   "qty": "少许"
-  },
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "1小勺"
-  }
- ],
- "steps": [
-  {
-   "text": "三文鱼用厨房纸吸干，两面撒盐和白胡椒粉，腌10分钟。",
-   "method": "marinate",
-   "heat": "off",
-   "timer": 600
-  },
-  {
-   "text": "平底锅放少许油，中火烧热，鱼皮朝下放入。",
-   "method": "fry",
-   "heat": "mid"
-  },
-  {
-   "text": "煎3分钟不要动，鱼皮金黄酥脆再翻面。",
-   "method": "fry",
-   "heat": "mid",
-   "timer": 180
-  },
-  {
-   "text": "另一面煎2分钟，侧面从橙红变成浅粉即熟。",
-   "method": "fry",
-   "heat": "mid",
-   "timer": 120,
-   "tip": "中间微粉最嫩"
-  },
-  {
-   "text": "淋少许生抽，出锅装盘。",
-   "method": "fry",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "clear",
-  "layers": [
-   "fish_whole__braised"
+  "id": "xiangjian-sanwenyu",
+  "name": "香煎三文鱼",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "shine"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "其他",
+  "tags": [
+    "快手"
+  ],
+  "minutes": 20,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "salmon",
+      "qty": 300,
+      "unit": "克",
+      "main": true
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "salt",
+      "qty": "适量"
+    },
+    {
+      "id": "white_pepper",
+      "qty": "少许"
+    },
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "1小勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "三文鱼用厨房纸吸干，两面撒盐和白胡椒粉，腌10分钟。",
+      "method": "marinate",
+      "heat": "off",
+      "timer": 600
+    },
+    {
+      "text": "平底锅放少许油，中火烧热，鱼皮朝下放入。",
+      "method": "fry",
+      "heat": "mid"
+    },
+    {
+      "text": "煎3分钟不要动，鱼皮金黄酥脆再翻面。",
+      "method": "fry",
+      "heat": "mid",
+      "timer": 180
+    },
+    {
+      "text": "另一面煎2分钟，侧面从橙红变成浅粉即熟。",
+      "method": "fry",
+      "heat": "mid",
+      "timer": 120,
+      "tip": "中间微粉最嫩"
+    },
+    {
+      "text": "淋少许生抽，出锅装盘。",
+      "method": "fry",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "clear",
+    "layers": [
+      "fish_whole__braised"
+    ],
+    "hero": true,
+    "garnish": [
+      "shine"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

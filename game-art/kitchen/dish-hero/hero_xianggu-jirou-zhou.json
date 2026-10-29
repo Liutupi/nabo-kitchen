@@ -1,0 +1,27 @@
+{
+  "id": "hero_xianggu-jirou-zhou",
+  "recipe_id": "xianggu-jirou-zhou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xianggu-jirou-zhou-source.png",
+  "original_sha256": "0c4adce726d282513b181c841dbf2248041c4be8d221754a130ea7b17d92b566",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "3744c3c5905ba83c1dc1855b8d62c5b98ccc4f1a84f8cd47d583f29b507cb3fd",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xianggu-jirou-zhou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 香菇鸡肉粥. Actual recipe ingredients: 米饭 (main), 鸡腿 (main), 香菇, 姜, 葱. Seasonings: 生抽, 淀粉, 食用油, 盐, 清水. Preparation reference: 大米洗净，加几滴油拌匀；鸡腿肉切丁，加生抽和淀粉腌一下。 1500毫升水煮开，下米，再开后转小火煮30分钟。 香菇切丁，姜切丝，和鸡丁一起下锅。 煮10分钟到鸡丁全部变白，加盐，撒葱花。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "09706de3f9d35937501377ed23e89f3e0a10b67506cfa6a8bff10e6ba0a22ab3",
+  "recipe_lf_sha256": "a2d002a98ee6f8f6e3b7b66ad2f1684c8888b0c3265837f949bd387e4e6191ba",
+  "generation_recipe_lf_sha256": "9ab41455c45c5ff0d7774d0205599e376c134d5c9969f594150255c9a863e433",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

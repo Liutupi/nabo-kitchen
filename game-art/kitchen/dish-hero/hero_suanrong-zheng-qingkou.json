@@ -1,0 +1,27 @@
+{
+  "id": "hero_suanrong-zheng-qingkou",
+  "recipe_id": "suanrong-zheng-qingkou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanrong-zheng-qingkou-source.png",
+  "original_sha256": "bf648abcf22eb50cbb24f10d954136936fdcbef7049974c03901dcea3124fdce",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "ad4eaf45d5405141a20c97f132f7eed0709238f897a4b61c614bd64e2fc31cb5",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanrong-zheng-qingkou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜蓉蒸青口. Actual recipe ingredients: 青口贝 (main), 蒜, 葱. Seasonings: 食用油, 蒸鱼豉油. Preparation reference: 青口刷洗干净，拔掉须，张口不闭的挑出。 一半蒜末用油小火炒到微黄，和生蒜末拌匀。 青口摆盘，铺上蒜蓉；水开后大火蒸5分钟。 壳全部张开即熟，没开口的挑出不吃。 淋蒸鱼豉油，撒葱花上桌。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "60533d5d207ae348f86c0fa58766b6df822605ee6bbd6b0ec62e123be9c5a7cd",
+  "recipe_lf_sha256": "74db1393b794011001beb9dc46a4188ad7513161de087b29315544d180bf34f7",
+  "generation_recipe_lf_sha256": "7c30782f8f307ded5bf0c68126e2ac55df08053928b696f49127e3884d985717",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

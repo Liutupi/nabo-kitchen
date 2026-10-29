@@ -1,85 +1,85 @@
 {
- "id": "xiandan-zheng-roubing",
- "name": "咸蛋蒸肉饼",
- "course": [
-  "meat"
- ],
- "cuisine": "粤",
- "tags": [
-  "下饭"
- ],
- "minutes": 30,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "pork_mince",
-   "qty": 250,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "salted_egg",
-   "qty": 2,
-   "unit": "个",
-   "main": true
-  },
-  {
-   "id": "ginger",
-   "qty": 2,
-   "unit": "片"
-  }
- ],
- "seasonings": [
-  {
-   "id": "soy_light",
-   "qty": "1小勺"
-  },
-  {
-   "id": "starch",
-   "qty": "1小勺"
-  },
-  {
-   "id": "water",
-   "qty": "2大勺"
-  }
- ],
- "steps": [
-  {
-   "text": "咸蛋打开，蛋白倒进肉末里，蛋黄留出切半。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "肉末加姜末、生抽、淀粉和水，顺一个方向搅上劲。",
-   "method": "mix",
-   "heat": "off",
-   "tip": "搅上劲才不散"
-  },
-  {
-   "text": "肉末铺盘压平，咸蛋黄嵌在表面。",
-   "method": "mix",
-   "heat": "off"
-  },
-  {
-   "text": "水开后大火蒸15分钟，流出的汁是清的即熟。",
-   "method": "steam",
-   "heat": "high",
-   "timer": 900
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": null,
-  "layers": [
-   "pork_mince__patty_egg_steamed"
+  "id": "xiandan-zheng-roubing",
+  "name": "咸蛋蒸肉饼",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "粤",
+  "tags": [
+    "下饭"
+  ],
+  "minutes": 30,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "pork_mince",
+      "qty": 250,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "salted_egg",
+      "qty": 2,
+      "unit": "个",
+      "main": true
+    },
+    {
+      "id": "ginger",
+      "qty": 2,
+      "unit": "片"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "soy_light",
+      "qty": "1小勺"
+    },
+    {
+      "id": "starch",
+      "qty": "1小勺"
+    },
+    {
+      "id": "water",
+      "qty": "2大勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "咸蛋打开，蛋白倒进肉末里，蛋黄留出切半。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "肉末加姜末、生抽、淀粉和水，顺一个方向搅上劲。",
+      "method": "mix",
+      "heat": "off",
+      "tip": "搅上劲才不散"
+    },
+    {
+      "text": "肉末铺盘压平，咸蛋黄嵌在表面。",
+      "method": "mix",
+      "heat": "off"
+    },
+    {
+      "text": "水开后大火蒸15分钟，流出的汁是清的即熟。",
+      "method": "steam",
+      "heat": "high",
+      "timer": 900
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": null,
+    "layers": [
+      "pork_mince__patty_egg_steamed"
+    ],
+    "hero": true,
+    "garnish": [
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

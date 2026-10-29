@@ -8,6 +8,13 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-29 · Codex（Windows）· 任务 4 完成
+
+- 36 张 D2 新菜图全部交付，145/145 道有完整透明菜图，缺图 0；逐张登记 `review`，保留原图、提示词和哈希。
+- 对齐 87 道原本已有图的可用标志；独立比对确认做法内容完全未改。菠菜和咸蛋肉饼另留修图前原图及修订记录。
+- 菜图 5 项测试和 145 道 schema/引用检查通过；[验证清单](game-art/kitchen/dish-hero/batches/2026-10-29-d2/validation.json)、[双底色小图](game-art/kitchen/dish-hero/batches/2026-10-29-d2/contact_160px.png)。
+- 下一步任务 5：重建 D2 KRC、字体、资源包，并处理退役菜谱存档；之后 v0.2 和选中项整块变色，本轮不发布。
+
 ### 2026-10-29 · Codex（Windows）· 任务 4 第二批 24/36
 
 - 累计交付 24 张新菜图，145 道中现有 133 张；剩余 12 张继续，原图/提示词/哈希和双底色小图已更新。
@@ -56,7 +63,7 @@
 | 已发布 | v0.1.0：[GitHub prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，[社区项目 1755](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)。应用 `a6f4a167…`，资源 `f1c0f215…` |
 | 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
-| 美术 | 133 道有完整菜图；本批新交付 24/36，剩余 12 张继续制作，均保持 `review`；退役图保留 |
+| 美术 | **145/145 道完整菜图，缺图 0**；36 张 D2 新图已交付，全部保持 `review`，退役图保留 |
 | 设备 | 用户工牌运行的还是 v0.1.0（144 道旧菜谱） |
 | 规格变更 | v0.2 去掉日期依赖，见 [DESIGN.md 第 8 节](game-art/kitchen/DESIGN.md) |
 | 评估 | [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |

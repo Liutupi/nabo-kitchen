@@ -1,0 +1,27 @@
+{
+  "id": "hero_zicai-danhua-tang",
+  "recipe_id": "zicai-danhua-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_zicai-danhua-tang-source.png",
+  "original_sha256": "3e4f4d5ede22caf24e9ffd2071aa8a13fb96febe8b2db0eda402f23e1bc1770d",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "e8fa8099d8069a053009a420c61a599391e6d437408f53739611557866d8afc1",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_zicai-danhua-tang. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 紫菜蛋花汤. Actual recipe ingredients: 鸡蛋 (main), 葱. Seasonings: 紫菜, 盐, 香油, 清水. Preparation reference: 紫菜撕成小块，鸡蛋打散，葱切花。 800毫升水煮开，放入紫菜煮1分钟。 缓慢淋入蛋液，等蛋花浮起再轻推。 加盐、香油和葱花，关火盛出。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "b8e16ab6adf1f7127db39748daf5008bc7ad496808f6a4e134003c42b4fdbe67",
+  "recipe_lf_sha256": "6186ed5968cc4a63614fb993d9452ee7a990376370a389919256f2a68137c416",
+  "generation_recipe_lf_sha256": "2bb456df2c6dfc8952dedf8c3a6463144f9dce3f1eb362684fbb67f78e9ab5c8",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

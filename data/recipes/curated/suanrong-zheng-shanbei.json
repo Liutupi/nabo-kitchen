@@ -1,83 +1,83 @@
 {
- "id": "suanrong-zheng-shanbei",
- "name": "蒜蓉蒸扇贝",
- "course": [
-  "meat"
- ],
- "cuisine": "粤",
- "tags": [
-  "宴客"
- ],
- "minutes": 20,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "scallop",
-   "qty": 250,
-   "unit": "克",
-   "main": true,
-   "note": "扇贝肉"
-  },
-  {
-   "id": "garlic",
-   "qty": 6,
-   "unit": "瓣"
-  },
-  {
-   "id": "scallion",
-   "qty": 1,
-   "unit": "根"
-  }
- ],
- "seasonings": [
-  {
-   "id": "oil",
-   "qty": "2大勺"
-  },
-  {
-   "id": "steam_soy",
-   "qty": "1大勺"
-  }
- ],
- "steps": [
-  {
-   "text": "扇贝肉去掉黑色肠线，冲洗干净沥干，摊在盘里。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "一半蒜末用油小火炒到微黄，和生蒜末拌匀。",
-   "method": "stir_fry",
-   "heat": "low",
-   "timer": 60
-  },
-  {
-   "text": "蒜蓉铺在扇贝肉上，水开后大火蒸5分钟。",
-   "method": "steam",
-   "heat": "high",
-   "timer": 300,
-   "tip": "蒸久了会缩水"
-  },
-  {
-   "text": "淋蒸鱼豉油，撒葱花上桌。",
-   "method": "steam",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "soy_steam",
-  "layers": [
-   "shrimp__peeled_stirfried"
+  "id": "suanrong-zheng-shanbei",
+  "name": "蒜蓉蒸扇贝",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "garlic",
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "粤",
+  "tags": [
+    "宴客"
+  ],
+  "minutes": 20,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "scallop",
+      "qty": 250,
+      "unit": "克",
+      "main": true,
+      "note": "扇贝肉"
+    },
+    {
+      "id": "garlic",
+      "qty": 6,
+      "unit": "瓣"
+    },
+    {
+      "id": "scallion",
+      "qty": 1,
+      "unit": "根"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "oil",
+      "qty": "2大勺"
+    },
+    {
+      "id": "steam_soy",
+      "qty": "1大勺"
+    }
+  ],
+  "steps": [
+    {
+      "text": "扇贝肉去掉黑色肠线，冲洗干净沥干，摊在盘里。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "一半蒜末用油小火炒到微黄，和生蒜末拌匀。",
+      "method": "stir_fry",
+      "heat": "low",
+      "timer": 60
+    },
+    {
+      "text": "蒜蓉铺在扇贝肉上，水开后大火蒸5分钟。",
+      "method": "steam",
+      "heat": "high",
+      "timer": 300,
+      "tip": "蒸久了会缩水"
+    },
+    {
+      "text": "淋蒸鱼豉油，撒葱花上桌。",
+      "method": "steam",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "soy_steam",
+    "layers": [
+      "shrimp__peeled_stirfried"
+    ],
+    "hero": true,
+    "garnish": [
+      "garlic",
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

@@ -1,0 +1,35 @@
+{
+  "id": "hero_xiandan-zheng-roubing",
+  "recipe_id": "xiandan-zheng-roubing",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xiandan-zheng-roubing-source.png",
+  "original_sha256": "a5ef8d06592ed0705810d832d8cbac0b8cf40d7b7c4b9e553c8d9b1897864bca",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "e979cab2418ef7eb70333c912a690ed441b8a0292ca902840094d23e683243bd",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xiandan-zheng-roubing. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 咸蛋蒸肉饼. Actual recipe ingredients: 肉末 (main), 咸蛋 (main), 姜. Seasonings: 生抽, 淀粉, 清水. Preparation reference: 咸蛋打开，蛋白倒进肉末里，蛋黄留出切半。 肉末加姜末、生抽、淀粉和水，顺一个方向搅上劲。 肉末铺盘压平，咸蛋黄嵌在表面。 水开后大火蒸15分钟，流出的汁是清的即熟。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "5ad4b0f04f9dd716090c3876aab288e7ce88bff20ee116ef0eae2ceb15aeb1fb",
+  "recipe_lf_sha256": "b3577d2ea79554d33e29c4db607b8c6a46b3f5d3f83fbacaecaab884b6bf9ec4",
+  "generation_recipe_lf_sha256": "07d51ad9a6f7e97731f6a25e2f1fcd5fd25e0f5df63e1df1b6d898ce223ddc0c",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged.",
+  "refinements": [
+    {
+      "input": "originals/hero_xiandan-zheng-roubing-source-v1.png",
+      "input_sha256": "86c7d8078560a3af3984b0824db48e9dd92bf188e2b1016456f7c2d36bf6e398",
+      "prompt": "Edit target: the supplied salted duck egg steamed pork patty illustration. Correct ONLY the egg yolks: recipe uses two salted duck eggs, yolks cut into halves, therefore exactly FOUR small fully STEAMED salted-yolk hemispheres embedded in the cooked pork patty. Deep orange solid crumbly dense yolks with a flat cut face and restrained highlights; no liquid sunny-side-up eggs, no raw egg puddles. Keep the cooked pale-brown minced pork patty, ginger, whole white plate, warm rounded outlined 2D art style and 4:3 composition. Genuine RGBA transparent background, same complete plate and margins. No text or other additions.",
+      "reason": "Correct salted-yolk count and cooked appearance"
+    }
+  ]
+}
