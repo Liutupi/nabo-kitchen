@@ -1,0 +1,24 @@
+{
+  "id": "hero_fanqie-paigu",
+  "recipe_id": "fanqie-paigu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-paigu-source.png",
+  "original_sha256": "8a4843043f49720b603d6b9634bd441a02c9e488bdc409dedeca3d07aae4d2e5",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "87f07a93a64a5d92e6c9e5208efe60dd2babd3a0d09133a98697d2d357233eca",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-paigu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄焖排骨. Actual recipe ingredients: 排骨 (main), 番茄 (main), 姜. Preparation reference: 排骨切块，番茄切块，姜切片；生熟分开。 排骨加1升冷水煮开，再煮3分钟，捞出沥水。 锅放油炒番茄，加排骨、姜和500毫升水。 盖盖小火焖至排骨软，约40分钟。 避骨测中心至少63℃，关火静置3分钟后加盐。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "b6eea2067d2978e7dcd00279fb746e4b9284bb7842936c14527acba939efd212",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

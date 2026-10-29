@@ -1,0 +1,24 @@
+{
+  "id": "hero_fanqie-shaoyu",
+  "recipe_id": "fanqie-shaoyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-shaoyu-source.png",
+  "original_sha256": "fa0cdb992a866f7ce19b9cfd03202f6861c016f94d43ff21fcbb18e95f8b7282",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "c0bec89e51b53066263b2b8c820f85cc3fe6e783da0b8c6baa1d8e4967013214",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-shaoyu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄烧鱼. Actual recipe ingredients: 鱼（鲈鱼等） (main), 番茄 (main), 姜. Preparation reference: 番茄切块、姜切丝；另用刀板处理鱼并擦干，洗手洗具。 锅放1小勺油，中火煎鱼两面定型。 另用1小勺油炒番茄，加水煮软。 放鱼和姜焖煮，鱼最厚处中心达63℃。 加盐调味后装盘。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white oval fish platter. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "45a47ac6991d7d9aa2b96c93eceb732f9cafc706f9c9104362c761ac8800fd21",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
