@@ -1,7 +1,7 @@
 {
   "release": "v0.2.0",
   "channel": "experience-prerelease",
-  "prepared_at": "2026-10-29T16:57:32.947897+00:00",
+  "prepared_at": "2026-10-29T17:02:49.344470+00:00",
   "user_instruction": "Publish firmware, then update the existing community project",
   "cooking_acceptance": "User explicitly confirmed not yet three actual cooking sessions and authorized an experience release disclosing its scope",
   "build": "PASS for unchanged accepted prebuilt application",
@@ -23,8 +23,8 @@
   "public_assets": [
     {
       "file": "manifest.json",
-      "bytes": 4197,
-      "sha256": "0942e39b72bd2ccaaf167f649050ede0a19b06db2376e44e1b3565a01718a25d"
+      "bytes": 4094,
+      "sha256": "9e12f264598214471cc12085d36017404c0775db8cb183e15f3ba38150fc55a5"
     },
     {
       "file": "nabo-kitchen-v0.2.0-full.bin",
@@ -33,13 +33,13 @@
     },
     {
       "file": "nabo-kitchen-v0.2.0.zip",
-      "bytes": 2763019,
-      "sha256": "51987240caedcfe1dd7d85246276a2ce8c47ae09a4c7ee5358ee80d9057796ca"
+      "bytes": 2762992,
+      "sha256": "2dec723e61b94a3815a878b4b2fd12a52067acc49fdf23c00cf712d56850efc7"
     },
     {
       "file": "SHA256SUMS.txt",
       "bytes": 265,
-      "sha256": "5d6aab86ade57b188dd78c752af9b16269ce34ed276109c4f16a7d228673306a"
+      "sha256": "e84803edf9a8411e2a1805a949cfd8c89c962b1f3e2f45df613b202ae275e71a"
     }
   ],
   "zip_entries": [
@@ -129,5 +129,5 @@
   "old_release_unchanged": true,
   "published": false,
   "release_static_and_host_gate": "PASS; 21 capability-dependent skips",
-  "release_packaging_checks": "PASS; exact segments, erased gaps, ZIP contents and bilingual usage, image formats/visual inspection and publisher preview"
+  "repository_text_and_package_provenance": "PASS; release-spec hash equals Git source bytes; bundled usage matches LF text"
 }

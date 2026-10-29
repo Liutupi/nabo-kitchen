@@ -65,7 +65,7 @@ class Poster:
         self.text(second, 56, 1166, 16, '#B5AFC6' if self.dark else '#7B6760')
 
     def save(self, name):
-        (OUT / (name + '.svg')).write_text(''.join(self.parts) + '</svg>', encoding='utf-8')
+        (OUT / (name + '.svg')).write_text(''.join(self.parts) + '</svg>', encoding='utf-8', newline='\n')
 
 
 def render_ui():
@@ -221,7 +221,7 @@ def main():
         'gallery': 'native SVG layout; original project dish PNGs; clean production C rendering' +
                    (' and complete device clean-mode captures' if args.device_captures_dir or args.timer_home_device_captures_dir else ''),
         'recipes': recipe_count,
-        'font_source_sha256': hashlib.sha256(args.font.read_bytes()).hexdigest(), 'files': files}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        'font_source_sha256': hashlib.sha256(args.font.read_bytes()).hexdigest(), 'files': files}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':

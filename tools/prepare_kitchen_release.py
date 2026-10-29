@@ -30,7 +30,7 @@ def sha(path: Path) -> str:
 
 
 def dump(path: Path, value: dict) -> None:
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def prepare(archive: Path, bundle: Path, output: Path, release_spec: Path | None = None,
