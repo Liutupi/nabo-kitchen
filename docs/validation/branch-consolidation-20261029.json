@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "task": 1,
+  "checks": [
+    {
+      "old": "codex/kitchen-model",
+      "target": "main",
+      "old_sha": "9b32c69eb1018ada9ce1766e9d8bbb07ee1ecd61",
+      "target_sha": "e3a5763958af92d408644cd3a5d7f4961eab6e89",
+      "ancestor": true
+    },
+    {
+      "old": "codex/kitchen-dish-art-20261029",
+      "target": "main",
+      "old_sha": "c99d979b630286ef3ec385c2e6f1485940ecb5a3",
+      "target_sha": "e3a5763958af92d408644cd3a5d7f4961eab6e89",
+      "ancestor": true
+    },
+    {
+      "old": "codex/prototype-packing",
+      "target": "main",
+      "old_sha": "a10b886b799d772914592c7643ef1813fd1c0b10",
+      "target_sha": "e3a5763958af92d408644cd3a5d7f4961eab6e89",
+      "ancestor": true
+    },
+    {
+      "old": "codex/release-v0.1.0",
+      "target": "firmware",
+      "old_sha": "249934189ffa27bf77857e93e8d48011863b3a8e",
+      "target_sha": "f35b1d9f18b6a7fe8dc5587a6eec2711e61206c0",
+      "ancestor": true
+    },
+    {
+      "old": "codex/runtime-fixes-20261029",
+      "target": "firmware",
+      "old_sha": "63599b8a27e5ca975cdfc40861f9a3b65d13ef2f",
+      "target_sha": "f35b1d9f18b6a7fe8dc5587a6eec2711e61206c0",
+      "ancestor": true
+    },
+    {
+      "old": "codex/offline-kitchen",
+      "target": "firmware",
+      "old_sha": "f799a2f3196e0d28a1777663a7cb65fcd8d84c4d",
+      "target_sha": "f35b1d9f18b6a7fe8dc5587a6eec2711e61206c0",
+      "ancestor": true
+    }
+  ],
+  "content_directory": "nabo-kitchen",
+  "firmware_directory": "nabo-kitchen-runtime",
+  "release_tag_unchanged": "77ef2a926281ef7e5c4376ecd7158af1e915b06a",
+  "remote_branches_after": [
+    "main",
+    "firmware"
+  ],
+  "local_branches_after": [
+    "main",
+    "firmware"
+  ],
+  "deleted_remote_count": 6,
+  "monitor_updated": true
+}

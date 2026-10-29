@@ -8,10 +8,17 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-29 · Codex（Windows）· 任务 1 完成
+
+- 内容目录已跟踪 `main`，固件目录已跟踪 `firmware`；旧美术/发布目录转为只读用途的 detached 快照。
+- 六个旧分支均通过目标分支祖先检查后删除，远端和本机现在只保留 `main`、`firmware`，v0.1.0 tag 未改。
+- 30 分钟检查已改看两个主线，并遵守任务顺序及每块 15 行限制；[核验记录](docs/validation/branch-consolidation-20261029.json)。
+- 下一步：任务 2；用户已连接测试工牌，先核对设备并完整备份，再验证社区首次安装路径。
+
 | 项目 | 状态 |
 |---|---|
 | 已发布 | v0.1.0：[GitHub prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，[社区项目 1755](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)。应用 `a6f4a167…`，资源 `f1c0f215…` |
-| 分支 | **以后只用两个**：`main`（规格、菜谱、美术、原型、工具）和 `firmware`（固件源码和发布材料，指向原 `codex/release-v0.1.0` 的末端 `2499341`）。另外 6 个 `codex/*` 分支的内容已全部包含在这两个分支里，**待删除**（Claude 这边没有删除远端分支的权限，见任务 1） |
+| 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | 109 道菜有完整菜图；**36 道新菜没有菜图**，暂时用图层合成显示；退役的 35 张在 `game-art/kitchen/dish-hero/retired/` |
 | 设备 | 用户工牌运行的还是 v0.1.0（144 道旧菜谱） |
