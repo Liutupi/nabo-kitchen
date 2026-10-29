@@ -2,7 +2,7 @@
 
 # Offline kitchen handoff — 2026-10-29
 
-Work resumed at the user's request. The first 144-recipe startup watchdog was repaired. With the user's explicit approval, the app-only repair was flashed and verified; its startup retest has no watchdog warning. Clock-warning acknowledgement, welcome audio and the isolated feature flow remain pending. This is not a release. Do not flash or erase the device merely because this branch exists.
+The user requested a cross-computer handoff. Development and device tests are stopped for this checkpoint, and the serial port is closed. The installed 144-recipe app is not hardware-accepted: a later reboot reproduced the watchdog warning, and the user confirmed that the greeting is still inaudible. The earlier successful startup window was insufficient evidence of a complete repair. This is not a release. Do not flash or erase the device merely because this branch exists.
 
 ## Where the work lives
 
@@ -18,9 +18,11 @@ The installed bootloader came from the earlier compatible offline candidate (SHA
 
 The user confirmed the opening animation and welcome voice, the opening screen holding until OK, and physical fridge category/ingredient selection. A 128-version isolated test reached the seafood page, selected ingredients, captured all 320 display rows, and restored normal mode. The earlier 104-version isolated flow passed home → conditions → draw → ingredients → cooking. These observations do not certify every timer, power-loss case, animation frame rate or household recipe.
 
-The earlier four-dish test was refused with `pending-save`. New read-only status confirms the cause: a restored timer with an unacknowledged clock-loss warning (`dirty=1`, `clock_lost=1`, `storage_fault=0`, journal sequence 140). The user was asked to press OK twice; no records were cleared. Reopening the native USB port produced another fresh boot log, so acknowledgement and isolated testing must share one persistent serial connection to avoid resetting the restored timers again. Initial 144-version status reports 194,900 free heap bytes, largest block 114,688 bytes, and 8,672 minimum free UI stack bytes. These precede the four-dish stress test.
+The earlier four-dish test was refused with `pending-save`. New read-only status confirms the cause: a restored timer with an unacknowledged clock-loss warning (`dirty=1`, `clock_lost=1`, `storage_fault=0`, journal sequence 140). The user confirmed that pressing OK cleared the warning; no records were cleared. After the next port reopen/reboot, the warning returned with journal sequence 143 (`dirty=1`, `clock_lost=1`, `storage_fault=0`); acknowledgement persistence and timer status still need investigation. Reopening the native USB port produced another fresh boot log, so acknowledgement and isolated testing must share one persistent serial connection to avoid resetting the restored timers again. Initial 144-version status reports 194,900 free heap bytes, largest block 114,688 bytes, and 8,672 minimum free UI stack bytes. These precede the four-dish stress test.
 
-Full startup logs also contain an IDLE-task watchdog warning at 5,437 ms while `kitchen_ui` was running. Matching ELF `17c0f929a...` decodes the sampled PC/RA to a FreeRTOS critical-section exit, not a complete caller trace. Resource validation completed at 2,970 ms; uninterrupted higher-priority initialization delayed the idle task until startup completed. The repair yields between bundle validation, resource parsing and catalog initialization without disabling the watchdog. The approved repair passed a physical startup retest: embedded ELF prefix `2650225e8` matches the archived ELF, and no watchdog or audio-driver error occurred in the bounded startup window. Post-boot free heap was 198,368 bytes and minimum UI stack remaining was 8,656 bytes. The user reported no welcome sound on the earlier app; actual audible playback on the repair is not yet confirmed. The PCM is non-silent (62,400 bytes, 1.95 seconds), but this does not establish speaker output. All monitors were closed; raw logs and target identity remain private.
+Full startup logs also contain an IDLE-task watchdog warning at 5,437 ms while `kitchen_ui` was running. Matching ELF `17c0f929a...` decodes the sampled PC/RA to a FreeRTOS critical-section exit, not a complete caller trace. Resource validation completed at 2,970 ms; uninterrupted higher-priority initialization delayed the idle task until startup completed. The repair yields between bundle validation, resource parsing and catalog initialization without disabling the watchdog. The approved app initially had a clean startup window, but the next reboot reproduced the warning at 5,437 ms with the same ELF prefix `2650225e8`. Sampled MEPC `0x4200e5e6` resolves to `crc32` in `main/kitchen/kitchen_krc.c:15`, inlined into `krc_read_body` at line 99; RA `0x4200bc0a` resolves to `load_item` in `main/kitchen/kitchen_catalog.c:55`. This points to long synchronous catalog validation; the two-millisecond delays between broad stages are not a verified fix. Keep the watchdog enabled. The latest startup had 198,368 free heap bytes and at least 8,656 UI stack bytes remaining before stress testing.
+
+The user explicitly confirmed that the clock warning can be dismissed, but the repaired app still produces no audible greeting. The audio driver initializes without an error, and the unchanged PCM is non-silent (62,400 bytes, 1.95 seconds; SHA256 `b47e9a9e8845a130495896d8628a153f7d17339442e7e9d6f7ef3a61c81d4a22`). This does not prove mixer events, saved sound/volume settings or speaker output. No NVS dump or record deletion was performed. All monitors were closed; raw logs and target identity remain private.
 
 ## Latest implementation
 
@@ -36,8 +38,8 @@ Full startup logs also contain an IDLE-task watchdog warning at 5,437 ms while `
 ```text
 Build: PASS for the complete ESP-IDF 5.5.3 gate
 Host tests: PASS for static, actual 144-recipe rendering/migration and NVS stress
-Device tests: PASS for repaired startup only; audio and feature acceptance pending
-Unverified: physical clock-warning acknowledgement, welcome audio, device seafood/icon appearance, unlimited redraw, timer cancellation,
+Device tests: FAIL (watchdog reproduced; greeting still inaudible)
+Unverified: reliable startup, audio repair, clock-warning persistence, device seafood/icon appearance, unlimited redraw, timer cancellation,
 worker stack, occupied-device NVS capacity and physical power-loss behavior
 ```
 
@@ -55,9 +57,9 @@ Using unmodified ESP-IDF 5.5.3 NVS storage/page/GC sources with synthetic NOR I/
 - App: 513,184 bytes; SHA256 `5b77ba87157481f4be8e5e70540f0984d1f2131e8cfc3117a60503c47203ed15`.
 - Matching ELF SHA256: `2650225e83603a557c0153efa7cc1f932aa111b937a70264019c894fe936c7d5`; embedded version `697a44a-dirty` identifies the tested working tree before its source checkpoint commit.
 - Resources retain SHA256 `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`. Archive and segmented-package verification both passed. Generated firmware/debug files remain local.
-- The intended port is `/dev/cu.usbmodem212401`. The first app/resource update was approved and completed. The repaired app-only update was explicitly approved and completed; installed resources, bootloader, table and user data were retained. The clock-loss warning still requires a physical OK acknowledgement before isolated tests. The latest user feedback on the earlier app was that the clock warning remained and no greeting was heard; do not mark these accepted.
+- The intended port is `/dev/cu.usbmodem212401`. The first app/resource update was approved and completed. The repaired app-only update was explicitly approved and completed; installed resources, bootloader, table and user data were retained. The user confirmed that OK dismissed the warning, but a subsequent reboot restored it. The current app still has no audible greeting according to the user. Isolated feature testing was not started or forced past the pending-save protection.
 
-GitHub synchronization is blocked: CLI authentication for Liutupi is invalid, the connected GitHub integration rejects tree writes with HTTP 403, and SSH access is unavailable. The source repair commit `697a44a` is local; remote `codex/offline-kitchen` remains `f67c7ee`. Do not claim the new work was pushed. Preserve local commits and resume pushing only after GitHub access is restored.
+GitHub CLI device authorization was renewed for this handoff after expired credentials blocked earlier pushes. Push the firmware and design checkpoints to the two branches above, verify their remote heads, and do not force-push or upload private logs, NVS, device identity or debug bundles.
 
 ## Resume steps
 
@@ -65,6 +67,11 @@ GitHub synchronization is blocked: CLI authentication for Liutupi is invalid, th
 2. The complete `./tools/validate.sh` gate passed for the candidate above. Repeat it only after relevant changes; the actual-resource, migration and NVS tests are now included.
 3. Verify the content-addressed debug archive, then build a segmented package with `tools/pack_offline_release.py`. Confirm the exact new artifact and intended device/write scope before flashing.
 4. Preserve NVS at `0x9000..0xefff`, PHY at `0xf000..0xffff` and files at `0x700000..0x7fffff`. The compatible layout uses app `0x10000..0x1fffff` and kitchen assets `0x200000..0x6fffff`. A merged image fills gaps and must not be blindly written when preserving data.
-5. Observe startup and the new behavior using bounded serial tests. Record heap/stack after repeated four-dish draws and check storage without deleting existing records. Restore normal mode and close the port.
+5. First repair bounded catalog initialization: inspect the `kc_load` loop and `krc_read_body` CRC work. Yield within bounded batches or use a validated equivalent CRC implementation; delays only between broad phases have reproduced a watchdog. Add relevant host coverage and retest several physical starts.
+6. Diagnose missing audio with read-only status for `sound`, `volume`, `audio_ready`, the boot-voice trigger and mixer consumption. Respect saved settings; trace ES8311/I2S playback before claiming sound is fixed. PCM validity and successful API returns do not establish audibility.
+7. Check why clock-loss state returned after the user's acknowledgement and newer save sequence. Running timers with no trusted wall clock deliberately restore paused; confirm the resumed/paused state and saved record without deleting timers to bypass a guard.
+8. Then run isolated boot/home, both seafood pages, more than three four-dish redraws, ingredient-to-shopping flow, timer pause/cancel and non-restart checks. Record heap/stack, verify the journal sequence did not change during isolated tests, restore normal mode and close the port.
+
+On another computer, use separate checkouts for the two branches. Inspect `git status --short --branch` before pulling or switching. If no clone exists, clone the same repository once with `--branch codex/offline-kitchen` for firmware and once with `--branch codex/kitchen-model` for editable content. Read `AGENTS.md` and this handoff before editing; configure that computer's ESP-IDF 5.5.3 through the maintained setup instructions. Local absolute paths and private test scripts from this Mac are not available on the other computer.
 
 The 1,000/1,500-entry experiment in `experiments/krc_stream/` is a synthetic indexing proof of concept only. It has not created a thousand real recipes and is not connected to production UI, recommendation or storage. Read its paired README before extending it.

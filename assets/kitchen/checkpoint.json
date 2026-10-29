@@ -1,6 +1,6 @@
 {
   "checkpoint_date": "2026-10-29",
-  "status": "complete firmware gate passed; device acceptance pending",
+  "status": "complete firmware gate passed; device acceptance failed (startup watchdog and inaudible greeting)",
   "recipes": 144,
   "ingredients": 58,
   "seafood_types": 13,
