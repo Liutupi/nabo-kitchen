@@ -8,6 +8,15 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-30 · Codex（Windows）· 任务 6 已更新实机，待实体确认
+
+- 经本次明确同意，仅更新 COM11 的 v0.2 应用与 D2 资源，独立 SHA256 读回一致；重启前保留区核对通过。
+- 两次有限启动识别 145 道菜，无已观察到的崩溃/存储错误；KST1→KST2 后菜单、步骤状态、设置和抽签计数保留。
+- 七张完整 USB 画面确认整块选中色、条件/设置和两道新菜图；一次缺行拒收重采，隔离测试已退出、串口关闭。
+- 用户再次询问手动关闭计时，已说明“计时器页长按下键取消，长按 OK 暂停/继续”；未据此推定实体验收通过。
+- [脱敏设备验证](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-device-validation-20261030.json)；原图仍全为 review，本次未发布。
+- 已请用户确认实体 OK 入厨房不问日期、焦点清晰和新菜进步骤；任务 6 待回复，任务 7 仍暂缓且需 v0.2 实厨至少 3 道。
+
 ### 2026-10-29 · Codex（Windows）· 任务 6 开发候选完成，待实机
 
 - 原型和实际固件已去日期依赖：按完成次数降权，菜单跨重启保留，计数器加设备种子抽签，等级只看不同菜数/累计次数。
@@ -81,7 +90,7 @@
 | 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | **145/145 道完整菜图，缺图 0**；36 张 D2 新图已交付，全部保持 `review`，退役图保留 |
-| 设备 | 测试工牌仍是此前验证的应用与 144 道旧资源；v0.2 候选待单独同意上机 |
+| 设备 | 已同意并安装 v0.2 应用及 145 道 D2 资源，读回/有限启动/迁移/USB 画面检查通过；待实体操作确认，未发布 |
 | 规格变更 | v0.2 去掉日期依赖，见 [DESIGN.md 第 8 节](game-art/kitchen/DESIGN.md) |
 | 评估 | [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |
 
