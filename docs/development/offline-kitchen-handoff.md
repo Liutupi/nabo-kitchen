@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## 2026-10-30: v0.2 application and D2 resources installed; physical acceptance pending
+
+The user approved the exact 512,864-byte application and 3,768,770-byte D2 resources on the previously confirmed COM11 badge. Both components passed independent SHA256 readback. Before reboot, the installed bootloader, partition table, NVS/PHY, files and untouched tails were unchanged. Current NVS was saved locally and remains private.
+
+Two bounded starts loaded the matching ELF and 145 recipes without observed crashes, watchdog or storage faults. The save migrated from version 1/sequence 42 to version 2/sequence 43; menu, two existing step sessions, settings and draw count were preserved. There were no completed cooking records on this badge, so nonempty history migration remains a host-test result. Seven complete USB frames show whole-card focus, conditions/settings and two new dish heroes; one incomplete attempt was rejected and retried. Test mode restored the user's state and the port is closed. See [sanitized device evidence](offline-v02-device-validation-20261030.json) and [captured screen provenance](../../assets/kitchen/validation/v0.2/device-20261030/source.json).
+
+Physical OK entry without a date prompt, focus visibility and new-dish step entry are awaiting the user's response. The user asked whether a timer can be stopped manually; the existing hold-DOWN cancellation and hold-OK pause/resume controls were explained. This is feedback about finding controls, not an acceptance result. Task 6 remains pending this acceptance. No new Release, tag or community revision was created; task 7 stays deferred and still requires three real v0.2 cooking sessions. The fresh archive bootloader was not flashed or validated by this update.
+
 ## v0.2 implementation validated; device acceptance pending
 
 The date-free 0.2.0-dev candidate and whole-card focus colors are implemented. The JavaScript prototype and production C agree on 160 weight vectors and 40 draw/reroll vectors over 145 recipes. The prototype passed 31 checks; the complete firmware gate, 12 real-resource rendering checks, legacy migration and strict archive verification passed. NVS passed 100 maximum-state saves and 484 simulated power-cut boundaries. See [validation](offline-v02-validation-20261029.json) and [host-rendered screens](../../assets/kitchen/validation/v0.2/focus-preview.png).

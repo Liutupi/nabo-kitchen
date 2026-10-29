@@ -1,9 +1,9 @@
 {
   "version": "0.2.0-dev",
-  "status": "implementation_validated_awaiting_device_consent",
+  "status": "automated_device_checks_passed_awaiting_physical_acceptance",
   "build": "PASS",
   "host_tests": "PASS",
-  "device_tests": "NOT RUN",
+  "device_tests": "automated PASS; physical acceptance PENDING",
   "published": false,
   "content": {
     "recipes": 145,
@@ -93,8 +93,8 @@
   },
   "archive_local_path": "build/firmware/6addea4cafabd652f29687d4770e796c7183c73f2cf6577b240e3e2b325bd623",
   "flash_proposal": {
-    "status": "awaiting_explicit_consent",
-    "target": "Previously confirmed COM11 badge, read-only re-enumerated; port not opened",
+    "status": "explicit_consent_received_and_exact_components_flashed",
+    "target": "Previously confirmed COM11 badge, re-enumerated and exact USB/chip identity verified immediately before the approved write",
     "writes": [
       {
         "offset": "0x10000",
@@ -174,10 +174,12 @@
     "CMakeLists.txt": "d25b8ef716e4cc450818fa96e13f25b2939162715a62e3bb4d8e01dcf5f4724f"
   },
   "unverified": [
-    "On-device reboot without a date prompt",
-    "Physical selection contrast and all buttons",
-    "Actual panel/audio and long-term kitchen use",
-    "At least 3 actual v0.2 cooking sessions before any future release"
+    "Physical reboot/OK entry without date prompt, selection visibility and new-dish step entry",
+    "Actual speaker listening and extended hardware use",
+    "Nonempty cooking-history migration on hardware (this badge had no completed records)",
+    "At least three actual v0.2 cooking sessions before any future release",
+    "Fresh full-archive bootloader was not flashed or device-validated"
   ],
-  "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578"
+  "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578",
+  "device_validation_report": "offline-v02-device-validation-20261030.json"
 }

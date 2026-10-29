@@ -1,0 +1,64 @@
+{
+  "application_sha256": "72d1651f9a60ac5f42ced730fa12990aa4e9a77dffe35132e36efa82daf54ab4",
+  "resource_sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+  "application_elf_sha256": "2252b7d759eece74f0852bda684613731669531731a0b4b2f7213ac9224ded06",
+  "source": [
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/home-focus-main.png",
+      "sha256": "8a62ae38bd82db61886727817a5f9de810c2d69961e554133827d054b83032df",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/home-focus-fridge.png",
+      "sha256": "be26bf36e6d8190bedadae7b14809fffa74094269e8b38a21079906286c769d6",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/conditions-focus.png",
+      "sha256": "f69b889aa5cb4111dae02841ac69ae82e3ea14a6ec67267e733fa2b351e6b7db",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/settings-focus.png",
+      "sha256": "c87e7687b41d7f3f500fa555a4dd5c852e2e74aeca35069b55e849f04d479b94",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/book-new-dish.png",
+      "sha256": "088f2f6e4ae71fe677e06fff281b8c511be9ed0ceade4500ebce4be511ec0877",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/new-hero-octopus.png",
+      "sha256": "8771656cce91b482f050e5fe4397b2fb9e608f1a98944be74469a6418c2154f0",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    },
+    {
+      "file": "assets/kitchen/validation/v0.2/device-20261030/new-hero-clams.png",
+      "sha256": "672ccf5fb75d679c76fc148ebd3c51a26c50b7b3aaa2dc77263c87d213b79d3d",
+      "width": 240,
+      "height": 320,
+      "complete_rows": 320,
+      "source": "USB RGB565 capture from the running approved application; not a photograph"
+    }
+  ],
+  "capture_scope": "Isolated test mode, no persisted cooking or settings changes"
+}

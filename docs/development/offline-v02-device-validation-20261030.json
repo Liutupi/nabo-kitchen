@@ -1,0 +1,214 @@
+{
+  "version": "0.2.0-dev",
+  "checked_at": "2026-10-29T16:17:10.963253+00:00",
+  "status": "automated_device_checks_passed_awaiting_physical_acceptance",
+  "source_code_commit": "7bdab2f2776bf2cd1d653bc8982f36cb352de578",
+  "consent": {
+    "confirmed": true,
+    "scope": "Only approved application at 0x10000 and D2 resources at 0x200000; reboot and verification; no publication"
+  },
+  "build": "PASS",
+  "host_tests": "PASS",
+  "device_tests": {
+    "automated": "PASS",
+    "physical": "PENDING"
+  },
+  "physical_feedback": {
+    "user_question": "Can the timer be manually turned off?",
+    "guidance": "On the timer page, hold DOWN for about one second to cancel the selected timer; hold OK to pause/resume. Short DOWN on the step page scrolls to the bottom, then opens timers; double UP returns.",
+    "acceptance_provided": false
+  },
+  "target": {
+    "port": "COM11",
+    "previously_confirmed_identity_match": true,
+    "chip": "ESP32-C3",
+    "flash_bytes": 8388608,
+    "secure_boot": false,
+    "flash_encryption": false
+  },
+  "components": [
+    {
+      "offset": "0x10000",
+      "bytes": 512864,
+      "sha256": "72d1651f9a60ac5f42ced730fa12990aa4e9a77dffe35132e36efa82daf54ab4",
+      "readback_sha256": "72d1651f9a60ac5f42ced730fa12990aa4e9a77dffe35132e36efa82daf54ab4"
+    },
+    {
+      "offset": "0x200000",
+      "bytes": 3768770,
+      "sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+      "readback_sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d"
+    }
+  ],
+  "installed_bootloader": {
+    "bytes": 21024,
+    "sha256": "1d97dd4f57a5f51418ae25643657fce4bf62d4dfca7b5d27b14694ae412969c3",
+    "preserved": true
+  },
+  "installed_partition_table_sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+  "application_elf_sha256": "2252b7d759eece74f0852bda684613731669531731a0b4b2f7213ac9224ded06",
+  "erase_ends_exclusive": [
+    "0x8e000",
+    "0x599000"
+  ],
+  "protected_regions_unchanged_before_boot": {
+    "boot_table_nvs_phy": true,
+    "application_tail": true,
+    "resource_tail": true,
+    "files": true
+  },
+  "migration": {
+    "status": "PASS",
+    "legacy_version": 1,
+    "new_version": 2,
+    "sequence_before": 42,
+    "sequence_after": 43,
+    "unchanged_fields": {
+      "conditions": true,
+      "settings": true,
+      "has_saved": true,
+      "saved_conditions": true,
+      "saved_notes": true,
+      "saved_menu": true,
+      "history": true,
+      "cooked": true,
+      "sessions": true,
+      "favorites": true,
+      "wanted": true,
+      "excluded": true,
+      "fridge": true,
+      "shopping": true,
+      "timer_next_id": true,
+      "timers": true,
+      "draw_count": true
+    },
+    "history_records_available": 0,
+    "cooked_records_available": 0,
+    "draw_count": 2,
+    "calendar_placeholders": {
+      "day": 0,
+      "month": 1,
+      "streak": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "boot_observations": [
+    {
+      "observation_seconds": 24,
+      "matching_elf_prefix": "2252b7d75",
+      "resource_bytes": 3768770,
+      "recipes": 145,
+      "save_sequence": 43,
+      "storage_fault": false,
+      "clock_lost": false,
+      "crash_or_watchdog_observed": false,
+      "audio_write_errors": 0,
+      "physical_audio_acceptance": "not assessed"
+    },
+    {
+      "observation_seconds": 20,
+      "matching_elf_prefix": "2252b7d75",
+      "resource_bytes": 3768770,
+      "recipes": 145,
+      "save_sequence": 43,
+      "storage_fault": false,
+      "clock_lost": false,
+      "crash_or_watchdog_observed": false,
+      "audio_write_errors": 0,
+      "physical_audio_acceptance": "not assessed"
+    }
+  ],
+  "clean_capture": {
+    "accepted_frames": 7,
+    "rejected_incomplete_frames": 1,
+    "rejected_frames_retained": false,
+    "screens": [
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/home-focus-main.png",
+        "sha256": "8a62ae38bd82db61886727817a5f9de810c2d69961e554133827d054b83032df",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/home-focus-fridge.png",
+        "sha256": "be26bf36e6d8190bedadae7b14809fffa74094269e8b38a21079906286c769d6",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/conditions-focus.png",
+        "sha256": "f69b889aa5cb4111dae02841ac69ae82e3ea14a6ec67267e733fa2b351e6b7db",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/settings-focus.png",
+        "sha256": "c87e7687b41d7f3f500fa555a4dd5c852e2e74aeca35069b55e849f04d479b94",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/book-new-dish.png",
+        "sha256": "088f2f6e4ae71fe677e06fff281b8c511be9ed0ceade4500ebce4be511ec0877",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/new-hero-octopus.png",
+        "sha256": "8771656cce91b482f050e5fe4397b2fb9e608f1a98944be74469a6418c2154f0",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      },
+      {
+        "file": "assets/kitchen/validation/v0.2/device-20261030/new-hero-clams.png",
+        "sha256": "672ccf5fb75d679c76fc148ebd3c51a26c50b7b3aaa2dc77263c87d213b79d3d",
+        "width": 240,
+        "height": 320,
+        "complete_rows": 320,
+        "source": "USB RGB565 capture from the running approved application; not a photograph"
+      }
+    ],
+    "focus_interior_check": {
+      "box": [
+        16,
+        203,
+        108,
+        229
+      ],
+      "pixels": 2392,
+      "changed_pixels": 1984,
+      "warm_orange_pixels": 1840
+    },
+    "manual_visual_review": "PASS for seven complete USB frames; physical panel acceptance separate"
+  },
+  "isolated_test_exit": {
+    "restored_user_state": true,
+    "save_sequence": 43,
+    "test_mode": false,
+    "serial_closed": true,
+    "real_cooking_count_added": 0
+  },
+  "unverified": [
+    "Physical reboot/OK entry without date prompt, selection visibility and new-dish step entry",
+    "Actual speaker listening and extended hardware use",
+    "Nonempty cooking-history migration on hardware (this badge had no completed records)",
+    "At least three actual v0.2 cooking sessions before any future release",
+    "Fresh full-archive bootloader was not flashed or device-validated"
+  ],
+  "published": false
+}
