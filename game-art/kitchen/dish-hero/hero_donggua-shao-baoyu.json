@@ -1,0 +1,24 @@
+{
+  "id": "hero_donggua-shao-baoyu",
+  "recipe_id": "donggua-shao-baoyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_donggua-shao-baoyu-source.png",
+  "original_sha256": "3d145692d4184f8fa99c6e11514a0060c0a0e909da13fbd45ebdbfde7af3eec8",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "b023702c72c2e411caca400ed7572c75f9a90b7f6aebb4d79b32bd1e0efd0957",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_donggua-shao-baoyu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 冬瓜焖鲍鱼. Actual recipe ingredients: 鲍鱼肉 (main), 冬瓜 (main), 姜. Preparation reference: 冬瓜去皮切片，姜切丝；海鲜用独立生食刀板切片。 处理生海鲜后洗手并清洗刀板和接触台面。 热锅加1小勺油，放冬瓜和30毫升水煮至熟透，盛出。 加剩余油炒姜，放海鲜、20毫升水和生抽加盖煮熟。 海鲜最厚处达63℃且不透明，放回配菜拌匀盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "b1b3eee99e58ad0203cc3aeb9cce63f7c2daa1ea3a97e5c79842565903f1e649",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
