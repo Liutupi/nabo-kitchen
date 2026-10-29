@@ -1,0 +1,24 @@
+{
+  "id": "hero_shijin-zhengdan",
+  "recipe_id": "shijin-zhengdan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_shijin-zhengdan-source.png",
+  "original_sha256": "3ca8fe5a37922347b68fc526b5a00644a1c73008e10ae65f4f1fd02cb8c7fba2",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "ebd1df661ba4e38b8f18113500a15102cf53ac24890a337818f2177a0925e6ed",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_shijin-zhengdan. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 什锦蒸蛋. Actual recipe ingredients: 鸡蛋 (main), 胡萝卜 (main), 香菇 (main). Preparation reference: 胡萝卜和香菇切丁；蛋打散，加150毫升水。 蔬菜丁放500毫升沸水煮2分钟后沥水。 蛋液过滤入碗，加入熟蔬菜丁，盖耐热盘。 水开后中小火蒸约12分钟，蛋羹中心达71℃。 未达温度继续蒸，出锅淋生抽。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "b8e35a2c77b36fd9b1161168d6d82838897f67f811f65fbd71e7603580df29eb",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
