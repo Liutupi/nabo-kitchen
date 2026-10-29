@@ -77,7 +77,7 @@ const bookList=()=>recipes.filter(r=>ui.bookFilter===0||ui.bookFilter===1&&state
 const fridgeCategories=['meat','seafood','egg_tofu','veg','staple'];
 const fridgeCatalog=()=>ingredients.filter(i=>i.cat===fridgeCategories[ui.fridgeCategory||0]);
 function focusCount(){
-  return ({1:5,2:4,4:Math.max(1,ui.result.length),9:ui.fridgeItems?Math.max(1,fridgeCatalog().length):5,10:model.fridgeMatch(recipes,state.fridge,state.settings.excluded).length,11:state.shopping.length+1,12:bookList().length+1,13:ui.settingsMode==='exclude'?ingredients.length:7,7:Math.max(1,timers.items.length)})[ui.page]||1;
+  return ({1:6,2:4,4:Math.max(1,ui.result.length),9:ui.fridgeItems?Math.max(1,fridgeCatalog().length):5,10:model.fridgeMatch(recipes,state.fridge,state.settings.excluded).length,11:state.shopping.length+1,12:bookList().length+1,13:ui.settingsMode==='exclude'?ingredients.length:7,7:Math.max(1,timers.items.length)})[ui.page]||1;
 }
 function toggleFavorite(id){if(!id)return;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();toast(state.favorites.includes(id)?'已收藏':'已取消收藏');}
 function setting(index){
@@ -93,7 +93,7 @@ function setting(index){
   persist();paint();
 }
 function activate(name,index){
-  if(name==='home'){ui.focus=Number(index);if(ui.focus===0)go(2);else go([0,9,11,12,13][ui.focus]);}
+  if(name==='home'){ui.focus=Number(index);if(ui.focus===0)go(2);else go([0,9,11,12,13,7][ui.focus]);}
   else if(name==='condition'){ui.focus=Number(index);const prop=['people','minutes','combo'][ui.focus],values=[[1,2,3,4,5],[15,30,60,0],[0,1,2,3]][ui.focus];state.conditions[prop]=values[(values.indexOf(state.conditions[prop])+1)%values.length];persist();paint();}
   else if(name==='draw')draw();
   else if(name==='reroll')draw(true);
@@ -128,6 +128,7 @@ function dispatch(key,kind='short'){
     else if(key==='DOWN'&&ui.page===6)go(5);
     else if(key==='DOWN'&&ui.page===5){const paper=screen.querySelector('.paper.scroll');if(paper)paper.scrollTop=paper.scrollTop+paper.clientHeight>=paper.scrollHeight-2?0:paper.scrollTop+120;}
     else if(key==='OK'&&ui.page===7){const t=timers.items[ui.focus];if(t)timers.toggle(t.id);persist();paint();}
+    else if(key==='DOWN'&&ui.page===7){const t=timers.items[ui.focus];if(t)timers.cancel(t.id);ui.focus=Math.min(ui.focus,Math.max(0,timers.items.length-1));persist();paint();}
     else if(key==='OK'&&[4,12].includes(ui.page))toggleFavorite(ui.page===4?ui.recipeId:bookList()[ui.focus-1]?.id);
     return;
   }

@@ -51,6 +51,47 @@ test('timer limit, long OK pause/resume and top alarm route across any page',asy
   await call('dispatch','OK','long');assert.equal((await snap()).timers[0].status,'running');await call('visit',9);await call('advanceTime',8000);
   assert.equal(await page.locator('.alarm').count(),1);await call('dispatch','OK');assert.equal((await snap()).ui.page,7);await call('dispatch','OK');assert.equal((await snap()).timers.length,2);
 });
+
+test('a step timer stays reachable from home using physical keys and can be canceled',async()=>{
+  await call('reset',{progress:{'fanqie-chaodan':{index:3,visited:[0,1,2],timerSteps:[]}}});
+  await call('visit',6,'fanqie-chaodan');await call('dispatch','OK');
+  assert.equal((await snap()).timers.length,1);
+  await call('dispatch','UP','long');await call('dispatch','OK');
+  assert.equal((await snap()).ui.page,1);
+  assert.equal(await page.locator('[data-action=home]').count(),6);
+  await page.keyboard.press('ArrowUp');await page.waitForTimeout(350);
+  assert.equal((await snap()).ui.focus,5);
+  const entry=page.locator('[data-action=home][data-index="5"]');
+  assert.match(await entry.innerText(),/计时器/);
+  const bounds=await entry.boundingBox(),screen=await page.locator('#screen').boundingBox();
+  assert.ok(bounds.y>=screen.y+38&&bounds.y+bounds.height<=screen.y+292);
+  await page.locator('#screen').screenshot({path:path.join(proof,'P1-timer-entry.png')});
+  await page.keyboard.press('Enter');assert.equal((await snap()).ui.page,7);
+  await page.keyboard.down('Enter');await page.waitForTimeout(720);await page.keyboard.up('Enter');
+  assert.equal((await snap()).timers[0].status,'paused');
+  await page.keyboard.down('ArrowDown');await page.waitForTimeout(720);await page.keyboard.up('ArrowDown');
+  assert.equal((await snap()).timers.length,0);
+  assert.deepEqual((await snap()).state.progress['fanqie-chaodan'].timerSteps,[3]);
+  await call('dispatch','UP','double');assert.equal((await snap()).ui.page,1);
+  assert.equal((await snap()).ui.focus,5);
+  await page.keyboard.press('Enter');assert.equal((await snap()).ui.page,7);
+  assert.match(await page.locator('#screen').innerText(),/还没有计时器/);
+});
+
+test('home timer entry opens recovered paused timers and removes only the selected one',async()=>{
+  await call('reset');await call('setTimer',60,'first');await call('setTimer',90,'second');
+  await page.reload();await page.waitForFunction(()=>window.kitchenTest?.ready);
+  await call('dispatch','OK');
+  await page.locator('[data-action=home][data-index="5"]').click();
+  assert.equal((await snap()).ui.page,7);
+  assert.equal((await snap()).timers[0].status,'paused');
+  await call('dispatch','DOWN');const first=(await snap()).timers[0].id;
+  await call('dispatch','DOWN','long');
+  assert.deepEqual((await snap()).timers.map(t=>t.id),[first]);
+  assert.equal((await snap()).ui.focus,0);
+  await call('dispatch','UP','double');await page.locator('[data-action=home][data-index="5"]').click();
+  assert.equal((await snap()).timers[0].id,first);
+});
 test('fridge toggles, shopping merges, favorites and two clear confirmations persist',async()=>{
   await call('reset',{history:[{id:'fanqie-chaodan',day:'2026-10-28'}],cooked:{'fanqie-chaodan':{count:1,lastDay:'2026-10-28'}}});await call('visit',9);await call('dispatch','OK');await call('dispatch','OK','long');assert.equal((await snap()).ui.page,10);
   await call('visit',5,'fanqie-chaodan');await call('dispatch','DOWN');await call('dispatch','DOWN');let s=await snap();assert.equal(s.state.shopping.find(x=>x.id==='egg').qty,6);

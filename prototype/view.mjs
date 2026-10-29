@@ -57,11 +57,14 @@ export function render(v){
     const foods=['egg','tomato','choy_sum','fish_whole','tofu','pork_rib'].map((id,i)=>{const a=Math.PI*(1.07+i*.174);return at(Math.round(120+Math.cos(a)*94-14),Math.round(257+Math.sin(a)*84-14),28,28,image('ingredients/'+id,28,28));}).join('');
     body=`<div class="stars">${Array.from({length:24},(_,i)=>`<i style="left:${i*53%238}px;top:${i*37%150}px"></i>`).join('')}</div>${at(10,42,220,90,image('ui/logo_wordmark',220,90))}${at(10,148,26,26,icon('ui_lantern',26))}${at(204,148,26,26,icon('ui_lantern',26))}${at(24,136,192,20,'今晚吃什么，我来想','center dim small')}${foods}${at(74,177,94,143,portrait())}`;
   }else if(u.page===1){
-    body=at(0,38,240,70,face(now-u.lastActivity>30000?'sleepy':'happy',58)+`<div class="bubble"><b>${now-u.lastActivity>30000?'Zzz…':'今晚吃点啥？'}</b><small>${s.daily.result?'上次菜单已保留':'随时颠勺选菜'} · 不限次</small></div>`,'welcome');
-    body+=at(8,114,224,58,action('home',icon('method_stir_fry',36)+'<span><b>今天吃什么</b><small>颠一下锅，马上决定</small></span>','hero '+(u.focus===0?'selected':''),0));
-    [['冰箱','有啥做啥','ui_lantern_dot','#5DB7F2'],['买菜单',`${s.shopping.filter(x=>!x.bought).length} 样待买`,'prop_bowl','#4FC98A'],['我的菜谱',`${st.unique} / ${recipes.length}`,'badge_1','#FFC93F'],['设置','口味 · 声音','ui_timer_icon','#C5C3D3']].forEach((r,i)=>{
-      body+=at(8+(i%2)*116,180+Math.trunc(i/2)*50,108,44,action('home',`<img src="${ART+(r[2].startsWith('prop')?'props/':'icons/')+r[2]}.png" width="24" height="24"><span>${r[0]}<small>${r[1]}</small></span>`,'menu-card '+(u.focus===i+1?'selected':''),i+1),'',`--acc:${r[3]}`);
-    });footer='↑↓ 选择 · OK 进入 · 长 OK 颠勺';
+    body=at(0,38,240,66,face(now-u.lastActivity>30000?'sleepy':'happy',54)+`<div class="bubble"><b>${now-u.lastActivity>30000?'Zzz…':'今晚吃点啥？'}</b><small>${s.daily.result?'上次菜单已保留':'随时颠勺选菜'} · 不限次</small></div>`,'welcome');
+    body+=at(8,112,224,44,action('home',icon('method_stir_fry',28)+'<span><b>今天吃什么</b></span>','hero '+(u.focus===0?'selected':''),0));
+    [['冰箱','有啥做啥','ui_fridge','#5DB7F2'],['买菜单',`${s.shopping.filter(x=>!x.bought).length} 样待买`,'ui_shopping','#4FC98A'],['我的菜谱',`${st.unique} / ${recipes.length}`,'ui_recipe_book','#FFC93F'],['设置','口味 · 声音','ui_settings','#C5C3D3']].forEach((r,i)=>{
+      body+=at(8+(i%2)*116,164+Math.trunc(i/2)*48,108,40,action('home',`<img src="${ART+(r[2].startsWith('prop')?'props/':'icons/')+r[2]}.png" width="24" height="24"><span>${r[0]}</span>`,'menu-card '+(u.focus===i+1?'selected':''),i+1),'',`--acc:${r[3]}`);
+    });
+    const timerLabel=alarm?'时间到':timed?timeText(timers.remaining(timed)):timers.items.length?'已暂停':'0';
+    body+=at(8,260,224,32,action('home',`<span>${clockIcon(20)} 计时器</span><b>${timerLabel}</b>`,'setting-row '+(u.focus===5?'selected':''),5));
+    footer='↑↓ 选择 · OK 进入 · 长 OK 颠勺';
   }else if(u.page===2){
     const values=[s.conditions.people===5?'5+':s.conditions.people,s.conditions.minutes?s.conditions.minutes+' 分钟':'不限',COMBOS[s.conditions.combo]];
     ['吃几个人','有多少时间','怎么吃'].forEach((name,i)=>body+=at(8,52+i*52,224,44,action('condition',`<span>${name}</span><b>${values[i]}</b>`,'setting-row '+(u.focus===i?'selected':''),i)));
@@ -97,7 +100,7 @@ export function render(v){
     body=at(46,46,148,148,`<svg width="148" height="148" viewBox="0 0 148 148"><circle cx="74" cy="74" r="64" fill="none" stroke="#2C2845" stroke-width="14"/><circle cx="74" cy="74" r="64" fill="none" stroke="${t?.status==='done'?'#E65152':'#5DB7F2'}" stroke-width="14" stroke-linecap="round" stroke-dasharray="402" stroke-dashoffset="${t?402-Math.trunc(timers.remaining(t)*402/t.totalMs):402}" transform="rotate(-90 74 74)"/></svg>`);
     body+=at(0,96,240,44,t?timeText(timers.remaining(t)):'00:00','timer-number number')+at(20,140,200,18,t?esc(t.label)+(t.status==='paused'?' · 已暂停':''):'还没有计时器','center dim small');
     body+=timers.items.map((x,i)=>at(8,202+i*27,138,24,action('timer-select',`${i+1} ${esc(x.label)} <b>${timeText(timers.remaining(x))}</b>`,'timer-row '+(x.id===t?.id?'selected':''),i))).join('')+at(154,170,84,150,portrait());
-    footer='↑↓ 切换 · 长 OK 暂停 / 继续';
+    footer='↑↓切换 · 长OK暂停/继续 · 长↓取消';
   }else if(u.page===8){
     body=at(40,48,160,120,dish(recipe,160,120))+at(142,44,64,64,icon('ui_stamp_done',64)+'<b>完成</b>','stamp');
     body+=at(12,176,220,26,`${esc(recipe.name)} <small>第 ${s.cooked[recipe.id]?.count||0} 次</small>`,'dish-name')+at(12,208,150,20,`我的菜谱 ${st.unique} / ${recipes.length}`,'dim small')+at(12,238,132,22,`累计做饭 ${st.total} 次`,'chip')+at(154,170,84,150,portrait())+at(110,148,82,26,'吃饭了！','bubble small');footer='OK 回吧台';
