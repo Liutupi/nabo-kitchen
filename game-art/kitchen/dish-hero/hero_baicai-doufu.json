@@ -1,0 +1,24 @@
+{
+  "id": "hero_baicai-doufu",
+  "recipe_id": "baicai-doufu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_baicai-doufu-source.png",
+  "original_sha256": "e0c016fb0375dffc2648ff4fd32f8abaa58f4c74c78ddd071c0b4dd29d892b79",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "43a57ed7f5081a0e54be444b54c6b99c359c13bcf464d58819deb07115006272",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baicai-doufu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白菜炖豆腐. Actual recipe ingredients: 大白菜 (main), 豆腐 (main), 姜. Preparation reference: 白菜洗净切段，豆腐切块，姜切丝。 锅放油炒香姜丝，加入白菜炒软。 加豆腐和水煮开，小火炖8分钟。 确认白菜和豆腐热透，加盐出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "7fccf309abc64d5c73ee7c3fc4138401bc6c2ca92cf5ee1a195b585cb1e75814",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

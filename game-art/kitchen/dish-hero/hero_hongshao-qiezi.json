@@ -1,0 +1,24 @@
+{
+  "id": "hero_hongshao-qiezi",
+  "recipe_id": "hongshao-qiezi",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_hongshao-qiezi-source.png",
+  "original_sha256": "b716cfac263c455a4d3f6e246420625fbff95733a796355823ca811c69d7473e",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "e2892cef45145f399f63f1296d91d25f4c89ffe8c00cc2a58202e8a0abddee79",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_hongshao-qiezi. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 红烧茄子. Actual recipe ingredients: 茄子 (main), 蒜. Preparation reference: 茄子切3厘米块；蒜剁末，淀粉加2大勺水调匀。 锅内放油，下茄子中火煎5分钟，中途翻动。 加入蒜、生抽、老抽、糖、盐和剩余清水。 盖盖小火焖6分钟，至茄子完全软熟。 淋入淀粉水，中火翻匀至汁稍浓，盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "8cde0aafcacd76b8d402fe82cda2b5af3052e9214bf9c2dd324a9a77abe3b1ba",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

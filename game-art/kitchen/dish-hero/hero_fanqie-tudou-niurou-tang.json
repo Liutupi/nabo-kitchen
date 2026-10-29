@@ -1,0 +1,24 @@
+{
+  "id": "hero_fanqie-tudou-niurou-tang",
+  "recipe_id": "fanqie-tudou-niurou-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_fanqie-tudou-niurou-tang-source.png",
+  "original_sha256": "743f4c2e5014b64212f49a10d3058ecea4ba6913c902d4206aeb92332aac8243",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "03c47ea93e8c5ac486dc5fac5ac270b060874e4e78ee33c7ba19063ede1194ef",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_fanqie-tudou-niurou-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 番茄土豆牛肉汤. Actual recipe ingredients: 牛肉 (main), 番茄 (main), 土豆 (main), 姜. Preparation reference: 牛肉切2厘米块；番茄切块，土豆去皮切块，姜切片。 牛肉冷水下锅，煮开3分钟，捞出沥干。 汤锅放油，下番茄中火炒2分钟。 加入牛肉、姜、料酒和1800毫升热水，煮开。 盖盖小火煮60分钟，至牛肉熟软。 加入土豆，小火再煮15分钟至土豆熟透，加盐。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "31c73cdd82783e869a01aba8f77dc03086ae4f20bc251f872a586d6a40174759",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

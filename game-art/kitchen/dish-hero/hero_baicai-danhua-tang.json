@@ -1,0 +1,24 @@
+{
+  "id": "hero_baicai-danhua-tang",
+  "recipe_id": "baicai-danhua-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_baicai-danhua-tang-source.png",
+  "original_sha256": "7abb4572e8e8e64fe5ce14fcd301dfb7c37a79dcd9178d43c9e916cfc46014ef",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "11b590fbf4881dc6d69a8f05dbb431fa814ddd77c2d1aa5475aea0b037292f96",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_baicai-danhua-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 白菜蛋花汤. Actual recipe ingredients: 大白菜 (main), 鸡蛋 (main), 葱. Preparation reference: 白菜洗净切细丝，鸡蛋打散，葱切碎。 水煮开，加入白菜煮5分钟至熟。 缓慢倒入蛋液，继续煮至蛋花完全凝固。 加盐和葱花，煮开后出锅。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "65929d659f6f26efb9799f0aa010526594b1b1fa4e9f0a037d52dbbeac7309a4",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
