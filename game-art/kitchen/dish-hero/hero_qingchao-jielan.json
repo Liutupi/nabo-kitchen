@@ -1,0 +1,27 @@
+{
+  "id": "hero_qingchao-jielan",
+  "recipe_id": "qingchao-jielan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingchao-jielan-source.png",
+  "original_sha256": "2222ca85b30ecdad17ce8e6a1876e927751c22a5a44f2bcec516c67582dda087",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "4bf0a62e1e64137b6b5b8ee5ce2979d5d25920ea62fb01d00caea563619cffdd",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingchao-jielan. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 清炒芥兰. Actual recipe ingredients: 芥兰 (main), 蒜. Seasonings: 食用油, 白糖, 料酒, 盐. Preparation reference: 芥兰削去粗梗的老皮，斜切成段；蒜切片。 烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。 热锅放油，炒香蒜片，下芥兰大火翻炒。 加盐和少许糖，沿锅边淋料酒，翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4e3e0523611a690fdaf857a3438037fbf290101dfba3f7598bcd95cf5af3eee1",
+  "recipe_lf_sha256": "8af6de26e754f9c6da58c3cc99b4595c8b7f451865302fcb7342f6de23e89817",
+  "generation_recipe_lf_sha256": "c9472494958ac1eab0ce2ebb3cfe1b449946a8f38d0a1dea2ffa4a0944bc8794",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

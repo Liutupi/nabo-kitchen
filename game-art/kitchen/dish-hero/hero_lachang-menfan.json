@@ -1,0 +1,27 @@
+{
+  "id": "hero_lachang-menfan",
+  "recipe_id": "lachang-menfan",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_lachang-menfan-source.png",
+  "original_sha256": "51db81bc736a764bd409d63f06120c10c2efa18e779d19828b58082320f7fe11",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "0e1684298e29376abcfa89f464a2513b5f4796be2eab713f3323208429e6bb61",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_lachang-menfan. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 腊肠焖饭. Actual recipe ingredients: 米饭 (main), 腊肠 (main), 葱. Seasonings: 生抽, 食用油. Preparation reference: 大米淘洗干净，按平常煮饭的水量加水，浸泡20分钟。 腊肠斜切成片，铺在米上。 按煮饭键煮熟，跳键后再焖10分钟。 淋上生抽和几滴油，撒葱花拌匀。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "ba92cb69206766e7d31aecd7538ce780fa1b39a020ba8e888edb57ebc3f7afa7",
+  "recipe_lf_sha256": "e27bc7c172a8046896574efde93d0cbd66fec4d952bb035b0970d33d29c751ce",
+  "generation_recipe_lf_sha256": "ff571a322be7f2b1de06404391f6fca5ac358575742cb909a91598eda7079279",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

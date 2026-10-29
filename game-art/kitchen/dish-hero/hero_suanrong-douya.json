@@ -1,0 +1,27 @@
+{
+  "id": "hero_suanrong-douya",
+  "recipe_id": "suanrong-douya",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_suanrong-douya-source.png",
+  "original_sha256": "eba3aae317dfabaaf56fbd9cfdf6b203b02cdea6c86f20086c37ab72cb64e4e2",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "ede9dc4ae0be224bf8420f7d28ec4b66a1a843317828cb21b313e84199238bec",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_suanrong-douya. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 蒜蓉炒豆芽. Actual recipe ingredients: 豆芽 (main), 蒜, 葱. Seasonings: 食用油, 醋, 盐. Preparation reference: 豆芽洗净，去掉豆壳，沥干；蒜切末，葱切段。 热锅放油，炒香蒜末。 下豆芽大火翻炒1分钟。 沿锅边淋少许醋，加盐和葱段翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "efd8974abcf55fcf42ccbc1fe8b41fbaa5c63b88f59757e395c0664df05fdaa6",
+  "recipe_lf_sha256": "5b1897e5a8ef0e668efe7e235eb564b5f64ccd09902843012b213fe7d946b9f2",
+  "generation_recipe_lf_sha256": "c1760871c37b0f7042462878f42bf9472028d197e5aae1ed6665fc2eb951c2a5",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

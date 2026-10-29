@@ -1,0 +1,27 @@
+{
+  "id": "hero_jinzhengu-feiniu",
+  "recipe_id": "jinzhengu-feiniu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_jinzhengu-feiniu-source.png",
+  "original_sha256": "e8be77bffc33bab2b984e05463309507bafd8bc74f9cfe6d3071c719a9779f72",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "3863d1f6a229464d05f09bfac4145cc623141569df267dac50daed5e3240f55a",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_jinzhengu-feiniu. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 金针菇肥牛. Actual recipe ingredients: 牛肉 (main), 金针菇 (main), 蒜, 辣椒. Seasonings: 食用油, 生抽, 蚝油, 清水, 盐. Preparation reference: 金针菇去根撕散，蒜切末，辣椒切圈。 锅放油，炒香蒜末和辣椒，加水、生抽和蚝油煮开。 下金针菇煮2分钟，捞出铺在碗底。 汤里下肥牛片，烫到变色立刻关火，连汤倒进碗里。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "a5119251d1616e2a4f07aa038d1c175ef84e6f7d7014753daf3a4a31fc810e57",
+  "recipe_lf_sha256": "8e0542f4aa78eb5e88423abc807c9ac04a8d09ce874fd153c1a7aa36a81d8e9d",
+  "generation_recipe_lf_sha256": "d8b9a8a6f097f250c5eb6030a94497b1b91991a28ae23c1bbc385beeca520cdb",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

@@ -1,77 +1,77 @@
 {
- "id": "qingchao-bocai",
- "name": "清炒菠菜",
- "course": [
-  "veg"
- ],
- "cuisine": "家常",
- "tags": [
-  "快手",
-  "清淡"
- ],
- "minutes": 10,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "spinach",
-   "qty": 400,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  }
- ],
- "seasonings": [
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  },
-  {
-   "id": "salt",
-   "qty": "适量"
-  }
- ],
- "steps": [
-  {
-   "text": "菠菜洗净切段，梗和叶分开；蒜切末。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "烧开水，菠菜焯10秒，捞出挤干。",
-   "method": "blanch",
-   "heat": "high",
-   "timer": 10,
-   "tip": "焯一下去涩味"
-  },
-  {
-   "text": "热锅放油，炒香蒜末，下菠菜大火翻炒30秒。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 30
-  },
-  {
-   "text": "加盐翻匀出锅。",
-   "method": "stir_fry",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "clear",
-  "layers": [
-   "lettuce__stirfried"
+  "id": "qingchao-bocai",
+  "name": "清炒菠菜",
+  "course": [
+    "veg"
   ],
-  "hero": false,
-  "garnish": [
-   "garlic"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "家常",
+  "tags": [
+    "快手",
+    "清淡"
+  ],
+  "minutes": 10,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "spinach",
+      "qty": 400,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    },
+    {
+      "id": "salt",
+      "qty": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "text": "菠菜洗净切段，梗和叶分开；蒜切末。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "烧开水，菠菜焯10秒，捞出挤干。",
+      "method": "blanch",
+      "heat": "high",
+      "timer": 10,
+      "tip": "焯一下去涩味"
+    },
+    {
+      "text": "热锅放油，炒香蒜末，下菠菜大火翻炒30秒。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 30
+    },
+    {
+      "text": "加盐翻匀出锅。",
+      "method": "stir_fry",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "clear",
+    "layers": [
+      "lettuce__stirfried"
+    ],
+    "hero": true,
+    "garnish": [
+      "garlic"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

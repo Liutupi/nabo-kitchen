@@ -1,77 +1,77 @@
 {
- "id": "qingchao-sigua",
- "name": "清炒丝瓜",
- "course": [
-  "veg"
- ],
- "cuisine": "家常",
- "tags": [
-  "快手",
-  "清淡"
- ],
- "minutes": 10,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "loofah",
-   "qty": 2,
-   "unit": "根",
-   "main": true
-  },
-  {
-   "id": "garlic",
-   "qty": 2,
-   "unit": "瓣"
-  }
- ],
- "seasonings": [
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  },
-  {
-   "id": "salt",
-   "qty": "适量"
-  }
- ],
- "steps": [
-  {
-   "text": "丝瓜刨皮，切滚刀块；蒜切末。",
-   "method": "cut",
-   "heat": "off",
-   "tip": "切好马上炒不发黑"
-  },
-  {
-   "text": "热锅放油，炒香蒜末，下丝瓜大火炒1分钟。",
-   "method": "stir_fry",
-   "heat": "high",
-   "timer": 60
-  },
-  {
-   "text": "加2大勺水，盖盖焖1分钟到变软。",
-   "method": "braise",
-   "heat": "mid",
-   "timer": 60
-  },
-  {
-   "text": "加盐翻匀出锅。",
-   "method": "stir_fry",
-   "heat": "off"
-  }
- ],
- "dish": {
-  "vessel": "plate",
-  "sauce": "clear",
-  "layers": [
-   "cucumber__smashed"
+  "id": "qingchao-sigua",
+  "name": "清炒丝瓜",
+  "course": [
+    "veg"
   ],
-  "hero": false,
-  "garnish": [
-   "garlic"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "家常",
+  "tags": [
+    "快手",
+    "清淡"
+  ],
+  "minutes": 10,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "loofah",
+      "qty": 2,
+      "unit": "根",
+      "main": true
+    },
+    {
+      "id": "garlic",
+      "qty": 2,
+      "unit": "瓣"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    },
+    {
+      "id": "salt",
+      "qty": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "text": "丝瓜刨皮，切滚刀块；蒜切末。",
+      "method": "cut",
+      "heat": "off",
+      "tip": "切好马上炒不发黑"
+    },
+    {
+      "text": "热锅放油，炒香蒜末，下丝瓜大火炒1分钟。",
+      "method": "stir_fry",
+      "heat": "high",
+      "timer": 60
+    },
+    {
+      "text": "加2大勺水，盖盖焖1分钟到变软。",
+      "method": "braise",
+      "heat": "mid",
+      "timer": 60
+    },
+    {
+      "text": "加盐翻匀出锅。",
+      "method": "stir_fry",
+      "heat": "off"
+    }
+  ],
+  "dish": {
+    "vessel": "plate",
+    "sauce": "clear",
+    "layers": [
+      "cucumber__smashed"
+    ],
+    "hero": true,
+    "garnish": [
+      "garlic"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

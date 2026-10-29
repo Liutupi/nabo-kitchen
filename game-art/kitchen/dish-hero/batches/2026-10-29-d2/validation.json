@@ -1,9 +1,9 @@
 {
   "batch": "2026-10-29-d2",
-  "delivered_new_heroes": 12,
-  "remaining_new_heroes": 24,
+  "delivered_new_heroes": 24,
+  "remaining_new_heroes": 12,
   "recipe_count": 145,
-  "actual_complete_heroes": 121,
+  "actual_complete_heroes": 133,
   "status": "wip",
   "checks": [
     {
@@ -305,21 +305,309 @@
         462
       ],
       "hashes_match": true
+    },
+    {
+      "id": "hero_jinzhengu-feiniu",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        55,
+        31,
+        585,
+        453
+      ],
+      "all_nonzero_alpha_bbox": [
+        32,
+        11,
+        599,
+        458
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_lachang-menfan",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        49,
+        43,
+        592,
+        438
+      ],
+      "all_nonzero_alpha_bbox": [
+        46,
+        41,
+        594,
+        441
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_lianou-paigu-tang",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        70,
+        37,
+        570,
+        444
+      ],
+      "all_nonzero_alpha_bbox": [
+        45,
+        34,
+        572,
+        466
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_lu-zhujiao",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        27,
+        41,
+        612,
+        441
+      ],
+      "all_nonzero_alpha_bbox": [
+        25,
+        38,
+        615,
+        466
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_nangua-zheng-paigu",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        52,
+        36,
+        583,
+        440
+      ],
+      "all_nonzero_alpha_bbox": [
+        50,
+        34,
+        586,
+        444
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_qingchao-bocai",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        62,
+        43,
+        576,
+        439
+      ],
+      "all_nonzero_alpha_bbox": [
+        39,
+        40,
+        596,
+        448
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_qingchao-jielan",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        54,
+        39,
+        583,
+        443
+      ],
+      "all_nonzero_alpha_bbox": [
+        52,
+        37,
+        585,
+        446
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_qingchao-sigua",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        51,
+        37,
+        588,
+        438
+      ],
+      "all_nonzero_alpha_bbox": [
+        48,
+        28,
+        591,
+        466
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_shourou-zhou",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        64,
+        35,
+        574,
+        447
+      ],
+      "all_nonzero_alpha_bbox": [
+        62,
+        32,
+        576,
+        451
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_shousi-baocai",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        55,
+        40,
+        581,
+        438
+      ],
+      "all_nonzero_alpha_bbox": [
+        52,
+        38,
+        583,
+        443
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_sigua-dan-tang",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        54,
+        29,
+        585,
+        462
+      ],
+      "all_nonzero_alpha_bbox": [
+        52,
+        27,
+        588,
+        465
+      ],
+      "hashes_match": true
+    },
+    {
+      "id": "hero_suanrong-douya",
+      "rgba": true,
+      "size": [
+        640,
+        480
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "solid_content_bbox_alpha_128": [
+        50,
+        43,
+        589,
+        444
+      ],
+      "all_nonzero_alpha_bbox": [
+        47,
+        41,
+        592,
+        446
+      ],
+      "hashes_match": true
     }
   ],
   "missing_recipe_ids": [
-    "jinzhengu-feiniu",
-    "lachang-menfan",
-    "lianou-paigu-tang",
-    "lu-zhujiao",
-    "nangua-zheng-paigu",
-    "qingchao-bocai",
-    "qingchao-jielan",
-    "qingchao-sigua",
-    "shourou-zhou",
-    "shousi-baocai",
-    "sigua-dan-tang",
-    "suanrong-douya",
     "suanrong-zheng-baoyu",
     "suanrong-zheng-qingkou",
     "suanrong-zheng-shanbei",

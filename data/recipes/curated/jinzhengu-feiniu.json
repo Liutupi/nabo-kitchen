@@ -1,104 +1,104 @@
 {
- "id": "jinzhengu-feiniu",
- "name": "金针菇肥牛",
- "course": [
-  "meat"
- ],
- "cuisine": "家常",
- "tags": [
-  "快手",
-  "下饭",
-  "微辣"
- ],
- "minutes": 15,
- "difficulty": 1,
- "servings": 2,
- "ingredients": [
-  {
-   "id": "beef",
-   "qty": 200,
-   "unit": "克",
-   "main": true,
-   "note": "肥牛片"
-  },
-  {
-   "id": "enoki",
-   "qty": 200,
-   "unit": "克",
-   "main": true
-  },
-  {
-   "id": "garlic",
-   "qty": 3,
-   "unit": "瓣"
-  },
-  {
-   "id": "chili",
-   "qty": 1,
-   "unit": "个"
-  }
- ],
- "seasonings": [
-  {
-   "id": "oil",
-   "qty": "1大勺"
-  },
-  {
-   "id": "soy_light",
-   "qty": "2大勺"
-  },
-  {
-   "id": "oyster",
-   "qty": "1小勺"
-  },
-  {
-   "id": "water",
-   "qty": "400毫升"
-  },
-  {
-   "id": "salt",
-   "qty": "适量"
-  }
- ],
- "steps": [
-  {
-   "text": "金针菇去根撕散，蒜切末，辣椒切圈。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "锅放油，炒香蒜末和辣椒，加水、生抽和蚝油煮开。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 60
-  },
-  {
-   "text": "下金针菇煮2分钟，捞出铺在碗底。",
-   "method": "boil",
-   "heat": "high",
-   "timer": 120
-  },
-  {
-   "text": "汤里下肥牛片，烫到变色立刻关火，连汤倒进碗里。",
-   "method": "boil",
-   "heat": "high",
-   "timer": 30,
-   "tip": "变色就关火"
-  }
- ],
- "dish": {
-  "vessel": "bowl",
-  "sauce": "clear_soup",
-  "layers": [
-   "beef__slices_stirfried"
+  "id": "jinzhengu-feiniu",
+  "name": "金针菇肥牛",
+  "course": [
+    "meat"
   ],
-  "hero": false,
-  "garnish": [
-   "chili_ring",
-   "scallion"
-  ]
- },
- "source": "curated",
- "author": "",
- "version": 1
+  "cuisine": "家常",
+  "tags": [
+    "快手",
+    "下饭",
+    "微辣"
+  ],
+  "minutes": 15,
+  "difficulty": 1,
+  "servings": 2,
+  "ingredients": [
+    {
+      "id": "beef",
+      "qty": 200,
+      "unit": "克",
+      "main": true,
+      "note": "肥牛片"
+    },
+    {
+      "id": "enoki",
+      "qty": 200,
+      "unit": "克",
+      "main": true
+    },
+    {
+      "id": "garlic",
+      "qty": 3,
+      "unit": "瓣"
+    },
+    {
+      "id": "chili",
+      "qty": 1,
+      "unit": "个"
+    }
+  ],
+  "seasonings": [
+    {
+      "id": "oil",
+      "qty": "1大勺"
+    },
+    {
+      "id": "soy_light",
+      "qty": "2大勺"
+    },
+    {
+      "id": "oyster",
+      "qty": "1小勺"
+    },
+    {
+      "id": "water",
+      "qty": "400毫升"
+    },
+    {
+      "id": "salt",
+      "qty": "适量"
+    }
+  ],
+  "steps": [
+    {
+      "text": "金针菇去根撕散，蒜切末，辣椒切圈。",
+      "method": "cut",
+      "heat": "off"
+    },
+    {
+      "text": "锅放油，炒香蒜末和辣椒，加水、生抽和蚝油煮开。",
+      "method": "stir_fry",
+      "heat": "mid",
+      "timer": 60
+    },
+    {
+      "text": "下金针菇煮2分钟，捞出铺在碗底。",
+      "method": "boil",
+      "heat": "high",
+      "timer": 120
+    },
+    {
+      "text": "汤里下肥牛片，烫到变色立刻关火，连汤倒进碗里。",
+      "method": "boil",
+      "heat": "high",
+      "timer": 30,
+      "tip": "变色就关火"
+    }
+  ],
+  "dish": {
+    "vessel": "bowl",
+    "sauce": "clear_soup",
+    "layers": [
+      "beef__slices_stirfried"
+    ],
+    "hero": true,
+    "garnish": [
+      "chili_ring",
+      "scallion"
+    ]
+  },
+  "source": "curated",
+  "author": "",
+  "version": 1
 }

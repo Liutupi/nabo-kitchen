@@ -1,0 +1,27 @@
+{
+  "id": "hero_shourou-zhou",
+  "recipe_id": "shourou-zhou",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_shourou-zhou-source.png",
+  "original_sha256": "ed0f969fdab9e77123891555ad5c75505d6b444c80caa6bacc0007620ac74a2a",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "57306b11498b85fbf3b1853b6bcfcd8aae7cc26eef9cfb234ce3f2e4c3e3bc7d",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_shourou-zhou. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 瘦肉粥. Actual recipe ingredients: 米饭 (main), 瘦肉 (main), 姜, 葱. Seasonings: 生抽, 淀粉, 食用油, 盐, 清水. Preparation reference: 大米洗净，加几滴油拌匀；瘦肉切薄片，加生抽和淀粉抓匀。 1500毫升水煮开，下米，再开后转小火煮35分钟。 放入肉片和姜丝，轻轻推散，煮到肉片变白。 加盐，撒葱花出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "54d7372d4cee39b4f9829e730731f101e30006d32fdfb108158c81cb6b9b81c9",
+  "recipe_lf_sha256": "a01fe895b55225c04b55ae9ff386aeb2da0a537232d651d797bb670ebed4a505",
+  "generation_recipe_lf_sha256": "44f84a07b0f8569f45f9e3ad7091b5f91e0cec37271894dc92f5e087778acf9a",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}

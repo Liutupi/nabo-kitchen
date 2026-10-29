@@ -1,0 +1,27 @@
+{
+  "id": "hero_lu-zhujiao",
+  "recipe_id": "lu-zhujiao",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_lu-zhujiao-source.png",
+  "original_sha256": "c8379235134ffdf45629bfec6417d1ffe614759f5f5fb9ae203a47b7eead7ded",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "6819f3451cc2289bd3d81afcfd7785d75e8f0d0fb0d92f384dfe012f5c790959",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_fanqie-chaodan.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_lu-zhujiao. Attached image is STYLE REFERENCE ONLY: match the approved cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 卤猪脚. Actual recipe ingredients: 猪脚 (main), 姜, 葱. Seasonings: 冰糖, 生抽, 老抽, 料酒, 八角, 食用油. Preparation reference: 猪脚斩块，冷水下锅加料酒煮5分钟，捞出洗净。 锅放油和冰糖，小火炒化，下猪脚翻炒上色。 加姜葱、八角、生抽、老抽，加热水没过猪脚。 煮开后小火卤90分钟，筷子能轻松扎透猪皮。 开盖大火收汁到黏稠，翻匀出锅。 Illustrate only the FINISHED cooked dish accurately. Keep its distinctive main ingredients and cooking method recognizable; do not copy the reference food or add its ingredients unless this recipe includes them. Serve in a dark brown Chinese clay casserole with short side handles. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas, compose for 640x480 with vessel center (320,270), complete vessel and any handles inside the frame, generous transparent margins on every side. Single isolated dish only. No anthropomorphic food faces, no characters, no utensils, no labels, no text, no logos, no scenery, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "8efd69b461a7ce9e18d02aa2318c60e1dae4e571e8d9ac154b843f57f8b9ff43",
+  "recipe_lf_sha256": "5b699e8977299c6c2917c77504d92036b791d81fba001d365644d3c692e94189",
+  "generation_recipe_lf_sha256": "c0b81b1696312c36f9d52a03c9bd1b473c36a0e6bfe83c7d92ef31fc887fa8f6",
+  "processing": "Uniform Lanczos resize of the entire original RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。",
+  "recipe_hash_note": "Current recipe hashes include hero=true; the generation hash preserves the pre-delivery availability flag. Cooking content is unchanged."
+}
