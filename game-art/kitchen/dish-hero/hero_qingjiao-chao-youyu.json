@@ -1,0 +1,24 @@
+{
+  "id": "hero_qingjiao-chao-youyu",
+  "recipe_id": "qingjiao-chao-youyu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingjiao-chao-youyu-source.png",
+  "original_sha256": "6dc49942f5c4379c66a47c799197d6cdf58c137139a25d48b68313621a333bd0",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "141fe5d191c882c1b3c1e7d3f9ef2fd5a8dc1b32b7fb4e92c86136c4a952cee6",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-chao-youyu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒炒鱿鱼. Actual recipe ingredients: 鱿鱼 (main), 青椒 (main), 姜. Preparation reference: 青椒去籽切片，姜切丝；生熟刀板分开。 鱿鱼去内脏、软骨和眼嘴，切段；处理后洗手洗具。 锅加油炒香姜丝，放鱿鱼翻炒。 加入青椒、水和生抽，翻炒至配菜熟透。 鱿鱼肉不透明、扎实且最厚处达63℃，不足继续加热。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "bc39789648a5240b4927d0193e698be630f195773c71cce427308bc0102c6bc3",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

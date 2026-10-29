@@ -1,0 +1,24 @@
+{
+  "id": "hero_qiezi-roumo",
+  "recipe_id": "qiezi-roumo",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qiezi-roumo-source.png",
+  "original_sha256": "b236b9d55c54f90be7bb596cfcd597c70b88f4bbcf20c6ba6c788a5c669d3846",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "f723e34e65a75e98e8ebff5579d8c0d4a35ff3984f56b7b1300068c6ab211c99",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qiezi-roumo. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 肉末烧茄子. Actual recipe ingredients: 肉末 (main), 茄子 (main), 蒜. Preparation reference: 茄子切条，蒜切末；生肉和蔬菜分开处理。 锅放1小勺油炒肉末至散开变色，盛出。 另加1小勺油炒蒜和茄子，加水焖软。 倒回肉末和生抽煮透，肉末中心至少71℃。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "6d0029a35b45e4e38da72b5d57183fbd60594c33240c5706f06f37643de17ecc",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

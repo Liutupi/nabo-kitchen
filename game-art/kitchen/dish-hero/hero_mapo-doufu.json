@@ -1,0 +1,24 @@
+{
+  "id": "hero_mapo-doufu",
+  "recipe_id": "mapo-doufu",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_mapo-doufu-source.png",
+  "original_sha256": "05d1e18f8de9d85aecc87fd8c317426358facf3fd9ef2b09549ecd412c28c55d",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "957c50908c52083adec63a166d90d5cc0e261d5e18c80945306b2061d8211dd0",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_mapo-doufu. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 麻婆豆腐. Actual recipe ingredients: 豆腐 (main), 肉末 (main), 蒜, 葱. Preparation reference: 豆腐切块，蒜葱切末；处理肉末的器具单独清洗。 锅中放油，中火炒散肉末至变色。 将肉末聚拢，测中心至少71℃，不足继续炒。 加入蒜末、豆瓣酱和生抽，小火炒香。 加入豆腐和180毫升水，煮开后小火煮4分钟。 淀粉与20毫升水调匀，倒入锅中煮开，撒葱后关火。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "1ed568d011cd21c0a9618c190beebecbb406aaab1f3ce66f76d491eddd064c0c",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

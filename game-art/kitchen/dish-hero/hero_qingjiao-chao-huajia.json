@@ -1,0 +1,24 @@
+{
+  "id": "hero_qingjiao-chao-huajia",
+  "recipe_id": "qingjiao-chao-huajia",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_qingjiao-chao-huajia-source.png",
+  "original_sha256": "def8e011671fdc1c02dad093e87f409ab6c88e2ae3fc2681400e2189f41e86e3",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "badf53f5defb3f9dc7e509b3320fab6e06c89cc09fd5a113006e6fa57a75ce38",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_qingjiao-chao-huajia. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 青椒炒花甲. Actual recipe ingredients: 花甲 (main), 青椒 (main), 蒜. Preparation reference: 青椒去籽切片，蒜切片；花甲洗净，敲壳仍不闭合的活贝丢弃。 处理生贝后洗手并洗净刀板和水槽；破壳的丢弃。 热锅加油，放蒜片炒香。 加入青椒翻炒至断生。 加入花甲、清水和生抽，加盖煮至贝壳张开。 贝肉须熟透；丢弃未开口的贝壳，再盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "985898301457dff6377d9887ce525adb816976c691f9cc449800a7ef5438002a",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
