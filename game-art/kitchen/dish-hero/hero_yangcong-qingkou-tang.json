@@ -1,0 +1,24 @@
+{
+  "id": "hero_yangcong-qingkou-tang",
+  "recipe_id": "yangcong-qingkou-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_yangcong-qingkou-tang-source.png",
+  "original_sha256": "b6b55921fd66e836a5dbfa1eab843bd780ceeb4b84737341c1e15908e9116318",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "c4669f6c91c3281e596a225a4faef74f6ae26ac6e588025519c1eeff683a979c",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_yangcong-qingkou-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 洋葱青口汤. Actual recipe ingredients: 青口贝 (main), 洋葱 (main), 姜. Preparation reference: 洋葱洗净切片，姜切片；另用器具刷洗鲜活贝壳。 破壳、敲壳仍不闭合的活贝丢弃；处理后洗手洗具。 锅中放700毫升水和姜煮开，加入洋葱煮熟。 放入贝类煮至开口；未开口的丢弃。 开口后的贝类继续煮3分钟，至贝肉熟透。 加盐调味盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "4e7b2bf19be2ad7b5ff8ad6648093e90f74c630e2b80bb84d3ccf726c54325cb",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
