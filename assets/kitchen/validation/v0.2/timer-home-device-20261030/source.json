@@ -1,0 +1,42 @@
+{
+  "application_sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+  "application_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+  "images": [
+    {
+      "file": "home-empty.png",
+      "sha256": "3176afd0b36aad3ffe73a3d8a4794c8c11c5a8b4fe63d35c534af83636b9525c",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "home-running-verified.png",
+      "sha256": "39a4eb6bcb9b37b72231e834fe411e227a75d9cce75aa5c5c878ed5f9baff533",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "timer-paused-verified.png",
+      "sha256": "4b5c9fdd226427955320c57b6f2e976ca661981f221259d6af3a032a1b1813ce",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "home-paused-verified.png",
+      "sha256": "18c5acb6ded0025aa8bded2210d8e2362090ed21b7855addba5246b02b133889",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "timer-canceled-verified.png",
+      "sha256": "9d93e7bb3af2ee825a9c0fdc17b29a5d6cf63c4e3802a59597a5218bdede0eca",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    }
+  ],
+  "source": "Actual approved badge USB RGB565 capture in isolated test mode; not photographs"
+}

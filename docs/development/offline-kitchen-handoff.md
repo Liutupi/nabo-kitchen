@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## 2026-10-30: timer fix installed and physical home entry confirmed
+
+After explicit approval, only application `01c1dccabd36…` was written and independently read back. Two bounded boots matched the new ELF and 145-recipe D2 resources. Boot/table/NVS/PHY, resources, files and untouched app tail were preserved; the complete 24 KiB NVS and decoded KST2 state were unchanged after testing, at sequence 69. No test completions were added.
+
+The actual native path passed in isolated serial input: start a recipe timer, long UP straight home, select Timers + OK, pause, return home and reopen, resume and cancel. Five accepted complete USB frames are retained; incomplete and incorrectly staged checkpoints are excluded. Test mode restored user state and all serial sessions are closed. The user physically opened the new home entry and confirmed “现在能打开了”. Pause/resume/cancel were checked on the device by injected input, not separately accepted with physical buttons. See [device evidence](offline-v02-timer-home-device-20261030.json) and [actual paused-home frame](../../assets/kitchen/validation/v0.2/timer-home-device-20261030/home-paused-verified.png).
+
+Main task 6 implementation and the reported timer-entry fix are complete. Publication stays deferred: no new Release, tag or community revision. Next is everyday v0.2 use and at least three actual cooking sessions; this navigation test does not count as cooking or complete hardware/audio acceptance. A running-timer power-loss scenario was not staged on the badge; host persistence tests cover paused recovery. The new full-image bootloader remains unflashed.
+
 ## 2026-10-30: timer navigation fixed; new application awaits consent
 
 The user's device feedback identified a real navigation gap: after leaving a recipe, home had no physical-key entry to running or paused timers. A permanent sixth **Timers** choice now opens P7 with normal UP/DOWN and short OK; short UP from the default home focus selects it. Empty, running, paused and finished timer states stay reachable. Hold OK pauses/resumes, hold DOWN cancels only the selected timer, and double UP returns; canceling preserves step progress and the started marker.

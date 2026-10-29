@@ -1,0 +1,175 @@
+{
+  "version": "0.2.0-dev",
+  "checked_at": "2026-10-29T16:40:58.425621+00:00",
+  "status": "approved_application_installed_navigation_verified_user_confirmed_home_entry",
+  "build": "PASS",
+  "host_tests": "PASS",
+  "device_tests": {
+    "approved_write_readback": "PASS",
+    "bounded_boot": "PASS",
+    "serial_injected_native_navigation": "PASS",
+    "physical_user_confirmation": "PASS: user confirmed home Timers opens; other physical controls not separately accepted"
+  },
+  "user_acceptance": {
+    "home_timer_entry": "PASS",
+    "verbatim": "现在能打开了",
+    "scope": "User physically opened the new home Timers entry; pause/resume/cancel were exercised through isolated serial-injected native input, not separately reported by the user"
+  },
+  "consent": "Explicit approval for the new 513456-byte application only; no resource write or publication",
+  "source_code_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
+  "application": {
+    "offset": "0x10000",
+    "bytes": 513456,
+    "sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12",
+    "readback_sha256": "01c1dccabd36dda29e258b8bddca45d01258af18fdc29a7d3f5d2c1144d84c12"
+  },
+  "matching_elf_sha256": "ed2b6b7f936eb3940f38972293bb32d775bc16ca2f1f672cac39613f67e0856c",
+  "resources": {
+    "sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+    "bytes": 3768770,
+    "written": false
+  },
+  "protected_regions_unchanged_before_boot": {
+    "boot_table_nvs_phy": true,
+    "application_tail": true,
+    "D2_resources_and_files": true
+  },
+  "saved_state": {
+    "KST_version": 2,
+    "sequence_before": 69,
+    "sequence_after": 69,
+    "entire_decoded_state_equal": true,
+    "all_24KiB_NVS_bytes_equal": true,
+    "private_backup_only": true,
+    "history_records_preserved": 1,
+    "cooked_recipe_entries_preserved": 1,
+    "real_cooking_records_added_by_test": 0
+  },
+  "boot_observations": [
+    {
+      "seconds": 18,
+      "matching_elf_prefix": "ed2b6b7f9",
+      "recipes": 145,
+      "save_sequence": 69,
+      "storage_fault": false,
+      "clock_lost": false,
+      "crash_or_watchdog_observed": false,
+      "audio_write_errors": 0
+    },
+    {
+      "seconds": 18,
+      "matching_elf_prefix": "ed2b6b7f9",
+      "recipes": 145,
+      "save_sequence": 69,
+      "storage_fault": false,
+      "clock_lost": false,
+      "crash_or_watchdog_observed": false,
+      "audio_write_errors": 0
+    }
+  ],
+  "isolated_native_route": [
+    {
+      "page": 6,
+      "running": 1,
+      "paused": 0
+    },
+    {
+      "page": 1,
+      "running": 1,
+      "paused": 0
+    },
+    {
+      "page": 7,
+      "running": 1,
+      "paused": 0
+    },
+    {
+      "page": 7,
+      "running": 0,
+      "paused": 1
+    },
+    {
+      "page": 1,
+      "running": 0,
+      "paused": 1
+    },
+    {
+      "page": 7,
+      "running": 0,
+      "paused": 1
+    },
+    {
+      "page": 7,
+      "running": 1,
+      "paused": 0
+    },
+    {
+      "page": 7,
+      "running": 0,
+      "paused": 0
+    }
+  ],
+  "route_meaning": [
+    "Start a recipe timer",
+    "Native long UP returns directly home",
+    "Home Timers + OK opens P7",
+    "Hold OK pauses",
+    "Double UP returns home with paused timer",
+    "Home Timers reopens paused timer",
+    "Hold OK resumes",
+    "Hold DOWN removes selected timer"
+  ],
+  "complete_USB_frames": [
+    {
+      "file": "home-empty.png",
+      "sha256": "3176afd0b36aad3ffe73a3d8a4794c8c11c5a8b4fe63d35c534af83636b9525c",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "home-running-verified.png",
+      "sha256": "39a4eb6bcb9b37b72231e834fe411e227a75d9cce75aa5c5c878ed5f9baff533",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "timer-paused-verified.png",
+      "sha256": "4b5c9fdd226427955320c57b6f2e976ca661981f221259d6af3a032a1b1813ce",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "home-paused-verified.png",
+      "sha256": "18c5acb6ded0025aa8bded2210d8e2362090ed21b7855addba5246b02b133889",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    },
+    {
+      "file": "timer-canceled-verified.png",
+      "sha256": "9d93e7bb3af2ee825a9c0fdc17b29a5d6cf63c4e3802a59597a5218bdede0eca",
+      "width": 240,
+      "height": 320,
+      "rows": 320
+    }
+  ],
+  "frame_source": "Actual approved badge USB RGB565 capture in isolated test mode; not photographs",
+  "rejected_frames": {
+    "incomplete": 1,
+    "wrong_navigation_checkpoint": 2,
+    "excluded_from_accepted_images": true
+  },
+  "serial_closed": true,
+  "isolated_test_exited": true,
+  "user_state_restored": true,
+  "published": false,
+  "unverified": [
+    "Separate user physical-key acceptance of pause/resume/cancel and extended use",
+    "On-badge power-loss restoration of a running timer was not staged; host tests cover paused recovery",
+    "Three actual v0.2 cooking sessions and extended hardware/audio acceptance",
+    "Fresh full-archive bootloader was not installed or device-validated"
+  ]
+}

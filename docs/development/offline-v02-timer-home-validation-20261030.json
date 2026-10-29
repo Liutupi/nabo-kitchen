@@ -1,7 +1,7 @@
 {
   "version": "0.2.0-dev",
   "checked_at": "2026-10-29T16:29:27.731072+00:00",
-  "status": "timer_home_fix_validated_awaiting_new_application_consent",
+  "status": "approved_application_installed_navigation_verified_user_confirmed_home_entry",
   "source_code_commit": "4f82d7dcbdb81ee824e35e148d7e1b57a1ed1d0a",
   "prototype_code_commit": "ce063567498f1dba596e126408ee26f42b2066f7",
   "problem": "After leaving the cooking page, physical controls could not open running or paused timers from home before an alarm fired",
@@ -15,7 +15,7 @@
   ],
   "build": "PASS",
   "host_tests": "PASS",
-  "device_tests": "NOT RUN",
+  "device_tests": "PASS for exact write/readback, boots, isolated native route and user-confirmed physical home timer entry; broader acceptance separate",
   "published": false,
   "validation": {
     "complete_gate": "PASS",
@@ -142,7 +142,7 @@
     "already_installed": true
   },
   "flash_proposal": {
-    "status": "awaiting_explicit_consent_for_this_new_application",
+    "status": "explicit_consent_received_and_exact_application_flashed",
     "target": "Same previously confirmed COM11 badge; re-enumerate before any approved write",
     "application_file": "build/candidates/kitchen-v02-timer-home-bec4c231a178/application.bin",
     "offset": "0x10000",
@@ -162,9 +162,10 @@
   "previous_device_application_sha256": "72d1651f9a60ac5f42ced730fa12990aa4e9a77dffe35132e36efa82daf54ab4",
   "host_rendered_preview": "../../assets/kitchen/validation/v0.2/timer-home-20261030/home-running.png",
   "unverified": [
-    "New candidate is not flashed; prior device results do not verify the new timer entry",
-    "Real departure to home, re-entry, pause/cancel and reboot recovery on the badge",
-    "At least three actual v0.2 cooking sessions before any future publication",
-    "New full-image bootloader has not been flashed or device-validated"
-  ]
+    "Separate user physical-key acceptance of pause/resume/cancel and extended use",
+    "On-badge power-loss restoration of a running timer was not staged; host tests cover paused recovery",
+    "Three actual v0.2 cooking sessions and extended hardware/audio acceptance",
+    "Fresh full-archive bootloader was not installed or device-validated"
+  ],
+  "device_validation_report": "offline-v02-timer-home-device-20261030.json"
 }
