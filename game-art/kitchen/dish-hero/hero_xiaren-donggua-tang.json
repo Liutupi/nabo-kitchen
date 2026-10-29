@@ -1,0 +1,24 @@
+{
+  "id": "hero_xiaren-donggua-tang",
+  "recipe_id": "xiaren-donggua-tang",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xiaren-donggua-tang-source.png",
+  "original_sha256": "c863f80d5ac71a697e09258ff0db1ecc171c69b6941dd6d9b2e1506a577eaddf",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "fac2d9b28abd5e3a25d92e9388128abdf3ffd6194e06008b6d8901f0e3f3b3c7",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xiaren-donggua-tang. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 虾仁冬瓜汤. Actual recipe ingredients: 虾 (main), 冬瓜 (main), 姜. Preparation reference: 冬瓜去皮切片、姜切丝；另用刀板去虾壳和虾线并洗手洗具。 水和姜煮开，放冬瓜煮至透明变软。 放虾仁煮至肉完全不透明、熟透。 加盐调味，关火盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white porcelain soup bowl. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "fbde1d981b39bffc85d5011872bf25b8bc6136659a9506610a3f2e60293477c9",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}

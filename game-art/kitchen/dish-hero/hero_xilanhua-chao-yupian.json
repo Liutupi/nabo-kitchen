@@ -1,0 +1,24 @@
+{
+  "id": "hero_xilanhua-chao-yupian",
+  "recipe_id": "xilanhua-chao-yupian",
+  "status": "review",
+  "generator": "OpenAI imagegen built-in tool",
+  "original": "originals/hero_xilanhua-chao-yupian-source.png",
+  "original_sha256": "a1ee181f805cc5de5e81cc7c36393d16b415478e839d982b9026133bfd4902da",
+  "original_dimensions": [
+    1448,
+    1086
+  ],
+  "asset_dimensions": [
+    640,
+    480
+  ],
+  "asset_sha256": "5c63ebd03611d6c1c21683f5088d6c597ae7f5e4dbf04991082cfdea260625be",
+  "references": [
+    "game-art/kitchen/dish-hero/hero_xilanhua-chaoshanbei.png"
+  ],
+  "prompt": "Use case: stylized-concept. Create ONE complete Chinese home-cooked dish illustration for the NABO kitchen game, asset hero_xilanhua-chao-yupian. Reference image is STYLE ONLY: match its cute rounded flat 2D food shapes, warm vivid appetizing colors, solid dark-brown #3B2730 outlines, one light and one shadow cel-shaded plane, crisp small glossy highlights. NEW SUBJECT: 西兰花炒鱼片. Actual recipe ingredients: 鱼片 (main), 西兰花 (main), 姜. Preparation reference: 西兰花切小朵，姜切片；另用刀板切鱼片并洗手洗具。 锅加1小勺油，炒西兰花，加30毫升水焖熟，盛出。 加剩余油炒香姜片，放鱼片、20毫升水和生抽煮熟。 鱼片最厚处达63℃后加入配菜，拌匀盛出。. Illustrate the FINISHED cooked dish accurately; the main ingredient must be recognizable. Do not copy the reference's scallops, broccoli or garlic unless this recipe actually contains them. Serve in a white round porcelain plate. Three-quarter overhead view about 45 degrees, upper-left light. Landscape 4:3 transparent canvas; compose for 640x480, vessel center (320,270), whole vessel including rim inside frame, generous transparent margins on every side. A single isolated dish only, no food faces, no characters, no spoons/chopsticks, no text, no labels, no logos, no decorations, no steam/fire/effects, no tabletop/background, no white sticker border, no photorealism, no 3D, no smooth gradients. Real transparent RGBA background. Distinct readable food silhouettes at 160x120.",
+  "recipe_sha256": "80553319497c72f38285e37baa6916274f1d4c1e45284850a915e3cd4185b5f1",
+  "processing": "Uniform Lanczos resize of entire original transparent RGBA canvas to 640x480; no crop, repaint or alpha removal.",
+  "review": "待逐图审美、真实菜品准确度及实机验收。"
+}
