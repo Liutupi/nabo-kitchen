@@ -2,6 +2,89 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Latest continuation: Windows runtime fixes
+
+This section supersedes the earlier stop checkpoint below. Work continued from
+`f799a2f3196e0d28a1777663a7cb65fcd8d84c4d` on
+`codex/runtime-fixes-20261029`, in a separate checkout. The editable-content
+branch remains `codex/kitchen-model`. Recipes, artwork, PCM, partition layout,
+and KST1 bytes were not changed.
+
+- Bundle checksums now cooperate after each at-most-4096-byte slice; catalog
+  loading cooperates after each validated recipe. The device worker blocks for
+  one positive scheduler tick. CRC uses a small nibble table with the same IEEE
+  result, independently checked against zlib, including seeded/chunked inputs.
+  Watchdog checks remain enabled.
+- A real clock-warning acknowledgement marks the recovered paused state dirty
+  and saves immediately in the UI worker. The previous 1.5-second deferred-save
+  window is removed. Running timers still intentionally recover paused when no
+  trusted clock exists; a future interrupted running timer may warn again.
+- Read-only status adds sound/volume/mixer gain, audio availability, greeting
+  requests/starts/sample consumption, write errors, and timer-state counts.
+  The actual device had saved sound disabled: no greeting was requested. The
+  user enabled sound through Settings and confirmed normal audible speech after
+  reboot. No driver or greeting PCM was replaced and mute is still respected.
+- Windows host checks now unload test DLLs before cleanup, link real COFF
+  dependencies, trap unexpected demo-screen calls, provide missing host libc
+  support for the unmodified IDF NVS engine, and report paths consistently.
+  Symlink-dependent tests probe capability rather than require elevation.
+
+### Validation and installed candidate
+
+The complete `./tools/validate.sh --all` gate passed using ESP-IDF 5.5.3 and
+native Windows build tools; 21 symlink-capability checks were skipped because
+this host cannot create directory symlinks. Real-resource rendering has 10
+passing cases. The NVS engine still passes 100 maximum-state saves and 484
+simulated power-cut boundaries. See the [sanitized validation record](offline-runtime-validation-20261029.json).
+
+- Installed app: **514,704 bytes**, SHA256
+  `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`.
+- Matching ELF:
+  `698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f`.
+  The compiled working-tree version is `f799a2f-dirty`; the validation record
+  hashes the exact production inputs. Do not substitute a later rebuild.
+- Full candidate archive:
+  `build/firmware/ea2bae8053a427827bc912aff570aa2fa9b84ce1da8e95ca2e19dd3d421c2f4b/`.
+  Segmented package: `build/candidates/offline-runtime-ea2bae8053a4/`.
+  These generated files remain local and ignored.
+- Following explicit approval and device clarification, the live partition
+  table and resources matched before writing. Only the application at `0x10000`
+  was written and independently verified. Bootloader, partition table, resources,
+  NVS/PHY/files were not flashed. Resource SHA256 remains
+  `7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec`.
+  The full-candidate hash is not an identity for the mixed retained device Flash.
+
+Six controlled boots captured the matching ELF prefix without watchdog/panic
+messages; bundle validation completed at about 1,655 ms. Each boot requested one
+greeting, consumed 31,200 PCM samples, and recorded zero audio write errors. The
+user confirmed actual sound. The acknowledged clock warning did not recur and
+the original paused timer survived. Isolated device checks covered four-dish
+results and four additional completed rerolls, both seafood pages, ingredients
+to shopping, and timer start/pause/resume/cancel. Only test-mode injection was
+used for automation; this does not certify physical long-press feel.
+
+The stored sequence remained unchanged throughout isolation. TEST was exited,
+the original paused timer/preferences were restored, and the serial port was
+closed. Final free heap was 198,336 bytes, largest block 114,688 bytes; minimum
+observed UI stack headroom during the tests was 5,664 bytes. Valid screenshots
+contain all 320 rows. Occasional truncated USB capture streams were rejected
+and retried; capture transport framing/flow control remains a diagnostic-tool
+improvement, not a claim that every capture attempt succeeded.
+
+```text
+Build: PASS
+Host tests: PASS (21 host symlink-capability skips)
+Device tests: PASS (bounded startup, greeting, recovery and isolated flows above)
+Unverified: long-term kitchen use, physical power-cut/full-NVS behavior,
+all recipe content and physical timer-button feel
+```
+
+Continue from the runtime-fixes branch and this validation identity. Do not
+flash the full merged image over existing user data. The 144 recipes remain
+drafts; no formal release or complete hardware certification is claimed.
+
+## Earlier macOS checkpoint
+
 The user requested a cross-computer handoff. Development and device tests are stopped for this checkpoint, and the serial port is closed. The installed 144-recipe app is not hardware-accepted: a later reboot reproduced the watchdog warning, and the user confirmed that the greeting is still inaudible. The earlier successful startup window was insufficient evidence of a complete repair. This is not a release. Do not flash or erase the device merely because this branch exists.
 
 ## Where the work lives

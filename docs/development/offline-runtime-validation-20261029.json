@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-29",
+  "branch": "codex/runtime-fixes-20261029",
+  "source_base_commit": "f799a2f3196e0d28a1777663a7cb65fcd8d84c4d",
+  "compiled_worktree_version": "f799a2f-dirty",
+  "build": "PASS",
+  "host_tests": "PASS",
+  "device_tests": "PASS",
+  "gate": {
+    "command": "./tools/validate.sh --all",
+    "exit_code": 0,
+    "host": "Windows, native Python/CMake/Ninja/ESP-IDF and LLVM-MinGW host compiler",
+    "idf_version": "v5.5.3",
+    "symlink_capability_tests_skipped": 21,
+    "skip_reason": "Windows directory symlinks unavailable without Developer Mode/elevation; existing capability-dependent cases only"
+  },
+  "checks": {
+    "crc_zlib_seeded_and_chunked": true,
+    "cooperative_bundle_4096_byte_bound": true,
+    "cooperative_catalog_every_recipe_identical": true,
+    "real_catalog_view_tests": 10,
+    "clock_ack_paused_restart_regression": true,
+    "mixer_consumption_diagnostics": true,
+    "nvs_max_saves": 100,
+    "nvs_simulated_power_cut_boundaries": 484,
+    "firmware_layout": true,
+    "archive_verified": true,
+    "segmented_package_verified": true
+  },
+  "candidate": {
+    "full_image_sha256": "ea2bae8053a427827bc912aff570aa2fa9b84ce1da8e95ca2e19dd3d421c2f4b",
+    "app": {
+      "sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+      "size": 514704
+    },
+    "elf_sha256": "698af70572f6700387fa72f9af029fdede66b95dfcc2302f6ab01eeef1b9793f",
+    "partition_table_sha256": "23e0ea7332832e5612b11dd15cfd0b1682a05e1369a86308f89cbedadb11e499",
+    "assets_sha256": "7556d051d6adb1868b452c5f341dd1592ff3415ac551b1ec6a077ca3cad339ec",
+    "assets_unchanged": true,
+    "persistent_format": "KST1 unchanged"
+  },
+  "device_session": {
+    "writes_performed": true,
+    "application_only": true,
+    "written_offset": "0x10000",
+    "written_app_sha256": "a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202",
+    "target_chip": "ESP32-C3,8MB",
+    "preflight_partition_and_assets_match": true,
+    "independent_app_digest_verification": true,
+    "controlled_reboots_observed": 6,
+    "matching_elf_starts": 6,
+    "watchdog_or_panic_lines": 0,
+    "bundle_validation_ms": 1655,
+    "boot_voice_requests_each_observed_boot": 1,
+    "boot_voice_samples": 31200,
+    "boot_voice_nonzero_samples": 27072,
+    "audio_write_errors": 0,
+    "user_audible_greeting_confirmed": true,
+    "stored_mute_detected": true,
+    "sound_enabled_by_user_in_settings": true,
+    "clock_warning_acknowledged_and_persisted": true,
+    "isolated_rerolls_confirmed_after_settling": 4,
+    "isolated_flows": [
+      "four-dish result and fourth-card focus",
+      "seafood both pages and selection",
+      "ingredients to shopping",
+      "timer start,pause,resume,cancel"
+    ],
+    "isolation_saved_sequence_unchanged": true,
+    "original_paused_timer_restored": true,
+    "test_mode_exited": true,
+    "serial_port_closed": true,
+    "final_free_heap_bytes": 198336,
+    "final_largest_block_bytes": 114688,
+    "minimum_ui_stack_headroom_bytes": 5664,
+    "captures_saved_only_when_all_320_rows_valid": true,
+    "capture_transport_retry_needed": true,
+    "private_identity_or_logs_uploaded": false,
+    "full_candidate_hash_is_device_full_flash_hash": false
+  },
+  "unverified": [
+    "Long-term kitchen use and all draft recipe content",
+    "Physical abrupt-power/full-NVS cases",
+    "Physical timer-button long-press feel",
+    "Audio alarm audibility in a real kitchen",
+    "Capture transport framing/flow control robustness"
+  ],
+  "source_inputs": {
+    "main/demo_audio.c": {
+      "bytes_lf": 7475,
+      "sha256_lf": "cf6f29b331ed0c2741f6e76452bf039071ecd117bbb3abb787163e038f388bba"
+    },
+    "main/demo_battery.c": {
+      "bytes_lf": 2005,
+      "sha256_lf": "ec79cdde7f13dba78de0c69bded01d9e05fdb036a754816a5ae1832fc7ca1937"
+    },
+    "main/demo_ble.c": {
+      "bytes_lf": 7644,
+      "sha256_lf": "ac043122d2fcedd570574ddea6b32acc7a86302513dbb731a447d9e9577849b8"
+    },
+    "main/demo_button.c": {
+      "bytes_lf": 2790,
+      "sha256_lf": "269c0113644f5816b167abfcc0c758fc9ad54d62507ead1de518c53c76d647bc"
+    },
+    "main/demo_display.c": {
+      "bytes_lf": 2512,
+      "sha256_lf": "9e73088bca20806e39476d2c96845a1bb89828844a31715723dccfd2a7fa4f19"
+    },
+    "main/demo_low_power.c": {
+      "bytes_lf": 13309,
+      "sha256_lf": "44f6d066cb151d2e37312b78ebcf1ca2b9bfc3b7ddbb5efc0de94c397b092e8b"
+    },
+    "main/demo_navigation.c": {
+      "bytes_lf": 1571,
+      "sha256_lf": "1c53baeddaa39f5f092c268f3e841c8ee07e3593f5fd8cff136fd44a98c848d2"
+    },
+    "main/demo_radio.c": {
+      "bytes_lf": 1024,
+      "sha256_lf": "a45fdfc1b71f64ea01603766e6d6375047356bf00fe97b2557b6b3d018128f97"
+    },
+    "main/demo_wifi.c": {
+      "bytes_lf": 7104,
+      "sha256_lf": "dfa2e90caafecef60a8fc604c9f28fb8d49ca9ecad12eee8cfca02eb5bc5deb9"
+    },
+    "main/main.c": {
+      "bytes_lf": 1164,
+      "sha256_lf": "90d0dd5c65b925a32522dd2eb5fe8c9e10da450b767b37aa41362138d9c1cd24"
+    },
+    "main/offline_kitchen.c": {
+      "bytes_lf": 28095,
+      "sha256_lf": "3091532ae7895b346b40c6dc513fafd646782d3086b22316eca0b54865934780"
+    },
+    "main/ui_pixel.c": {
+      "bytes_lf": 5036,
+      "sha256_lf": "0065505661cd05eeb88fdde5263395e20b959b7d86886575633d1344d1a3ed58"
+    },
+    "main/ui_pixel_math.c": {
+      "bytes_lf": 342,
+      "sha256_lf": "7f3472149b4eb1a088e78e6bd2d1e9fdb2fbb2558087cb50cd3195d71dfdb68f"
+    },
+    "main/kitchen/kitchen_bundle.c": {
+      "bytes_lf": 2062,
+      "sha256_lf": "61fbfc325a546f214075d16995e692ba54fc5786c157b4b736aa3cbb55bbe1ac"
+    },
+    "main/kitchen/kitchen_calendar.c": {
+      "bytes_lf": 3969,
+      "sha256_lf": "db437987183a82e3281c71037d290d61f8f425c7a75f967a55427151008bc175"
+    },
+    "main/kitchen/kitchen_calendar_view.c": {
+      "bytes_lf": 1825,
+      "sha256_lf": "f4306caecd134758f1253fb854c566a0bf453cba5acce14b561c13ee5eb855a6"
+    },
+    "main/kitchen/kitchen_canvas.c": {
+      "bytes_lf": 9499,
+      "sha256_lf": "73d0e31831fe8e723509f5ab64bcda0f711df467ec47b7a16135ca442e67ce45"
+    },
+    "main/kitchen/kitchen_catalog.c": {
+      "bytes_lf": 12926,
+      "sha256_lf": "b2b5172171507bb33fe1a511058f5282d0e5893bebfd17278902c9c0ea5449c8"
+    },
+    "main/kitchen/kitchen_input.c": {
+      "bytes_lf": 3011,
+      "sha256_lf": "9fe6fcf645782c89c240b48a4608771a37c6039bbe8ba5bce2c3cdbc5fe0950f"
+    },
+    "main/kitchen/kitchen_journal.c": {
+      "bytes_lf": 2818,
+      "sha256_lf": "e9390e7ccc55d53aa9190a67e7ea7eddd5c75164e8df35a7b0834c8e17a54098"
+    },
+    "main/kitchen/kitchen_kan.c": {
+      "bytes_lf": 5990,
+      "sha256_lf": "ad163e8737f585d7c33fcbf28f8ad05c0b4b1a444fd2b2ab6eba0951ee575639"
+    },
+    "main/kitchen/kitchen_kfn.c": {
+      "bytes_lf": 4816,
+      "sha256_lf": "80c9ad69016e29c230f83d4cc9726bd304b9be01eea73be6ea9316b956ba1e35"
+    },
+    "main/kitchen/kitchen_krc.c": {
+      "bytes_lf": 4106,
+      "sha256_lf": "7b26665879fe4665bbfe25c60d249dd66d2f5ae790095fdf67c2874362da95d1"
+    },
+    "main/kitchen/kitchen_ksp.c": {
+      "bytes_lf": 5613,
+      "sha256_lf": "ae15c580e17bd5e824bb52b8b7419866b415c3d11946be8011f2b34116b987da"
+    },
+    "main/kitchen/kitchen_lists.c": {
+      "bytes_lf": 4998,
+      "sha256_lf": "84c98bce077bd542c061fa5db6824337b2b4ba4b5f77a7d6f9326fc4c1a49196"
+    },
+    "main/kitchen/kitchen_metadata.c": {
+      "bytes_lf": 9166,
+      "sha256_lf": "fa131b1e44328dc2b53c5cd8594caa8cf0a9af3d14aedde4c5545448ad12a43c"
+    },
+    "main/kitchen/kitchen_model.c": {
+      "bytes_lf": 685,
+      "sha256_lf": "8d40d5455241f0825adbcf15b7d19dad2df4374fd2de9eb07f42d5365b8741ee"
+    },
+    "main/kitchen/kitchen_recommend.c": {
+      "bytes_lf": 8280,
+      "sha256_lf": "e7a617514a665cb64eebe0a3b21bc009da7d4685af0d04ae82687efad8b182f6"
+    },
+    "main/kitchen/kitchen_save.c": {
+      "bytes_lf": 16253,
+      "sha256_lf": "4e9d720ec76a892e7214e28b8d762034a3d090fb5190c3bfbcbae3d53b98046c"
+    },
+    "main/kitchen/kitchen_session.c": {
+      "bytes_lf": 4161,
+      "sha256_lf": "729d1fa916d552715f23c640171fcc7275afc43112e01a28c0c7258fecbb3bf2"
+    },
+    "main/kitchen/kitchen_timer.c": {
+      "bytes_lf": 2486,
+      "sha256_lf": "2449f63ec9b4f9f3bda168c7ea84add1e7c3dd25abb3d7b9b6e953e0b1c8808e"
+    },
+    "main/kitchen/kitchen_ui.c": {
+      "bytes_lf": 21604,
+      "sha256_lf": "fcd395b75726518b7c4f6567a410085e876406f16df985455c8b7aad0e64535a"
+    },
+    "main/kitchen/kitchen_view.c": {
+      "bytes_lf": 11266,
+      "sha256_lf": "9c837126310c5adec7d524c99b08294641b3bf526453df2d19fc00e416e4c1d5"
+    },
+    "main/kitchen/kitchen_view_cooking.c": {
+      "bytes_lf": 14994,
+      "sha256_lf": "cc751f8d7f793c440b3095c62bf49410a2421101696fd73456491702cadba708"
+    },
+    "main/kitchen/kitchen_view_home.c": {
+      "bytes_lf": 9681,
+      "sha256_lf": "f260baed59c65e5b3997c6c27068db62bf51b793c460e14f6bc7c130c36acd91"
+    },
+    "main/kitchen/kitchen_view_lists.c": {
+      "bytes_lf": 11700,
+      "sha256_lf": "172447974fbe69e031e745abe4d51ece2ef779327bc8025dc8dc95940a7dcf9a"
+    },
+    "main/kitchen/nabo_kitchen_mixer.c": {
+      "bytes_lf": 2323,
+      "sha256_lf": "c291d03993cd6a226a46d1714c7d9056c14f66113b6066e7c8b192410136989a"
+    },
+    "main/kitchen/nabo_kitchen_store.c": {
+      "bytes_lf": 2138,
+      "sha256_lf": "5dbaf6a162c83ac4f1989b7fda0902c8144caa5d1682900da0d86f089d4e8414"
+    },
+    "main/demo.h": {
+      "bytes_lf": 1888,
+      "sha256_lf": "cdacc817c4d830156de7de5eb7a3bb87bec69aa99c6ace085c1a27182f2493ab"
+    },
+    "main/demo_navigation.h": {
+      "bytes_lf": 941,
+      "sha256_lf": "fd17f283f09ecb050d7a2bf359b6d5a008a392d76fdd68f72a53e8b85d579e6e"
+    },
+    "main/demo_radio.h": {
+      "bytes_lf": 302,
+      "sha256_lf": "924a7c49ddc6075785b62bd574c89658d0d65b5c9a17186a98fe66e0e98b42ba"
+    },
+    "main/key_guard.h": {
+      "bytes_lf": 2130,
+      "sha256_lf": "cc4c2c14d50fe5b8d1aa3ac55f148fddeea9f1f69a7ca51c3f666497182377de"
+    },
+    "main/offline_kitchen.h": {
+      "bytes_lf": 180,
+      "sha256_lf": "1e00a2174ed5c9fede2d462c3ac1f6248ded5e5f0c1357a31e6af0fc2b9de7ec"
+    },
+    "main/ui_pixel.h": {
+      "bytes_lf": 835,
+      "sha256_lf": "510d8f68020eb8489d469288daafb8f4b9e2bc622320f949bbaca3d49658fca9"
+    },
+    "main/ui_pixel_math.h": {
+      "bytes_lf": 124,
+      "sha256_lf": "f86483a7d7bb700ad05154a3173ebb2ae6263e12defcd040f59edf8ef491b3b0"
+    },
+    "main/kitchen/kitchen_bundle.h": {
+      "bytes_lf": 707,
+      "sha256_lf": "0a959cda5fb4d9e2153febc1d0881112ac673475930c7ffcbbcb2510562d8b77"
+    },
+    "main/kitchen/kitchen_calendar.h": {
+      "bytes_lf": 2295,
+      "sha256_lf": "acc1f241d704bdc845dbffba6a952598ad02215e5277ced86ef68898d483db9e"
+    },
+    "main/kitchen/kitchen_calendar_view.h": {
+      "bytes_lf": 423,
+      "sha256_lf": "49a92452228a7d2e14101c2ddbd686dcb75fe74ac3bdb9bee7f17a2cfe123b8c"
+    },
+    "main/kitchen/kitchen_canvas.h": {
+      "bytes_lf": 1745,
+      "sha256_lf": "e86a0214bddee06009f4f9f79cf5e7c33ed83e735ebe3e76803debf8b847f1c2"
+    },
+    "main/kitchen/kitchen_catalog.h": {
+      "bytes_lf": 2045,
+      "sha256_lf": "baebb545805baafc07f7223156a21a6df7d7543bbde671d1aa4628aa0961e340"
+    },
+    "main/kitchen/kitchen_crc32.h": {
+      "bytes_lf": 922,
+      "sha256_lf": "487ed112a77094d889eb311f065126591eacc58d7984f0666d2d7e3c0831858e"
+    },
+    "main/kitchen/kitchen_input.h": {
+      "bytes_lf": 1014,
+      "sha256_lf": "88e0ae121c790bcb88513dfb060033656f912e04cc285c9b5cfa8b2c216e28c5"
+    },
+    "main/kitchen/kitchen_journal.h": {
+      "bytes_lf": 1238,
+      "sha256_lf": "3155877337a1f62cd8631e2db68459f61203d6143d4a75d1823c9a5041675c0e"
+    },
+    "main/kitchen/kitchen_kan.h": {
+      "bytes_lf": 940,
+      "sha256_lf": "80d5bf3701e153e7b515b56265cb7747090c2cfb13ae9e64bf54f92d141cca82"
+    },
+    "main/kitchen/kitchen_kfn.h": {
+      "bytes_lf": 930,
+      "sha256_lf": "d75c652b6f0d06c03fec760b451530a3b1c63f9cc2b35982a9b695db5c4c0bf3"
+    },
+    "main/kitchen/kitchen_krc.h": {
+      "bytes_lf": 813,
+      "sha256_lf": "fa2600429d77d0971d3f4bbb11aed46e8ac7d5225e9f0ca15c491c09c92d50f7"
+    },
+    "main/kitchen/kitchen_ksp.h": {
+      "bytes_lf": 993,
+      "sha256_lf": "acee9e770efe31385a9745c7925c61b47ea5de768430323e8f752b81e414cdf5"
+    },
+    "main/kitchen/kitchen_metadata.h": {
+      "bytes_lf": 873,
+      "sha256_lf": "4908e0e622ea6aaa18b46eb4d4337a3c54c6917a9ccea3f535686be3aa5f4c75"
+    },
+    "main/kitchen/kitchen_model.h": {
+      "bytes_lf": 407,
+      "sha256_lf": "76d101716e7a4a330f2992f3af7521283aa6aab0dccc28f28aac26e48fab5971"
+    },
+    "main/kitchen/kitchen_recommend.h": {
+      "bytes_lf": 1325,
+      "sha256_lf": "0e0200eae0679666a9cec63d4d252a53227e56e01453d83fe2862e4adc0b6203"
+    },
+    "main/kitchen/kitchen_save.h": {
+      "bytes_lf": 1007,
+      "sha256_lf": "24f5cdb7c9acce20858773abc3f63d07b1e60fd1f77085901055aba9b1e3a8cf"
+    },
+    "main/kitchen/kitchen_session.h": {
+      "bytes_lf": 1196,
+      "sha256_lf": "21138b1674170a8b8e894eca9fb9e1bf2dfbc36095a9a86246f98a64df97d063"
+    },
+    "main/kitchen/kitchen_timer.h": {
+      "bytes_lf": 1027,
+      "sha256_lf": "29258af4d1d9acf8032ef14ce420af51137e34728c7c04a56e9835a3e450a4e5"
+    },
+    "main/kitchen/kitchen_ui.h": {
+      "bytes_lf": 4183,
+      "sha256_lf": "7c8543dd865f7e8ddc7c7004597bf65c8869b1b72dde1c91f73d557c262154dd"
+    },
+    "main/kitchen/kitchen_view.h": {
+      "bytes_lf": 1461,
+      "sha256_lf": "43648edcb16d5d5c91d6a1da19575d35498f35db962cfadf36aea03fb5768385"
+    },
+    "main/kitchen/kitchen_view_internal.h": {
+      "bytes_lf": 1382,
+      "sha256_lf": "1d7303fe063d6dbf478af91ac38762bb2c9b5673008cd7cb5aae293eb1701e6f"
+    },
+    "main/kitchen/nabo_kitchen_mixer.h": {
+      "bytes_lf": 817,
+      "sha256_lf": "09c9da13c1ac53d17b45139084e752f24ae988f6542827b40a4b41731cbf23b7"
+    },
+    "main/kitchen/nabo_kitchen_store.h": {
+      "bytes_lf": 203,
+      "sha256_lf": "29684b8f920dd2161574aba87c442dfa32ff11218e16ecae32e2f795a091f704"
+    },
+    "components/bsp/src/bsp_audio.c": {
+      "bytes_lf": 21422,
+      "sha256_lf": "1cc4977cd9352806c8cf95ec0348220737645fd5d2cf42195a2564aa5d3090c3"
+    },
+    "components/bsp/src/bsp_battery.c": {
+      "bytes_lf": 7899,
+      "sha256_lf": "54d8cf15e538d447e4750a2415911e9006742d299ac5d47b062957ae9ea1b7d6"
+    },
+    "components/bsp/src/bsp_button.c": {
+      "bytes_lf": 10505,
+      "sha256_lf": "dc6fc3b12e57f85e0726101db878b1085a929a2fdb34ad0f68f8d5c9583399e1"
+    },
+    "components/bsp/src/bsp_display.c": {
+      "bytes_lf": 11864,
+      "sha256_lf": "3fe74309d2297bd5e321228eb45b2f7c4392d28d5b7110e9241ba179ba69d868"
+    },
+    "components/bsp/src/bsp_display_lvgl.c": {
+      "bytes_lf": 5398,
+      "sha256_lf": "3d7b991004d2cbb8b1799e9f44bc74f20fcd4637928b912edbc2072479664fd6"
+    },
+    "components/bsp/src/bsp_display_rounding.c": {
+      "bytes_lf": 2042,
+      "sha256_lf": "06bf1cae13412ba72e976ec6f93dc0891ddd9e676174798fd6bf3ae81f07de90"
+    },
+    "components/bsp/src/bsp_es8311_sleep_check.c": {
+      "bytes_lf": 693,
+      "sha256_lf": "ef95e26fab05072d4cc93890b39719de5347084d5da601ef7ce2615fa975f502"
+    },
+    "components/bsp/src/bsp_i2c.c": {
+      "bytes_lf": 3387,
+      "sha256_lf": "53e6d1dcda8715ef2dfd57134019dadd10aeb5095e24cdac6bec16c2f0c64fbe"
+    },
+    "components/bsp/include/bsp_audio.h": {
+      "bytes_lf": 2687,
+      "sha256_lf": "5c6107d123b93a79938d043b4a79f22baa347fb6a85f49333f0001138f3bc34d"
+    },
+    "components/bsp/include/bsp_battery.h": {
+      "bytes_lf": 791,
+      "sha256_lf": "27cfce847b9bae784fc089de0f64d60f533e33d96eb5b20e1585ba8b01ca5373"
+    },
+    "components/bsp/include/bsp_button.h": {
+      "bytes_lf": 2521,
+      "sha256_lf": "c489a53f03f57c49479aca0f06d529ceea658705953ce6664c19329623831c08"
+    },
+    "components/bsp/include/bsp_display.h": {
+      "bytes_lf": 2442,
+      "sha256_lf": "fc07ffbeb66ded0ed5a259122aa766d7a8628859d506bad45e86f2548f422d08"
+    },
+    "components/bsp/include/bsp_i2c.h": {
+      "bytes_lf": 1114,
+      "sha256_lf": "0b2e570ca593c4dde791def476c1ab51fcb1cacb122de90fa5b1ff78bd5cc053"
+    },
+    "components/bsp/include/bsp_pins.h": {
+      "bytes_lf": 4837,
+      "sha256_lf": "d1dce1ad85e7a4406099f59e6fb23b32392932683e881b703d072936a63ff9f2"
+    },
+    "components/bsp/src/bsp_display_rounding.h": {
+      "bytes_lf": 632,
+      "sha256_lf": "4f9debc91f6a6b03f7f963ff0727f0bc1eaeb4023f1d9ea276e24da561e90549"
+    },
+    "components/bsp/src/bsp_es8311_sleep_check.h": {
+      "bytes_lf": 566,
+      "sha256_lf": "b2f9c52e17bff40e9c23c9ace051ae47aeb2fca3498400a9982cd18242a2e896"
+    },
+    "main/CMakeLists.txt": {
+      "bytes_lf": 1614,
+      "sha256_lf": "bb5f0a8cd0e2bb1d2dd0d02e77b0f64dae8e09e28b126b7cf71e147064461399"
+    },
+    "CMakeLists.txt": {
+      "bytes_lf": 117,
+      "sha256_lf": "9f497490cbf9b547162698e2730cbed7f863d0cd97b1c2f3fe88994e644c4b22"
+    },
+    "sdkconfig.defaults": {
+      "bytes_lf": 1355,
+      "sha256_lf": "e2ee4228f0980e6df2b3f961c9146862e5584bdd2d81c403918144ff665676ee"
+    },
+    "partitions.csv": {
+      "bytes_lf": 408,
+      "sha256_lf": "72a58df78374bd0ee78cc90ba926c73badd1526e1e599181116fafd7f7e35970"
+    },
+    "dependencies.lock": {
+      "bytes_lf": 1950,
+      "sha256_lf": "593fa5027afa40e795c4020e894b7da3603651187f215d4e705524db151362fd"
+    }
+  },
+  "local_capture_hashes": {
+    "capture-01.png": "665eaf435ed5962349ad60b73730e847dc35b52a0a8e84238a52d39753239f1d",
+    "capture-02.png": "fc966df5dc06ab2d6c38ca3c2b848c2ef60349d13cceaef06883c300929c5469",
+    "capture-03.png": "390afbbddde6a313ba05c3b0c02329e754c1f049bb3d6db01ed1dc95e7277ce5",
+    "capture-04.png": "390afbbddde6a313ba05c3b0c02329e754c1f049bb3d6db01ed1dc95e7277ce5",
+    "capture-05.png": "f7b1b046f4d317b5b086160556368d6795fbec0cf7f0c57f4aa95d8cc37e41f8",
+    "capture-06.png": "a393412c31babae6cd5e18d7fba08e7cfde79ea2534447087224ec194ef124ff",
+    "capture-07.png": "b831638e9fdff1e7af16da657479343bd5fefe08c824c3ed3efaf8cf4d8b451d",
+    "capture-08.png": "47f5f8bd3ecb53fc89b9b4e6e93da39a93c1e2226f44dee7b1eeb98b25c4c87e",
+    "capture-09.png": "d2dd84c2c17550c9850004177c36d71638638831954d0e261d3d04390af9b65a",
+    "capture-10.png": "94d1fc5bf1e91271d897e6be3df7bf27b6cba95fbb016bd02a4f1a9b28e9dcb6",
+    "capture-11.png": "61525f16177ca683a87b3c3173692425130a3ea111c36b08ed7873bd72981cfc",
+    "capture-12.png": "f1cc5e7ecfd6e3c3b7133b4ebf9c75c07f16fbb0721e4e08e927829a6f868a55",
+    "capture-13.png": "21112f6cca549c39e332968d6ac1e3f41e76d35c42afe1da0f1070d1f6b2a5ba",
+    "capture-14.png": "b91b836c271eee9b3210cbe192fc6b0f6c8d4af48057c49a4c563399920facba"
+  }
+}
