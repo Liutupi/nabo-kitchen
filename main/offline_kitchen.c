@@ -79,7 +79,19 @@ static volatile bool input_ready;
 static QueueHandle_t edge_queue;
 static atomic_bool edge_overflow;
 static atomic_uint voice_request, alarm_request, audio_volume, audio_reset;
+/* Audio worker owns mixer/hardware; publish only scalar diagnostic snapshots. */
+static atomic_uint voice_requested, voice_started, voice_samples, voice_nonzero;
+static atomic_uint audio_writes, audio_write_errors;
+static atomic_bool audio_available;
+static atomic_int audio_last_error;
 static kitchen_state *state;
+
+static void initialization_pause(void *context) {
+  (void)context;
+  /* A positive tick blocks the worker and lets IDLE run even at a low tick
+   * rate. taskYIELD()/vTaskDelay(0) alone cannot give a lower priority CPU. */
+  vTaskDelay(1);
+}
 
 static bool map_resources(kitchen_state *s) {
   const esp_partition_t *p = esp_partition_find_first(
@@ -106,7 +118,7 @@ static bool map_resources(kitchen_state *s) {
     ESP_LOGE(TAG, "asset mapping failed");
     return false;
   }
-  if (!kb_open(data, size, &s->resources)) {
+  if (!kb_open_cooperative(data, size, &s->resources, initialization_pause, NULL)) {
     ESP_LOGE(TAG, "asset container failed validation");
     esp_partition_munmap(s->mapping);
     s->mapping = 0;
@@ -117,28 +129,38 @@ static bool map_resources(kitchen_state *s) {
 }
 static bool load_resources(kitchen_state *s) {
   const kb_assets *r = &s->resources;
-  if (!krc_open(&s->recipes, r->recipes.data, r->recipes.size) ||
-      !kfn_open(&s->fonts, r->fonts.data, r->fonts.size) ||
-      !ksp_open(&s->dish, r->dish.data, r->dish.size) ||
-      !ksp_open(&s->icons, r->icons.data, r->icons.size) ||
-      !ksp_open(&s->ui_art, r->ui.data, r->ui.size) ||
-      !kan_open(&s->animation, r->animation.data, r->animation.size) ||
+  if (!krc_open(&s->recipes, r->recipes.data, r->recipes.size))
+    return false;
+  initialization_pause(NULL);
+  if (!kfn_open(&s->fonts, r->fonts.data, r->fonts.size))
+    return false;
+  initialization_pause(NULL);
+  if (!ksp_open(&s->dish, r->dish.data, r->dish.size))
+    return false;
+  initialization_pause(NULL);
+  if (!ksp_open(&s->icons, r->icons.data, r->icons.size))
+    return false;
+  initialization_pause(NULL);
+  if (!ksp_open(&s->ui_art, r->ui.data, r->ui.size))
+    return false;
+  initialization_pause(NULL);
+  if (!kan_open(&s->animation, r->animation.data, r->animation.size) ||
       s->recipes.count > KR_MAX_RECIPES || s->animation.width != 192 ||
       s->animation.height != 192)
     return false;
   /* Resource CRC/decompression is CPU work on this single-core board. Let the
    * idle task run between initialization stages instead of starving its WDT. */
-  vTaskDelay(pdMS_TO_TICKS(2));
+  initialization_pause(NULL);
   s->items = heap_caps_calloc(s->recipes.count, sizeof(kc_item),
                               MALLOC_CAP_INTERNAL | MALLOC_CAP_8BIT);
   if (!s->items)
     return false;
   s->catalog = (kc_catalog){s->items, s->recipes.count, 0};
-  if (!kc_load(&s->catalog, &s->recipes) ||
+  if (!kc_load_cooperative(&s->catalog, &s->recipes, initialization_pause, NULL) ||
       !kv_assets_init(&s->assets, &s->catalog, &s->recipes, &s->fonts, &s->dish,
                       &s->icons, &s->ui_art, &s->animation))
     return false;
-  vTaskDelay(pdMS_TO_TICKS(2));
+  initialization_pause(NULL);
   /* There is no trusted clock. Preserve an existing saved day; never advance it
    * on reboot. */
   if (!ku_init(&s->ui, &s->catalog, &s->recipes, 0, 1, esp_random(),
@@ -220,16 +242,10 @@ static void dispatch(void *context, ki_key key, ki_kind kind) {
   if (s->clock_lost && !s->test_mode && s->ui.page != 0 && key == KI_OK &&
       kind == KI_SHORT) {
     s->clock_lost = false;
-    s->ui.message = KU_NO_MESSAGE;
-    s->ui.message_due = 0;
-    s->ui.page = 7;
-    s->ui.focus = 0;
-    s->ui.stack_count = 0;
-    for (unsigned i = 0; i < s->ui.timers.count; ++i)
-      if (s->ui.timers.items[i].status == KT_PAUSED) {
-        s->ui.focus = (uint8_t)i;
-        break;
-      }
+    ku_acknowledge_clock_loss(&s->ui);
+    /* Dispatch runs in the UI worker, never in the button callback. Commit the
+     * acknowledgement now rather than leaving a 1.5 second reset window. */
+    save(s, esp_timer_get_time() / 1000);
     s->redraw = 1;
     return;
   }
@@ -395,32 +411,61 @@ static void audio_task(void *arg) {
   nk_mixer_init(&mixer, startup_pcm_start,
                 (size_t)(startup_pcm_end - startup_pcm_start));
   bool available = state->audio_ready;
+  atomic_store(&audio_available, available);
   for (;;) {
     int16_t samples[320] = {0};
     nk_mixer_fill(&mixer, samples, 320, atomic_exchange(&audio_reset, 0),
                   atomic_exchange(&voice_request, 0),
                   atomic_exchange(&alarm_request, 0),
                   atomic_load(&audio_volume));
-    if (!available || bsp_audio_write(samples, sizeof(samples)) != ESP_OK) {
+    atomic_store(&voice_started, mixer.voice_starts);
+    atomic_store(&voice_samples, mixer.voice_samples);
+    atomic_store(&voice_nonzero, mixer.voice_nonzero_samples);
+    esp_err_t error = available ? bsp_audio_write(samples, sizeof(samples)) : ESP_OK;
+    if (available) {
+      atomic_fetch_add(&audio_writes, 1);
+      atomic_store(&audio_last_error, error);
+      if (error != ESP_OK)
+        atomic_fetch_add(&audio_write_errors, 1);
+    }
+    if (!available || error != ESP_OK) {
       if (available)
         ESP_LOGE(TAG, "audio playback stopped after device error");
       available = false;
+      atomic_store(&audio_available, false);
       vTaskDelay(pdMS_TO_TICKS(20));
     }
   }
 }
 static void diagnostic(kitchen_state *s, const char *line, int64_t now) {
   if (!strcmp(line, ">kitchen.status")) {
+    unsigned running = 0, paused = 0, done = 0;
+    for (unsigned i = 0; i < s->ui.timers.count; ++i) {
+      running += s->ui.timers.items[i].status == KT_RUNNING;
+      paused += s->ui.timers.items[i].status == KT_PAUSED;
+      done += s->ui.timers.items[i].status == KT_DONE;
+    }
     printf(
         "\n@kitchen.status "
         "{\"running\":1,\"page\":%u,\"test\":%d,\"heap\":%u,\"largest\":%u,"
         "\"stack_free_min\":%u,\"recipes\":%u,\"ingredients\":%u,\"dirty\":%u,"
-        "\"clock_lost\":%u,\"storage_fault\":%u,\"save_sequence\":%" PRIu32 "}\n",
+        "\"clock_lost\":%u,\"storage_fault\":%u,\"save_sequence\":%" PRIu32 ","
+        "\"timers_running\":%u,\"timers_paused\":%u,\"timers_done\":%u,"
+        "\"sound\":%u,\"volume\":%u,\"audio_gain\":%u,\"audio_ready\":%u,\"audio_available\":%u,"
+        "\"boot_voice_pending\":%u,\"voice_requests\":%u,\"voice_starts\":%u,"
+        "\"voice_samples\":%u,\"voice_nonzero_samples\":%u,\"audio_writes\":%u,"
+        "\"audio_write_errors\":%u,\"audio_last_error\":%d}\n",
         s->ui.page, s->test_mode, (unsigned)esp_get_free_heap_size(),
         (unsigned)heap_caps_get_largest_free_block(MALLOC_CAP_INTERNAL),
         (unsigned)uxTaskGetStackHighWaterMark(NULL), (unsigned)s->catalog.count,
         (unsigned)km_ingredient_count, (unsigned)s->ui.dirty,
-        (unsigned)s->clock_lost, (unsigned)s->storage_fault, s->journal.sequence);
+        (unsigned)s->clock_lost, (unsigned)s->storage_fault, s->journal.sequence,
+        running, paused, done, (unsigned)s->ui.sound, (unsigned)s->ui.volume,
+        atomic_load(&audio_volume), (unsigned)s->audio_ready,
+        (unsigned)atomic_load(&audio_available), (unsigned)s->boot_voice,
+        atomic_load(&voice_requested), atomic_load(&voice_started),
+        atomic_load(&voice_samples), atomic_load(&voice_nonzero), atomic_load(&audio_writes),
+        atomic_load(&audio_write_errors), atomic_load(&audio_last_error));
   } else if (!strcmp(line, ">kitchen.test=on")) {
     if (s->calendar_active) {
       printf("\n@kitchen.test date-editor-active\n");
@@ -556,7 +601,7 @@ static void read_console(kitchen_state *s, int64_t now) {
 static void worker(void *arg) {
   kitchen_state *s = arg;
   bool mapped = map_resources(s);
-  vTaskDelay(pdMS_TO_TICKS(2));
+  initialization_pause(NULL);
   if (!mapped || !load_resources(s)) {
     ESP_LOGE(TAG, "kitchen assets or memory unavailable");
     /* A red screen is an explicit failure, rather than falsely showing old UI.
@@ -602,6 +647,7 @@ static void worker(void *arg) {
       if (s->ui.sound && s->ui.volume && s->audio_ready) {
         atomic_store(&audio_volume, s->ui.volume);
         atomic_store(&voice_request, 1);
+        atomic_fetch_add(&voice_requested, 1);
       }
     }
     if (s->ui.page != page)

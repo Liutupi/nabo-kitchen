@@ -83,6 +83,9 @@ int ku_init(ku_ui* ui, const kc_catalog* catalog, const krc_pack* pack, int32_t 
 void ku_set_day(ku_ui* ui, int32_t day, unsigned month, uint32_t seed);
 void ku_tick(ku_ui* ui, int64_t now);
 void ku_startup(ku_ui* ui, int64_t now);
+/* User acknowledges recovery of paused timers. Marks the paused state dirty;
+ * the worker must persist it before returning to normal input processing. */
+void ku_acknowledge_clock_loss(ku_ui* ui);
 void ku_key(ku_ui* ui, ki_key key, ki_kind kind, int64_t now);
 /* Renderer reports measured scroll extent after laying out text/paper. */
 void ku_scroll_extents(ku_ui* ui, unsigned step_max, unsigned paper_max);

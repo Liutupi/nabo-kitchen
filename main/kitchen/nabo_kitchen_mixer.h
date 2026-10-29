@@ -8,6 +8,7 @@ typedef struct {
     size_t voice_bytes, voice_offset;
     uint32_t tone_left, phase1, phase2;
     bool voice_active;
+    uint32_t voice_starts, voice_samples, voice_nonzero_samples;
 } nk_mixer;
 /* Consume a pending startup greeting once at its deadline. An isolated test
  * cancels it without ever producing audio. Screen transitions do not matter. */

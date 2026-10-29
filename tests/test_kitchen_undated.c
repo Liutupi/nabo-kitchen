@@ -207,7 +207,7 @@ static void unlimited_rerolls_keep_advancing_and_roundtrip(void) {
     uint8_t data[KU_SAVE_MAX];
     size_t length = ku_save_encode(&u, data, sizeof(data), 9, now, -1);
     ku_ui restored = fresh(1, 1, 1, 0), scratch;
-    uint32_t sequence; int lost;
+    uint32_t sequence = 0; int lost = 0;
     assert(length && ku_save_decode(&restored, &scratch, data, length, &sequence, now, -1, &lost));
     assert(sequence == 9 && restored.rerolls_used == UINT8_MAX && restored.daily_seed == u.daily_seed);
     restored.page = 4; restored.result_count = restored.saved_count;
@@ -234,7 +234,7 @@ static void cancel_only_selected_timer_and_persist(void) {
     uint8_t data[KU_SAVE_MAX];
     size_t length = ku_save_encode(&u, data, sizeof(data), 4, 1200, -1);
     ku_ui restored = fresh(1, 1, 1, 0), scratch;
-    uint32_t sequence; int lost;
+    uint32_t sequence = 0; int lost = 0;
     assert(length && ku_save_decode(&restored, &scratch, data, length, &sequence, 1300, -1, &lost));
     assert(sequence == 4 && restored.timers.count == 2 && restored.timer_steps[0] == 7);
     assert(restored.timers.items[0].id == ids[1] && restored.timers.items[1].id == ids[2]);
@@ -263,6 +263,43 @@ static void settings_no_longer_offers_a_reroll_limit(void) {
     ku_key(&u, KI_UP, KI_DOUBLE, 1003);
     assert(!u.settings_mode && u.focus == 2);
 }
+static void acknowledged_clock_recovery_survives_restart(void) {
+    ku_ui original = fresh(4, 1, 1, 0), restored, scratch;
+    original.volume = 37;
+    original.sound = 0; /* Recovery must preserve the user's saved mute. */
+    uint32_t id;
+    assert(kt_add(&original.timers, 120, 1000, &id));
+    original.timer_ids[0] = id;
+    original.timer_recipe[0] = 0;
+    original.timer_step[0] = 0;
+    uint8_t buffer[KU_SAVE_MAX];
+    size_t size = ku_save_encode(&original, buffer, sizeof(buffer), 1, 2000, -1);
+    assert(size);
+    restored = fresh(5, 1, 1, 0);
+    int lost = 0;
+    assert(ku_save_decode(&restored, &scratch, buffer, size, NULL, 20, -1, &lost));
+    assert(lost && restored.timers.count == 1);
+    assert(restored.timers.items[0].status == KT_PAUSED);
+    int64_t left = restored.timers.items[0].left_ms;
+    assert(left == 119000);
+    restored.message = KU_CLOCK_LOST;
+    restored.stack_count = 3;
+    restored.dirty = 0; /* Ack must request persistence independently. */
+    ku_acknowledge_clock_loss(&restored);
+    assert(restored.dirty && restored.page == 7 && !restored.stack_count);
+    assert(restored.message == KU_NO_MESSAGE);
+    assert(restored.timers.items[0].id == id && restored.volume == 37 && !restored.sound);
+    size = ku_save_encode(&restored, buffer, sizeof(buffer), 2, 500, -1);
+    assert(size);
+    ku_ui rebooted = fresh(6, 1, 1, 0);
+    uint32_t seq;
+    lost = 1;
+    assert(ku_save_decode(&rebooted, &scratch, buffer, size, &seq, 10, -1, &lost));
+    assert(!lost && seq == 2 && rebooted.timers.count == 1);
+    assert(rebooted.timers.items[0].status == KT_PAUSED);
+    assert(rebooted.timers.items[0].left_ms == left && rebooted.timers.items[0].id == id);
+    assert(rebooted.volume == 37 && !rebooted.sound);
+}
 int main(void) {
     book_192_boundary();setup();boot_waits_for_short_ok_and_respects_alarm();
     recommendation_has_no_fake_recency_or_season();completion_and_transitions();
@@ -270,6 +307,7 @@ int main(void) {
     unlimited_rerolls_keep_advancing_and_roundtrip();
     cancel_only_selected_timer_and_persist();
     settings_no_longer_offers_a_reroll_limit();
+    acknowledged_clock_recovery_survives_restart();
     puts("PASS: boot hold and timer priority, unknown-date weighting, completion history, streak and existing save schema");
     return 0;
 }

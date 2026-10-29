@@ -27,6 +27,8 @@ void nk_mixer_fill(nk_mixer* m, int16_t* samples, size_t count, bool reset, bool
     if (start_voice) {
         m->voice_offset = 0;
         m->voice_active = m->voice && m->voice_bytes;
+        if (m->voice_active)
+            ++m->voice_starts;
     }
     if (start_alarm)
         m->tone_left = 16800;
@@ -38,7 +40,11 @@ void nk_mixer_fill(nk_mixer* m, int16_t* samples, size_t count, bool reset, bool
             int16_t sample = (int16_t)((uint16_t)m->voice[m->voice_offset] |
                                        (uint16_t)m->voice[m->voice_offset + 1] << 8);
             m->voice_offset += 2;
-            value += sample * (int)volume / 100;
+            int scaled = sample * (int)volume / 100;
+            value += scaled;
+            ++m->voice_samples;
+            if (scaled)
+                ++m->voice_nonzero_samples;
         } else
             m->voice_active = false;
         if (m->tone_left) {

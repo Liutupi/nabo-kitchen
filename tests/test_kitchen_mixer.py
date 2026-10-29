@@ -28,12 +28,16 @@ int main(void) {
     nk_mixer m; nk_mixer_init(&m,voice,sizeof(voice)); int16_t out[400] = {0};
     nk_mixer_fill(&m,out,2,false,true,false,50);
     assert(out[0]==5000 && out[1]==-5000 && m.voice_active);
+    assert(m.voice_starts==1 && m.voice_samples==2 && m.voice_nonzero_samples==2);
     memset(out,0,sizeof(out));nk_mixer_fill(&m,out,3,false,false,false,100);
     assert(out[0]==32767 && out[1]==-32768 && out[2]==0 && !m.voice_active);
+    assert(m.voice_samples==4 && m.voice_nonzero_samples==4);
     memset(out,0,sizeof(out));nk_mixer_fill(&m,out,2,false,true,false,0);
     assert(out[0]==0 && out[1]==0);
+    assert(m.voice_starts==2 && m.voice_samples==6 && m.voice_nonzero_samples==4);
     memset(out,0,sizeof(out));nk_mixer_fill(&m,out,2,true,false,false,100);
     assert(out[0]==0 && !m.voice_active);
+    assert(m.voice_samples==6 && m.voice_nonzero_samples==4);
     for (unsigned i=0;i<400;++i) out[i]=32700;
     nk_mixer_fill(&m,out,400,false,false,true,100);
     int changed=0;for (unsigned i=0;i<400;++i) if(out[i]!=32700)changed=1;

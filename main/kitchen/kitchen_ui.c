@@ -4,6 +4,24 @@
 #include "kitchen_metadata.h"
 #include "kitchen_model.h"
 
+void ku_acknowledge_clock_loss(ku_ui* u) {
+    if (!u)
+        return;
+    u->message = KU_NO_MESSAGE;
+    u->message_due = 0;
+    u->page = 7;
+    u->focus = 0;
+    u->stack_count = 0;
+    for (unsigned i = 0; i < u->timers.count; ++i)
+        if (u->timers.items[i].status == KT_PAUSED) {
+            u->focus = (uint8_t)i;
+            break;
+        }
+    /* Persist the recovered PAUSED state even if the warning was the only
+     * change. Otherwise a reset can recover the old RUNNING record again. */
+    u->dirty = 1;
+}
+
 unsigned ku_fridge_category_items(const ku_ui* u, unsigned category, uint8_t* positions,
                                   unsigned capacity) {
     static const char* const names[KU_FRIDGE_CATEGORIES] = {"meat", "seafood", "egg_tofu", "veg",
