@@ -1,5 +1,11 @@
 # NABO 深夜厨房 · LATE KITCHEN
 
+**v0.1.0 首版体验固件已发布：**[下载固件和分段包](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [安装与按键说明](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/installation.zh_CN.md) · [发布验证记录](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/publication-verification.json)。
+
+<img src="https://raw.githubusercontent.com/Liutupi/nabo-kitchen/v0.1.0/assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
+
+首版是独立离线厨房，包含 144 道菜谱和完整菜图草案、58 种食材（含 13 种海鲜）、抽菜、冰箱推荐、采购、步骤跟做、收藏与三个可暂停计时器，不包含小智云对话或语音识别。菜谱和美术仍在审校，更新后实际面板/听感与长期使用仍待验收；详细边界以发布页为准。下文保留产品设计方向，未来功能不代表已在首版实现。
+
 FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手。NABO 下了夜班开了一间小厨房，帮你决定**今天吃什么**，再一步一步带你**把菜做出来**。
 
 > 产品名为暂定。“深夜食堂”只作为画风和氛围的参考，产品名称、画面和文字里都不使用这几个字。
@@ -18,11 +24,11 @@ FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手�
 
 ## 仓库是什么
 
-这是**设计仓库**，作用和 `nabo-radio`、`nabo-fortune` 相同，用来放架构、规格、美术、菜谱数据、原型和打包工具。固件到 M4 阶段再从小智版分出一个独立仓库 `ai-passport-nabo-xiaozhi-kitchen`，见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)。
+这是**设计与发布入口仓库**，main 保存架构、规格、原型和交接入口。可编辑的最新菜谱、美术及打包工具在 [codex/kitchen-model](https://github.com/Liutupi/nabo-kitchen/tree/codex/kitchen-model)，首版固件及发布材料在 [codex/release-v0.1.0](https://github.com/Liutupi/nabo-kitchen/tree/codex/release-v0.1.0)，旧运行时修复基线保存在 [codex/runtime-fixes-20261029](https://github.com/Liutupi/nabo-kitchen/tree/codex/runtime-fixes-20261029)。设计和固件根目录不同，请按顶部交接继续，不要直接混合两个分支的根目录。
 
 ## 从哪里读起
 
-当前已交付可运行的 [浏览器原型](prototype/README.md)、30 道 [待厨房验收的菜谱](data/recipes/REVIEW.md)、静态美术、四段原视频和宿主机打包工具。运行 `node prototype/server.mjs` 后打开 `http://127.0.0.1:4173/`。固件尚未分出或刷机。
+当前已交付可运行的[浏览器原型](prototype/README.md)、144 道菜谱和全部完整菜图草案、静态美术、四段原视频、宿主机工具和独立离线固件。main 中部分设计资料和 30 菜阶段记录是历史快照，最新内容请进入上面的内容分支。原型可用 `node prototype/server.mjs` 打开 `http://127.0.0.1:4173/`。首版应用与新资源已完成有限实机检查，详情见发布记录；不等于全部实厨或实体观察验收。
 
 2026-10-28 的源码与候选资源包固定在 [开发检查点](checkpoints/2026-10-28/README.md)，含二进制、许可、验证报告、预览图和 SHA-256 清单。继续开发先读 HANDOFF 顶部；不要把宿主测试通过视为菜谱、手机实做或真机验收完成。
 

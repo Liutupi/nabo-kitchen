@@ -4,6 +4,20 @@
 
 ---
 
+## 最新状态 · 2026-10-29 · Codex（Windows）· 首版固件 v0.1.0 已公开，社区材料就绪
+
+用户明确要求发布首版固件及社区，并制作封面/图片。**[GitHub v0.1.0 首版体验版已公开](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)**，不是草稿；标记为 prerelease，避免将仍待审的菜谱/美术写成正式全量验收。tag 精确指向 `77ef2a926281ef7e5c4376ecd7158af1e915b06a`。固件、发布工具、中英说明、原始封面、可编辑 SVG 和全部最终图片在 `codex/release-v0.1.0`；本机 `D:\AI PASSPORT XIAOZHI\nabo-kitchen-release-v010`。main 只更新入口，不混入固件根目录。内容/美术与旧运行时基线保持原分支。
+
+- **四个公开附件**：`nabo-kitchen-v0.1.0-full.bin`、`nabo-kitchen-v0.1.0.zip`、`manifest.json`、`SHA256SUMS.txt`。均已匿名 HTTP 200 独立回下载并按字节数/SHA256 核对；ZIP 所有成员、内部校验及合并空隙全 FF 再检通过。[回下载记录](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/publication-verification.json)。无开放 PR，发布分支无 Actions 运行；本机门禁 PASS 不代表 GitHub CI PASS。
+- **二进制来源**：应用仍是已上机的 `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`，资源仍为已上机的 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`；新合并镜像 5,853,214 B，SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`。新完整门禁构建另行归档，没有替换发布应用；完整镜像仅由构建产物合成，没有使用设备读回镜像/NVS/日志。新完整镜像的 build bootloader 与实机验证时保留的兼容 bootloader 不同，首次完整安装行为仍未上机验收。发布过程未新增刷写。
+- **下载/使用说明**：[中英安装与按键](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/installation.zh_CN.md)，首次完整安装可能重置设置；已有完全兼容厨房只写应用 `0x10000` 与资源 `0x200000` 可保留原数据。应用内仍是 `f799a2f-dirty` 构建标识，发布版本 v0.1.0 由清单/tag 管理，未为改版本号重编已接受应用。144/144 图仍为 `review`，菜谱、全量美术、更新后面板/听感及长期使用验收边界不变。
+- **社区材料**：[listing 和中英说明](https://github.com/Liutupi/nabo-kitchen/tree/codex/release-v0.1.0/docs/community/v0.1.0)、[封面及四张 3:4 图片](https://github.com/Liutupi/nabo-kitchen/tree/codex/release-v0.1.0/assets/community/v0.1.0)。封面使用 C 造型与非镜像帽标，保留原图和完整提示词；介绍图使用原菜图、生产代码界面与六张完整设备采集，保留 TEST、标清来源，均已逐张查看最终 WebP。官方 publisher 1.13.0 预览验证通过。
+- **当前唯一待办**：社区仍是 **prepared_not_submitted**，没有 project/revision，也没有公开社区链接。网页“授权并复制发布指令”明确写“点击即确认拥有作品相关权利并同意社区规则”；按浏览器规则已在该动作前询问用户确认，尚未点击授权或提交。收到同意后，用官方 `folotoy-ai-passport-publisher`，目标 `https://ai-passport.folotoy.cn`，授权→核对 whoami/projects 防重复→提交本批精确文件→记录回执；pending 只能写审核中，不能写社区已公开。令牌只留仓库外私有配置。见[提交状态](https://github.com/Liutupi/nabo-kitchen/blob/codex/release-v0.1.0/docs/community/v0.1.0/submission-status.json)。
+
+每 30 分钟跟进继续；heartbeat 不得自行授权、刷机、发布新 Release 或重复提交；没有新变化不重复提醒等待事项。tag 自动构建发布已关闭，保留手动构建，防止新构建覆盖已接受附件。
+
+---
+
 ## 最新状态 · 2026-10-29 · Codex（Windows）· 144 张菜图资源已刷入并完成有限设备验证
 
 用户明确要求刷机验证后，已核对先前确认的同一工牌、8 MiB/安全状态、应用和布局，**只从 `0x200000` 写入新资源包**。3,756,062 B 资源完整读回 SHA256 为 `f1c0f215a460b6c4e7c8805527a6077ff2b8473626eb55205a77f9bda26d2931`，与交付一致。应用仍是已接受的 `a6f4a167bf1d79d11bd7dbbf2a46d56eef5362446bbcd41313ace56effcb1202`，没有重编或重刷应用、整片擦除、改分区或发布 Release；分区表、bootloader、NVS/PHY 和 files 均核对保留。下方旧“尚未上机”是刷写之前的阶段记录。
