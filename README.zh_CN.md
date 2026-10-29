@@ -4,6 +4,8 @@
 
 **v0.1.0 首版体验版：**[下载与校验值](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [安装和操作](docs/community/v0.1.0/installation.zh_CN.md) · [发布溯源](docs/community/v0.1.0/release-validation.json)。
 
+[社区页面已公开](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)：项目 1755，已通过版本 4068。匿名固件下载和五张公开图片均与已验证文件一致，见[公开核验](docs/community/v0.1.0/community-publication-verification.json)。
+
 <img src="assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
 
 当前保存状态、工牌实际版本和未完成事项见[离线厨房交接](docs/development/offline-kitchen-handoff.zh_CN.md)。

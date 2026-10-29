@@ -2,6 +2,14 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## Community publication verified: project 1755, revision 4068
+
+The server approved revision 4068 at `2026-10-29T09:26:31Z`. The creator workbench now says published and its actual copied public URL is [the community page](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2). The public page exposes the Install latest button, five images, the introduction and source link. Anonymous page and public API requests return HTTP 200, with project 1755 / revision 4068 / published. The earlier pending sections below are historical.
+
+The public-page resource inventory exposed `/api/plays/id/1755`; its anonymously fetched `downloadUrl` and `firmware.url` both identify `/api/download/community/nabo-6`. Anonymous download returns 5,853,214 bytes, SHA256 `9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c`, exactly matching the accepted GitHub full image. All five anonymous public gallery downloads match the previously reviewed server-returned images. See [public verification](../community/v0.1.0/community-publication-verification.json), [current state](../community/v0.1.0/submission-status.json) and [public-page proof](../../assets/community/v0.1.0/community-published.jpg).
+
+The Install latest entry requested device selection; no device was selected and the page was reloaded to cancel. No hardware write, rebuild, resubmission, new authorization, tag change or Release asset replacement occurred. Community approval is not recipe, art or hardware acceptance: all 144 illustrations remain review. Continue the existing quiet GitHub/content/public-availability monitor without repeating unchanged publication notices.
+
 ## Community submission: project 1755, revision 4068
 
 After the user explicitly confirmed the website rights/rules statement and submission, the official publisher 1.13.0 created exactly one new firmware project: `1755`, revision `4068`, slug `nabo-6`. Both the official API receipt and creator workbench show **pending / under review**. There is no published revision or confirmed public community page yet. The earlier authorization wait below is historical and resolved. Do not authorize or submit again.

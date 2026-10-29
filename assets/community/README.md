@@ -2,6 +2,8 @@
 
 # Community release media
 
+`v0.1.0/community-published.jpg` records the actual public page after approval of revision 4068. It is a publication receipt, not an upload gallery image. [Anonymous publication checks](../../docs/community/v0.1.0/community-publication-verification.json) confirm the public firmware matches GitHub and all five public images match their reviewed stored versions.
+
 The additional `v0.1.0/submission-review-status.jpg` is a creator-workbench receipt, not an upload gallery image. It shows project 1755 / revision 4068 under review. The server-returned gallery WebPs were separately downloaded and viewed: the website recompresses their bytes while retaining dimensions and content; [both hashes and pixel checks](../../docs/community/v0.1.0/community-verification.json) are recorded. The original media manifest remains the upload-source snapshot.
 
 The `v0.1.0/` directory contains the finished 900 x 1200 WebP cover and four gallery posters for the first NABO Midnight Kitchen experience release. Every upload file was viewed after conversion. The original cover is retained under `originals/`; `cover-generation.json` records its exact prompt, authoritative project references and conversion. `media-manifest.json` records file hashes.

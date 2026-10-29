@@ -4,6 +4,8 @@
 
 **v0.1.0 — first experience release:** [downloads and checksums](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [installation and controls](docs/community/v0.1.0/installation.md) · [release provenance](docs/community/v0.1.0/release-validation.json).
 
+The [community page](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2) is public: project 1755, approved revision 4068. Anonymous firmware and all five public images match the verified files; see [public verification](docs/community/v0.1.0/community-publication-verification.json).
+
 <img src="assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO Midnight Kitchen promotional illustration">
 
 For the saved state, installed device version and remaining work, read the [offline kitchen handoff](docs/development/offline-kitchen-handoff.md).

@@ -177,12 +177,13 @@
   },
   "github_public_download_verification": "PASS: anonymous HTTP 200 and exact byte/SHA checks for all four assets, including SHA256SUMS.txt; ZIP members, all internal checksums and merged erased gaps rechecked",
   "community": {
-    "status": "pending",
+    "status": "published",
     "project_id": 1755,
     "revision_id": 4068,
     "slug": "nabo-6",
-    "publicly_published": false,
-    "verification": "community-verification.json"
+    "publicly_published": true,
+    "public_url": "https://ai-passport.folotoy.cn/plays/1755/?v=4068-2",
+    "verification": "community-publication-verification.json"
   },
   "art_status": "144 of 144 complete images; all review, not done",
   "dish_payload_bytes": 1596273,

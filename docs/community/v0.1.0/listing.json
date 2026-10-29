@@ -13,8 +13,9 @@
     "assets/community/v0.1.0/04-cook-together.webp",
     "assets/community/v0.1.0/05-device-captures.webp"
   ],
-  "status": "submitted_pending_review",
+  "status": "published",
   "github_status": "published_prerelease_downloads_verified",
   "community_project_id": 1755,
-  "community_revision_id": 4068
+  "community_revision_id": 4068,
+  "community_public_url": "https://ai-passport.folotoy.cn/plays/1755/?v=4068-2"
 }

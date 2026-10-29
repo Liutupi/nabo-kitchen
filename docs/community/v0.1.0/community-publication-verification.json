@@ -1,0 +1,99 @@
+{
+  "release": "v0.1.0",
+  "verified_at": "2026-10-29T09:47:42.084874+00:00",
+  "project_id": 1755,
+  "revision_id": 4068,
+  "slug": "nabo-6",
+  "community_status": "published",
+  "review_status": "approved",
+  "reviewed_at": "2026-10-29T09:26:31+00:00",
+  "public_url": "https://ai-passport.folotoy.cn/plays/1755/?v=4068-2",
+  "url_source": "Copied public sharing link from the creator workbench after its status became published",
+  "public_api_url": "https://ai-passport.folotoy.cn/api/plays/id/1755",
+  "api_source": "Observed public-page resource inventory; then independently fetched without cookies or authorization",
+  "anonymous_public_page": {
+    "http": 200,
+    "bytes": 28059,
+    "sha256": "f9459cd9c426c6aff3f950f1ce98bafdbaebff062863f0ee55b7119d2bcaf79a",
+    "final_url_without_query": "https://ai-passport.folotoy.cn/plays/1755/",
+    "authentication": "none"
+  },
+  "anonymous_public_api": {
+    "http": 200,
+    "bytes": 9177,
+    "sha256": "ad4a6f421dd8d0ff9d8cd3edc6cf443aba7d99c524e31497b9287905f2d5067f",
+    "final_url_without_query": "https://ai-passport.folotoy.cn/api/plays/id/1755",
+    "authentication": "none"
+  },
+  "download_url": "https://ai-passport.folotoy.cn/api/download/community/nabo-6",
+  "download_url_source": "Anonymous public API downloadUrl and firmware.url agree",
+  "anonymous_public_firmware": {
+    "http": 200,
+    "bytes": 5853214,
+    "sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+    "final_url_without_query": "https://ai-passport.folotoy.cn/api/download/community/nabo-6",
+    "authentication": "none",
+    "matches_prepared_and_github_bytes": true
+  },
+  "anonymous_gallery": [
+    {
+      "index": 0,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/0.webp?v=4068-2",
+      "http": 200,
+      "bytes": 180686,
+      "sha256": "f1585ff91505c90482e166ea426e66b9b403caaeadf2eae541f3c475cf8e16a3",
+      "final_url_without_query": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/0.webp",
+      "authentication": "none",
+      "matches_reviewed_stored_image": true
+    },
+    {
+      "index": 1,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/1.webp?v=4068-2",
+      "http": 200,
+      "bytes": 83728,
+      "sha256": "26801ec2a0574298825345310a693f4bb8bdd1509271858efab5bdd7f025d25d",
+      "final_url_without_query": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/1.webp",
+      "authentication": "none",
+      "matches_reviewed_stored_image": true
+    },
+    {
+      "index": 2,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/2.webp?v=4068-2",
+      "http": 200,
+      "bytes": 70014,
+      "sha256": "21fb7f0fc6c26ee61944d74954d6ce0612de676a920d26b9784a04f0f08d71a9",
+      "final_url_without_query": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/2.webp",
+      "authentication": "none",
+      "matches_reviewed_stored_image": true
+    },
+    {
+      "index": 3,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/3.webp?v=4068-2",
+      "http": 200,
+      "bytes": 61458,
+      "sha256": "535e9abe9363f6d6268ab5d3e9f71abb9d42165f53161c9dbd43fe008cbfebda",
+      "final_url_without_query": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/3.webp",
+      "authentication": "none",
+      "matches_reviewed_stored_image": true
+    },
+    {
+      "index": 4,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/4.webp?v=4068-2",
+      "http": 200,
+      "bytes": 116732,
+      "sha256": "9d7a9706f6cf86a0a58ef8709883ad8a30f99a72db476d326799258343a1561e",
+      "final_url_without_query": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/4.webp",
+      "authentication": "none",
+      "matches_reviewed_stored_image": true
+    }
+  ],
+  "public_source_url": "https://github.com/Liutupi/nabo-kitchen",
+  "original_submission_receipt_unchanged": true,
+  "no_resubmission_or_new_authorization": true,
+  "no_device_selected_or_flashed": true,
+  "install_button_check": "Public page exposes Install latest; it requested device selection. No device was selected; page reloaded to cancel. No firmware write occurred.",
+  "public_page_proof": {
+    "file": "assets/community/v0.1.0/community-published.jpg",
+    "sha256": "0926a8d52da7c9e29ef0586926aeb2451bf5f0b1da39e3f6d2ef5339bcfb9f9a"
+  }
+}

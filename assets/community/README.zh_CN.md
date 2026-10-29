@@ -2,6 +2,8 @@
 
 # 社区发布图片
 
+`v0.1.0/community-published.jpg` 记录版本 4068 通过后的实际公开页面，是发布凭证，不是上传图集图片。[匿名公开核验](../../docs/community/v0.1.0/community-publication-verification.json)确认公开固件与 GitHub 一致，五张公开图与先前审看的保存版本一致。
+
 新增的 `v0.1.0/submission-review-status.jpg` 是创作者后台回执，不是上传图集的图片，记录项目 1755 / 版本 4068 审核中。网站保存后的五张 WebP 已另外回下载并逐张查看；服务端重新压缩导致字节不同，尺寸和内容保留，[两套哈希及像素比较](../../docs/community/v0.1.0/community-verification.json)分别记录。原 media manifest 保持为上传原文件的快照。
 
 `v0.1.0/` 保存首版 NABO 深夜厨房体验版的 900 × 1200 WebP 封面和四张介绍图。每个上传文件均在转换后逐张打开检查。原始封面保存在 `originals/`；`cover-generation.json` 记录完整提示词、权威参考图与转换方式，`media-manifest.json` 记录文件哈希。
