@@ -50,7 +50,7 @@
  ],
  "steps": [
   {
-   "text": "去骨鸡腿切块，姜切片，葱切段；生熟用具分开。",
+   "text": "去骨鸡腿切块，姜切片，葱切段。",
    "method": "cut",
    "heat": "off"
   },
@@ -61,25 +61,24 @@
   },
   {
    "text": "加生抽、料酒和200毫升水，煮开后盖盖。",
-   "method": "boil",
-   "heat": "high"
+   "method": "braise",
+   "heat": "mid"
   },
   {
-   "text": "转小火焖约15分钟，期间翻动并留意锅中水量。",
+   "text": "转小火焖15分钟，期间翻动，留意别烧干。",
    "method": "braise",
    "heat": "low",
    "timer": 900
   },
   {
-   "text": "测最厚鸡块中心至少74℃，不足继续加热。",
+   "text": "筷子扎最厚的鸡块，流出清汁即熟。",
    "method": "braise",
-   "heat": "low",
-   "tip": "使用食物温度计"
+   "heat": "low"
   },
   {
    "text": "加入葱段翻匀，关火盛出。",
-   "method": "stir_fry",
-   "heat": "low"
+   "method": "braise",
+   "heat": "off"
   }
  ],
  "dish": {
@@ -96,5 +95,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

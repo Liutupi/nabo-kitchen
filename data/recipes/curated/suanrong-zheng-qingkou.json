@@ -1,0 +1,86 @@
+{
+ "id": "suanrong-zheng-qingkou",
+ "name": "蒜蓉蒸青口",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "宴客"
+ ],
+ "minutes": 25,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "mussel",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 6,
+   "unit": "瓣"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "steam_soy",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "青口刷洗干净，拔掉须，张口不闭的挑出。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "一半蒜末用油小火炒到微黄，和生蒜末拌匀。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 60
+  },
+  {
+   "text": "青口摆盘，铺上蒜蓉；水开后大火蒸5分钟。",
+   "method": "steam",
+   "heat": "high",
+   "timer": 300
+  },
+  {
+   "text": "壳全部张开即熟，没开口的挑出不吃。",
+   "method": "steam",
+   "heat": "off"
+  },
+  {
+   "text": "淋蒸鱼豉油，撒葱花上桌。",
+   "method": "steam",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "soy_steam",
+  "layers": [
+   "shrimp__boiled"
+  ],
+  "hero": false,
+  "garnish": [
+   "garlic",
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

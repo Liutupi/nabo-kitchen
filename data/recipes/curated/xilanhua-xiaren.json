@@ -46,7 +46,7 @@
  ],
  "steps": [
   {
-   "text": "西兰花切小朵、蒜切末；另用刀板去虾壳和虾线并洗手洗具。",
+   "text": "西兰花切小朵，蒜切末；虾去壳、挑出虾线。",
    "method": "cut",
    "heat": "off"
   },
@@ -63,10 +63,10 @@
    "timer": 150
   },
   {
-   "text": "放西兰花炒匀；虾肉不透明且熟透后加盐。",
+   "text": "放西兰花炒匀，虾仁全部变红就加盐出锅。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 90
+   "heat": "high",
+   "timer": 60
   }
  ],
  "dish": {
@@ -83,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

@@ -1,0 +1,89 @@
+{
+ "id": "congyou-banmian",
+ "name": "葱油拌面",
+ "course": [
+  "staple"
+ ],
+ "cuisine": "江浙",
+ "tags": [
+  "快手"
+ ],
+ "minutes": 20,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "noodle",
+   "qty": 200,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "scallion",
+   "qty": 6,
+   "unit": "根",
+   "main": true
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "4大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "1小勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "葱切段，葱白和葱绿分开。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "冷油下葱白小火炸，再下葱绿，炸到焦黄，约8分钟。",
+   "method": "fry",
+   "heat": "low",
+   "timer": 480,
+   "tip": "火大会炸苦"
+  },
+  {
+   "text": "捞出葱，关火倒入生抽、老抽和糖搅匀，做成葱油汁。",
+   "method": "mix",
+   "heat": "off"
+  },
+  {
+   "text": "面条按包装说明煮熟，捞出沥干。",
+   "method": "boil",
+   "heat": "high"
+  },
+  {
+   "text": "拌入葱油汁和炸葱，趁热吃。",
+   "method": "mix",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "potato__shreds"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

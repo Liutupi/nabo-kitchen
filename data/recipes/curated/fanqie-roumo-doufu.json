@@ -47,27 +47,27 @@
  ],
  "steps": [
   {
-   "text": "豆腐切块，番茄切块；肉末与蔬菜分开。",
+   "text": "豆腐切块，番茄切块。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放1小勺油炒肉末至散开变色，盛出。",
+   "text": "锅放1小勺油，炒散肉末到全部变色，盛出。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 180
   },
   {
-   "text": "另加1小勺油炒番茄，加水和豆腐煮软。",
+   "text": "另加1小勺油炒番茄出汁，加水和豆腐煮软。",
    "method": "braise",
    "heat": "mid",
    "timer": 300
   },
   {
-   "text": "倒回肉末煮透至中心至少71℃，加盐调味。",
+   "text": "倒回肉末煮2分钟入味，加盐调味。",
    "method": "braise",
    "heat": "mid",
-   "timer": 180
+   "timer": 120
   }
  ],
  "dish": {
@@ -83,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

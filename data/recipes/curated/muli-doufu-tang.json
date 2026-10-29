@@ -42,35 +42,25 @@
  ],
  "steps": [
   {
-   "text": "豆腐切块，姜切片；生牡蛎肉用独立器具处理。",
+   "text": "牡蛎肉用清水轻轻搓洗，沥干；豆腐切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "处理生牡蛎后洗手，并清洗接触的器具和台面。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "700毫升水加姜煮开，放豆腐煮热。",
+   "text": "700毫升水加姜煮开，放豆腐煮3分钟。",
    "method": "boil",
-   "heat": "mid",
-   "timer": 300
-  },
-  {
-   "text": "加入牡蛎肉，煮至水再次沸腾。",
-   "method": "boil",
-   "heat": "mid"
-  },
-  {
-   "text": "再沸后煮至少3分钟，牡蛎边缘卷曲、熟透。",
-   "method": "boil",
-   "heat": "mid",
+   "heat": "high",
    "timer": 180
   },
   {
+   "text": "加入牡蛎，水再开后煮2分钟，到牡蛎边缘卷起。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 120
+  },
+  {
    "text": "加盐调味盛出。",
-   "method": "mix",
+   "method": "boil",
    "heat": "off"
   }
  ],
@@ -87,5 +77,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

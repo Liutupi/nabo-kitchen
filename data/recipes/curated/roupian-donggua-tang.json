@@ -47,22 +47,21 @@
    "heat": "off"
   },
   {
-   "text": "水和姜煮开，放冬瓜煮约8分钟至软。",
+   "text": "水和姜煮开，放冬瓜煮8分钟到透明。",
    "method": "boil",
-   "heat": "mid",
+   "heat": "high",
    "timer": 480
   },
   {
-   "text": "放肉片煮至最厚处中心至少63℃。",
+   "text": "放入肉片轻轻推散，煮到全部变白。",
    "method": "boil",
    "heat": "mid",
-   "timer": 180
+   "timer": 120
   },
   {
-   "text": "关火静置3分钟，加盐调味。",
+   "text": "加盐调味，关火盛出。",
    "method": "boil",
-   "heat": "off",
-   "timer": 180
+   "heat": "off"
   }
  ],
  "dish": {
@@ -79,5 +78,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

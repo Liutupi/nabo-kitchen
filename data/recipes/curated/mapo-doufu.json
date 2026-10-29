@@ -60,35 +60,33 @@
  ],
  "steps": [
   {
-   "text": "豆腐切块，蒜葱切末；处理肉末的器具单独清洗。",
+   "text": "豆腐切块，用淡盐水泡5分钟；蒜和葱切末。",
    "method": "cut",
-   "heat": "off"
+   "heat": "off",
+   "tip": "泡过不容易碎"
   },
   {
-   "text": "锅中放油，中火炒散肉末至变色。",
-   "method": "stir_fry",
-   "heat": "mid"
-  },
-  {
-   "text": "将肉末聚拢，测中心至少71℃，不足继续炒。",
+   "text": "锅中放油，中火把肉末炒散、炒到出油。",
    "method": "stir_fry",
    "heat": "mid",
-   "tip": "使用食物温度计"
+   "timer": 180
   },
   {
-   "text": "加入蒜末、豆瓣酱和生抽，小火炒香。",
+   "text": "加入蒜末、豆瓣酱和生抽，小火炒出红油。",
    "method": "stir_fry",
-   "heat": "low"
+   "heat": "low",
+   "timer": 60
   },
   {
    "text": "加入豆腐和180毫升水，煮开后小火煮4分钟。",
-   "method": "boil",
+   "method": "braise",
    "heat": "low",
-   "timer": 240
+   "timer": 240,
+   "tip": "推着翻，别用铲子炒"
   },
   {
-   "text": "淀粉与20毫升水调匀，倒入锅中煮开，撒葱后关火。",
-   "method": "boil",
+   "text": "淀粉和20毫升水调匀，分两次倒入，撒葱后关火。",
+   "method": "braise",
    "heat": "mid"
   }
  ],
@@ -106,5 +104,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

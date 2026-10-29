@@ -42,36 +42,26 @@
  ],
  "steps": [
   {
-   "text": "香菇洗净切片，姜切片。",
+   "text": "鸡腿切块，香菇切片，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "另用生肉刀板切鸡腿，不冲洗；洗净手和生肉用具。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "鸡块、姜和水煮开，撇沫后小火煮15分钟。",
+   "text": "鸡块冷水下锅，煮开后撇去浮沫，加姜小火煮15分钟。",
    "method": "stew",
    "heat": "low",
    "timer": 900
   },
   {
-   "text": "加入香菇，继续小火煮10分钟至熟。",
+   "text": "加入香菇，继续小火煮10分钟。",
    "method": "stew",
    "heat": "low",
    "timer": 600
   },
   {
-   "text": "避骨测鸡肉中心至少74℃，不足继续煮。",
-   "method": "stew",
-   "heat": "low"
-  },
-  {
    "text": "加盐调味后出锅。",
    "method": "stew",
-   "heat": "low"
+   "heat": "off"
   }
  ],
  "dish": {
@@ -86,5 +76,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

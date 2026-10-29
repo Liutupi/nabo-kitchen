@@ -42,37 +42,28 @@
  ],
  "steps": [
   {
-   "text": "用现煮饭或及时冷却、冷藏不超过1天的熟饭。",
-   "method": "mix",
-   "heat": "off"
-  },
-  {
-   "text": "常温久放饭弃用；冷藏米饭只复热一次。",
-   "method": "mix",
-   "heat": "off"
-  },
-  {
-   "text": "熟米饭打散，葱洗净切花；鸡蛋打入碗中打散。",
+   "text": "用隔夜冷饭最好，先把结块打散；葱切花，鸡蛋打散。",
    "method": "cut",
-   "heat": "off"
+   "heat": "off",
+   "tip": "剩饭冷藏别超1天"
   },
   {
-   "text": "热锅加1小勺油，炒鸡蛋至凝固盛出。",
+   "text": "热锅加1小勺油，炒鸡蛋到凝固，盛出。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 120
   },
   {
-   "text": "加剩余油和米饭翻炒，米饭结块要炒散。",
+   "text": "加剩余油和米饭，大火翻炒到米粒松散发烫。",
    "method": "stir_fry",
-   "heat": "mid",
+   "heat": "high",
    "timer": 180
   },
   {
-   "text": "加入鸡蛋、盐和葱花，炒至中心达到74℃。",
+   "text": "倒回鸡蛋，加盐和葱花炒匀出锅。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 120
+   "heat": "high",
+   "timer": 60
   }
  ],
  "dish": {
@@ -88,5 +79,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

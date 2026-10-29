@@ -42,27 +42,28 @@
  ],
  "steps": [
   {
-   "text": "青椒去籽切块、姜切丝；另用刀板去虾壳和虾线并洗手洗具。",
+   "text": "青椒去籽切块，姜切丝；虾去壳、挑出虾线。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅加1小勺油，中火炒虾至变色盛出。",
+   "text": "锅加1小勺油，中火炒虾到变色，盛出。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 90
   },
   {
-   "text": "再加1小勺油炒姜和青椒至断生。",
+   "text": "再加1小勺油炒姜和青椒到断生。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 180
+   "heat": "high",
+   "timer": 120
   },
   {
-   "text": "倒回虾仁翻炒至肉不透明、熟透，加盐。",
+   "text": "倒回虾仁翻炒30秒，加盐出锅。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 90
+   "heat": "high",
+   "timer": 30,
+   "tip": "虾仁久炒会老"
   }
  ],
  "dish": {
@@ -77,5 +78,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

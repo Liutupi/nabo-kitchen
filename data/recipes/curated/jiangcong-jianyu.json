@@ -6,7 +6,7 @@
  ],
  "cuisine": "家常",
  "tags": [
-  "适合新手"
+  "下饭"
  ],
  "minutes": 30,
  "difficulty": 2,
@@ -46,26 +46,27 @@
  ],
  "steps": [
   {
-   "text": "姜切丝、葱切段；另用刀板处理鱼并擦干，洗手洗具。",
+   "text": "鱼处理干净擦干，两面划刀；姜切丝，葱切段。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "热锅加油，中火煎鱼至两面定型。",
+   "text": "热锅加油，中火把鱼两面煎到金黄定型。",
    "method": "fry",
    "heat": "mid",
-   "timer": 360
+   "timer": 360,
+   "tip": "锅和油都热了再下鱼"
   },
   {
-   "text": "放姜葱、生抽和水，盖盖小火焖。",
+   "text": "放姜葱、生抽和小半碗水，盖盖小火焖5分钟。",
    "method": "braise",
    "heat": "low",
    "timer": 300
   },
   {
-   "text": "测鱼肉最厚处中心达63℃后出锅。",
+   "text": "筷子能扎进鱼背最厚处即熟，出锅。",
    "method": "braise",
-   "heat": "low"
+   "heat": "off"
   }
  ],
  "dish": {
@@ -82,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

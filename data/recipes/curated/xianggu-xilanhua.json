@@ -51,7 +51,7 @@
    "heat": "off"
   },
   {
-   "text": "另备适量水烧开，放入西兰花焯1分钟，捞出沥水。",
+   "text": "烧开一锅水，下西兰花焯1分钟，捞出沥水。",
    "method": "blanch",
    "heat": "high",
    "timer": 60
@@ -85,5 +85,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

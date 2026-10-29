@@ -42,25 +42,25 @@
  ],
  "steps": [
   {
-   "text": "豆腐切小块，葱切末；肉末单独存放。",
+   "text": "豆腐切小块，葱切末。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "水煮开后放豆腐，煮约5分钟。",
+   "text": "水煮开后放豆腐，煮5分钟。",
    "method": "boil",
    "heat": "mid",
    "timer": 300
   },
   {
-   "text": "加入肉末搅散煮透，肉末中心至少71℃。",
+   "text": "加入肉末搅散，煮3分钟到全部变色。",
    "method": "boil",
    "heat": "mid",
-   "timer": 300
+   "timer": 180
   },
   {
    "text": "加盐撒葱，关火盛出。",
-   "method": "mix",
+   "method": "boil",
    "heat": "off"
   }
  ],
@@ -78,5 +78,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

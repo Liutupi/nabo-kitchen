@@ -6,10 +6,10 @@
  ],
  "cuisine": "家常",
  "tags": [
-  "适合新手"
+  "下饭"
  ],
  "minutes": 25,
- "difficulty": 1,
+ "difficulty": 2,
  "servings": 2,
  "ingredients": [
   {
@@ -46,31 +46,28 @@
  ],
  "steps": [
   {
-   "text": "番茄洗净切块，姜切丝；生熟刀板分开。",
+   "text": "鱿鱼去内脏和软骨，切圈；番茄切块，姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "鱿鱼去内脏、软骨和眼嘴，切段；处理后洗手洗具。",
-   "method": "cut",
-   "heat": "off"
+   "text": "烧开水，鱿鱼下锅焯10秒，卷起就捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 10,
+   "tip": "焯久了会老"
   },
   {
-   "text": "锅加油炒香姜丝，放鱿鱼翻炒。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 120
-  },
-  {
-   "text": "加入番茄、水和生抽，翻炒至配菜熟透。",
+   "text": "锅加油炒香姜丝，下番茄炒出红汁。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 180
   },
   {
-   "text": "鱿鱼肉不透明、扎实且最厚处达63℃，不足继续加热。",
+   "text": "倒回鱿鱼，加生抽大火翻炒30秒，出锅。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "high",
+   "timer": 30
   }
  ],
  "dish": {
@@ -86,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

@@ -46,27 +46,28 @@
  ],
  "steps": [
   {
-   "text": "番茄切块、葱切末；另用刀板去虾壳和虾线并洗手洗具。",
+   "text": "番茄切块，葱切末；虾去壳、挑出虾线。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放1小勺油，中火炒虾仁至变色盛出。",
+   "text": "锅放1小勺油，中火炒虾仁到变色，盛出。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 90
   },
   {
    "text": "另放1小勺油炒番茄，加水煮软。",
-   "method": "braise",
+   "method": "stir_fry",
    "heat": "mid",
    "timer": 180
   },
   {
-   "text": "倒回虾仁煮至肉不透明、熟透，加盐撒葱。",
-   "method": "braise",
+   "text": "倒回虾仁煮30秒，加盐撒葱出锅。",
+   "method": "stir_fry",
    "heat": "mid",
-   "timer": 90
+   "timer": 30,
+   "tip": "虾仁久煮会老"
   }
  ],
  "dish": {
@@ -83,5 +84,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

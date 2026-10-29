@@ -55,7 +55,7 @@ def main():
                 w.append(("W2", i, t))
             if any(g in t for g in GENERIC):
                 w.append(("W3", i, t))
-            if step_count[t] >= a.repeat:
+            if step_count[t] >= a.repeat and len(t) > 12:  # “加盐调味盛出。”这类收尾短句不算
                 w.append(("W4", i, t))
         ids = {x["id"] for x in r["ingredients"]}
         if (r["difficulty"] == 1 or "适合新手" in r.get("tags", [])) and ids & HARD:

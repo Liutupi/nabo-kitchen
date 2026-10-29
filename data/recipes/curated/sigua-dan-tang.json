@@ -1,0 +1,87 @@
+{
+ "id": "sigua-dan-tang",
+ "name": "丝瓜蛋汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "loofah",
+   "qty": 1,
+   "unit": "根",
+   "main": true
+  },
+  {
+   "id": "egg",
+   "qty": 2,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "water",
+   "qty": "800毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "丝瓜刨皮切片，姜切丝，鸡蛋打散。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油炒香姜丝，下丝瓜炒软。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "加800毫升水煮开，再煮2分钟。",
+   "method": "boil",
+   "heat": "high",
+   "timer": 120
+  },
+  {
+   "text": "缓慢淋入蛋液，等蛋花浮起再轻推，加盐出锅。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "egg__ribbon"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

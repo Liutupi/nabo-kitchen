@@ -46,37 +46,37 @@
  ],
  "steps": [
   {
-   "text": "排骨切块，洋葱切块，姜切片；生熟分开。",
+   "text": "排骨切块，洋葱切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "排骨加1升冷水煮开，再煮3分钟，捞出沥水。",
+   "text": "排骨冷水下锅，煮开后再煮3分钟，捞出沥水。",
    "method": "blanch",
    "heat": "high",
    "timer": 180
   },
   {
-   "text": "锅放油炒姜，加入排骨、生抽和500毫升水。",
-   "method": "braise",
+   "text": "锅放油炒香姜，加入排骨、生抽和500毫升水。",
+   "method": "stir_fry",
    "heat": "mid"
   },
   {
-   "text": "小火焖约30分钟。",
+   "text": "小火焖30分钟。",
    "method": "braise",
    "heat": "low",
    "timer": 1800
   },
   {
-   "text": "加入洋葱，盖盖继续小火焖10分钟。",
+   "text": "加入洋葱，盖盖继续焖10分钟。",
    "method": "braise",
    "heat": "low",
    "timer": 600
   },
   {
-   "text": "避骨测中心至少63℃，关火静置3分钟。",
+   "text": "开盖收汁，筷子能扎透排骨，加盐出锅。",
    "method": "braise",
-   "heat": "off",
+   "heat": "mid",
    "timer": 180
   }
  ],
@@ -92,5 +92,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

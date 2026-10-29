@@ -6,7 +6,7 @@
  ],
  "cuisine": "家常",
  "tags": [
-  "适合新手"
+  "下饭"
  ],
  "minutes": 25,
  "difficulty": 1,
@@ -46,37 +46,26 @@
  ],
  "steps": [
   {
-   "text": "青椒去籽切片，蒜切片；花甲洗净，敲壳仍不闭合的活贝丢弃。",
+   "text": "花甲泡淡盐水吐沙，搓洗干净；青椒切片，蒜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "处理生贝后洗手并洗净刀板和水槽；破壳的丢弃。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "热锅加油，放蒜片炒香。",
+   "text": "热锅加油，炒香蒜片，下青椒炒1分钟。",
    "method": "stir_fry",
    "heat": "mid",
-   "timer": 30
+   "timer": 60
   },
   {
-   "text": "加入青椒翻炒至断生。",
+   "text": "加入花甲、生抽和2大勺水，盖盖大火焖到张口。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 120
+   "heat": "high",
+   "timer": 180
   },
   {
-   "text": "加入花甲、清水和生抽，加盖煮至贝壳张开。",
-   "method": "boil",
-   "heat": "mid",
-   "timer": 300
-  },
-  {
-   "text": "贝肉须熟透；丢弃未开口的贝壳，再盛出。",
-   "method": "mix",
-   "heat": "off"
+   "text": "开盖翻匀，没开口的挑出，盛出。",
+   "method": "stir_fry",
+   "heat": "high"
   }
  ],
  "dish": {
@@ -92,5 +81,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

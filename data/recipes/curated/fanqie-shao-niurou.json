@@ -50,31 +50,30 @@
  ],
  "steps": [
   {
-   "text": "牛肉切小块，番茄切块；生肉器具单独清洗。",
+   "text": "牛肉切小块，番茄切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放油炒香姜片及番茄，加入牛肉炒变色。",
+   "text": "锅放油炒香姜片和番茄，加入牛肉炒到变色。",
    "method": "stir_fry",
    "heat": "mid"
   },
   {
-   "text": "倒水煮开，撇沫后加生抽，小火炖50分钟。",
+   "text": "倒水煮开，撇去浮沫后加生抽，小火炖50分钟。",
    "method": "stew",
    "heat": "low",
    "timer": 3000
   },
   {
-   "text": "牛肉中心至少63℃，不足继续炖至软。",
+   "text": "筷子能轻松扎透牛肉就好，不够软再炖。",
    "method": "stew",
    "heat": "low"
   },
   {
-   "text": "加盐调味，离火静置3分钟再吃。",
-   "method": "mix",
-   "heat": "off",
-   "timer": 180
+   "text": "加盐调味，盛出。",
+   "method": "stew",
+   "heat": "off"
   }
  ],
  "dish": {
@@ -89,5 +88,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

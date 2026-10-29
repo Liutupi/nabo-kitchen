@@ -46,7 +46,7 @@
  ],
  "steps": [
   {
-   "text": "金针菇去根洗净，蒜切片；生肉末单独处理，洗手洗具。",
+   "text": "金针菇去根洗净，蒜切片。",
    "method": "cut",
    "heat": "off"
   },
@@ -57,14 +57,14 @@
    "timer": 180
   },
   {
-   "text": "加金针菇、清水和生抽，加盖煮熟。",
-   "method": "boil",
+   "text": "加金针菇、清水和生抽，盖盖煮3分钟。",
+   "method": "braise",
    "heat": "mid",
-   "timer": 240
+   "timer": 180
   },
   {
-   "text": "肉末测温至少71℃，金针菇熟透后盛出。",
-   "method": "mix",
+   "text": "金针菇变软、肉末全部变色即可盛出。",
+   "method": "braise",
    "heat": "off"
   }
  ],
@@ -81,5 +81,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

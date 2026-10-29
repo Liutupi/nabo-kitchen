@@ -42,33 +42,27 @@
  ],
  "steps": [
   {
-   "text": "排骨切块、白菜切段、姜切片，生熟分开。",
+   "text": "排骨切块，白菜切段，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "排骨加1升冷水煮开，再煮3分钟，捞出沥水。",
+   "text": "排骨冷水下锅，煮开后再煮3分钟，捞出洗净浮沫。",
    "method": "blanch",
    "heat": "high",
    "timer": 180
   },
   {
-   "text": "加1升热水与姜，小火煮约40分钟。",
+   "text": "加1升热水和姜，小火煮40分钟。",
    "method": "stew",
    "heat": "low",
    "timer": 2400
   },
   {
-   "text": "放白菜再煮10分钟至软，加盐调味。",
+   "text": "放白菜再煮10分钟，筷子能扎透排骨，加盐。",
    "method": "stew",
    "heat": "low",
    "timer": 600
-  },
-  {
-   "text": "避骨测中心至少63℃，关火静置3分钟。",
-   "method": "stew",
-   "heat": "off",
-   "timer": 180
   }
  ],
  "dish": {
@@ -83,5 +77,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

@@ -33,48 +33,49 @@
  "seasonings": [
   {
    "id": "oil",
-   "qty": "1大勺"
+   "qty": "2大勺"
   },
   {
    "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
    "qty": "1小勺"
   },
   {
    "id": "salt",
-   "qty": "1/3小勺"
-  },
-  {
-   "id": "water",
-   "qty": "3大勺"
+   "qty": "适量"
   }
  ],
  "steps": [
   {
-   "text": "瘦肉切薄片，土豆切薄片并浸洗沥水；生肉用具分开清洗。",
+   "text": "瘦肉切薄片，加生抽、淀粉和1小勺油腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "土豆切薄片，冲洗两遍沥干；姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅加油，放姜片及瘦肉炒至变色。",
+   "text": "热锅放油，下肉片快速划散，变白就盛出。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "high",
+   "timer": 60
   },
   {
-   "text": "加入土豆及水，加盖煮5分钟至蔬菜熟软。",
+   "text": "原锅炒土豆片到透明，加3大勺水盖盖焖2分钟。",
    "method": "braise",
    "heat": "mid",
-   "timer": 300
+   "timer": 120
   },
   {
-   "text": "测肉最厚处中心至少63℃，不足继续加热。",
+   "text": "倒回肉片，加盐翻匀出锅。",
    "method": "stir_fry",
-   "heat": "mid"
-  },
-  {
-   "text": "加生抽和盐翻匀，离火静置3分钟再吃。",
-   "method": "mix",
-   "heat": "off",
-   "timer": 180
+   "heat": "high"
   }
  ],
  "dish": {
@@ -89,5 +90,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

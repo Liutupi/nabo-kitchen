@@ -46,19 +46,15 @@
  ],
  "steps": [
   {
-   "text": "土豆洗净去皮切块，姜切片。",
+   "text": "鸡腿切块，土豆去皮切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "另用生肉刀板切鸡腿，不冲洗；洗净手和生肉用具。",
-   "method": "cut",
-   "heat": "off"
-  },
-  {
-   "text": "锅加油炒香姜，加入鸡块炒至表面变色。",
+   "text": "锅加油炒香姜，加入鸡块炒到表面变色。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "mid",
+   "timer": 240
   },
   {
    "text": "加土豆、生抽和水煮开，小火炖20分钟。",
@@ -67,14 +63,10 @@
    "timer": 1200
   },
   {
-   "text": "测鸡肉最厚处中心至少74℃，不足继续炖。",
+   "text": "土豆软透、鸡肉流出清汁即熟，收汁出锅。",
    "method": "stew",
-   "heat": "low"
-  },
-  {
-   "text": "土豆软透后收汁出锅。",
-   "method": "braise",
-   "heat": "mid"
+   "heat": "mid",
+   "timer": 120
   }
  ],
  "dish": {
@@ -89,5 +81,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

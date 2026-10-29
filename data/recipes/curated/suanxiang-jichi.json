@@ -45,26 +45,27 @@
  ],
  "steps": [
   {
-   "text": "蒜姜切片；另用刀板处理鸡翅并洗手洗净用具。",
+   "text": "鸡翅两面划刀，蒜和姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放油，中火煎鸡翅两面微黄。",
+   "text": "锅放油，中火把鸡翅两面煎到微黄。",
    "method": "fry",
    "heat": "mid",
    "timer": 360
   },
   {
-   "text": "放蒜姜、生抽和水，盖盖小火焖约15分钟。",
+   "text": "放蒜姜、生抽和水，盖盖小火焖15分钟。",
    "method": "braise",
    "heat": "low",
    "timer": 900
   },
   {
-   "text": "测最厚处避骨中心达74℃，收汁即可。",
+   "text": "开盖收汁，筷子扎鸡翅流出清汁即熟。",
    "method": "braise",
-   "heat": "mid"
+   "heat": "mid",
+   "timer": 120
   }
  ],
  "dish": {
@@ -80,5 +81,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

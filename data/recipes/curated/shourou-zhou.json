@@ -1,0 +1,101 @@
+{
+ "id": "shourou-zhou",
+ "name": "瘦肉粥",
+ "course": [
+  "staple"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "清淡"
+ ],
+ "minutes": 50,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "rice",
+   "qty": 100,
+   "unit": "克",
+   "main": true,
+   "note": "大米"
+  },
+  {
+   "id": "pork_lean",
+   "qty": 150,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 2,
+   "unit": "片"
+  },
+  {
+   "id": "scallion",
+   "qty": 1,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "water",
+   "qty": "1500毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "大米洗净，加几滴油拌匀；瘦肉切薄片，加生抽和淀粉抓匀。",
+   "method": "marinate",
+   "heat": "off"
+  },
+  {
+   "text": "1500毫升水煮开，下米，再开后转小火煮35分钟。",
+   "method": "boil",
+   "heat": "low",
+   "timer": 2100,
+   "tip": "不时搅动防粘底"
+  },
+  {
+   "text": "放入肉片和姜丝，轻轻推散，煮到肉片变白。",
+   "method": "boil",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加盐，撒葱花出锅。",
+   "method": "boil",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "white",
+  "layers": [
+   "pork_lean__slices"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion",
+   "ginger_shred"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

@@ -46,31 +46,31 @@
  ],
  "steps": [
   {
-   "text": "番茄切块、姜切片；另用刀板切鸡块并洗手洗具。",
+   "text": "鸡腿切块，番茄切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放油，中火煎鸡块表面变色。",
+   "text": "锅放油，中火煎鸡块到表面变色。",
    "method": "fry",
    "heat": "mid",
    "timer": 240
   },
   {
    "text": "加入姜和番茄炒软，再加水煮开。",
-   "method": "braise",
+   "method": "stir_fry",
    "heat": "mid",
    "timer": 180
   },
   {
-   "text": "盖盖小火焖约15分钟，鸡肉中心达74℃。",
+   "text": "盖盖小火焖15分钟，筷子扎鸡肉流出清汁即熟。",
    "method": "braise",
    "heat": "low",
    "timer": 900
   },
   {
    "text": "加盐拌匀后出锅。",
-   "method": "mix",
+   "method": "braise",
    "heat": "off"
   }
  ],
@@ -86,5 +86,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

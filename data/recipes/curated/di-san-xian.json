@@ -1,0 +1,102 @@
+{
+ "id": "di-san-xian",
+ "name": "地三鲜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "东北",
+ "tags": [
+  "下饭"
+ ],
+ "minutes": 30,
+ "difficulty": 2,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "potato",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "eggplant",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1小勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oil",
+   "qty": "3大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "土豆和茄子切滚刀块，青椒切块；生抽、蚝油、糖和淀粉加水调匀。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油，中火把土豆块煎到金黄、筷子能扎透，盛出。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 360
+  },
+  {
+   "text": "再加油把茄子煎软，下青椒炒1分钟。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 240
+  },
+  {
+   "text": "倒回土豆，加蒜末和调好的汁，大火翻匀收汁。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "braise",
+  "layers": [
+   "potato__chunks_braised",
+   "eggplant__braised",
+   "green_pepper__strips"
+  ],
+  "hero": false,
+  "garnish": [
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

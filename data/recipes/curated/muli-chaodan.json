@@ -46,41 +46,33 @@
  ],
  "steps": [
   {
-   "text": "葱洗净切花，鸡蛋打散；牡蛎肉用独立器具处理。",
+   "text": "牡蛎肉用清水轻轻搓洗，沥干；葱切花，鸡蛋打散。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "处理生牡蛎后洗手，并清洗接触的器具和台面。",
-   "method": "cut",
-   "heat": "off"
+   "text": "烧开水，下牡蛎煮2分钟到边缘卷起，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 120,
+   "tip": "焯过炒时不出水"
   },
   {
-   "text": "500毫升水煮开，放牡蛎肉，煮至水再次沸腾。",
-   "method": "boil",
-   "heat": "mid"
-  },
-  {
-   "text": "再沸后煮至少3分钟，至牡蛎边缘卷曲并熟透。",
-   "method": "boil",
-   "heat": "mid",
-   "timer": 180
-  },
-  {
-   "text": "捞出牡蛎沥干；锅加全部油，倒入牡蛎。",
-   "method": "stir_fry",
-   "heat": "mid"
-  },
-  {
-   "text": "加蛋液炒匀，炒至蛋液凝固、中心达71℃。",
-   "method": "stir_fry",
-   "heat": "mid",
-   "timer": 180
-  },
-  {
-   "text": "加盐和葱花拌匀，确认牡蛎和鸡蛋熟透后盛出。",
+   "text": "蛋液加入牡蛎、葱花和盐拌匀。",
    "method": "mix",
    "heat": "off"
+  },
+  {
+   "text": "锅放全部油，倒入蛋液，中火煎到底部定型。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "翻炒到蛋液全部凝固，盛出。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
   }
  ],
  "dish": {
@@ -96,5 +88,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

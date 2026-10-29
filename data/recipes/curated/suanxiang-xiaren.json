@@ -36,7 +36,7 @@
  ],
  "steps": [
   {
-   "text": "蒜切末；另用刀板去虾壳和虾线，沥干后洗手洗具。",
+   "text": "虾去壳、挑出虾线，擦干；蒜切末。",
    "method": "cut",
    "heat": "off"
   },
@@ -53,8 +53,8 @@
    "timer": 150
   },
   {
-   "text": "加盐拌匀；检查最厚虾肉熟透后盛出。",
-   "method": "mix",
+   "text": "加盐拌匀，虾仁全部变红卷起即盛出。",
+   "method": "stir_fry",
    "heat": "off"
   }
  ],
@@ -71,5 +71,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

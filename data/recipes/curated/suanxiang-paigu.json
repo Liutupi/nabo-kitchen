@@ -45,32 +45,26 @@
  ],
  "steps": [
   {
-   "text": "蒜切末、姜切丝；另用刀板切排骨，洗手洗净用具。",
+   "text": "排骨切小块，冲净血水擦干；蒜切末，姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "排骨拌生抽、淀粉和油，静置15分钟。",
+   "text": "排骨拌生抽、淀粉和油，腌15分钟。",
    "method": "marinate",
    "heat": "off",
    "timer": 900
   },
   {
-   "text": "放蒜姜并摊平；水开后上蒸锅。",
+   "text": "放上蒜末和姜丝摊平，水开后上锅。",
    "method": "steam",
    "heat": "high"
   },
   {
-   "text": "蒸约25分钟，避骨测中心至少63℃。",
+   "text": "大火蒸25分钟，筷子能扎透排骨即熟。",
    "method": "steam",
    "heat": "high",
    "timer": 1500
-  },
-  {
-   "text": "关火静置3分钟，再取出食用。",
-   "method": "steam",
-   "heat": "off",
-   "timer": 180
   }
  ],
  "dish": {
@@ -87,5 +81,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

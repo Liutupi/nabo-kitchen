@@ -51,7 +51,7 @@
  ],
  "steps": [
   {
-   "text": "排骨切小块；土豆去皮切块，姜切片；生熟分开。",
+   "text": "排骨切小块；土豆去皮切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
@@ -79,11 +79,10 @@
    "timer": 900
   },
   {
-   "text": "测厚肉处至少63℃，关火静置3分钟。",
+   "text": "开盖大火收汁，筷子能扎透排骨即可。",
    "method": "braise",
-   "heat": "off",
-   "timer": 180,
-   "tip": "测温避开骨头"
+   "heat": "high",
+   "timer": 180
   }
  ],
  "dish": {
@@ -100,5 +99,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

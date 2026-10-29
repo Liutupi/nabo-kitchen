@@ -42,7 +42,7 @@
  ],
  "steps": [
   {
-   "text": "冬瓜去皮切片、姜切丝；另用刀板去虾壳和虾线并洗手洗具。",
+   "text": "冬瓜去皮切片，姜切丝；虾去壳、挑出虾线。",
    "method": "cut",
    "heat": "off"
   },
@@ -78,5 +78,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

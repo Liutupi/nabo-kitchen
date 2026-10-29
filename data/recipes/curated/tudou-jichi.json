@@ -46,12 +46,12 @@
  ],
  "steps": [
   {
-   "text": "土豆去皮切块、姜切片；另用刀板处理鸡翅并洗手洗具。",
+   "text": "鸡翅两面划刀，土豆去皮切块，姜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放油，中火煎鸡翅至两面微黄。",
+   "text": "锅放油，中火把鸡翅两面煎到微黄。",
    "method": "fry",
    "heat": "mid",
    "timer": 360
@@ -62,7 +62,7 @@
    "heat": "mid"
   },
   {
-   "text": "盖盖焖约20分钟，土豆软且鸡肉中心达74℃。",
+   "text": "盖盖焖20分钟，土豆变软、鸡翅流出清汁即熟。",
    "method": "braise",
    "heat": "low",
    "timer": 1200
@@ -80,5 +80,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

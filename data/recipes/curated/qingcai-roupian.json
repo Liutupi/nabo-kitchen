@@ -33,46 +33,49 @@
  "seasonings": [
   {
    "id": "oil",
-   "qty": "2小勺"
+   "qty": "2大勺"
   },
   {
    "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
    "qty": "1小勺"
   },
   {
-   "id": "water",
-   "qty": "50毫升"
+   "id": "salt",
+   "qty": "适量"
   }
  ],
  "steps": [
   {
-   "text": "肉切薄片，菜心切段，姜切丝；生熟分开。",
+   "text": "瘦肉切薄片，加生抽、淀粉和1小勺油抓匀，腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "菜心切段，梗叶分开；姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放1小勺油炒肉片至变色后盛出。",
+   "text": "热锅放油，下肉片快速划散，全部变白就盛出。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 150
+   "heat": "high",
+   "timer": 60
   },
   {
-   "text": "另加1小勺油炒姜和菜心，加水焖熟菜梗。",
-   "method": "braise",
-   "heat": "mid",
-   "timer": 180
+   "text": "原锅炒香姜丝，先下菜梗炒1分钟，再下菜叶。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
   },
   {
-   "text": "倒回肉片和生抽炒至最厚处中心至少63℃。",
+   "text": "倒回肉片，加盐大火翻匀出锅。",
    "method": "stir_fry",
-   "heat": "mid",
-   "timer": 120
-  },
-  {
-   "text": "关火静置3分钟后盛出。",
-   "method": "stir_fry",
-   "heat": "off",
-   "timer": 180
+   "heat": "high"
   }
  ],
  "dish": {
@@ -89,5 +92,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

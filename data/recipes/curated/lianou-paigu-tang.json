@@ -1,0 +1,88 @@
+{
+ "id": "lianou-paigu-tang",
+ "name": "莲藕排骨汤",
+ "course": [
+  "soup"
+ ],
+ "cuisine": "家常",
+ "tags": [
+  "清淡"
+ ],
+ "minutes": 120,
+ "difficulty": 1,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "pork_rib",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "lotus_root",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "salt",
+   "qty": "适量"
+  },
+  {
+   "id": "water",
+   "qty": "1500毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "排骨切块，莲藕去皮切滚刀块，姜切片。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "选粉藕炖出来更糯"
+  },
+  {
+   "text": "排骨冷水下锅，煮开后再煮3分钟，捞出洗净。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 180
+  },
+  {
+   "text": "汤锅加1500毫升水、姜、排骨和莲藕，大火煮开。",
+   "method": "stew",
+   "heat": "high"
+  },
+  {
+   "text": "转小火炖90分钟，到莲藕粉糯。",
+   "method": "stew",
+   "heat": "low",
+   "timer": 5400
+  },
+  {
+   "text": "加盐调味，盛出。",
+   "method": "stew",
+   "heat": "off"
+  }
+ ],
+ "dish": {
+  "vessel": "bowl",
+  "sauce": "clear_soup",
+  "layers": [
+   "pork_rib__soup",
+   "potato__chunks_soup"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

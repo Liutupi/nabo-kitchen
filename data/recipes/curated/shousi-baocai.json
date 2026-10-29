@@ -1,0 +1,92 @@
+{
+ "id": "shousi-baocai",
+ "name": "手撕包菜",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "川",
+ "tags": [
+  "快手",
+  "下饭",
+  "微辣"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "cabbage",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 3,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "dried_chili",
+   "qty": "4个"
+  },
+  {
+   "id": "vinegar",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "2大勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "包菜用手撕成片，粗梗用刀背拍扁；蒜切片。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "手撕比刀切更入味"
+  },
+  {
+   "text": "热锅放油，小火炒香蒜片和干辣椒。",
+   "method": "stir_fry",
+   "heat": "low",
+   "timer": 30
+  },
+  {
+   "text": "转大火下包菜，翻炒1分钟到边缘微焦。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "沿锅边淋醋和生抽，加盐快速翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "napa_cabbage__stirfried"
+  ],
+  "hero": false,
+  "garnish": [
+   "chili_ring",
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

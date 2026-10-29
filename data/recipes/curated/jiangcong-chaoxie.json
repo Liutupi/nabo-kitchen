@@ -1,0 +1,110 @@
+{
+ "id": "jiangcong-chaoxie",
+ "name": "姜葱炒蟹",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "宴客",
+  "下饭"
+ ],
+ "minutes": 35,
+ "difficulty": 3,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "crab",
+   "qty": 2,
+   "unit": "只",
+   "main": true
+  },
+  {
+   "id": "ginger",
+   "qty": 1,
+   "unit": "块"
+  },
+  {
+   "id": "scallion",
+   "qty": 4,
+   "unit": "根"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "3大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "2大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "1小勺"
+  },
+  {
+   "id": "water",
+   "qty": "100毫升"
+  }
+ ],
+ "steps": [
+  {
+   "text": "活蟹放冰箱冷冻20分钟，刷洗干净。",
+   "method": "cut",
+   "heat": "off",
+   "tip": "冻晕了好处理"
+  },
+  {
+   "text": "去蟹盖和蟹腮，斩成4块，蟹钳拍裂；姜切片，葱切段。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "蟹块切口蘸一层淀粉，下油锅中火煎到变红，盛出。",
+   "method": "fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "原锅爆香姜片和葱白，倒回蟹块和蟹盖。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  },
+  {
+   "text": "加料酒、生抽、糖和水，盖盖焖5分钟。",
+   "method": "braise",
+   "heat": "mid",
+   "timer": 300
+  },
+  {
+   "text": "蟹壳全红即熟，放葱叶翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high"
+  }
+ ],
+ "dish": {
+  "vessel": "deep",
+  "sauce": "braise",
+  "layers": [
+   "shrimp__boiled"
+  ],
+  "hero": false,
+  "garnish": [
+   "scallion",
+   "ginger_shred"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

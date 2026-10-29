@@ -42,25 +42,26 @@
  ],
  "steps": [
   {
-   "text": "白菜洗净切段，姜切片；另用刀板切鱼片并洗手洗具。",
+   "text": "白菜切段，姜切片；鱼片用厨房纸吸干。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅中加700毫升水及姜煮开，放白菜煮熟。",
+   "text": "锅中加700毫升水和姜煮开，放白菜煮软。",
    "method": "boil",
-   "heat": "mid",
+   "heat": "high",
    "timer": 360
   },
   {
-   "text": "加入鱼片煮至最厚处达63℃；不足继续煮。",
+   "text": "放入鱼片轻轻推散，煮到鱼片变白卷起。",
    "method": "boil",
    "heat": "mid",
-   "timer": 240
+   "timer": 120,
+   "tip": "别多搅，鱼片会碎"
   },
   {
-   "text": "加盐拌匀，关火盛出。",
-   "method": "mix",
+   "text": "加盐调味，关火盛出。",
+   "method": "boil",
    "heat": "off"
   }
  ],
@@ -77,5 +78,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

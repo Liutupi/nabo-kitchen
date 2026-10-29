@@ -43,29 +43,29 @@
  ],
  "steps": [
   {
-   "text": "胡萝卜和香菇切丁；蛋打散，加150毫升水。",
-   "method": "mix",
+   "text": "胡萝卜和香菇切丁；鸡蛋打散，加150毫升温水。",
+   "method": "cut",
    "heat": "off"
   },
   {
-   "text": "蔬菜丁放500毫升沸水煮2分钟后沥水。",
-   "method": "boil",
+   "text": "蔬菜丁放进沸水煮2分钟，捞出沥水。",
+   "method": "blanch",
    "heat": "high",
    "timer": 120
   },
   {
-   "text": "蛋液过滤入碗，加入熟蔬菜丁，盖耐热盘。",
+   "text": "蛋液过筛倒入碗，加入蔬菜丁，盖上盘子。",
    "method": "mix",
    "heat": "off"
   },
   {
-   "text": "水开后中小火蒸约12分钟，蛋羹中心达71℃。",
+   "text": "水开后中小火蒸12分钟，轻晃碗中心不流动即熟。",
    "method": "steam",
-   "heat": "low",
+   "heat": "mid",
    "timer": 720
   },
   {
-   "text": "未达温度继续蒸，出锅淋生抽。",
+   "text": "出锅淋少许生抽。",
    "method": "steam",
    "heat": "off"
   }
@@ -83,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

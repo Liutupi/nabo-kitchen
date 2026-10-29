@@ -53,7 +53,7 @@
    "heat": "off"
   },
   {
-   "text": "水开后中火蒸至蛋液完全凝固、中心达71℃。",
+   "text": "水开后中火蒸10分钟，轻晃碗中心不流动即熟。",
    "method": "steam",
    "heat": "mid",
    "timer": 600
@@ -70,5 +70,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

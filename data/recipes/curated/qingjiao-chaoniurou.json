@@ -33,48 +33,54 @@
  "seasonings": [
   {
    "id": "oil",
-   "qty": "1大勺"
+   "qty": "2大勺"
   },
   {
    "id": "soy_light",
+   "qty": "1大勺"
+  },
+  {
+   "id": "starch",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oyster",
    "qty": "1小勺"
   },
   {
    "id": "salt",
-   "qty": "1/3小勺"
-  },
-  {
-   "id": "water",
-   "qty": "3大勺"
+   "qty": "适量"
   }
  ],
  "steps": [
   {
-   "text": "牛肉切薄片，青椒去籽切丝；生肉用具分开清洗。",
+   "text": "牛肉逆着纹路切薄片，加生抽、淀粉和1小勺油腌10分钟。",
+   "method": "marinate",
+   "heat": "off",
+   "timer": 600
+  },
+  {
+   "text": "青椒去籽切丝，姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅加油，放姜片及牛肉炒至变色。",
+   "text": "热锅放油，大火滑炒牛肉到七成变色，盛出。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "high",
+   "timer": 60,
+   "tip": "火要大，动作要快"
   },
   {
-   "text": "加入青椒及水，加盖煮5分钟至蔬菜熟软。",
-   "method": "braise",
-   "heat": "mid",
-   "timer": 300
-  },
-  {
-   "text": "测肉最厚处中心至少63℃，不足继续加热。",
+   "text": "原锅炒香姜丝，下青椒大火炒1分钟。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "high",
+   "timer": 60
   },
   {
-   "text": "加生抽和盐翻匀，离火静置3分钟再吃。",
-   "method": "mix",
-   "heat": "off",
-   "timer": 180
+   "text": "倒回牛肉，加蚝油和盐翻匀，马上出锅。",
+   "method": "stir_fry",
+   "heat": "high"
   }
  ],
  "dish": {
@@ -89,5 +95,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

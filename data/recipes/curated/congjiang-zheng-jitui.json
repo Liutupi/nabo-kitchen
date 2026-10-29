@@ -41,12 +41,12 @@
  ],
  "steps": [
   {
-   "text": "鸡腿切块，不冲洗；生鸡用具与双手洗净。",
+   "text": "鸡腿切块，姜切丝，葱切段。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "加姜葱、生抽和油拌匀，腌10分钟。",
+   "text": "鸡块加姜葱、生抽和油拌匀，腌10分钟。",
    "method": "marinate",
    "heat": "off",
    "timer": 600
@@ -58,9 +58,10 @@
    "timer": 1080
   },
   {
-   "text": "避开骨头测最厚处中心至少74℃，不足续蒸。",
+   "text": "筷子扎最厚处，流出清汁、不带血丝即熟。",
    "method": "steam",
-   "heat": "mid"
+   "heat": "off",
+   "tip": "有血水再蒸3分钟"
   }
  ],
  "dish": {
@@ -74,5 +75,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

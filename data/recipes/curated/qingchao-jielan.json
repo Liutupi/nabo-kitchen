@@ -1,0 +1,87 @@
+{
+ "id": "qingchao-jielan",
+ "name": "清炒芥兰",
+ "course": [
+  "veg"
+ ],
+ "cuisine": "粤",
+ "tags": [
+  "快手",
+  "清淡"
+ ],
+ "minutes": 15,
+ "difficulty": 1,
+ "servings": 2,
+ "ingredients": [
+  {
+   "id": "gai_lan",
+   "qty": 400,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "garlic",
+   "qty": 2,
+   "unit": "瓣"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  },
+  {
+   "id": "sugar",
+   "qty": "少许"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1小勺"
+  },
+  {
+   "id": "salt",
+   "qty": "适量"
+  }
+ ],
+ "steps": [
+  {
+   "text": "芥兰削去粗梗的老皮，斜切成段；蒜切片。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "烧开水，加少许盐和油，芥兰焯1分钟，捞出沥干。",
+   "method": "blanch",
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "热锅放油，炒香蒜片，下芥兰大火翻炒。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30
+  },
+  {
+   "text": "加盐和少许糖，沿锅边淋料酒，翻匀出锅。",
+   "method": "stir_fry",
+   "heat": "high",
+   "timer": 30,
+   "tip": "少许糖能压苦味"
+  }
+ ],
+ "dish": {
+  "vessel": "plate",
+  "sauce": "clear",
+  "layers": [
+   "choy_sum__stirfried"
+  ],
+  "hero": false,
+  "garnish": [
+   "garlic",
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

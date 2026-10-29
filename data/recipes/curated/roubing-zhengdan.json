@@ -71,9 +71,9 @@
    "timer": 1200
   },
   {
-   "text": "测肉饼中心达到71℃，蛋清蛋黄凝固；未熟继续蒸。",
+   "text": "肉饼按下去有弹性、流出的汁是清的即熟。",
    "method": "steam",
-   "heat": "mid"
+   "heat": "off"
   }
  ],
  "dish": {
@@ -89,5 +89,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

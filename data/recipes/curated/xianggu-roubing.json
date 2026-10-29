@@ -46,25 +46,20 @@
  ],
  "steps": [
   {
-   "text": "香菇和姜切细末，与肉末一起放碗中。",
+   "text": "香菇和姜切细末，和肉末一起放进碗里。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "加生抽、淀粉和水搅匀，摊成薄饼放盘内。",
+   "text": "加生抽、淀粉和水，顺一个方向搅上劲，摊平在盘里。",
    "method": "mix",
    "heat": "off"
   },
   {
-   "text": "水开后蒸约15分钟，最厚中心至少71℃。",
+   "text": "水开后蒸15分钟，肉饼流出的汁是清的即熟。",
    "method": "steam",
    "heat": "high",
    "timer": 900
-  },
-  {
-   "text": "未达温度继续蒸熟，关火取出。",
-   "method": "steam",
-   "heat": "off"
   }
  ],
  "dish": {
@@ -81,5 +76,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

@@ -6,7 +6,8 @@
  ],
  "cuisine": "湘",
  "tags": [
-  "下饭"
+  "下饭",
+  "微辣"
  ],
  "minutes": 25,
  "difficulty": 2,
@@ -46,33 +47,26 @@
  ],
  "steps": [
   {
-   "text": "五花肉切薄片；青椒去籽切片，蒜切片，生熟分开。",
+   "text": "五花肉切薄片，青椒斜切成圈，蒜切片。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅中放油，中火炒肉片约5分钟，翻面至熟。",
+   "text": "锅中放少许油，中火把肉片煸到出油、微焦卷边。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 300
   },
   {
-   "text": "加蒜和青椒，继续翻炒约2分钟。",
+   "text": "下蒜片和青椒，大火炒1分钟到青椒起皱。",
    "method": "stir_fry",
    "heat": "high",
-   "timer": 120
+   "timer": 60
   },
   {
-   "text": "加入生抽和少许盐翻匀。",
+   "text": "加生抽和少许盐翻匀，出锅。",
    "method": "stir_fry",
-   "heat": "mid"
-  },
-  {
-   "text": "测厚肉片中心至少63℃，关火静置3分钟。",
-   "method": "stir_fry",
-   "heat": "off",
-   "timer": 180,
-   "tip": "使用食物温度计"
+   "heat": "high"
   }
  ],
  "dish": {
@@ -89,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

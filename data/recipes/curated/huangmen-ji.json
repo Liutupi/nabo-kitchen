@@ -1,0 +1,116 @@
+{
+ "id": "huangmen-ji",
+ "name": "黄焖鸡",
+ "course": [
+  "meat"
+ ],
+ "cuisine": "鲁",
+ "tags": [
+  "下饭",
+  "一锅出"
+ ],
+ "minutes": 40,
+ "difficulty": 2,
+ "servings": 3,
+ "ingredients": [
+  {
+   "id": "chicken_thigh",
+   "qty": 500,
+   "unit": "克",
+   "main": true
+  },
+  {
+   "id": "shiitake",
+   "qty": 6,
+   "unit": "朵"
+  },
+  {
+   "id": "potato",
+   "qty": 1,
+   "unit": "个"
+  },
+  {
+   "id": "green_pepper",
+   "qty": 1,
+   "unit": "个"
+  },
+  {
+   "id": "ginger",
+   "qty": 3,
+   "unit": "片"
+  }
+ ],
+ "seasonings": [
+  {
+   "id": "rock_sugar",
+   "qty": "10克"
+  },
+  {
+   "id": "soy_light",
+   "qty": "2大勺"
+  },
+  {
+   "id": "soy_dark",
+   "qty": "1小勺"
+  },
+  {
+   "id": "oyster",
+   "qty": "1大勺"
+  },
+  {
+   "id": "cooking_wine",
+   "qty": "1大勺"
+  },
+  {
+   "id": "oil",
+   "qty": "1大勺"
+  }
+ ],
+ "steps": [
+  {
+   "text": "鸡腿切块，香菇切半，土豆切块，青椒切块。",
+   "method": "cut",
+   "heat": "off"
+  },
+  {
+   "text": "锅放油和冰糖，小火炒到糖化开，下鸡块炒到上色。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 180
+  },
+  {
+   "text": "加姜、生抽、老抽、蚝油、料酒和香菇翻匀。",
+   "method": "stir_fry",
+   "heat": "mid",
+   "timer": 60
+  },
+  {
+   "text": "加热水没过鸡块，放土豆，盖盖小火焖20分钟。",
+   "method": "braise",
+   "heat": "low",
+   "timer": 1200
+  },
+  {
+   "text": "放青椒，大火收汁2分钟，鸡块流出清汁即熟。",
+   "method": "braise",
+   "heat": "high",
+   "timer": 120
+  }
+ ],
+ "dish": {
+  "vessel": "claypot",
+  "sauce": "braise",
+  "layers": [
+   "chicken_thigh__pieces_braised",
+   "potato__chunks_braised",
+   "shiitake__braised"
+  ],
+  "hero": false,
+  "garnish": [
+   "shine"
+  ]
+ },
+ "source": "curated",
+ "author": "",
+ "version": 1
+}

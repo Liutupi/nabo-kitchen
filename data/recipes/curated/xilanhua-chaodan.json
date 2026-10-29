@@ -37,36 +37,32 @@
  ],
  "steps": [
   {
-   "text": "西兰花洗净切小朵。",
+   "text": "西兰花切小朵；鸡蛋打散。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "另备适量水烧开，放入西兰花焯1分钟，捞出沥水。",
+   "text": "烧开一锅水，下西兰花焯1分钟，捞出沥水。",
    "method": "blanch",
    "heat": "high",
    "timer": 60
   },
   {
-   "text": "鸡蛋打散。",
-   "method": "mix",
-   "heat": "off"
-  },
-  {
-   "text": "热锅加油，倒蛋液炒至完全凝固，盛出。",
-   "method": "stir_fry",
-   "heat": "mid"
-  },
-  {
-   "text": "锅中放入西兰花翻炒2分钟至熟。",
+   "text": "热锅加油，倒蛋液炒到凝固，盛出。",
    "method": "stir_fry",
    "heat": "mid",
-   "timer": 120
+   "timer": 90
   },
   {
-   "text": "倒回熟鸡蛋，加盐炒匀，确认热透后出锅。",
+   "text": "锅中放入西兰花，大火翻炒1分钟。",
    "method": "stir_fry",
-   "heat": "mid"
+   "heat": "high",
+   "timer": 60
+  },
+  {
+   "text": "倒回鸡蛋，加盐炒匀出锅。",
+   "method": "stir_fry",
+   "heat": "high"
   }
  ],
  "dish": {
@@ -81,5 +77,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

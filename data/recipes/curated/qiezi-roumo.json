@@ -46,27 +46,27 @@
  ],
  "steps": [
   {
-   "text": "茄子切条，蒜切末；生肉和蔬菜分开处理。",
+   "text": "茄子切条，蒜切末。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "锅放1小勺油炒肉末至散开变色，盛出。",
+   "text": "锅放1小勺油，炒散肉末到变色，盛出。",
    "method": "stir_fry",
    "heat": "mid",
    "timer": 180
   },
   {
-   "text": "另加1小勺油炒蒜和茄子，加水焖软。",
+   "text": "另加1小勺油炒蒜和茄子，加水盖盖焖软。",
    "method": "braise",
    "heat": "mid",
    "timer": 420
   },
   {
-   "text": "倒回肉末和生抽煮透，肉末中心至少71℃。",
+   "text": "倒回肉末和生抽，焖2分钟入味出锅。",
    "method": "braise",
    "heat": "mid",
-   "timer": 180
+   "timer": 120
   }
  ],
  "dish": {
@@ -83,5 +83,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }

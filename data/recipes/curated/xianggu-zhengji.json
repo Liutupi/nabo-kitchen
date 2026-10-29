@@ -46,23 +46,23 @@
  ],
  "steps": [
   {
-   "text": "香菇切片、姜切丝；另用刀板切鸡块并洗手洗具。",
+   "text": "鸡腿切块，香菇切片，姜切丝。",
    "method": "cut",
    "heat": "off"
   },
   {
-   "text": "鸡块拌生抽、淀粉和油，静置10分钟。",
+   "text": "鸡块拌生抽、淀粉和油，腌10分钟。",
    "method": "marinate",
    "heat": "off",
    "timer": 600
   },
   {
-   "text": "香菇铺盘底，放鸡块和姜；水开后上锅。",
+   "text": "香菇铺盘底，放上鸡块和姜；水开后上锅。",
    "method": "steam",
    "heat": "high"
   },
   {
-   "text": "盖盖蒸约15分钟，测鸡肉最厚处中心达74℃。",
+   "text": "盖盖蒸15分钟，筷子扎鸡肉流出清汁即熟。",
    "method": "steam",
    "heat": "high",
    "timer": 900
@@ -82,5 +82,5 @@
  },
  "source": "curated",
  "author": "Codex（待厨房验收）",
- "version": 1
+ "version": 2
 }
