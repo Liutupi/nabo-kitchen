@@ -19,5 +19,6 @@
     "P13.png",
     "focus-preview.png"
   ],
-  "firmware_validation": "https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-validation-20261029.json"
+  "firmware_validation": "https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/development/offline-v02-validation-20261029.json",
+  "source_code_commit": "a0e92aecec780f772752f2a787f2ee49ff7e8bfe"
 }
