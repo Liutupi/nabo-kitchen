@@ -51,6 +51,17 @@ int view_pause_timer(void) {
     kt_toggle(&state.timers, state.timers.items[0].id, 1000);
     return kv_prepare(&scene, &state, &assets, 1000, 80, "", frame);
 }
+int view_home_timer(unsigned kind) {
+    if(kind>3 || !view_page(1,0)) return 0;
+    if(kind){
+        uint32_t id;
+        if(!kt_add(&state.timers,90,1000,&id))return 0;
+        if(kind==2)kt_toggle(&state.timers,id,1000);
+        if(kind==3)kt_tick(&state.timers,91000);
+    }
+    state.focus=5;
+    return kv_prepare(&scene,&state,&assets,kind==3?91000:1000,80,"",frame);
+}
 int view_step(unsigned step){state.page=6;state.sessions[state.recipe].index=(uint8_t)step;
     return kv_prepare(&scene,&state,&assets,1000,80,"20:30",frame);}
 int view_boot_at(unsigned elapsed){

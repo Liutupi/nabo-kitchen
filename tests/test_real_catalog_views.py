@@ -109,6 +109,16 @@ class RealCatalogViews(unittest.TestCase):
         self.assertEqual(self.dll.view_page(7, 0), 1)
         self.check_render("timer page: cancel control and real glyphs")
 
+    def test_home_timer_entry_with_real_fonts_and_all_timer_states(self):
+        self.dll.view_home_timer.argtypes = [ct.c_uint]
+        for kind in range(4):
+            self.assertEqual(self.dll.view_home_timer(kind), 1)
+            self.check_render(f"home timer entry state {kind}")
+            pixels = (ct.c_uint16 * (240 * 320))()
+            self.assertEqual(self.dll.view_draw(pixels, 0, 320), 1)
+            gold = ((255 >> 3) << 11) | ((180 >> 2) << 5) | (94 >> 3)
+            self.assertEqual(pixels[285 * 240 + 125], gold)
+
     def test_clock_inputs_never_render_in_v02(self):
         pixels_type = ct.c_uint16 * (240 * 320)
         self.dll.view_capture_clock.argtypes = [ct.c_uint]
@@ -165,8 +175,10 @@ class RealCatalogViews(unittest.TestCase):
             self.assertEqual(self.dll.view_draw(after, 0, 320), 1)
             self.check_render(f"page {page}: alert")
             self.assertNotEqual(list(before[:240 * 30]), list(after[:240 * 30]))
-            self.assertEqual(list(before[240 * 32:]), list(after[240 * 32:]),
-                             f"page {page}: alarm covered the content")
+            unchanged = [i for i in range(240 * 32, 240 * 320)
+                         if page != 1 or not (260 <= i // 240 < 292 and 8 <= i % 240 < 232)]
+            self.assertTrue(all(before[i] == after[i] for i in unchanged),
+                            f"page {page}: alarm covered content outside the timer summary")
 
     def test_real_catalog_draws(self):
         for combo in range(4):

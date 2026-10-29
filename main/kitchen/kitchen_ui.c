@@ -445,7 +445,7 @@ void ku_key(ku_ui* u, ki_key key, ki_kind kind, int64_t now) {
             u->focus = (u->focus + (key == KI_UP ? u->timers.count - 1 : 1)) % u->timers.count;
         return;
     }
-    unsigned count = u->page == 1    ? 5
+    unsigned count = u->page == 1    ? 6
                      : u->page == 2  ? 4
                      : u->page == 11 ? u->shopping_count + 1
                      : u->page == 13 ? (u->settings_mode ? u->ingredient_count : 7)
@@ -476,7 +476,7 @@ void ku_key(ku_ui* u, ki_key key, ki_kind kind, int64_t now) {
     if (key != KI_OK)
         return;
     if (u->page == 1) {
-        static const uint8_t pages[] = {2, 9, 11, 12, 13};
+        static const uint8_t pages[] = {2, 9, 11, 12, 13, 7};
         go(u, pages[u->focus], 1, 0);
     } else if (u->page == 2) {
         if (u->focus == 0)

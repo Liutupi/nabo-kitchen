@@ -50,8 +50,44 @@ static ku_ui fresh(uint32_t seed, unsigned month, int unknown, int recent) {
 static unsigned select_one(ku_ui* u) {
     ku_key(u,KI_OK,KI_LONG,0);assert((u->page==3 || u->page==4) && u->saved_count==1);return u->saved_result[0];
 }
+static void timer_home_roundtrip(void) {
+    ku_ui u=fresh(42,1,0,0);
+    timed_step=1;u.page=6;u.recipe=0;
+    ku_key(&u,KI_OK,KI_SHORT,1000);
+    assert(u.page==6 && u.timers.count==1 && u.timer_steps[0]==1);
+    uint32_t id=u.timers.items[0].id;
+    ku_key(&u,KI_UP,KI_LONG,1001);assert(u.outside);
+    ku_key(&u,KI_OK,KI_SHORT,1002);assert(!u.outside && u.page==1);
+    ku_key(&u,KI_UP,KI_SHORT,1003);assert(u.focus==5);
+    ku_key(&u,KI_OK,KI_SHORT,1004);assert(u.page==7 && u.timers.items[0].id==id);
+    ku_key(&u,KI_OK,KI_LONG,2000);assert(u.timers.items[0].status==KT_PAUSED);
+    uint8_t bytes[KU_SAVE_MAX];size_t n=ku_save_encode(&u,bytes,sizeof bytes,20,2000,-1);assert(n);
+    ku_ui restored=fresh(42,1,0,0),scratch={0};
+    assert(ku_save_decode(&restored,&scratch,bytes,n,NULL,0,-1,NULL));
+    assert(restored.page==1 && restored.timers.count==1 && restored.timers.items[0].status==KT_PAUSED);
+    ku_key(&restored,KI_UP,KI_SHORT,1);assert(restored.focus==5);
+    ku_key(&restored,KI_OK,KI_SHORT,2);assert(restored.page==7);
+    ku_key(&restored,KI_OK,KI_LONG,3);assert(restored.timers.items[0].status==KT_RUNNING);
+    ku_key(&restored,KI_DOWN,KI_LONG,4);assert(!restored.timers.count && restored.timer_steps[0]==1);
+    assert(!restored.timer_ids[0] && !restored.store.history_count);
+    ku_key(&restored,KI_UP,KI_DOUBLE,5);assert(restored.page==1 && restored.focus==5);
+    ku_key(&restored,KI_OK,KI_SHORT,6);assert(restored.page==7 && !restored.timers.count);
+    ku_key(&restored,KI_UP,KI_DOUBLE,7);assert(restored.page==1);
+    /* Three independent timers: canceling the selected final row keeps peers
+     * and clamps the selection so the last remaining row stays operable. */
+    for(unsigned i=0;i<3;++i){
+        assert(kt_add(&restored.timers,60,10,&id));
+        restored.timer_ids[i]=id;restored.timer_recipe[i]=0;restored.timer_step[i]=0;
+    }
+    ku_key(&restored,KI_OK,KI_SHORT,11);assert(restored.page==7);
+    ku_key(&restored,KI_DOWN,KI_SHORT,12);ku_key(&restored,KI_DOWN,KI_SHORT,13);
+    assert(restored.focus==2);uint32_t first=restored.timers.items[0].id;
+    ku_key(&restored,KI_DOWN,KI_LONG,14);
+    assert(restored.timers.count==2 && restored.focus==1 && restored.timers.items[0].id==first);
+    timed_step=0;
+}
 int main(void) {
-    setup();unsigned recent_changes=0;
+    setup();timer_home_roundtrip();unsigned recent_changes=0;
     for(unsigned seed=0;seed<256;++seed){
         ku_ui a=fresh(seed,1,0,0),b=fresh(seed,12,1,0),c=fresh(seed,12,1,1);
         unsigned chosen=select_one(&a);assert(chosen==select_one(&b));recent_changes+=chosen!=select_one(&c);

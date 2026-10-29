@@ -73,26 +73,45 @@ void kv_home_draw(kg_canvas* c, const kv_scene* s) {
         return;
     }
     if (u->page == 1) {
-        /* The hero and controls have separate space; the date hint is drawn
-         * inside the hero by kcal_view_hint, never over a menu or portrait. */
+        /* Keep timers reachable even after leaving the recipe or recovering
+         * a paused timer. The six ordinary menu targets fit above the footer. */
         kg_rect(c, 0, 0, 240, 320, BG);
         kv_header(c, s, "深夜厨房", TOMATO);
         kg_rect(c, 12, 32, 216, 1, RGB(78, 66, 90));
-        kg_round_rect(c, 8, 40, 224, 91, 12, PANEL);
-        kv_label(c, s, &s->assets->han18, 18, 52, 126, 26, PAPER, "今晚吃点啥？");
-        kv_label(c, s, &s->assets->han12, 18, 80, 124, 18, PAPER2, "NABO 陪你做饭");
-        kv_portrait(c, s, 139, 40, 91);
-        card(c, 8, 140, 224, 46, TOMATO, u->focus == 0);
-        kv_icon(c, s, "method_stir_fry", 18, 149, 28, 28);
-        kv_label(c, s, &s->assets->han18, 59, 148, 160, 27, INK, "今天吃什么");
+        kg_round_rect(c, 8, 40, 224, 64, 12, PANEL);
+        kv_label(c, s, &s->assets->han18, 18, 45, 142, 26, PAPER, "今晚吃点啥？");
+        kv_label(c, s, &s->assets->han12, 18, 76, 144, 18, PAPER2, "NABO 陪你做饭");
+        kv_portrait(c, s, 163, 40, 64);
+        card(c, 8, 112, 224, 44, TOMATO, u->focus == 0);
+        kv_icon(c, s, "method_stir_fry", 18, 120, 28, 28);
+        kv_label(c, s, &s->assets->han18, 59, 119, 160, 27, INK, "今天吃什么");
         const char* names[] = {"冰箱", "买菜单", "我的菜谱", "设置"};
         const char* icons[] = {"ui_fridge", "ui_shopping", "ui_recipe_book", "ui_settings"};
         for (unsigned i = 0; i < 4; ++i) {
-            int x = 8 + (i % 2) * 116, y = 195 + (i / 2) * 51;
-            card(c, x, y, 108, 43, PAPER, u->focus == i + 1);
-            kv_icon(c, s, icons[i], x + 10, y + 9, 24, 24);
-            kv_label(c, s, &s->assets->han15, x + 39, y + 9, 66, 25, INK, names[i]);
+            int x = 8 + (i % 2) * 116, y = 164 + (i / 2) * 48;
+            card(c, x, y, 108, 40, PAPER, u->focus == i + 1);
+            kv_icon(c, s, icons[i], x + 10, y + 8, 24, 24);
+            kv_label(c, s, &s->assets->han15, x + 39, y + 7, 66, 25, INK, names[i]);
         }
+        card(c, 8, 260, 224, 32, PAPER, u->focus == 5);
+        kv_icon(c, s, "ui_timer_icon", 18, 265, 22, 22);
+        kv_label(c, s, &s->assets->han15, 48, 264, 76, 24, INK, "计时器");
+        const kt_timer* next = NULL;
+        int alarm = 0;
+        for (unsigned i = 0; i < u->timers.count; ++i) {
+            const kt_timer* t = &u->timers.items[i];
+            if (t->status == KT_DONE && !t->acknowledged) alarm = 1;
+            if (t->status == KT_RUNNING &&
+                (!next || kt_remaining(t, s->now) < kt_remaining(next, s->now))) next = t;
+        }
+        if (alarm) snprintf(text, sizeof(text), "时间到");
+        else if (next) {
+            int64_t left = kt_remaining(next, s->now);
+            unsigned seconds = (unsigned)(left / 1000 + (left % 1000 != 0));
+            snprintf(text, sizeof(text), "%u:%02u", seconds / 60, seconds % 60);
+        } else snprintf(text, sizeof(text), "%s", u->timers.count ? "已暂停" : "0");
+        kv_label(c, s, &s->assets->han12, 152, 267, 72, 20, INK, text);
+        kv_footer(c, s, "↑↓ 选择 · OK 进入 · 长 OK 颠勺");
         return;
     }
     if (u->page == 2) {

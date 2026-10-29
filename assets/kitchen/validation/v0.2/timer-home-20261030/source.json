@@ -1,0 +1,26 @@
+{
+  "source": "Production C rendered on host using actual packaged resources; not device captures",
+  "resources_sha256": "a3d3dd110f426b1e024da485aecde57f9b2f4b8a89705a92626168991ad6e56d",
+  "source_lf_sha256": {
+    "main/kitchen/kitchen_ui.c": "5f1b87aac371dc7f3665c348e2c6b26cb3fe1e893e011f229659db93000b8d81",
+    "main/kitchen/kitchen_view_home.c": "515f03165e49467d59fc3fd1e5ca3d2ff87898d29a452a360b46a39e5e3a56f5"
+  },
+  "images": [
+    {
+      "file": "home-empty.png",
+      "sha256": "e50b1704fb3d687b5343444b2f2f2d0aa2f5b9048b6237930153a92e58d172d5"
+    },
+    {
+      "file": "home-running.png",
+      "sha256": "08062507ef8cbbaf92853a8881a441f24c9f85823e06b9675e8ef4e57a677888"
+    },
+    {
+      "file": "home-paused.png",
+      "sha256": "75abbf24cc4731a1437ab364d7f2c0bbd542a69e20144fe2eecb6526da3f4654"
+    },
+    {
+      "file": "home-done.png",
+      "sha256": "814f688a6959ef61b5b71965cf3baa4195b8f81e5d0e6b5c22f23da94c47d9ed"
+    }
+  ]
+}
