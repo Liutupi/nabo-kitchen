@@ -8,6 +8,30 @@
 
 ## 当前状态（2026-10-29 晚，Claude 总架构师）
 
+### 2026-10-30 · Codex（Windows）· 任务 7 体验版已公开，社区更新完成
+
+- [GitHub v0.2.0 体验版](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) 已公开，四附件匿名校验通过，原 v0.1.0 未改。
+- 用户明确同意本次作品权利/规则声明及更新提交，仅向原项目 1755 提交一次；新版本 4104 已审核通过并[公开可用](https://ai-passport.folotoy.cn/plays/1755/)，旧待授权/审核中已解决。
+- 匿名公共 API 确认 4104/published；固件回下载与 GitHub 逐字节一致，八项中英文案一致，五张公开图片等同逐张检查的服务端保存图。
+- [社区公开核验](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/community-publication-verification.json)、[当前发布状态](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/submission-status.json)；本轮未刷机，不再新建授权或重复提交。
+- 按用户决定以体验版发布：三道实厨、本次重组完整镜像首装及全量美术/硬件验收仍未完成，145 张菜图均保留 review。
+- 下一步收集体验反馈与实厨记录；定时检查改跟公开 4104 和两个长期分支，仅真实变化通知。
+
+### 2026-10-30 · Codex（Windows）· 任务 7 GitHub 体验版已发布，社区待授权
+
+- 用户明确尚未三道实厨，要求按体验版发布；[v0.2.0 prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) 已公开，未改 v0.1.0。
+- 四个附件全部匿名回下载，逐字节/哈希与准备文件一致；应用和 D2 资源为已验原件，bootloader 沿用首装通过产物。
+- 145 道介绍图、中英说明及完整首页计时器操作图已完成；[发布与匿名验证](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/publication-verification.json)。
+- 社区仍为项目 1755/版本 4068；更新材料已验证，官网单次更新授权及作品权利/社区规则声明已请求本次确认，尚未提交。
+- 继续从 [当前发布状态](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/submission-status.json)；三道实厨及本次完整镜像首装仍未完成，不据此改菜图 review。
+
+### 2026-10-30 · Codex（Windows）· 任务 7 体验版发布进行中
+
+- 用户新指令要求发布固件并更新原社区项目；另明确“尚未，按体验版发布并注明验收范围”，替代此前暂缓发布。
+- 固定已验应用与 145 道 D2 资源，配用首次安装通过的构建产物 bootloader；不重编、不刷机、不改 v0.1.0 tag/附件。
+- 正在完成 v0.2.0 中英说明、145 道介绍图及首页计时操作图，再验证 GitHub 下载和社区更新。
+- 三道实厨及本次完整镜像首装尚未完成；体验版公开说明会保留这一范围，所有菜图仍为 review。
+
 ### 2026-10-30 · Codex（Windows）· 任务 6 完成，计时器修复已上机
 
 - 首页常驻“计时器”已装到工牌，用户实体操作确认“现在能打开了”；长下键取消、长 OK 暂停/继续。
@@ -102,11 +126,11 @@
 
 | 项目 | 状态 |
 |---|---|
-| 已发布 | v0.1.0：[GitHub prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0)，[社区项目 1755](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)。应用 `a6f4a167…`，资源 `f1c0f215…` |
+| 已发布 | **v0.2.0 体验版**：[GitHub prerelease](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0)，[社区项目 1755 / 公开版本 4104](https://ai-passport.folotoy.cn/plays/1755/)。应用 `01c1dcca…`，D2 资源 `a3d3dd11…`；v0.1.0 tag/附件保留 |
 | 分支 | **仅 `main` 和 `firmware`**；任务 1 已完成六个旧分支的祖先核对及本机/远端删除，定时检查已切换。明细见 [分支核验](docs/validation/branch-consolidation-20261029.json) |
 | 菜谱 | **D2 质量版已完成**：145 道。改动说明见 [data/recipes/D2_PROPOSAL.md](data/recipes/D2_PROPOSAL.md)。`python tools/check_recipes.py` 通过，`python tools/lint_recipes.py` 只剩 8 处合理的重复 |
 | 美术 | **145/145 道完整菜图，缺图 0**；36 张 D2 新图已交付，全部保持 `review`，退役图保留 |
-| 设备 | 已安装带首页计时器入口的 v0.2 应用及 145 道 D2 资源，用户确认入口可用；有限设备验证完成，实厨/完整硬件验收另计，未发布 |
+| 设备 | 已安装带首页计时器入口的 v0.2 应用及 145 道 D2 资源，用户确认入口可用；有限设备验证完成，实厨/完整硬件验收另计；本次发布未再刷机 |
 | 规格变更 | v0.2 去掉日期依赖，见 [DESIGN.md 第 8 节](game-art/kitchen/DESIGN.md) |
 | 评估 | [docs/REVIEW-2026-10-29.md](docs/REVIEW-2026-10-29.md) |
 
@@ -120,7 +144,7 @@
 | 4 | **补 36 张菜图**：新菜谱 ID 见 `data/recipes/D2_PROPOSAL.md` 的 A、C 两节（也可以用 `dish.hero` 为 `false` 筛出来），风格和现有菜图一致；登记进 `ASSET_LIST.csv`，菜谱的 `dish.hero` 改成 `true` | `tools/tests/test_kitchen_heroes.py` 通过，145 道都有菜图 |
 | 5 | **D2 资源重建**：重打包 KRC、字体（新增“腩、煸、蘸、黏”等字）和资源包；`build_firmware_metadata.py` 的默认输入从 10-28 检查点改成新的 KRC（现在 `test_fridge_metadata` 因为调料表新增了 3 项而失败，这是预期的）；固件读档时丢弃已删除的菜谱 ID（名单见 `data/D2_REMOVED.json`） | 全部宿主测试通过；资源包大小写进 HANDOFF |
 | 6 | **v0.2 固件：去掉日期依赖**（DESIGN 第 8 节）：开机不再确认日期；“最近吃过”按做饭次数降权；顶栏只显示电量；等级不再看连续天数。原型同步修改 | 原型和 C 对拍通过；真机重启不再询问日期 |
-| 7 | **v0.2 发布**：真机验收后发布 v0.2.0，更新社区 | 用户在厨房用 v0.2 做过至少 3 道菜 |
+| 7 | **v0.2 发布：体验版已完成**，GitHub 与原社区项目 1755/4104 均公开 | 原定三道实际下厨尚未完成；用户另明确按体验版发布并注明验收范围，未视作实厨验收通过 |
 
 ### 待刘东坡做
 

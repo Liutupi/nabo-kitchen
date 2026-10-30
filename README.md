@@ -1,12 +1,12 @@
 # NABO 深夜厨房 · LATE KITCHEN
 
-**v0.1.0 首版体验固件已发布：**[下载固件和分段包](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.1.0) · [安装与按键说明](https://github.com/Liutupi/nabo-kitchen/blob/v0.1.0/docs/community/v0.1.0/installation.zh_CN.md) · [发布验证记录](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.1.0/publication-verification.json)。
+**v0.2.0 体验固件已发布：**[下载固件和分段包](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) · [安装与按键说明](https://github.com/Liutupi/nabo-kitchen/blob/v0.2.0/docs/community/v0.2.0/installation.zh_CN.md) · [发布验证记录](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/publication-verification.json)。
 
-[社区首版现已公开](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2)，项目 **1755**、通过版本 **4068**；匿名固件下载与 GitHub 逐字节一致，五张公开图核验通过。[公开验证记录](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.1.0/community-publication-verification.json)。
+[社区项目 1755](https://ai-passport.folotoy.cn/plays/1755/) 已更新为 v0.2.0 / 4104 并公开，固件匿名回下载与 GitHub 逐字节一致，中英说明、封面和四张介绍图已同步。[当前状态与公开核验](https://github.com/Liutupi/nabo-kitchen/blob/firmware/docs/community/v0.2.0/community-publication-verification.json)。
 
-<img src="https://raw.githubusercontent.com/Liutupi/nabo-kitchen/v0.1.0/assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
+<img src="https://raw.githubusercontent.com/Liutupi/nabo-kitchen/v0.2.0/assets/community/v0.2.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
 
-首版 v0.1.0 是独立离线厨房，包含 144 道菜谱和完整菜图草案、58 种食材（含 13 种海鲜）、抽菜、冰箱推荐、采购、步骤跟做、收藏与三个可暂停计时器，不包含小智云对话或语音识别。菜谱和美术仍在审校，更新后实际面板/听感与长期使用仍待验收；详细边界以发布页为准。下文保留产品设计方向，未来功能不代表已在首版实现。
+当前 v0.2.0 为独立离线体验版，包含 145 道 D2 菜谱与完整菜图、58 种食材、抽菜、冰箱推荐、采购、步骤跟做、收藏和三个可暂停计时器。选中项整块变色，首页常驻计时器入口；开机不问日期，近期降权按完成做饭次数。用户确认尚未三道实际下厨验收，按体验版发布；菜谱、美术与完整硬件验收仍在继续，详细范围以发布说明为准。下文设计方向不等于已实现功能。
 
 FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手。NABO 下了夜班开了一间小厨房，帮你决定**今天吃什么**，再一步一步带你**把菜做出来**。
 
@@ -16,13 +16,13 @@ FoloToy AI Passport 工牌（ESP32-C3，240×320 竖屏）上的家常菜助手�
 
 | 痛点 | 功能 |
 |---|---|
-| 不知道吃什么 | **颠勺抽菜**：NABO 颠一下锅，抽出今天的菜或者一整套搭配（一荤一素一汤），最近吃过的菜降低权重，7 天内仍可抽到 |
+| 不知道吃什么 | **颠勺抽菜**：抽一道菜或荤素组合；近期做过的菜按完成做饭次数降低权重，仍可再次抽到 |
 | 不知道怎么做 | **跟做模式**：一屏一步，有火候和做法图标；可以同时开 3 个计时器 |
 | 家里有什么做什么 | **冰箱模式**：勾选手头的食材，推荐能做的菜，并标出还缺几样 |
 | 买菜 | **买菜单**：把选好的菜合并成一张食材清单 |
 | 坚持做饭 | **图鉴和等级**：做完一道菜就点亮一格，从“夜宵学徒”升到“深夜厨神” |
 
-v0.1 是**纯离线、只用三个按键**的版本，没有语音和联网功能。语音“下一步”、用小智扩展菜谱库等功能，留到以后评估是否做“小智加厨房”的版本。
+v0.2 是**纯离线、只用三个按键**的版本，欢迎语和提示音本地播放，不含语音识别或联网功能。语音“下一步”、在线菜谱等仍留待以后评估。
 
 ## 仓库是什么
 
