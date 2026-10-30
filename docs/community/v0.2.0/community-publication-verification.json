@@ -1,0 +1,83 @@
+{
+  "release": "v0.2.0",
+  "verified_at": "2026-10-30T11:53:53.346507+00:00",
+  "project_id": 1755,
+  "revision_id": 4104,
+  "slug": "nabo-6",
+  "status": "published",
+  "published_at": "2026-10-29T17:50:43+00:00",
+  "public_url": "https://ai-passport.folotoy.cn/plays/1755/",
+  "public_url_source": "Observed public detail page and canonical link",
+  "share_version": "4104-2",
+  "public_api": "https://ai-passport.folotoy.cn/api/plays/id/1755",
+  "anonymous_public_api_http_status": 200,
+  "bilingual_fields_readback": {
+    "title_zh": true,
+    "title_en": true,
+    "description_zh": true,
+    "description_en": true,
+    "instructions_zh": true,
+    "instructions_en": true,
+    "changelog_zh": true,
+    "changelog_en": true
+  },
+  "anonymous_firmware": {
+    "url": "https://ai-passport.folotoy.cn/api/download/community/nabo-6",
+    "final_url": "https://ai-passport.folotoy.cn/api/download/community/nabo-6",
+    "http_status": 200,
+    "bytes": 5865922,
+    "sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+    "matches_GitHub_and_prepared_bytes": true,
+    "authenticated": false
+  },
+  "gallery": [
+    {
+      "index": 1,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/0.webp?v=4104-2",
+      "final_url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/0.webp?v=4104-2",
+      "http_status": 200,
+      "bytes": 180686,
+      "sha256": "f1585ff91505c90482e166ea426e66b9b403caaeadf2eae541f3c475cf8e16a3",
+      "matches_previously_inspected_server_saved_image": true
+    },
+    {
+      "index": 2,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/1.webp?v=4104-2",
+      "final_url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/1.webp?v=4104-2",
+      "http_status": 200,
+      "bytes": 83502,
+      "sha256": "af39f6971e782109b5c81369d7983866eb67d7d05d2bf3fae5660906a1045bec",
+      "matches_previously_inspected_server_saved_image": true
+    },
+    {
+      "index": 3,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/2.webp?v=4104-2",
+      "final_url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/2.webp?v=4104-2",
+      "http_status": 200,
+      "bytes": 67112,
+      "sha256": "abad1863db681f55ad44f7dba592b9c595b00fe0dd86001e0e6772d2d357fb87",
+      "matches_previously_inspected_server_saved_image": true
+    },
+    {
+      "index": 4,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/3.webp?v=4104-2",
+      "final_url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/3.webp?v=4104-2",
+      "http_status": 200,
+      "bytes": 59114,
+      "sha256": "e81dc123ed41426d28a29573ec9249e3ed1375daec52a2108ac5e3f9208e522e",
+      "matches_previously_inspected_server_saved_image": true
+    },
+    {
+      "index": 5,
+      "url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/4.webp?v=4104-2",
+      "final_url": "https://ai-passport.folotoy.cn/api/media/plays/nabo-6/gallery/4.webp?v=4104-2",
+      "http_status": 200,
+      "bytes": 68776,
+      "sha256": "224d4671f7cb7a4caef6d21640c7b0997f093ff430a052cbb1465689394d3bbb",
+      "matches_previously_inspected_server_saved_image": true
+    }
+  ],
+  "proof": "assets/community/v0.2.0/community-published-status.png",
+  "no_new_submission_or_grant": true,
+  "no_new_flash": true
+}

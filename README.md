@@ -4,7 +4,7 @@
 
 **v0.2.0 — experience prerelease:** [downloads and checksums](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) · [installation and controls](docs/community/v0.2.0/installation.md) · [release provenance](docs/community/v0.2.0/release-validation.json).
 
-The [community project](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2) currently serves v0.1.0 revision 4068. The v0.2.0 update uses this same project; see its [current submission status](docs/community/v0.2.0/submission-status.json).
+The [community project](https://ai-passport.folotoy.cn/plays/1755/) now publicly serves v0.2.0 revision 4104. Its anonymously downloaded firmware matches GitHub byte-for-byte; bilingual copy and all five images are verified. See [public verification](docs/community/v0.2.0/community-publication-verification.json).
 
 <img src="assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO Midnight Kitchen promotional illustration">
 

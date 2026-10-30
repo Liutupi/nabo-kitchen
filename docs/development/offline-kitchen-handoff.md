@@ -2,6 +2,22 @@
 
 # Offline kitchen handoff — 2026-10-29
 
+## 2026-10-30: v0.2.0 community update published and anonymously verified
+
+The user explicitly approved the project-specific rights/rules declaration and update submission. The official publisher submitted exactly once to existing project 1755, creating revision 4104. It was initially pending and is now **published**, with server publication time `2026-10-30T01:50:43+08:00`. The [public detail page](https://ai-passport.folotoy.cn/plays/1755/) shows the v0.2.0 experience release. The earlier authorization/review wait is resolved; do not create another grant, project or submission.
+
+The anonymous public API returns revision 4104 and published status. Its 5,865,922-byte firmware was anonymously downloaded once and matches the prepared and GitHub bytes exactly; all eight bilingual fields match, and the five public image hashes equal the individually inspected server-saved images. See [community public verification](../community/v0.2.0/community-publication-verification.json), [original submission receipt verification](../community/v0.2.0/community-verification.json) and [live submission status](../community/v0.2.0/submission-status.json). GitHub v0.2.0 remains a prerelease, and both release tags and assets are preserved.
+
+Build: PASS for the accepted prebuilt candidate. Host tests: PASS. Device tests: PASS for the previously recorded limited checks; no new flashing during publication. Unverified: three actual cooking sessions, first installation of this specific recomposed full image, all-recipe/art and complete hardware/audio acceptance. The user accepted publication as an experience release with these limits disclosed. Art remains review. Next: collect feedback and cooking records; monitor metadata quietly, downloading again only for an actual version/hash change or new failure.
+
+## 2026-10-30: v0.2.0 GitHub experience release public; community update awaits authorization
+
+The user requested firmware publication and an update to community project 1755, explicitly confirming that three actual cooking sessions are incomplete and accepting an experience prerelease with that scope disclosed. [GitHub v0.2.0](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) is public at tag commit `ff3138e812836dba68c34cf123afd93b6160063f`. All four assets were anonymously re-downloaded and matched exact prepared bytes; the release-spec hash also matches immutable Git source. v0.1.0 is unchanged. See [publication verification](../community/v0.2.0/publication-verification.json).
+
+The 5,865,922-byte full image preserves the accepted app/resources, using the prior first-install-validated build bootloader. It is assembled from build outputs with erased gaps, without device readbacks, NVS or credentials. Community material includes bilingual descriptions, usage and change notes, plus five inspected portrait images. The current public community version is still 4068. A new official single-project update grant and its rights/rules declaration were presented for the user's action-time confirmation; no grant or submission was created. Continue from [submission status](../community/v0.2.0/submission-status.json), preserve project 1755 and never reuse a create-only token.
+
+No new flashing was performed. Three actual cooking sessions, a first installation of this recomposed full image, all-recipe/art and complete hardware/audio acceptance remain incomplete. Release permission does not mark art approved.
+
 ## 2026-10-30: timer fix installed and physical home entry confirmed
 
 After explicit approval, only application `01c1dccabd36…` was written and independently read back. Two bounded boots matched the new ELF and 145-recipe D2 resources. Boot/table/NVS/PHY, resources, files and untouched app tail were preserved; the complete 24 KiB NVS and decoded KST2 state were unchanged after testing, at sequence 69. No test completions were added.

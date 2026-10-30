@@ -1,0 +1,118 @@
+{
+  "release": "v0.2.0",
+  "verified_at": "2026-10-29T17:16:37.254275+00:00",
+  "project_id": 1755,
+  "revision_id": 4104,
+  "slug": "nabo-6",
+  "submission_status": "pending",
+  "submission_count": 1,
+  "official_grant": {
+    "scope": "update_once",
+    "project_id": 1755,
+    "user_confirmed_rights_rules_and_submission": true,
+    "submission_result_matches": true,
+    "credentials_outside_repository": true
+  },
+  "base_published_revision": 4068,
+  "bilingual_fields_readback": {
+    "title_zh": true,
+    "title_en": true,
+    "description_zh": true,
+    "description_en": true,
+    "instructions_zh": true,
+    "instructions_en": true,
+    "changelog_zh": true,
+    "changelog_en": true
+  },
+  "authenticated_firmware": {
+    "url": "https://ai-passport.folotoy.cn/api/me/revisions/4104/firmware",
+    "source": "Exact link observed in the saved author workbench",
+    "bytes": 5865922,
+    "sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+    "matches_GitHub_and_prepared_bytes": true,
+    "downloaded_in_authenticated_browser": true,
+    "anonymous_public_availability_not_inferred": true
+  },
+  "gallery": [
+    {
+      "index": 1,
+      "upload_file": "assets/community/v0.2.0/01-cover.webp",
+      "upload_sha256": "4f8d9bc38cd018e7c14ee463c027b0163ec25c3c8fcdac139479f4604c34d581",
+      "server_saved_sha256": "f1585ff91505c90482e166ea426e66b9b403caaeadf2eae541f3c475cf8e16a3",
+      "server_saved_bytes": 180686,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "PSNR_db": 37.984,
+      "exact_downloaded_file_visually_inspected": true,
+      "image_order_layout_text_preserved": true
+    },
+    {
+      "index": 2,
+      "upload_file": "assets/community/v0.2.0/02-dish-collection.webp",
+      "upload_sha256": "dceb7fcd6698c6c313695cee000f6145288266fe03b5bfe134cbcbf784488fc6",
+      "server_saved_sha256": "af39f6971e782109b5c81369d7983866eb67d7d05d2bf3fae5660906a1045bec",
+      "server_saved_bytes": 83502,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "PSNR_db": 41.716,
+      "exact_downloaded_file_visually_inspected": true,
+      "image_order_layout_text_preserved": true
+    },
+    {
+      "index": 3,
+      "upload_file": "assets/community/v0.2.0/03-tonights-menu.webp",
+      "upload_sha256": "985cd2b3fbb6b41903c8aaa1d2527a05a287998941856dbba19341fe1bcea376",
+      "server_saved_sha256": "abad1863db681f55ad44f7dba592b9c595b00fe0dd86001e0e6772d2d357fb87",
+      "server_saved_bytes": 67112,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "PSNR_db": 42.167,
+      "exact_downloaded_file_visually_inspected": true,
+      "image_order_layout_text_preserved": true
+    },
+    {
+      "index": 4,
+      "upload_file": "assets/community/v0.2.0/04-cook-together.webp",
+      "upload_sha256": "4ceaead6ef8b484588b8d8f71e77c4a69db8a84201f7a92571914b9d4e50faff",
+      "server_saved_sha256": "e81dc123ed41426d28a29573ec9249e3ed1375daec52a2108ac5e3f9208e522e",
+      "server_saved_bytes": 59114,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "PSNR_db": 43.458,
+      "exact_downloaded_file_visually_inspected": true,
+      "image_order_layout_text_preserved": true
+    },
+    {
+      "index": 5,
+      "upload_file": "assets/community/v0.2.0/05-device-captures.webp",
+      "upload_sha256": "e19e9bf03d8fce405c30b30b677cf584ac249ba43a7009dfd278397fa7daf6e1",
+      "server_saved_sha256": "224d4671f7cb7a4caef6d21640c7b0997f093ff430a052cbb1465689394d3bbb",
+      "server_saved_bytes": 68776,
+      "dimensions": [
+        900,
+        1200
+      ],
+      "PSNR_db": 42.424,
+      "exact_downloaded_file_visually_inspected": true,
+      "image_order_layout_text_preserved": true
+    }
+  ],
+  "proof": "assets/community/v0.2.0/submission-review-status.png",
+  "current_public_api": {
+    "project_id": 1755,
+    "revision_id": 4068,
+    "status": "published",
+    "firmware_sha256": "9a7ade79bb7ebf4aa91332368a7dc4910af7cb86eb3aeec38775bc8380838a1c",
+    "firmware_bytes": 5853214
+  },
+  "pending_is_not_published": true,
+  "new_flashing": false
+}

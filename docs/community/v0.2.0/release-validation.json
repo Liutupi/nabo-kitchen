@@ -127,7 +127,14 @@
   ],
   "no_new_flash": true,
   "old_release_unchanged": true,
-  "published": false,
+  "published": true,
   "release_static_and_host_gate": "PASS; 21 capability-dependent skips",
-  "repository_text_and_package_provenance": "PASS; release-spec hash equals Git source bytes; bundled usage matches LF text"
+  "repository_text_and_package_provenance": "PASS; release-spec hash equals Git source bytes; bundled usage matches LF text",
+  "github_url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0",
+  "tag_commit": "ff3138e812836dba68c34cf123afd93b6160063f",
+  "anonymous_public_asset_verification": "PASS for all four exact assets",
+  "community_status": "published_anonymous_download_verified",
+  "community_revision_id": 4104,
+  "community_publication_verification": "community-publication-verification.json",
+  "post_publication_static_and_host_gate": "PASS; 21 capability-dependent skips; no firmware source changes"
 }

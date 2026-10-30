@@ -2,7 +2,7 @@
   "title_zh": "NABO 深夜厨房",
   "title_en": "NABO Midnight Kitchen",
   "version": "v0.2.0",
-  "status": "prepared_experience_prerelease",
+  "status": "published",
   "community_project_id": 1755,
   "community_base_revision_id": 4068,
   "source_url": "https://github.com/Liutupi/nabo-kitchen",
@@ -17,5 +17,7 @@
     "assets/community/v0.2.0/05-device-captures.webp"
   ],
   "authorization": "User requested firmware publication and community update; explicitly accepted experience release without three actual cooking sessions",
-  "rights_and_rules": "Use the official update authorization flow; no existing create-only grant reused"
+  "rights_and_rules": "Use the official update authorization flow; no existing create-only grant reused",
+  "community_revision_id": 4104,
+  "community_public_url": "https://ai-passport.folotoy.cn/plays/1755/"
 }

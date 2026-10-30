@@ -4,7 +4,7 @@
 
 **v0.2.0 体验版：**[下载与校验值](https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0) · [安装和操作](docs/community/v0.2.0/installation.zh_CN.md) · [发布溯源](docs/community/v0.2.0/release-validation.json)。
 
-[社区项目](https://ai-passport.folotoy.cn/plays/1755/?v=4068-2) 当前公开基线为 v0.1.0、版本 4068；v0.2.0 继续更新此项目，见[当前提交状态](docs/community/v0.2.0/submission-status.json)。
+[社区项目](https://ai-passport.folotoy.cn/plays/1755/) 现已公开 v0.2.0、版本 4104。匿名回下载固件与 GitHub 逐字节一致，中英说明及全部五张图片已核验，见[社区公开核验](docs/community/v0.2.0/community-publication-verification.json)。
 
 <img src="assets/community/v0.1.0/01-cover.webp" width="450" alt="NABO 深夜厨房宣传插画">
 

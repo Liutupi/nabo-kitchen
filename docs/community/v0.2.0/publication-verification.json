@@ -1,0 +1,61 @@
+{
+  "release": "v0.2.0",
+  "verified_at": "2026-10-29T17:06:14.791399+00:00",
+  "github_status": "public_prerelease",
+  "release_id": 428158610,
+  "release_url": "https://github.com/Liutupi/nabo-kitchen/releases/tag/v0.2.0",
+  "tag_commit": "ff3138e812836dba68c34cf123afd93b6160063f",
+  "published_at": "2026-10-29T17:05:22Z",
+  "anonymous_metadata_http": 200,
+  "anonymous_assets": [
+    {
+      "file": "manifest.json",
+      "bytes": 4094,
+      "sha256": "9e12f264598214471cc12085d36017404c0775db8cb183e15f3ba38150fc55a5",
+      "http": 200,
+      "authentication": "none",
+      "download_url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.2.0/manifest.json",
+      "final_host": "release-assets.githubusercontent.com",
+      "byte_equal_to_prepared": true
+    },
+    {
+      "file": "nabo-kitchen-v0.2.0-full.bin",
+      "bytes": 5865922,
+      "sha256": "26371cbcd5d60e0e970db684c7ee23414be63d4a556825640aa3cdd20e46da5e",
+      "http": 200,
+      "authentication": "none",
+      "download_url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.2.0/nabo-kitchen-v0.2.0-full.bin",
+      "final_host": "release-assets.githubusercontent.com",
+      "byte_equal_to_prepared": true
+    },
+    {
+      "file": "nabo-kitchen-v0.2.0.zip",
+      "bytes": 2762992,
+      "sha256": "2dec723e61b94a3815a878b4b2fd12a52067acc49fdf23c00cf712d56850efc7",
+      "http": 200,
+      "authentication": "none",
+      "download_url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.2.0/nabo-kitchen-v0.2.0.zip",
+      "final_host": "release-assets.githubusercontent.com",
+      "byte_equal_to_prepared": true
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 265,
+      "sha256": "e84803edf9a8411e2a1805a949cfd8c89c962b1f3e2f45df613b202ae275e71a",
+      "http": 200,
+      "authentication": "none",
+      "download_url": "https://github.com/Liutupi/nabo-kitchen/releases/download/v0.2.0/SHA256SUMS.txt",
+      "final_host": "release-assets.githubusercontent.com",
+      "byte_equal_to_prepared": true
+    }
+  ],
+  "source_provenance": {
+    "url": "https://raw.githubusercontent.com/Liutupi/nabo-kitchen/v0.2.0/docs/community/v0.2.0/release-spec.json",
+    "sha256": "af6c61912d7eb3b9ae2ea3bef034df363ecc0168f962792e0aaef0bd71e63613",
+    "matches_manifest": true
+  },
+  "prior_v010_tag_and_full_asset_unchanged": true,
+  "new_flashing": false,
+  "community_status": "prepared_not_submitted",
+  "acceptance": "Experience prerelease; three actual cooking sessions and this complete image first installation not performed"
+}
